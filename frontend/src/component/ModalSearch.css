@@ -1,0 +1,106 @@
+.modalSearch{
+   margin: 10%;
+}
+
+.containerElement{
+
+}
+
+.containerElement{
+    background: white;
+}
+
+
+.searchBar input{
+    width: 100%;
+    /* display: none; */
+    background: none;
+    border: none;
+    border-radius: 0%;
+    border-bottom: gray 0.1rem solid;
+    color: white;
+    outline: none;
+    text-decoration: none;
+    list-style:none;
+    /* position: fixed;
+    left: 3;
+    z-index: 50; */
+
+}
+
+
+
+
+
+/* [ placeholder="Search..." ]{
+    color: white;
+  list-style:none;
+
+  
+
+} */
+
+.searchBar>::placeholder {
+    color: white;
+}
+
+.elementSearch{
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 2rem; */
+    /* justify-content: flex-start; */
+    /* margin-left: 1.5rem; */
+}
+/* .elementSearch:hover{
+    background-color: rgb(16, 16, 17);
+    transition: 0.6ms;
+} */
+
+.elementSearch div{
+    /* margin: auto; */
+    /* margin-left: 2rem; */
+    /* justify-content: center; */
+    font-size: 1.3rem;
+    color: black;
+
+}
+
+.info-element{
+    margin-top: 2rem;
+}
+
+.elementSearch a{
+    text-decoration: none;
+    /* list-style: none; */
+    border:3px solid grey !important;
+    text-align: start !important;
+}
+
+.elementSearch div{
+justify-content: left;
+
+}
+
+.img-search{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+
+}
+
+.Modal{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.Modal{
+    overflow-y: scroll;
+}
+
+.element{
+    border:1px solid rgb(223, 218, 218);
+}
+
+.element:hover{
+    background-color:  rgb(246, 241, 241);
+}

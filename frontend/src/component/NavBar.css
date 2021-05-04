@@ -1,0 +1,445 @@
+
+
+.NavBar-content{
+    width: 100%;
+    
+   
+}
+header{
+  width: 100%;
+  margin: auto;
+  background-color: #ffffff;
+
+}
+nav{
+  background-color: #ffffff;
+  /* margin-top: 20px; */
+  /* position: relative; */
+}
+nav ul{
+  list-style: none;
+  padding: 0%;
+  margin-left: 30%;
+  overflow: hidden;
+  
+  
+}
+nav > ul > li{
+  float: left;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #014286;
+  display: block;
+  padding: 10px 10px;
+  font-family: calibri ;
+  font-size: 20px !important;
+  font-weight: 300 !important;
+
+}
+
+nav ul li a:hover{
+  color: #0ca2cf;
+  background-color: #f0f0f0;
+  
+
+}
+nav > ul > li:hover div{
+display: table;
+margin-left: 15%;
+
+}
+
+
+
+/* submenu */ 
+
+nav ul li div{
+  width: 1000px;
+  position: absolute;
+  left: 0;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: none;
+}
+nav ul li div ul{
+  width: 20%;
+  display: table-cell;
+  border-right: 1px solid rgba(150, 150, 150, 0.5);
+  box-sizing: border-box;
+}
+nav ul li div ul:last-child{
+border: none;
+}
+nav ul li div ul li a{
+  font-family: calibri;
+  color: #014286;
+  font-size: 16px;
+}
+nav ul li div ul li a:hover{
+  color: #0ca2cf;
+}
+
+.kontenedor{
+  background-color: #f0f0f0;
+  height: 5vh;
+  width: 100vw;
+  display: flex;
+}
+
+
+.menu1{
+   /* display: flex; */
+   z-index: 30;
+  /* position: relative; */
+
+   
+  }
+
+  .menu1{
+    background-color:#f7f7f7;
+    height: 15vh;
+    width: 100%;
+   /* overflow: hidden; */
+  }
+/* .menu1 a{
+position: relative;
+bottom: 0.9rem;
+} */
+
+.menu1 >.drdropdown{
+  
+}
+
+
+.menu-button{
+  background-color: transparent;
+  border-style: none;
+}
+
+
+/* .carrito{
+  position: relative;
+  bottom: 0.9rem;
+} */
+
+.casaforte{
+  width: 13rem;
+  margin-left: 2rem;
+  margin-top: 2.5rem;
+}
+
+ .carrito{
+  /* position: relative; */
+  /* width: 25px; */
+  /* left: 110rem ;
+  top: 2.5rem; */
+  margin-top: 2rem;
+  margin-right: 2rem;
+  float: right;
+  /* margin-left: 55rem; */
+  /* position: absolute; */
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+
+  
+}
+
+.carrito i{
+  color: #014286;
+  /* position: relative;
+
+  top: 1rem; */
+
+
+}
+
+/* .divSearch{
+  position: absolute;
+  top: -1rem;
+  font-size: 1rem;
+} */
+
+.badge{
+  background-color:gray;
+  color: white;
+  border-radius: 100%;
+  padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+  font-size: 0.7rem;
+  margin-left: 0.2rem;
+}
+
+  .caja li a:hover{
+    background-color: #ffffff;    
+  }
+
+  /* .menu2{
+    background-color: white;
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+  } */
+  .buscar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    left: 50%;
+    top: 7%;
+    transform: translate(-50%,-50%);
+    background-color: #ffffff;
+    padding: 12px;
+    height: 12px;
+    border-radius: 40px;
+    margin-top: 2rem;
+  }
+  .buscar_texto{
+    border: none;
+    background: none;
+    outline: none;
+  color: #0d1441;
+  font-size: 14px;
+  float: left;
+  line-height: 60px;
+  transition: 0.3s;
+  width: 0;
+  }
+
+  .buscar a{
+position: absolute; 
+right: 0.6rem;
+top: 0.2rem;
+ }
+
+/* Dropdown */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  position: absolute;
+  display: none;
+  right: 0;
+  min-width: 12rem;
+  height: 20rem;
+  padding: 1rem;
+  /* z-index: 50; */
+  background-color: #73a3d3;
+  margin: 0;
+  margin-top: 0.4rem;
+  border-radius: 0.2rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  width: 1rem;
+  height: 15rem;
+  box-shadow: 0px 3px 8px -2px rgb(0 0 0 / 6%), 0px 1px 2px 0px rgb(0 0 0 / 4%), 0px 1px 3px 0px rgb(0 0 0 / 2%);
+  /* overflow-y: scroll ; */
+
+
+  
+
+}
+.dropdown:hover .dropdown-content li{
+  /* margin: 0.3rem; */
+  position: relative;
+  bottom: 0.7rem;
+
+
+}
+
+.dropdown-content a{
+  color: #f0f0f0;
+  
+}
+.dropdown-content li{
+  background-color: #73a3d3;
+}
+/* .dropdown:hover .dropdown-content ul{
+  margin-top: 5rem;
+} */
+
+
+.dropdown{
+  margin-left: 1rem;
+}
+.userName{
+  color: gray;
+
+}
+
+.menu-button{
+  position: relative;
+  top: -0.3rem;
+margin-left: 1rem;
+}
+
+/*=?=====RESPONSIVE=========*/
+@media screen and (max-width:480px){
+  header {
+    /* display: none; */
+    background-color: #f7f7f7;
+  }
+    .buscar > .buscar_texto{
+        width: 190px;
+    }
+    .buscar{
+      left: 60%;
+
+    }
+    .casaforte{
+      width: 7rem;
+      margin-top: 2rem;
+    }
+    /* .carrito{
+      margin-left: 3rem;
+
+    } */
+
+    .NavBar-content ul{
+      display: none;
+    }
+    .menu1{
+      height: 5rem;
+      padding-left: 1rem;    
+    }
+
+    .menu-button{
+      background-color: transparent;
+      border-style: none;
+    }
+    .carrito-none{
+      display: none;
+    }
+    .carrito{
+      margin-left: 2rem;
+    }
+
+    .dropdown-content{
+        min-width: 8rem;
+    }
+
+  }
+  @media screen and (min-width:480px) and (max-width:768px){
+    header {
+      /* display: none; */
+      background-color: #f7f7f7;
+    }
+
+    .casaforte{
+      width: 7rem;
+      margin-top: 2rem;
+    }
+
+
+    .NavBar-content ul{
+      display: none;
+    }
+
+    .menu1{
+      height: 10vh;
+    }
+
+
+
+  .menu-button{
+    background-color: transparent;
+    border-style: none;
+  }
+
+  .carrito-none-menu{
+    display: none;
+  }
+
+  .carrito{
+    margin-left:  2rem;
+  }
+
+
+
+
+   
+
+  }
+  @media screen and (min-width:768px) and (max-width:1024px){
+
+    .casaforte{
+      width: 10rem;
+      margin-top: 2rem;
+    }
+
+    /* .menu-button{
+      display: none;
+      border: none;
+    } */
+
+    nav ul li a {
+      font-size: 16px;
+    }
+
+    nav ul{
+    margin-left: 20%;
+
+    }
+
+    .carrito-none-menu{
+      display: none;
+    }
+
+
+  }
+
+  @media screen and (min-width:1024px) and (max-width:1366px){
+
+ 
+
+    .casaforte{
+      width: 10rem;
+      margin-top: 2rem;
+    }
+
+
+    .menu-button{
+      display: none;
+      border: none;
+    }
+    .carrito-none-menu{
+      display: none;
+    }
+
+
+  }
+
+  @media screen and (min-width:1367px){
+
+
+
+    .menu-button{
+      display: none;
+      border: none;
+    }
+
+    .carrito{
+      margin-top: 4rem;
+    }
+
+    .carrito-none-menu{
+      display: none;
+    }
+    
+ 
+    
+  }
+  
+ 
+
+
+
+/* ul[class="A1"]{ 
+  margin-left: 700px;
+  width: 500px;
+} */
+

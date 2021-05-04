@@ -1,0 +1,311 @@
+
+.container-productScreen{
+/* padding-top: 3rem; */
+  padding-bottom: 9rem;
+}
+
+.block-sidebar{
+
+}
+
+
+.float-right {
+    float: right!important;
+}
+
+.productScreen-card a p {
+    color: #555;
+    padding: 0.5rem;
+
+}
+
+.productScreen-image{
+    padding: 0.5rem;
+    /* margin-top: 3rem; */
+}
+.info{
+  margin-top: 3rem;
+
+}
+
+.productScreens-row{
+    /* display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row; */
+    align-items: center;
+    /* height: 100%; */
+  }
+
+
+.productScreen-row.center{
+  justify-content: center;
+
+}
+
+.row.top{
+    align-items: flex-start;
+  }
+
+
+
+.productScreen-card{
+    background-color:  #f8f8f8;
+    border-radius: 0rem;
+    /* width: 15rem; */
+    /* margin: 2rem 1rem; */
+    font-size: 0.9rem;
+    /* height: 100vh; */
+    margin-top: 6rem;
+
+  }
+
+.productScreens-list-item{
+
+}
+
+
+
+  .productScreen-card-body{
+      width: 20rem;
+      margin-left: 3rem;
+   
+  
+  }
+
+  .info{
+      border-bottom: #dad5d5 solid 0.1rem;
+      /* text-align: center; */
+      padding: 1rem 0;
+      width: 25rem;
+
+  }
+
+  .info h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+
+  }
+  .shadow-box-productos{
+  
+    /* color: rgba(0, 0, 0, 0.87); */
+    box-shadow: 0px 3px 8px -2px rgb(0 0 0 / 6%), 0px 1px 2px 0px rgb(0 0 0 / 4%), 0px 1px 3px 0px rgb(0 0 0 / 2%);
+    /* background-color: #e0e0e0; */
+  }
+
+
+
+  .codigo{
+      padding: 1rem 0rem;
+  }
+
+
+  img.small{
+    max-width: 5rem;
+    width: 100%;
+  }
+img.imgnormal{
+    /* max-width: 10rem; */
+    width: 10rem;
+    height: 10rem;
+}
+.productScreen-image{
+    width: 30rem; 
+    height: 30rem;
+    /* width: 100%; */
+    border: solid #ebe7e7 0.1rem;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+   
+
+    
+}
+
+ul, li{
+  list-style-type: none; 
+}
+
+.productScreen-image a img {
+    width: 70%;
+    height: 70%;
+    margin-top: 10%;
+
+}
+
+
+.productScreen-card {
+    position: relative;
+    padding: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #fff;
+    justify-content: center;
+}
+
+
+/* ._id{
+  margin-top: 1rem;
+} */
+
+.codigo,  .precio {
+  color: #555;
+  font-size: 1.3rem;
+}
+.precio{
+  font-size: 1rem;
+}
+
+
+
+/* carrusel */
+
+.carrusel-container{
+  width: 100%;
+  margin: 0 20px;
+
+}
+
+.carrusel-container h2{
+  font-size: 20px;
+  line-height: 38px;
+  padding-bottom: 20px;
+  opacity: 9;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: start;
+
+}
+
+/* imagen */
+
+.slick-list{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  height: 300px;
+  padding: 10px 0px;
+  margin: 0px auto;
+  max-width: 90vw;
+  overflow: hidden;
+}
+
+.slick-stack{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  transition: .5s ease-in-out;
+
+}
+
+.slick{
+  position: relative;
+  width: 240px;
+  padding: 0 18px;
+  float: left;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+}
+
+.slick a img{
+  padding: 10%;
+  object-fit: cover;
+  height: 80%;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  transition: .3s ease-in-out;
+}
+
+.slick a img:hover{
+  opacity: .85;
+}
+
+
+
+
+
+
+.details {
+  display: flex;
+  justify-content: flex-start;
+  /* width: ; */
+
+}
+
+.details p{
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slick-arrow{
+  border-radius: 38px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 8;
+  width: 48px;
+  height: 48px;
+}
+
+.slick-prev{
+  left: 0;
+}
+
+.slick-next{
+  right: 0;
+}
+
+@media (max-width: 640px) {
+
+  .productScreen-card{
+    margin-bottom: 4rem;
+  }
+
+
+.productScreen-card-body{
+  margin-left: 0rem;
+  text-align: center;
+
+
+}
+
+ .info h1{
+  font-size: 1.2rem;
+
+}
+.info{
+  width: 20rem;
+}
+
+.productScreen-image a img {
+  width: 70%;
+  height: 70%;
+  margin-top: 10%;
+
+}
+
+.productScreen-image{
+  width: 20rem; 
+  height: 20rem;
+  /* width: 100%; */
+  border: solid #ebe7e7 0.1rem;
+  align-items: center;
+  /* justify-content: center; */
+  text-align: center;
+ 
+
+  
+}
+}

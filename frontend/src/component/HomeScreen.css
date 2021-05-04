@@ -1,0 +1,569 @@
+.HomeScreen-container{
+    text-align: center;
+}
+
+.botton {
+    border: none;
+    color: #011c39;
+    font-size: 13px;
+    background: #ffe365;
+    padding: 1.5em;
+    border-radius: 0;
+    cursor: pointer;
+    text-align: center;
+}
+.button-ver-productos{
+    text-align: center;
+    width: 100vw;
+    margin-bottom: 3rem;
+}
+
+.botton:hover{
+    background: #ffa66b;
+    color: #ffffff;
+}
+p{
+    text-align: center;
+    font-family: montserrat;
+    margin-top: 10px;
+}
+
+.link{
+    text-decoration: none;
+    color:  #ffa66b;
+    font-weight: 600;
+}
+
+.link:hover{
+    color: #ffa66b;
+}
+
+.contenedore{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.contenedore figure {
+    position: relative;
+    height: 400px;
+    width: 480px;
+    overflow: hidden;
+    
+}
+.contenedore figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out; 
+}
+.contenedore figure .capar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align:center;
+}
+.contenedore figure:hover > .capar{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedore figure:hover > img{
+    transform: scale(1.05);
+}
+
+.contenedore figure .capar h3{
+    color: #ffa66b;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top:170px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; 
+    font-size: 25px;
+}
+
+.contenedore figure .capar a{
+    padding: 12px 24px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid #ffa66b;
+    color: #ffa66b;
+    transition: background-color 300ms ;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 3px;
+
+}
+
+.contenedore figure .capar a:hover{
+    background-color:#ffa66b;
+    color: #011c39;
+    
+}
+
+.contenedore figure a{
+    text-decoration: none;
+}
+
+.marca img{
+    /* max-width: 10rem; */
+    width: 10rem ;
+    height: 10rem ;
+}
+
+
+.qontiner{
+    background-color: #011c39;
+    /* height: 50vh; */
+    width: 100vw;
+    display: flex;
+}
+
+.central{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem 3rem 3rem 2rem;
+}
+.marca{
+    margin: 4px;
+    /* margin-left: 150px; */
+    /* width: 30%; */
+    border-radius: none;
+    list-style: none;
+    -webkit-transform: scale(1,1);
+    -webkit-transform-timing-function: ease-out ;
+    -webkit-transition-duration: 300ms ;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out ;
+    -moz-transition-duration: 300ms;
+}
+
+.marca:hover{
+    -webkit-transform: scale(1.02,1.02);
+    -webkit-transform-timing-function: ease-out ;
+    -webkit-transition-duration: 200ms ;
+    -moz-transform: scale(1.02,1.02);
+    -moz-transition-timing-function: ease-out ;
+    -moz-transition-duration: 200ms;
+}
+
+
+
+.celular{
+    background-color: #ffffff;
+    /* height: 40%; */
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    margin-bottom: 4%;
+}
+
+.celular-img-content{
+    /* width: 50%; */
+    /* margin-top: 50px;
+    margin-left: 550px; */
+    text-align: center;
+    width: 50%;
+
+}
+
+.celular-img{
+    width: 40%;
+    padding-top: 7%;
+
+}
+
+.ul-img{
+    width: 30%;
+
+}
+.descaga-app {
+    width: 50%;
+    text-align: center;
+    padding-top: 7%;
+
+}
+
+.descaga-app h2 h4{
+    padding: 6rem;
+    margin-bottom: 3rem;
+}
+
+.celular h4{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* margin-top: -320px; */
+    font-size: 30px;
+    color: #000000e8;
+    /* margin-left: 950px; */
+}
+
+.celular h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* margin-top: 1rem; */
+    font-size: 18px;
+    color: #818a97;
+    /* margin-left: 950px; */
+}
+
+
+.kontainer{
+    background-color: #d2e8ff;
+    height: 40vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.kontainer i{
+    align-content: center;
+    /* margin-left: 58rem; */
+    color: #31371a;
+    margin-top: 60px;
+    font-size: 50px;
+
+}
+
+.negocio{
+    font-family: montserrat;
+    margin-top: 30px;
+    font-size: 35px;
+    color: #1a2537;
+}
+
+.somos{
+    font-family: montserrat;
+    color: #818a97;
+}
+
+/* inicio pausa
+.fas{
+    margin-left: 59rem;
+    color: #1a2537;
+    margin-top: 250px;
+    font-size: 50px;
+}
+
+fin pausa */
+
+.kontainer1{
+    background-color: #f0f0f0;
+    /* height: 100vh; */
+    width: 100vw;
+    padding-bottom: 10%;
+    z-index: -1;
+}
+
+.kontainer1 i{
+    align-content: center;
+    margin: auto ;
+    color: #1a2537;
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.subtitulo{
+    font-family: montserrat;
+    margin-top: 1rem;
+    font-size: 16px;
+    color: #546c92;
+}
+
+
+
+
+.parrafo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 1rem;
+    font-size: 14px;
+    color: #818a97;
+}
+
+
+
+
+
+
+
+.kontainer2{
+    background-color: #d2e8ff;
+    height: 2vh;
+    width: 100vw;
+    display: flex;
+}
+
+
+
+.contenedore{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+
+
+/*=?=====RESPONSIVE=========*/
+@media screen and (max-width:480px){
+    .qontiner{
+        display: none;
+    }
+
+
+
+    .contenedore{
+        margin-top: 2rem;
+        height: 20vh;
+    }
+
+
+  
+    .contenedore figure {
+        height: 100px;
+        width: 120px;
+        
+    }
+    .contenedore figure .capar{
+        position: absolute;
+        top: 0;
+        width: 100%;
+  
+    }
+  
+  
+    
+    .contenedore figure .capar h3{
+        font-weight: 400;
+        margin-bottom: 8px;
+        margin-top:8px;
+        font-size: 15px;
+    }
+    
+    .contenedore figure .capar a{
+        padding: 8px 18px;
+        font-size: 10px;
+
+  
+  }
+
+  .kontainer{
+      display: none;
+  }
+
+  .celular{
+      display: none;
+
+
+}
+
+
+
+.botton{
+    width: 8rem;
+    height: 2rem;
+    font-size: 7px;
+    margin-top: 2rem;
+}
+
+  }
+
+  @media screen and (min-width:480px) and (max-width:768px){
+    .marca img{
+        /* max-width: 10rem; */
+        width: 4rem ;
+        height: 4rem ;
+    }
+
+    .contenedore figure {
+        height: 140px;
+        width: 150px;
+        
+    }
+    
+    .contenedore figure .capar{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        
+    }
+    
+    
+    
+    .contenedore figure .capar h3{
+        font-weight: 400;
+        margin-bottom: 10px;
+        margin-top:10px;
+        font-size: 15px;
+    }
+    
+    .contenedore figure .capar a{
+        padding: 8px 18px;
+        font-size: 10px;
+        
+    }
+
+    .contenedore{
+        height: 40vh;
+        width: 100vw;
+
+        
+    }
+    .kontainer{
+        display: none;
+    }
+  
+    .celular{
+        display: none;
+  
+  
+  }
+
+  .slide{
+      height: 5rem;
+  }
+
+
+}
+
+  @media screen and (min-width:768px) and (max-width:1024px){
+
+    .marca img{
+        /* max-width: 10rem; */
+        width: 5rem ;
+        height: 5rem ;
+    }
+
+    .contenedore figure {
+        height: 250px;
+        width: 280px;
+        
+    }
+    
+    .contenedore figure .capar{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        
+    }
+    
+    
+    
+    .contenedore figure .capar h3{
+        font-weight: 400;
+        margin-bottom: 20px;
+        margin-top:100px;
+        font-size: 15px;
+    }
+    
+    .contenedore figure .capar a{
+        padding: 8px 18px;
+        font-size: 10px;
+        
+        
+        
+    }
+    .slidero{
+        height: 5rem;
+    }
+
+
+}
+
+  
+  @media screen and (min-width:1024px) and (max-width:1367px){
+
+    .marca img{
+        /* max-width: 10rem; */
+        width: 10rem ;
+        height: 10rem ;
+    }
+    .contenedore figure {
+        height: 80%;
+        width: 30%;
+        
+    }
+    
+    .contenedore figure .capar{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        
+    }
+    
+    
+    
+    .contenedore figure .capar h3{
+        font-weight: 400;
+        margin-bottom: 10px;
+        margin-top:140px;
+        font-size: 15px;
+    }
+    
+    .contenedore figure .capar a{
+        padding: 8px 18px;
+        font-size: 10px;
+        
+        
+        
+    }
+
+
+    
+    
+  
+  }
+  
+  @media screen and (min-width:1367px){
+
+    .marca img{
+        /* max-width: 10rem; */
+        width: 14rem ;
+        height: 14rem ;
+    }
+  
+    .contenedore figure {
+        height: 80%;
+        width: 30%;
+        
+    }
+    
+    .contenedore figure .capar{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        
+    }
+    
+    
+    
+    .contenedore figure .capar h3{
+        font-weight: 400;
+        margin-bottom: 10px;
+        margin-top:150px;
+        font-size: 15px;
+    }
+    
+    .contenedore figure .capar a{
+        padding: 8px 18px;
+        font-size: 10px;
+        
+        
+        
+    }
+
+    
+  }
+  

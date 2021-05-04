@@ -1,0 +1,79 @@
+
+.container-marcas{
+    background-color: #f5f7fc;
+    /* height: 100vh; */
+    width: 100vw;
+    display: flex;
+}
+
+.marca{
+    /* margin: 1rem; */
+    /* margin-left: 150px; */
+    /* width: 30%; */
+    border-radius: none;
+    /* margin-top: 30px; */
+    list-style: none;
+    -webkit-transform: scale(1,1);
+    -webkit-transform-timing-function: ease-out ;
+    -webkit-transition-duration: 300ms ;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out ;
+    -moz-transition-duration: 300ms;
+}
+
+.marca:hover{
+    -webkit-transform: scale(1.02,1.02);
+    -webkit-transform-timing-function: ease-out ;
+    -webkit-transition-duration: 200ms ;
+    -moz-transform: scale(1.02,1.02);
+    -moz-transition-timing-function: ease-out ;
+    -moz-transition-duration: 200ms;
+}
+
+.row-marcas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: wrap; */
+    /* justify-content: space-around; */
+    margin: 5rem 0.0rem;
+    margin-left: 5rem;
+    text-align: center;
+    width: 100vw;
+    
+
+
+}
+.row-marcas a{
+    margin: 0;
+    padding: 0;
+}
+
+img.imgnormalMarca{
+    /* max-width: 10rem; */
+    width: 17rem;
+    height: 17rem;
+}
+img{
+    width: 100%;
+}
+
+.marcas-list-item{
+    /* display: flex; */
+    /* width: 17rem;
+    height: 25rem; */
+    margin: 5rem 5rem;
+}
+
+.card-marcas{
+    border: 0.1rem #c0c0c0 solid;
+    /* border-radius: 1rem; */
+   
+}
+
+.con{
+    background-color: #011c39;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+}

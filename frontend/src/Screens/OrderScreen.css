@@ -1,0 +1,46 @@
+.payPalBotton{
+    z-index: -1;
+}
+
+.orderScreen-container{
+    padding-top: 3%;
+}
+
+
+@media screen and (max-width:640px){
+    h4{
+        font-size: 14px;
+    }
+    div{
+        font-size: 14px;
+
+    }
+    .orderScreen-container{
+
+        padding-top: 17%;
+    }
+
+}
+
+@media screen and (min-width:640px) and (max-width:768px){
+    .orderScreen-container{
+
+
+        padding-top: 17%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+
+    p{
+        font-size: 16px;
+    }
+    .orderScreen-container{
+        padding-top: 17%;
+    }
+}
+@media screen and (min-width:1024px) and (max-width: 1336px){
+    .orderScreen-container{
+        padding-top: 13%;
+    }
+}

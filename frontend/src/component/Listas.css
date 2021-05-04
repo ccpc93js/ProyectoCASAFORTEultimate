@@ -1,0 +1,27 @@
+.categoriasDrawerUp{
+display: none;
+transition: 6s;
+}
+
+.listas li{
+    color: rgb(78, 76, 76);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: g;
+}
+
+
+
+
+.categoriasDrawerDrop li a{
+    color: rgb(78, 76, 76);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px){
+
+    .listas{
+display: none;    }
+}

@@ -1,0 +1,1700 @@
+{
+
+  "categorias":[
+    {  "id":"1",
+      "subcategoria":["aglomerados","discos abrasivos","lijas","sas","rusticas","aja"],
+      "marca":["ABRACOL","DEWALT"],
+      "nombre":"abrasivos"},
+    {  "id":"2",
+      "subcategoria":["accesorios de perforacion","accesorios de corte de sierra","brocas","discos abrasivos"],
+      "marca":["ABRACOL","DEWALT"],
+      "nombre":"accesorios-para-herramientas"}, 
+    {  "id":"3",
+      "subcategoria":["hilos","amarres plasticos","brocas","cables de acero"],
+      "marca":[],
+      "nombre":"amarres"}, 
+    {  "id":"4",
+      "subcategoria":["cerrojos","herramientas para muebles","escudos y manijas","candados"],
+      "marca":["FORTE","SAFE"],
+      "nombre":"cerrajeria"},
+    {  "id":"5",
+      "subcategoria":["mallas y angejos","pegantes para la construccion","plasticos y telas"],
+      "marca":["FORTE","CORONA"],
+      "nombre":"construccion"},
+    {  "id":"6",
+      "subcategoria":["alambres y vables","breakes","extensiones","iluminacion"],
+      "marca":["CILES","DEWALT"],
+      "nombre":"electricos"},
+    {  "id":"7",
+      "subcategoria":["clavos y puntillas","fijaciones para construccion","tornillos","varillas"],
+      "marca":["FORTE","GOLD"],
+      "nombre":"fijaciones"},
+    {  "id":"8",
+      "subcategoria":["accesorios y repuestos de plomeria","griferia lavamanos","brocas","lavamanos"],
+      "marca":["GRIVAL","FORTE"],
+      "nombre":"griferia y plomeria"},
+    {  "id":"9",
+      "subcategoria":["cintas","pegantes para la construccion","siliconas y selladores"],
+      "marca":["ABRACOL","PEGADIT"],
+      "nombre":"pegantes y adhesivos"},
+    {  "id":"10",
+      "subcategoria":["aerosoles","esmaltes","herramientas para pintar","pinturas para madera"],
+      "marca":["FORTE","PINT"],
+      "nombre":"pintura"}
+        
+  ],
+  
+  "subcategorias":[
+    {
+      "id":"1",
+      "categoria":"abrasivos",
+      "nombre":"lijas"
+      
+      
+      
+
+      
+    },
+    {
+      "id":"2",
+      "categoria":"accesorios-para-herramientas",
+      "nombre":"accesorios de corte de sierra"
+      
+
+      
+    },
+    {
+      "id":"3",
+      "categoria":"abrasivos",
+      "nombre":"aglomerados"
+      
+      
+    },
+    {
+      "id":"4",
+      "categoria":"accesorios-para-herramientas",
+      "nombre":"accesorios de perforacion industrial"
+      
+
+      
+    },
+    {
+      "id":"5",
+      "categoria":"abrasivos",
+      "nombre":"sas"
+      
+      
+    },
+    {
+      "id":"6",
+      "categoria":"accesorios-para-herramientas",
+      "nombre":"brocas"
+      
+
+      
+    },
+    {
+      "id":"7",
+      "categoria":"abrasivos",
+      "nombre":"rusticas"
+      
+      
+    },
+    {
+      "id":"8",
+      "categoria":"accesorios-para-herramientas",
+      "nombre":"cargadores y baterias"
+      
+
+      
+    },
+    {
+      "id":"9",
+      "categoria":"abrasivos",
+      "nombre":"aja"
+      
+      
+    },
+    {
+      "id":"10",
+      "categoria":"accesorios-para-herramientas",
+      "nombre":"discos de metal"
+      
+
+      
+    }
+  ],
+
+  "marcas":[
+    {"id":"1",
+      "categoria":["abrasivos","accesorios-para-herramientas","pegantes y adhesivos"],
+      "subcategoria":["aglomerados","discos abrasivos","lijas"],
+      "img":"https://cdn.laferreteria.online/thumb/phpThumb.php?src=/marcas/Abracol.png&w=350&h=200&zc=1&bg=ffffff&q=80",
+      "nombre":"ABRACOL"
+    },
+    {"id":"2",
+      "categoria":["abrasivos","pegantes y adhesivos"],
+      "subcategoria":["breakers","cintas","cajas y tableros"],
+      "img":"https://cdn.laferreteria.online/thumb/phpThumb.php?src=/marcas/CILES.png&w=350&h=200&zc=1&bg=ffffff&q=80",
+      "nombre":"CILES"
+    },
+    {"id":"3",
+      "categoria":["griferia y plomeria"],
+      "subcategoria":["bombas electricas","duchas","lavamanos"],
+      "img":"https://cdn.laferreteria.online/thumb/phpThumb.php?src=/marcas/grival_new.png&w=350&h=200&zc=1&bg=ffffff&q=80",
+      "nombre":"GRIVAL"
+    },
+    {"id":"4",
+      "categoria":["accesorios-para-herramientas"],
+      "subcategoria":["herramientas de acabado","limas"],
+      "img":"https://cdn.laferreteria.online/thumb/phpThumb.php?src=/marcas/NICHOLSON.png&w=350&h=200&zc=1&bg=ffffff&q=80",
+      "nombre":"NICHOLSON"
+    },
+    {"id":"5",
+      "categoria":["abrasivos"],
+      "subcategoria":["aglomerados","discos abrasivos","lijas"],
+      "img":"https://pbs.twimg.com/profile_images/1468380274/logo_rio2.jpg",
+      "nombre":"RIOPLAST"
+    },
+    {"id":"6",
+      "categoria":["abrasivos"],
+      "subcategoria":["aglomerados","discos abrasivos","lijas"],
+      "img":"https://stwcolombia.com/wp-content/uploads/2017/02/sintesolda.jpg",
+      "nombre":"SINTESOLDA"
+    },
+    {"id":"7",
+      "categoria":["abrasivos"],
+      "subcategoria":["aglomerados","discos abrasivos","lijas"],
+      "img":"https://mma.prnewswire.com/media/143145/goya_foods_logo.jpg?p=facebook",
+      "nombre":"GOYA"
+    },
+    {"id":"8",
+      "categoria":["abrasivos","accesorios-para-herramientas"],
+      "subcategoria":["accesorios de perforacion","brocas","cargadores y baterias"],
+      "img":"https://www.osblack.co/wp-content/uploads/2019/09/noticia3.jpg",
+      "nombre":"OSBLACK"
+    },
+    {"id":"9",
+      "categoria":["abrasivos","accesorios-para-herramientas","electricos"],
+      "subcategoria":["accesorios de perforacion","brocas","cargadores y baterias"],
+      "img":"https://cdn.laferreteria.online/thumb/phpThumb.php?src=/marcas/Dewalt.png&w=350&h=200&zc=1&bg=ffffff&q=80",
+      "nombre":"DEWALT"
+    },
+    {"id":"10",
+      "categoria":["pegantes y adhesivos"],
+      "subcategoria":["pegantes para la construccion"],
+      "img":"https://cdn.laferreteria.online/thumb/phpThumb.php?src=/marcas/PEGADIT.png&w=350&h=200&zc=1&bg=ffffff&q=80",
+      "nombre":"PEGADIT"
+    },
+    {"id":"11",
+      "categoria":["abrasivos"],
+      "subcategoria":["aglomerados"],
+      "img":"https://pbs.twimg.com/profile_images/2757253766/af98acfdba355a4c5e3462645caf3e77.jpeg",
+      "nombre":"ALUMCOR"
+    },
+    {"id":"12",
+      "categoria":["accesorios-para-herramientas"],
+      "subcategoria":["accesorios de perforacion"],
+      "img":"https://http2.mlstatic.com/soldadura-estano-08-mm-uyustools-D_Q_NP_625402-MCO31561707702_072019-F.webp",
+      "nombre":"UYUSTOOLS"
+    },
+    {"id":"13",
+      "categoria":["electricos","construccion"],
+      "subcategoria":["electronicos"],
+      "img":"https://i.pinimg.com/originals/f4/08/ed/f408edc7cd2df8c0e39811e93224fd5e.jpg",
+      "nombre":"SEGURITY"
+    }
+    
+  ],
+
+  
+  "productos":[
+
+    {"categoriassss":"abrasivosss"},
+    {
+      "_id": "producto1",
+      "imagen":{
+          "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/413.jpg&w=350&h=350&far=1&bg=ffffff",
+          "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/414-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+      },
+      "marca": "OMEGA",
+      "categoria":"abrasivos",
+      "subcategoria":"lijas",
+      "info": "lija seca profesional roja grano 220 9 x 11 rphro0220000",
+      "precio": 50000,
+      "countInStock": 10,
+      "unidad":"caja x 12"
+
+  },
+  {
+    "_id": "producto2",
+    "imagen":{
+        "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/413.jpg&w=350&h=350&far=1&bg=ffffff",
+        "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/414-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+    },
+    "marca": "OMEGA",
+    "categoria":"abrasivos",
+    "subcategoria":"lijas",
+    "info": "lija seca profesional roja grano 220 9 x 11 rphro0220000",
+    "precio": 50000,
+    "countInStock": 10,
+    "unidad":"1"
+
+
+},
+{
+  "_id": "producto3",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/413.jpg&w=350&h=350&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/414-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "OMEGA",
+  "categoria":"abrasivos",
+  "subcategoria":"lijas",
+  "info": "lija seca profesional roja grano 220 9 x 11 rphro0220000",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 6"
+
+
+},
+{
+  "_id": "producto4",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/3238.jpg&w=350&h=350&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/3238-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "OMEGA",
+  "categoria":"abrasivos",
+  "subcategoria":"aglomerados",
+  "info": "lija de agua uso general grano 360 9 x 11 rphoa0360000",
+  "precio": 20000,
+  "countInStock": 10,
+  "unidad":"1"
+
+
+},
+{
+  "_id": "producto5",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/3238.jpg&w=350&h=350&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/3238-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99g"
+
+  },
+  "marca": "OMEGA",
+  "categoria":"abrasivos",
+  "subcategoria":"aglomerados",
+  "info": "lija de agua uso general grano 360 9 x 11 rphoa0360000",
+  "precio": 30000,
+  "countInStock": 10,
+  "unidad":"caja x 24"
+
+
+},
+{
+  "_id": "producto6",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/3238.jpg&w=350&h=350&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/3238-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "OMEGA",
+  "categoria":"abrasivos",
+  "subcategoria":"aglomerados",
+  "info": "lija de agua uso general grano 360 9 x 11 rphoa0360000",
+  "precio": 40000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto7",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/9308.jpg&w=350&h=350&far=1&bg=ffffff",
+      "img2":"../imagenes/2.jpg"
+
+  },
+  "marca": "ABRACOL",
+  "categoria":"abrasivos",
+  "subcategoria":"rusticas",
+  "info": "lija seca profesional roja grano 80 9 x 11 rphro0080000",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto8",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/9308.jpg&w=350&h=350&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/9308-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "ABRACOL",
+  "categoria":"abrasivos",
+  "subcategoria":"rusticas",
+  "info": "lija seca profesional roja grano 80 9 x 11 rphro0080000e",
+  "tallasDisponibles": ["M","L","XL","XXL"],
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto9",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/9308.jpg&w=350&h=350&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/9308-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "ABRACOL",
+  "categoria":"abrasivos",
+  "subcategoria":"rusticas",
+  "info": "lija seca profesional roja grano 80 9 x 11 rphro0080000",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+
+
+{"categoriasss":"accesorios de herramientasss"},
+
+
+{
+  "_id": "producto10",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/245.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/245-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "subcategoria":"accesorios de perforacion industrial",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 24 Dientes X 5/8 15130LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto11",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/247.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/247-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "subcategoria":"accesorios de perforacion industrial",
+  "info": "Disco de Sierra para Madera Circular 8.1/4 X 24 Dientes X 30mm 15180",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 10"
+
+
+},
+{
+  "_id": "producto12",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/250.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/250-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "subcategoria":"accesorios de perforacion industrial",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 40 Dientes X 5/8 15230LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 20"
+
+
+},
+{
+  "_id": "producto13",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/327.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/327.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Espada Para Madera 1 (25 mm) X 6 (150 mm) IW14009",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 6"
+
+
+},
+{
+  "_id": "producto14",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/349.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/349.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Berbiqui Para Madera 1 (25 mm) X 4.7/8 (124mm) X 9 (230mm) IW11",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 6"
+
+
+},
+{
+  "_id": "producto15",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2296.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2296.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca de Acero Rapido HSS de 13/64 (5.2 mm) IW1117",
+  "tallasDisponibles": ["M","L","XL","XXL"],
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 500"
+
+
+},
+{
+  "_id": "producto16",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2283.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2283-3.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Para Concreto 5/16 (8 mm) X 6 (150 mm) IW9053",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto17",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2019.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2019-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "GRIVAL",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Punta Phillips #3 X 1/4 X 1.15/16 93011",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 80"
+
+
+},
+
+{
+  "_id": "producto18",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2026.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2026-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "GRiVAL",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Adaptador de Puntas Magnetico Hexagonal 1/4 X 2.1/4 93712",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 60"
+
+
+
+},
+{
+  "_id": "producto19",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1960.jpg&w=350&h=350&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1960-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"amarres",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 24 Dientes X 5/8 15130LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto20",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1960.jpg&w=350&h=350&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1960-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"amarres",
+  "info": "Disco de Sierra para Madera Circular 8.1/4 X 24 Dientes X 30mm 15180",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 10"
+
+
+},
+{
+  "_id": "producto21",
+  "imagen":{
+    "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1960.jpg&w=350&h=350&far=1&bg=ffffff",
+    "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1960-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+},
+  "marca": "IRWIN",
+  "categoria":"amarres",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 40 Dientes X 5/8 15230LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 20"
+
+
+},
+{
+  "_id": "producto22",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1965.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1965-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "CILES",
+  "categoria":"amarres",
+  "info": "Broca Espada Para Madera 1 (25 mm) X 6 (150 mm) IW14009",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 6"
+
+
+},
+{
+  "_id": "producto23",
+  "imagen":{
+    "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1965.jpg&w=990&h=1260&far=1&bg=ffffff",
+    "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1965-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+},
+  "marca": "CILES",
+  "categoria":"amarres",
+  "info": "Broca Berbiqui Para Madera 1 (25 mm) X 4.7/8 (124mm) X 9 (230mm) IW11",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 6"
+
+
+},
+{
+  "_id": "producto24",
+  "imagen":{
+    "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1965.jpg&w=990&h=1260&far=1&bg=ffffff",
+    "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1965-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+},
+  "marca": "CILES",
+  "categoria":"amarres",
+  "info": "Broca de Acero Rapido HSS de 13/64 (5.2 mm) IW1117",
+  "tallasDisponibles": ["M","L","XL","XXL"],
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 500"
+
+
+},
+{
+  "_id": "producto25",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1966.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1966-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "CILES",
+  "categoria":"amarres",
+  "info": "Broca Para Concreto 5/16 (8 mm) X 6 (150 mm) IW9053",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto26",
+  "imagen":{
+    "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1966.jpg&w=990&h=1260&far=1&bg=ffffff",
+    "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1966-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+},
+  "marca": "GRIVAL",
+  "categoria":"amarres",
+  "info": "Punta Phillips #3 X 1/4 X 1.15/16 93011",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 80"
+
+
+},
+
+{
+  "_id": "producto27",
+  "imagen":{
+    "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1966.jpg&w=990&h=1260&far=1&bg=ffffff",
+    "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/1966-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+},
+  "marca": "GRiVAL",
+  "categoria":"amarres",
+  "info": "Adaptador de Puntas Magnetico Hexagonal 1/4 X 2.1/4 93712",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 60"
+
+
+
+},
+{
+  "_id": "producto28",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/245.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/245-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 24 Dientes X 5/8 15130LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto29",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/247.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/247-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 8.1/4 X 24 Dientes X 30mm 15180",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 10"
+
+
+},
+{
+  "_id": "producto30",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/250.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/250-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 40 Dientes X 5/8 15230LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 20"
+
+
+},
+{
+  "_id": "producto31",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/327.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/327.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Espada Para Madera 1 (25 mm) X 6 (150 mm) IW14009",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 6"
+
+
+},
+{
+  "_id": "producto32",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/349.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/349.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Berbiqui Para Madera 1 (25 mm) X 4.7/8 (124mm) X 9 (230mm) IW11",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 6"
+
+
+},
+{
+  "_id": "producto33",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2296.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2296.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca de Acero Rapido HSS de 13/64 (5.2 mm) IW1117",
+  "tallasDisponibles": ["M","L","XL","XXL"],
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 500"
+
+
+},
+{
+  "_id": "producto34",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2283.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2283-3.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Para Concreto 5/16 (8 mm) X 6 (150 mm) IW9053",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto35",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2019.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2019-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "GRIVAL",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Punta Phillips #3 X 1/4 X 1.15/16 93011",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 80"
+
+
+},
+
+{
+  "_id": "producto36",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2026.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2026-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "GRiVAL",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Adaptador de Puntas Magnetico Hexagonal 1/4 X 2.1/4 93712",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 60"
+
+
+
+},
+{
+  "_id": "producto37",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/245.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/245-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 24 Dientes X 5/8 15130LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto38",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/247.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/247-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 8.1/4 X 24 Dientes X 30mm 15180",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 10"
+
+
+},
+{
+  "_id": "producto39",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/250.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/250-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 40 Dientes X 5/8 15230LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 20"
+
+
+},
+{
+  "_id": "producto40",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/327.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/327.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Espada Para Madera 1 (25 mm) X 6 (150 mm) IW14009",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 6"
+
+
+},
+{
+  "_id": "producto41",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/349.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/349.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Berbiqui Para Madera 1 (25 mm) X 4.7/8 (124mm) X 9 (230mm) IW11",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 6"
+
+
+},
+{
+  "_id": "producto42",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2296.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2296.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca de Acero Rapido HSS de 13/64 (5.2 mm) IW1117",
+  "tallasDisponibles": ["M","L","XL","XXL"],
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 500"
+
+
+},
+{
+  "_id": "producto43",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2283.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2283-3.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Para Concreto 5/16 (8 mm) X 6 (150 mm) IW9053",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto44",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2019.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2019-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "GRIVAL",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Punta Phillips #3 X 1/4 X 1.15/16 93011",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 80"
+
+
+},
+
+{
+  "_id": "producto45",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2026.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2026-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "GRiVAL",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Adaptador de Puntas Magnetico Hexagonal 1/4 X 2.1/4 93712",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 60"
+
+
+
+},
+{
+  "_id": "producto46",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/245.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/245-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 24 Dientes X 5/8 15130LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto47",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/247.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/247-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 8.1/4 X 24 Dientes X 30mm 15180",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 10"
+
+
+},
+{
+  "_id": "producto48",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/250.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/250-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 40 Dientes X 5/8 15230LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 20"
+
+
+},
+{
+  "_id": "producto49",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/327.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/327.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Espada Para Madera 1 (25 mm) X 6 (150 mm) IW14009",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 6"
+
+
+},
+{
+  "_id": "producto50",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/349.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/349.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Berbiqui Para Madera 1 (25 mm) X 4.7/8 (124mm) X 9 (230mm) IW11",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 6"
+
+
+},
+{
+  "_id": "producto51",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2296.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2296.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca de Acero Rapido HSS de 13/64 (5.2 mm) IW1117",
+  "tallasDisponibles": ["M","L","XL","XXL"],
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 500"
+
+
+},
+{
+  "_id": "producto52",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2283.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2283-3.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Para Concreto 5/16 (8 mm) X 6 (150 mm) IW9053",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto53",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2019.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2019-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "GRIVAL",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Punta Phillips #3 X 1/4 X 1.15/16 93011",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 80"
+
+
+},
+
+{
+  "_id": "producto54",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2026.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2026-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "GRiVAL",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Adaptador de Puntas Magnetico Hexagonal 1/4 X 2.1/4 93712",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 60"
+
+
+
+},
+{
+  "_id": "producto55",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/245.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/245-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 24 Dientes X 5/8 15130LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto56",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/247.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/247-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 8.1/4 X 24 Dientes X 30mm 15180",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 10"
+
+
+},
+{
+  "_id": "producto57",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/250.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/250-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 40 Dientes X 5/8 15230LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 20"
+
+
+},
+{
+  "_id": "producto58",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/327.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/327.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Espada Para Madera 1 (25 mm) X 6 (150 mm) IW14009",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 6"
+
+
+},
+{
+  "_id": "producto59",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/349.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/349.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Berbiqui Para Madera 1 (25 mm) X 4.7/8 (124mm) X 9 (230mm) IW11",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 6"
+
+
+},
+{
+  "_id": "producto60",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2296.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2296.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca de Acero Rapido HSS de 13/64 (5.2 mm) IW1117",
+  "tallasDisponibles": ["M","L","XL","XXL"],
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 500"
+
+
+},
+{
+  "_id": "producto61",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2283.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2283-3.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Para Concreto 5/16 (8 mm) X 6 (150 mm) IW9053",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto62",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2019.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2019-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "GRIVAL",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Punta Phillips #3 X 1/4 X 1.15/16 93011",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 80"
+
+
+},
+
+{
+  "_id": "producto63",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2026.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2026-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "GRiVAL",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Adaptador de Puntas Magnetico Hexagonal 1/4 X 2.1/4 93712",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 60"
+
+
+
+},
+{
+  "_id": "producto64",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/245.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/245-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 24 Dientes X 5/8 15130LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto65",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/247.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/247-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 8.1/4 X 24 Dientes X 30mm 15180",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 10"
+
+
+},
+{
+  "_id": "producto66",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/250.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/250-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 40 Dientes X 5/8 15230LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 20"
+
+
+},
+{
+  "_id": "producto67",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/327.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/327.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Espada Para Madera 1 (25 mm) X 6 (150 mm) IW14009",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 6"
+
+
+},
+{
+  "_id": "producto68",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/349.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/349.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Berbiqui Para Madera 1 (25 mm) X 4.7/8 (124mm) X 9 (230mm) IW11",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 6"
+
+
+},
+{
+  "_id": "producto69",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2296.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2296.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca de Acero Rapido HSS de 13/64 (5.2 mm) IW1117",
+  "tallasDisponibles": ["M","L","XL","XXL"],
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 500"
+
+
+},
+{
+  "_id": "producto70",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2283.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2283-3.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Para Concreto 5/16 (8 mm) X 6 (150 mm) IW9053",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto71",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2019.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2019-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "GRIVAL",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Punta Phillips #3 X 1/4 X 1.15/16 93011",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 80"
+
+
+},
+
+{
+  "_id": "producto72",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2026.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2026-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "GRiVAL",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Adaptador de Puntas Magnetico Hexagonal 1/4 X 2.1/4 93712",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 60"
+
+
+
+},
+{
+  "_id": "producto73",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/245.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/245-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 24 Dientes X 5/8 15130LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto74",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/247.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/247-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 8.1/4 X 24 Dientes X 30mm 15180",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 10"
+
+
+},
+{
+  "_id": "producto75",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/250.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/250-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 40 Dientes X 5/8 15230LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 20"
+
+
+},
+{
+  "_id": "producto76",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/327.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/327.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Espada Para Madera 1 (25 mm) X 6 (150 mm) IW14009",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 6"
+
+
+},
+{
+  "_id": "producto77",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/349.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/349.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Berbiqui Para Madera 1 (25 mm) X 4.7/8 (124mm) X 9 (230mm) IW11",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 6"
+
+
+},
+{
+  "_id": "producto78",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2296.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2296.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca de Acero Rapido HSS de 13/64 (5.2 mm) IW1117",
+  "tallasDisponibles": ["M","L","XL","XXL"],
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 500"
+
+
+},
+{
+  "_id": "producto79",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2283.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2283-3.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Para Concreto 5/16 (8 mm) X 6 (150 mm) IW9053",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto80",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2019.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2019-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "GRIVAL",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Punta Phillips #3 X 1/4 X 1.15/16 93011",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 80"
+
+
+},
+
+{
+  "_id": "producto81",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2026.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2026-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "GRiVAL",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Adaptador de Puntas Magnetico Hexagonal 1/4 X 2.1/4 93712",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 60"
+
+
+
+},
+{
+  "_id": "producto82",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/245.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/245-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 24 Dientes X 5/8 15130LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto83",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/247.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/247-2.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 8.1/4 X 24 Dientes X 30mm 15180",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 10"
+
+
+},
+{
+  "_id": "producto84",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/250.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/250-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "IRWIN",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Disco de Sierra para Madera Circular 7.1/4 X 40 Dientes X 5/8 15230LA",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 20"
+
+
+},
+{
+  "_id": "producto85",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/327.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/327.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Espada Para Madera 1 (25 mm) X 6 (150 mm) IW14009",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 6"
+
+
+},
+{
+  "_id": "producto86",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/349.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/349.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Berbiqui Para Madera 1 (25 mm) X 4.7/8 (124mm) X 9 (230mm) IW11",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 6"
+
+
+},
+{
+  "_id": "producto87",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2296.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2296.jpg&w=990&h=1260&far=1&bg=ffffff"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca de Acero Rapido HSS de 13/64 (5.2 mm) IW1117",
+  "tallasDisponibles": ["M","L","XL","XXL"],
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Caja x 500"
+
+
+},
+{
+  "_id": "producto88",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2283.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2283-3.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "CILES",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Broca Para Concreto 5/16 (8 mm) X 6 (150 mm) IW9053",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"caja x 48"
+
+
+},
+{
+  "_id": "producto89",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2019.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2019-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "GRIVAL",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Punta Phillips #3 X 1/4 X 1.15/16 93011",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 80"
+
+
+},
+
+{
+  "_id": "producto90",
+  "imagen":{
+      "img1":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2026.jpg&w=990&h=1260&far=1&bg=ffffff",
+      "img2":"https://cdn.laferreteria.online/thumb_1/phpThumb.php?src=/img/2026-1.jpg&w=330&h=420&far=1&bg=ffffff&q=99"
+
+  },
+  "marca": "GRiVAL",
+  "categoria":"accesorios-para-herramientas",
+  "info": "Adaptador de Puntas Magnetico Hexagonal 1/4 X 2.1/4 93712",
+  "precio": 50000,
+  "countInStock": 10,
+  "unidad":"Embalaje x 60"
+
+
+
+}
+
+  ]
+}
