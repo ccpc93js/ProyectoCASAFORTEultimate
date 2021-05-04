@@ -5,8 +5,7 @@
   "description": "Ecommerce website",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js",
-    "server":"nodemon --watch backend --exec node --experimental-modules backend/server.js",
+    "start":"nodemon --watch backend --exec node --experimental-modules backend/server.js",
     "dev": "npm run start"
   },
   "keywords": [],
