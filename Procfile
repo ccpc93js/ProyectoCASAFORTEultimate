@@ -1,1 +1,1 @@
-web:nodemon --watch backend --exec node --experimental-modules backend/server.js
+web:node backend/server.js

@@ -3,9 +3,10 @@
   "type": "module",
   "version": "1.0.0",
   "description": "Ecommerce website",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js",
+    "start": "node backend/server.js",
+    "server":"nodemon --watch backend --exec node --experimental-modules backend/server.js",
     "dev": "npm run start"
   },
   "keywords": [],
