@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "frontend-install": "npm install --prefix frontend",
-    "start": "node server.js",
+    "start": "node backend/server.js",
     "server":"nodemon --watch backend --exec node --experimental-modules backend/server.js",
     "dev": "npm run start",
     "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
