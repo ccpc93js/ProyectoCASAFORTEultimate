@@ -6,8 +6,8 @@
   "main": "server.js",
   "scripts": {
     "frontend-install": "npm install --prefix frontend",
-    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js",
-    "server": "node backend/server.js",
+    "start": "node --experimental-modules backend/server.js",
+    "server": "nodemon --watch backend --exec node --experimental-modules backend/server.js",
     "dev": "npm run start"
   },
   "keywords": [],
