@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './UserListScreen.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { createUser,  deleteUserInfo, listUsersRegistered } from '../actions/userActions';
-import loadingPage from '../component/LoadingPage';
+import LoadingBox from '../component/LoadingBox';
 import MessageBox from '../component/MessageBox';
 import { USER_CREATE_RESET, USER_DELETE_RESET, USER_DETAILS_RESET } from '../constants/userConstants';
 import { IconButton } from '@material-ui/core';
@@ -82,7 +82,7 @@ export default function UserListRegisteredScreen(props) {
         </button> */}
       </div>
 
-      {loadingDelete && <loadingPage></loadingPage>}
+      {loadingDelete && <LoadingBox/>}
       {errorDelete && <MessageBox variant="danger">{errorDelete}</MessageBox>}
       {successDelete && (
         <MessageBox variant="success">Usuario eliminado satisfactoriamente</MessageBox>
@@ -90,7 +90,7 @@ export default function UserListRegisteredScreen(props) {
         {/* {loadingCreate && <LoadingBox></LoadingBox>}
       {errorCreate && <MessageBox variant="danger">{errorCreate}</MessageBox>}  */}
       {loading ? (
-        <loadingPage></loadingPage>
+        <LoadingBox/>
       ) : error ? (
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (

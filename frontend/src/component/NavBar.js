@@ -27,13 +27,15 @@ export const NavBar = (props) => {
     return (
         <div>
         <nav className="NavBar-content">
+            <div>
+
         <div className="menu1">
             <button className="menu-button">
             <IconButton
                 onClick={props.handleDrawerOpen}
                 className="menu-button"
                 size="small"
-            >
+                >
                 <MenuIcon/>
             </IconButton>
 
@@ -49,11 +51,11 @@ export const NavBar = (props) => {
             <Link to="/cart"><i> <ShoppingCartIcon/></i>
                 {cartItems.length > 0 && (
                     <span className="badge">{cartItems.length}</span>
-                )}
+                    )}
             </Link>
             {
                 userInfo ? (
-                <div className="dropdown ">
+                    <div className="dropdown ">
                     <Link className="userName" to="#">{userInfo.name} <i className=""><ArrowDropDownIcon/></i>{" "}</Link>
                     <ul className="dropdown-content">
                         <li>
@@ -70,17 +72,17 @@ export const NavBar = (props) => {
                 ) : 
                 (
                     <a href="/signin"><i><PersonIcon/></i></a>
-                )
-            }
+                    )
+                }
             {userInfo && userInfo.isAdmin && (
-              <div className="dropdown">
+                <div className="dropdown">
                 <Link to="#admin" className="userName" >
                   Admin <i className=""><ArrowDropDownIcon/></i>
                 </Link>
                 <ul className="dropdown-content">
                   {/* <li>
                     <Link to="/dashboard">Dashboard</Link>
-                  </li> */}
+                </li> */}
                   <li>
                     <Link to="/listaProductos">Productos</Link>
                   </li>
@@ -95,7 +97,7 @@ export const NavBar = (props) => {
                   </li>
                   {/* <li>
                     <Link to="/support">Soporte</Link>
-                  </li> */}
+                </li> */}
                 </ul>
               </div>
             )}
@@ -105,7 +107,7 @@ export const NavBar = (props) => {
 
         </div>
         
-
+        <div className="menu2">
         <ul >
             <li><a href="/nosotros" className="cool-link">Nosotros</a></li>
             <li><a href="/nuevos" className="cool-link">Productos</a>
@@ -171,12 +173,16 @@ export const NavBar = (props) => {
             <li><a href="/contactenos">Cont&aacute;ctanos</a></li>
             <li><a href="/signin">Clientes</a></li>
         </ul>
+        </div>
+
+        
+        </div>
         {/* <div className="buscar">
         <input type="text" className="buscar_texto" placeholder="Buscar"/>
         <a href="#" className="boton">
-            <i className="fas fa-search"></i>
+        <i className="fas fa-search"></i>
         </a>
-        </div> */}
+    </div> */}
 
       
        

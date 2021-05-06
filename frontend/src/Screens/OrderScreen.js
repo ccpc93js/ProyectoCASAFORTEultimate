@@ -21,6 +21,7 @@ export default function OrderScreen(props) {
   const { order, loading, error } = orderDetails;
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
+
   
   const orderPay = useSelector((state) =>state.orderPay);
   const {
@@ -81,6 +82,18 @@ const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
   return Intl.NumberFormat(formatoLenguaje, {style: 'currency', currency: moneda}).format(valor);
 }
 
+const cambiarAdolares = (valorPesos) =>{
+  let pesos = (valorPesos * 1)
+
+  let total= (pesos / 3851.01)
+  total = total.toFixed(2)
+  return total
+}
+
+
+
+// const enDolares= cambiarAdolares(order.totalPrice)
+// console.log(enDolares)
 
 
   return loading ? (
@@ -192,6 +205,17 @@ const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
                   </div>
                 </div>
               </li>
+              <li>
+                <div className="row">
+                  <div>
+                    <strong>Total en dolares</strong>
+                  </div>
+                  <div>
+                    <strong>{ convertirAmoneda(order.totalinDolars,'USD')}</strong>
+                  </div>
+                   {!order.isPaid ? <div>para pagar con paypal se debe cambiar el total a dolares</div>:""}
+                </div>
+              </li>
               {!order.isPaid && (
                 <li>
                   {!sdkReady ? (
@@ -204,7 +228,7 @@ const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
                     )}
                     {loadingPay && <LoadingBox></LoadingBox>}
                   <PayPalButton className="payPalBotton"
-                    amount={order.totalPrice}
+                    amount={order.totalinDolars.toFixed(2)}
                     onSuccess={successPaymentHandler}
                   ></PayPalButton>
                   </div>
@@ -212,7 +236,7 @@ const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
                   )}
                 {userInfo.isAdmin && order.isPaid && !order.isDelivered && (
                 <li>
-                  {loadingDeliver && <loadingPage></loadingPage>}
+                  {loadingDeliver && <loadingBox></loadingBox>}
                   {errorDeliver && (
                     <MessageBox variant="danger">{errorDeliver}</MessageBox>
                   )}
@@ -220,7 +244,8 @@ const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
               )}
                 </li>
               )}
-              { userInfo.isAdmin && order.isPaid && !order.isDelivered ? ( <button
+              { userInfo.isAdmin && order.isPaid && !order.isDelivered ? (
+                 <button
                     type="button"
                     className="button block"
                     onClick={deliverHandler}
@@ -234,4 +259,6 @@ const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
       </div>
     </div>
   );
+  
 }
+

@@ -99,10 +99,10 @@ export default function ProductEditScreen(props) {
         <div>
           <h1 >Editar Producto {productId}</h1>
         </div>
-        {loadingUpdate && <loadingPage></loadingPage>}
+        {loadingUpdate && <LoadingBox></LoadingBox>}
         {errorUpdate && <MessageBox variant="danger">{errorUpdate}</MessageBox>}
         {loading ? (
-          <loadingPage></loadingPage>
+          <LoadingBox></LoadingBox>
         ) : error ? (
           <MessageBox variant="danger">{error}</MessageBox>
         ) : (
@@ -211,7 +211,7 @@ export default function ProductEditScreen(props) {
                 onChange={(e) => setUnidad(e.target.value)}
               ></input>
             </div>
-            <div >
+            <div className="button-center" >
               <label></label>
               <button className="button" type="submit">
                 Actualizar

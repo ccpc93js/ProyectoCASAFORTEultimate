@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { detailsUser, updateUser } from '../actions/userActions';
-import loadingPage from '../component/LoadingPage';
+import LoadingBox from '../component/LoadingBox';
 import MessageBox from '../component/MessageBox';
 import { USER_UPDATE_RESET } from '../constants/userConstants';
 
@@ -51,13 +51,13 @@ export default function UserEditScreen(props) {
       <form className="formulario" onSubmit={submitHandler}>
         <div>
           <h1 className="titulelist">Edita Usuario {name}</h1>
-          {loadingUpdate && <loadingPage></loadingPage>}
+          {loadingUpdate && <LoadingBox/>}
           {errorUpdate && (
             <MessageBox variant="danger">{errorUpdate}</MessageBox>
           )}
         </div>
         {loading ? (
-          <loadingPage />
+          <LoadingBox />
         ) : error ? (
           <MessageBox variant="danger">{error}</MessageBox>
         ) : (

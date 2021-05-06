@@ -286,6 +286,9 @@ height: 5rem;
     align-items: center;
     width: 20rem;
   }
+  .products-list-item{
+  margin-left: 2rem;
+  }
 
 }
 @media screen and (min-width:480px) and (max-width:768px){
@@ -302,6 +305,9 @@ height: 5rem;
     align-items: center;
     width: 40rem;
   }
+  .products-list-item{
+  margin-left: 2rem;
+  }
 
 
 }
@@ -313,6 +319,10 @@ height: 5rem;
   }
   .shop-layout__sidebar{
     display: none;
+  }
+  .products-list-item{
+    margin-left: 2rem;
+
   }
 }
 

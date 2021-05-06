@@ -113,3 +113,11 @@ export const deleteProduct = (productId) => async (dispatch, getState) => {
 export const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
   return Intl.NumberFormat(formatoLenguaje, {style: 'currency', currency: moneda}).format(valor);
 }
+
+export const cambiarAdolares = (valorPesos) =>{
+  let pesos = (valorPesos * 1)
+
+  let total= (pesos / 3851.01)
+
+  return total
+}

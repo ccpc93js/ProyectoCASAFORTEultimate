@@ -5,7 +5,8 @@
   list-style: none;
   box-sizing: border-box;
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-  font-family: 'Times New Roman', Times, serif !important;
+  /* font-family: 'Times New Roman', Times, serif !important; */
+  font-family: 'Roboto', sans-serif !important;
   font-weight: 500;
   
   
@@ -25,7 +26,7 @@ body{
 
 header{
   width: 100%;
-  height: 5rem;
+  height: 7rem;
   box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0);
   position: fixed;
   
@@ -33,7 +34,7 @@ header{
 header {
   /* position: relative; */
   top: 0;
-  z-index: 100;
+  z-index: 200;
 }
 
 /* header::after{
@@ -50,9 +51,9 @@ header {
 } */
 
 main{
- padding-top: 10%;
+ padding-top: 7rem;
   background-color: #ffffff;
-  min-height: calc(100vh - 680px);
+  min-height: calc(150vh );
 
 
 }
@@ -398,7 +399,7 @@ button.small {
   color: #999999;
 }
 
-.button{
+/* .button{
   border: none;
   width: 35%;
   color: #ffffff;
@@ -410,11 +411,54 @@ button.small {
   text-align: center;
   font-weight: 500;
   box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  position: relative;
 
 
+} */
+
+ .button{
+  /* display: block; */
+  width: 35%;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+  /* outline: none; */
+  border: 1px solid rgb(0, 141, 235);
+  background-color: #fff;
+  border-radius: 4px;
+  color: rgb(0, 141, 235);
+  cursor: pointer;
+  transition: all .25s;
+  z-index: 1;
+  position: relative;
+  
 }
 
-.button-success{
+.button::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  bottom: 0;
+  border: transparent;
+  border-radius: 2px;
+  background-image: linear-gradient(to right, 
+  rgb(23,228,243), rgb(0,141,235));
+  transition: all .25s;
+  z-index: -1;
+}
+
+.button:hover{
+  border:1px solid transparent;
+  color: #fff;
+}
+
+.button:hover::before{
+  height: 100%;
+} 
+
+/* .button-success{
   border: none;
   width: 20%;
   color: #ffffff;
@@ -426,11 +470,51 @@ button.small {
   text-align: center;
   font-weight: 500;
 
+} */
+
+.button-success{
+  /* display: block; */
+  width: 20%;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+  /* outline: none; */
+  border: 1px solid #29b429;
+  background-color: #fff;
+  border-radius: 2px;
+  color: #29b429;
+  cursor: pointer;
+  transition: all .25s;
+  z-index: 1;
+  position: relative;
+  
 }
 
-.button:hover{
-  background: #1a2537;
+.button-success::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  bottom: 0;
+  border: transparent;
+  border-radius: 4px;
+  background-image: linear-gradient(to right, 
+  rgb(23, 243, 34), #29b429);
+  transition: all .25s;
+  z-index: -1;
 }
+
+.button-success:hover{
+  border:1px solid transparent;
+  color: #fff;
+}
+
+.button-success:hover::before{
+  height: 100%;
+} 
+
+
 /* p{
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -676,7 +760,7 @@ img.large{
 /* card */
 
 .card{
-  border: 0.1rem #0dd8b6 solid;
+  border: 0.1rem #bbf3ea solid;
   background-color:  #ffffff;
   border-radius: 0.5rem;
   margin: 1rem;
@@ -697,8 +781,56 @@ img.large{
 
 /* alert */
 
+.spinner-blue {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: rgb(0, 6, 92);
+
+  animation: spin 1s ease infinite;
+}
+
+.spinner-black {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: rgb(13, 13, 14);
+
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 .loading{
-  display: block !important; 
+  /* display: block !important;  */
+justify-content: center;  
+flex-direction: column;
+margin-top: 3rem;
+
+
+ 
+}
+
+.loading div{
+  width: 3rem;
+  height: 3rem;
+  margin-left: 9rem;
+  text-align: center;
+
+}
+.Loading---{
+margin-top: 0;
 }
 
 .loadingPageLogo{
@@ -716,22 +848,18 @@ img.large{
   transform:  translate(-50%,-50%);
 }
 .loadingPage{
-  font-size: 30px;
-  text-align: center;
-  align-content: center;
-  display: flex;
-  justify-content: center;
+  
 
 
 }
 
-.loadingPage i{
-  width: 30rem;
-  height: 30rem;
+.loadingPage div{
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
 }
 .loading-logo{
-  width: 100vw;
-  height: 100vh;
+
   align-content: center;
   text-align: center;
   
@@ -742,10 +870,18 @@ img.large{
   
 } */
 .loadingPageLogo i {
-  margin-left: 4rem;
-  margin-top: 2rem;
-  width: 10rem;
-  height: 10rem;
+margin: 3rem auto;
+width: 5rem;
+height: 5rem;
+
+}
+
+.min-20{
+  min-width: 20rem;
+}
+.min-20 a{
+  color: black;
+
 }
 
 .casafortelogoCarga{
@@ -897,6 +1033,10 @@ color: #464343;
 /*=?=====RESPONSIVE=========*/
 
 @media screen and (max-width:363px){
+  .min-20{
+    font-size: 2px;
+    /* float: left; */
+  }
 
   
   main{
@@ -967,7 +1107,11 @@ color: #464343;
 }
 @media screen and (max-width:480px){
 
-
+  .min-20{
+    font-size: 10px;
+    margin-right: 18px;
+    /* float: left; */
+  }
     
 
   .table-hidden{

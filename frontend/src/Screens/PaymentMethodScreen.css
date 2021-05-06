@@ -10,5 +10,19 @@
     margin: 1rem;
   }
   .form label {
-    margin: 1rem 0;
+    margin: 1rem ;
+  }
+
+  .form button{
+    margin: auto;
+  }
+
+  .cheked{
+
+  }
+
+  .img-paymethod{
+    width: 100px;
+    height: 50px;
+    margin-left:1rem;
   }

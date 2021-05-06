@@ -1,4 +1,5 @@
-
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /* .block {
     margin-bottom: 50px;
@@ -132,7 +133,7 @@
 }
 
 .filter__container {
-    padding: 10px 20px 16px;
+    padding: 0px 0px 16px;
 }
 
 .filter--opened .filter__body {
@@ -196,10 +197,16 @@ color: black;
 }
 .filter-categories__item {
     padding: 6px 0;
-    font-size: 1.2rem;
+    font-size: 17px;
+    line-height: 18px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+}
+.filter-categories__item a{
+    font-family: 'Bebas Neue', cursive;
+        /* font-weight: 400; */
+
 }
 
 /* .widget-filters li {

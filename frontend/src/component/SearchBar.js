@@ -33,7 +33,9 @@ fecthData();
   return (
     <div className="searchBar">
       <div className="">
+      
       <input 
+      onFocus={true}
       type="text"
        placeholder="Buscar producto..." 
        onChange={(e) =>{setSearchTerm(e.target.value)}}/>

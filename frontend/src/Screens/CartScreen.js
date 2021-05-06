@@ -50,7 +50,7 @@ export default function CartScreen(props) {
                         Encontrará muchos productos interesantes en nuestra tienda.
                     </div>
 			        	<p className="return-to-shop">
-                            <Link to="/nuevos" className="button return-to-shop">Continuar Comprando</Link>
+                            <Link to="/nuevos" ><button className="button return-to-shop"> Continuar Comprando</button></Link>
                         </p>
                 </div>
             //     <MessageBox>
@@ -67,12 +67,12 @@ export default function CartScreen(props) {
                         {
                             cartItems.map(item =>
                                 <li key={item.producto}>
-                                <div className="row ">
+                                <div className="rowCart ">
                                     <div className="">
                                     <img src={item.imagen} alt="producto" className="small"/>
                                     </div>
                                     
-                                    <div className="min-30">
+                                    <div className="min-20">
                                         <Link to={"/producto/" + item.producto} >
                                         {item.info}
                                      </Link>

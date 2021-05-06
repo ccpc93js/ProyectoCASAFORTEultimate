@@ -53,11 +53,9 @@ export const HomeScreen = () => {
                 </div>
             </div>
          
-            <div className="contenedore">
+     <div className="contenedore">
     <figure>
         <img src="./img/Icons/abrasivos-industriales-medellin.jpg" alt="abra"/>
-
-        
 
         <div className="capar">
             <h3>Abrasivos</h3> 
@@ -88,7 +86,7 @@ export const HomeScreen = () => {
 </div>
 
 <div className="button-ver-productos">
-    <a href="/nuevos"><input type="button" value="VER TODOS LOS PRODUCTOS" className="botton"/></a> 
+    <a href="/nuevos"><button className="button-see">VER TODOS LOS PRODUCTOS</button></a> 
 </div>
 
 <div className="qontiner">

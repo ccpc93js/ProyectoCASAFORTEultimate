@@ -11,7 +11,7 @@ import {
   deleteProduct,
   listProducts,
 } from '../actions/productActions';
-import loadingPage from '../component/LoadingPage';
+// import loadingPage from '../component/LoadingPage';
 import LoadingBox from '../component/LoadingBox';
 import MessageBox from '../component/MessageBox';
 import {
@@ -84,21 +84,21 @@ export default function ProductListScreen(props) {
          placeholder="Buscar producto..." 
          onChange={(e) =>{setSearchTerm(e.target.value)}}
          />
-        <button type="button" className="button-success shadow-button" onClick={createHandler}>
+        <button type="button" className="button-success" onClick={createHandler}>
           Crear Producto
         </button>
       </div>
       
 
-      {loadingDelete && <LoadingBox></LoadingBox>}
+      {loadingDelete && <LoadingBox/>}
       {errorDelete && <MessageBox variant="danger">{errorDelete}</MessageBox>}
       {successDelete && (
         <MessageBox variant="success">Producto eliminado satisfactoriamente</MessageBox>
       )}
-      {loadingCreate && <LoadingBox></LoadingBox>}
+      {loadingCreate && <LoadingBox/>}
       {errorCreate && <MessageBox variant="danger">{errorCreate}</MessageBox>}
       {loading ? (
-        <loadingPage></loadingPage>
+        <LoadingBox></LoadingBox>
       ) : error ? (
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (

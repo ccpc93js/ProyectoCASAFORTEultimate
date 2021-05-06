@@ -3,8 +3,8 @@ import './ProductScreen.css'
 import data from '../component/data.js'
 import {Link} from 'react-router-dom';
 import {useDispatch, useSelector} from 'react-redux';
-import LoadingPageLogo from '../component/LoadingPageLogo';
-// import LoadingBox from '../component/LoadingBox';
+// import LoadingPageLogo from '../component/LoadingPageLogo';
+import LoadingBox from '../component/LoadingBox';
 import MessageBox from '../component/MessageBox';
 import { convertirAmoneda, detailsProduct } from '../actions/productActions';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
@@ -80,9 +80,34 @@ function ProductScreen(props) {
 
     return (
             <div className="container-productScreen">
+                 <div className="page-header">
+                    <div className="page-header__container container">
+                    <div className="page-header__breadcrumb">
+                    <nav aria-label="breadcrumb">
+                    <ol className="breadcrumb">
+                    <li className="breadcrumb-item">
+                    <a href="/">Inicio</a>
+                    <svg className="breadcrumb-arrow" >
+                    <ArrowBackIosIcon/>
+                    </svg>
+                    </li>
+                    {/* <li className="breadcrumb-item">
+                    {
+                        
+                        <a href={props.categorias ? props.categorias : props.subcategorias ? props.subcategorias :props.marcas ? props.marcas:props.nuevos }>{props.categorias ? props.categorias.replace(/-/g," ") : props.subcategorias ? props.subcategorias.replace(/-/g," ") : props.marcas ? props.marcas.replace(/-/g," "):props.nuevos}</a>
+                    }
+                    <svg className="breadcrumb-arrow">
+                    <ArrowBackIosIcon/>
+                    </svg>
+                    </li> */}
+                    </ol>
+                    </nav>
+                    </div>
+                    </div>
+                </div>
                 {
     loading ? (
-        <LoadingPageLogo></LoadingPageLogo>
+        <LoadingBox></LoadingBox>
     ):error ?(
         <MessageBox variant="danger">{error}</MessageBox>
     ):(
@@ -93,6 +118,7 @@ function ProductScreen(props) {
         <div key={producto._id} className="productScreen-card  ">
         <div className="productScreen-image shadow-box-productos">
         <Link to="#">
+        {loading && <LoadingBox/>}
         <img className=" " alt={producto.info} src={producto.imagen.img1} />
         </Link>
         </div>

@@ -28,8 +28,8 @@ export default function PaymentMethodScreen(props) {
           <h1>Metodo de pago</h1>
         </div>
         <div>
-          <div>
-            <input
+          <div className="check-content"> 
+            <input className="cheked"
               type="radio"
               id="paypal"
               value="PayPal"
@@ -38,7 +38,7 @@ export default function PaymentMethodScreen(props) {
               checked
               onChange={(e) => setPaymentMethod(e.target.value)}
             ></input>
-            <label htmlFor="paypal">PayPal</label>
+            <label htmlFor="paypal"><img className="img-paymethod" src="/img/Icons/paypal.png" alt="" /></label>
           </div>
         </div>
         <div>

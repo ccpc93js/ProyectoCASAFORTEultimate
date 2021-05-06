@@ -7,6 +7,7 @@ import CheckoutSteps from '../component/CheckoutSteps'
 import LoadingBox from '../component/LoadingBox';
 import MessageBox from '../component/MessageBox';
 import { ORDER_CREATE_RESET } from '../constants/orderConstants';
+import { cambiarAdolares } from '../actions/productActions';
 
 export default function PlaceOrderScreen(props) {
     const cart = useSelector((state) => state.cart);
@@ -27,6 +28,9 @@ export default function PlaceOrderScreen(props) {
     cart.shippingPrice = toPrice(0) /*cart.itemsPrice > 100000? toPrice(0) : toPrice(10000)*/;
     cart.taxPrice = toPrice(0.19 * cart.itemsPrice);
     cart.totalPrice = cart.itemsPrice + cart.shippingPrice + cart.taxPrice;
+    cart.totalinDolars = cambiarAdolares(cart.totalPrice)
+    
+    
 
     const dispatch = useDispatch()
 
@@ -48,7 +52,7 @@ export default function PlaceOrderScreen(props) {
                 <div className="col-2 ">
                     <ul>
                         <li>
-                            <div className="card card-body shadow-box">
+                            <div className="card card-body ">
                                 <h2><strong>Envio</strong> </h2>
                                <h3>
                                     <strong>Nombre:</strong>{cart.shippingAddress.fullName}<br/>
@@ -60,7 +64,7 @@ export default function PlaceOrderScreen(props) {
                             </div>
                         </li>
                         <li>
-                            <div className="card card-body shadow-box">
+                            <div className="card card-body ">
                                 <h2><strong>Pago</strong> </h2>
                                <h3>
                                     <strong>Metodo:</strong>{cart.paymentMethod}
@@ -70,7 +74,7 @@ export default function PlaceOrderScreen(props) {
                             </div>
                         </li>
                         <li>
-                            <div className="card card-body shadow-box">
+                            <div className="card card-body ">
                                 <h2><strong>Pedido</strong> </h2>
                                 <ul>
                             {
@@ -81,7 +85,7 @@ export default function PlaceOrderScreen(props) {
                                         <img src={item.imagen} alt="producto" className="small"/>
                                         </div>
                                         
-                                        <div className="min-30">
+                                        <div className="min-20">
                                             <Link to={"/producto/" + item.producto} >
                                             {item.info}
                                             </Link>
@@ -105,7 +109,7 @@ export default function PlaceOrderScreen(props) {
                 </div>
 
                 <div className="col-1">
-                <div className="card card-body shadow-box">
+                <div className="card card-body">
                    <ul>
                      <li>
                        <h1>Sumatoria Pedido</h1>
