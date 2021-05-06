@@ -11,7 +11,7 @@ import {
   deleteProduct,
   listProducts,
 } from '../actions/productActions';
-// import loadingPage from '../component/LoadingPage';
+import loadingPage from '../component/LoadingPage';
 import LoadingBox from '../component/LoadingBox';
 import MessageBox from '../component/MessageBox';
 import {
@@ -98,7 +98,9 @@ export default function ProductListScreen(props) {
       {loadingCreate && <LoadingBox/>}
       {errorCreate && <MessageBox variant="danger">{errorCreate}</MessageBox>}
       {loading ? (
-        <LoadingBox></LoadingBox>
+        <div className="loading-div">
+           <LoadingBox/>
+        </div>
       ) : error ? (
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (

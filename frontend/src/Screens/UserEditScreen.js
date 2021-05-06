@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { detailsUser, updateUser } from '../actions/userActions';
 import LoadingBox from '../component/LoadingBox';
+import loadingPage from '../component/LoadingPage';
 import MessageBox from '../component/MessageBox';
 import { USER_UPDATE_RESET } from '../constants/userConstants';
 
@@ -57,7 +58,9 @@ export default function UserEditScreen(props) {
           )}
         </div>
         {loading ? (
-          <LoadingBox />
+        <div className="loading-div">
+          <LoadingBox/>
+         </div>
         ) : error ? (
           <MessageBox variant="danger">{error}</MessageBox>
         ) : (

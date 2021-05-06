@@ -41,7 +41,7 @@ export const NavBar = (props) => {
 
             </button>
 
-            <a href="/"><img className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/></a>
+            <a className="casaforte-a" href="/"><img className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/></a>
             <div className="carrito carrito-none">
                 <i className="divSearch">
 
@@ -93,7 +93,7 @@ export const NavBar = (props) => {
                     <Link to="/listaUsuarios">Usuarios</Link>
                   </li>
                   <li>
-                      <Link to='listaUsuariosRegistrados'>Info Usuarios Registrados</Link>
+                      <Link to='/listaUsuariosRegistrados'>Info Usuarios Registrados</Link>
                   </li>
                   {/* <li>
                     <Link to="/support">Soporte</Link>

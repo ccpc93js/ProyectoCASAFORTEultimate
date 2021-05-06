@@ -54,14 +54,14 @@ function Filtrador(props) {
             </IconButton>
         
         </button>
-        <select className="form-control form-control-sm shadow-box-productos" id="orderby" onChange={props.ordenar} >
+        <input type="select" className="form-control form-control-sm shadow-box-productos" id="orderby" onChange={props.ordenar} >
         <option value="Ordenar por Codigo Ascendente">Ordenar por Codigo Ascendente</option>
         <option value="Ordenar por Codigo Descendente">Ordenar por Codigo Descendente</option>
         <option value="Ordenar por Nombre Ascendente">Ordenar por Nombre Ascendente</option>
         <option value="Ordenar por Nombre Descendente">Ordenar por Nombre Descendente</option>
         <option value="Ordenar por Nombre Descendente">Ordenar por Precio Descendente</option>
         <option value="Ordenar por Nombre Descendente">Ordenar por Precio Descendente</option>
-        </select>
+        </input>
         </div>
         </div>
         </div>

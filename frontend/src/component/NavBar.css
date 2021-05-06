@@ -125,8 +125,11 @@ bottom: 0.9rem;
 
 .casaforte{
   width: 13rem;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   margin-top: 2.5rem;
+}
+.casaforte-a{
+  margin-left: 2rem;
 }
 
  .carrito{
@@ -296,7 +299,7 @@ margin-left: 1rem;
 }
 
 /*=?=====RESPONSIVE=========*/
-@media screen and (max-width:497px){
+@media screen and (max-width:540px){
   header {
     /* display: none; */
     background-color: #f7f7f7;
@@ -311,6 +314,11 @@ margin-left: 1rem;
     .casaforte{
       width: 7rem;
       margin-top: 2rem;
+      /* margin-left: 4rem; */
+
+    }
+    .casaforte-a{
+      margin-left: 4rem;
     }
     /* .carrito{
       margin-left: 3rem;
@@ -345,7 +353,7 @@ margin-left: 1rem;
     }
 
   }
-  @media screen and (min-width:497px) and (max-width:768px){
+  @media screen and (min-width:540px) and (max-width:768px){
     header {
       /* display: none; */
       background-color: #f7f7f7;
@@ -354,6 +362,11 @@ margin-left: 1rem;
     .casaforte{
       width: 7rem;
       margin-top: 2rem;
+    }
+
+    .casaforte-a{
+      margin-left: 2rem;
+
     }
 
 
@@ -379,6 +392,7 @@ margin-left: 1rem;
   .carrito{
     margin-left:  2rem;
   }
+
 
 
 

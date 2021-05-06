@@ -3,7 +3,7 @@ import './UserListScreen.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { createUser, deleteUser, listUsers } from '../actions/userActions';
 import LoadingBox from '../component/LoadingBox';
-// import loadingPage from '../component/LoadingPage';
+import loadingPage from '../component/LoadingPage';
 import MessageBox from '../component/MessageBox';
 import { USER_CREATE_RESET, USER_DELETE_RESET, USER_DETAILS_RESET } from '../constants/userConstants';
 import { IconButton } from '@material-ui/core';
@@ -90,9 +90,9 @@ export default function UserListScreen(props) {
       {errorCreate && <MessageBox variant="danger">{errorCreate}</MessageBox>}
       {loading ? (
         <div className="loading-div">
-
-        <LoadingBox/>
+          <LoadingBox/>
         </div>
+
       ) : error ? (
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (

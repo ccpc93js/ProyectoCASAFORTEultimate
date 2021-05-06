@@ -5,7 +5,7 @@ import './Productos.css'
 import WidgetFilters from './WidgetFilters'
 import data from './data.js'
 import LoadingBox from './LoadingBox'
-// import loadingPage from './LoadingPage'
+import loadingPage from './LoadingPage'
 import MessageBox from './MessageBox'
 import {useDispatch, useSelector} from 'react-redux'
 
@@ -194,15 +194,13 @@ export default function Productos(props) {
 
                             productFiltradoXProducto.map(x =>(
                 <div className="products-list-item">
+                      {loading ? <LoadingBox/> :
                 <div key={x.categoria} className="product-card  shadow-box-productos">
                 <div className="product-image">
                 <a
-                categorias={props.categorias}
-                subcategorias={props.subcategorias}
-                marcas={props.marcas}
-                nuevos={props.nuevos}
+
                 href={`/producto/${x._id}`} className="product-image__body ">
-                 {loading ? <LoadingBox/> :  <img className="product-image__img imgnormal lazy loaded" alt={x.info} src={x.imagen.img1}/>}
+                 <img className="product-image__img imgnormal lazy loaded" alt={x.info} src={x.imagen.img1}/>
               
                 </a>
                 </div>
@@ -219,6 +217,7 @@ export default function Productos(props) {
                 <div className="clearfix"></div>
                 </div>
                 </div>
+}
                 </div>
                 
     

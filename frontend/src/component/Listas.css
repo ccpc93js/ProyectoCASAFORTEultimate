@@ -7,7 +7,8 @@ transition: 6s;
     color: rgb(78, 76, 76);
     font-size: 1.2rem;
     font-weight: 500;
-    color: g;
+ 
+
 }
 
 
@@ -19,6 +20,10 @@ transition: 6s;
     font-weight: 500;
 }
 
+.categoriasDrawerDrop ul{
+    margin-left: 2rem;
+
+}
 
 @media screen and (min-width:768px) and (max-width:1024px){
 

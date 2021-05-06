@@ -51,7 +51,9 @@ export default function OrderListScreen(props) {
       {loadingDelete && <LoadingBox></LoadingBox>}
       {errorDelete && <MessageBox variant="danger">{errorDelete}</MessageBox>}
       {loading ? (
-       <loadingPage></loadingPage>
+        <div className="loading-div">
+          <LoadingBox/>
+         </div>
 
       ) : error ? (
         <MessageBox variant="danger">{error}</MessageBox>

@@ -102,7 +102,9 @@ export default function ProductEditScreen(props) {
         {loadingUpdate && <LoadingBox></LoadingBox>}
         {errorUpdate && <MessageBox variant="danger">{errorUpdate}</MessageBox>}
         {loading ? (
-          <LoadingBox></LoadingBox>
+        <div className="loading-div">
+           <LoadingBox/>
+        </div>
         ) : error ? (
           <MessageBox variant="danger">{error}</MessageBox>
         ) : (

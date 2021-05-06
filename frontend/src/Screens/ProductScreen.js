@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import {useDispatch, useSelector} from 'react-redux';
 // import LoadingPageLogo from '../component/LoadingPageLogo';
 import LoadingBox from '../component/LoadingBox';
+import loadingPage from '../component/LoadingPage';
 import MessageBox from '../component/MessageBox';
 import { convertirAmoneda, detailsProduct } from '../actions/productActions';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
@@ -80,39 +81,41 @@ function ProductScreen(props) {
 
     return (
             <div className="container-productScreen">
-                 <div className="page-header">
+
+                {
+    loading ? (
+        <div className="loading-div">
+          <LoadingBox/>
+        </div>
+    ):error ?(
+        <MessageBox variant="danger">{error}</MessageBox>
+    ):(
+        
+        <div className="productScreen-row  ">
+                             <div className="page-header">
                     <div className="page-header__container container">
                     <div className="page-header__breadcrumb">
                     <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                     <li className="breadcrumb-item">
                     <a href="/">Inicio</a>
-                    <svg className="breadcrumb-arrow" >
-                    <ArrowBackIosIcon/>
+                    {/* <svg className="breadcrumb-arrow" >
+                    <ArrowForwardIosIcon/>
+                    </svg> */}
+                    </li>
+                    <li className="breadcrumb-item">
+                        {
+                            producto.info
+                        }
+                    <svg className="breadcrumb-arrow">
+                    <ArrowForwardIosIcon/>
                     </svg>
                     </li>
-                    {/* <li className="breadcrumb-item">
-                    {
-                        
-                        <a href={props.categorias ? props.categorias : props.subcategorias ? props.subcategorias :props.marcas ? props.marcas:props.nuevos }>{props.categorias ? props.categorias.replace(/-/g," ") : props.subcategorias ? props.subcategorias.replace(/-/g," ") : props.marcas ? props.marcas.replace(/-/g," "):props.nuevos}</a>
-                    }
-                    <svg className="breadcrumb-arrow">
-                    <ArrowBackIosIcon/>
-                    </svg>
-                    </li> */}
                     </ol>
                     </nav>
                     </div>
                     </div>
                 </div>
-                {
-    loading ? (
-        <LoadingBox></LoadingBox>
-    ):error ?(
-        <MessageBox variant="danger">{error}</MessageBox>
-    ):(
-        
-        <div className="productScreen-row  ">
     
         <div className="productScreen-list-item ">
         <div key={producto._id} className="productScreen-card  ">
@@ -126,7 +129,7 @@ function ProductScreen(props) {
         <div className="productScreen-card-body ">
         
         <div className="info">
-            <h1>{producto.info}</h1>
+            <h1>{producto.info}</h1>      
         </div>
         <div className="_id">
         <div className="codigo">

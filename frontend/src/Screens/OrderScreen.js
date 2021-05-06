@@ -97,7 +97,9 @@ const cambiarAdolares = (valorPesos) =>{
 
 
   return loading ? (
-    <loadingPage></loadingPage>
+    <div className="loading-div">
+       <LoadingBox/>
+    </div>
   ) : error ? (
     <MessageBox variant="danger">{error}</MessageBox>
   ) : (
@@ -236,8 +238,11 @@ const cambiarAdolares = (valorPesos) =>{
                   )}
                 {userInfo.isAdmin && order.isPaid && !order.isDelivered && (
                 <li>
-                  {loadingDeliver && <loadingBox></loadingBox>}
-                  {errorDeliver && (
+                     {loading && 
+                     <div className="loading-div">
+                       <LoadingBox></LoadingBox>
+                       </div>
+                      }                  {errorDeliver && (
                     <MessageBox variant="danger">{errorDeliver}</MessageBox>
                   )}
                 </li>

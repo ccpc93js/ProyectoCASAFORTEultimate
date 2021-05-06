@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { listOrderMine } from '../actions/orderActions';
-// import LoadingBox from '../component/LoadingBox';
-import loadingPage from '../component/LoadingPage';
+import LoadingBox from '../component/LoadingBox';
 import MessageBox from '../component/MessageBox';
 import './OrderHistoryScreen.css'
 import DetailsIcon from '@material-ui/icons/Details';
@@ -20,7 +19,9 @@ export default function OrderHistoryScreen(props) {
     <div className="orderHContainer">
       <h1>Historial pedididos</h1>
       {loading ? (
-        <loadingPage></loadingPage>
+        <div className="loading-div">
+           <LoadingBox/>
+        </div>
       ) : error ? (
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (
