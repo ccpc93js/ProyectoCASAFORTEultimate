@@ -81,7 +81,7 @@ function ZonaClientes(props) {
                 </div>
                 <div className="input-button">
 
-                <input type="submit" value="Iniciar Sesión" className="button "/>
+                <button type="submit" className="button ">Iniciar Sesión</button>
                 <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de Privacidad.</p>
                 <p>¿No tienes una cuenta?<a className="link" href="/registrarse">Solicita tu cuenta</a></p>
                

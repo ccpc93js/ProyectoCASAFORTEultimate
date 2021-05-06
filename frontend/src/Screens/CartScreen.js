@@ -50,7 +50,7 @@ export default function CartScreen(props) {
                         Encontrará muchos productos interesantes en nuestra tienda.
                     </div>
 			        	<p className="return-to-shop">
-                            <Link to="/nuevos" ><button className="button return-to-shop"> Continuar Comprando</button></Link>
+                            <Link to="/nuevos" ><button className="button return-to-shop"> Continuar comprando</button></Link>
                         </p>
                 </div>
             //     <MessageBox>
