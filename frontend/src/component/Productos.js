@@ -182,7 +182,9 @@ export default function Productos(props) {
                 
                 {
                         loading ? (
-                        <LoadingBox/>
+                            <div className="loading-div">
+                                <LoadingBox/>
+                             </div>
                         ): error ?(
                         <MessageBox variant="danger">{error}</MessageBox>
                         ):(

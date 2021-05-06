@@ -825,7 +825,7 @@ margin-top: 3rem;
 .loading div{
   width: 3rem;
   height: 3rem;
-  margin-left: 9rem;
+  /* margin-left: 9rem; */
   text-align: center;
 
 }
@@ -874,6 +874,13 @@ margin: 3rem auto;
 width: 5rem;
 height: 5rem;
 
+}
+
+
+.loading-div{
+  /* margin-left: 2rem; */
+  display: flex;
+  justify-content: center;
 }
 
 .min-20{
@@ -1107,6 +1114,10 @@ color: #464343;
 }
 @media screen and (max-width:480px){
 
+  /* .loading-div{
+    margin-left: 1rem;
+  } */
+
   .min-20{
     font-size: 10px;
     margin-right: 18px;
@@ -1218,6 +1229,12 @@ color: #464343;
 
 }
 @media screen and (min-width:480px) and (max-width:768px){
+
+  .loading-div{
+    /* margin-left: 2rem; */
+    display: flex;
+    justify-content: center;
+  }
   .slider{
     width: 760px;
     height: 150px;

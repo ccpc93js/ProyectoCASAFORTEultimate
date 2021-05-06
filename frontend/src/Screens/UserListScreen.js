@@ -89,7 +89,10 @@ export default function UserListScreen(props) {
             {loadingCreate && <LoadingBox></LoadingBox>}
       {errorCreate && <MessageBox variant="danger">{errorCreate}</MessageBox>}
       {loading ? (
-        <LoadingBox></LoadingBox>
+        <div className="loading-div">
+
+        <LoadingBox/>
+        </div>
       ) : error ? (
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (

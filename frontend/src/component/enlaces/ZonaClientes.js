@@ -41,10 +41,12 @@ function ZonaClientes(props) {
              
             <form className="formulario" onSubmit={submitHandler}>
                  <h1>Inicia Sesión</h1>
-            
+            <div className="loading-div">
+
                 {loading && <LoadingBox></LoadingBox>}
                 {error && <MessageBox variant="danger">{error}</MessageBox>}
 
+            </div>
                 <div className="input-contenedor">
                     <i className=""><EmailIcon/></i>
                     <input 
