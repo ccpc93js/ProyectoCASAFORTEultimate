@@ -812,7 +812,9 @@ img.large{
     transform: rotate(360deg);
   }
 }
-
+.logo-drawer{
+margin-left: 2rem;
+}
 
 .loading{
   /* display: block !important;  */

@@ -16,12 +16,12 @@ transition: 6s;
 
 .categoriasDrawerDrop li a{
     color: rgb(78, 76, 76);
-    font-size: 1.2rem;
+    font-size: 17px;
     font-weight: 500;
 }
 
 .categoriasDrawerDrop ul{
-    margin-left: 2rem;
+    margin: 0 2rem;
 
 }
 

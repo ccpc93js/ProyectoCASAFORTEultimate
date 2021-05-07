@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme)=>({
           paper: classes.drawerPaper,
         }}
       >
-        <a className="logo" href="/"><img className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/></a>
+        <a className="logo-drawer" href="/"><img className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/></a>
 
       <div className={classes.drawerHeader}>
           <IconButton onClick={props.handleDrawerClose}>

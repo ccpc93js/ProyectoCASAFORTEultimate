@@ -38,7 +38,7 @@ function Filtrador(props) {
         </div>
         </div>
         </div> */}
-        <div className="view-options-legend view-options__div" >{"Muestra " + props.productFiltradoXProducto.length +  " de " + props.productos.length + " productos "}</div>
+        <div className="view-options-legend view-options__div" >{"Muestra " + props.productos.length +  " de " + props.totalProductos.length + " productos "}</div>
         <div className="view-options-divider"></div>
         <div className="view-options-control">
         <div className="view-options__div">
@@ -54,14 +54,14 @@ function Filtrador(props) {
             </IconButton>
         
         </button>
-        <input type="select" className="form-control form-control-sm shadow-box-productos" id="orderby" onChange={props.ordenar} >
+        <select className="form-control form-control-sm shadow-box-productos" id="orderby" onChange={props.ordenar} >
         <option value="Ordenar por Codigo Ascendente">Ordenar por Codigo Ascendente</option>
         <option value="Ordenar por Codigo Descendente">Ordenar por Codigo Descendente</option>
         <option value="Ordenar por Nombre Ascendente">Ordenar por Nombre Ascendente</option>
         <option value="Ordenar por Nombre Descendente">Ordenar por Nombre Descendente</option>
         <option value="Ordenar por Nombre Descendente">Ordenar por Precio Descendente</option>
         <option value="Ordenar por Nombre Descendente">Ordenar por Precio Descendente</option>
-        </input>
+        </select>
         </div>
         </div>
         </div>

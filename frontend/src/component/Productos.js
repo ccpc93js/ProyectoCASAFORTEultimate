@@ -5,7 +5,6 @@ import './Productos.css'
 import WidgetFilters from './WidgetFilters'
 import data from './data.js'
 import LoadingBox from './LoadingBox'
-import loadingPage from './LoadingPage'
 import MessageBox from './MessageBox'
 import {useDispatch, useSelector} from 'react-redux'
 
@@ -17,7 +16,8 @@ import  DrawerFilter  from './DrawerFilter';
 
 
 export default function Productos(props) {
-    const [productos, setProducts]=useState([]);
+    const [productos, setProductos] = useState([]);
+    const [totalProductos, setTotalProductos] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
     const dispatch = useDispatch()
@@ -47,8 +47,19 @@ export default function Productos(props) {
                 setLoading(true);
         
                     const {data} = await axios.get('/api/productos');
+                    const productFiltradoXProducto = data.filter(x=>{
+                        if(props.categorias)
+                        return (x.categoria === props.categorias)
+                        if(props.subcategorias)
+                        return (x.subcategoria === props.subcategorias)
+                        if(props.marcas)
+                        return (x.marca === props.marcas)
+                        if(props.nuevos)
+                        return (x.createdAt)
+                    })
                     setLoading(false);
-                    setProducts(data);
+                    setProductos(productFiltradoXProducto);
+                    setTotalProductos(data)
             }catch(error){
                 setError(error.message);
                 setLoading(false);
@@ -62,22 +73,10 @@ export default function Productos(props) {
     
    
 
-    // const productos =  data.productos
-    let productFiltradoXProducto = productos.filter(x=>{
-        if(props.categorias)
-        return (x.categoria === props.categorias)
-        if(props.subcategorias)
-        return (x.subcategoria === props.subcategorias)
-        if(props.marcas)
-        return (x.marca === props.marcas)
-        if(props.nuevos)
-        return (x.createdAt)
-    })
 
-    const [dataFiltrada,setDataFiltrada]= React.useState(productFiltradoXProducto)
     const ordenar = (e) =>{
        let clasificacion = e.target.value;
-        setDataFiltrada(productos.slice().sort((a,b)=>
+       setProductos(productos.slice().sort((a,b)=>
         // clasificacion ===""? productos:
         clasificacion === "Ordenar por Nombre Ascendente" ?
         a.info > b.info ? 1:-1 : 
@@ -156,8 +155,6 @@ export default function Productos(props) {
                     
                    
                     <WidgetFilters
-                     dataFiltrada={dataFiltrada} 
-                     productFiltradoXProducto={productFiltradoXProducto} 
                      productos={productos}
                      categorias={props.categorias}
                      subcategorias={props.subcategorias}
@@ -175,7 +172,7 @@ export default function Productos(props) {
 
                 <div className="shop-layout__content">
 
-                <Filtrador handleDrawerOpenFilter={handleDrawerOpenFilter} dataFiltrada={dataFiltrada} setDataFiltrada={setDataFiltrada} ordenar={ordenar} productFiltradoXProducto={productFiltradoXProducto} productos={productos}/>
+                <Filtrador handleDrawerOpenFilter={handleDrawerOpenFilter}   ordenar={ordenar} totalProductos={totalProductos} productos={productos}/>
 
    
                 <div className="products-row  ">
@@ -192,9 +189,8 @@ export default function Productos(props) {
                         
                         
 
-                            productFiltradoXProducto.map(x =>(
+                            productos.map(x =>(
                 <div className="products-list-item">
-                      {loading ? <LoadingBox/> :
                 <div key={x.categoria} className="product-card  shadow-box-productos">
                 <div className="product-image">
                 <a
@@ -217,7 +213,6 @@ export default function Productos(props) {
                 <div className="clearfix"></div>
                 </div>
                 </div>
-}
                 </div>
                 
     

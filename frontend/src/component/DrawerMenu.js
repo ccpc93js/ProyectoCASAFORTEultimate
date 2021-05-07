@@ -94,7 +94,7 @@ const useStyles = makeStyles((theme)=>({
           paper: classes.drawerPaper,
         }}
       >
-        <a className="logo" href="/"><img className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/></a>
+        <a className="logo-drawer" href="/"><img className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/></a>
 
         <div className="carrito carrito-none-menu">
                 <i className="divSearch">
