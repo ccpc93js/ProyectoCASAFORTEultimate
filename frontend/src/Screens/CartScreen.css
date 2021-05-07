@@ -13,8 +13,9 @@
   flex-flow: wrap;
   justify-content:  space-between;
   align-items: center;
-  margin: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
   
 .rowCart ul li{
@@ -44,7 +45,7 @@
   }
 
   .col-2Cart ul li{
-    height: 8rem;
+    height: 10rem;
   }
 
 
@@ -214,13 +215,16 @@ text-align: center;
   margin-top: 3rem;
 }
 
+
+
+
 @media screen and (max-width:480px){
 
   
 
 .col-2Cart ul li{
   width: 20rem;
-  height: 13rem;
+  height: 15rem;
 }
 
 img.small{
@@ -232,4 +236,13 @@ img.small{
   justify-content: center;
   text-align: center;
 }
+}
+
+
+
+
+@media screen and (min-width:480px) and (max-width:860px){
+  .col-2Cart ul li{
+    height: 14rem;
+  }
 }

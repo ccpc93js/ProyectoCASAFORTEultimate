@@ -113,6 +113,7 @@ import Induma from './component/enlaces/Marcas/Induma';
 import HerramientasManuales from './component/enlaces/Categorias/HerramientasManuales';
 import UserListRegisteredScreen from './Screens/UserListRegisteredScreen';
 import MensajeRegistrado from './component/enlaces/MensajeRegistrado';
+import LufkinCrescent from './component/enlaces/Marcas/LufkinCrescent';
 
 
 export const useCategoria = () =>{
@@ -307,6 +308,7 @@ function App() {
          <Route exact path="/Multimarcas" component={Multimarcas}/>
          <Route exact path="/EGRET" component={Egret}/>
          <Route exact path="/INDUMA" component={Induma}/>
+         <Route exact path="/LUFKIN-CRESCENT" component={LufkinCrescent}/>
 
           {/* nuevos */}
          <Route exact path="/Nuevos" component={Nuevos}/>
