@@ -82,14 +82,14 @@ export default function Productos(props) {
         a.info > b.info ? 1:-1 : 
         clasificacion === "Ordenar por Nombre Descendente" ?
         a.info < b.info ? 1:-1 : 
-        clasificacion === "Ordenar por _id Ascendente" ?
+        clasificacion === "Ordenar por Codigo Ascendente" ?
         a.codigo > b.codigo ? 1:-1 : 
-        clasificacion === "Ordenar por _id Descendente" ?
+        clasificacion === "Ordenar por Codigo Descendente" ?
         a.codigo < b.codigo ? 1:-1 : 
-        clasificacion === "Ordenar por precio Ascendente" ?
+        clasificacion === "Ordenar por Precio Ascendente" ?
         a.precio > b.precio ? 1:-1 : 
-        clasificacion === "Ordenar por precio Descendente" ?
-        a.precio < b.precio ? 1:-1 : productos
+        clasificacion === "Ordenar por Precio Descendente" ?
+        a.precio < b.precio ? 1:-1 : 0
 
         
 

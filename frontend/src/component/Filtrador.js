@@ -59,8 +59,8 @@ function Filtrador(props) {
         <option value="Ordenar por Codigo Descendente">Ordenar por Codigo Descendente</option>
         <option value="Ordenar por Nombre Ascendente">Ordenar por Nombre Ascendente</option>
         <option value="Ordenar por Nombre Descendente">Ordenar por Nombre Descendente</option>
-        <option value="Ordenar por Nombre Descendente">Ordenar por Precio Descendente</option>
-        <option value="Ordenar por Nombre Descendente">Ordenar por Precio Descendente</option>
+        <option value="Ordenar por Precio Ascendente">Ordenar por Precio Ascendente</option>
+        <option value="Ordenar por Precio Descendente">Ordenar por Precio Descendente</option>
         </select>
         </div>
         </div>

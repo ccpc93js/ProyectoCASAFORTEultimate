@@ -4,6 +4,7 @@ import axios from 'axios'
 import data from './data.js'
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import StarsIcon from '@material-ui/icons/Stars';
 
 function WidgetFilters(props) {
     const [dataCategorias, setDataCategorias]=useState([]);
@@ -104,7 +105,7 @@ Subcategorias
     productFiltradoXProducto.map(x=>
      <li class="filter-categories__item filter-categories__item--parent">
     <svg class="filter-categories__arrow" >
-        <ArrowBackIosIcon/>
+        <StarsIcon/>
     </svg>
     <a data-id="3" href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
     </li>
@@ -167,7 +168,7 @@ Categorias
     categorias.map(x=>
      <li class="filter-categories__item filter-categories__item--parent">
     <svg class="filter-categories__arrow">
-        <ArrowBackIosIcon/>
+        <StarsIcon/>
     </svg>
     <a data-id="3" href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
     </li>
@@ -197,7 +198,7 @@ Subcategorias
     subcategorias.map(x=>
      <li class="filter-categories__item filter-categories__item--parent">
     <svg class="filter-categories__arrow">
-        <ArrowBackIosIcon/>
+        <StarsIcon/>
     </svg>
     <a data-id="3" href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
     </li>
@@ -232,7 +233,7 @@ Categorias
     categorias.map(x=>
      <li class="filter-categories__item filter-categories__item--parent">
     <svg class="filter-categories__arrow">
-        <ArrowBackIosIcon/>
+        <StarsIcon/>
     </svg>
     <a data-id="3" href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
     </li>
@@ -262,7 +263,7 @@ Subcategorias
     subcategorias.map(x=>
      <li class="filter-categories__item filter-categories__item--parent">
     <svg class="filter-categories__arrow">
-        <ArrowBackIosIcon/>
+        <StarsIcon/>
     </svg>
     <a data-id="3" href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
     </li>

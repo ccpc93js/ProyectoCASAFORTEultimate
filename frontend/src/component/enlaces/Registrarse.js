@@ -177,8 +177,9 @@ function Registrarse(props) {
                 </div>
                
                 <div className="button-contactenos">
-                <input type="submit" value="Solicitar cuenta" className="button "/>
-
+                <div className="button-center">
+                <button type="submit"  className="button">Solicitar cuenta</button>
+                </div>
                 </div>
                 <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de Privacidad.</p>
                 <p>¿Ya tienes una cuenta?<a className="link" href="/signin">Iniciar Sesión</a></p>

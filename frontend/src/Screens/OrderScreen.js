@@ -118,7 +118,7 @@ const cambiarAdolares = (valorPesos) =>{
                   {order.shippingAddress.postalCode},
                   {order.shippingAddress.country}
                 </h3>
-                {order.isDelivered ? (
+                {order.isDelivered && userInfo.isAdmin ? (
                   <MessageBox variant="success">
                    <h4> Entregado el {order.deliveredAt} </h4>
                   </MessageBox>
@@ -133,12 +133,20 @@ const cambiarAdolares = (valorPesos) =>{
                 <h3>
                   <strong>Metodo:</strong> {order.paymentMethod}
                 </h3>
-                {order.isPaid ? (
+                {order.isPaid && userInfo.isAdmin ? (
                   <MessageBox variant="success">
                    <h4> Pagado el {order.paidAt} </h4>
                   </MessageBox>
                 ) : (
                   <MessageBox variant="danger">No Pagado</MessageBox>
+                )}
+                    {order.isPaid ? (
+                  <MessageBox variant="success">
+                 {/* aqui va modal compra succes */}
+                  </MessageBox>
+                ) : (
+                  // <MessageBox variant="danger">No Pagado</MessageBox>
+                  ""
                 )}
               </div>
             </li>
@@ -242,7 +250,8 @@ const cambiarAdolares = (valorPesos) =>{
                      <div className="loading-div">
                        <LoadingBox></LoadingBox>
                        </div>
-                      }                  {errorDeliver && (
+                      } 
+                      {errorDeliver && (
                     <MessageBox variant="danger">{errorDeliver}</MessageBox>
                   )}
                 </li>

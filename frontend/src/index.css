@@ -1,3 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap'); */
+
 *{
   margin:0;
   padding:0;
@@ -7,7 +10,10 @@
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   /* font-family: 'Times New Roman', Times, serif !important; */
   font-family: 'Roboto', sans-serif !important;
-  font-weight: 500;
+  /* font-family: 'Poppins', sans-serif !important; */
+
+  /* font-family: 'Work Sans', sans-serif; */
+  /* font-weight: 500; */
   
   
 
@@ -614,7 +620,7 @@ button.small {
   padding: 1em;
 }
 
-.contact-form form button,
+
 .contact-form form input,
 .contact-form form textarea{
   width: 100%;
@@ -628,6 +634,10 @@ button.small {
 }
 
 .contact-form form button{
+  margin-top: 2rem;
+}
+
+/* .contact-form form button{
   border: none;
   width: 35%;
   margin: 0;
@@ -638,14 +648,14 @@ button.small {
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
-}
+} */
 
-.contact-form p>button{
+/* .contact-form p>button{
   margin-left: 7rem;
-}
-.contact-form form button:hover{
+} */
+/* .contact-form form button:hover{
   background: #1a2537;
-}
+} */
 
 .contacto{
   margin-bottom: 2rem;

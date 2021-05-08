@@ -185,7 +185,9 @@ export const HomeScreen = () => {
 </div>
 
 
-<div className="kontainer1">    
+<div className="kontainer1">  
+
+        <div className="frase">
 
     <i class=""><LocalShippingIcon/></i>
 
@@ -196,6 +198,9 @@ export const HomeScreen = () => {
     <p className="parrafo">
         Nuestro compromiso con todos nuestros clientes <br></br> consiste en garantizar tiempos de entrega <br></br> maximos de un d&iacute;a.
     </p>
+        </div>
+
+        <div className="frase">
 
     <i class=""><ThumbsUpDownIcon/></i>
 
@@ -207,6 +212,11 @@ export const HomeScreen = () => {
             La confianza de nuestros clientes es nuestro <br></br> mayor activo, por esa raz&oacute;n la construimos <br></br> d&iacute;a a d&iacute;a, brindando el mejor servicio
         </p>
 
+        </div>
+
+        <div className="frase">
+
+
     <i class=""><TelegramIcon/></i>
 
     <p className="subtitulo">
@@ -215,6 +225,10 @@ export const HomeScreen = () => {
     <p className="parrafo">
         El servicio es nuestra garant&iacute;a, <br></br> nos esforzamos para que tu negocio cuente <br></br> con los mejores productos en el menor tiempo.
     </p>
+        </div>
+
+
+        <div className="frase">
 
     <i class=""><CardGiftcardIcon/></i>
 
@@ -225,6 +239,7 @@ export const HomeScreen = () => {
         <p className="parrafo">
             Tu eres nuestra prioridad y por ello <br></br> recibiras recompensas por tu fidelidad, <br></br> tenemos muchos premios para t&iacute;.
         </p>
+        </div>
 </div>
 
             

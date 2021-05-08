@@ -1,9 +1,13 @@
-import React, { /*useEffect*/ useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import LoadingBox from '../LoadingBox';
 import MessageBox from '../MessageBox';
 // import { Link } from 'react-router-dom';
 import { register } from '../../actions/userActions';
+import EmailIcon from '@material-ui/icons/Email';
+import PersonIcon from '@material-ui/icons/Person';
+import LockIcon from '@material-ui/icons/Lock';
+import ContactsIcon from '@material-ui/icons/Contacts';
 
 
 function LoginRegistro(props) {
@@ -18,8 +22,11 @@ function LoginRegistro(props) {
   //   ? props.location.search.split('=')[1]
   //   : '/';
 
-  const userRegister = useSelector((state) => state.userRegister);
-  const { /*userInfo*/ loading, error } = userRegister;
+  const userSignin = useSelector((state) => state.userSignin);
+  const { userInfo, loading, error } = userSignin;
+  if(!userInfo){
+    props.history.push('/signin')
+}
 
   const dispatch = useDispatch();
   const submitHandler = (e) => {
@@ -30,26 +37,26 @@ function LoginRegistro(props) {
         dispatch(register(name, nit, email, password));
       }  
     };
-  // useEffect(() => {
-  //   if (userInfo) {
-  //     props.history.push(redirect);
-  //   }
-  // }, [props.history, redirect, userInfo]);
+  useEffect(() => {
+    if (userInfo) {
+     alert("Usuario registrado correctamete")
+    }
+  }, [ userInfo]);
 
     return (
         <div>
-            <div class="contacto">
+            <div className="contacto">
                 <img src="../enlaces/img/clientes.png" alt=""/>
             </div>
              
-            <form class="formulario" onSubmit={submitHandler}>
-                 <h1>Login Registro</h1>
+            <form className="formulario" onSubmit={submitHandler}>
+                 <h1>Registrar Usuario</h1>
                   <br/>
                 {loading && <LoadingBox></LoadingBox>}
                 {error && <MessageBox variant="danger">{error}</MessageBox>}
 
-                <div class="input-contenedor">
-                    <i class="fas fa-user icon"></i>
+                <div className="input-contenedor">
+                    <i className=""><PersonIcon/></i>
                     <input 
                     type="text2" 
                     id="name"
@@ -60,8 +67,8 @@ function LoginRegistro(props) {
                     />
                 </div>
 
-                <div class="input-contenedor">
-                    <i class="fas fa-user icon"></i>
+                <div className="input-contenedor">
+                    <i className=""><ContactsIcon/></i>
                     <input 
                     type="text2" 
                     id="nit"
@@ -72,8 +79,8 @@ function LoginRegistro(props) {
                     />
                 </div>
 
-                <div class="input-contenedor">
-                    <i class="fas fa-user icon"></i>
+                <div className="input-contenedor">
+                    <i className=""><EmailIcon/></i>
                     <input 
                     type="email" 
                     id="email"
@@ -84,8 +91,8 @@ function LoginRegistro(props) {
                     />
                 </div>
 
-                <div class="input-contenedor">
-                    <i class="fas fa-key icon"></i>
+                <div className="input-contenedor">
+                    <i className=""><LockIcon/></i>
                     <input 
                     type="password" 
                     id="password"
@@ -95,8 +102,8 @@ function LoginRegistro(props) {
                     />
                 </div>
 
-                <div class="input-contenedor">
-                    <i class="fas fa-key icon"></i>
+                <div className="input-contenedor">
+                    <i className=""><LockIcon/></i>
                     <input 
                     type="password" 
                     id="confirmPassword"
@@ -105,10 +112,11 @@ function LoginRegistro(props) {
                     onChange={(e) => setConfirmPassword(e.target.value)}
                     />
                 </div>
-
-                <input type="submit" value="Registrar" class="button"/>
+                <div className="button-center">
+                <button type="submit"  className="button">Registrar</button>
+                </div>
                 <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de Privacidad.</p>
-                <p>¿No tienes una cuenta?<a class="link" href="/Zona_clientes">Solicita tu cuenta</a></p>
+                <p>¿No tienes una cuenta?<a className="link" href="/registrarse">Solicita tu cuenta</a></p>
                
             
             </form>  

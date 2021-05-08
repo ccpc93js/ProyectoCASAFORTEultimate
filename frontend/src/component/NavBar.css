@@ -107,9 +107,7 @@ position: relative;
 bottom: 0.9rem;
 } */
 
-.menu1 >.drdropdown{
-  
-}
+
 
 
 .menu-button{
@@ -138,7 +136,7 @@ bottom: 0.9rem;
   /* left: 110rem ;
   top: 2.5rem; */
   margin-top: 2rem;
-  margin-right: 2rem;
+  margin-right: 5rem;
   float: right;
   /* margin-left: 55rem; */
   /* position: absolute; */
@@ -147,10 +145,12 @@ bottom: 0.9rem;
   display: flex;
   flex-direction: row;
 
+
   
 }
 
 .carrito i{
+  margin-right: 1rem;
   color: #014286;
   /* position: relative;
 
@@ -217,7 +217,7 @@ top: 0.2rem;
  }
 
 /* Dropdown */
-.dropdown {
+/* .dropdown {
   z-index: 100;
   display: inline-block;
   position: relative;
@@ -230,24 +230,22 @@ top: 0.2rem;
   height: 20rem;
   padding: 1rem;
   /* z-index: 50; */
-  background-color: #73a3d3;
-  margin: 0;
-  margin-top: 0.4rem;
-  border-radius: 0.2rem;
-}
+  /* background-color: #73a3d3; */
+  /* margin: 0; */
+  /* margin-top: 0.4rem; */
+  /* border-radius: 0.2rem; */
+/* } */
 
-.dropdown:hover .dropdown-content {
+
+/* .dropdown:hover .dropdown-content {
   display: block;
   width: 100%;
   height: 10rem;
   box-shadow: 0px 3px 8px -2px rgb(0 0 0 / 6%), 0px 1px 2px 0px rgb(0 0 0 / 4%), 0px 1px 3px 0px rgb(0 0 0 / 2%);
-  /* overflow-y: scroll ; */
 
 
-  
-
-}
-.dropdown:hover .dropdown-content li{
+} */
+/* .dropdown:hover .dropdown-content li{
   margin: 0.3rem;
   position: relative;
   bottom: 0.7rem;
@@ -255,26 +253,26 @@ top: 0.2rem;
   text-overflow: ellipsis;
 
 
-}
+}  */
 
 /* a .dropdown-content:focus{
 background-color: white;
 color: #73a3d3;
 } */
 
-.dropdown li :hover{
+/* .dropdown li :hover{
   color: #73a3d3;
   background: white;
   /* width: 100%; */
-  padding: 4px;
-}
+  /* padding: 4px; */
+/* } */
 
-.dropdown ul li a :hover{
+/* .dropdown ul li a :hover{
   color: #73a3d3;
   background: white;
   /* width: 100%; */
-  padding: 4px;
-}
+  /* padding: 4px; */
+/* }   */
 
 
 
@@ -285,8 +283,64 @@ color: #73a3d3;
 
 
 .dropdown{
-  margin-left: 1rem;
+  margin-right: 2rem;
 }
+
+
+
+
+
+
+
+/* dropdown  mejorado */
+
+/* .dropbtn {
+  background-color: #4CAF50;
+  color: rgb(7, 51, 250);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+} */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  font-size: 17px;
+  display: none;
+  position: absolute;
+  background-color: #437de7;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+  margin: 0 -5rem;
+}
+
+
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #437de7;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
 .userName{
   color: gray;
 
@@ -299,7 +353,7 @@ margin-left: 1rem;
 }
 
 /*=?=====RESPONSIVE=========*/
-@media screen and (max-width:540px){
+@media screen and (max-width:580px){
   header {
     /* display: none; */
     background-color: #f7f7f7;
@@ -344,16 +398,16 @@ margin-left: 1rem;
       margin-left: 2rem;
     }
 
-    .dropdown-content{
-        min-width: 9rem;
-        height: 22rem;
+    .dropdown-content {
+        min-width: 100px;
         font-size: 15px;
+        width: 120px;
 
 
     }
 
   }
-  @media screen and (min-width:540px) and (max-width:768px){
+  @media screen and (min-width:580px) and (max-width:768px){
     header {
       /* display: none; */
       background-color: #f7f7f7;

@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import axios from 'axios';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 class Contactenos extends Component {
     nombre = React.createRef();
@@ -52,42 +53,42 @@ class Contactenos extends Component {
     render() {
     return (
         <div>
-            <div class="contacto">
+            <div className="contacto">
                 <img src="../enlaces/img/clientes.png" alt=""/>
             </div>
 
-            <p class="contactanos">
+            <p className="contactanos">
              Elige cualquiera de los siguientes canales para comunicarte con nosotros
             </p>
 
-            <div class="asesor">
+            <div className="asesor">
 
-            <p class="linea">
+            <p className="linea">
 
              <b>Linea comercial</b>
 
              </p>
 
-            <p class="comunicate">
+            <p className="comunicate">
                   Comunicate con un asesor y conoce todas las opciones que tenemos para tu negocio.
             </p>
 
-            <p class="cel">
+            <p className="cel">
             <b>+57 304 6486898</b>
             </p>
 
-            <a href="#" class="whatsapp">
-                <i class="fab fa-whatsapp"></i>
+            <a href="#" className="whatsapp">
+                <i className=""><WhatsAppIcon/></i>
             </a>
 
             </div>
 
-            <div class="content">
+            <div className="content">
 
-                <h1 class="contacto">Cont&aacute;ctanos</h1>
+                <h1 className="contacto">Cont&aacute;ctanos</h1>
             
-                <div class="contact-wrapper">
-                <div class="contact-form">
+                <div className="contact-wrapper">
+                <div className="contact-form">
 
                     <form  onSubmit={this.enviarEmail}>
                         <p>
@@ -142,9 +143,11 @@ class Contactenos extends Component {
 
                         <div className="button-contactenos">
 
-                            <button type="submit" className="shadow-button ">
-                                Enviar
-                            </button>
+                         <div className="button-center">
+                         <button type="submit"  className="button">Enviar</button>
+                        </div>
+
+                        
                         </div>
                        
                         

@@ -119,9 +119,11 @@ export default function CartScreen(props) {
                             </h2>
                         </li>
                         <li>
-                            <button type="button" onClick={checkoutHandler} className=" button"  disabled ={cartItems.length === 0}>
+                       <div className="button-center">
+                       <button type="button" onClick={checkoutHandler} className=" button"  disabled ={cartItems.length === 0}>
                                 Ir a pagar
                             </button>
+                       </div>
                         </li>
                     </ul>
                 </div>

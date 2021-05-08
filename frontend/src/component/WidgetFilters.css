@@ -11,9 +11,7 @@
     margin-bottom: 3rem;
 }
 
-.block-sidebar__item{
-    /* height: 50rem; */
-}
+
 
 .widget-filters {
     border: 2px solid #f0f0f0;
@@ -92,7 +90,7 @@
 
 .filter__title button {
     appearance: auto;
-    -webkit-writing-mode: horizontal-tb !important;
+    /* -webkit-writing-mode: horizontal-tb !important; */
     text-rendering: auto;
     color: -internal-light-dark(black, white);
     letter-spacing: normal;
@@ -225,7 +223,7 @@ color: black;
     /* position: absolute;
     top: 0.7rem;
     right: 5rem; */
-    width:10px;
+    width:15px;
     height:17px;
 }
 
