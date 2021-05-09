@@ -58,10 +58,10 @@ const Listas =()=> {
                              Productos 
                         </ListItemText>
 
-                        <button id="icon-drop">
+                        {/* <button id="icon-drop">
                         <ArrowDropDownIcon/>
 
-                        </button>
+                        </button> */}
                         <IconButton
                          onClick={handleDrawerOpen}
 

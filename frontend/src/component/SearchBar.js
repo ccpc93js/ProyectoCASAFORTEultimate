@@ -78,8 +78,8 @@ fecthData();
                     <a href={`/producto/${val._id}`} className="elementSearch">
                     <img src={val.imagen.img1} alt="" className="img-search"/>  
                     <div className="info-element">
-                      <div className="elementSearch-p">{val.info}</div>
-                      <div className="elementSearch-p">${val.precio}</div>
+                      <div className="elementSearch-p"><h3>{val.info}</h3></div>
+                      <div className="elementSearch-p"><h3>${val.precio}</h3></div>
                     </div>
                  </a>
 

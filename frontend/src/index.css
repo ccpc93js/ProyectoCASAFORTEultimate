@@ -1,5 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 *{
   margin:0;
@@ -9,7 +10,8 @@
   box-sizing: border-box;
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   /* font-family: 'Times New Roman', Times, serif !important; */
-  font-family: 'Roboto', sans-serif !important;
+  /* font-family: 'Roboto', sans-serif !important; */
+  font-family: 'Space Mono', monospace !important;
   /* font-family: 'Poppins', sans-serif !important; */
 
   /* font-family: 'Work Sans', sans-serif; */

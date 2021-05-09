@@ -137,6 +137,11 @@ justify-content: left;
             margin-left: 10px;
         }
 
+        .info-element h3{
+            font-size: 5px;
+
+        }
+
 .searchBar input{
     width: 100%;
     margin: 0 0;
