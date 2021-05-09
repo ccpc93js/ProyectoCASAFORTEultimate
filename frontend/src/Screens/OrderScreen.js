@@ -140,7 +140,7 @@ const cambiarAdolares = (valorPesos) =>{
                 ) : (
                   <MessageBox variant="danger">No Pagado</MessageBox>
                 )):""}
-                    {order.isPaid ? (
+                    {order.isPaid && userInfo && !userInfo.isAdmin ? (
                   <MessageBox variant="success">
                     Compra exitosa, gracias por su compra! <br/> el proveedor se comunicara con usted para la entrega.
                  {/* aqui va modal compra succes */}

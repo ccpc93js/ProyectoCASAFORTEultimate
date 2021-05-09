@@ -127,7 +127,7 @@ bottom: 0.9rem;
   margin-top: 2.5rem;
 }
 .casaforte-a{
-  margin-left: 2rem;
+  margin-left: 5rem;
 }
 
  .carrito{
@@ -171,7 +171,8 @@ bottom: 0.9rem;
   border-radius: 100%;
   padding: 0.3rem 0.3rem 0.3rem 0.3rem;
   font-size: 0.7rem;
-  margin-left: 0.2rem;
+  margin-left: -1rem;
+  margin-right: 1rem;
 }
 
   .caja li a:hover{
@@ -395,7 +396,7 @@ margin-left: 1rem;
       display: none;
     }
     .carrito{
-      margin-left: 2rem;
+      margin-left: 1rem;
     }
 
     .dropdown-content {
@@ -405,6 +406,15 @@ margin-left: 1rem;
 
 
     }
+
+.carrito i{
+  margin-right: 0;
+}
+
+.badge{
+  margin-left: 0.3rem;
+  margin-right: 1rem;
+}
 
   }
   @media screen and (min-width:580px) and (max-width:768px){

@@ -1,6 +1,6 @@
 .categoriasDrawerUp{
 display: none;
-transition: 6s;
+transition: all 300ms;
 }
 
 .listas li{
@@ -18,12 +18,30 @@ transition: 6s;
     color: rgb(78, 76, 76);
     font-size: 17px;
     font-weight: 500;
+    transition: all 300ms;
+
 }
 
 .categoriasDrawerDrop ul{
     margin: 0 2rem;
 
 }
+
+#icon-drop{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    color: #787878;
+    cursor: pointer;
+    padding-left: 2rem;
+}
+
+#icon-drop:hover{
+    opacity: 0.8;
+}
+
+
 
 @media screen and (min-width:768px) and (max-width:1024px){
 

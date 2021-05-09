@@ -57,6 +57,11 @@ const Listas =()=> {
                         <ListItemText className={classes.listas}>
                              Productos 
                         </ListItemText>
+
+                        <button id="icon-drop">
+                        <ArrowDropDownIcon/>
+
+                        </button>
                         <IconButton
                          onClick={handleDrawerOpen}
 

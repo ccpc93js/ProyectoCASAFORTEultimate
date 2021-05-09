@@ -9,6 +9,7 @@ import { BrowserRouter, Route,  } from "react-router-dom";
 import  DrawerMenu  from './component/DrawerMenu';
 import  DrawerFilter  from './component/DrawerFilter';
 import LoadingPageLogo from './component/LoadingPageLogo'
+import Whatsapp from './component/Whatsapp'
 
 
 // import data from '../data.js'
@@ -161,6 +162,7 @@ function App() {
 
 
     <div className="grid-container">
+      <Whatsapp/>
   
         <header>
           {/* <NavBar2></NavBar2> */}
