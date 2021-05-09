@@ -10,6 +10,15 @@ import  DrawerMenu  from './component/DrawerMenu';
 import  DrawerFilter  from './component/DrawerFilter';
 import LoadingPageLogo from './component/LoadingPageLogo'
 import Whatsapp from './component/Whatsapp'
+import { makeStyles } from "@material-ui/core/styles";
+import PropTypes from "prop-types";
+import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import Zoom from "@material-ui/core/Zoom";
+import Fab from "@material-ui/core/Fab";
+import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
+
+
+
 
 
 // import data from '../data.js'
@@ -126,7 +135,18 @@ const abrasivos = () =>{
   return {categorias, abrasivos}
 }
 
-function App() {
+function App(props) {
+
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      position: "fixed",
+      bottom: theme.spacing(15),
+      right: theme.spacing(7),
+      color: "inherit",
+    
+    }
+  }));
+
   const [loading, setLoading] = useState(true);
 
   setTimeout(()=>{
@@ -147,6 +167,47 @@ function App() {
   }
 
 
+  function ScrollTop(props) {
+    const { children, window } = props;
+    const classes = useStyles();
+    // Note that you normally won't need to set the window ref as useScrollTrigger
+    // will default to window.
+    // This is only being set here because the demo is in an iframe.
+    const trigger = useScrollTrigger({
+      target: window ? window() : undefined,
+      disableHysteresis: true,
+      threshold: 100
+    });
+  
+    const handleClick = (event) => {
+      const anchor = (event.target.ownerDocument || document).querySelector(
+        "#back-to-top-anchor"
+      );
+  
+      if (anchor) {
+        anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    };
+
+    ScrollTop.propTypes = {
+      children: PropTypes.element.isRequired,
+      /**
+       * Injected by the documentation to work in an iframe.
+       * You won't need it on your project.
+       */
+      window: PropTypes.func
+    };
+  
+    return (
+      <Zoom in={trigger}>
+        <div onClick={handleClick} role="presentation" className={classes.root}>
+          {children}
+        </div>
+      </Zoom>
+    );
+  }
+
+
 
   
   if (loading){
@@ -164,13 +225,13 @@ function App() {
     <div className="grid-container">
       <Whatsapp/>
   
-        <header>
+        <header id="back-to-top-anchor" >
           {/* <NavBar2></NavBar2> */}
           <NavBar  handleDrawerOpen={handleDrawerOpen}/>
           <DrawerMenu handleDrawerClose={handleDrawerClose} open={open}  onClose={accionOpen}></DrawerMenu>
 
         </header>
-        <main>
+        <main >
 
         <Route exact path="/cart/:id?" component={CartScreen}/>
         <Route exact path="/producto/:id" component={ProductScreen}/>
@@ -322,7 +383,11 @@ function App() {
 
 
 
-
+         <ScrollTop {...props}>
+        <Fab color="secondary" size="small" aria-label="scroll back to top">
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollTop>
 
         </main>
         <footer className="footer">

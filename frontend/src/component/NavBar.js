@@ -42,7 +42,7 @@ export const NavBar = (props) => {
             </button>
 
             <a className="casaforte-a" href="/"><img className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/></a>
-            <div className="carrito carrito-none">
+            <div className="carrito ">
                 <i className="divSearch">
 
             <ModalSearch/>
@@ -50,12 +50,12 @@ export const NavBar = (props) => {
             
             <Link to="/cart"><i> <ShoppingCartIcon/></i>
                 {cartItems.length > 0 && (
-                    <span className="badge">{cartItems.length}</span>
+                    <span className="badge ">{cartItems.length}</span>
                     )}
             </Link>
             {
                 userInfo ? (
-                    <div className="dropdown ">
+                    <div className="dropdown carrito-none">
                     <Link className="userName" to="#">{userInfo.name} <i className=""><ArrowDropDownIcon/></i>{" "}</Link>
                     <ul className="dropdown-content">
                         <li>
@@ -75,7 +75,7 @@ export const NavBar = (props) => {
                     )
                 }
             {userInfo && userInfo.isAdmin && (
-                <div className="dropdown">
+                <div className="dropdown carrito-none">
                 <Link to="#admin" className="userName" >
                   Admin <i className=""><ArrowDropDownIcon/></i>
                 </Link>
