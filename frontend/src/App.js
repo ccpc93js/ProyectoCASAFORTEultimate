@@ -16,6 +16,8 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Zoom from "@material-ui/core/Zoom";
 import Fab from "@material-ui/core/Fab";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
+import Toolbar from "@material-ui/core/Toolbar";
+
 
 
 
@@ -124,6 +126,7 @@ import HerramientasManuales from './component/enlaces/Categorias/HerramientasMan
 import UserListRegisteredScreen from './Screens/UserListRegisteredScreen';
 import MensajeRegistrado from './component/enlaces/MensajeRegistrado';
 import LufkinCrescent from './component/enlaces/Marcas/LufkinCrescent';
+import DashboardScreen from './Screens/DashboardScreen';
 
 
 export const useCategoria = () =>{
@@ -225,12 +228,14 @@ function App(props) {
     <div className="grid-container">
       <Whatsapp/>
   
-        <header id="back-to-top-anchor" >
+        <header  >
           {/* <NavBar2></NavBar2> */}
           <NavBar  handleDrawerOpen={handleDrawerOpen}/>
           <DrawerMenu handleDrawerClose={handleDrawerClose} open={open}  onClose={accionOpen}></DrawerMenu>
 
         </header>
+        <Toolbar id="back-to-top-anchor" />
+
         <main >
 
         <Route exact path="/cart/:id?" component={CartScreen}/>
@@ -249,7 +254,11 @@ function App(props) {
 
          <Route exact path="/signin" component={ZonaClientes}/>
          <Route exact path="/registrarse" component={Registrarse}/>
-         <Route exact path="/loginRegistro" component={LoginRegistro}/>
+        
+        <AdminRoute
+           path="/loginRegistro" component={LoginRegistro}>
+        </AdminRoute>
+        
          <Route path="/shipping" component={ShippingAddressScreen}></Route>
          <Route path="/payment" component={PaymentMethodScreen}></Route>
          <Route path="/placeorder" component={PlaceOrderScreen}></Route>
@@ -290,6 +299,11 @@ function App(props) {
             path="/user/:id/edit"
             component={UserEditScreen}
         ></AdminRoute>
+
+          <AdminRoute
+            path="/dashboard"
+            component={DashboardScreen}
+          ></AdminRoute>
 
 
 
@@ -383,16 +397,18 @@ function App(props) {
 
 
 
-         <ScrollTop {...props}>
-        <Fab color="secondary" size="small" aria-label="scroll back to top">
-          <KeyboardArrowUpIcon />
-        </Fab>
-      </ScrollTop>
+     
 
         </main>
         <footer className="footer">
           <Footer/>
         </footer>
+
+        <ScrollTop {...props}>
+        <Fab color="inherit" size="small" aria-label="scroll back to top">
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollTop>
             
           
     </div>

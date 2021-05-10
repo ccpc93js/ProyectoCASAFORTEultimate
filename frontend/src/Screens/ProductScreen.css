@@ -267,6 +267,10 @@ ul, li{
   right: 0;
 }
 
+.info-ps{
+  color: #a5a1a1;
+}
+
 @media (max-width: 640px) {
 
   .productScreen-card{

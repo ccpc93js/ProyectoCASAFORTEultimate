@@ -43,7 +43,7 @@ footer{
   }
   
   .footer-left img{
-    width: 5rem;
+    width: 8rem;
    
   }
   
@@ -76,6 +76,7 @@ footer{
     display: -o-flex;
     display: flex;
     flex-flow: row wrap;
+    margin: 0 8rem;
   }
   
   .footer-right > * {

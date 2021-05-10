@@ -2,6 +2,7 @@ import React from 'react'
 import SearchBar from './SearchBar'
 import SearchIcon from '@material-ui/icons/Search';
 import './ModalSearch.css'
+import ClearIcon from '@material-ui/icons/Clear';
 
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -62,6 +63,17 @@ export default function ModalSearch() {
 
   const body = (
     <div className='modalSearch'>
+      
+      <IconButton
+       className="ClearIcon"
+       onClick={ModalSearchClose}
+       color="inherit"
+       >
+         <i   className="ClearIcon">
+        <ClearIcon/>
+
+         </i>
+      </IconButton>
     
 
     

@@ -1,7 +1,11 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); */
 
 *{
   margin:0;
@@ -13,11 +17,13 @@
   /* font-family: 'Times New Roman', Times, serif !important; */
   /* font-family: 'Roboto', sans-serif !important; */
   /* font-family: 'Space Mono', monospace !important; */
-  font-family: 'Open Sans', sans-serif !important;
-  /* font-family: 'Poppins', sans-serif !important; */
+  /* font-family: 'Open Sans', sans-serif !important; */
+  font-family: 'Poppins', sans-serif !important;
+
+  /* font-family: 'Montserrat', sans-serif !important; ; */
 
   /* font-family: 'Work Sans', sans-serif; */
-  /* font-weight: 500; */
+  /* font-weight: 400 !important; */
   
   
 
@@ -61,7 +67,7 @@ header {
 } */
 
 main{
- padding-top: 7rem;
+ padding-top: 3.5rem;
   background-color: #ffffff;
   min-height: calc(150vh );
 
@@ -1055,6 +1061,9 @@ transition: 0.3s;
 color: #464343;
 }
 
+#back-to-top-anchor{
+  height: 1;
+}
 
 
 /*=?=====RESPONSIVE=========*/
@@ -1262,6 +1271,10 @@ color: #464343;
 
 }
 @media screen and (min-width:480px) and (max-width:768px){
+
+  main{
+    margin-top: -0.9rem;
+  }
 
   .loading-div{
     /* margin-left: 2rem; */

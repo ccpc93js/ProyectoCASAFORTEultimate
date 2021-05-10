@@ -1,7 +1,7 @@
 import { createStore,compose, applyMiddleware,combineReducers } from 'redux';
 import thunk from 'redux-thunk'
 import { cartReducer } from './reducers/cartReducers';
-import { orderCreateReducer, orderDeleteReducer, orderDeliverReducer, orderDetailsReducer, orderListReducer, orderMineListReducer, orderPayReducer } from './reducers/orderReducers';
+import { orderCreateReducer, orderDeleteReducer, orderDeliverReducer, orderDetailsReducer, orderListReducer, orderMineListReducer, orderPayReducer, orderSummaryReducer } from './reducers/orderReducers';
 // import data from './data'; se utilizo redux
 import { productCreateReducer, productDeleteReducer, productDetailsReducer, productListReducer, productUpdateReducer } from "./reducers/productReducers";
 import { userCreateReducer, userDeleteReducer, userDetailsReducer, userInfoDeleteReducer, userListReducer, userListRegisteredReducer, userRegisterInfoReducer, userRegisterReducer, userSigninReducer, userUpdateProfileReducer, userUpdateReducer } from './reducers/userReducers';
@@ -47,6 +47,8 @@ const reducer = combineReducers({
     orderList: orderListReducer,
     orderDelete: orderDeleteReducer,
     orderDeliver: orderDeliverReducer,
+    orderSummary: orderSummaryReducer,
+
 
 
 

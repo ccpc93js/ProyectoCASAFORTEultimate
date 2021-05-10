@@ -1,5 +1,12 @@
 .modalSearch{
    margin: 10%;
+   margin-top: 9rem;
+
+}
+
+.ClearIcon{
+    float: right;
+    color: white;
 }
 
 .containerElement{
@@ -24,6 +31,7 @@ margin: auto;
     text-decoration: none;
     list-style:none;
     margin:0 20%;
+    margin-top: 4rem;
     /* position: fixed;
     left: 3;
     z-index: 50; */

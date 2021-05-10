@@ -103,7 +103,7 @@ function ProductScreen(props) {
                     <ArrowForwardIosIcon/>
                     </svg> */}
                     </li>
-                    <li className="breadcrumb-item">
+                    <li className="breadcrumb-item info-ps">
                         {
                             producto.info
                         }
@@ -120,10 +120,10 @@ function ProductScreen(props) {
         <div className="productScreen-list-item ">
         <div key={producto._id} className="productScreen-card  ">
         <div className="productScreen-image shadow-box-productos">
-        <Link to="#">
+    
         {loading && <LoadingBox/>}
         <img className=" " alt={producto.info} src={producto.imagen.img1} />
-        </Link>
+     
         </div>
        
         <div className="productScreen-card-body ">
