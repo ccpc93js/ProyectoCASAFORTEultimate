@@ -71,7 +71,7 @@ export const NavBar = (props) => {
                 </div>
                 ) : 
                 (
-                    <a href="/signin"><i><PersonIcon/></i></a>
+                    <a href="/signin" className="carrito-none"><i><PersonIcon/></i></a>
                     )
                 }
             {userInfo && userInfo.isAdmin && (
@@ -163,7 +163,7 @@ export const NavBar = (props) => {
                     <li><a href="/ARGOS">argos</a></li>
                 </ul>
                 <ul>
-                    <li><a href="/MULTIMARCAS">Multimarcas</a></li>
+                    <li><a href="/MULTIMARCA">Multimarca</a></li>
                     <li><a href="/CODELCA">Codelca</a></li>
                     <li><a href="/LUMINEX">Luminex</a></li>
                     <li><a href="/LUFKIN-CRESCENT">Lufkin-crescent</a></li>

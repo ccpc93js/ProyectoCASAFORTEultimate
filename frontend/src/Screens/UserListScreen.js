@@ -76,9 +76,9 @@ export default function UserListScreen(props) {
          placeholder="Buscar usuario..." 
          onChange={(e) =>{setSearchTerm(e.target.value)}}
          />
-        <button type="button" className="button-success " onClick={createHandler}>
+        {/* <button type="button" className="button-success " onClick={createHandler}>
           Crear Usuario
-        </button>
+        </button> */}
       </div>
 
       {loadingDelete && <LoadingBox></LoadingBox>}

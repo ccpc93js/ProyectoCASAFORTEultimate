@@ -22,12 +22,12 @@ export const Footer = () => {
                     <h2>Informaci&oacute;n de inter&eacute;s</h2>
                 
                 <ul className="box">
-                    <li><a href="enlaces/nosotros.html">Nosotros</a></li>
-                    <li><a href="enlaces/Productos.html">Productos</a></li>
-                    <li><a href="enlaces/marcas.html">Marcas</a></li>
-                    <li><a href="enlaces/Contactenos.html">Cont&aacute;ctanos</a></li>
-                    <li><a href="enlaces/zona_clientes.html">Clientes</a></li>
-                    <li><a href="enlaces/ofertas.html">Ofertas</a></li>
+                    <li><a href="/nosotros">Nosotros</a></li>
+                    <li><a href="/productos">Productos</a></li>
+                    <li><a href="/marcas">Marcas</a></li>
+                    <li><a href="/contactenos">Cont&aacute;ctanos</a></li>
+                    <li><a href="/signin">Clientes</a></li>
+                    <li><a href="/nuevos">Nuevos</a></li>
                 </ul>
             </li>
 
@@ -45,10 +45,10 @@ export const Footer = () => {
                 <h2>Contacto</h2>
 
             <ul className="box">
-                <li><a href="#">Sede Principal</a></li>
-                <li><a href="#">Cll 13 # 74-67 Mz G L 17 Etapa 1</a></li>
-                <li><a href="#">+57 6 66 17 326</a></li>
-                <li><a href="#">+57 304 648 6898</a></li>
+                <li>Sede Principal</li>
+                <li>Cll 13 # 74-67 Mz G L 17 Etapa 1</li>
+                <li>+57 6 66 17 326</li>
+                <li>+57 304 648 6898</li>
 
             </ul>
         </li>

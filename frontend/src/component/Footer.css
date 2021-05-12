@@ -34,12 +34,13 @@ footer{
   }
   
   .footer-left{
-  margin-right: 1.25em;
   margin-bottom: 2em;
   }
 
   .footer-left p{
     text-align: center;
+    margin: 2rem 5rem ;
+
   }
   
   .footer-left img{
@@ -93,6 +94,13 @@ footer{
    background-color: transparent; 
    border-color: transparent;
   }
+  .box li{
+    color: white;
+  }
+
+  .box a:hover{
+    color: grey;
+  }
   
   
   .footer-bottom{
@@ -116,6 +124,7 @@ footer{
   .socials{
     position: relative;
     float: right;
+    margin-right: 60px;
   }
 
   .socials p{
@@ -127,6 +136,10 @@ footer{
   height: 40px;
   display: inline-block;
   margin-right: 10px;
+  }
+
+  .socials i:hover{
+    color: grey;
   }
   
   .socials a i{
@@ -151,6 +164,7 @@ footer{
     .footer-right{
         flex: 2 0px;
     }
+    
 
     
   }

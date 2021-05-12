@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { registerInfo } from '../../actions/userActions';
 import LoadingBox from '../LoadingBox';
@@ -41,6 +42,23 @@ function Registrarse(props) {
 
     }
     messege();
+
+    const enviarEmail = async(name, tDocument ,nDocument ,department, city, adress, email, tel, cel, tipoClient)=>{
+        await axios.post("/api/emails/registrarse",{
+            name,
+            tDocument,
+            nDocument,
+            department, 
+            city, 
+            adress, 
+            email, 
+            tel, 
+            cel, 
+            tipoClient
+        });
+    }
+
+    enviarEmail(name, tDocument ,nDocument ,department, city, adress, email, tel, cel, tipoClient);
 
     };
     return (

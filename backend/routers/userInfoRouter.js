@@ -48,5 +48,22 @@ userInfoRouter.post(
       res.send(usersInfo);
     })
   );
-
+  userInfoRouter.delete(
+    '/:id',
+    isAuth,
+    isAdmin,
+    expressAsyncHandler(async (req, res) => {
+      const userInfo = await UserInfo.findById(req.params.id);
+      if (userInfo) {
+        if (userInfo.email === 'ferreteriacasaforte@gmail.com') {
+          res.status(400).send({ message: 'No Se Puede Eliminar El Usuario Admin ' });
+          return;
+        }
+        const deleteUserInfo = await userInfo.remove();
+        res.send({ message: 'Usuario Eliminado', user: deleteUserInfo });
+      } else {
+        res.status(404).send({ message: 'Usuario No Encontrado' });
+      }
+    })
+  );
   export default userInfoRouter;

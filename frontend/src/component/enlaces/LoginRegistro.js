@@ -35,13 +35,15 @@ function LoginRegistro(props) {
         alert('contraseña y confirmar contraseña no coinciden');
       } else {
         dispatch(register(name, nit, email, password));
+        alert("Usuario registrado correctamete")
+
       }  
     };
-  useEffect(() => {
-    if (userInfo) {
-     alert("Usuario registrado correctamete")
-    }
-  }, [ userInfo]);
+  // useEffect(() => {
+  //   if (userInfo) {
+  //    alert("Usuario registrado correctamete")
+  //   }
+  // }, [ userInfo]);
 
     return (
         <div>

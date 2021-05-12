@@ -33,20 +33,20 @@ header{
   display: block;
   padding: 10px 10px;
   font-family: calibri ;
-  font-size: 17px !important;
+  font-size: 14px !important;
   font-weight: 500 !important;
 
 }
 
 .menu2 ul li a:hover{
-  color: #0ca2cf;
-  background-color: #f0f0f0;
+  color: white;
+  background-color: #437de7;
   
 
 }
 .menu2 > ul > li:hover div{
 display: table;
-margin-left: 15%;
+margin: 0 13%;
 
 }
 
@@ -56,28 +56,32 @@ margin-left: 15%;
 
 .menu2 ul li div{
   width: 1000px;
+  font-size: 14px;
   position: absolute;
   left: 0;
-  background-color: #ffffff;
+  background-color:  #437de7;
   box-sizing: border-box;
+  border-radius: 1px;
   display: none;
 }
 .menu2 ul li div ul{
   width: 20%;
   display: table-cell;
-  border-right: 1px solid rgba(150, 150, 150, 0.5);
+  border-right: 1px solid white;
   box-sizing: border-box;
 }
+
 .menu2 ul li div ul:last-child{
 border: none;
 }
 .menu2 ul li div ul li a{
-  font-family: calibri;
-  color: #014286;
-  font-size: 16px;
+  font-family: calibri ;
+  color: white;
+  font-size: 14px;
 }
 .menu2 ul li div ul li a:hover{
-  color: #0ca2cf;
+  color: #437de7;
+  background-color: white;
 }
 
 .kontenedor{
@@ -310,14 +314,14 @@ color: #73a3d3;
 }
 
 .dropdown-content {
-  font-size: 17px;
+  font-size: 14px;
   display: none;
   position: absolute;
   background-color: #437de7;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  border-radius: 4px;
+  border-radius: 1px;
   margin: 0 -5rem;
 }
 
@@ -489,14 +493,15 @@ margin-left: 1rem;
       border: none;
     } 
 
+    .menu2 ul li div{
+      width: 700px;
+    }
+
     .menu2 ul li a {
-      font-size: 16px;
+      font-size: 14px;
     }
 
-    .menu2 ul{
-    margin-left: 20%;
-
-    }
+ 
 
     .carrito-none-menu{
       display: none;
@@ -522,6 +527,17 @@ margin-left: 1rem;
     .carrito-none-menu{
       display: none;
     }
+
+
+    .menu2 ul li div{
+      width: 900px;
+    }
+
+    .menu2 ul li a {
+      font-size: 14px;
+    }
+
+ 
 
 
   }

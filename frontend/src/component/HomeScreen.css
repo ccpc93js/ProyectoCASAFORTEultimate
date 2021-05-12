@@ -18,6 +18,11 @@
     margin-bottom: 3rem;
 }
 
+.button-ver-productos button{
+ width: 20%;
+ font-size: 14px;
+}
+
 /* .botton:hover{
     background: #ffa66b;
     color: #ffffff;

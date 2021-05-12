@@ -86,7 +86,7 @@ export const HomeScreen = () => {
 </div>
 
 <div className="button-ver-productos">
-    <a href="/nuevos"><button className="button-see">VER TODOS LOS PRODUCTOS</button></a> 
+    <a href="/nuevos"><button className="button">VER TODOS LOS PRODUCTOS</button></a> 
 </div>
 
 <div className="qontiner">

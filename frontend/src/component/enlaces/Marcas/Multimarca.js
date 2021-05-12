@@ -4,7 +4,7 @@ import Productos from '../../Productos'
 
 
 
-function Multimarcas () {
+function Multimarca () {
  
     
 
@@ -17,4 +17,4 @@ function Multimarcas () {
     )
 }
 
-export default Multimarcas
+export default Multimarca

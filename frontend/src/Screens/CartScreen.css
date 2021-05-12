@@ -215,6 +215,14 @@ text-align: center;
   margin-top: 3rem;
 }
 
+.button-center{
+  margin-bottom: 5rem;
+}
+
+/* .return-to-shop button {
+  font-size: 15px;
+  width: 10rem;
+} */
 
 
 
@@ -236,7 +244,26 @@ img.small{
   justify-content: center;
   text-align: center;
 }
+
+.cart-empty{
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
+
+.cart-empty-p{
+  font-size: 2rem;
+}
+
+.return-to-shop button {
+  font-size: 15px;
+  width: 10rem;
+}
+
+
+
+}
+
+
 
 
 
@@ -244,5 +271,10 @@ img.small{
 @media screen and (min-width:480px) and (max-width:860px){
   .col-2Cart ul li{
     height: 14rem;
+  }
+
+  .return-to-shop button {
+    font-size: 15px;
+    width: 10rem;
   }
 }

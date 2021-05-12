@@ -119,7 +119,7 @@ import UserListScreen from './Screens/UserListScreen';
 import UserEditScreen from './Screens/UserEditScreen';
 import Luminex from './component/enlaces/Marcas/Luminex';
 import Crescent from './component/enlaces/Marcas/Crescent';
-import Multimarcas from './component/enlaces/Marcas/Multimarcas';
+import Multimarca from './component/enlaces/Marcas/Multimarca';
 import Egret from './component/enlaces/Marcas/Egret';
 import Induma from './component/enlaces/Marcas/Induma';
 import HerramientasManuales from './component/enlaces/Categorias/HerramientasManuales';
@@ -382,7 +382,7 @@ function App(props) {
          <Route exact path="/LUMINEX" component={Luminex}/>
          <Route exact path="/CRESCENT" component={Crescent}/>
          <Route exact path="/FMT" component={FMT}/>
-         <Route exact path="/Multimarcas" component={Multimarcas}/>
+         <Route exact path="/MULTIMARCA" component={Multimarca}/>
          <Route exact path="/EGRET" component={Egret}/>
          <Route exact path="/INDUMA" component={Induma}/>
          <Route exact path="/LUFKIN-CRESCENT" component={LufkinCrescent}/>

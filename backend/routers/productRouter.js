@@ -147,7 +147,7 @@ productRouter.post(
         producto.codigo = req.body.codigo;
         producto.info = req.body.info;
         producto.precio = req.body.precio;
-        producto.imagen.img1 = req.body.imagen.img1;
+        producto.imagen[0] = req.body.imagen[0];
         producto.marca = req.body.marca;
         producto.categoria = req.body.categoria;
         producto.subcategoria = req.body.subcategoria;

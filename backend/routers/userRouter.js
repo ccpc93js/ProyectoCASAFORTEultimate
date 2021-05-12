@@ -198,24 +198,7 @@ userRouter.post(
     })
   );
 
-  userRouter.delete(
-    '/registerInfo/:id',
-    isAuth,
-    isAdmin,
-    expressAsyncHandler(async (req, res) => {
-      const userInfo = await UserInfo.findById(req.params.id);
-      if (userInfo) {
-        if (userInfo.email === 'ferreteriacasaforte@gmail.com') {
-          res.status(400).send({ message: 'No Se Puede Eliminar El Usuario Admin ' });
-          return;
-        }
-        const deleteUserInfo = await userInfo.remove();
-        res.send({ message: 'Usuario Eliminado', user: deleteUserInfo });
-      } else {
-        res.status(404).send({ message: 'Usuario No Encontrado' });
-      }
-    })
-  );
+
 
   userRouter.post(
     '/',
@@ -224,8 +207,8 @@ userRouter.post(
     expressAsyncHandler(async (req, res) => {
       const user = new User({
         name: 'nombre',
-        email: 'ejemplo email@gmail.com ',
-        nit: 'ejemplo 00000',
+        email: 'ejemploemail@gmail.com ',
+        nit: 'ejemplo 0000',
         password: 'password',
         isAdmin: false,   
       });
