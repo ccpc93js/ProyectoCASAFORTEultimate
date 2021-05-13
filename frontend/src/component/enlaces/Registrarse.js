@@ -61,6 +61,53 @@ function Registrarse(props) {
     enviarEmail(name, tDocument ,nDocument ,department, city, adress, email, tel, cel, tipoClient);
 
     };
+
+    // const {paises, setPaises} = useState([])
+    // const obtenerPaises = async() =>{
+    //     const {data} = await axios.get("http://battuta.medunes.net/api/country/all/?key=4a6598ecb99776304b3e8c804ae1617c")
+    //     setPaises(data)
+    // }
+
+    const [dataDyC, setDataDyC] = useState([]);
+    const [departamentos, setDepartamentos] = useState([]);
+    const [ciudades, setCiudades] = useState([]);
+    console.log(departamentos)
+    const obtenerDepartamentosYciudades = async() =>{
+        try{
+        const {data} = await axios.get("https://raw.githubusercontent.com/marcovega/colombia-json/master/colombia.min.json")
+        console.log(data)
+
+        setDataDyC(data)
+        const departamentos = data.filter(x =>{
+            if("departamento")
+            return (x.departamento === "departamento")
+        })
+        setDepartamentos(departamentos)
+
+        // const ciudades = data.filter(x =>{
+        //     if("ciudades")
+        //     return (x.ciudades === "ciudades")
+        // })
+        }catch(error){
+            console.log(error)
+        }
+    };
+
+    obtenerDepartamentosYciudades();
+    console.log(departamentos);
+
+    const ciudadesSelect = (e) =>{
+        let departamento = e.target.value;
+        setCiudades(dataDyC.slice().filter((x)=>{
+
+            if(departamento){
+            return (x.ciudades.find(x=>x===departamento ) === departamento)
+            }
+        })
+        )
+
+    }
+
     return (
         <div>
              <div className="contacto">
@@ -95,9 +142,10 @@ function Registrarse(props) {
                     onChange={(e) => setTD(e.target.value)}
                     
                     >
-                        <option value="" key="">Selecciona el tipo de documento</option>
-                        <option value="Cedula de ciudadania" key="">Cedula de ciudadania</option>
-                        <option value="Pasaporte" key="">Pasaporte</option>
+                        <option  selected disables >Selecciona el tipo de documento</option>
+                        <option value="Pasaporte">Nit sin dijito de verificacion</option>
+                        <option value="Cedula de ciudadania" >Cedula de ciudadania</option>
+                        <option value="Cedula de ciudadania" >Cedula de extranjeria</option>
                     </select>
                 </div>
 
@@ -114,24 +162,36 @@ function Registrarse(props) {
 
                 <div className="input-contenedor">
                     <i className=""><LocationOnIcon/></i>
-                    <input 
+                    <select 
                     required
                     type="text2" 
                     placeholder="Departamento"
-                    onChange={(e) => setDepartment(e.target.value)}
+                    onChange={(e) => setDepartment(e.target.value), ciudadesSelect}
 
-                    />
+                    >
+                        <option  selected disables >Seleccionar departamento</option>
+                        {departamentos.map(x=>{
+                        <option value={x}>{x}</option>
+
+                        })}
+                    </select>
                 </div>
 
                 <div className="input-contenedor">
                 <i className=""><LocationOnIcon/></i>
-                    <input
+                    <select
                      required
                      type="text2" 
                      placeholder="Ciudad"
                      onChange={(e) => setCity(e.target.value)}
                      
-                     />
+                     >
+                        <option  selected disables >Seleccionar ciudad</option>
+                        {/* {ciudades.map(x=>{
+                        <option value={x}>{x}</option>
+
+                        })} */}
+                     </select>
                 </div>
 
                 <div className="input-contenedor">
@@ -187,7 +247,7 @@ function Registrarse(props) {
                     onChange={(e) => setTipoClient(e.target.value)}
                     
                     >
-                        <option value="" key="">Selecciona el tipo de cliente</option>
+                        <option selected disables>Selecciona el tipo de cliente</option>
                         <option value="Empresa" key="">Empresa</option>
                         <option value="Persona" key="">Persona</option>
                     </select>

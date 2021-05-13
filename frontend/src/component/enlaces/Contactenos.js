@@ -37,8 +37,16 @@ class Contactenos extends Component {
         this.enviarEmail = this.enviarEmail.bind(this);
     }
 
-    async enviarEmail(e){
-        e.preventDefault();
+    async enviarEmail(){
+        // e.preventDefault();
+
+               alert( 
+               
+                    "su solicitud a sido enviada correctamente!"
+               )
+      
+       
+
         const {nombre, email, telefono, asunto, mensaje} = this.state;
         await axios.post("/api/emails/contactenos",{
             nombre,
@@ -47,6 +55,9 @@ class Contactenos extends Component {
             asunto,
             mensaje
         });
+
+ 
+
     }
     
 
@@ -149,6 +160,7 @@ class Contactenos extends Component {
 
                         
                         </div>
+
                        
                         
                     </form>
