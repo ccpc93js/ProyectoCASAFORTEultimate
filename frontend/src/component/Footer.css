@@ -168,6 +168,10 @@ footer{
 
     
   }
+
+
+
+
   
   @media (max-width: 600px) {
     .footer{
@@ -190,6 +194,12 @@ footer{
         justify-content: center;
         text-align: center;
 
+      }
+
+      .socials{
+        float: none;
+        margin: auto;
+        text-align: center;
       }
 
 

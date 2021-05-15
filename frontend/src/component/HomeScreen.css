@@ -1,5 +1,5 @@
 .HomeScreen-container{
-    text-align: center;
+    /* text-align: center; */
 }
 /* 
  .botton {
@@ -20,6 +20,7 @@
 
 .button-ver-productos button{
  width: 20%;
+ margin-top: 10px;
  font-size: 14px;
 }
 
@@ -86,19 +87,28 @@ p{
 }
 
 .contenedore{
-    height: calc(60vh);
-    width: 100vw;
+    /* height: calc(60vh); */
+    width: 100%;
     display: flex;
-    justify-content:center;
-    align-items: center;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-right: 4px;
+    padding-right: 5px;
+    
+    /* align-items: center; */
     
 }
 
+
+
 .contenedore figure {
     position: relative;
-    height: 400px;
-    width: 480px;
+    width: 60%;
+    /* height: 60%; */
+    margin: 15px;
     overflow: hidden;
+
+    /* margin: 4rem; */
     
 }
 .contenedore figure img{
@@ -107,6 +117,9 @@ p{
     transition: all 500ms ease-out; 
 }
 .contenedore figure .capar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     top: 0;
     width: 100%;
@@ -129,16 +142,16 @@ p{
 .contenedore figure .capar h3{
     color: #ffa66b;
     font-weight: 400;
-    margin-bottom: 120px;
     transition: all 500ms ease-out;
-    margin-top:170px;
+    /* margin: auto; */
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; 
-    font-size: 25px;
+    font-size: 16px;
 }
 
 .contenedore figure .capar a{
+    margin: 10px auto;
     padding: 12px 24px;
-    font-size: 16px;
+    font-size: 12px;
     background: none;
     border-style: none;
     border: 1px solid #ffa66b;
@@ -160,11 +173,6 @@ p{
     text-decoration: none;
 }
 
-.marca img{
-    /* max-width: 10rem; */
-    width: 10rem ;
-    height: 10rem ;
-}
 
 
 .qontiner{
@@ -177,10 +185,18 @@ p{
 .central{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-around;
-    margin: 2rem 3rem 3rem 2rem;
+    margin: 2rem 3rem 1rem 2rem;
+    overflow-x: auto;
 }
+
+
+.central::-webkit-scrollbar{
+    width: 0;
+}
+
+
 .marca{
     margin: 4px;
     /* margin-left: 150px; */
@@ -195,6 +211,8 @@ p{
     -moz-transition-duration: 300ms;
 }
 
+
+
 .marca:hover{
     -webkit-transform: scale(1.02,1.02);
     -webkit-transform-timing-function: ease-out ;
@@ -205,6 +223,11 @@ p{
 }
 
 
+.marca img{
+    /* max-width: 10rem; */
+    width: 10rem ;
+    height: 10rem ;
+}
 
 .celular{
     background-color: #ffffff;
@@ -266,23 +289,23 @@ p{
 
 .kontainer{
     background-color: #d2e8ff;
-    height: 40vh;
+    height: 20vh;
     width: 100vw;
     text-align: center;
+    padding-top: 10px;
 }
 
 .kontainer i{
     align-content: center;
     /* margin-left: 58rem; */
     color: #31371a;
-    margin-top: 60px;
-    font-size: 50px;
+    margin-top: 70px;
 
 }
 
 .negocio{
     font-family: montserrat;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 35px;
     color: #1a2537;
 }
@@ -309,18 +332,19 @@ fin pausa */
     padding: 0 1rem;
     padding-bottom: 5%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 .frase{
     margin: 1rem;
+    text-align: center;
 
 }
 .kontainer1 i{
     align-content: center;
     margin: auto ;
     color: #1a2537;
-    font-size: 25px;
+    /* font-size: 25px; */
     display: block;
     text-align: center;
     padding-top: 2rem;
@@ -339,8 +363,14 @@ fin pausa */
 .parrafo{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 1rem;
-    font-size: 14px;
+    font-size: 10px;
     color: #818a97;
+    align-content: center;
+    text-align: justify;
+    width: 30%;
+    margin: auto ;
+
+
 }
 
 
@@ -358,14 +388,14 @@ fin pausa */
 
 
 
-.contenedore{
+/* .contenedore{
     height: 60vh;
     width: 100vw;
     display: flex;
     justify-content:center;
     align-items: center;
     
-}
+} */
 
 
 
@@ -381,8 +411,23 @@ fin pausa */
     }
 
 
-
     .contenedore{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        justify-content: first baseline;
+    }
+
+.contenedore figure {
+    width: auto;
+    height: auto;
+    margin: 15px  30px;
+
+
+}
+
+
+    /* .contenedore{
         margin-top: 2rem;
         height: 20vh;
     }
@@ -415,11 +460,16 @@ fin pausa */
        
 
   
-  }
+  } */
 
-  .kontainer{
+  /* .kontainer{
       display: none;
-  }
+  } */
+
+  .negocio{
+
+    font-size: 25px;
+}
 
   .celular{
       display: none;
@@ -429,16 +479,25 @@ fin pausa */
 
 
 
-.button-see{
+/* .button-see{
     width: 8rem;
     height: 2rem;
     font-size: 7px;
     margin-top: 2rem;
+} */
+
+.button-ver-productos button{
+    width: 40%;
+    font-size: 10px;
+   }
+
+.parrafo{
+    width: 60%;
 }
 
-  }
+}
 
-  @media screen and (min-width:480px) and (max-width:768px){
+@media screen and (min-width:480px) and (max-width:768px){
 
     .kontainer1{
         flex-direction: column;
@@ -450,7 +509,22 @@ fin pausa */
         height: 4rem ;
     }
 
+
+    .contenedore{
+        width: 100%;
+        text-align: center;
+
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+
     .contenedore figure {
+        /* width: auto; */
+        /* height: auto; */
+    
+    }
+
+    /* .contenedore figure {
         height: 140px;
         width: 150px;
         
@@ -482,9 +556,10 @@ fin pausa */
         width: 100vw;
 
         
-    }
-    .kontainer{
-        display: none;
+    } */
+    .negocio{
+
+        font-size: 25px;
     }
   
     .celular{
@@ -493,21 +568,26 @@ fin pausa */
   
   }
 
-  .slide{
-      height: 5rem;
-  }
 
-  .button-see{
+  /* .button-see{
     width: 8rem;
     height: 2rem;
     font-size: 7px;
     margin-top: 2rem;
+} */
+
+.button-ver-productos button{
+    width: 30%;
+    font-size: 10px;
+   }
+
+.parrafo{
+    width: 50%;
 }
 
-
 }
 
-  @media screen and (min-width:768px) and (max-width:1024px){
+@media screen and (min-width:768px) and (max-width:1024px){
 
     .marca img{
         /* max-width: 10rem; */
@@ -515,7 +595,7 @@ fin pausa */
         height: 5rem ;
     }
 
-    .contenedore figure {
+    /* .contenedore figure {
         height: 250px;
         width: 280px;
         
@@ -542,17 +622,22 @@ fin pausa */
         
         
         
-    }
+    } */
     .slidero{
         height: 5rem;
     }
 
-    .button-see{
+    /* .button-see{
         width: 10rem;
         height: 3rem;
         font-size: 8px;
         margin-top: 2rem;
-    }
+    } */
+
+    .button-ver-productos button{
+        /* width: 20%; */
+        font-size: 10px;
+       }
 
 }
 
@@ -564,7 +649,7 @@ fin pausa */
         width: 10rem ;
         height: 10rem ;
     }
-    .contenedore figure {
+    /* .contenedore figure {
         height: 80%;
         width: 30%;
         
@@ -586,7 +671,7 @@ fin pausa */
         
         
         
-    }
+    } */
 
 
     
@@ -602,7 +687,7 @@ fin pausa */
         height: 14rem ;
     }
   
-    .contenedore figure {
+    /* .contenedore figure {
         height: 80%;
         width: 30%;
         
@@ -629,7 +714,17 @@ fin pausa */
         
         
         
+    } */
+
+    .parrafo{
+        width: 50%;
     }
+
+    .kontainer1{
+        padding-top: 40px;
+        flex-direction: row;
+    
+        }
 
     
   }

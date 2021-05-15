@@ -23,6 +23,9 @@ export const HomeScreen = () => {
             counter = 1;
         }
     }, 6000);
+
+
+    const fontSizeIcons = 50
     return (
         <div className="HomeScreen-container">
             <div className="slider">
@@ -39,18 +42,19 @@ export const HomeScreen = () => {
                     <div className="slide">
                         <img src='./img/Icons/CASA_FORTE_PPAL_2.png' alt=""/>
                     </div>
+
+                </div>
                     <div className="navigation-auto">
                         <div className="auto-btn1"></div>
                         <div className="auto-btn2"></div>
                         <div className="auto-btn3"></div>
                     </div>
                 
-                </div>
-                <div className="navigation-manual">
-                <label for="radio1" className="manual-btn"></label>
-                <label for="radio2" className="manual-btn"></label>
-                <label for="radio3" className="manual-btn"></label>
-                </div>
+                    <div className="navigation-manual">
+                    <label for="radio1" className="manual-btn"></label>
+                    <label for="radio2" className="manual-btn"></label>
+                    <label for="radio3" className="manual-btn"></label>
+                    </div>
             </div>
          
      <div className="contenedore">
@@ -143,7 +147,7 @@ export const HomeScreen = () => {
 
 <div className="kontainer">
     
-    <i class=""><StorefrontIcon/></i>
+    <i class=""><StorefrontIcon style={{ fontSize: fontSizeIcons }}/></i>
 
     <p className="negocio">
         M&aacute;s beneficios para tu Negocio
@@ -189,27 +193,27 @@ export const HomeScreen = () => {
 
         <div className="frase">
 
-    <i class=""><LocalShippingIcon/></i>
+    <LocalShippingIcon style={{ fontSize: fontSizeIcons }} />
 
     <p className="subtitulo">
     <b>Rapidez</b> 
     </p>
 
     <p className="parrafo">
-        Nuestro compromiso con todos nuestros clientes <br></br> consiste en garantizar tiempos de entrega <br></br> maximos de un d&iacute;a.
+        Nuestro compromiso con todos nuestros clientes consiste en garantizar tiempos de entrega maximos de un d&iacute;a.
     </p>
         </div>
 
         <div className="frase">
 
-    <i class=""><ThumbsUpDownIcon/></i>
+         <ThumbsUpDownIcon style={{ fontSize: fontSizeIcons }} />
 
     <p className="subtitulo">
         <b>Confianza</b> 
         </p>
     
         <p className="parrafo">
-            La confianza de nuestros clientes es nuestro <br></br> mayor activo, por esa raz&oacute;n la construimos <br></br> d&iacute;a a d&iacute;a, brindando el mejor servicio
+            La confianza de nuestros clientes es nuestro mayor activo, por esa raz&oacute;n la construimos d&iacute;a a d&iacute;a, brindando el mejor servicio.
         </p>
 
         </div>
@@ -217,27 +221,27 @@ export const HomeScreen = () => {
         <div className="frase">
 
 
-    <i class=""><TelegramIcon/></i>
+      <TelegramIcon style={{ fontSize: fontSizeIcons }} />
 
     <p className="subtitulo">
         <b>Servicio</b> 
     </p>
     <p className="parrafo">
-        El servicio es nuestra garant&iacute;a, <br></br> nos esforzamos para que tu negocio cuente <br></br> con los mejores productos en el menor tiempo.
+        El servicio es nuestra garant&iacute;a, nos esforzamos para que tu negocio cuente  con los mejores productos en el menor tiempo.
     </p>
         </div>
 
 
         <div className="frase">
 
-    <i class=""><CardGiftcardIcon/></i>
+   <CardGiftcardIcon style={{ fontSize: fontSizeIcons }} />
 
     <p className="subtitulo">
         <b>Puntos por Compras</b> 
         </p>
     
         <p className="parrafo">
-            Tu eres nuestra prioridad y por ello <br></br> recibiras recompensas por tu fidelidad, <br></br> tenemos muchos premios para t&iacute;.
+            Tu eres nuestra prioridad y por ello recibiras recompensas por tu fidelidad, tenemos muchos premios para t&iacute;.
         </p>
         </div>
 </div>

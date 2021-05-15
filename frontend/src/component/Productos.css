@@ -111,14 +111,14 @@
   }
 
 
-  img.small{
+  img.smallP{
     max-width: 5rem;
     width: 100%;
   }
-img.imgnormal{
+.imgnormalP{
     /* max-width: 10rem; */
-    width: 13rem;
-    height: 13rem;
+    width: 10rem;
+    /* height: 13rem; */
 }
 
 .shadow-box-productos{
@@ -132,7 +132,7 @@ img.imgnormal{
     /* width: 5rem; */
     /* height: 5rem; */
     width: 100%;
-    height: 12rem;
+    /* height: 12rem; */
     display: flex;
     align-items: center;
     justify-content: center;

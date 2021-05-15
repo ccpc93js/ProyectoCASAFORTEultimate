@@ -12,6 +12,8 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
+import dataDyC from './dataDyC'
+
 function Registrarse(props) {
     const [name, setName] = useState('');
     const [tDocument, setTD] = useState('');
@@ -68,40 +70,40 @@ function Registrarse(props) {
     //     setPaises(data)
     // }
 
-    const [dataDyC, setDataDyC] = useState([]);
-    const [departamentos, setDepartamentos] = useState([]);
+    const data = dataDyC.DyC
+
+    // const [dataDyC, setDataDyC] = useState([]);
+    const [departamentos, setDepartamentos] = useState(data);
     const [ciudades, setCiudades] = useState([]);
-    console.log(departamentos)
-    const obtenerDepartamentosYciudades = async() =>{
-        try{
-        const {data} = await axios.get("https://raw.githubusercontent.com/marcovega/colombia-json/master/colombia.min.json")
-        console.log(data)
+    // const obtenerDepartamentosYciudades = async() =>{
+    //     try{
+    //     const {data} = await axios.get("https://raw.githubusercontent.com/marcovega/colombia-json/master/colombia.min.json")
+    //     console.log(data)
 
-        setDataDyC(data)
-        const departamentos = data.filter(x =>{
-            if("departamento")
-            return (x.departamento === "departamento")
-        })
-        setDepartamentos(departamentos)
+    //     // setDataDyC(data)
+    //     const departamentos = data.filter(x =>{
+    //         if("departamento")
+    //         return (x.departamento === "departamento")
+    //     })
+    //     setDepartamentos(data)
 
-        // const ciudades = data.filter(x =>{
-        //     if("ciudades")
-        //     return (x.ciudades === "ciudades")
-        // })
-        }catch(error){
-            console.log(error)
-        }
-    };
+    //     // const ciudades = data.filter(x =>{
+    //     //     if("ciudades")
+    //     //     return (x.ciudades === "ciudades")
+    //     // })
+    //     }catch(error){
+    //         console.log(error)
+    //     }
+    // };
 
-    obtenerDepartamentosYciudades();
-    console.log(departamentos);
+    // obtenerDepartamentosYciudades();
 
     const ciudadesSelect = (e) =>{
         let departamento = e.target.value;
-        setCiudades(dataDyC.slice().filter((x)=>{
+        setCiudades(data.filter((x)=>{
 
-            if(departamento){
-            return (x.ciudades.find(x=>x===departamento ) === departamento)
+            if(departamento ){
+            return (x.ciudades )
             }
         })
         )
@@ -170,16 +172,16 @@ function Registrarse(props) {
 
                     >
                         <option  selected disables >Seleccionar departamento</option>
-                        {departamentos.map(x=>{
-                        <option value={x}>{x}</option>
+                        {departamentos.map(x=>
+                        <option value={x.departamento}>{x.departamento}</option>
 
-                        })}
+                        )}
                     </select>
                 </div>
 
                 <div className="input-contenedor">
                 <i className=""><LocationOnIcon/></i>
-                    <select
+                    {/* <select
                      required
                      type="text2" 
                      placeholder="Ciudad"
@@ -187,11 +189,21 @@ function Registrarse(props) {
                      
                      >
                         <option  selected disables >Seleccionar ciudad</option>
-                        {/* {ciudades.map(x=>{
-                        <option value={x}>{x}</option>
+                        {ciudades.map(x=>
+                        <option value={x[1]}>{x[1]}</option>
 
-                        })} */}
-                     </select>
+                        )}
+                     </select> */}
+
+                    <input
+                     required
+                     type="text2" 
+                     placeholder="Ciudad"
+                     onChange={(e) => setCity(e.target.value)}
+                     
+                     
+
+                     />
                 </div>
 
                 <div className="input-contenedor">
@@ -260,7 +272,7 @@ function Registrarse(props) {
                 </div>
                 </div>
                 <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de Privacidad.</p>
-                <p>¿Ya tienes una cuenta?<a className="link" href="/signin">Iniciar Sesión</a></p>
+                <p>¿Ya tienes una cuenta?<a className="link" href="/signin"> Iniciar Sesión </a></p>
             </div>
         </form>  
        

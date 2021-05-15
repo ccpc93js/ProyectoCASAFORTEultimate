@@ -85,7 +85,7 @@ function ZonaClientes(props) {
 
                 <button type="submit" className="button ">Iniciar Sesión</button>
                 <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de Privacidad.</p>
-                <p>¿No tienes una cuenta?<a className="link" href="/registrarse">Solicita tu cuenta</a></p>
+                <p>¿No tienes una cuenta?<a className="link" href="/registrarse"> Solicita tu cuenta </a></p>
                
             
                 </div>

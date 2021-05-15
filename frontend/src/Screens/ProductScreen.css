@@ -10,7 +10,7 @@ padding-top: 3rem;
 
 
 .float-right {
-    float: right!important;
+    float: right !important;
 }
 
 .productScreen-card a p {
@@ -109,8 +109,8 @@ img.imgnormal{
     height: 10rem;
 }
 .productScreen-image{
-    width: 30rem; 
-    height: 30rem;
+    width: 20rem; 
+    /* height: 30rem; */
     /* width: 100%; */
     border: solid #ebe7e7 0.1rem;
     align-items: center;

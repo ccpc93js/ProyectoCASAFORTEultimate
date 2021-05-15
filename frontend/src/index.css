@@ -67,10 +67,10 @@ header {
 } */
 
 main{
- padding-top: 3.5rem;
- padding-bottom: 15rem;
+ padding-top: 8rem;
+ /* padding-bottom: 15rem; */
   background-color: #ffffff;
-  min-height: calc(150vh );
+  min-height: calc(100vh );
 
 
 }
@@ -192,14 +192,18 @@ ul li ul li a{
 
 
 .slider{
-  width: 1920px;
-  height: 550px;
-  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  /* height: 550px; */
+  /* border-radius: 10px; */
+  overflow: hidden;
+  margin-right: 0;
+
 }
 
 .slides{
   width: 500%;
-  height: 480px;
+  /* height: 480px; */
   display: flex;
 }
 
@@ -213,26 +217,29 @@ display: none;
 }
 
 .slide img{
-  width: 1920px;
-  height: 550px;
+  width: 100%;
+  /* height: 550px; */
 }
 
 /*css for manual slide navigation*/
 
 .navigation-manual{
 position: absolute;
-width: 1920px;
-margin-top: 30px;
-display: flex;
-justify-content: center;
+width: 100%;
+text-align: center;
+bottom: 10px;
+left: 0;
 }
 
 .manual-btn{
   border: 2px solid rosybrown;
-  padding: 3px;
-  border-radius: 10px;
+  padding: 5px;
+  /* width: 4px;
+  height: 4px; */
+  border-radius: 50%;
   cursor: pointer;
   transition: 1s;
+  display: inline-block;
 }
 
 .manual-btn:not(:last-child){
@@ -259,17 +266,21 @@ justify-content: center;
 
 .navigation-auto{
   position: absolute;
-  display: flex;
-  width: 1920px;
-  justify-content: center;
-  margin-top: 510px;
+  width: 100%;
+  text-align: center;
+  bottom: 10px;
+  left: 0;
 }
 
 .navigation-auto div{
-  border-radius: 2px solid rosybrown;
+  border: 2px solid rosybrown;
   padding: 5px;
-  border-radius: 10px;
+  /* width: 4px;
+  height: 4px; */
+  border-radius: 50%;
   transition: 1s;
+  display: inline-block;
+
 }
 
 .navigation-auto div:not(:last-child){
@@ -301,7 +312,7 @@ justify-content: center;
 }
 
 #slid {
-  width: 2000px;
+  width: 100%;
   height: 100px;
   background-image: url(slidermarcas.png);
   background-size: 100% 100%;
@@ -1077,68 +1088,10 @@ color: #464343;
 
   
   main{
-    margin-top: 17%;
+    padding-top:  12%;
   }
 
-  
-  .slider{
-    width: 380px;
-    height: 120px;
-    border-radius: 10px;
-  }
-  
-  .slides{
-    width: 500%;
-    height: 480px;
-    display: flex;
-  }
-  
-  .slides input{
-  display: none;
-  }
-  
-  .slide{
-    width: 20%;
-    transition: 2s;
-  }
-  
-  .slide img{
-    width: 380px;
-    height: 120px;
-  }
- 
-  .navigation-manual{
-    width: 380px;
-    margin-top: 10px;
 
-    }
-    
-    .manual-btn{
-      border: 2px solid rosybrown;
-      padding: 3px;
-      border-radius: 10px;
-
-    }
-    
-    .manual-btn:not(:last-child){
-      margin-right: 10px;
-    }
-    
-    
-    /*css for automatic navigation*/
-    
-    .navigation-auto{
-
-      width: 380px;
-
-      margin-top: 110px;
-    }
-    
-
-    
-    .navigation-auto div:not(:last-child){
-      margin-right: 10px;
-    }
 
 
 }
@@ -1184,67 +1137,11 @@ color: #464343;
   }
 
   main{
-    margin-top: 0%;
+    padding-top:  11%;
   }
 
   
-  .slider{
-    width: 480px;
-    height: 120px;
-    border-radius: 10px;
-  }
-  
-  .slides{
-    width: 500%;
-    height: 480px;
-    display: flex;
-  }
-  
-  .slides input{
-  display: none;
-  }
-  
-  .slide{
-    width: 20%;
-    transition: 2s;
-  }
-  
-  .slide img{
-    width: 480px;
-    height: 120px;
-  }
- 
-  .navigation-manual{
-    display: none;
 
-
-    }
-    
-    .manual-btn{
-      display: none;
-
-
-    }
-    
-    .manual-btn:not(:last-child){
-      display: none;
-
-    }
-    
-    
-    /*css for automatic navigation*/
-    
-    .navigation-auto{
-      display: none;
-
-    }
-    
-
-    
-    .navigation-auto div:not(:last-child){
-      display: none;
-
-    }
 
     .card{
       border: 0.1rem #0dd8b6 solid;
@@ -1269,72 +1166,31 @@ color: #464343;
       font-size: 10px;
     }
 
+    .manual-btn{
+      width: 4px;
+      height: 4px;
+    }
+    .navigation-auto div{
+      width: 4px;
+      height: 4px;
+    }
+      
+
 
 }
 @media screen and (min-width:480px) and (max-width:768px){
 
   main{
-    margin-top: -0.9rem;
+    padding-top:  9%;
   }
+
 
   .loading-div{
     /* margin-left: 2rem; */
     display: flex;
     justify-content: center;
   }
-  .slider{
-    width: 760px;
-    height: 150px;
-    border-radius: 10px;
-  }
-  
-  .slides{
-    width: 500%;
-    height: 480px;
-    display: flex;
-  }
-  
-  .slides input{
-  display: none;
-  }
-  
-  .slide{
-    width: 20%;
-    transition: 2s;
-  }
-  
-  .slide img{
-    width: 760px;
-    height: 150px;
-  }
-
-  .navigation-manual{
-    display: none;
-
-
-    }
-    
-
-    
-    .manual-btn:not(:last-child){
-      display: none;
-
-    }
-    
-    
-    /*css for automatic navigation*/
-    
-    .navigation-auto{
-
-display: none;
-    }
-    
-
-    
-    .navigation-auto div:not(:last-child){
-      margin-right: 20px;
-    }
-
+ 
     #slid {
       height: 50px;
       
@@ -1369,75 +1225,28 @@ display: none;
   width: 150px;
   font-size: 14px;
 }
+
+
+.manual-btn{
+  width: 4px;
+  height: 4px;
+}
+.navigation-auto div{
+  width: 4px;
+  height: 4px;
+}
  
 
 }
 @media screen and (min-width:768px) and (max-width:1024px){
 
-  .slider{
-    width: 1020px;
-    height: 250px;
-    border-radius: 10px;
-  }
-  
-  .slides{
-    width: 500%;
-    height: 480px;
-    display: flex;
-  }
-  
-  .slides input{
-  display: none;
-  }
-  
-  .slide{
-    width: 20%;
-    transition: 2s;
-  }
-  
-  .slide img{
-    width: 1020px;
-    height: 250px;
-  }
-
-  .navigation-manual{
-    display: none;
-
-
-    }
-    
-
-    
-    .manual-btn:not(:last-child){
-      display: none;
-
-    }
-    
-    
-    /*css for automatic navigation*/
-    
-    .navigation-auto{
-
-      display: none;
-
-    }
-    
-
-    
-    .navigation-auto div:not(:last-child){
-      display: none;
-
-    }
 
     #slid {
       height: 70px;
       
     }
 
-    .button-success{
-   
 
-    }
 
 
 }
@@ -1445,58 +1254,6 @@ display: none;
 @media screen and (min-width:1024px) and (max-width:1367px){
 
 
-  .slider{
-    width: 1420px;
-    height: 350px;
-    border-radius: 10px;
-  }
-  
-  .slides{
-    width: 500%;
-    height: 280px;
-    display: flex;
-  }
-  
-  .slides input{
-  display: none;
-  }
-  
-  .slide{
-    width: 20%;
-    transition: 2s;
-  }
-  
-  .slide img{
-    width: 1420px;
-    height: 350px;
-  }
-  .navigation-manual{
-    width: 100%;
-    margin-top: 40px;
-
-    }
-    
-
-    
-    .manual-btn:not(:last-child){
-      margin-right: 40px;
-    }
-    
-    
-    /*css for automatic navigation*/
-    
-    .navigation-auto{
-
-      width: 100%;
-
-      margin-top: 320px;
-    }
-    
-
-    
-    .navigation-auto div:not(:last-child){
-      margin-right: 40px;
-    }
 
     #slid {
       height: 80px;
