@@ -67,7 +67,7 @@ header {
 } */
 
 main{
- padding-top: 8rem;
+ padding-top: 6%;
  /* padding-bottom: 15rem; */
   background-color: #ffffff;
   min-height: calc(100vh );
@@ -1181,7 +1181,7 @@ color: #464343;
 @media screen and (min-width:480px) and (max-width:768px){
 
   main{
-    padding-top:  9%;
+    padding-top:  6%;
   }
 
 
@@ -1239,7 +1239,9 @@ color: #464343;
 
 }
 @media screen and (min-width:768px) and (max-width:1024px){
-
+  main{
+    padding-top:  7%;
+  }
 
     #slid {
       height: 70px;

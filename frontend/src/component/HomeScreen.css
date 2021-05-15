@@ -289,10 +289,10 @@ p{
 
 .kontainer{
     background-color: #d2e8ff;
-    height: 20vh;
+    /* height: 40vh; */
     width: 100vw;
     text-align: center;
-    padding-top: 10px;
+    padding: 40px;
 }
 
 .kontainer i{
