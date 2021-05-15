@@ -12,6 +12,7 @@ header{
 
 }
 .menu2{
+  margin-top: 2rem;
   background-color: #ffffff;
   /* margin-top: 20px; */
   /* position: relative; */
@@ -19,13 +20,15 @@ header{
 .menu2 ul{
   list-style: none;
   padding: 0%;
-  margin-left: 30%;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   
   
 }
 .menu2 > ul > li{
-  float: left;
+  /* float: left; */
+  display: inline-block;
 }
 .menu2 ul li a {
   text-decoration: none;
@@ -358,7 +361,82 @@ margin-left: 1rem;
 }
 
 /*=?=====RESPONSIVE=========*/
-@media screen and (max-width:700px){
+
+
+
+@media screen and (max-width:363px){
+
+
+  .casaforte{
+    width: 7rem;
+    margin-top: 2rem;
+
+  }
+
+  .casaforte-a{
+    margin-left: 1rem;
+  }
+
+  .NavBar-content ul{
+    display: none;
+  }
+
+  header{
+    height: 5rem;
+  }
+
+
+  .menu1{
+    height: 5rem;
+    padding-left: 0rem;    
+  }
+
+  .menu-button{
+    background-color: transparent;
+    border-style: none;
+  }
+  .carrito-none{
+    display: none;
+  }
+  .carrito-on-none{
+    display: none;
+
+  }
+  .carrito{
+    width: 1rem;
+
+  }
+
+  .dropdown-content {
+      min-width: 100px;
+      font-size: 15px;
+      width: 120px;
+
+
+  }
+
+  .mg-left-2{
+    margin-left: 4rem;
+  }
+
+.carrito i{
+margin-right: 1;
+}
+
+.badge{
+margin-left: 0.3rem;
+margin-right: 1rem;
+}
+
+
+.dropdown-content{
+margin: 0 -3rem;
+
+}
+}
+
+
+@media screen and (min-width:364px) and (max-width:700px){
   header {
     /* display: none; */
     background-color: #f7f7f7;
@@ -387,8 +465,14 @@ margin-left: 1rem;
     .NavBar-content ul{
       display: none;
     }
-    .menu1{
+
+    header{
       height: 5rem;
+    }
+
+
+    .menu1{
+      height: 3rem;
       padding-left: 1rem;    
     }
 
@@ -406,6 +490,9 @@ margin-left: 1rem;
     .carrito{
       width: 1rem;
 
+    }
+
+    .mg-left-2{
       margin-left: 4rem;
     }
 
@@ -455,8 +542,12 @@ margin-left: 1rem;
       display: none;
     }
 
+    header{
+      height: 5rem;
+    }
+
     .menu1{
-      height: 10vh;
+      height: 5rem;
     }
 
 
@@ -472,6 +563,10 @@ margin-left: 1rem;
 
   .carrito{
     margin-left:  4rem;
+  }
+
+  .mg-left-2{
+    margin-left: 4rem;
   }
 
 
@@ -552,7 +647,7 @@ margin-left: 1rem;
     }
 
     .carrito{
-      margin-top: 4rem;
+      margin-top: 3rem;
     }
 
     .carrito-none-menu{

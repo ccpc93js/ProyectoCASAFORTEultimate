@@ -50,7 +50,7 @@ header{
 header {
   /* position: relative; */
   top: 0;
-  z-index: 200;
+  z-index: 100;
 }
 
 /* header::after{
@@ -67,7 +67,7 @@ header {
 } */
 
 main{
- padding-top: 6%;
+ padding-top: 5%;
  /* padding-bottom: 15rem; */
   background-color: #ffffff;
   min-height: calc(100vh );
@@ -459,6 +459,8 @@ button.small {
   transition: all .25s;
   z-index: 1;
   position: relative;
+  padding-left: 4px;
+  padding-right: 4px;
   
 }
 
@@ -515,6 +517,8 @@ button.small {
   transition: all .25s;
   z-index: 1;
   position: relative;
+  padding-left: 4px;
+  padding-right: 4px;
   
 }
 
@@ -659,6 +663,12 @@ button.small {
   margin-top: 2rem;
 }
 
+
+.formulario{
+  padding-top: 5rem;
+  padding-bottom: 10rem ;
+}
+
 /* .contact-form form button{
   border: none;
   width: 35%;
@@ -691,7 +701,16 @@ text-align: center;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 color: #5d5d5d;
 align-items: center;
-text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 5rem;
+}
+
+.letras p{
+  text-align: justify;
+  width: 50%;
+
 }
 
 /* css Footer start*/
@@ -907,8 +926,9 @@ margin-top: 0;
 } */
 .loadingPageLogo i {
 margin: 3rem auto;
-width: 5rem;
-height: 5rem;
+width: 4rem;
+height: 4rem;
+
 
 }
 
@@ -930,7 +950,7 @@ height: 5rem;
 }
 
 .casafortelogoCarga{
-  width: 16rem;
+  width: 14rem;
   margin-left: 2rem;
   margin-top: 2.5rem;
 }
@@ -1137,7 +1157,7 @@ color: #464343;
   }
 
   main{
-    padding-top:  11%;
+    padding-top:  5%;
   }
 
   
@@ -1167,12 +1187,12 @@ color: #464343;
     }
 
     .manual-btn{
-      width: 4px;
-      height: 4px;
+      display: none;
+
     }
     .navigation-auto div{
-      width: 4px;
-      height: 4px;
+      display: none;
+
     }
       
 
@@ -1181,7 +1201,7 @@ color: #464343;
 @media screen and (min-width:480px) and (max-width:768px){
 
   main{
-    padding-top:  6%;
+    padding-top:  2%;
   }
 
 
@@ -1228,12 +1248,11 @@ color: #464343;
 
 
 .manual-btn{
-  width: 4px;
-  height: 4px;
+  display: none;
+
 }
 .navigation-auto div{
-  width: 4px;
-  height: 4px;
+  display: none;
 }
  
 

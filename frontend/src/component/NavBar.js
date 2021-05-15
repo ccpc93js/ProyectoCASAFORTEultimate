@@ -108,8 +108,6 @@ export const NavBar = (props) => {
               
             </div>
 
-        </div>
-        
         <div className="menu2">
         <ul >
             <li><a href="/nosotros" className="cool-link">Nosotros</a></li>
@@ -177,6 +175,8 @@ export const NavBar = (props) => {
             <li><a href="/signin">Clientes</a></li>
         </ul>
         </div>
+        </div>
+        
 
         
         </div>

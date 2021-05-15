@@ -130,7 +130,7 @@ function ProductScreen(props) {
         <div className="productScreen-image shadow-box-productos">
     
         {loading && <LoadingBox/>}
-        <img className="medium " alt={producto.info} src={producto.imagen.img1} />
+        <img className=" " alt={producto.info} src={producto.imagen.img1} />
      
         </div>
        

@@ -22,6 +22,8 @@
  width: 20%;
  margin-top: 10px;
  font-size: 14px;
+ padding-left: 4px;
+ padding-right: 4px;
 }
 
 /* .botton:hover{
@@ -44,6 +46,8 @@
     transition: all .25s;
     z-index: 1;
     position: relative;
+    padding-left: 4px;
+    padding-right: 4px;
     
   }
   
@@ -406,8 +410,14 @@ fin pausa */
     flex-direction: column;
 
     }
-    .qontiner{
+    /* .qontiner{
         display: none;
+    } */
+
+    .marca img{
+        /* max-width: 10rem; */
+        width: 5rem ;
+        height: 5rem ;
     }
 
 
@@ -439,13 +449,15 @@ fin pausa */
         width: 120px;
         
     }
-    .contenedore figure .capar{
+    */
+    /* .contenedore figure .capar{
 
-        width: 100%;
+    visibility: visible;
+    opacity: 1;   
   
-    }
+    } */
   
-  
+  /*
     
     .contenedore figure .capar h3{
         font-weight: 400;
@@ -505,8 +517,8 @@ fin pausa */
         }
     .marca img{
         /* max-width: 10rem; */
-        width: 4rem ;
-        height: 4rem ;
+        width: 5rem ;
+        height: 5rem ;
     }
 
 
