@@ -124,10 +124,12 @@ justify-content: left;
 
 
 
-.elementSearch-p{
-    text-align: start  !important;
-}
 
+
+.elementSearch-p h3{
+    text-align: start !important;
+    padding: 3px;
+}
 
 
 @media screen and (max-width:440px){
@@ -165,11 +167,15 @@ justify-content: left;
     margin: 0 0;
 
 }
+
+.elementSearch-p h3{
+font-size: 16px;
+}
 }
 
 @media screen and (max-width:840px){
     .containerElement{
-        width: 100%;
+        width: 80%;
         height: 30%;
         margin: auto;
         }
@@ -185,12 +191,7 @@ justify-content: left;
         
         }
 
-        .info-element{
 
-            margin: auto;
-            margin-left: 0px;
-
-        }
 
         .info-element h3{
             font-size: 15px;

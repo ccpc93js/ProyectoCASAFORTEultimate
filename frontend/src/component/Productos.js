@@ -195,7 +195,7 @@ export default function Productos(props) {
                 <div className="product-image">
                 <a
 
-                href={`/producto/${x._id}?=${props.categorias}`} className="product-image__body ">
+                href={`/producto/${x._id}`} className="product-image__body ">
                  <img className="product-image__img imgnormal " alt={x.info} src={x.imagen.img1}/>
               
                 </a>
