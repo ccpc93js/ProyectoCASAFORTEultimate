@@ -74,11 +74,11 @@
   .button-see:hover::before{
     height: 100%;
   } 
-p{
+/* p{
     text-align: center;
     font-family: montserrat;
     margin-top: 10px;
-}
+} */
 
 .link{
     text-decoration: none;

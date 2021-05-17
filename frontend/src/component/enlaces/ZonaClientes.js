@@ -2,12 +2,16 @@ import React, { useEffect, useState } from 'react';
 import EmailIcon from '@material-ui/icons/Email';
 import PersonIcon from '@material-ui/icons/Person';
 import LockIcon from '@material-ui/icons/Lock';
+import VisibilityIcon from '@material-ui/icons/Visibility';
+import IconButton from '@material-ui/core/IconButton';
+
 
 import { useDispatch, useSelector } from 'react-redux';
 import LoadingBox from '../LoadingBox';
 import MessageBox from '../MessageBox';
 // import { Link } from 'react-router-dom';
 import { signin } from '../../actions/userActions';
+import { mostrarContrasena } from '../MostrarContrasena';
 
 
 function ZonaClientes(props) {
@@ -32,6 +36,20 @@ function ZonaClientes(props) {
       props.history.push(redirect);
     }
   }, [props.history, redirect, userInfo]);
+
+  // const mostrarContrasena = () =>{
+  //   var input = document.getElementById("password");
+  //   if(input.type == "password"){
+  //       input.type = "text"
+  //       setTimeout(() =>{
+  //       input.type = "password"
+ 
+  //       }, 3000)
+  //   }else{
+  //     input.type = "password";
+  //   }
+  //   }
+
 
     return (
         <div>
@@ -80,6 +98,11 @@ function ZonaClientes(props) {
                     required
                     onChange={(e) => setPassword(e.target.value)}
                     />
+                    <IconButton 
+                    id="boton"
+                    onClick={mostrarContrasena}>
+                      <VisibilityIcon/>
+                    </IconButton>
                 </div>
                 <div className="input-button">
 

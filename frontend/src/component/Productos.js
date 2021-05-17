@@ -9,7 +9,7 @@ import MessageBox from './MessageBox'
 import {useDispatch, useSelector} from 'react-redux'
 
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import { listProducts } from '../actions/productActions'
+import { convertirAmoneda, listProducts } from '../actions/productActions'
 import  DrawerFilter  from './DrawerFilter';
 
 
@@ -190,28 +190,24 @@ export default function Productos(props) {
                         
 
                             productos.map(x =>(
-                <div className="products-list-item">
-                <div key={x.categoria} className="product-card  shadow-box-productos">
+                <div key={x.categoria} className="product-card  ">
                 <div className="product-image">
                 <a
 
                 href={`/producto/${x._id}`} className="product-image__body ">
-                 <img className="product-image__img imgnormal " alt={x.info} src={x.imagen.img1}/>
+                 <img className="product-image__img imgnormalP " alt={x.info} src={x.imagen.img1}/>
               
                 </a>
                 </div>
                 <div className="product-card__info">
-                <div className="product-card__name">
                 <a href={`/producto${x._id}`}><p>{x.info}</p></a>
                 </div>
-                </div>
+                <br/>
                 <div className="product-card-body">
-                <div className="product-card__specifications float-left">
-                <strong>CÓDIGO: </strong>{x.codigo}<br/>
-                <strong>UNIDAD: </strong>{x.unidad}<br/>
-                </div>
-                <div className="clearfix"></div>
-                </div>
+                {/* <strong>CÓDIGO: </strong>{x.codigo}<br/>
+                <strong>UNIDAD: </strong>{x.unidad}<br/> */}
+                {/* <strong>PRECIO: </strong>${convertirAmoneda(x.precio , "COP")}<br/> */}
+                <p>${convertirAmoneda(x.precio , "COP")}</p>
                 </div>
                 </div>
                 

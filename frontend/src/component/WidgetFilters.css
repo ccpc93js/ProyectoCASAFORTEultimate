@@ -14,7 +14,8 @@
 
 
 .widget-filters {
-    border: 2px solid #f0f0f0;
+    /* border: 2px solid  #f0f0f0; */
+    border: 2px solid  #c5c3c3;
     border-radius: 2px;
     padding: 20px;
     height: 100%;
@@ -40,7 +41,7 @@
 }
 
 .widget-filters__item:first-child {
-    border-top: 2px solid #cac5c5;
+    border-top: 2px solid #817b7b;
 }
 .widget-filters__item {
     padding: 8px 20px;
@@ -57,6 +58,7 @@
     cursor: pointer;
 }
 .filter__title {
+    text-align: start;
     display: block;
     border: none;
     padding: 6px 10px;

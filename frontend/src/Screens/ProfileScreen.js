@@ -6,6 +6,9 @@ import { detailsUser, updateUserProfile} from '../actions/userActions';
 import loadingPage from '../component/LoadingPage';
 import LoadingBox from '../component/LoadingBox';
 import MessageBox from '../component/MessageBox';
+import VisibilityIcon from '@material-ui/icons/Visibility';
+import IconButton from '@material-ui/core/IconButton';
+import { mostrarContrasena } from '../component/MostrarContrasena';
 // import { USER_UPDATE_PROFILE_RESET } from '../constants/userConstants';
 
 export default function ProfileScreen() {
@@ -120,6 +123,11 @@ export default function ProfileScreen() {
                 placeholder="Contraseña"
                 onChange={(e) => setPassword(e.target.value)}
               ></input>
+                    <IconButton 
+                    id="boton"
+                    onClick={mostrarContrasena}>
+                      <VisibilityIcon/>
+                    </IconButton>
             </div>
             <div className="input-contenedor">
               <label htmlFor="confirmPassword">confirm Password</label>
@@ -129,6 +137,11 @@ export default function ProfileScreen() {
                 placeholder="Confirme Contraseña"
                 onChange={(e) => setConfirmPassword(e.target.value)}
               ></input>
+                    <IconButton 
+                    id="boton"
+                    onClick={mostrarContrasena}>
+                      <VisibilityIcon/>
+                    </IconButton>
             </div>
      
             <div>

@@ -71,7 +71,7 @@ function WidgetFilters(props) {
     }
    
     return (
-        <div className="block-sidebar shadow-box">
+        <div className="block-sidebar ">
         {
             <div className=" block block-sidebar__body">
                 <div className="block-sidebar__item">

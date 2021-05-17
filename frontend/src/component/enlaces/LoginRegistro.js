@@ -8,6 +8,9 @@ import EmailIcon from '@material-ui/icons/Email';
 import PersonIcon from '@material-ui/icons/Person';
 import LockIcon from '@material-ui/icons/Lock';
 import ContactsIcon from '@material-ui/icons/Contacts';
+import VisibilityIcon from '@material-ui/icons/Visibility';
+import IconButton from '@material-ui/core/IconButton';
+import { mostrarContrasena } from '../MostrarContrasena';
 
 
 function LoginRegistro(props) {
@@ -102,6 +105,11 @@ function LoginRegistro(props) {
                     required
                     onChange={(e) => setPassword(e.target.value)}
                     />
+                    <IconButton 
+                    id="boton"
+                    onClick={mostrarContrasena}>
+                      <VisibilityIcon/>
+                    </IconButton>
                 </div>
 
                 <div className="input-contenedor">
@@ -113,6 +121,11 @@ function LoginRegistro(props) {
                     required
                     onChange={(e) => setConfirmPassword(e.target.value)}
                     />
+                    <IconButton 
+                    id="boton"
+                    onClick={mostrarContrasena}>
+                      <VisibilityIcon/>
+                    </IconButton>
                 </div>
                 <div className="button-center">
                 <button type="submit"  className="button">Registrar</button>

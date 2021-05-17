@@ -235,7 +235,9 @@ loadingP?(
  <ul className="continerPR__productos-relacionados">
 <li>
     <a href={`/producto/${x._id}`}>
-       <img src={x.imagen.img1} alt={x.info} className="continerPR__productos-relacionados__img"/>
+        <div className="continerPR__productos-relacionados__img">
+            <img src={x.imagen.img1} alt={x.info} />
+        </div>
     <div className="continerPR__details">
      <p className="continerPR__details__description__info">{x.info}</p>
      <p className="continerPR__details__description__precio">${convertirAmoneda(producto.precio, "COP")}</p>

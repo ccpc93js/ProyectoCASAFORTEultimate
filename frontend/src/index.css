@@ -369,7 +369,7 @@ h3{
 .input-contenedor input{
   /* display: inline ; */
   font-size: 1rem;
-  width: 70%;
+  width: 60%;
   padding: 0.3rem;
   border: none;
   outline: none;
@@ -380,6 +380,7 @@ h3{
   border-style: hidden;
 
 }
+
 .input-contenedor label{
   margin-left: 1rem;
   /* display: inline ; */
@@ -665,8 +666,12 @@ button.small {
 
 
 .formulario{
-  padding-top: 5rem;
+  /* padding-top: 2rem; */
   padding-bottom: 10rem ;
+}
+
+.formulario h1{
+  margin-bottom: 2rem;
 }
 
 /* .contact-form form button{
