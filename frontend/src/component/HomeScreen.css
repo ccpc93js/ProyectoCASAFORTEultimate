@@ -204,7 +204,7 @@
 }
 
 
-li, .marca{
+.sliderMarcas li, .marca{
     margin: 4px;
     /* margin-left: 150px; */
     /* width: 30%; */
@@ -220,7 +220,7 @@ li, .marca{
 
 
 
-li, .marca:hover{
+.sliderMarcas li, .marca:hover{
     -webkit-transform: scale(1.02,1.02);
     -webkit-transform-timing-function: ease-out ;
     -webkit-transition-duration: 200ms ;
@@ -282,7 +282,7 @@ z-index: 40;
     /* flex-wrap: wrap; */
     justify-content: space-around;
     margin: 2rem 3rem 1rem 2rem;
-    margin-left: -100%;
+    /* margin-left: -100%; */
     /* overflow-x: auto; */
 }
 
