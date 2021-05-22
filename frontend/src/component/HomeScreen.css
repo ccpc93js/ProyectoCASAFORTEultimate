@@ -283,7 +283,7 @@ z-index: 40;
     justify-content: space-around;
     margin: 2rem 3rem 1rem 2rem;
     /* margin-left: -100%; */
-    /* overflow-x: auto; */
+    overflow-x: auto;
 }
 
 .sliderMarcas::-webkit-scrollbar{
