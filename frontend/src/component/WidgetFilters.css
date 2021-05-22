@@ -162,7 +162,7 @@
 }
 
 
-.widget-filters dl, ol, ul {
+.widget-filters ul {
     margin-top: 0;
     margin-bottom: 1rem;
 }

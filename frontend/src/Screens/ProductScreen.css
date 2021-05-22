@@ -274,6 +274,7 @@ text-align: left !important;
 
 
 .continerPR__productos-relacionados:hover{
+  border: solid 1.9px #c9c6c6;
   -webkit-transform: scale(1.02,1.02);
   -webkit-transform-timing-function: ease-out ;
   -webkit-transition-duration: 200ms ;

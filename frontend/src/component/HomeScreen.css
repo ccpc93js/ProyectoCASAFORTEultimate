@@ -180,10 +180,12 @@
 
 
 .qontiner{
-    background-color: #011c39;
+    background-color: #1b1e20ee;
+    /* background-color: #2c2c3dec; */
     /* height: 50vh; */
     width: 100vw;
     display: flex;
+    position: relative;
 }
 
 .central{
@@ -192,6 +194,7 @@
     /* flex-wrap: wrap; */
     justify-content: space-around;
     margin: 2rem 3rem 1rem 2rem;
+    /* position: relative; */
     overflow-x: auto;
 }
 
@@ -201,7 +204,7 @@
 }
 
 
-.marca{
+li, .marca{
     margin: 4px;
     /* margin-left: 150px; */
     /* width: 30%; */
@@ -217,7 +220,7 @@
 
 
 
-.marca:hover{
+li, .marca:hover{
     -webkit-transform: scale(1.02,1.02);
     -webkit-transform-timing-function: ease-out ;
     -webkit-transition-duration: 200ms ;
@@ -227,11 +230,68 @@
 }
 
 
-.marca img{
+.marca {
     /* max-width: 10rem; */
     width: 10rem ;
     height: 10rem ;
+    object-fit: cover;
 }
+
+
+.hi-prev, .hi-next {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background: #ffffff;
+    color: black;
+    transition: all 0.7s ease;
+    margin: auto 4px;
+    
+}
+
+.hi-prev:hover, 
+.hi-next:hover {
+opacity: 1;
+background: black;
+color: #ffffff;
+}
+
+.hi-prev{
+    left: 1px;
+z-index: 40;
+}
+
+
+.hi-next{
+    right: 18px;
+z-index: 40;
+
+}
+
+.sliderMarcas{
+    list-style: none;
+    /* position: relative; */
+    /* width: 10%; */
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    margin: 2rem 3rem 1rem 2rem;
+    margin-left: -100%;
+    /* overflow-x: auto; */
+}
+
+.sliderMarcas::-webkit-scrollbar{
+    width: 0;
+}
+
+
+
 
 .celular{
     background-color: #ffffff;

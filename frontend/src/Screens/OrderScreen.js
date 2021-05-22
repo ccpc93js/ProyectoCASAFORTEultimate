@@ -200,12 +200,12 @@ const cambiarAdolares = (valorPesos) =>{
                   <div>${convertirAmoneda(order.shippingPrice.toFixed(2),'COP')}</div>
                 </div>
               </li>
-              <li>
+              {/* <li>
                 <div className="row">
                   <div>Iva</div>
                   <div>${convertirAmoneda(order.taxPrice.toFixed(2),'COP')}</div>
                 </div>
-              </li>
+              </li> */}
               <li>
                 <div className="row">
                   <div>

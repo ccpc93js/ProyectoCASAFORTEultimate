@@ -35,9 +35,10 @@ fecthData();
       <div className="">
       
       <input 
-      onFocus={true}
       type="text"
        placeholder="Buscar producto..." 
+       autoComplete="off"
+       autoFocus
        onChange={(e) =>{setSearchTerm(e.target.value)}}/>
 
       </div>

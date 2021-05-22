@@ -126,12 +126,12 @@ export default function PlaceOrderScreen(props) {
                          <div>${convertirAmoneda(cart.shippingPrice.toFixed(2),'COP')}</div>
                        </div>
                      </li>
-                     <li>
+                     {/* <li>
                        <div className="row">
                          <div>Iva</div>
                          <div>${convertirAmoneda(cart.taxPrice.toFixed(2),'COP')}</div>
                        </div>
-                     </li>
+                     </li> */}
                      <li>
                        <div className="row">
                          <div>

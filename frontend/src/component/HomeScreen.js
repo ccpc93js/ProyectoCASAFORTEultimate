@@ -5,7 +5,9 @@ import LocalShippingIcon from '@material-ui/icons/LocalShipping';
 import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import ThumbsUpDownIcon from '@material-ui/icons/ThumbsUpDown';
 import TelegramIcon from '@material-ui/icons/Telegram';
-// import {Link} from 'react-router-dom';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+// import Glide from '@glidejs/glide'// import {Link} from 'react-router-dom';
 // import data from './data.js'
 
 // import slide1 from '/PROYECTO CASA FORTE/frontend/public/img/Icons/Pantalla de inicio.png'
@@ -26,6 +28,78 @@ export const HomeScreen = () => {
 
 
     const fontSizeIcons = 50
+
+    // const sliderMarcas = () =>{
+    //     const sliderMarcas = document.getElementById("glideMarcas")
+    //     if(sliderMarcas)
+    //     new Glide(sliderMarcas, {
+    //         type: "carousel",
+    //         startAt: 0,
+    //         perView: 5,
+    //         haverpause: false,
+    //         autoplay:2000,
+    //         animationDuration: 800,
+    //         animationTiminFunc: "linear",
+    //         breakpoints:{
+    //             1200:{
+    //                 perView:3
+    //             },
+    //             768:{
+    //                 perView:2
+    //             }
+    //         }
+    //     }
+    //     ).mount()
+    // }
+
+    // sliderMarcas()
+
+
+    const sliderMarcas = () =>{
+        const sliderMarcas = document.getElementById("sliderMarcas");
+        let sliderSection = document.querySelectorAll(".slider-section");
+        let sliderSectionLast = sliderSection[sliderSection.length - 1];
+        sliderMarcas.insertAdjacentElement("afterbegin", sliderSectionLast);
+        console.log(sliderSection)
+        console.log(sliderSectionLast)
+
+
+    }
+
+    
+
+    const Next = () =>{
+        const sliderMarcas = document.getElementById("sliderMarcas");
+        let sliderSectionFirst = document.querySelectorAll(".slider-section")[0];
+        sliderMarcas.style.marginLeft = "-200%";
+        sliderMarcas.style.transition = "all 0.5s ease"
+        // setTimeout(()=>{
+            sliderMarcas.style.transition = "all 5s ease";
+            sliderMarcas.insertAdjacentElement("beforeend", sliderSectionFirst)
+            sliderMarcas.style.marginLeft = "-100%";
+        // },500);
+
+
+    }
+
+    const Prev = () =>{
+        const sliderMarcas = document.getElementById("sliderMarcas");
+        let sliderSection = document.querySelectorAll(".slider-section");
+        let sliderSectionLast = sliderSection[sliderSection.length - 1];
+        sliderMarcas.style.marginLeft = "0";
+        sliderMarcas.style.transition = "all 0.5s ease"
+        setTimeout(()=>{
+            sliderMarcas.style.transition = "none";
+            sliderMarcas.insertAdjacentElement("afterbegin", sliderSectionLast)
+            sliderMarcas.style.marginLeft = "-100%";
+        },500);
+
+
+    }
+
+
+
+
     return (
         <div className="HomeScreen-container">
             <div className="slider">
@@ -94,53 +168,72 @@ export const HomeScreen = () => {
 </div>
 
 <div className="qontiner">
+        <div 
+        className="hi-prev" 
+        id="arrow-prev"
+        onClick={Prev}
+        >
+            <i>
+             <ChevronLeftIcon/>
+            </i> 
+            
+        </div>
+    <div className="central " >
 
-    <div className="central">
-        
-        <ul className="marca">
-            <li><a href="/abracol"><img class="marca" src="./img/Icons/Logo_Abracol.png" alt="abracol"/></a></li>
+
+         <ul className="sliderMarcas" id="sliderMarcas">
+            <li className="slider-section"><a href="/abracol"><img class="marca" src="./img/Icons/Logo_Abracol.png" alt="abracol"/></a></li>
+            <li className="slider-section"><a href="/ciles"><img class="marca" src="./img/Icons/Logo_Ciles.png" alt="ciles"/></a></li>
+            <li className="slider-section"><a href="/grival"><img class="marca" src="./img/Icons/Logo_Grival.jpg" alt="grival"/></a></li>
+            <li className="slider-section"><a href="/goya"><img class="marca" src="./img/Icons/logo_goya.jpg" alt="goya"/></a></li>
+            <li className="slider-section"><a href="/dewalt"><img class="marca" src="./img/Icons/logo_dewalt.jpg" alt="dewalt"/></a></li>
+            <li className="slider-section"><a href="/sintesolda"><img class="marca" src="./img/Icons/logo_sintesolda.jpg" alt="sintesolda"/></a></li>
+            <li className="slider-section"><a href="/argos"><img class="marca" src="./img/Icons/logo_argos.jpg" alt="argos"/></a></li>
+            <li className="slider-section"><a href="#"><img class="marca" src="./img/Icons/logo_corona.png" alt="corona"/></a></li>
+            <li className="slider-section"><a href="#"><img class="marca" src="./img/Icons/logo_celta.png" alt="celta"/></a></li>
+            <li className="slider-section"><a href="/rioplast"><img class="marca" src="./img/Icons/logo_rioplast.jpg" alt="rioplast"/></a></li>
+            <li className="slider-section"><a href="#"><img class="marca" src="./img/Icons/logo_legrand.jpg" alt="legrand"/></a></li>
+            <li className="slider-section"><a href="#"><img class="marca" src="./img/Icons/logo_pegaucho.jpg" alt="pegaucho"/></a></li>
+            <li className="slider-section"><a href="#"><img class="marca" src="./img/Icons/logo_stanley.png" alt="stanley"/></a></li>
+            <li className="slider-section"><a href="/lufkin-crescent"><img class="marca" src="./img/Icons/logo_crescent.png" alt="crescent"/></a></li>
         </ul>
-        <ul className="marca">
-            <li><a href="/ciles"><img class="marca" src="./img/Icons/Logo_Ciles.png" alt="ciles"/></a></li>
-        </ul>
-        <ul className="marca">
-            <li><a href="/grival"><img class="marca" src="./img/Icons/Logo_Grival.jpg" alt="grival"/></a></li>
-        </ul>
-        <ul className="marca">
-            <li><a href="/goya"><img class="marca" src="./img/Icons/logo_goya.jpg" alt="goya"/></a></li>
-        </ul>
-        <ul className="marca">
-            <li><a href="/dewalt"><img class="marca" src="./img/Icons/logo_dewalt.jpg" alt="dewalt"/></a></li>
-        </ul>
-        <ul className="marca">
-            <li><a href="/sintesolda"><img class="marca" src="./img/Icons/logo_sintesolda.jpg" alt="sintesolda"/></a></li>
-        </ul>
-        <ul className="marca">
-            <li><a href="/argos"><img class="marca" src="./img/Icons/logo_argos.jpg" alt="argos"/></a></li>
-        </ul>
-        <ul className="marca">
-            <li><a href="#"><img class="marca" src="./img/Icons/logo_corona.png" alt="corona"/></a></li>
-        </ul>
-        <ul className="marca">
-            <li><a href="#"><img class="marca" src="./img/Icons/logo_celta.png" alt="celta"/></a></li>
-        </ul>
-        <ul className="marca">
-            <li><a href="/rioplast"><img class="marca" src="./img/Icons/logo_rioplast.jpg" alt="rioplast"/></a></li>
-        </ul>
-        <ul className="marca">
-            <li><a href="#"><img class="marca" src="./img/Icons/logo_legrand.jpg" alt="legrand"/></a></li>
-        </ul>
-        <ul className="marca">
-            <li><a href="#"><img class="marca" src="./img/Icons/logo_pegaucho.jpg" alt="pegaucho"/></a></li>
-        </ul>
-        <ul className="marca">
-            <li><a href="#"><img class="marca" src="./img/Icons/logo_stanley.png" alt="stanley"/></a></li>
-        </ul>
-        <ul className="marca">
-            <li><a href="/lufkin-crescent"><img class="marca" src="./img/Icons/logo_crescent.png" alt="crescent"/></a></li>
-        </ul>
+
+
     
     </div>
+         <div 
+          className="hi-next" i
+          d="arrow-next"
+          onClick={Next}
+          
+          >
+            <i>
+
+            <ChevronRightIcon/>
+            </i>
+        </div>
+
+{/* <div class="glide" id="glideMarcas">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide"><a href="/abracol"><img class="marca" src="./img/Icons/Logo_Abracol.png" alt="abracol"/></a></li>
+      <li class="glide__slide"><a href="/ciles"><img class="marca" src="./img/Icons/Logo_Ciles.png" alt="ciles"/></a></li>
+      <li class="glide__slide"><a href="/grival"><img class="marca" src="./img/Icons/Logo_Grival.jpg" alt="grival"/></a></li>
+      <li class="glide__slide"><a href="/goya"><img class="marca" src="./img/Icons/logo_goya.jpg" alt="goya"/></a></li>
+      <li class="glide__slide"><a href="/dewalt"><img class="marca" src="./img/Icons/logo_dewalt.jpg" alt="dewalt"/></a></li>
+      <li class="glide__slide"><a href="/sintesolda"><img class="marca" src="./img/Icons/logo_sintesolda.jpg" alt="sintesolda"/></a></li>
+      <li class="glide__slide"><a href="/argos"><img class="marca" src="./img/Icons/logo_argos.jpg" alt="argos"/></a></li>
+      <li class="glide__slide"><a href="#"><img class="marca" src="./img/Icons/logo_corona.png" alt="corona"/></a></li>
+      <li class="glide__slide"><a href="#"><img class="marca" src="./img/Icons/logo_celta.png" alt="celta"/></a></li>
+      <li class="glide__slide"><a href="/rioplast"><img class="marca" src="./img/Icons/logo_rioplast.jpg" alt="rioplast"/></a></li>
+      <li class="glide__slide"><a href="#"><img class="marca" src="./img/Icons/logo_legrand.jpg" alt="legrand"/></a></li>
+      <li class="glide__slide"><a href="#"><img class="marca" src="./img/Icons/logo_pegaucho.jpg" alt="pegaucho"/></a></li>
+      <li class="glide__slide"><a href="#"><img class="marca" src="./img/Icons/logo_stanley.png" alt="stanley"/></a></li>
+      <li class="glide__slide"><a href="/lufkin-crescent"><img class="marca" src="./img/Icons/logo_crescent.png" alt="crescent"/></a></li>
+
+    </ul>
+  </div>
+</div> */}
 
     </div>
  
@@ -250,3 +343,4 @@ export const HomeScreen = () => {
         </div>
     )
 }
+

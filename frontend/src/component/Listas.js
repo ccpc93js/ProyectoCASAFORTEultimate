@@ -25,7 +25,14 @@ const Listas =()=> {
    
   const [openCategorias,setopenCategorias]= React.useState("categoriasDrawerUp")
   const handleDrawerOpen = () => {
+        // setopenCategorias("categoriasDrawerDrop");
+        var input = document.getElementById("icon-drop");
+        if(input.checked === true ){
         setopenCategorias("categoriasDrawerDrop");
+
+        }else{
+        setopenCategorias("categoriasDrawerUp");
+    }
   };
   const handleDrawerClose = () => {
     setopenCategorias("categoriasDrawerUp");
@@ -57,13 +64,14 @@ const Listas =()=> {
                         <ListItemText className={classes.listas}>
                              Productos 
                         </ListItemText>
-
-                        {/* <button id="icon-drop">
+                        <input type="checkbox" id="icon-drop" />
+                        <label htmlFor="icon-drop" className="mobile-item" onClick={handleDrawerOpen}>
                         <ArrowDropDownIcon/>
 
-                        </button> */}
-                        <IconButton
+                        </label>
+                        {/* <IconButton
                          onClick={handleDrawerOpen}
+
 
                         >
                             <ArrowDropDownIcon/>
@@ -73,7 +81,7 @@ const Listas =()=> {
 
                         >
                             <ArrowDropUpIcon/>
-                        </IconButton>
+                        </IconButton> */}
                         </ListItem>
                     </Link>
                      <div className={openCategorias}>

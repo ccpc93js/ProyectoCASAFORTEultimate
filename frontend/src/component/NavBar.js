@@ -48,10 +48,13 @@ export const NavBar = (props) => {
             <ModalSearch/>
                 </i>
             
-            <Link to="/cart"><i> <ShoppingCartIcon/></i>
+            <Link to="/cart"><i>
+                 <ShoppingCartIcon/>
                 {cartItems.length > 0 && (
                     <span className="badge ">{cartItems.length}</span>
                     )}
+            </i>
+
             </Link>
             {
                 userInfo ? (

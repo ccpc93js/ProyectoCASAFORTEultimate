@@ -6,6 +6,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap'); */
 
 *{
   margin:0;
@@ -19,6 +20,7 @@
   /* font-family: 'Space Mono', monospace !important; */
   /* font-family: 'Open Sans', sans-serif !important; */
   font-family: 'Poppins', sans-serif !important;
+  /* font-family: 'Open Sans', sans-serif;  */
 
   /* font-family: 'Montserrat', sans-serif !important; ; */
 
@@ -70,7 +72,7 @@ main{
  padding-top: 5%;
  /* padding-bottom: 15rem; */
   background-color: #ffffff;
-  min-height: calc(100vh );
+  min-height: calc(100vh - 500px );
 
 
 }
@@ -100,6 +102,13 @@ ul li{
 }
 
 
+input{
+  outline: none;
+}
+
+input:focus{
+  outline: none;
+}
 
 
 /* body{
@@ -378,6 +387,14 @@ h3{
   outline-style: none;
   margin-left: 2rem;
   border-style: hidden;
+  outline: 0;
+  outline-style: none;
+  outline-offset: 0;
+
+}
+
+.input-contenedor input:focus{
+  outline: none;
 
 }
 
@@ -452,10 +469,11 @@ button.small {
   font-size: 18px;
   text-align: center;
   /* outline: none; */
-  border: 1px solid rgb(0, 141, 235);
+  /* border: 1px solid rgb(0, 141, 235); */
+  border: 1px solid  #2c2c3dec;
   background-color: #fff;
   border-radius: 4px;
-  color: rgb(0, 141, 235);
+  color: #2c2c3dec;
   cursor: pointer;
   transition: all .25s;
   z-index: 1;
@@ -474,8 +492,11 @@ button.small {
   bottom: 0;
   border: transparent;
   border-radius: 2px;
-  background-image: linear-gradient(to right, 
-  rgb(23,228,243), rgb(0,141,235));
+  /* background-image: linear-gradient(to right, 
+  rgb(23,228,243), rgb(0,141,235)); */
+  background: linear-gradient(90deg, #2c2c3d 50%, #c03535 100%);
+
+
   transition: all .25s;
   z-index: -1;
 }

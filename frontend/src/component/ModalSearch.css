@@ -2,6 +2,7 @@
    margin: 10%;
    margin-top: 9rem;
 
+
 }
 
 .ClearIcon{
@@ -16,8 +17,16 @@ margin: auto;
 
 .containerElement{
     background: white;
+    overflow-y: auto;
+    height: 50%;
+
+
 }
 
+
+.containerElement::-webkit-scrollbar{
+    height: 0;
+}
 
 .searchBar input{
     width: 60%;
@@ -32,16 +41,23 @@ margin: auto;
     list-style:none;
     margin:0 20%;
     margin-top: 4rem;
+
     /* position: fixed;
     left: 3;
     z-index: 50; */
 
 }
 
+.searchBar input:hover{
+    outline: 0;
+}
+
 .searchBar i{
     /* float: right; */
     z-index: -1;
 }
+
+
 
 
 
@@ -107,20 +123,26 @@ justify-content: left;
 
 .Modal{
     background: rgba(0, 0, 0, 0.8);
+    transition: all 1s ease;
+    opacity: 1;
 }
 
 .Modal{
-    overflow-y: scroll;
+    overflow-y: auto;
+}
+
+.Modal::-webkit-scrollbar{
+    height: 0;
 }
 
 .element{
     border:1px solid rgb(223, 218, 218);
-
 }
 
 .element:hover{
     background-color:  rgb(246, 241, 241);
 }
+
 
 
 

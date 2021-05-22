@@ -9,6 +9,7 @@ import MessageBox from './MessageBox'
 import {useDispatch, useSelector} from 'react-redux'
 
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { convertirAmoneda, listProducts } from '../actions/productActions'
 import  DrawerFilter  from './DrawerFilter';
 
@@ -198,11 +199,13 @@ export default function Productos(props) {
                  <img className="product-image__img imgnormalP " alt={x.info} src={x.imagen.img1}/>
               
                 </a>
+                 <div className="addCart">
+                        <i><ShoppingCartIcon/></i>
+                 </div>
                 </div>
                 <div className="product-card__info">
                 <a href={`/producto${x._id}`}><p>{x.info}</p></a>
                 </div>
-                <br/>
                 <div className="product-card-body">
                 {/* <strong>CÓDIGO: </strong>{x.codigo}<br/>
                 <strong>UNIDAD: </strong>{x.unidad}<br/> */}
