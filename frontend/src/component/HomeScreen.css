@@ -198,6 +198,12 @@
     
 .container-central{
     margin-left: -176.46px;
+    overflow-x:auto;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    margin-top: 1.3rem;
+
+    
 }
 .central{
     display: flex;
@@ -206,7 +212,7 @@
     /* justify-content: space-around; */
     margin: 2rem;
     /* position: relative; */
-    /* overflow:auto; */
+    /* overflow-x:auto; */
 }
 
 
@@ -297,7 +303,7 @@ opacity: 0;
     justify-content: space-around;
     /* margin: 2rem 3rem 1rem 2rem; */
     margin-left: -176.46px;
-    overflow:hidden;
+    /* overflow-x:auto; */
 }
 
 .sliderMarcas::-webkit-scrollbar{
@@ -506,11 +512,17 @@ fin pausa */
     width: auto;
     height: auto;
     margin: 15px  30px;
-
-
 }
 
 
+.container-central{
+
+    overflow:auto;
+}
+
+.container-central::-webkit-scrollbar{
+    width: 0;
+}
     /* .contenedore{
         margin-top: 2rem;
         height: 20vh;
@@ -590,6 +602,14 @@ fin pausa */
 }
 .contenedore figure .capar a{
     font-size: 8px;
+}
+
+.container-central{
+
+    overflow-x:auto;
+}
+.container-central::-webkit-scrollbar{
+    width: 0;
 }
 
 }
@@ -681,8 +701,16 @@ fin pausa */
 .parrafo{
     width: 50%;
 }
+.container-central{
 
+    overflow-x:auto;
 }
+.container-central::-webkit-scrollbar{
+    width: 0;
+}
+}
+
+
 
 @media screen and (min-width:768px) and (max-width:1024px){
 
@@ -736,6 +764,11 @@ fin pausa */
         font-size: 10px;
        }
 
+       .container-central{
+
+        overflow-x:auto;
+    }
+
 }
 
   
@@ -770,8 +803,13 @@ fin pausa */
         
     } */
 
+    .container-central{
 
-    
+        overflow-x:auto;
+    }
+    .container-central::-webkit-scrollbar{
+        width: 0;
+    }
     
   
   }

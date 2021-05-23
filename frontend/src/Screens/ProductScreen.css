@@ -254,7 +254,7 @@ text-align: left !important;
   flex-direction: row;
   /* flex-wrap: wrap; */
   justify-content: space-around;
-  margin-left: -279.78px;
+  margin-left: -259.78px;
   /* overflow-x: auto; */
 }
 
@@ -370,7 +370,7 @@ z-index: 40;
 
 
 .hi-next{
-  right: 18px;
+  right: 1px;
 z-index: 40;
 
 }

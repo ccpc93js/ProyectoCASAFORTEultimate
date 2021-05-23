@@ -108,12 +108,12 @@ const sliderMarcas = () =>{
 const Next = () =>{
     const sliderMarcas = document.getElementById("sliderPR");
     let sliderSectionFirst = document.querySelectorAll(".slider-section-PR")[0];
-    sliderMarcas.style.marginLeft = "-559.56px";
+    sliderMarcas.style.marginLeft = "-620.56px";
     sliderMarcas.style.transition = "all 0.5s ease"
     setTimeout(()=>{
         sliderMarcas.style.transition = "none";
         sliderMarcas.insertAdjacentElement("beforeend", sliderSectionFirst)
-        sliderMarcas.style.marginLeft = "-279.78px";
+        sliderMarcas.style.marginLeft = "-259.78px";
     },500);
 
 
@@ -128,7 +128,7 @@ const Prev = () =>{
     setTimeout(()=>{
         sliderMarcas.style.transition = "none";
         sliderMarcas.insertAdjacentElement("afterbegin", sliderSectionLast)
-        sliderMarcas.style.marginLeft = "-279.78px";
+        sliderMarcas.style.marginLeft = "-259.78px";
     },500);
 
 
