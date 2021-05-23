@@ -14,8 +14,13 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 // import YouTubeIcon from '@material-ui/icons/YouTube';
+
+
+
 
 
 
@@ -85,8 +90,51 @@ function ProductScreen(props) {
 })
 
 
+const sliderMarcas = () =>{
+    setTimeout(()=>{
 
+        const sliderMarcas = document.getElementById("sliderPR");
+        let sliderSection = document.querySelectorAll(".slider-section-PR");
+        let sliderSectionLast = sliderSection[sliderSection.length - 1];
+        sliderMarcas.insertAdjacentElement("afterbegin", sliderSectionLast);
+        console.log(sliderSection)
+        console.log(sliderSectionLast)
+    },3000)
+
+
+}
+
+
+const Next = () =>{
+    const sliderMarcas = document.getElementById("sliderPR");
+    let sliderSectionFirst = document.querySelectorAll(".slider-section-PR")[0];
+    sliderMarcas.style.marginLeft = "-559.56px";
+    sliderMarcas.style.transition = "all 0.5s ease"
+    setTimeout(()=>{
+        sliderMarcas.style.transition = "none";
+        sliderMarcas.insertAdjacentElement("beforeend", sliderSectionFirst)
+        sliderMarcas.style.marginLeft = "-279.78px";
+    },500);
+
+
+}
+
+const Prev = () =>{
+    const sliderMarcas = document.getElementById("sliderPR");
+    let sliderSection = document.querySelectorAll(".slider-section-PR");
+    let sliderSectionLast = sliderSection[sliderSection.length - 1];
+    sliderMarcas.style.marginLeft = "0";
+    sliderMarcas.style.transition = "all 0.5s ease"
+    setTimeout(()=>{
+        sliderMarcas.style.transition = "none";
+        sliderMarcas.insertAdjacentElement("afterbegin", sliderSectionLast)
+        sliderMarcas.style.marginLeft = "-279.78px";
+    },500);
+
+
+}
   
+sliderMarcas()
 
     return (
             <div className="container-productScreen">
@@ -212,8 +260,19 @@ function ProductScreen(props) {
  <div className="continerPR">
 
      <h2 className="continerPR__title"><div className="continerPR__title__divider"></div> Productos relacionados <div className="continerPR__title__divider"></div></h2>
+<div className="continerPR__carousel">
 
-<div className="continerPR__centralPR">   
+<div className="continerPR__centralPR" id="sliderPR">   
+<div 
+        className="hi-prev" 
+        id="arrow-prev"
+        onClick={Prev}
+        >
+            <i>
+             <ChevronLeftIcon/>
+            </i> 
+            
+        </div>
 
 {
 
@@ -222,6 +281,8 @@ loadingP?(
 ):errorP ?(
     <MessageBox variant="danger">{errorP}</MessageBox>
 ):(
+
+
 
     
     productFiltradoXcategoria.map((x)=>(
@@ -232,8 +293,8 @@ loadingP?(
 //  </ul>
 
 
- <ul className="continerPR__productos-relacionados">
-<li>
+ <ul className="continerPR__productos-relacionados slider-section-PR" >
+<li className="">
     <a href={`/producto/${x._id}`}>
         <div className="continerPR__productos-relacionados__img">
             <img src={x.imagen.img1} alt={x.info} />
@@ -251,12 +312,27 @@ loadingP?(
 
 ))
 
-)
 
+
+)
 
 }
 
+<div 
+          className="hi-next"          
+          id="arrow-next"
+          onClick={Next}
+          
+          >
+            <i>
+
+            <ChevronRightIcon/>
+            </i>
+        </div>
+
 </div>
+</div> 
+
 
 </div>
 

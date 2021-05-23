@@ -161,7 +161,7 @@
 }
 
 
-.widget-filters-Drawer-Drawer dl, ol, ul {
+.widget-filters-Drawer-Drawer dl ol ul {
     margin-top: 0;
     margin-bottom: 1rem;
 }

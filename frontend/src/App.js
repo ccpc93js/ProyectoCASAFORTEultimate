@@ -146,6 +146,7 @@ function App(props) {
       bottom: theme.spacing(15),
       right: theme.spacing(7),
       color: "inherit",
+      zIndex: 900
     
     }
   }));

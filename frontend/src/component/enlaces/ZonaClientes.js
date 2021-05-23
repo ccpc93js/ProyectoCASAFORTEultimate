@@ -52,7 +52,7 @@ function ZonaClientes(props) {
 
 
     return (
-        <div>
+        <div className="zona-form">
             <div className="contacto">
                 <img src="../enlaces/img/clientes.png" alt=""/>
             </div>
@@ -70,6 +70,7 @@ function ZonaClientes(props) {
                     <input 
                     type="email" 
                     id="email"
+                    autoFocus
                     placeholder="Email"
                     required
                     onChange={(e) => setEmail(e.target.value)}

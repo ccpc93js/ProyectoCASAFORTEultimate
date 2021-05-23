@@ -82,18 +82,9 @@ const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
   return Intl.NumberFormat(formatoLenguaje, {style: 'currency', currency: moneda}).format(valor);
 }
 
-const cambiarAdolares = (valorPesos) =>{
-  let pesos = (valorPesos * 1)
-
-  let total= (pesos / 3851.01)
-  total = total.toFixed(2)
-  return total
-}
 
 
 
-// const enDolares= cambiarAdolares(order.totalPrice)
-// console.log(enDolares)
 
 
   return loading ? (

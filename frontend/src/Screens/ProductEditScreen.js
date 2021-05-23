@@ -94,7 +94,7 @@ export default function ProductEditScreen(props) {
   };
 
   return (
-    <div className="productEditContainer">
+    <div className="productEditContainer zona-form">
       <form className="formulario" onSubmit={submitHandler}>
         <div>
           <h1 >Editar Producto {productId}</h1>

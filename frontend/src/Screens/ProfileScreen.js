@@ -61,7 +61,7 @@ export default function ProfileScreen() {
 
 
   return (
-    <div className="profile-container">
+    <div className="profile-container zona-form">
       <form className="formulario" onSubmit={submitHandler}>
         <div className="contenedor">
           <h1>Perfil de usuario</h1>

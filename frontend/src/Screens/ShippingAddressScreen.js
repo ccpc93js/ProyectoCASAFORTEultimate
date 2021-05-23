@@ -68,7 +68,7 @@ export default function ShippingAddressScreen(props) {
     props.history.push('/map');
   };
   return (
-    <div>
+    <div className="zona-form">
       <CheckoutSteps step1 step2></CheckoutSteps>
 
       <form className="formulario" onSubmit={submitHandler}>

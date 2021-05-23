@@ -111,8 +111,8 @@ function Registrarse(props) {
     }
 
     return (
-        <div>
-             <div className="contacto">
+    <div className="zona-form">
+        <div className="contacto">
             <img src="../enlaces/img/contacto.png" alt=""/>
         </div>
 
@@ -128,6 +128,7 @@ function Registrarse(props) {
                     <i className=""><PersonIcon/></i>
                     <input 
                     type="text2"
+                    autoFocus
                     required
                     placeholder="Nombre o Raz&oacute;n Social"
                     onChange={(e) => setName(e.target.value)}

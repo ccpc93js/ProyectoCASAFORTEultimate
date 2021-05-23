@@ -48,7 +48,7 @@ export default function UserEditScreen(props) {
     dispatch(updateUser({ _id: userId, name, email, nit, isAdmin }));
   };
   return (
-    <div className="userListContainer">
+    <div className="userListContainer zona-form">
       <form className="formulario" onSubmit={submitHandler}>
         <div>
           <h1 className="titulelist">Edita Usuario {name}</h1>
