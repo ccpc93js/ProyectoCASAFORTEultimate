@@ -1,6 +1,6 @@
-/* .PaymethodContainer{
-
-} */
+.PaymethodContainer{
+height: 100vh;
+}
 
 /* Form */
 .form {
@@ -29,3 +29,4 @@
     height: 50px;
     margin-left:1rem;
   }
+

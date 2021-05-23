@@ -264,7 +264,7 @@ sliderMarcas()
 
 <div className="continerPR__centralPR" id="sliderPR">   
 <div 
-        className="hi-prev" 
+        className="hi-prev-PR" 
         id="arrow-prev"
         onClick={Prev}
         >
@@ -319,7 +319,7 @@ loadingP?(
 }
 
 <div 
-          className="hi-next"          
+          className="hi-next-PR"          
           id="arrow-next"
           onClick={Next}
           

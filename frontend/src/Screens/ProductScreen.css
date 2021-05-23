@@ -331,7 +331,7 @@ text-align: start;
 margin-top: 10px;
 }
 
-.hi-prev, .hi-next {
+.hi-prev-PR, .hi-next-PR {
   position: absolute;
   top: 50%;
   width: 40px;
@@ -347,29 +347,29 @@ margin-top: 10px;
   
 }
 
-.continerPR:hover .hi-prev{
+.continerPR:hover .hi-prev-PR{
   opacity: 1;
 }
 
-.continerPR:hover .hi-next {
+.continerPR:hover .hi-next-PR {
   opacity: 1;
 }
   
 
-.hi-prev:hover, 
-.hi-next:hover {
+.hi-prev-PR:hover, 
+.hi-next-PR:hover {
 opacity: 1;
 background: black;
 color: #ffffff;
 }
 
-.hi-prev{
+.hi-prev-PR{
   left: 1px;
 z-index: 40;
 }
 
 
-.hi-next{
+.hi-next-PR{
   right: 1px;
 z-index: 40;
 

@@ -122,7 +122,7 @@ const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
               <div className="card card-body">
                 <strong>Pago</strong>
                 <h3>
-                  <strong>Metodo:</strong> {order.paymentMethod}
+                  <strong>Metodo: </strong> {order.paymentMethod}
                 </h3>
                 {userInfo.isAdmin ? ( order.isPaid ?(
                   <MessageBox variant="success">
