@@ -6,7 +6,7 @@ import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import EditIcon from '@material-ui/icons/Edit';
 
 // import { Link} from 'react-router-dom';
-import {
+import formatCurrency, {
   createProduct,
   deleteProduct,
   listProducts,
@@ -145,7 +145,7 @@ export default function ProductListScreen(props) {
                   <td className="table-hidden">{producto._id}</td>
                   <td >{producto.codigo}</td>
                   <td><img src={producto.imagen.img1} className="smallProductlist" alt="" />{"  "}{producto.info}</td>
-                  <td className="table-hidden">${producto.precio}</td>
+                  <td className="table-hidden">{formatCurrency(producto.precio)}</td>
                   <td className="table-hidden">{producto.marca ? producto.marca.replace(/-/g," "):""}</td>
                   <td className="table-hidden">{producto.categoria ? producto.categoria.replace(/-/g," "):""}</td>
                   <td className="table-hidden">{producto.subcategoria ? producto.subcategoria.replace(/-/g," "):""}</td>
@@ -153,7 +153,7 @@ export default function ProductListScreen(props) {
                   <td className="table-hidden">{producto.unidad}</td>
                   <td>
                     <IconButton
-
+                      aria-label="editar"
                       onClick={() =>
                         props.history.push(`/producto/${producto._id}/edit`)
                       }
@@ -161,6 +161,7 @@ export default function ProductListScreen(props) {
                       <EditIcon />
                     </IconButton>
                     <IconButton
+                      aria-label="eliminar"
                       onClick={() => deleteHandler(producto)}
                     >
                     <DeleteForeverIcon className="button-remove"/>

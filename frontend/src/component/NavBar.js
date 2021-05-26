@@ -9,6 +9,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import PersonIcon from '@material-ui/icons/Person';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import SearchIcon from '@material-ui/icons/Search';
+
 
 
 
@@ -24,15 +26,49 @@ export const NavBar = (props) => {
         dispatch(signout());
     }
 
+
+    const handleSearhModalOpen = () =>{
+       const Modal = document.querySelector(".Modal");
+    //    Modal.style.top = "20";
+       Modal.style.visibility = "visible"
+       Modal.style.opacity = "1";
+       
+
+    }
+    const handleSearhModalClose = () =>{
+        const Modal = document.querySelector(".Modal");
+        // Modal.style.top = "100%";
+        Modal.style.visibility = "hidden"
+        Modal.style.opacity = "0";
+    }
+
+    const handleCartSideOpen = () =>{
+        const Carrito = document.querySelector(".Carrito");
+        Carrito.style.marginRight = "-30px";
+        Carrito.style.visibility = "visible"
+        Carrito.style.opacity = "1";
+        
+  
+     }
+
+    const handleCartSideClose = () =>{
+        const Carrito = document.querySelector(".Carrito");
+        Carrito.style.visibility = "hidden"
+        Carrito.style.opacity = "0";
+    }
+
     return (
         <div>
         <nav className="NavBar-content">
             <div>
 
         <div className="menu1">
-            <button className="menu-button">
+            <button className="menu-button" aria-label="menu">
             <IconButton
-                onClick={props.handleDrawerOpen}
+                onClick={()=>{
+                    props.handleDrawerOpen()
+                    handleCartSideClose()
+                }}
                 className="menu-button"
                 size="small"
                 >
@@ -41,48 +77,67 @@ export const NavBar = (props) => {
 
             </button>
 
-            <a className="casaforte-a" href="/"><img className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/></a>
-            <div className="carrito ">
-                <i className="divSearch">
+            <a className="casaforte-a" href="/" aria-label="inicio"><img className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/></a>
+            <div className="carrito " >
+                <i className="divSearch" aria-label="buscar" alt="buscar">
 
-            <ModalSearch/>
+                    <IconButton 
+                    aria-label="menu " 
+                    color="inherit"
+                    size ="small"
+                    // className={openModal}
+                    onClick={handleSearhModalOpen}
+                    
+                    >
+                    <SearchIcon/>
+                    {/* <i className="fas fa-search"></i> */}
+                    </IconButton>
+
                 </i>
             
-            <Link to="/cart"><i>
+            <Link to="/cart" aria-label="carrito"
+                onClick={
+                    // ()=>{
+                    // handleCartSideOpen
+                    handleSearhModalClose
+                // }
+            }
+            >
+                <i className="cart-icon">
                  <ShoppingCartIcon/>
                 {cartItems.length > 0 && (
                     <span className="badge ">{cartItems.length}</span>
                     )}
-            </i>
+                </i>
 
             </Link>
             {
                 userInfo ? (
                     <div className="dropdown carrito-none">
                     <Link className="userName" to="#">{userInfo.name} <i className=""><ArrowDropDownIcon/></i>{" "}</Link>
-                    <ul className="dropdown-content">
+                    <ul className="dropdown-content" onClick={handleSearhModalClose}>
                         <li>
-                            <Link to="/profile">Perfil de usuario</Link>
+                            <Link to="/profile" >Perfil de usuario</Link>
                         </li>
                         <li>
                             <Link to="/orderhistory">Historial de pedidos</Link>
                         </li>
                         <li>
-                            <Link to="#signout" onClick={signoutHandler}>Cerrar sesion</Link>
+                            <Link to="#signout" onClick={signoutHandler} aria-label="cerrar sesion">Cerrar sesion</Link>
                         </li>
                     </ul>
                 </div>
                 ) : 
                 (
-                    <a href="/signin" className="carrito-none"><i><PersonIcon/></i></a>
+                    <a href="/signin" className="carrito-none" aria-label="iniciar sesion"><i><PersonIcon/></i></a>
                     )
                 }
             {userInfo && userInfo.isAdmin && (
                 <div className="dropdown carrito-none">
-                <Link to="#admin" className="userName" >
+                <Link to="#admin" className="userName" aria-label="admin">
                   Admin <i className=""><ArrowDropDownIcon/></i>
                 </Link>
-                <ul className="dropdown-content">
+                <ul className="dropdown-content" onClick={handleSearhModalClose}>
                   {/* <li>
                     <Link to="/dashboard">Dashboard</Link>
                 </li> */}
@@ -114,7 +169,7 @@ export const NavBar = (props) => {
         <div className="menu2">
         <ul >
             <li><a href="/nosotros" className="cool-link">Nosotros</a></li>
-            <li><a href="/nuevos" className="cool-link">Productos</a>
+            <li><a href="/all" className="cool-link">Productos</a>
                 <div className="shadow-box-ul">
                 <ul>
                     <li><a href="/abrasivos">Abrasivos</a></li>
@@ -173,7 +228,7 @@ export const NavBar = (props) => {
                 </ul>
                 </div>
             </li>
-            <li><a href="/nuevos">Nuevos</a></li>
+            <li><a href="/ofertas">Ofertas</a></li>
             <li><a href="/contactenos">Cont&aacute;ctanos</a></li>
             <li><a href="/signin">Clientes</a></li>
         </ul>
@@ -183,14 +238,10 @@ export const NavBar = (props) => {
 
         
         </div>
-        {/* <div className="buscar">
-        <input type="text" className="buscar_texto" placeholder="Buscar"/>
-        <a href="#" className="boton">
-        <i className="fas fa-search"></i>
-        </a>
-    </div> */}
+
 
       
+        <ModalSearch handleSearhModalClose={handleSearhModalClose}/>
        
         
         

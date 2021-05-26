@@ -161,6 +161,8 @@ ul, li{
 }
 .productScreen-card__row select{
   margin-left: 20px;
+  border: none;
+
 }
 
 .info-ps{
@@ -194,6 +196,7 @@ text-align: left !important;
   color: #555;
   font-size: 1rem;
 }
+
 .precio{
   font-size: 1rem;
 }

@@ -111,7 +111,7 @@ const useStyles = makeStyles((theme)=>({
                 userInfo ? (
                 <div className="dropdown ">
                     <Link className="userName" to="#">{userInfo.name} <i className=""><ArrowDropDownIcon/></i>{" "}</Link>
-                    <ul className="dropdown-content">
+                    <ul className="dropdown-content" onClick={props.handleDrawerClose}>
                         <li>
                             <Link to="/profile">Perfil de usuario</Link>
                         </li>
@@ -133,7 +133,7 @@ const useStyles = makeStyles((theme)=>({
                 <Link to="#admin" className="userName" >
                   Admin <i className=""><ArrowDropDownIcon/></i>
                 </Link>
-                <ul className="dropdown-content">
+                <ul className="dropdown-content" onClick={props.handleDrawerClose}>
                   {/* <li>
                     <Link to="/dashboard">Dashboard</Link>
                   </li> */}

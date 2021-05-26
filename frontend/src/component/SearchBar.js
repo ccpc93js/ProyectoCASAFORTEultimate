@@ -7,14 +7,33 @@ import axios from '../../node_modules/axios/index';
 // import axios from 'axios'
 
 
-function SearchBar() {
-
+function SearchBar(props) {
   const[searchTerm, setSearchTerm] = useState("");
-  // const searchProductos = axios.get('/api/productos');
+  const submitHandler = (e) => {
+    e.preventDefault();
+    props.history.push(`/search/${searchTerm}`);
+  };
+
   const [productos, setProductos]=useState([]);
   // const [loading, setLoading] = useState(false);
   // const [error, setError] = useState(false);
-  const searchProductos = productos
+  const searchProductos = productos.filter((val)=>{
+    if (searchTerm === ""){
+      return ""
+    }else if  (val.categoria.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
+      return val
+    }else if  (val.subcategoria.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
+      return val
+    }else if  (val.marca.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
+      return val
+    }else if  (val.codigo.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
+      return val
+    }else if  (val.unidad.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
+      return val
+    }else if (val.info.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
+      return val
+    }
+  })
 
   const fecthData = async () =>{
     try{
@@ -32,63 +51,78 @@ function SearchBar() {
 fecthData();
   return (
     <div className="searchBar">
+    <form className="" /*onSubmit={submitHandler}*/>
       <div className="">
-      
+
       <input 
       type="text"
        placeholder="Buscar producto..." 
        autoComplete="off"
        autoFocus
        onChange={(e) =>{setSearchTerm(e.target.value)}}/>
+{/* 
+        <button className="hidden" type="submit">
+          <i className="fa fa-search"></i>
+        </button> */}
+
+      
+
 
       </div>
-      <div className="input-search-content">
+      {
+
+        (searchProductos.length === 0 )?
+        ("")
+        :( <div className="total-search" aria-hidden={ (searchProductos.length === 0 )?("true"):("false")}>
+        <span className="total-search__resultados">
+         { searchProductos.length} RESULTADOS
+        </span> 
+        {/* <button className="total-search__ver-todos" type="submit">
+          VER TODOS
+        </button> */}
+        <div>
+
+        </div>
+      </div>)  
+
+      }
 
       <div className="containerElement">
 
+      
+
       {
         
-
-        searchProductos.filter((val)=>{
-          if (searchTerm === ""){
-            return ""
-          }else if  (val.categoria.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
-            return val
-          }else if  (val.subcategoria.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
-            return val
-          }else if  (val.marca.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
-            return val
-          }else if  (val.codigo.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
-            return val
-          }else if  (val.unidad.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
-            return val
-          }else if (val.info.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
-            return val
-          }
-        }).map((val, key)=>{
+        searchProductos.slice(/*0,4*/).map((val, key)=>{
           return (
             
+            <a href={`/producto/${val._id}`} className="">
             
-            <div className="element" key={key}>
+            <div className="product-card-search " key={key}>
               {/* {
                 loading ? (
                   <LoadingBox></LoadingBox>
                   ): error ?(
                   <MessageBox variant="danger">{error}</MessageBox>):( */}
+                <div className="product-image-search">
 
-                    <a href={`/producto/${val._id}`} className="elementSearch">
-                    <img src={val.imagen.img1} alt="" className="img-search"/>  
-                    <div className="info-element">
+                    <a href={`/producto/${val._id}`} className="product-image__body-search ">
+                    <img src={val.imagen.img1} alt="" className="product-image__img imgnormalP-search "/>  
+                    </a>
+                </div>
+                    <div className="product-card__info-search">
                       <div className="elementSearch-p"><h3>{val.info}</h3></div>
                       <div className="elementSearch-p"><h3>${val.precio}</h3></div>
-                    </div>
-                 </a>
+                </div>
+
 
                   
               {/* } */}
        
   
             </div>
+            </a>
+
           );
         })
         
@@ -96,7 +130,8 @@ fecthData();
         
       }
       </div>
-      </div>
+    </form>
+
     </div>
   );
 }

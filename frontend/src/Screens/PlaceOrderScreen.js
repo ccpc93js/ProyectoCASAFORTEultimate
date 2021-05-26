@@ -7,7 +7,7 @@ import CheckoutSteps from '../component/CheckoutSteps'
 import LoadingBox from '../component/LoadingBox';
 import MessageBox from '../component/MessageBox';
 import { ORDER_CREATE_RESET } from '../constants/orderConstants';
-import { cambiarAdolares } from '../actions/productActions';
+import formatCurrency, { cambiarAdolares } from '../actions/productActions';
 
 export default function PlaceOrderScreen(props) {
     const cart = useSelector((state) => state.cart);
@@ -93,7 +93,7 @@ export default function PlaceOrderScreen(props) {
                                         </div>
                                        
                                         <div className="cart-price">
-                                            {item.qty} x ${convertirAmoneda(item.precio, "COP")} = ${convertirAmoneda(item.qty * item.precio, "COP")}
+                                            {item.qty} x {formatCurrency(item.precio)} = {formatCurrency(item.qty * item.precio)}
                                         </div>
                                      
 
@@ -117,13 +117,13 @@ export default function PlaceOrderScreen(props) {
                      <li>
                        <div className="row">
                          <div>Articulos</div>
-                         <div>${convertirAmoneda(cart.itemsPrice.toFixed(2),'COP')}</div>
+                         <div>{formatCurrency(cart.itemsPrice)}</div>
                        </div>
                      </li>
                      <li>
                        <div className="row">
                          <div>Envio</div>
-                         <div>${convertirAmoneda(cart.shippingPrice.toFixed(2),'COP')}</div>
+                         <div>{formatCurrency(cart.shippingPrice)}</div>
                        </div>
                      </li>
                      {/* <li>
@@ -138,7 +138,7 @@ export default function PlaceOrderScreen(props) {
                            <strong>Total Pedido</strong>
                          </div>
                          <div>
-                           <strong>${convertirAmoneda(cart.totalPrice.toFixed(2),'COP')}</strong>
+                           <strong>{formatCurrency(cart.totalPrice)}</strong>
                          </div>
                        </div>
                      </li>

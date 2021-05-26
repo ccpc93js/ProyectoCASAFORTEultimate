@@ -252,7 +252,7 @@
     /* max-width: 10rem; */
     width: 10rem ;
     height: 10rem ;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 
@@ -823,34 +823,7 @@ fin pausa */
         height: 14rem ;
     }
   
-    /* .contenedore figure {
-        height: 80%;
-        width: 30%;
-        
-    }
-    
-    .contenedore figure .capar{
- 
-        width: 100%;
-        
-    }
-    
-    
-    
-    .contenedore figure .capar h3{
-        font-weight: 400;
-        margin-bottom: 10px;
-        margin-top:150px;
-        font-size: 15px;
-    }
-    
-    .contenedore figure .capar a{
-        padding: 8px 18px;
-        font-size: 10px;
-        
-        
-        
-    } */
+
 
     .parrafo{
         width: 50%;
@@ -862,6 +835,14 @@ fin pausa */
     
         }
 
+        .container-central{
+
+            overflow:auto;
+        }
+        
+        .container-central::-webkit-scrollbar{
+            width: 0;
+        }
     
   }
   

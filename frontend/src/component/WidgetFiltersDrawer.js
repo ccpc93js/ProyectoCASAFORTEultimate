@@ -8,64 +8,64 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
 function WidgetFiltersDrawer(props) {
-    const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(false);
-    const [dataCategorias, setDataCategorias]=useState([]);
-    const [dataSubcategorias, setDataSubcategorias]=useState([]);
-    const [dataMarcas, setDataMarcas]=useState([]);
+    // const [loading, setLoading] = useState(false);
+    // const [error, setError] = useState(false);
+    // const [dataCategorias, setDataCategorias]=useState([]);
+    // const [dataSubcategorias, setDataSubcategorias]=useState([]);
+    // const [dataMarcas, setDataMarcas]=useState([]);
 
-    const axiosDataCategorias = async () =>{
-       try{
-        //    setLoading(true);
-           const {data} = await axios.get('/api/productos/categorias/get');
-           setLoading(false);
-           setDataCategorias(data);
+    // const axiosDataCategorias = async () =>{
+    //    try{
+    //     //    setLoading(true);
+    //        const {data} = await axios.get('/api/productos/categorias/get');
+    //        setLoading(false);
+    //        setDataCategorias(data);
 
-       }catch(error){
-        setError(error.message);
-        setLoading(false);
+    //    }catch(error){
+    //     setError(error.message);
+    //     setLoading(false);
 
-       }
+    //    }
     
-    };
-    axiosDataCategorias();
+    // };
+    // axiosDataCategorias();
 
-    const axiosDataSubcategorias = async () =>{ 
-       try{
-        //    setLoading(true);
+    // const axiosDataSubcategorias = async () =>{ 
+    //    try{
+    //     //    setLoading(true);
    
-           const {data} = await axios.get('/api/productos/subcategorias/get');
-           setLoading(false);
+    //        const {data} = await axios.get('/api/productos/subcategorias/get');
+    //        setLoading(false);
    
-           setDataSubcategorias(data);
+    //        setDataSubcategorias(data);
 
        
-        }catch(error){
-        setError(error.message);
-        setLoading(false);
+    //     }catch(error){
+    //     setError(error.message);
+    //     setLoading(false);
 
-       }
+    //    }
 
-    };
-    axiosDataSubcategorias();
+    // };
+    // axiosDataSubcategorias();
     
-    const axiosDataMarcas = async () =>{
-        try{
-            // setLoading(true);
+    // const axiosDataMarcas = async () =>{
+    //     try{
+    //         // setLoading(true);
     
-            const {data} = await axios.get('/api/productos/marcas/get');
-            setLoading(false);
+    //         const {data} = await axios.get('/api/productos/marcas/get');
+    //         setLoading(false);
     
-            setDataMarcas(data);
+    //         setDataMarcas(data);
 
-        }catch(error){
-            setError(error.message);
-            setLoading(false);
+    //     }catch(error){
+    //         setError(error.message);
+    //         setLoading(false);
     
-           }
+    //        }
 
-    };
-    axiosDataMarcas();
+    // };
+    // axiosDataMarcas();
 
 
     // const subcategorias = dataSubcategorias

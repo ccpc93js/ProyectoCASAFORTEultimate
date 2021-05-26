@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import './ProductScreen.css'
 // import data from '../component/data.js'
 import axios from 'axios'
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import {useDispatch, useSelector} from 'react-redux';
 // import LoadingPageLogo from '../component/LoadingPageLogo';
 import LoadingBox from '../component/LoadingBox';
 import loadingPage from '../component/LoadingPage';
 import MessageBox from '../component/MessageBox';
-import { convertirAmoneda, detailsProduct } from '../actions/productActions';
+import formatCurrency, {  detailsProduct } from '../actions/productActions';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -38,8 +38,6 @@ function ProductScreen(props) {
     const [errorP, setErrorP] = useState(false);
     
 
-    console.log(productos)
-    console.log(producto)
 
  
     useEffect(()=>{
@@ -90,19 +88,19 @@ function ProductScreen(props) {
 })
 
 
-const sliderMarcas = () =>{
-    setTimeout(()=>{
+// const sliderMarcas = () =>{
+//     setTimeout(()=>{
 
-        const sliderMarcas = document.getElementById("sliderPR");
-        let sliderSection = document.querySelectorAll(".slider-section-PR");
-        let sliderSectionLast = sliderSection[sliderSection.length - 1];
-        sliderMarcas.insertAdjacentElement("afterbegin", sliderSectionLast);
-        console.log(sliderSection)
-        console.log(sliderSectionLast)
-    },3000)
+//         const sliderMarcas = document.getElementById("sliderPR");
+//         let sliderSection = document.querySelectorAll(".slider-section-PR");
+//         let sliderSectionLast = sliderSection[sliderSection.length - 1];
+//         sliderMarcas.insertAdjacentElement("afterbegin", sliderSectionLast);
+//         console.log(sliderSection)
+//         console.log(sliderSectionLast)
+//     },3000)
 
 
-}
+// }
 
 
 const Next = () =>{
@@ -134,7 +132,7 @@ const Prev = () =>{
 
 }
   
-sliderMarcas()
+// sliderMarcas()
 
     return (
             <div className="container-productScreen">
@@ -206,7 +204,7 @@ sliderMarcas()
             producto.enStock > 0 && (
                 <div>
                     <div className="precio">
-                      <strong >PRECIO: </strong>${convertirAmoneda(producto.precio, "COP")}<br/>
+                      <strong >PRECIO: </strong>{formatCurrency(producto.precio)}<br/>
                     </div>
                                         <li>
                                             <div className="productScreen-card__row">
@@ -301,7 +299,7 @@ loadingP?(
         </div>
     <div className="continerPR__details">
      <p className="continerPR__details__description__info">{x.info}</p>
-     <p className="continerPR__details__description__precio">${convertirAmoneda(producto.precio, "COP")}</p>
+     <p className="continerPR__details__description__precio">{formatCurrency(producto.precio)}</p>
     </div>
 
     </a>

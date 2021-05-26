@@ -50,6 +50,7 @@ export default function OrderHistoryScreen(props) {
                 </td>
                 <td>
                 <IconButton
+                    aria-label="detalle"
                     type="button"
                     className="small"
                     onClick={() => {

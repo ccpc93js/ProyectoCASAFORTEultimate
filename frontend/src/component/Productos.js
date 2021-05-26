@@ -10,8 +10,10 @@ import {useDispatch, useSelector} from 'react-redux'
 
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import { convertirAmoneda, listProducts } from '../actions/productActions'
+import formatCurrency, { convertirAmoneda, listProducts } from '../actions/productActions'
 import  DrawerFilter  from './DrawerFilter';
+import { addToCart } from '../actions/cartActions'
+import DrawerRight from './DrawerRight'
 
 
 
@@ -39,6 +41,19 @@ export default function Productos(props) {
     }
 
 
+    const [openRight, setOpenRight] = React.useState(false);
+
+
+    const handleDrawerOpenRight = () => {
+      setOpenRight(true);
+    };
+    const handleDrawerCloseRight = () => {
+      setOpenRight(false);
+    };
+    const accionOpenRight =()=>{
+      setOpenRight(!openRight)
+    }
+
 
 
     useEffect(()=>{
@@ -55,7 +70,7 @@ export default function Productos(props) {
                         return (x.subcategoria === props.subcategorias)
                         if(props.marcas)
                         return (x.marca === props.marcas)
-                        if(props.nuevos)
+                        if(props.all)
                         return (x.createdAt)
                     })
                     setLoading(false);
@@ -99,23 +114,48 @@ export default function Productos(props) {
        
     }
 
-    const [dataMarcas, setDataMarcas]=useState([]);
+    // const [dataMarcas, setDataMarcas]=useState([]);
 
 
-    const axiosDataMarcas = async () =>{
-        const {data} = await axios.get('/api/productos/marcas/get');
-        setDataMarcas(data);
-    };
-    axiosDataMarcas();
+    // const axiosDataMarcas = async () =>{
+    //     const {data} = await axios.get('/api/productos/marcas/get');
+    //     setDataMarcas(data);
+    // };
+    // axiosDataMarcas();
 
     const marcas = data.marcas.find(x=>x.nombre === (props.marcas)?props.marcas:"")
 
     // marcas.find(x=>x.nombre === (props.marcas)?props.marcas:"")
    
+    const handleAddCart = (id) =>{
+        dispatch(addToCart(id, 1))
+    }
+
+
+    const [cartSideOpen, setCartSideOpen] = useState(false)
+
+    const handleCartSideOpen = () =>{
+      const Carrito = document.querySelector(".Carrito");
+      Carrito.style.marginRight = "-30px";
+      Carrito.style.visibility = "visible"
+      Carrito.style.opacity = "1";
+      
+
+   }
+   const handleCartSideClose = () =>{
+       const Carrito = document.querySelector(".Carrito");
+       Carrito.style.visibility = "hidden"
+       Carrito.style.opacity = "0";
+   }
+
+   const CartSideaccionOpen =()=>{
+    setCartSideOpen(!cartSideOpen)
+  }
     
     return (
         <div className="productos-container">
           <DrawerFilter handleDrawerClose={handleDrawerCloseFilter} open={openFilter}  onClose={accionOpenFilter}></DrawerFilter>
+          <DrawerRight  handleCartSideClose={handleCartSideClose}  onClose={CartSideaccionOpen} cartSideOpen={cartSideOpen}/>
 
              <div className="page-header">
                     <div className="page-header__container container">
@@ -131,7 +171,7 @@ export default function Productos(props) {
                     <li className="breadcrumb-item">
                     {
                         
-                        <a href={props.categorias ? props.categorias : props.subcategorias ? props.subcategorias :props.marcas ? props.marcas:props.nuevos }>{props.categorias ? props.categorias.replace(/-/g," ") : props.subcategorias ? props.subcategorias.replace(/-/g," ") : props.marcas ? props.marcas.replace(/-/g," "):props.nuevos}</a>
+                        <a href={`/${props.categorias ? props.categorias : props.subcategorias ? props.subcategorias :props.marcas ? props.marcas:props.all}`}>{props.categorias ? props.categorias.replace(/-/g," ") : props.subcategorias ? props.subcategorias.replace(/-/g," ") : props.marcas ? props.marcas.replace(/-/g," "):"todos"}</a>
                     }
                     <svg className="breadcrumb-arrow">
                     <ArrowBackIosIcon/>
@@ -191,7 +231,7 @@ export default function Productos(props) {
                         
 
                             productos.map(x =>(
-                <div key={x.categoria} className="product-card  ">
+                <div key={x._id} className="product-card  ">
                 <div className="product-image">
                 <a
 
@@ -199,18 +239,28 @@ export default function Productos(props) {
                  <img className="product-image__img imgnormalP " alt={x.info} src={x.imagen.img1}/>
               
                 </a>
-                 <div className="addCart">
+                 <div 
+                 aria-label="agregar a carrito"
+                 className="addCart" 
+                 onClick={
+                    ()=>{
+                        // console.log(e)
+                        handleCartSideOpen()
+                        handleAddCart(x._id)
+     
+                    }
+                    }>
                         <i><ShoppingCartIcon/></i>
                  </div>
                 </div>
                 <div className="product-card__info">
-                <a href={`/producto${x._id}`}><p>{x.info}</p></a>
+                <a href={`/producto/${x._id}`}><p>{x.info}</p></a>
                 </div>
                 <div className="product-card-body">
                 {/* <strong>CÓDIGO: </strong>{x.codigo}<br/>
                 <strong>UNIDAD: </strong>{x.unidad}<br/> */}
                 {/* <strong>PRECIO: </strong>${convertirAmoneda(x.precio , "COP")}<br/> */}
-                <p>${convertirAmoneda(x.precio , "COP")}</p>
+                <p>{formatCurrency(x.precio )}</p>
                 </div>
                 </div>
                 

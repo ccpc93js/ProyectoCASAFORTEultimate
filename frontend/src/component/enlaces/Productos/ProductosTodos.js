@@ -1,16 +1,16 @@
 import React from 'react'
 import Productos from '../../Productos'
 
- function Nuevos ()  {
+ function ProductosTodos ()  {
 
  
 
    return (
         <div>
-            <Productos nuevos="nuevos"/>
+            <Productos all="all"/>
         </div>
    )
             
 }
 
-export default Nuevos
+export default ProductosTodos

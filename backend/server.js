@@ -34,7 +34,7 @@ app.use(express.urlencoded({extended: true }));
     userNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex:true,
-})
+});
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false})); 

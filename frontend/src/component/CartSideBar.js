@@ -1,23 +1,21 @@
 import React, { useEffect } from 'react'
-import './CartScreen.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { addToCart, removeFromCart } from '../actions/cartActions';
 // import MessageBox from '../component/MessageBox';
 import { IconButton } from '@material-ui/core';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
-import formatCurrency, { convertirAmoneda } from '../actions/productActions';
+import formatCurrency from '../actions/productActions';
 
 // import data from '../data.json'
 
 
 
-export default function CartScreen(props) {
+export default function CartSideBar(props) {
     // const producto = data.productos.find((x)=>x._id === props.match.params.id)
 
-    const productId = props.match.params.id;
-    const qty = props.location.search? Number(props.location.search.split('=')[1])
-    :1;
+    // const productId = props.match.params.id;
+    // const qty = props.location.search? Number(props.location.search.split('=')[1]):1;
     const cart = useSelector(state =>state.cart);
     const {cartItems} = cart;
     const dispatch = useDispatch();
@@ -28,28 +26,30 @@ export default function CartScreen(props) {
     const checkoutHandler = () =>{
         props.history.push('/signin?redirec=shipping')
     }  
-    useEffect(() =>{
-        if (productId){
-            dispatch(addToCart(productId, qty));
-        }
-    }, [dispatch, productId, qty]);
+
+
+    // useEffect(() =>{
+    //     if (productId){
+    //         dispatch(addToCart(productId, qty));
+    //     }
+    // }, [dispatch, productId, qty]);
     return (
-        <div className="cartContainer">
+        <div className="cartSideContainer">
             {/* <h1>Carrito</h1> */}
             {cartItems.length === 0?
 
                ( 
-               <div className="cart-empty">
+               <div className="cartSide-empty">
                    <div className="image-cart-empty ">
                     <img className="imgnormalcart" src="/img/Icons/carrito.png" alt="shopping-cart-icon" />
                    </div>
-                    <p className="cart-empty-p">No hay productos en el carrito.</p>
+                    <p className="cartSide-empty-p">No hay productos en el carrito.</p>
 			    	<div className="empty-cart-text">
                         Antes de proceder al pago, debe agregar algunos productos a su carrito de compras.
                      <br></br> 
                         Encontrará muchos productos interesantes en nuestra tienda.
                     </div>
-			        	<div className="return-to-shop">
+			        	<div className="cartSide-return-to-shop">
                             <Link to="/nuevos" ><button className="button return-to-shop"> Continuar comprando</button></Link>
                         </div>
                 </div>
@@ -67,20 +67,20 @@ export default function CartScreen(props) {
                         {
                             cartItems.map(item =>
                                 <li key={item.producto} className="rowCart ">
-                                    <div className="cart-img">
+                                    <div className="cartSide-img">
                                     <img src={item.imagen} alt="producto" className="small-cart"/>
                                     </div>
 
-                                    <div className="cart-info">
+                                    <div className="cartSide-info">
 
                                     
-                                    <div className="cart-descripcion-link">
+                                    <div className="cartSide-descripcion-link">
                                         <Link to={"/producto/" + item.producto} >
                                        {item.info}
                                      </Link>
                     
                                     </div>
-                                    <div className="cart-price">
+                                    <div className="cartSide-price">
                                     <p>
                                     <b> Precio:  </b>
 
@@ -88,9 +88,9 @@ export default function CartScreen(props) {
                                     </p>
                                     </div>
 
-                                    <div className="actions">
+                                    <div className="cartSide-actions">
 
-                                    <div className="cart-cantidad">
+                                    <div className="cartSide-cantidad">
                                     <p><b> Cantidad:  </b>
                                     <select value={item.qty} onChange={(e) => dispatch(addToCart(item.producto, Number(e.target.value)))}>
                                         {[...Array(item.enStock).keys()].map(x =>
@@ -100,9 +100,9 @@ export default function CartScreen(props) {
                                         </p>  
                                     </div>
                                     
-                                    <div className="cart-button-remove" aria-label="remover">
-                                    <IconButton  className=" " onClick={() => removeFromCartHandler(item.producto)} >
-                                    <DeleteForeverIcon className="cart-button-remove"/>
+                                    <div className="cartSide-button-remove" aria-label="remover">
+                                    <IconButton  className="" onClick={() => removeFromCartHandler(item.producto)} >
+                                    <DeleteForeverIcon className="cartSide-button-remove"/>
 
                                     </IconButton>
 
@@ -128,11 +128,19 @@ export default function CartScreen(props) {
                             </h2>
                         </li>
                         <li>
-                       <div className="button-center">
-                       <button type="button" onClick={checkoutHandler} className=" button"  disabled ={cartItems.length === 0}>
-                                Ir a pagar
-                            </button>
+                        <a href="/cart" >
+                        <div className="cartSide-button-center">
+                       <button type="button" href="/cart" className=" button "  disabled ={cartItems.length === 0}>
+                               VER CARRITO
+                        </button>
                        </div>
+
+                        </a>
+                       {/* <div className="cartSide-button-center">
+                       <button type="button" onClick={checkoutHandler} className=" button "  disabled ={cartItems.length === 0}>
+                                IR A PAGAR
+                            </button>
+                       </div> */}
                         </li>
                     </ul>
                 </div>
@@ -147,6 +155,10 @@ export default function CartScreen(props) {
         
           )
 }
+
+
+
+
 
 
 

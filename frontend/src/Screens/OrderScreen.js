@@ -13,6 +13,7 @@ import {
   ORDER_DELIVER_RESET,
   ORDER_PAY_RESET,
 } from '../constants/orderConstants';
+import formatCurrency from '../actions/productActions';
 
 export default function OrderScreen(props) {
   const orderId = props.match.params.id;
@@ -163,7 +164,7 @@ const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
                         </div>
 
                         <div>
-                        {item.qty} x ${convertirAmoneda(item.precio, "COP")} = ${convertirAmoneda(item.qty * item.precio, "COP")}
+                        {item.qty} x {formatCurrency(item.precio)} = {formatCurrency(item.qty * item.precio)}
                         </div>
                       </div>
                     </li>
@@ -182,13 +183,13 @@ const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
               <li>
                 <div className="row">
                   <div>Articulos</div>
-                  <div>${convertirAmoneda(order.itemsPrice.toFixed(2),'COP')}</div>
+                  <div>{formatCurrency(order.itemsPrice)}</div>
                 </div>
               </li>
               <li>
                 <div className="row">
                   <div>Envio</div>
-                  <div>${convertirAmoneda(order.shippingPrice.toFixed(2),'COP')}</div>
+                  <div>{formatCurrency(order.shippingPrice)}</div>
                 </div>
               </li>
               {/* <li>
@@ -203,7 +204,7 @@ const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
                     <strong>Total Pedido</strong>
                   </div>
                   <div>
-                    <strong>${convertirAmoneda(order.totalPrice.toFixed(2),'COP')}</strong>
+                    <strong>{formatCurrency(order.totalPrice)}</strong>
                   </div>
                 </div>
               </li>
@@ -213,7 +214,7 @@ const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
                     <strong>Total en dolares</strong>
                   </div>
                   <div>
-                    <strong>{ convertirAmoneda(order.totalinDolars,'USD')}</strong>
+                    <strong>{formatCurrency(order.totalinDolars)}USD</strong>
                   </div>
                    {!order.isPaid ? <div>para pagar con paypal se debe cambiar el total a dolares</div>:""}
                 </div>

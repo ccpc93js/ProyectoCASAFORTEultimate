@@ -114,6 +114,10 @@ export const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
   return Intl.NumberFormat(formatoLenguaje, {style: 'currency', currency: moneda}).format(valor);
 }
 
+export default function formatCurrency(num){
+  return "$" + Number(num.toFixed(1)).toLocaleString()+ "";
+}
+
 export const cambiarAdolares = (valorPesos) =>{
   let pesos = (valorPesos * 1)
 

@@ -128,6 +128,7 @@ export default function UserListScreen(props) {
                 <td className="table-hidden">{user.isAdmin ? 'YES' : 'NO'}</td>
                 <td>
                   <IconButton
+                    aria-label="editar"
                     type="button"
                     className="small"
                     onClick={() => props.history.push(`/user/${user._id}/edit`)}
@@ -136,6 +137,7 @@ export default function UserListScreen(props) {
 
                   </IconButton>
                   <IconButton
+                    aria-label="eliminar"
                     type="button"
                     className="small"
                     onClick={() => deleteHandler(user)}

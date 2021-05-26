@@ -12,23 +12,37 @@ function WidgetFilters(props) {
     const [dataMarcas, setDataMarcas]=useState([]);
 
     const axiosDataCategorias = async () =>{
+        
+        // try{
 
         const {data} = await axios.get('/api/productos/categorias/get');
         setDataCategorias(data);
-
+    // }catch(error){
+    //         console.log(error.message)
+    // }
     
     };
     axiosDataCategorias();
 
     const axiosDataSubcategorias = async () =>{   
+        // try{
+
         const {data} = await axios.get('/api/productos/subcategorias/get');
         setDataSubcategorias(data);  
+    // }catch(error){
+    //     console.log(error.message)
+    // }
     };
     axiosDataSubcategorias();
     
     const axiosDataMarcas = async () =>{
+        // try{
+
         const {data} = await axios.get('/api/productos/marcas/get');
         setDataMarcas(data);
+    // }catch(error){
+    //     console.log(error.message)
+    // }
     };
     axiosDataMarcas();
 

@@ -24,7 +24,7 @@ export const HomeScreen = () => {
         if (counter > 3) {
             counter = 1;
         }
-    }, 6000);
+    }, 8000);
 
 
     const fontSizeIcons = 50
@@ -55,19 +55,24 @@ export const HomeScreen = () => {
     // sliderMarcas()
 
 
-    const sliderMarcas = () =>{
-        setTimeout(()=>{
+    // const sliderMarcas = () =>{
+    //     setTimeout(()=>{
 
-            const sliderMarcas = document.getElementById("sliderMarcas");
-            let sliderSection = document.querySelectorAll(".slider-section");
-            let sliderSectionLast = sliderSection[sliderSection.length - 1];
-            sliderMarcas.insertAdjacentElement("afterbegin", sliderSectionLast);
-            console.log(sliderSection)
-            console.log(sliderSectionLast)
-        },3000)
+    //         const sliderMarcas = document.getElementById("sliderMarcas");
+    //         sliderMarcas.style.opacity = "0"
+    //         let sliderSection = document.querySelectorAll(".slider-section");
+    //         let sliderSectionLast = sliderSection[sliderSection.length - 1];
+    //         sliderMarcas.insertAdjacentElement("afterbegin", sliderSectionLast);
+    //         sliderMarcas.style.transition = "all 0.5s ease"
+    //         sliderMarcas.style.opacity = "1"
 
 
-    }
+    //         // console.log(sliderSection)
+    //         // console.log(sliderSectionLast)
+    //     },3000)
+
+
+    // }
 
     
 
@@ -100,7 +105,7 @@ export const HomeScreen = () => {
 
     }
 
-    sliderMarcas()
+    // sliderMarcas()
 
 
 

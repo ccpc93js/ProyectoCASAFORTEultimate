@@ -113,10 +113,10 @@ const Listas =()=> {
                         </ListItemText>
                         </ListItem>
                     </Link>
-                    <Link href="/nuevos" underline="none">
+                    <Link href="/ofertas" underline="none">
                     <ListItem button>
                         <ListItemText className={classes.listas}>
-                             Nuevos
+                             Ofertas
                         </ListItemText>
                         </ListItem>
                     </Link>

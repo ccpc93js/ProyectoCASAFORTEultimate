@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './ProductEditScreen.css'
 import { useDispatch, useSelector } from 'react-redux';
 import Axios from 'axios';
-import { detailsProduct, updateProduct } from '../actions/productActions';
+import formatCurrency, { detailsProduct, updateProduct } from '../actions/productActions';
 import LoadingBox from '../component/LoadingBox';
 import loadingPage from '../component/LoadingPage';
 import MessageBox from '../component/MessageBox';
@@ -135,7 +135,7 @@ export default function ProductEditScreen(props) {
                 id="precio"
                 type="number"
                 placeholder="Precio"
-                value={precio}
+                value={formatCurrency(precio)}
                 onChange={(e) => setPrecio(e.target.value)}
               ></input>
             </div>

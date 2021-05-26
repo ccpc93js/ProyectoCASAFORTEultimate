@@ -157,6 +157,7 @@ export default function UserListRegisteredScreen(props) {
 
                   </IconButton> */}
                   <IconButton
+                  aria-label="eliminar"
                     type="button"
                     className="small"
                     onClick={() => deleteHandler(user)}

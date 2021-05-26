@@ -97,6 +97,7 @@ export default function OrderListScreen(props) {
                 </td>
                 <td>
                   <IconButton
+                    aria-label="detalle"
                     type="button"
                     className="small"
                     onClick={() => {
@@ -106,6 +107,7 @@ export default function OrderListScreen(props) {
                     <DetailsIcon/>
                   </IconButton>
                   <IconButton
+                    aria-label="eliminar"
                     type="button"
                     className="small"
                     onClick={() => deleteHandler(order)}

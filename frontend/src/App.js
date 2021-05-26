@@ -31,6 +31,7 @@ import AdminRoute from './component/AdminRoute';
 
 
 import Productos from './component/Productos';
+import ProductosTodos from './component/enlaces/Productos/ProductosTodos';
 import Marcas from './component/Marcas'
 
 
@@ -75,7 +76,6 @@ import PlaceOrderScreen from './Screens/PlaceOrderScreen';
 import OrderScreen from './Screens/OrderScreen';
 import OrderHistoryScreen from './Screens/OrderHistoryScreen';
 import ProfileScreen from './Screens/ProfileScreen';
-import Nuevos from './component/enlaces/Nuevos/Nuevos';
 import LijasYtelasRecubiertas from './component/enlaces/subCategorias/LijasYtelasRecubiertas';
 import DiscosAbrasivos from './component/enlaces/subCategorias/DiscosAbrasivos';
 import DiscosDeMetal from './component/enlaces/subCategorias/DiscosDeMetal';
@@ -127,6 +127,8 @@ import UserListRegisteredScreen from './Screens/UserListRegisteredScreen';
 import MensajeRegistrado from './component/enlaces/MensajeRegistrado';
 import LufkinCrescent from './component/enlaces/Marcas/LufkinCrescent';
 import DashboardScreen from './Screens/DashboardScreen';
+import DrawerRight from './component/DrawerRight';
+import SearchScreen from './Screens/SearchScreen';
 
 
 export const useCategoria = () =>{
@@ -169,6 +171,9 @@ function App(props) {
   const accionOpen =()=>{
     setOpen(!open)
   }
+
+
+
 
 
   function ScrollTop(props) {
@@ -233,11 +238,15 @@ function App(props) {
           {/* <NavBar2></NavBar2> */}
           <NavBar  handleDrawerOpen={handleDrawerOpen}/>
           <DrawerMenu handleDrawerClose={handleDrawerClose} open={open}  onClose={accionOpen}></DrawerMenu>
-
         </header>
         <Toolbar id="back-to-top-anchor" />
 
         <main >
+          <Route
+            path="/search/:productSearched?"
+            component={SearchScreen}
+            exact
+          ></Route>
 
         <Route exact path="/cart/:id?" component={CartScreen}/>
         <Route exact path="/producto/:id" component={ProductScreen}/>
@@ -388,8 +397,8 @@ function App(props) {
          <Route exact path="/INDUMA" component={Induma}/>
          <Route exact path="/LUFKIN-CRESCENT" component={LufkinCrescent}/>
 
-          {/* nuevos */}
-         <Route exact path="/Nuevos" component={Nuevos}/>
+          {/* ProductosTodos */}
+         <Route exact path="/all" component={ProductosTodos}/>
          
 
          

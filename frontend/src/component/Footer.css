@@ -19,7 +19,7 @@ footer{
     background-color: #2c2c3d;
   }
 
-  p{
+  footer p{
     /* text-align: center; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 15px;
@@ -194,14 +194,16 @@ footer{
     cursor: pointer;
     text-align: center;
     border-radius: 25px;
-    transition: background-color 300ms ;
+    transition: all 900ms ease;
     margin-top: 2rem;
 }
 
 .botone:hover{
+    border:2px solid #ffffff;
     background: #fd6565;
     color: #ffffff;
-    border: #fd6565;
+    border:2px solid #fd6565;
+    opacity: 1;
 }
   
 
