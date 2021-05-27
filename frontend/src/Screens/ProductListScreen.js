@@ -145,7 +145,30 @@ export default function ProductListScreen(props) {
                   <td className="table-hidden">{producto._id}</td>
                   <td >{producto.codigo}</td>
                   <td><img src={producto.imagen.img1} className="smallProductlist" alt="" />{"  "}{producto.info}</td>
-                  <td className="table-hidden">{formatCurrency(producto.precio)}</td>
+                  <td className="table-hidden">
+                    {
+                                        
+                                          (producto.enOferta === true)?
+                                         ( 
+                                           <div>
+
+                                             <div  className="productoList-en-oferta">
+                                               <p>En Oferta%</p>
+                                             </div>
+                                              <div className="productoList-en-oferta_precio">
+                                                <p className="p1"> {formatCurrency(producto.precio)}</p>
+                                                <p className="p2">{formatCurrency(producto.precioDeOferta)}</p>
+                                              </div>
+                                              </div>
+
+                                          )
+                                          :
+                                          (
+                                            formatCurrency(producto.precio)
+                                          )
+                                        
+                    }
+                  </td>
                   <td className="table-hidden">{producto.marca ? producto.marca.replace(/-/g," "):""}</td>
                   <td className="table-hidden">{producto.categoria ? producto.categoria.replace(/-/g," "):""}</td>
                   <td className="table-hidden">{producto.subcategoria ? producto.subcategoria.replace(/-/g," "):""}</td>

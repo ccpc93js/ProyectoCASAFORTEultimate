@@ -29,19 +29,35 @@ export const NavBar = (props) => {
 
 
     const handleSearhModalOpen = (e) =>{
-        e.preventDefault();
+        // e.preventDefault();
 
        const Modal = document.querySelector(".Modal");
-       Modal.classList.toggle("Modal-close")
+    //    Modal.classList.toggle("Modal-close")
+       Modal.style.visibility = "visible"
+       Modal.style.opacity = "1";      
+       Modal.style.transform = "translateY(-7%)"; 
     }
 
 
     const handleSearhModalClose = (e) =>{
-        e.preventDefault();
+        // e.preventDefault();
 
         const Modal = document.querySelector(".Modal");
-        Modal.classList.toggle("Modal-close")
+        // Modal.classList.toggle("Modal-close")
+        Modal.style.visibility = "hidden"
+        Modal.style.opacity = "0";      
+        Modal.style.transform = "translateY(-100%)"; 
     }
+
+    // window.addEventListener("click", (e) =>{
+    //     const Modal = document.querySelector(".Modal");
+      
+    //     if(e.target == Modal ){
+    //         Modal.style.visibility = "hidden"
+    //         Modal.style.opacity = "0";      
+    //         Modal.style.transform = "translateY(-100%)";  
+    //     }
+    //   })
 
 
 
@@ -56,6 +72,7 @@ export const NavBar = (props) => {
                 onClick={()=>{
                     props.handleDrawerOpen()
                     handleCartSideClose()
+                    handleSearhModalClose()
                 }}
                 className="menu-button"
                 size="small"
@@ -85,8 +102,11 @@ export const NavBar = (props) => {
             {
             (props.history == "/cart")?(""):
             <Link  aria-label="carrito"
-                onClick={
-                    handleCartSideOpen
+                onClick={()=>{
+                    handleCartSideOpen()
+                    handleSearhModalClose()
+
+                }
                     
             }
             >

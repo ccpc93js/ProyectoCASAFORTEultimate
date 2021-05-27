@@ -129,6 +129,7 @@ import LufkinCrescent from './component/enlaces/Marcas/LufkinCrescent';
 import DashboardScreen from './Screens/DashboardScreen';
 import DrawerRight, { handleCartSideClose } from './component/DrawerRight';
 import SearchScreen from './Screens/SearchScreen';
+import EnOferta from './component/enlaces/EnOferta/EnOferta';
 
 
 export const useCategoria = () =>{
@@ -401,6 +402,10 @@ function App(props) {
 
           {/* ProductosTodos */}
          <Route exact path="/all" component={ProductosTodos}/>
+
+         {/* en oferta */}
+         <Route exact path="/ofertas" component={EnOferta}/>
+
          
 
          

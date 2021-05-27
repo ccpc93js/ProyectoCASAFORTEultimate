@@ -19,6 +19,8 @@ export default function ProductEditScreen(props) {
   const [subcategoria, setSubcategoria] = useState('');
   const [enStock, setEnStock] = useState('');
   const [unidad, setUnidad] = useState('');
+  const [enOferta, setEnOferta] = useState('');
+  const [precioDeOferta, setPrecioDeOferta] = useState('');
 
   const productDetails = useSelector((state) => state.productDetails);
   const { loading, error, producto } = productDetails;
@@ -48,6 +50,8 @@ export default function ProductEditScreen(props) {
       setSubcategoria(producto.subcategoria);
       setEnStock(producto.enStock);
       setUnidad(producto.unidad);
+      setEnOferta(producto.enOferta);
+      setPrecioDeOferta(producto.precioDeOferta)
     }
   }, [producto, dispatch, productId, successUpdate, props.history]);
   const submitHandler = (e) => {
@@ -65,6 +69,8 @@ export default function ProductEditScreen(props) {
         marca,
         enStock,
         unidad,
+        enOferta,
+        precioDeOferta
       })
     );
   };
@@ -135,7 +141,7 @@ export default function ProductEditScreen(props) {
                 id="precio"
                 type="number"
                 placeholder="Precio"
-                value={formatCurrency(precio)}
+                value={precio}
                 onChange={(e) => setPrecio(e.target.value)}
               ></input>
             </div>
@@ -193,7 +199,7 @@ export default function ProductEditScreen(props) {
               ></input>
             </div>
             <div className="input-contenedor">
-              <label htmlFor="enStock">EnStock:</label>
+              <label htmlFor="enStock">En Stock:</label>
               <input
                 id="enStock"
                 type="text"
@@ -213,6 +219,33 @@ export default function ProductEditScreen(props) {
                 onChange={(e) => setUnidad(e.target.value)}
               ></input>
             </div>
+            <div className="oferta input-contenedor">
+              <label htmlFor="enOferta">En Oferta:</label>
+              <input
+                id="enOferta"
+                type="checkbox"
+                value={enOferta}
+                onChange={(e) => setEnOferta(e.target.checked)}
+              ></input>
+            </div>
+            {/* <br></br> */}
+              {
+                (enOferta === true)?
+                <div className="input-contenedor">
+                  <label htmlFor="precioDeOferta">Precio de oferta:</label>
+                  <input
+                    id="precioDeOferta"
+                    type="number"
+                    placeholder="precio De Oferta"
+                    value={precioDeOferta}
+                    onChange={(e) => setPrecioDeOferta(e.target.value)}
+                  ></input>
+                </div>
+                :("")
+              }
+            <br></br>
+            <br></br>
+
             <div className="button-center" >
               <label></label>
               <button className="button" type="submit">

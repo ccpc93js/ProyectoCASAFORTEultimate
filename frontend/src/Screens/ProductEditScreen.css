@@ -7,3 +7,10 @@
 .button-center{
 text-align: center;
 }
+
+.oferta [type="checkbox"]{
+  width: 10%;
+  padding: auto;
+  margin: auto;
+  
+}

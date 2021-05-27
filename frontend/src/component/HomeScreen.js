@@ -10,9 +10,6 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 // import Glide from '@glidejs/glide'// import {Link} from 'react-router-dom';
 // import data from './data.js'
 
-// import slide1 from '/PROYECTO CASA FORTE/frontend/public/img/Icons/Pantalla de inicio.png'
-// import slide2 from '/PROYECTO CASA FORTE/frontend/public/img/Icons/CASA FORTE PPAL 2.png'
-// import slide3 from '/PROYECTO CASA FORTE/frontend/public/img/Icons/CASA FORTE PPAL 3.png'
 
 
 export const HomeScreen = () => {

@@ -72,6 +72,9 @@ console.log(productos)
                         return (x.marca === props.marcas)
                         if(props.all)
                         return (x.createdAt)
+                        if(props.enOferta){
+                          return (x.enOferta === true)
+                        }
                     })
                     setLoading(false);
                     setProductos(productFiltradoXProducto);
@@ -232,6 +235,18 @@ console.log(productos)
                           productoss.map(x =>(
                 <div key={x._id} className="product-card  ">
                 <div className="product-image">
+                  {
+                    (x.enOferta === true)?
+                   ( 
+                      <div  className="producto-en-oferta">
+                        <p>En Oferta%</p>
+                      </div>
+                    )
+                    :
+                    (
+                        ""  
+                    )
+                  }
                 <a
 
                 href={`/producto/${x._id}`} className="product-image__body ">
@@ -259,7 +274,21 @@ console.log(productos)
                 {/* <strong>CÓDIGO: </strong>{x.codigo}<br/>
                 <strong>UNIDAD: </strong>{x.unidad}<br/> */}
                 {/* <strong>PRECIO: </strong>${convertirAmoneda(x.precio , "COP")}<br/> */}
-                <p>{formatCurrency(x.precio )}</p>
+                
+                {
+                
+                (x.enOferta ===false)?(
+                  <p>{formatCurrency(x.precio )}</p>
+                ):(
+                  <div className="producto-en-oferta_precio">
+                   <p className="p1"> {formatCurrency(x.precio )}</p>
+                    {/* <br></br> */}
+                    <p className="p2"> {formatCurrency(x.precioDeOferta)}</p>
+
+                  </div>
+                  
+                )
+                }
                 </div>
                 </div>
                 

@@ -203,9 +203,24 @@ const Prev = () =>{
             (!userInfo) ? ("Para comprar debes registrarte") :
             producto.enStock > 0 && (
                 <div>
-                    <div className="precio">
-                      <strong >PRECIO: </strong>{formatCurrency(producto.precio)}<br/>
-                    </div>
+                  
+                     {
+                         (producto.enOferta === true) ? 
+                        (
+                            <div className="precio">
+                                <strong >PRECIO: </strong>{formatCurrency(producto.precio)}<br/>
+                                <strong >OFERTA: </strong>{formatCurrency(producto.precioDeOferta)}<br/>
+                            </div>
+
+                        )
+                         :
+                         (
+                            <div className="precio">                       
+                                <strong >PRECIO: </strong>{formatCurrency(producto.precio)}<br/>
+                            </div>
+                         )
+
+                     }
                                         <li>
                                             <div className="productScreen-card__row">
                                                 <div className="codigo">
@@ -292,14 +307,41 @@ loadingP?(
 
 
  <ul className="continerPR__productos-relacionados slider-section-PR" >
-<li className="">
+    <li className="">
+        {
+          (x.enOferta === true)?
+         ( 
+            <div  className="producto-en-oferta">
+              <p>En Oferta%</p>
+            </div>
+          )
+          :
+          (
+              ""  
+          )
+        }
     <a href={`/producto/${x._id}`}>
         <div className="continerPR__productos-relacionados__img">
             <img src={x.imagen.img1} alt={x.info} />
         </div>
     <div className="continerPR__details">
      <p className="continerPR__details__description__info">{x.info}</p>
-     <p className="continerPR__details__description__precio">{formatCurrency(producto.precio)}</p>
+     <p className="continerPR__details__description__precio">                
+     {
+                
+                (x.enOferta ===false)?(
+                  <p>{formatCurrency(x.precio )}</p>
+                ):(
+                  <div className="producto-en-oferta_precio">
+                   <p className="p1"> {formatCurrency(x.precio )}</p>
+                    {/* <br></br> */}
+                    <p className="p2"> {formatCurrency(x.precioDeOferta)}</p>
+
+                  </div>
+                  
+                )
+                }
+    </p>
     </div>
 
     </a>

@@ -90,9 +90,29 @@ export default function CartSideBar(props) {
                                     </div>
                                     <div className="cartSide-price">
                                     <p>
-                                    <b> Precio:  </b>
 
-                                    {formatCurrency(item.precio)}
+                                    {
+                
+                                        (item.enOferta === false)?(
+                                        
+                                            <p>
+                                            <b> Precio:  </b>
+                                              {formatCurrency(item.precio )}
+                                            </p>
+                                        ):(
+                                          <div className="producto-en-oferta_precio">
+                                            <b> Precio:  </b>
+                                            
+                                           <p className="p1"> {formatCurrency(item.precio )}</p>
+                                            {/* <br></br> */}
+                                            <b> oferta:  </b>
+
+                                            <p className="p2"> {formatCurrency(item.precioDeOferta)}</p>
+                                        
+                                          </div>
+
+                                        )
+                                    }
                                     </p>
                                     </div>
 

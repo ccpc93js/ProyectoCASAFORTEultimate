@@ -153,6 +153,8 @@ productRouter.post(
         producto.subcategoria = req.body.subcategoria;
         producto.enStock = req.body.enStock;
         producto.unidad = req.body.unidad;
+        producto.enOferta = req.body.enOferta
+        producto.precioDeOferta = req.body.precioDeOferta
         const updatedProduct = await producto.save();
         res.send({ message: 'Producto actualizado', producto: updatedProduct });
       } else {

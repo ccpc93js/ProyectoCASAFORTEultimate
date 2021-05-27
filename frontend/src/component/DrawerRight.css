@@ -108,7 +108,7 @@ justify-content: space-between;
 
 .cartSide-img{
     padding: 2px;
-    width: 40%;
+    width: 50%;
     margin-right: 10px;
 
     /* margin: auto; */
@@ -169,10 +169,6 @@ justify-content: space-between;
   }
 
 
-  .cartSide-descripcion-link {
-
-    margin-bottom: px;
-  }
 
   .cartSide-actions{
     display: flex;
