@@ -4,6 +4,7 @@ import './ModalSearch.css'
 import LoadingBox from './LoadingBox'
 import MessageBox from './MessageBox'
 import axios from '../../node_modules/axios/index';
+import formatCurrency from '../actions/productActions';
 // import axios from 'axios'
 
 
@@ -99,6 +100,18 @@ fecthData();
             <a href={`/producto/${val._id}`} className="">
             
             <div className="product-card-search " key={key}>
+            {
+              (val.enOferta === true)?
+             ( 
+                <div  className="producto-en-oferta">
+                  <p>En Oferta%</p>
+                </div>
+              )
+              :
+              (
+                  ""  
+              )
+          }
               {/* {
                 loading ? (
                   <LoadingBox></LoadingBox>
@@ -112,7 +125,21 @@ fecthData();
                 </div>
                     <div className="product-card__info-search">
                       <div className="elementSearch-p"><h3>{val.info}</h3></div>
-                      <div className="elementSearch-p"><h3>${val.precio}</h3></div>
+                      {/* <div className="elementSearch-p">    
+                       {
+                
+                          (val.enOferta ===false)?(
+                            <p>{formatCurrency(val.precio )}</p>
+                          ):(
+                            <div className="producto-en-oferta_precio">
+                            <p className="p1"> {formatCurrency(val.precio )}</p>
+                              <p className="p2"> {formatCurrency(val.precioDeOferta)}</p>
+
+                            </div>
+                            
+                          )
+                      }
+                  </div> */}
                 </div>
 
 
