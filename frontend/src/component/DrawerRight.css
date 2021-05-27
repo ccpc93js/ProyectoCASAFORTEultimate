@@ -1,9 +1,31 @@
+.Carrito-Modal-container{
+  overflow-y: auto;
+  /* margin: 0; */
+
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0; 
+  /* transform: translateX(-25px); */
+  transition: transform .50s ease-in-out,opacity .50s ease-in-out,visibility .50s ease-in-out;
+}
+
+.Carrito-Modal-close{
+  visibility: hidden;
+  opacity: 0; 
+
+}
+
 .Carrito{
     padding-top: 1rem;
     padding-bottom: 3rem;
     background: #ffffff;
     transition: all 1s ease;
-    opacity: 1;
 }
 
 
@@ -12,14 +34,14 @@
     height: 100%;
     overflow-y: auto;
     display: block;
-    position: fixed;
-    z-index: 2000;
+    position: absolute;
+    /* z-index: 2000; */
     top: 0;
     right: 0;
-    margin-right: -130px;
+    /* margin-right: -1px; */
     visibility: hidden;
     opacity: 0; 
-    transform: translateX(-25px);
+    transform: translateX(500px);
     transition: transform .50s ease-in-out,opacity .50s ease-in-out,visibility .50s ease-in-out;
 }
 
@@ -27,7 +49,9 @@
     height: 0;
 }
 
-
+.cartSideContainer, .Body-Carrito{
+  width: 100%;
+}
 
 .ClearIcon-CartSide-container{
     /* position: relative; */
@@ -169,6 +193,7 @@ justify-content: space-between;
   .cartSide-empty{
     margin-left: 1rem;
     margin-right: 1rem;
+    text-align: center;
   }
   
   .cartSide-empty-p{

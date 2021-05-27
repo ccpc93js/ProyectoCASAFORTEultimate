@@ -6,6 +6,7 @@ import { addToCart, removeFromCart } from '../actions/cartActions';
 import { IconButton } from '@material-ui/core';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import formatCurrency from '../actions/productActions';
+import { handleCartSideClose, handleCartSideOpen } from './DrawerRight'
 
 // import data from '../data.json'
 
@@ -50,7 +51,14 @@ export default function CartSideBar(props) {
                         Encontrará muchos productos interesantes en nuestra tienda.
                     </div>
 			        	<div className="cartSide-return-to-shop">
-                            <Link to="/nuevos" ><button className="button return-to-shop"> Continuar comprando</button></Link>
+                            {/* <Link to="#" > */}
+                            <button 
+                             onClick={handleCartSideClose}
+                             className="button return-to-shop"
+                             > 
+                             Continuar comprando
+                             </button>
+                             {/* </Link> */}
                         </div>
                 </div>
             //     <MessageBox>
@@ -130,9 +138,17 @@ export default function CartSideBar(props) {
                         <li>
                         <a href="/cart" >
                         <div className="cartSide-button-center">
-                       <button type="button" href="/cart" className=" button "  disabled ={cartItems.length === 0}>
+                        <Link to="/cart">
+                       <button 
+                        type="button"
+                        className=" button "  
+                        disabled ={cartItems.length === 0}
+                        onClick={handleCartSideClose}
+                        >
                                VER CARRITO
                         </button>
+                        
+                        </Link>
                        </div>
 
                         </a>

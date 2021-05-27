@@ -127,7 +127,7 @@ import UserListRegisteredScreen from './Screens/UserListRegisteredScreen';
 import MensajeRegistrado from './component/enlaces/MensajeRegistrado';
 import LufkinCrescent from './component/enlaces/Marcas/LufkinCrescent';
 import DashboardScreen from './Screens/DashboardScreen';
-import DrawerRight from './component/DrawerRight';
+import DrawerRight, { handleCartSideClose } from './component/DrawerRight';
 import SearchScreen from './Screens/SearchScreen';
 
 
@@ -238,6 +238,8 @@ function App(props) {
           {/* <NavBar2></NavBar2> */}
           <NavBar  handleDrawerOpen={handleDrawerOpen}/>
           <DrawerMenu handleDrawerClose={handleDrawerClose} open={open}  onClose={accionOpen}></DrawerMenu>
+          <DrawerRight  handleCartSideClose={handleCartSideClose}  />
+
         </header>
         <Toolbar id="back-to-top-anchor" />
 

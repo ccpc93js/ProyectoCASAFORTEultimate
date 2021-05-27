@@ -10,6 +10,7 @@ import PersonIcon from '@material-ui/icons/Person';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import SearchIcon from '@material-ui/icons/Search';
+import { handleCartSideClose, handleCartSideOpen } from './DrawerRight';
 
 
 
@@ -27,35 +28,22 @@ export const NavBar = (props) => {
     }
 
 
-    const handleSearhModalOpen = () =>{
+    const handleSearhModalOpen = (e) =>{
+        e.preventDefault();
+
        const Modal = document.querySelector(".Modal");
-    //    Modal.style.top = "20";
-       Modal.style.visibility = "visible"
-       Modal.style.opacity = "1";
-       
-
+       Modal.classList.toggle("Modal-close")
     }
-    const handleSearhModalClose = () =>{
+
+
+    const handleSearhModalClose = (e) =>{
+        e.preventDefault();
+
         const Modal = document.querySelector(".Modal");
-        // Modal.style.top = "100%";
-        Modal.style.visibility = "hidden"
-        Modal.style.opacity = "0";
+        Modal.classList.toggle("Modal-close")
     }
 
-    const handleCartSideOpen = () =>{
-        const Carrito = document.querySelector(".Carrito");
-        Carrito.style.marginRight = "-30px";
-        Carrito.style.visibility = "visible"
-        Carrito.style.opacity = "1";
-        
-  
-     }
 
-    const handleCartSideClose = () =>{
-        const Carrito = document.querySelector(".Carrito");
-        Carrito.style.visibility = "hidden"
-        Carrito.style.opacity = "0";
-    }
 
     return (
         <div>
@@ -94,13 +82,12 @@ export const NavBar = (props) => {
                     </IconButton>
 
                 </i>
-            
-            <Link to="/cart" aria-label="carrito"
+            {
+            (props.history == "/cart")?(""):
+            <Link  aria-label="carrito"
                 onClick={
-                    // ()=>{
-                    // handleCartSideOpen
-                    handleSearhModalClose
-                // }
+                    handleCartSideOpen
+                    
             }
             >
                 <i className="cart-icon">
@@ -111,6 +98,7 @@ export const NavBar = (props) => {
                 </i>
 
             </Link>
+            }
             {
                 userInfo ? (
                     <div className="dropdown carrito-none">

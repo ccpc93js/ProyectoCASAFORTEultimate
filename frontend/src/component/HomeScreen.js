@@ -24,7 +24,7 @@ export const HomeScreen = () => {
         if (counter > 3) {
             counter = 1;
         }
-    }, 8000);
+    }, 12000);
 
 
     const fontSizeIcons = 50
@@ -174,7 +174,7 @@ export const HomeScreen = () => {
 </div>
 
 <div className="button-ver-productos">
-    <a href="/nuevos"><button className="button">VER TODOS LOS PRODUCTOS</button></a> 
+    <a href="/all"><button className="button">VER TODOS LOS PRODUCTOS</button></a> 
 </div>
 
 <div className="qontiner">

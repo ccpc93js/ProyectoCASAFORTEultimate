@@ -13,20 +13,20 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import formatCurrency, { convertirAmoneda, listProducts } from '../actions/productActions'
 import  DrawerFilter  from './DrawerFilter';
 import { addToCart } from '../actions/cartActions'
-import DrawerRight from './DrawerRight'
+import { handleCartSideClose, handleCartSideOpen } from './DrawerRight'
 
 
 
 
 export default function Productos(props) {
-    const [productos, setProductos] = useState([]);
+    const [productoss, setProductos] = useState([]);
     const [totalProductos, setTotalProductos] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
     const dispatch = useDispatch()
-    // const productList = useSelector((state)=>state.productList)
-    // const {loading, error, productos} = productList;
-
+    const productList = useSelector((state)=>state.productList)
+    const {/*loading, error,*/ productos} = productList;
+console.log(productos)
     const [openFilter, setOpenFilter] = React.useState(false);
 
     const handleDrawerOpenFilter = () => {
@@ -134,19 +134,19 @@ export default function Productos(props) {
 
     const [cartSideOpen, setCartSideOpen] = useState(false)
 
-    const handleCartSideOpen = () =>{
-      const Carrito = document.querySelector(".Carrito");
-      Carrito.style.marginRight = "-30px";
-      Carrito.style.visibility = "visible"
-      Carrito.style.opacity = "1";
+  //   const handleCartSideOpen = () =>{
+  //     const Carrito = document.querySelector(".Carrito");
+  //     Carrito.style.marginRight = "-30px";
+  //     Carrito.style.visibility = "visible"
+  //     Carrito.style.opacity = "1";
       
 
-   }
-   const handleCartSideClose = () =>{
-       const Carrito = document.querySelector(".Carrito");
-       Carrito.style.visibility = "hidden"
-       Carrito.style.opacity = "0";
-   }
+  //  }
+  //  const handleCartSideClose = () =>{
+  //      const Carrito = document.querySelector(".Carrito");
+  //      Carrito.style.visibility = "hidden"
+  //      Carrito.style.opacity = "0";
+  //  }
 
    const CartSideaccionOpen =()=>{
     setCartSideOpen(!cartSideOpen)
@@ -155,7 +155,6 @@ export default function Productos(props) {
     return (
         <div className="productos-container">
           <DrawerFilter handleDrawerClose={handleDrawerCloseFilter} open={openFilter}  onClose={accionOpenFilter}></DrawerFilter>
-          <DrawerRight  handleCartSideClose={handleCartSideClose}  onClose={CartSideaccionOpen} cartSideOpen={cartSideOpen}/>
 
              <div className="page-header">
                     <div className="page-header__container container">
@@ -213,7 +212,7 @@ export default function Productos(props) {
 
                 <div className="shop-layout__content">
 
-                <Filtrador handleDrawerOpenFilter={handleDrawerOpenFilter}   ordenar={ordenar} totalProductos={totalProductos} productos={productos}/>
+                <Filtrador handleDrawerOpenFilter={handleDrawerOpenFilter}   ordenar={ordenar} totalProductos={totalProductos} productos={productoss}/>
 
    
                 <div className="products-row  ">
@@ -230,7 +229,7 @@ export default function Productos(props) {
                         
                         
 
-                            productos.map(x =>(
+                          productoss.map(x =>(
                 <div key={x._id} className="product-card  ">
                 <div className="product-image">
                 <a

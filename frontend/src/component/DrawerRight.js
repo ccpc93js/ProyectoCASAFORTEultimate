@@ -15,8 +15,37 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { useSelector } from 'react-redux';
 
 
+export const handleCartSideOpen = () =>{
+  const CarritoModal = document.querySelector(".Carrito-Modal-container",".Carrito");
+  const Carrito = document.querySelector(".Carrito");
+  CarritoModal.style.visibility = "visible"
+  CarritoModal.style.opacity = "1";
+  Carrito.style.visibility = "visible"
+  Carrito.style.opacity = "1";
+  Carrito.style.transform = "translateX(0)"
+  CarritoModal.classList.toggle("Carrito-Modal-close")
+  
+
+}
+export const handleCartSideClose = () =>{
+   const CarritoModal = document.querySelector(".Carrito-Modal-container");
+   const Carrito = document.querySelector(".Carrito");
+   CarritoModal.style.visibility = "hidden"
+   CarritoModal.style.opacity = "0";
+   Carrito.style.visibility = "hidden"
+   Carrito.style.opacity = "0";
+   Carrito.style.transform = "translateX(100%)"
+
+}
 
 
+window.addEventListener("click", (e) =>{
+  const CarritoModal = document.querySelector(".Carrito-Modal-container");
+
+  if(e.target == CarritoModal ){
+    handleCartSideClose()
+  }
+})
 
 
 
@@ -25,7 +54,7 @@ import { useSelector } from 'react-redux';
   const {cartItems} = cart;
 
   const body = (
-    <div className='modalSearch'>
+    <div className=''>
       <div className="ClearIcon-CartSide-container">
 
       <IconButton
@@ -63,6 +92,8 @@ import { useSelector } from 'react-redux';
 
 
   return (
+    <div className="Carrito-Modal-container">
+
     <div    
     className="Carrito shadow-box"
     >
@@ -71,6 +102,7 @@ import { useSelector } from 'react-redux';
         {body}
       </div>
     </div>
+  </div>
   );
 }
 

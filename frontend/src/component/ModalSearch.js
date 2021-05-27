@@ -33,7 +33,7 @@ export default function ModalSearch(props) {
 
   return (
     <div    
-    className="Modal"
+    className="Modal Modal-close"
     >
 
       <div className="Body-Modal">

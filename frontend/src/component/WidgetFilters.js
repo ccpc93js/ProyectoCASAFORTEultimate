@@ -22,7 +22,7 @@ function WidgetFilters(props) {
     // }
     
     };
-    axiosDataCategorias();
+    // axiosDataCategorias();
 
     const axiosDataSubcategorias = async () =>{   
         // try{
@@ -33,7 +33,7 @@ function WidgetFilters(props) {
     //     console.log(error.message)
     // }
     };
-    axiosDataSubcategorias();
+    // axiosDataSubcategorias();
     
     const axiosDataMarcas = async () =>{
         // try{
@@ -44,11 +44,12 @@ function WidgetFilters(props) {
     //     console.log(error.message)
     // }
     };
-    axiosDataMarcas();
+    // axiosDataMarcas();
 
 
+    const subcategorias = data.subcategorias
 
-    const subcategorias = dataSubcategorias
+    // const subcategorias = dataSubcategorias
     let productFiltradoXProducto = subcategorias.filter((x) =>{
         if(props.categorias)
         return (x.categoria === props.categorias)
@@ -57,7 +58,10 @@ function WidgetFilters(props) {
         if(props.marcas)
         return (x.marca === props.categorias)  
      })
-     const marcas = dataMarcas
+
+     const marcas = data.marcas
+
+    //  const marcas = dataMarcas
      let productFiltradoXMarca = marcas.filter((x) =>{
         if(props.categorias)
         return (x.categoria.find(x=>x===props.categorias ) === props.categorias)
@@ -66,7 +70,10 @@ function WidgetFilters(props) {
         return (x.subcategoria.find(x=>x===props.categorias ) === props.categorias)  
      })
 
-     const categorias = dataCategorias
+
+     const categorias = data.categorias
+
+    //  const categorias = dataCategorias
 
 
     //  const submithandler =(e)=>{

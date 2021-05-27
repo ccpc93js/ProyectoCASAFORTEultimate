@@ -29,7 +29,7 @@ app.use(cors());
 app.use(express.urlencoded({extended: true }));
 
     //process.env.MONGODB_URL ||  'mongodb://localhost/casaforte'
-    mongoose.connect(process.env.MONGODB_URL || "mongodb+srv://casaforteDataBase:casaforte2525@cluster0.m96b5.mongodb.net/casa-forte?retryWrites=true&w=majority"
+mongoose.connect(process.env.MONGODB_URL || "mongodb+srv://casaforteDataBase:casaforte2525@cluster0.m96b5.mongodb.net/casa-forte?retryWrites=true&w=majority"
     , {
     userNewUrlParser: true,
     useUnifiedTopology: true,

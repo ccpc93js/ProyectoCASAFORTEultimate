@@ -11,7 +11,6 @@
     border: none;
     background: none;
     border-radius: 0%;
-    border-bottom: solid 1px #e2e2e2;
     color: #2c2c3d;
     margin:0 20%;
     margin-top: 1rem;
@@ -33,7 +32,7 @@
 .searchBar form input{
 border: none;
 outline: none;
-border-bottom: solid 1px #e2e2e2;
+border-bottom: solid 1px #afadad;
 
 
 }
@@ -60,15 +59,25 @@ border-bottom: solid 1px #e2e2e2;
     overflow-y: auto;
     display: block;
     position: absolute;
+    z-index: -1;
     top: 100%;
-    visibility: hidden;
-    opacity: 0; 
-    transform: translateY(-25px);
+    visibility: visible;
+    opacity: 1; 
+    transform: translateY(-7%);
     transition: transform .50s ease-in-out,opacity .50s ease-in-out,visibility .50s ease-in-out;
 }
 
 .Modal::-webkit-scrollbar{
     height: 0;
+}
+
+
+.Modal-close{
+  visibility: hidden;
+  opacity: 0; 
+  transform: translateY(-100%);
+
+
 }
 
 
@@ -81,7 +90,7 @@ border-bottom: solid 1px #e2e2e2;
 .total-search{
   display: flex;
   justify-content: space-between;
-  border-bottom: solid 1px #e2e2e2;
+  border-bottom: solid 1px #afadad;
   margin-bottom: 24px;
   padding-bottom: 20px;
   position: relative;
