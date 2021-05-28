@@ -27,7 +27,7 @@ export const Footer = () => {
                 </div>
 
             <div className="footer-right">
-                <li>
+                <div className="InfoInteres">
                 <h2>INFORMACIÓN DE INTERÉS</h2>
                 
                 <ul className="box">
@@ -38,24 +38,24 @@ export const Footer = () => {
                     <li><a href="/signin">Clientes</a></li>
                     <li><a href="/nuevos">Nuevos</a></li>
                 </ul>
-            </li>
+            </div>
 
         {/* <li>
                 <h2>INFORMACIÓN LEGAL</h2>
 
         </li> */}
-            <li>
+            <div className="hablemos">
                 <h2>HABLEMOS</h2>
 
             <ul className="box">
                 <li>Sede Principal</li>
                 <li>Cll 13 # 74-67 Mz G L 17 Etapa 1</li>
-                <li>Lineas de Atención al Cliente <br/> +57 (5) 66 17 326  | +57 304 648 6898</li>
+                <li>Lineas de Atención al Cliente <br/> +57 (5) 66 17 326  <br></br> +57 304 648 6898</li>
                 <li>ferreteriacasaforte@gmail.com</li>
 
 
             </ul>
-        </li>
+        </div>
         
             </div>
             

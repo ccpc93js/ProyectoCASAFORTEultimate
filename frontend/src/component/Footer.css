@@ -110,6 +110,11 @@ footer{
   /* margin-right: 1.25em; */
   }
 
+.InfoInteres, .hablemos{
+  margin-right: 8px;
+  font-size: 12px;
+}
+
   .footer-left p{
     /* padding-right: 10%; */
     color: #999999;
@@ -277,18 +282,18 @@ footer{
     }
     
 
-
+  
     .content-center-footer{
       flex-direction: column;
+      justify-content: start;
+      text-align: start;
     }
-
     .content-center-footer li{
       font-size: 10px;
 
     }
 
     .footer-left{
-      margin: auto;
       margin-bottom: 15px;
       
     }
@@ -298,16 +303,19 @@ footer{
       }
       .footer-right{
         flex-direction: column;
-        justify-content: center;
+        width: 100%;
+        /* justify-content: center;
         text-align: center;
-        margin: auto;
+        margin: auto; */
         
 
       }
 
-      .content-center-footer .box{
-        margin: auto;
-        width: 200px;
+
+      .footer-left{
+        text-align: inherit;
+        padding-left: 2px;
+        margin-left: 2rem;
       }
 
 
@@ -320,7 +328,6 @@ footer{
       } */
 footer h2{
   font-size: 12px;
-  margin: 2px;
 }
 
 
@@ -328,11 +335,15 @@ footer h2{
   
   
 @media screen and (max-width: 1230px) {
-  
+
+    
+  .content-center-footer{
+    font-size: 13px;
+  }
 
   .footer-bottom{
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
   }
 
   .colera a{
@@ -341,11 +352,22 @@ footer h2{
 
   .footer-bottom p{
     font-size: 10px;
-    padding: 2px 8px;
-    text-align: center;
+    /* padding: 2px 8px; */
+    /* text-align: center; */
   }
 
-  footer h2{
-    padding: 2px;
+  .botone{
+    display: none;
   }
+
+  .footer-left{
+    margin-bottom: 15px;
+
+
+  }
+  .footer-right{
+    justify-content: space-between;
+  }
+
+
 }
