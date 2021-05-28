@@ -70,7 +70,7 @@ export const Footer = () => {
 
             </ul>
 
-            <p> © 2021 - Todos los Derechos Reservados In versiones Casa Forte| Cartagena - Colombia</p>
+            <p> © 2021 - Todos los Derechos Reservados In versiones Casa Forte | Cartagena - Colombia</p>
 
             <div className="socials">
                 <a href="#"><i className=""><FacebookIcon/></i></a>
