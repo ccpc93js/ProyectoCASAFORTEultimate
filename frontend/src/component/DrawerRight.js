@@ -95,7 +95,7 @@ window.addEventListener("click", (e) =>{
     <div className="Carrito-Modal-container">
 
     <div    
-    className="Carrito shadow-box"
+    className="Carrito "
     >
 
       <div className="Body-Carrito">

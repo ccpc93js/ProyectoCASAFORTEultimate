@@ -28,11 +28,11 @@
 
 .productoList-en-oferta_precio .p1{
   text-decoration: line-through;
-  color: salmon;
-
+  color: rgb(29, 230, 63);
+  
 }
 .productoList-en-oferta_precio .p2{
-  color: rgb(114, 250, 137);
+  color: salmon;
 
 }
 

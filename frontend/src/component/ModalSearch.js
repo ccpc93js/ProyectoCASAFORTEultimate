@@ -32,12 +32,20 @@ export default function ModalSearch(props) {
   );
 
   return (
+    <div 
+    className="SearchBar-ModalC ModalC-close "
+    aria-hidden="true"
+    
+    >
+      
     <div    
-    className="Modal " //Modal-close
+    className="Modal Modal-close" //Modal-close
+    aria-hidden="true"
     >
 
       <div className="Body-Modal">
         {body}
+      </div>
       </div>
     </div>
   );

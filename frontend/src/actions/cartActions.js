@@ -20,6 +20,7 @@ export const addToCart = (productId,qty) => async(dispatch,getState)=>{
             precio: data.precio,
             enOferta:data.enOferta,
             precioDeOferta:data.precioDeOferta,
+            descuento:data.descuento,
             enStock: data.enStock,
             producto: data._id,
             qty,

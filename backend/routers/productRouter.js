@@ -155,6 +155,7 @@ productRouter.post(
         producto.unidad = req.body.unidad;
         producto.enOferta = req.body.enOferta
         producto.precioDeOferta = req.body.precioDeOferta
+        producto.descuento = req.body.descuento
         const updatedProduct = await producto.save();
         res.send({ message: 'Producto actualizado', producto: updatedProduct });
       } else {

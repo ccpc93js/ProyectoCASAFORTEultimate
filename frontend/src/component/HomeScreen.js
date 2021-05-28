@@ -26,30 +26,7 @@ export const HomeScreen = () => {
 
     const fontSizeIcons = 50
 
-    // const sliderMarcas = () =>{
-    //     const sliderMarcas = document.getElementById("glideMarcas")
-    //     if(sliderMarcas)
-    //     new Glide(sliderMarcas, {
-    //         type: "carousel",
-    //         startAt: 0,
-    //         perView: 5,
-    //         haverpause: false,
-    //         autoplay:2000,
-    //         animationDuration: 800,
-    //         animationTiminFunc: "linear",
-    //         breakpoints:{
-    //             1200:{
-    //                 perView:3
-    //             },
-    //             768:{
-    //                 perView:2
-    //             }
-    //         }
-    //     }
-    //     ).mount()
-    // }
 
-    // sliderMarcas()
 
 
     // const sliderMarcas = () =>{

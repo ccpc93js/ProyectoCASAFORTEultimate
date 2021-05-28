@@ -104,7 +104,8 @@ fecthData();
               (val.enOferta === true)?
              ( 
                 <div  className="producto-en-oferta">
-                  <p>En Oferta%</p>
+                  <p className="porcentaje">{val.descuento}%</p>
+                  <p className="DCTO">DCTO</p>
                 </div>
               )
               :

@@ -26,6 +26,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 function ProductScreen(props) {
     // const producto = data.productos.find((x)=>x._id === props.match.params.id)
+
     const dispatch = useDispatch();
     const productId = props.match.params.id;
     const [qty, setQty] = useState(1);
@@ -183,9 +184,21 @@ const Prev = () =>{
         <div className="productScreen-list-item ">
         <div key={producto._id} className="productScreen-card  ">
         <div className="productScreen-image ">
+        {
+          (producto.enOferta === true)?
+         ( 
+            <div  className="producto-en-oferta">
+              <p className="porcentaje">{producto.descuento}%</p>
+              <p className="DCTO">DCTO</p>
+            </div>
+          )
+          :
+          (
+              ""  
+          )
+        }
     
-        {loading && <LoadingBox/>}
-        <img className=" " alt={producto.info} src={producto.imagen.img1} />
+          <img className=" " alt={producto.info} src={producto.imagen.img1} />
      
         </div>
        
@@ -312,7 +325,8 @@ loadingP?(
           (x.enOferta === true)?
          ( 
             <div  className="producto-en-oferta">
-              <p>En Oferta%</p>
+              <p className="porcentaje">{x.descuento}%</p>
+              <p className="DCTO">DCTO</p>
             </div>
           )
           :
@@ -326,10 +340,14 @@ loadingP?(
         </div>
     <div className="continerPR__details">
      <p className="continerPR__details__description__info">{x.info}</p>
+     {
+
+         userInfo ? 
      <p className="continerPR__details__description__precio">                
      {
+         
                 
-                (x.enOferta ===false)?(
+                (x.enOferta ===false )?(
                   <p>{formatCurrency(x.precio )}</p>
                 ):(
                   <div className="producto-en-oferta_precio">
@@ -340,8 +358,11 @@ loadingP?(
                   </div>
                   
                 )
-    }
+            }
     </p>
+            : ("")
+     }
+
     </div>
 
     </a>

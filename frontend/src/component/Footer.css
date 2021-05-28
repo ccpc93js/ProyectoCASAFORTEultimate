@@ -69,7 +69,7 @@ footer{
    
   }
   
-  h2{
+  footer h2{
     font-weight: 400;
     font-size: 15px;
   }    
@@ -275,10 +275,16 @@ footer{
     main{
         font-size: 55px;
     }
+    
 
 
     .content-center-footer{
       flex-direction: column;
+    }
+
+    .content-center-footer li{
+      font-size: 10px;
+
     }
 
     .footer-left{
@@ -295,13 +301,15 @@ footer{
         justify-content: center;
         text-align: center;
         margin: auto;
+        
 
       }
 
-      .box{
+      .content-center-footer .box{
         margin: auto;
         width: 200px;
       }
+
 
 
 /* 
@@ -310,6 +318,10 @@ footer{
         margin: auto;
         text-align: center;
       } */
+footer h2{
+  font-size: 12px;
+  margin: 2px;
+}
 
 
   }
@@ -317,7 +329,23 @@ footer{
   
 @media screen and (max-width: 1230px) {
   
-  .colera{
+
+  .footer-bottom{
     flex-direction: column;
+    justify-content: center;
+  }
+
+  .colera a{
+    font-size: 10px;
+  }
+
+  .footer-bottom p{
+    font-size: 10px;
+    padding: 2px 8px;
+    text-align: center;
+  }
+
+  footer h2{
+    padding: 2px;
   }
 }

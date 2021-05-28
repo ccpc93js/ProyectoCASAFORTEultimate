@@ -21,6 +21,7 @@ export default function ProductEditScreen(props) {
   const [unidad, setUnidad] = useState('');
   const [enOferta, setEnOferta] = useState('');
   const [precioDeOferta, setPrecioDeOferta] = useState('');
+  const [descuento, setDescuento] = useState('');
 
   const productDetails = useSelector((state) => state.productDetails);
   const { loading, error, producto } = productDetails;
@@ -52,6 +53,7 @@ export default function ProductEditScreen(props) {
       setUnidad(producto.unidad);
       setEnOferta(producto.enOferta);
       setPrecioDeOferta(producto.precioDeOferta)
+      setDescuento(producto.descuento)
     }
   }, [producto, dispatch, productId, successUpdate, props.history]);
   const submitHandler = (e) => {
@@ -70,7 +72,8 @@ export default function ProductEditScreen(props) {
         enStock,
         unidad,
         enOferta,
-        precioDeOferta
+        precioDeOferta,
+        descuento
       })
     );
   };
@@ -228,7 +231,20 @@ export default function ProductEditScreen(props) {
                 onChange={(e) => setEnOferta(e.target.checked)}
               ></input>
             </div>
-            {/* <br></br> */}
+            {
+                (enOferta === true)?
+                <div className="input-contenedor">
+                  <label htmlFor="descuento">descuento:</label>
+                  <input
+                    id="descuento"
+                    type="number"
+                    placeholder="descuento"
+                    value={descuento}
+                    onChange={(e) => setDescuento(e.target.value)}
+                  ></input>%
+                </div>
+                :("")
+              }
               {
                 (enOferta === true)?
                 <div className="input-contenedor">
@@ -237,12 +253,13 @@ export default function ProductEditScreen(props) {
                     id="precioDeOferta"
                     type="number"
                     placeholder="precio De Oferta"
-                    value={precioDeOferta}
+                    value={precio - (precio * (descuento/100))}
                     onChange={(e) => setPrecioDeOferta(e.target.value)}
                   ></input>
                 </div>
                 :("")
               }
+
             <br></br>
             <br></br>
 

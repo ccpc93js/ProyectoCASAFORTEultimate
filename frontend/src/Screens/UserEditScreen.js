@@ -103,9 +103,11 @@ export default function UserEditScreen(props) {
                 checked={isAdmin}
                 onChange={(e) => setIsAdmin(e.target.checked)}
               ></input>
+              <br></br>
+              <br></br>
             </div>
             <div >
-              <button type="submit" className="button">
+              <button type="submit" className="button block">
                 Actualizar
               </button>
             </div>

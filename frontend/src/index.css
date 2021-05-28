@@ -377,13 +377,31 @@ h3{
   
 }
 
+.zona-form{
+padding-bottom: 5rem;
+}
+
 .zona-form form input{
   /* display: inline ; */
   border: none; 
   font-size: 1rem;
-  width: 60%;
+  max-width: 100%;
   padding: 0.3rem;
   margin-left: 2rem;
+
+}
+
+.zona-form form input[ id="descuento"]{
+  max-width: 10%;
+
+}
+
+.zona-form form input[ type="email"],
+.zona-form form input[ type="password"],
+.zona-form form input[ type="text"],
+.zona-form form input[ type="text2"]
+{
+  width: 70%;
 
 }
 
@@ -394,6 +412,13 @@ h3{
   border-style: hidden;
   margin-left: 2rem;
 
+
+}
+
+
+.zona-form form {
+
+padding: 5px;
 
 }
 

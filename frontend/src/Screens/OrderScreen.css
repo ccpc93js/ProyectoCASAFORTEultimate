@@ -8,10 +8,10 @@
 
 
 @media screen and (max-width:640px){
-    h4{
+    .orderScreen-container  h4{
         font-size: 14px;
     }
-    div{
+    .orderScreen-container  div{
         font-size: 14px;
 
     }

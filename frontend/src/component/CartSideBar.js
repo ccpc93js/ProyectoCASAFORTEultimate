@@ -67,7 +67,7 @@ export default function CartSideBar(props) {
                 :
                 (
                     <div>
-                    <div className="rowCart top">
+                    <div className="rowCart-container top">
 
                     <div className="col-2Cart">
 
@@ -75,6 +75,19 @@ export default function CartSideBar(props) {
                         {
                             cartItems.map(item =>
                                 <li key={item.producto} className="rowCart ">
+                                    {
+                                         (item.enOferta === true)?
+                                        ( 
+                                           <div  className="producto-en-oferta">
+                                             <p className="porcentaje">{item.descuento}%</p>
+                                             <p className="DCTO">DCTO</p>
+                                           </div>
+                                         )
+                                         :
+                                         (
+                                             ""  
+                                         )
+                                    }                                        
                                     <div className="cartSide-img">
                                     <img src={item.imagen} alt="producto" className="small-cart"/>
                                     </div>
@@ -152,7 +165,7 @@ export default function CartSideBar(props) {
                     <ul>
                         <li className="subtotal">
                             <h2 >
-                              <b> Subtotal:  {cartItems.reduce((a,c) => a + c.qty, 0)} articulos: {formatCurrency(cartItems.reduce((a,c)=> a + c.precio * c.qty, 0))} </b> 
+                              <b> Subtotal:  {cartItems.reduce((a,c) => a + c.qty, 0)} articulos: {formatCurrency(cartItems.reduce((a,c)=> a + (c.precio - (c.precio * (c.descuento/100)||0)) * c.qty, 0))} </b> 
                             </h2>
                         </li>
                         <li>

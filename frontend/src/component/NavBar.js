@@ -30,34 +30,48 @@ export const NavBar = (props) => {
 
     const handleSearhModalOpen = (e) =>{
         // e.preventDefault();
-
+       const ModalC = document.querySelector(".SearchBar-ModalC")
        const Modal = document.querySelector(".Modal");
-    //    Modal.classList.toggle("Modal-close")
-       Modal.style.visibility = "visible"
-       Modal.style.opacity = "1";      
-       Modal.style.transform = "translateY(-7%)"; 
+
+       Modal.classList.toggle("Modal-close")
+       ModalC.classList.toggle("ModalC-close")
+       Modal.ariaHidden = "true"
+       ModalC.ariaHidden = "true"
+
+
     }
 
 
     const handleSearhModalClose = (e) =>{
         // e.preventDefault();
-
+        const ModalC = document.querySelector(".SearchBar-ModalC")
         const Modal = document.querySelector(".Modal");
-        // Modal.classList.toggle("Modal-close")
-        Modal.style.visibility = "hidden"
-        Modal.style.opacity = "0";      
-        Modal.style.transform = "translateY(-100%)"; 
+        Modal.classList.toggle("Modal-close")
+        ModalC.classList.toggle("ModalC-close")
+        // ModalC.style.visibility = "hidden";
+        // ModalC.style.opacity = "0";
+
+        Modal.ariaHidden = "false"
+        ModalC.ariaHidden = "false"
+
+
     }
 
-    // window.addEventListener("click", (e) =>{
-    //     const Modal = document.querySelector(".Modal");
+    window.addEventListener("click", (e) =>{
+        const ModalC = document.querySelector(".SearchBar-ModalC")
+        const Modal = document.querySelector(".Modal");
       
-    //     if(e.target == Modal ){
-    //         Modal.style.visibility = "hidden"
-    //         Modal.style.opacity = "0";      
-    //         Modal.style.transform = "translateY(-100%)";  
-    //     }
-    //   })
+        if(e.target == ModalC ){
+ 
+            Modal.ariaHidden = "false"
+            ModalC.ariaHidden = "false"
+            // ModalC.style.visibility = "hidden";
+            // ModalC.style.opacity = "0";
+
+
+        }
+
+      })
 
 
 

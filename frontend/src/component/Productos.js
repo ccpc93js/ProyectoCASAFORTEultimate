@@ -19,14 +19,15 @@ import { handleCartSideClose, handleCartSideOpen } from './DrawerRight'
 
 
 export default function Productos(props) {
-    const [productoss, setProductos] = useState([]);
+    const userSignin = useSelector((state) => state.userSignin);
+    const { userInfo } = userSignin;
+    const [productos, setProductos] = useState([]);
     const [totalProductos, setTotalProductos] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
     const dispatch = useDispatch()
-    const productList = useSelector((state)=>state.productList)
-    const {/*loading, error,*/ productos} = productList;
-console.log(productos)
+    // const productList = useSelector((state)=>state.productList)
+    // const {loading, error, productos} = productList;
     const [openFilter, setOpenFilter] = React.useState(false);
 
     const handleDrawerOpenFilter = () => {
@@ -38,20 +39,6 @@ console.log(productos)
   
     const accionOpenFilter =()=>{
       setOpenFilter(!openFilter)
-    }
-
-
-    const [openRight, setOpenRight] = React.useState(false);
-
-
-    const handleDrawerOpenRight = () => {
-      setOpenRight(true);
-    };
-    const handleDrawerCloseRight = () => {
-      setOpenRight(false);
-    };
-    const accionOpenRight =()=>{
-      setOpenRight(!openRight)
     }
 
 
@@ -87,8 +74,8 @@ console.log(productos)
         fecthData();
 
         
-       dispatch(listProducts());
-    },[dispatch])
+      //  dispatch(listProducts());
+    },[/*dispatch*/])
     
    
 
@@ -215,7 +202,7 @@ console.log(productos)
 
                 <div className="shop-layout__content">
 
-                <Filtrador handleDrawerOpenFilter={handleDrawerOpenFilter}   ordenar={ordenar} totalProductos={totalProductos} productos={productoss}/>
+                <Filtrador handleDrawerOpenFilter={handleDrawerOpenFilter}   ordenar={ordenar} totalProductos={totalProductos} productos={productos}/>
 
    
                 <div className="products-row  ">
@@ -232,14 +219,15 @@ console.log(productos)
                         
                         
 
-                          productoss.map(x =>(
+                          productos.map(x =>(
                 <div key={x._id} className="product-card  ">
                 <div className="product-image">
                   {
                     (x.enOferta === true)?
                    ( 
                       <div  className="producto-en-oferta">
-                        <p>En Oferta%</p>
+                        <p className="porcentaje">{x.descuento}%</p>
+                        <p className="DCTO">DCTO</p>
                       </div>
                     )
                     :
@@ -276,6 +264,7 @@ console.log(productos)
                 {/* <strong>PRECIO: </strong>${convertirAmoneda(x.precio , "COP")}<br/> */}
                 
                 {
+                  userInfo?
                 
                 (x.enOferta ===false)?(
                   <p>{formatCurrency(x.precio )}</p>
@@ -287,7 +276,8 @@ console.log(productos)
 
                   </div>
                   
-                )
+                  )
+                  : ("")
                 }
                 </div>
                 </div>
