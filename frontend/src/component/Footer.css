@@ -116,8 +116,8 @@ footer{
 }
 
   .footer-left p{
-    /* padding-right: 10%; */
     color: #999999;
+    text-align: justify;
   }
   
   .box {
