@@ -96,13 +96,13 @@ const useStyles = makeStyles((theme)=>({
       >
         <a className="logo-drawer" href="/"><img className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/></a>
 
-        <div className="carrito mg-left-2 carrito-none-menu">
+        <div className="carrito-menu mg carrito-none-menu">
                 <i className="divSearch carrito-on-none">
 
             <ModalSearch/>
                 </i>
             
-            <Link to="/cart"><i className="carrito-on-none "> <ShoppingCartIcon/></i>
+            <Link to="/cart" className="carrito-on-none"><i > <ShoppingCartIcon/></i>
                 {cartItems.length > 0 && (
                     <span className="badge carrito-on-none">{cartItems.length}</span>
                 )}

@@ -21,7 +21,7 @@ export const HomeScreen = () => {
         if (counter > 3) {
             counter = 1;
         }
-    }, 12000);
+    }, 8000);
 
 
     const fontSizeIcons = 50

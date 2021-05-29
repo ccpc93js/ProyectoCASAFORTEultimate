@@ -36,10 +36,6 @@
     list-style: none;
 }
 
-.menu-button{
-    background-color: transparent;
-    border-style: none;
-  }
 
 /*=?=====RESPONSIVE=========*/
 @media screen and (max-width:480px){

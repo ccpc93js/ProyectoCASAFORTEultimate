@@ -14,6 +14,19 @@ import {
   ORDER_PAY_RESET,
 } from '../constants/orderConstants';
 import formatCurrency from '../actions/productActions';
+import ClearIcon from '@material-ui/icons/Clear';
+import { IconButton } from '@material-ui/core';
+
+window.addEventListener("click", (e) =>{
+  const MCE_C = document.querySelector(".Modal-compraExitosa-container");
+  const MCE = document.querySelector(".Modal-compraExitosa")
+
+
+  if(e.target == MCE_C ){
+    MCE_C.classList.toggle("ModalCExitosa-Container-Close")
+    MCE.classList.toggle("ModalCExitosa-Close")  
+  }
+})
 
 export default function OrderScreen(props) {
   const orderId = props.match.params.id;
@@ -79,12 +92,68 @@ const deliverHandler = () => {
   dispatch(deliverOrder(order._id));
 };
 
-const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
-  return Intl.NumberFormat(formatoLenguaje, {style: 'currency', currency: moneda}).format(valor);
+const handleCopExitosaModalOpen = () =>{
+  const MCE_C = document.querySelector(".Modal-compraExitosa-container")
+  const MCE = document.querySelector(".Modal-compraExitosa")
+
+  MCE_C.classList.toggle("ModalCExitosa-Container-Close")
+  MCE.classList.toggle("ModalCExitosa-Close")
+
 }
 
+const handleCopExitosaModalClose = () =>{
+  const MCE_C = document.querySelector(".Modal-compraExitosa-container")
+  const MCE = document.querySelector(".Modal-compraExitosa")
+
+  MCE_C.classList.toggle("ModalCExitosa-Container-Close")
+  MCE.classList.toggle("ModalCExitosa-Close")
+
+}
+
+window.addEventListener("click", (e) =>{
+  const MCE_C = document.querySelector(".Modal-compraExitosa-container");
+  const MCE = document.querySelector(".Modal-compraExitosa")
 
 
+  if(e.target == MCE_C ){
+    MCE_C.classList.toggle("ModalCExitosa-Container-Close")
+    MCE.classList.toggle("ModalCExitosa-Close")  
+  }
+})
+
+
+
+const compraExitosahandler = () =>{
+  return(
+
+    // order.isPaid && userInfo && !userInfo.isAdmin ? (
+      <div className="Modal-compraExitosa-container ">
+      <div className="Modal-compraExitosa ">
+      <button
+       className="ClearIcon Modal-compraExitosa__ClearIcon"
+       onClick={handleCopExitosaModalClose}
+       color="inherit"
+       >
+         <i   className="ClearIcon">
+        <ClearIcon/>
+
+         </i>
+      </button>
+    <div className="Modal-compraExitosa__img">
+      <img className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/>
+    </div>
+     <p className="Modal-compraExitosa__frase">
+     Compra exitosa, gracias por su compra! <br/> el proveedor se comunicara con usted para la entrega.
+       </p> 
+      </div>
+
+    </div>
+
+// ) : (
+  //   ""
+  // )
+  )
+}
 
 
 
@@ -133,10 +202,41 @@ const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
                   <MessageBox variant="danger">No Pagado</MessageBox>
                 )):""}
                     {order.isPaid && userInfo && !userInfo.isAdmin ? (
-                  <MessageBox variant="success">
-                    Compra exitosa, gracias por su compra! <br/> el proveedor se comunicara con usted para la entrega.
-                 {/* aqui va modal compra succes */}
-                  </MessageBox>
+
+
+                        <div className="Modal-compraExitosa-container ">
+                        <div className="Modal-compraExitosa ">
+                        <button
+                         className="ClearIcon Modal-compraExitosa__ClearIcon"
+                         onClick={handleCopExitosaModalClose}
+                         color="inherit"
+                         >
+                           <i   className="ClearIcon">
+                          <ClearIcon/>
+                                            
+                           </i>
+                        </button>
+                        <div className="Modal-compraExitosa__img">
+                        <img className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/>
+                        </div>
+                        <p className="Modal-compraExitosa__frase">
+                        Compra exitosa, gracias por su compra! <br/> el proveedor se comunicara con usted para la entrega.
+                         </p> 
+                        </div>
+                                            
+                        </div>
+
+
+                  // <MessageBox variant="success">
+                  // <div className="Modal-compraExitosa-container">
+                  //   <div className="Modal-compraExitosa">
+
+                  //   Compra exitosa, gracias por su compra! <br/> el proveedor se comunicara con usted para la entrega.
+                  //   </div>
+
+                  // </div>
+                //  aqui va modal compra succes 
+                  // </MessageBox> 
                 ) : (
                   // <MessageBox variant="danger">No Pagado</MessageBox>
                   ""
@@ -231,6 +331,7 @@ const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
                     )}
                     {loadingPay && <LoadingBox></LoadingBox>}
                   <PayPalButton className="payPalBotton"
+                    // onClick={handleCopExitosaModalOpen}
                     amount={order.totalinDolars.toFixed(2)}
                     onSuccess={successPaymentHandler}
                   ></PayPalButton>

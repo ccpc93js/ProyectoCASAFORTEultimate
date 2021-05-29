@@ -387,7 +387,7 @@ padding-bottom: 5rem;
   font-size: 1rem;
   max-width: 100%;
   padding: 0.3rem;
-  margin-left: 2rem;
+  margin-left: 6px;
 
 }
 
@@ -397,13 +397,19 @@ padding-bottom: 5rem;
 }
 
 .zona-form form input[ type="email"],
-.zona-form form input[ type="password"],
 .zona-form form input[ type="text"],
 .zona-form form input[ type="text2"]
 {
-  width: 70%;
+  max-width: 70%;
 
 }
+
+.zona-form form input[ type="password"],
+.zona-form form input[ type="confirmPassword"]{
+  max-width: 50%;
+  overflow: hidden;
+}
+
 
 
 .zona-form form select{
@@ -430,6 +436,16 @@ padding: 5px;
   color: #7e7d7d;
 }
 
+
+
+#boton{
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 6px;
+  padding: 0;
+}
 button.primary {
   background-color: #40a1f0;
 }
@@ -444,6 +460,7 @@ button.small {
   padding-left: 8px;
   margin-bottom: 15px;
   border: 1px solid #aaaaaa;
+  position: relative;
 }
 
 .input-button{

@@ -115,7 +115,7 @@ export const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
 }
 
 export default function formatCurrency(num){
-  return "$" + Number(num.toFixed(0)).toLocaleString()+ "";
+  return "$" + Number(num.toFixed(2)).toLocaleString()+ "";
 }
 
 export const cambiarAdolares = (valorPesos) =>{

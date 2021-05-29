@@ -88,7 +88,7 @@ export const NavBar = (props) => {
                     handleCartSideClose()
                     handleSearhModalClose()
                 }}
-                className="menu-button"
+                // className="menu-button"
                 size="small"
                 >
                 <MenuIcon/>

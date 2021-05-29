@@ -1,16 +1,35 @@
 
 .container-marcas{
-    background-color: #f5f7fc;
-    /* height: 100vh; */
+    /* background-color: #f5f7fc; */
+    background-image:  url(fondos/ferreteria3.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     width: 100vw;
     display: flex;
 }
+
+/* .container-marcas::before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+    background: rgba(0, 0, 0, 0.5);
+
+    
+} */
 
 .marca{
     /* margin: 1rem; */
     /* margin-left: 150px; */
     /* width: 30%; */
     border-radius: none;
+    background: white;
     /* margin-top: 30px; */
     list-style: none;
     -webkit-transform: scale(1,1);
@@ -53,6 +72,7 @@ img.imgnormalMarca{
     /* max-width: 10rem; */
     width: 17rem;
     height: 17rem;
+    
 }
 img{
     width: 100%;

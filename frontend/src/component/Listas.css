@@ -2,7 +2,10 @@
     margin-left: 2rem;
     max-height: 0;
     overflow: hidden;
+    transform: translateX(100%);
     transition: all 400ms ease;
+
+
 
 }
 
@@ -28,7 +31,8 @@ transition: all 400ms ease;
     color: #808080;
     font-size: 17px;
     font-weight: 500;
-    transition: all 300ms;
+    transform: translateX(0%);
+    transition: all 1s;
     opacity: 1;
     visibility: visible;
 
@@ -46,6 +50,10 @@ transition: all 400ms ease;
     border: none;
     color: #787878;
     cursor: pointer;
+    transform: rotatez(180deg);
+    transition: transform .50s ease-in-out,opacity .50s ease-in-out,visibility .50s ease-in-out;
+
+
     /* padding-left: 2rem; */
 }
 
@@ -53,24 +61,11 @@ transition: all 400ms ease;
     opacity: 0.8;
 }
 
-#icon-drop{
-    display: none;
+
+.ArrowDropDownIcon{
+    transform: rotatez(0deg);
+    transition: all .50s ease;
 }
-
-#icon-drop:checked ~ .categoriasDrawerDrop {
-    /* display: block;
-    opacity: 1;
-    visibility: visible; */
-    max-height: 100%;
-
-
-}
-
-
-/* #icon-drop:checked ~ .categoriasDrawerUp {
-    margin: 0 2rem;
-
-} */
 
 
 @media screen and (min-width:768px) and (max-width:1024px){

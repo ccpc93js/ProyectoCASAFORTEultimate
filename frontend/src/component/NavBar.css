@@ -136,8 +136,19 @@ border: none;
 .menu-button{
   background-color: transparent;
   border-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 6px;
+  margin-top: 1rem;
+  padding: 0;
 }
 
+.menu-button{
+  position: relative;
+  top: -0.3rem;
+  margin-left: 1rem;
+}
 
 /* .carrito{
   position: relative;
@@ -146,10 +157,12 @@ border: none;
 
 .casaforte{
   width: 18rem;
+  margin-top: 2rem;
+
   /* margin-left: 2rem; */
-  margin-top: 2.5rem;
 }
 .casaforte-a{
+
   margin-left: 5rem;
 }
 
@@ -160,9 +173,12 @@ border: none;
   top: 2.5rem; */
   margin-top: 2rem;
   margin-right: 2rem;
-  float: right;
+  /* float: right; */
+  position: absolute;
+  top: 0;
+  right: 0;
+
   /* margin-left: 55rem; */
-  /* position: absolute; */
   cursor: pointer;
 
   display: flex;
@@ -183,10 +199,41 @@ border: none;
 
 }
 
+
+
 .cart-icon{
   color: #2c2c3d;
   position: relative;
 }
+
+
+.carrito-menu{
+
+  max-width: 200px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  /* position: absolute;
+  top: 2;
+  right: 0; */
+
+  /* margin-left: 55rem; */
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.carrito-menu i{
+  margin-right: 2rem;
+  color: #2c2c3d;
+  display: inline-block;
+  /* position: relative;
+
+  top: 1rem; */
+
+
+}
+
 
 /* .divSearch{
   position: absolute;
@@ -385,14 +432,12 @@ color: #73a3d3;
 
 .userName{
   color: gray;
+  overflow: hidden;
+  width: 3px;
 
 }
 
-.menu-button{
-  position: relative;
-  top: -0.3rem;
-margin-left: 1rem;
-}
+
 
 /*=?=====RESPONSIVE=========*/
 
@@ -402,13 +447,13 @@ margin-left: 1rem;
 
 
   .casaforte{
-    width: 7rem;
-    margin-top: 2rem;
+    width: 5rem;
 
   }
 
   .casaforte-a{
-    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-left: 0rem ;
   }
 
   .menu2{
@@ -422,7 +467,7 @@ margin-left: 1rem;
 
   .menu1{
     height: 5rem;
-    padding-left: 0rem;    
+    padding-left: 0rem; 
   }
 
   .menu-button{
@@ -432,7 +477,7 @@ margin-left: 1rem;
   .carrito-none{
     display: none;
   }
-  .carrito .carrito-on-none{
+  .carrito-on-none{
     display: none;
 
   }
@@ -456,9 +501,7 @@ margin-left: 1rem;
 
   }
 
-  .mg-left-2{
-    margin-left: 4rem;
-  }
+
 
 
 
@@ -480,7 +523,7 @@ margin: 0 -3rem;
 
     }
     .casaforte-a{
-      margin-left: 1rem;
+      margin-left: 0rem;
     }
     /* .carrito{
       margin-left: 3rem;
@@ -508,7 +551,7 @@ margin: 0 -3rem;
     .carrito-none{
       display: none;
     }
-    .carrito .carrito-on-none{
+    .carrito-on-none{
       display: none;
 
     }
@@ -519,9 +562,6 @@ margin: 0 -3rem;
 
     }
 
-    .mg-left-2{
-      margin-left: 4rem;
-    }
 
     .dropdown-content {
         min-width: 100px;

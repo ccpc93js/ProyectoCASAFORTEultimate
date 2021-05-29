@@ -24,20 +24,27 @@ const Listas =()=> {
     
    
   const [openCategorias,setopenCategorias]= React.useState("categoriasDrawerUp")
-  const handleDrawerOpen = () => {
-        // setopenCategorias("categoriasDrawerDrop");
-        var input = document.getElementById("icon-drop");
-        if(input.checked === true ){
-        setopenCategorias("categoriasDrawerDrop");
+//   const handleCategoryOpen = () => {
+//         // setopenCategorias("categoriasDrawerDrop");
+//         var input = document.getElementById("icon-drop");
+//         if(input.checked === true ){
+//         setopenCategorias("categoriasDrawerDrop");
 
-        }else{
-        setopenCategorias("categoriasDrawerUp");
-    }
-  };
-  const handleDrawerClose = () => {
-    setopenCategorias("categoriasDrawerUp");
-  };
+//         }else{
+//         setopenCategorias("categoriasDrawerUp");
+//     }
+//   };
 
+
+const handleCategoryOpen = () => {
+    const categoriasDrop = document.querySelector(".categoriasDrawerDrop");
+    const mobileItem = document.querySelector(".mobile-item");
+
+    categoriasDrop.classList.toggle("categoriasDrawerUp")
+    mobileItem.classList.toggle("ArrowDropDownIcon")
+
+
+};
      
 
         return (
@@ -64,11 +71,10 @@ const Listas =()=> {
                         <ListItemText className={classes.listas}>
                              Productos 
                         </ListItemText>
-                        <input type="checkbox" id="icon-drop" />
-                        <label htmlFor="icon-drop" className="mobile-item" onClick={handleDrawerOpen}>
-                        <ArrowDropDownIcon/>
+                        <IconButton  className="mobile-item ArrowDropDownIcon" onClick={handleCategoryOpen}>
+                        <ArrowDropDownIcon className=""/>
 
-                        </label>
+                        </IconButton>
                         {/* <IconButton
                          onClick={handleDrawerOpen}
 
@@ -84,7 +90,7 @@ const Listas =()=> {
                         </IconButton> */}
                         </ListItem>
                     </Link>
-                     <div className={openCategorias}>
+                     <div className="categoriasDrawerDrop categoriasDrawerUp">
                         <ul>
                              <li><a href="/abrasivos">Abrasivos</a></li>
                              <li><a href="/accesorios-para-herramientas">Accesorios para Herramientas</a></li>
