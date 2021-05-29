@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.4b6b3dd4.chunk.css",
-    "main.js": "/static/js/main.56475700.chunk.js",
-    "main.js.map": "/static/js/main.56475700.chunk.js.map",
+    "main.css": "/static/css/main.216a197a.chunk.css",
+    "main.js": "/static/js/main.0d8b6355.chunk.js",
+    "main.js.map": "/static/js/main.0d8b6355.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cc85cbe0.js",
     "runtime-main.js.map": "/static/js/runtime-main.cc85cbe0.js.map",
-    "static/js/2.d7d6db3d.chunk.js": "/static/js/2.d7d6db3d.chunk.js",
-    "static/js/2.d7d6db3d.chunk.js.map": "/static/js/2.d7d6db3d.chunk.js.map",
+    "static/js/2.c3e2c9ea.chunk.js": "/static/js/2.c3e2c9ea.chunk.js",
+    "static/js/2.c3e2c9ea.chunk.js.map": "/static/js/2.c3e2c9ea.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.4b6b3dd4.chunk.css.map": "/static/css/main.4b6b3dd4.chunk.css.map",
-    "static/js/2.d7d6db3d.chunk.js.LICENSE.txt": "/static/js/2.d7d6db3d.chunk.js.LICENSE.txt",
+    "static/css/main.216a197a.chunk.css.map": "/static/css/main.216a197a.chunk.css.map",
+    "static/js/2.c3e2c9ea.chunk.js.LICENSE.txt": "/static/js/2.c3e2c9ea.chunk.js.LICENSE.txt",
     "static/media/Marcas.css": "/static/media/ferreteria3.23ba1023.jpg",
     "static/media/index.css": "/static/media/slidermarcas.7d5c155a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.cc85cbe0.js",
-    "static/js/2.d7d6db3d.chunk.js",
-    "static/css/main.4b6b3dd4.chunk.css",
-    "static/js/main.56475700.chunk.js"
+    "static/js/2.c3e2c9ea.chunk.js",
+    "static/css/main.216a197a.chunk.css",
+    "static/js/main.0d8b6355.chunk.js"
   ]
 }

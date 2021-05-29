@@ -11,6 +11,8 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/Phone';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import ClearIcon from '@material-ui/icons/Clear';
+
 
 import dataDyC from './dataDyC'
 
@@ -27,7 +29,24 @@ function Registrarse(props) {
     const [tipoClient, setTipoClient] = useState('');
 
     const userRegisterInfo = useSelector((state) => state.userRegisterInfo);
-    const { /*userInfo*/ loading, error } = userRegisterInfo;
+    const { userRegInfo,loading, error } = userRegisterInfo;
+    const handleCopExitosaModalOpen = () =>{
+        const MCE_C = document.querySelector(".Modal-compraExitosa-container")
+        const MCE = document.querySelector(".Modal-compraExitosa")
+      
+        MCE_C.classList.toggle("ModalCExitosa-Container-Close")
+        MCE.classList.toggle("ModalCExitosa-Close")
+      
+      }
+
+    const handleCopExitosaModalClose = () =>{
+        const MCE_C = document.querySelector(".Modal-compraExitosa-container")
+        const MCE = document.querySelector(".Modal-compraExitosa")
+      
+        MCE_C.classList.toggle("ModalCExitosa-Container-Close")
+        MCE.classList.toggle("ModalCExitosa-Close")
+      
+      }
     
     
   const dispatch = useDispatch();
@@ -35,11 +54,62 @@ function Registrarse(props) {
     e.preventDefault();
 
     dispatch(registerInfo(name, tDocument ,nDocument ,department, city, adress, email, tel, cel, tipoClient));
-    const messege =()=>{
-       if (e) {
 
-           props.history.push('/messegeRegistered');
-       }
+    handleCopExitosaModalOpen()
+
+    // if(userRegInfo){
+    //     return(
+
+    //     <div className="Modal-compraExitosa-container ">
+    //     <div className="Modal-compraExitosa ">
+    //     <button
+    //      className="ClearIcon Modal-compraExitosa__ClearIcon"
+    //      onClick={handleCopExitosaModalClose}
+    //      color="inherit"
+    //      >
+    //        <i   className="ClearIcon">
+    //       <ClearIcon/>
+                            
+    //        </i>
+    //     </button>
+    //     <div className="Modal-compraExitosa__img">
+    //     <img className="casaforte" src='/img/Icons/Check_Circle.png' alt="casaforte"/>
+    //     </div>
+    //     <p className="Modal-compraExitosa__frase">
+    //     Tu registro a sido exitoso nos contactaremos contigo!
+    //     </p> 
+    //     </div>
+                            
+    //     </div>
+    //     )
+    // }
+
+
+
+
+    const messege =()=>{
+
+        
+window.addEventListener("click", (e) =>{
+    const MCE_C = document.querySelector(".Modal-compraExitosa-container");
+    const MCE = document.querySelector(".Modal-compraExitosa")
+    const btnClose = document.querySelector(".Modal-compraExitosa__ClearIcon")
+
+  
+  setTimeout (()=>{
+
+      if(e.target == MCE_C || btnClose ){
+        MCE_C.classList.toggle("ModalCExitosa-Container-Close")
+        MCE.classList.toggle("ModalCExitosa-Close")  
+        props.history.push('/');
+      }
+  },1000)
+      
+  })
+    //    if (e) {
+
+    //        props.history.push('/messegeRegistered');
+    //    }
  
 
     }
@@ -64,6 +134,34 @@ function Registrarse(props) {
 
     };
 
+
+    
+const compraExitosahandler = () =>{
+    return(
+  
+        <div className="Modal-compraExitosa-container ModalCExitosa-Container-Close">
+        <div className="Modal-compraExitosa ModalCExitosa-Close">
+        <button
+         className="ClearIcon Modal-compraExitosa__ClearIcon"
+         onClick={handleCopExitosaModalClose}
+         color="inherit"
+         >
+           <i   className="ClearIcon">
+          <ClearIcon/>
+                            
+           </i>
+        </button>
+        <div className="Modal-compraExitosa__img">
+        <img className="mensajeRegistro-img" src='/img/Icons/Check_Circle.png' alt="Check_Circle"/>
+        </div>
+        <p className="Modal-mensajeRegistro">
+        Tu registro a sido exitoso nos contactaremos contigo!
+        </p> 
+        </div>
+                            
+        </div>
+    )
+  }
     // const {paises, setPaises} = useState([])
     // const obtenerPaises = async() =>{
     //     const {data} = await axios.get("http://battuta.medunes.net/api/country/all/?key=4a6598ecb99776304b3e8c804ae1617c")
@@ -112,6 +210,7 @@ function Registrarse(props) {
 
     return (
     <div className="zona-form">
+        {compraExitosahandler()}
         <div className="contacto">
             <img src="../enlaces/img/contacto.png" alt=""/>
         </div>

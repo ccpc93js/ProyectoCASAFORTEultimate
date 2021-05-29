@@ -1091,11 +1091,17 @@ height: 4rem;
 }
 
 .mensajeRegistro-img{
-  width: 13rem;
-  margin-left: 2rem;
+  width: 7rem;
   margin-top: 2.5rem;
 }
 
+
+.Modal-mensajeRegistro p{
+
+  margin: auto;
+  margin-top: 2rem;
+  font-size: 16px;
+}
 
 
 /* zona admin */
