@@ -36,7 +36,7 @@ export const Footer = () => {
                     <li><a href="/marcas">Marcas</a></li>
                     <li><a href="/contactenos">Cont&aacute;ctanos</a></li>
                     <li><a href="/signin">Clientes</a></li>
-                    <li><a href="/ofertas">Oferta</a></li>
+                    <li><a href="/ofertas">Ofertas</a></li>
                 </ul>
             </div>
 
