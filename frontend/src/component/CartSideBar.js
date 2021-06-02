@@ -7,6 +7,7 @@ import { IconButton } from '@material-ui/core';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import formatCurrency from '../actions/productActions';
 import { handleCartSideClose, handleCartSideOpen } from './DrawerRight'
+import Fade from 'react-reveal/Fade';
 
 // import data from '../data.json'
 
@@ -71,7 +72,9 @@ export default function CartSideBar(props) {
 
                     <div className="col-2Cart">
 
+                        <Fade right cascade>
                     <ul>
+
                         {
                             cartItems.map(item =>
                                 <li key={item.producto} className="rowCart ">
@@ -156,6 +159,7 @@ export default function CartSideBar(props) {
                   
                         }
                     </ul>
+                        </Fade>
 
             </div>
             </div>

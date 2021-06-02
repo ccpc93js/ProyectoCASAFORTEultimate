@@ -16,6 +16,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import Fade from 'react-reveal/Fade';
 
 // import YouTubeIcon from '@material-ui/icons/YouTube';
 
@@ -198,7 +199,7 @@ const Prev = () =>{
           )
         }
     
-          <img className=" " alt={producto.info} src={producto.imagen.img1} />
+          <img className=" " alt={producto.info} src={producto.imagen} />
      
         </div>
        
@@ -318,6 +319,7 @@ loadingP?(
 //      <li><a href="/abracol"><img class="marca" src="./img/Icons/Logo_Abracol.png" alt="abracol"/></a></li>
 //  </ul>
 
+<Fade bottom cascade={true}>
 
  <ul className="continerPR__productos-relacionados slider-section-PR" >
     <li className="">
@@ -336,7 +338,7 @@ loadingP?(
         }
     <a href={`/producto/${x._id}`}>
         <div className="continerPR__productos-relacionados__img">
-            <img src={x.imagen.img1} alt={x.info} />
+            <img src={x.imagen} alt={x.info} />
         </div>
     <div className="continerPR__details">
      <p className="continerPR__details__description__info">{x.info}</p>
@@ -369,6 +371,9 @@ loadingP?(
 
 </li>
  </ul>
+
+ </Fade>
+
 
 
 ))
@@ -438,7 +443,7 @@ export default ProductScreen
 // <div className="">
 //     <a href={`/producto/${x.codigo}`}>
 //     <picture>
-//        <img src={x.imagen.img1} alt={x.info} className=""/>
+//        <img src={x.imagen} alt={x.info} className=""/>
 //    </picture>
 //     <div className="details">
 // <p className="description">{x.info}</p>

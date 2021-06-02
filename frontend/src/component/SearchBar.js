@@ -5,6 +5,8 @@ import LoadingBox from './LoadingBox'
 import MessageBox from './MessageBox'
 import axios from '../../node_modules/axios/index';
 import formatCurrency from '../actions/productActions';
+import Fade from 'react-reveal/Fade';
+
 // import axios from 'axios'
 
 
@@ -87,6 +89,8 @@ fecthData();
       </div>)  
 
       }
+      
+      <Fade bottom cascade={true}>
 
       <div className="containerElement">
 
@@ -121,7 +125,7 @@ fecthData();
                 <div className="product-image-search">
 
                     <a href={`/producto/${val._id}`} className="product-image__body-search ">
-                    <img src={val.imagen.img1} alt="" className="product-image__img imgnormalP-search "/>  
+                    <img src={val.imagen} alt="" className="product-image__img imgnormalP-search "/>  
                     </a>
                 </div>
                     <div className="product-card__info-search">
@@ -158,6 +162,7 @@ fecthData();
         
       }
       </div>
+      </Fade>
     </form>
 
     </div>

@@ -16,6 +16,7 @@ import {
 import formatCurrency from '../actions/productActions';
 import ClearIcon from '@material-ui/icons/Clear';
 import { IconButton } from '@material-ui/core';
+import axios from '../../node_modules/axios/index';
 
 window.addEventListener("click", (e) =>{
   const MCE_C = document.querySelector(".Modal-compraExitosa-container");
@@ -35,8 +36,9 @@ export default function OrderScreen(props) {
   const { order, loading, error } = orderDetails;
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
-
-  
+  if (!userInfo) {
+    props.history.push('/signin');
+  }
   const orderPay = useSelector((state) =>state.orderPay);
   const {
     loading: loadingPay, 
@@ -82,6 +84,20 @@ useEffect(()=>{
       }
     }
   }
+  const enviarEmail = async(name,  email)=>{
+    await axios.post("/api/emails/compraExitosa",{
+        name,
+        email, 
+        // order,
+  
+    });
+  }
+
+  if(successPay  && userInfo && !userInfo.isAdmin){
+
+    enviarEmail(userInfo.name, userInfo.email);
+  }
+  
 }, [dispatch, orderId, sdkReady, order, successPay, successDeliver]);
 
 const successPaymentHandler = (paymentResult) =>{
@@ -90,7 +106,9 @@ const successPaymentHandler = (paymentResult) =>{
 
 const deliverHandler = () => {
   dispatch(deliverOrder(order._id));
+
 };
+
 
 const handleCopExitosaModalOpen = () =>{
   const MCE_C = document.querySelector(".Modal-compraExitosa-container")
@@ -140,7 +158,7 @@ const compraExitosahandler = () =>{
          </i>
       </button>
     <div className="Modal-compraExitosa__img">
-      <img className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/>
+      <img style="width:7rem;" className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/>
     </div>
      <p className="Modal-compraExitosa__frase">
      Compra exitosa, gracias por su compra! <br/> el proveedor se comunicara con usted para la entrega.
@@ -171,13 +189,13 @@ const compraExitosahandler = () =>{
           <ul>
             <li>
               <div className="card card-body">
-                <strong>Envio</strong>
-                <h3>
-                  <strong>Nombre:</strong> {order.shippingAddress.fullName} <br />
-                  <strong>Direccion: </strong> {order.shippingAddress.address},
-                  {order.shippingAddress.city},{' '}
-                  {order.shippingAddress.postalCode},
-                  {order.shippingAddress.country}
+                <strong>Direccion de envio</strong>
+                <h3 className="envioINfo">
+                 <p> {order.shippingAddress.fullName}</p>
+                 <p> {order.shippingAddress.address}</p>
+                 <p>{order.shippingAddress.city}</p>
+                 <p>{order.shippingAddress.postalCode}</p>
+                 <p>{order.shippingAddress.country}</p>
                 </h3>
                 { userInfo.isAdmin ? (order.isDelivered ?(
                   <MessageBox variant="success">
@@ -217,7 +235,7 @@ const compraExitosahandler = () =>{
                            </i>
                         </button>
                         <div className="Modal-compraExitosa__img">
-                        <img className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/>
+                        <img  className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/>
                         </div>
                         <p className="Modal-compraExitosa__frase">
                         Compra exitosa, gracias por su compra! <br/> el proveedor se comunicara con usted para la entrega.

@@ -83,7 +83,7 @@ function ZonaClientes(props) {
                     <input 
                     type="text2" 
                     id="nit"
-                    placeholder="Nit sin digito de verificaci&oacute;n"
+                    placeholder="Nit o Nº Documento"
                     required
                     onChange={(e) => setNit(e.target.value)}
                     

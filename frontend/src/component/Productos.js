@@ -7,6 +7,7 @@ import data from './data.js'
 import LoadingBox from './LoadingBox'
 import MessageBox from './MessageBox'
 import {useDispatch, useSelector} from 'react-redux'
+import Fade from 'react-reveal/Fade';
 
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
@@ -205,7 +206,9 @@ export default function Productos(props) {
                 <Filtrador handleDrawerOpenFilter={handleDrawerOpenFilter}   ordenar={ordenar} totalProductos={totalProductos} productos={productos}/>
 
    
+                 <Fade bottom cascade={true}>
                 <div className="products-row  ">
+
                 
                 {
                         loading ? (
@@ -238,7 +241,7 @@ export default function Productos(props) {
                 <a
 
                 href={`/producto/${x._id}`} className="product-image__body ">
-                 <img className="product-image__img imgnormalP " alt={x.info} src={x.imagen.img1}/>
+                 <img className="product-image__img imgnormalP " alt={x.info} src={x.imagen}/>
               
                 </a>
                  <div 
@@ -286,7 +289,9 @@ export default function Productos(props) {
                 ))
                         )
                }
+
                </div>
+               </Fade>
                 </div>
 
             </div>

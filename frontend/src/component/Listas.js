@@ -17,6 +17,16 @@ const useStyles = makeStyles({
     
 })
 
+
+export const handleCategoryOpen = () => {
+    const categoriasDrop = document.querySelector(".categoriasDrawerDrop");
+    const mobileItem = document.querySelector(".mobile-item");
+
+    categoriasDrop.classList.toggle("categoriasDrawerUp")
+    mobileItem.classList.toggle("ArrowDropDownIcon")
+
+
+};
 const Listas =()=> {
 
     const classes = useStyles()
@@ -36,15 +46,7 @@ const Listas =()=> {
 //   };
 
 
-const handleCategoryOpen = () => {
-    const categoriasDrop = document.querySelector(".categoriasDrawerDrop");
-    const mobileItem = document.querySelector(".mobile-item");
 
-    categoriasDrop.classList.toggle("categoriasDrawerUp")
-    mobileItem.classList.toggle("ArrowDropDownIcon")
-
-
-};
      
 
         return (

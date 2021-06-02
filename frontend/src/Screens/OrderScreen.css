@@ -81,6 +81,23 @@
 
 }
 
+.envioINfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.envioINfo h3{
+margin: auto;
+text-align: start;
+
+}
+.envioINfo p{
+display: inline-block;
+margin: auto;
+text-align: start;
+
+}
 
 
 

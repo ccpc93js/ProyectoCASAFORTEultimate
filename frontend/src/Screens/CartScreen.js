@@ -7,6 +7,8 @@ import { addToCart, removeFromCart } from '../actions/cartActions';
 import { IconButton } from '@material-ui/core';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import formatCurrency, { convertirAmoneda } from '../actions/productActions';
+import Fade from 'react-reveal/Fade';
+
 
 // import data from '../data.json'
 
@@ -63,7 +65,9 @@ export default function CartScreen(props) {
 
                     <div className="col-2Cart">
 
+                        <Fade left cascade>
                     <ul>
+
                         {
                             cartItems.map(item =>
                                 <li key={item.producto} className="rowCart ">
@@ -147,7 +151,9 @@ export default function CartScreen(props) {
                                 </li>)
                   
                         }
+
                     </ul>
+                        </Fade>
 
             </div>
             </div>

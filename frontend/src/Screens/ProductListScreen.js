@@ -144,7 +144,7 @@ export default function ProductListScreen(props) {
                 <tr key={producto._id}>
                   <td className="table-hidden">{producto._id}</td>
                   <td >{producto.codigo}</td>
-                  <td><img src={producto.imagen.img1} className="smallProductlist" alt="" />{"  "}{producto.info}</td>
+                  <td><img src={producto.imagen} className="smallProductlist" alt="" />{"  "}{producto.info}</td>
                   <td className="table-hidden">
                     {
                                         

@@ -130,6 +130,8 @@ import DashboardScreen from './Screens/DashboardScreen';
 import DrawerRight, { handleCartSideClose } from './component/DrawerRight';
 import SearchScreen from './Screens/SearchScreen';
 import EnOferta from './component/enlaces/EnOferta/EnOferta';
+import compraExitosa from './component/correos/compraExitosa';
+
 
 
 export const useCategoria = () =>{
@@ -408,6 +410,7 @@ function App(props) {
 
          
 
+         <Route exact path="/compraExitosa" component={compraExitosa}/>
          
 
 

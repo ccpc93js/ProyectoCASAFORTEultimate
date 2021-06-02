@@ -1,0 +1,48 @@
+Development framework integration
+Cloudinary integrates with the most popular development frameworks via open-source SDKs. Take a look at the sample code below to see how you can use your development framework to upload an image and then deliver it with an on-the-fly transformation applied.
+
+Account credentials
+
+Cloud name:
+casaforte
+API key:
+268285897552985
+API secret:
+***************************
+Environment variable:
+cloudinary://268285897552985:***************************@casaforte
+Sample upload code
+
+
+
+
+
+
+
+
+
+
+
+
+<input name="file" type="file"
+   class="file-upload" data-cloudinary-field="image_id"
+   data-form-data="{ 'transformation': {'crop':'limit','tags':'samples','width':3000,'height':2000}}"/>
+Sample image manipulation tag
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <CloudinaryContext cloudName="casaforte">
+    <Image publicId="sample" format="jpg">
+        <Transformation crop="fill" gravity="faces" width="300" height="200"/>
+    </Image>
+</CloudinaryContext>

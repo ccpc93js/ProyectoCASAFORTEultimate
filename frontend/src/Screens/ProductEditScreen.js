@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './ProductEditScreen.css'
 import { useDispatch, useSelector } from 'react-redux';
 import Axios from 'axios';
+import {Image} from 'cloudinary-react';
 import formatCurrency, { detailsProduct, updateProduct } from '../actions/productActions';
 import LoadingBox from '../component/LoadingBox';
 import loadingPage from '../component/LoadingPage';
@@ -75,15 +76,73 @@ export default function ProductEditScreen(props) {
         precioDeOferta,
         descuento
       })
+
     );
+    // if(!previewSource)return;
+    // UploadImage(previewSource);
+
   };
   const [loadingUpload, setLoadingUpload] = useState(false);
   const [errorUpload, setErrorUpload] = useState('');
 
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
+
+
+  // const [fileInput, setfileInput] = useState('');
+  const [previewSource, setPreviewSource] = useState('');
+  const previewFile = (file) =>{
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onloadend = () =>{
+      setPreviewSource(reader.result)
+    }
+  }
+  // console.log(previewSource)
+
+  // const handleFileChange = (e) =>{
+  //   const file = e.target.files[0];
+  //   previewFile(file);
+  // }
+
+  // upload images Cloudinary
+  // const UploadImage = async(base64) =>{
+    
+  //   setLoadingUpload(true);
+  //   try {
+
+  //     const { data } = await Axios.post('/api/uploads/cloudinary', base64, {
+  //       body: JSON.stringify({data: data}),
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //         Authorization: `Bearer ${userInfo.token}`,
+  //       },
+
+  //     // await fetch('/api/uploads/cloudinary', {
+  //     //   method: 'POST',
+  //     //   body: JSON.stringify({data: base64}),
+  //     //   headers: {
+  //     //     'Content-Type': 'application/json',
+  //     //     // Authorization: `Bearer ${userInfo.token}`,
+  //     //   },
+  //     });
+  //     // console.log(data)
+  //     setImagen(data);
+  //     setLoadingUpload(false);
+  //   } catch (error) {
+  //     setErrorUpload(error.message);
+  //     setLoadingUpload(false);
+  //   }
+
+
+  // }
+
+
+  // upload images local
   const uploadFileHandler = async (e) => {
     const file = e.target.files[0];
+    previewFile(file);
+
     const bodyFormData = new FormData();
     bodyFormData.append('imagen', file);
     setLoadingUpload(true);
@@ -165,7 +224,11 @@ export default function ProductEditScreen(props) {
                 id="imageFile"
                 label="Seleccione la imagen"
                 onChange={uploadFileHandler}
+                // value={imagen}
               ></input>
+              {previewSource && (
+                <img src={previewSource} alt="chosen" style={{width: '10rem', height: '10rem'}}></img>
+              )}
               {loadingUpload && <LoadingBox></LoadingBox>}
               {errorUpload && (
                 <MessageBox variant="danger">{errorUpload}</MessageBox>
