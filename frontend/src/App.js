@@ -160,7 +160,7 @@ function App(props) {
 
   setTimeout(()=>{
     setLoading(false);
-  },1000)
+  },500)
 
   const [open, setOpen] = React.useState(false);
 
@@ -222,7 +222,7 @@ function App(props) {
 
 
   
-  if (loading){
+  if (window.onload || loading){
     return (
     <LoadingPageLogo className="loading-logo"></LoadingPageLogo>
 
