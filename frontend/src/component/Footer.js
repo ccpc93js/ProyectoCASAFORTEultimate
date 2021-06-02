@@ -15,7 +15,7 @@ export const Footer = () => {
                 <div className="footer-left">
                     <div>
 
-                <img src='/img/Icons/LOGOS_CASA_FORTE_BLANCO.png' alt="casaforte"/>
+                <img src='https://res.cloudinary.com/casaforte/image/upload/v1622647550/Icon/LOGOS_CASA_FORTE_BLANCO_axvrtd.png' alt="casaforte"/>
                     </div>
                 <p>
                     Ferreter&iacute;a Casa Forte S.A.S. es una empresa dedicada a la distribuci&oacute;n de articulos para ferreter&iacute;a en Colombia, trabajamos para que nuestros clientes accedan a los mejores productos a precios competitivos y con el mejor servicio.

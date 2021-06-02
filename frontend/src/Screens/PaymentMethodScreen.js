@@ -38,7 +38,7 @@ export default function PaymentMethodScreen(props) {
               checked
               onChange={(e) => setPaymentMethod(e.target.value)}
             ></input>
-            <label htmlFor="paypal"><img className="img-paymethod" src="/img/Icons/paypal.png" alt="" /></label>
+            <label htmlFor="paypal"><img className="img-paymethod" src="https://res.cloudinary.com/casaforte/image/upload/v1622647553/Icon/paypal_rxixjr.png" alt="" /></label>
           </div>
         </div>
         <div>

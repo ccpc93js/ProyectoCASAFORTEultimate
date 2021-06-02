@@ -84,18 +84,18 @@ useEffect(()=>{
       }
     }
   }
-  const enviarEmail = async(name,  email)=>{
+  const enviarEmail = async(name,  email, order)=>{
     await axios.post("/api/emails/compraExitosa",{
         name,
         email, 
-        // order,
+        order: order._id,
   
     });
   }
 
   if(successPay  && userInfo && !userInfo.isAdmin){
 
-    enviarEmail(userInfo.name, userInfo.email);
+    enviarEmail(userInfo.name, userInfo.email,order);
   }
   
 }, [dispatch, orderId, sdkReady, order, successPay, successDeliver]);
@@ -158,7 +158,7 @@ const compraExitosahandler = () =>{
          </i>
       </button>
     <div className="Modal-compraExitosa__img">
-      <img style="width:7rem;" className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/>
+      <img style="width:7rem;" className="casaforte" src='https://res.cloudinary.com/casaforte/image/upload/v1622590008/Icon/LOGO_CASA_FORTE_yhb1dx.png' alt="casaforte"/>
     </div>
      <p className="Modal-compraExitosa__frase">
      Compra exitosa, gracias por su compra! <br/> el proveedor se comunicara con usted para la entrega.
@@ -235,7 +235,7 @@ const compraExitosahandler = () =>{
                            </i>
                         </button>
                         <div className="Modal-compraExitosa__img">
-                        <img  className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/>
+                        <img  className="casaforte" src='https://res.cloudinary.com/casaforte/image/upload/v1622590008/Icon/LOGO_CASA_FORTE_yhb1dx.png' alt="casaforte"/>
                         </div>
                         <p className="Modal-compraExitosa__frase">
                         Compra exitosa, gracias por su compra! <br/> el proveedor se comunicara con usted para la entrega.

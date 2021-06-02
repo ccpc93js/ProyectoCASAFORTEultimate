@@ -92,13 +92,13 @@ export const HomeScreen = () => {
                     <input type="radio" name="radio-btn" id="radio2"/>
                     <input type="radio" name="radio-btn" id="radio3"/>
                     <div className="slide first">
-                        <img src='./img/Icons/CASA_FORTE_PPAL_3.png' alt=""/>
+                        <img src='https://res.cloudinary.com/casaforte/image/upload/v1622647553/Icon/CASA_FORTE_PPAL_3_cllgv3.png' alt=""/>
                     </div>
                     <div className="slide">
-                        <img src='./img/Icons/Pantalla_de_inicio.png' alt=""/>
+                        <img src='https://res.cloudinary.com/casaforte/image/upload/v1622647554/Icon/Pantalla_de_inicio_fcigif.png' alt=""/>
                     </div>
                     <div className="slide">
-                        <img src='./img/Icons/CASA_FORTE_PPAL_2.png' alt=""/>
+                        <img src='https://res.cloudinary.com/casaforte/image/upload/v1622647549/Icon/CASA_FORTE_PPAL_2_frswaq.png' alt=""/>
                     </div>
 
                 </div>
@@ -117,7 +117,7 @@ export const HomeScreen = () => {
          
      <div className="contenedore">
     <figure>
-        <img src="./img/Icons/abrasivos-industriales-medellin.jpg" alt="abra"/>
+        <img src="https://res.cloudinary.com/casaforte/image/upload/v1622647546/Icon/abrasivos-industriales-medellin_gdldhy.jpg" alt="abra"/>
 
         <div className="capar">
             <h3>Abrasivos</h3> 
@@ -127,7 +127,7 @@ export const HomeScreen = () => {
       
     </figure>
     <figure>
-        <img src="./img/Icons/ht_medium.jpg" alt="elec"/>
+        <img src="https://res.cloudinary.com/casaforte/image/upload/v1622647557/Icon/ht_medium_fh3bhp.png" alt="elec"/>
         <div className="capar">
             <h3>El&eacute;ctricos</h3> 
             <a href="/electricos">VER PRODUCTOS</a>
@@ -136,7 +136,7 @@ export const HomeScreen = () => {
     </figure>
   
    <figure>
-        <img src="./img/Icons/negro_nuevo_blanco1.jpg" alt="grife"/>
+        <img src="https://res.cloudinary.com/casaforte/image/upload/v1622647552/Icon/negro_nuevo_blanco1_ojoxne.jpg" alt="grife"/>
         <div className="capar">
             <h3>Grifer&iacute;a</h3> 
             <a href="/griferia-y-plomeria">VER PRODUCTOS</a>
@@ -169,20 +169,20 @@ export const HomeScreen = () => {
 
 
          <ul className="sliderMarcas" id="sliderMarcas">
-            <li className="slider-section"><a href="/abracol"><img class="marca" src="./img/Icons/Logo_Abracol.png" alt="abracol"/></a></li>
-            <li className="slider-section"><a href="/ciles"><img class="marca" src="./img/Icons/Logo_Ciles.png" alt="ciles"/></a></li>
-            <li className="slider-section"><a href="/grival"><img class="marca" src="./img/Icons/Logo_Grival.jpg" alt="grival"/></a></li>
-            <li className="slider-section"><a href="/goya"><img class="marca" src="./img/Icons/logo_goya.jpg" alt="goya"/></a></li>
-            <li className="slider-section"><a href="/dewalt"><img class="marca" src="./img/Icons/logo_dewalt.jpg" alt="dewalt"/></a></li>
-            <li className="slider-section"><a href="/sintesolda"><img class="marca" src="./img/Icons/logo_sintesolda.jpg" alt="sintesolda"/></a></li>
-            <li className="slider-section"><a href="/argos"><img class="marca" src="./img/Icons/logo_argos.jpg" alt="argos"/></a></li>
-            <li className="slider-section"><a href="#"><img class="marca" src="./img/Icons/logo_corona.png" alt="corona"/></a></li>
-            <li className="slider-section"><a href="#"><img class="marca" src="./img/Icons/logo_celta.png" alt="celta"/></a></li>
-            <li className="slider-section"><a href="/rioplast"><img class="marca" src="./img/Icons/logo_rioplast.jpg" alt="rioplast"/></a></li>
-            <li className="slider-section"><a href="#"><img class="marca" src="./img/Icons/logo_legrand.jpg" alt="legrand"/></a></li>
-            <li className="slider-section"><a href="#"><img class="marca" src="./img/Icons/logo_pegaucho.jpg" alt="pegaucho"/></a></li>
-            <li className="slider-section"><a href="#"><img class="marca" src="./img/Icons/logo_stanley.png" alt="stanley"/></a></li>
-            <li className="slider-section"><a href="/lufkin-crescent"><img class="marca" src="./img/Icons/logo_crescent.png" alt="crescent"/></a></li>
+            <li className="slider-section"><a href="/abracol"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647555/Icon/Logo_Abracol_sycors.png" alt="abracol"/></a></li>
+            <li className="slider-section"><a href="/ciles"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647557/Icon/Logo_Ciles_b00dsy.jpg" alt="ciles"/></a></li>
+            <li className="slider-section"><a href="/grival"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647547/Icon/Logo_Grival_kzpccn.jpg" alt="grival"/></a></li>
+            <li className="slider-section"><a href="/goya"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647546/Icon/logo_goya_baszig.jpg" alt="goya"/></a></li>
+            <li className="slider-section"><a href="/dewalt"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647546/Icon/logo_dewalt_tyfryk.jpg" alt="dewalt"/></a></li>
+            <li className="slider-section"><a href="/sintesolda"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647548/Icon/logo_sintesolda_gk9ozf.jpg" alt="sintesolda"/></a></li>
+            <li className="slider-section"><a href="/argos"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647556/Icon/logo_argos_wslcue.jpg" alt="argos"/></a></li>
+            <li className="slider-section"><a href="#"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647545/Icon/logo_corona_qxyl4k.png" alt="corona"/></a></li>
+            <li className="slider-section"><a href="#"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647557/Icon/logo_celta_xqdppz.png" alt="celta"/></a></li>
+            <li className="slider-section"><a href="/rioplast"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647548/Icon/logo_rioplast_ozfcdp.jpg" alt="rioplast"/></a></li>
+            <li className="slider-section"><a href="#"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647547/Icon/logo_legrand_c2vux6.jpg" alt="legrand"/></a></li>
+            <li className="slider-section"><a href="#"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647548/Icon/logo_pegaucho_zormad.jpg" alt="pegaucho"/></a></li>
+            <li className="slider-section"><a href="#"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647548/Icon/logo_stanley_fzaxig.png" alt="stanley"/></a></li>
+            <li className="slider-section"><a href="/lufkin-crescent"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647546/Icon/logo_crescent_q2auc5.png" alt="crescent"/></a></li>
         </ul>
 
 
@@ -221,7 +221,7 @@ export const HomeScreen = () => {
 
 <div className="celular">
       <div class="celular-img-content">
-          <img class="celular-img" src="./img/Icons/celular_3.jpg" alt="phone"/>
+          <img class="celular-img" src="https://res.cloudinary.com/casaforte/image/upload/v1622647549/Icon/celular_3_wddccv.jpg" alt="phone"/>
       </div>
     
 <div className="descaga-app">
@@ -233,10 +233,10 @@ export const HomeScreen = () => {
 <br/>
 <br/>
 <ul>
-    <li><a href="#"><img class="ul-img" src="./img/Icons/disponible-en-google-play-badge-1.png" alt="android"/></a></li>
+    <li><a href="#"><img class="ul-img" src="https://res.cloudinary.com/casaforte/image/upload/v1622647551/Icon/disponible-en-google-play-badge-1_yfccua.png" alt="android"/></a></li>
 </ul>
 <ul>
-   <li><a href="#"><img class="ul-img" src="./img/Icons/logo-apple-store-e1587126330625.png" alt="appstore"/></a></li>
+   <li><a href="#"><img class="ul-img" src="https://res.cloudinary.com/casaforte/image/upload/v1622647548/Icon/logo-apple-store-e1587126330625_ysijwv.png" alt="appstore"/></a></li>
 </ul>
 </div>
     

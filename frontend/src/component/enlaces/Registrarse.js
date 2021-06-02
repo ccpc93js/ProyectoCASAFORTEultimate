@@ -152,7 +152,7 @@ const compraExitosahandler = () =>{
            </i>
         </button>
         <div className="Modal-compraExitosa__img">
-        <img className="mensajeRegistro-img" src='/img/Icons/Check_Circle.png' alt="Check_Circle"/>
+        <img className="mensajeRegistro-img" src='https://res.cloudinary.com/casaforte/image/upload/v1622647550/Icon/Check_Circle_vtpbrp.jpg' alt="Check_Circle"/>
         </div>
         <p className="Modal-mensajeRegistro">
         Tu registro a sido exitoso nos contactaremos contigo!

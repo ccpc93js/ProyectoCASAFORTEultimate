@@ -55,12 +55,13 @@ export default function PlaceOrderScreen(props) {
                         <li>
                             <div className="card card-body ">
                                 <h2><strong>Envio</strong> </h2>
-                               <h3>
-                                    <strong>Nombre:</strong>{cart.shippingAddress.fullName}<br/>
-                                    <strong>Direccion:</strong> {cart.shippingAddress.address},
-                                    {cart.shippingAddress.city}, {cart.shippingAddress.postalCode},
-                                    {cart.shippingAddress.country}
-                               </h3>
+                                <h3 className="envioINfo">
+                                  <p> {cart.shippingAddress.fullName}</p>
+                                  <p> {cart.shippingAddress.address}</p>
+                                  <p>{cart.shippingAddress.city}</p>
+                                  <p>{cart.shippingAddress.postalCode}</p>
+                                  <p>{cart.shippingAddress.country}</p>
+                                </h3>
 
                             </div>
                         </li>

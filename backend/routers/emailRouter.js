@@ -52,7 +52,35 @@ emailRouter.post("/contactenos", (req,res) =>{
 emailRouter.post("/registrarse", (req,res) =>{
     nodemailer.createTestAccount((err, account)=>{
         const htmlEmail = `
-            <h2>Ferreteria Casa forte</h2>
+
+
+        <div  class="CE-container" style="
+        margin: 0;
+        padding: 0;
+        text-decoration:none;
+        list-style:none;
+        box-sizing:border-box;
+        text-align:center;
+        color: #afadad;
+
+        ">
+          
+        <div class="CE__mensaje-container" style="
+        margin:auto;
+        margin-top:3rem;
+       /* display: flex;
+        flex-direction:column;
+        justify-content:center;*/
+        margin-bottom:30px;
+        ">
+          <div class="CE__title" style="
+          margin-bottom:30px;
+          text-align:center;
+
+          ">
+
+            <h2 >Ferreteria Casa forte</h2>
+          </div>
             <div  class="CE__img" style="
             margin-bottom:30px;
             text-align:center;
@@ -66,15 +94,20 @@ emailRouter.post("/registrarse", (req,res) =>{
               "/>
             </div>
             <br></br>
-                <p>
+            <p  style="
+            text-align:center;
+            font-size:20px;
+            ">
                 
                estimado ${req.body.name} con correo  ${req.body.email} le damos la bienvenidad a ferreteria casa forte
                 <br></br>
                 pronto nos contactaremos con usted para validar el registro!
 
-               
-
                 </p>
+          </div>
+          </div>
+
+
 
             
 
@@ -113,6 +146,25 @@ emailRouter.post("/registrarse", (req,res) =>{
         });
 
         const htmlEmailCasaForte = `
+        <div  class="CE-container" style="
+        margin: 0;
+        padding: 0;
+        text-decoration:none;
+        list-style:none;
+        box-sizing:border-box;
+        text-align:center;
+        color: #afadad;
+
+        ">
+          
+        <div class="CE__mensaje-container" style="
+        margin:auto;
+        margin-top:3rem;
+       /* display: flex;
+        flex-direction:column;
+        justify-content:center;*/
+        margin-bottom:30px;
+        ">
 
         <div  class="CE__img" style="
         margin-bottom:30px;
@@ -126,9 +178,19 @@ emailRouter.post("/registrarse", (req,res) =>{
 
           "/>
         </div>
+        <div class="CE__title" style="
+        margin-bottom:30px;
+        text-align:center;
+
+        ">
+
         <h3>Email enviado desde registrarse Casaforte</h3>
+        </div>
         <br></br>
-            <p>
+        <p  style="
+        text-align:center;
+        font-size:20px;
+        ">
             
            el usuario ${req.body.name} con correo  ${req.body.email} ha sido registrado para su validacion y creacion de usuario
             <br></br>
@@ -139,6 +201,8 @@ emailRouter.post("/registrarse", (req,res) =>{
             </p>
 
         
+            </div>
+            </div>
 
 
     `;
@@ -315,7 +379,7 @@ emailRouter.post("/compraExitosa", (req,res) =>{
         list-style:none;
         box-sizing:border-box;
         text-align:center;
-        color: #afadad;
+        color: #a09d9d;
 
         ">
           
@@ -326,6 +390,8 @@ emailRouter.post("/compraExitosa", (req,res) =>{
         flex-direction:column;
         justify-content:center;*/
         margin-bottom:30px;
+        color: #a09d9d;
+
         ">
           <div class="CE__title" style="
           margin-bottom:30px;
@@ -333,8 +399,10 @@ emailRouter.post("/compraExitosa", (req,res) =>{
 
           ">
 
-            <h2 >Ferreteria Casa forte</h2>
-          </div>
+            <h2 style=" 
+            color: #a09d9d;
+            ">Ferreteria Casa forte</h2>
+            </div>
 
             <div  class="CE__img" style="
             margin-bottom:30px;
@@ -356,6 +424,8 @@ emailRouter.post("/compraExitosa", (req,res) =>{
             <p  style="
             text-align:center;
             font-size:20px;
+            color: #a09d9d;
+
             ">
             ${req.body.name}<br />
               Compra exitosa, gracias por su compra! <br /> 
@@ -372,7 +442,7 @@ emailRouter.post("/compraExitosa", (req,res) =>{
             <p style="
              font-size: 20px;
             
-            "> Pedido {req.body.order}</p>
+            "> Pedido ${req.body.order}</p>
             </div>
 
 
@@ -382,7 +452,7 @@ emailRouter.post("/compraExitosa", (req,res) =>{
 
             ">
 
-            <a   href="https://casaforte.herokuapp.com/order/ued1yAkio" style="
+            <a   href="https://casaforte.herokuapp.com/order/${req.body.order}" style="
             border: solid 2px #2c2c3d ;
             border-radius: 4px;
             background: #2c2c3d;
@@ -718,62 +788,102 @@ emailRouter.post("/compraExitosa", (req,res) =>{
         });
 
 
-    //     const htmlEmailCasaForte = `
-    //     <h3>Email enviado desde pedidos Casaforte</h3>
-    // <div  class="CE__img" style="
-    // margin-bottom:30px;
-    // text-align:center;
+        const htmlEmailCasaForte = `
 
-    // ">
-    //   <img  class="CE__casaforte" src="https://res.cloudinary.com/casaforte/image/upload/v1622590008/Icon/LOGO_CASA_FORTE_yhb1dx.png" alt="casaforte"  style="
-    //   width:18rem;
-    //   margin-top:2rem;
-    //   text-align:center;
+        <div  class="CE-container" style="
+        margin: 0;
+        padding: 0;
+        text-decoration:none;
+        list-style:none;
+        box-sizing:border-box;
+        text-align:center;
+        color: #afadad;
 
-    //   "/>
-    // </div>
-    //     <br></br>
-    //         <p>
+        ">
+          
+        <div class="CE__mensaje-container" style="
+        margin:auto;
+        margin-top:3rem;
+       /* display: flex;
+        flex-direction:column;
+        justify-content:center;*/
+        margin-bottom:30px;
+        ">
+
+
+        <div class="CE__title" style="
+        margin-bottom:30px;
+        text-align:center;
+
+        ">
+
+        <h3 style=" 
+          color: #a09d9d;
+          ">
+          Email enviado desde pedidos Casaforte
+          </h3>
+          </div>
+    <div  class="CE__img" style="
+    margin-bottom:30px;
+    text-align:center;
+
+    ">
+      <img  class="CE__casaforte" src="https://res.cloudinary.com/casaforte/image/upload/v1622590008/Icon/LOGO_CASA_FORTE_yhb1dx.png" alt="casaforte"  style="
+      width:18rem;
+      margin-top:2rem;
+      text-align:center;
+
+      "/>
+    </div>
+        <br></br>
+        <p style="
+        font-size: 20px;
+       
+       "> 
             
-    //        el usuario ${req.body.name} con correo  ${req.body.email} ha realizado una compra!
-    //         <br></br>
-    //         validar compra para realizar entrega!
+           el usuario ${req.body.name} con correo  ${req.body.email} ha realizado una compra!
+            <br></br>
+            validar compra para realizar entrega!
+            <br></br>
+            ID pedido:${req.body.order}
             
 
            
 
-    //         </p>
+            </p>
 
+    </div>
+    </div>
         
 
 
-    // `;
+    `;
 
-    //     let transporterCasaForte = nodemailer.createTransport({
-    //         host: "smtp.gmail.com",
-    //         port:587,
-    //         auth:{
-    //             user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
-    //             pass:"erzbjbjocftugsgo"// la contraseña dedicho SMTP
-    //         }
-    //     });
+        let transporterCasaForte = nodemailer.createTransport({
+            host: "smtp.gmail.com",
+            port:587,
+            auth:{
+                user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
+                pass:"erzbjbjocftugsgo"// la contraseña dedicho SMTP
+            }
+        });
 
-    //     let mailOptionsCasaForte = {
-    //         form:"ferreteriacasaforte@gmail.com", //quien manda el email
-    //         to: "ferreteriacasaforte@gmail.com",// el email de destino
-    //         replyTo: "ferreteriacasaforte@gmail.com",
-    //         subject: "compra exitosa verificar", // el asunto del email
-    //         text: "compra exitosa verificar", // el mensaje
-    //         html: htmlEmailCasaForte // la parte del HTML del email
-    //     };
+        let mailOptionsCasaForte = {
+            form:"ferreteriacasaforte@gmail.com", //quien manda el email
+            to: "ferreteriacasaforte@gmail.com",// el email de destino
+            replyTo: "ferreteriacasaforte@gmail.com",
+            subject: "compra exitosa verificar", // el asunto del email
+            text: "compra exitosa verificar", // el mensaje
+            html: htmlEmailCasaForte // la parte del HTML del email
+        };
 
-    //     transporterCasaForte.sendMail(mailOptionsCasaForte,(err,info)=>{
-    //         if(err){
-    //             return console.log(err);
-    //         }
-    //         console.log("Mensaje enviado: %s", info.mensaje);
-    //         console.log("Url del mensaje: %s", nodemailer.getTestMessageUrl(info));
-    //     });
+        transporterCasaForte.sendMail(mailOptionsCasaForte,(err,info)=>{
+            if(err){
+                return console.log(err);
+            }
+            console.log("Mensaje enviado: %s", info.mensaje);
+            console.log("Url del mensaje: %s", nodemailer.getTestMessageUrl(info));
+        });
 
        
     });

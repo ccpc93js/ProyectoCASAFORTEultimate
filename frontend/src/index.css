@@ -325,7 +325,7 @@ left: 0;
 #slid {
   width: 100%;
   height: 100px;
-  background-image: url(slidermarcas.png);
+  background-image: url(https://res.cloudinary.com/casaforte/image/upload/v1622647555/Icon/slidermarcas_tki2qk.png);
   background-size: 100% 100%;
   
   animation: slid 20s infinite linear;

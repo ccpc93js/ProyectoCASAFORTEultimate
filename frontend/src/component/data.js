@@ -229,14 +229,14 @@ const data = {
             "_id":"",
             "categoria":["abrasivos","accesorios-para-herramientas"],
             "subcategoria":["lijas-y-telas-recubiertas","discos-abrasivos"],
-            "img":"/img/Icons/Logo_Abracol.png",
+            "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647555/Icon/Logo_Abracol_sycors.png",
             "nombre":"ABRACOL"
           },
           {
             "_id":"",
             "categoria":["cerrajeria"],
             "subcategoria":["cerrojos"],
-            "img":"/img/Icons/logo_induma.png",
+            "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647547/Icon/logo_induma_nooicg.png",
             "nombre":"INDUMA"
           },
 
@@ -244,40 +244,40 @@ const data = {
             "_id":"",
             "categoria":["electricos"],
             "subcategoria":["cajas-y-electricos"],
-            "img":"/img/Icons/Logo_Ciles.png",
+            "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647557/Icon/Logo_Ciles_b00dsy.jpg",
             "nombre":"CILES"
           },
           {
             "_id":"",
             "categoria":["griferia-y-plomeria"],
             "subcategoria":["soluciones-para-cocinas"],
-            "img":"/img/Icons/Logo_Grival.jpg",
+            "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647547/Icon/Logo_Grival_kzpccn.jpg",
             "nombre":"GRIVAL"
           },
           {
             "_id":"",
             "categoria":["herramientas-manuales"],
             "subcategoria":["herramientas-manuales-de-corte"],
-            "img":"/img/Icons/nicholson.png",
+            "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647552/Icon/nicholson_nf4poe.png",
             "nombre":"NICHOLSON"
           },
           {
             "_id":"",
             "categoria":["abrasivos","griferia-y-plomeria"],
             "subcategoria":["soluciones-para-baños","duchas","solucciones-para-el-hogar"],
-            "img":"/img/Icons/logo_rioplast.jpg",
+            "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647548/Icon/logo_rioplast_ozfcdp.jpg",
             "nombre":"RIOPLAST"
           },
           {
             "categoria":["pegantes-y-adhesivos"],
             "subcategoria":["pegantes-para-construcción"],
-            "img":"/img/Icons/logo_sintesolda.jpg",
+            "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647548/Icon/logo_sintesolda_gk9ozf.jpg",
             "nombre":"SINTESOLDA"
           },
           {
             "categoria":["pinturas"],
             "subcategoria":["herramientas-para-pintar"],
-            "img":"/img/Icons/logo_goya.jpg",
+            "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647546/Icon/logo_goya_baszig.jpg",
             "nombre":"GOYA"
           },
           {
@@ -291,21 +291,21 @@ const data = {
             "_id":"2",
             "categoria":["accesorios-para-herramientas"],
             "subcategoria":["discos-abrasivos","discos-de-metal"],
-            "img":"/img/Icons/logo_dewalt.jpg",
+            "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647546/Icon/logo_dewalt_tyfryk.jpg",
             "nombre":"DEWALT"
           },
           {
             "_id":"3",
             "categoria":["pegantes-y-adhesivos"],
             "subcategoria":["siliconas-y-selladores"],
-            "img":"img/ICons/logo-pegadit.jpg",
+            "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647550/Icon/logo-pegadit_tr1r0l.jpg",
             "nombre":"PEGADIT"
           },
           {
             "_id":"4",
             "categoria":["cerrajeria"],
             "subcategoria":["candados"],
-            "img":"/img/Icons/logo_egret.png",
+            "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647546/Icon/logo_egret_btyjyo.png",
             "nombre":"EGRET"
           },
           {
@@ -326,7 +326,7 @@ const data = {
             "_id":"7",
             "categoria":["abrasivos","amarres","electricos","accesorios-para-herramientas","griferia-y-plomeria","herramientas-manuales","herramientas-manuales"],
             "subcategoria":["amarres-plasticos","amarres-para-tejas","candados","plafones-y-rosetas","siliconas-y-selladores","albañileria-y-construcción","limas-y-escofinas","jardin-y-exteriores","tornillos","chazos-metalicos","herramientas-de-acabados","discos-abrasivos"],
-            "img":"/img/Icons/logo_multimarcas.png",
+            "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647547/Icon/logo_multimarcas_rbh3ra.png",
             "nombre":"MULTIMARCA"
           },
 
@@ -334,7 +334,7 @@ const data = {
             "_id":"8",
             "categoria":["electricos"],
             "subcategoria":["enchufes-y-clavijas","tomas-e-interruptores"],
-            "img":"/img/Icons/logo_codelca.png",
+            "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647557/Icon/logo_codelca_e4j6nc.png",
             "nombre":"CODELCA"
           },
 
@@ -342,7 +342,7 @@ const data = {
             "_id":"9",
             "categoria":["electricos"],
             "subcategoria":["breakers"],
-            "img":"/img/Icons/logo_luminex.png",
+            "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647547/Icon/logo_luminex_gubbhb.gif",
             "nombre":"LUMINEX"
           },
      
@@ -350,28 +350,28 @@ const data = {
             "_id":"10",
             "categoria":["herramientas-manuales"],
             "subcategoria":["herramientas-de-medición"],
-            "img":"/img/Icons/crescent-lufkin-logo.png",
+            "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647552/Icon/crescent-lufkin-logo_ilqvcu.webp",
             "nombre":"LUFKIN-CRESCENT"
           },
           {
             "_id":"11",
           "categoria":["herramientas-manuales"],
           "subcategoria":["pinzas-y-alicates"],
-          "img":"/img/Icons/logo_crescent.png",
+          "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647546/Icon/logo_crescent_q2auc5.png",
           "nombre":"CRESCENT"
           },
           {
             "_id":"12",
           "categoria":["herramientas-manuales"],
           "subcategoria":["chazos-en-nylon"],
-          "img":"/img/Icons/fmt.png",
+          "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647555/Icon/fmt_u8fbxn.png",
           "nombre":"FMT"
           },
           {
             "_id":"13",
           "categoria":["construccion"],
           "subcategoria":["cementos"],
-          "img":"/img/Icons/logo_argos.jpg",
+          "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647556/Icon/logo_argos_wslcue.jpg",
           "nombre":"ARGOS"
           },
         //   {

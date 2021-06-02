@@ -96,7 +96,7 @@ export const NavBar = (props) => {
 
             </button>
 
-            <a className="casaforte-a" href="/" aria-label="inicio"><img className="casaforte" src='/img/Icons/LOGO_CASA_FORTE.png' alt="casaforte"/></a>
+            <a className="casaforte-a" href="/" aria-label="inicio"><img className="casaforte" src='https://res.cloudinary.com/casaforte/image/upload/v1622590008/Icon/LOGO_CASA_FORTE_yhb1dx.png' alt="casaforte"/></a>
             <div className="carrito " >
                 <i className="divSearch" aria-label="buscar" alt="buscar">
 
