@@ -57,9 +57,9 @@ export const createProduct = () => async (dispatch, getState) => {
     const { data } = await Axios.post(
       '/api/productos',
       {},
-      {
-        headers: { Authorization: `Bearer ${userInfo.token}` },
-      }
+      // {
+      //   headers: { Authorization: `Bearer ${userInfo.token}` },
+      // }
     );
     dispatch({
       type: PRODUCT_CREATE_SUCCESS,
@@ -79,9 +79,11 @@ export const updateProduct = (producto) => async (dispatch, getState) => {
     userSignin: { userInfo },
   } = getState();
   try {
-    const { data } = await Axios.put(`/api/productos/${producto._id}`, producto, {
-      headers: { Authorization: `Bearer ${userInfo.token}` },
-    });
+    const { data } = await Axios.put(`/api/productos/${producto._id}`, producto, 
+    // {
+    //   headers: { Authorization: `Bearer ${userInfo.token}` },
+    // }
+    );
     dispatch({ type: PRODUCT_UPDATE_SUCCESS, payload: data });
   } catch (error) {
     const message =
@@ -97,9 +99,11 @@ export const deleteProduct = (productId) => async (dispatch, getState) => {
     userSignin: { userInfo },
   } = getState();
   try {
-    const { data} = Axios.delete(`/api/productos/${productId}`, {
-      headers: { Authorization: `Bearer ${userInfo.token}` },
-    });
+    const { data} = Axios.delete(`/api/productos/${productId}`, 
+    // {
+    //   headers: { Authorization: `Bearer ${userInfo.token}` },
+    // }
+    );
     dispatch({ type: PRODUCT_DELETE_SUCCESS });
   } catch (error) {
     const message =
