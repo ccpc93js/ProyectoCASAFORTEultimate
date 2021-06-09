@@ -173,11 +173,9 @@ export const updateUser = (user) => async (dispatch, getState) => {
     userSignin: { userInfo },
   } = getState();
   try {
-    const { data } = await Axios.put(`/api/users/${user._id}`, user,
-    //  {
-    //   headers: { Authorization: `Bearer ${userInfo.token}` },
-    // }
-    );
+    const { data } = await Axios.put(`/api/users/${user._id}`, user, {
+      headers: { Authorization: `Bearer ${userInfo.token}` },
+    });
     dispatch({ type: USER_UPDATE_SUCCESS, payload: data });
   } catch (error) {
     const message =
@@ -193,13 +191,11 @@ export const listUsers = () => async (dispatch, getState) => {
     const {
       userSignin: { userInfo },
     } = getState();
-    const { data } = await Axios.get('/api/users',
-    //  {
-    //   headers: {
-    //     Authorization: `Bearer ${userInfo.token}`,
-    //   },
-    // }
-    );
+    const { data } = await Axios.get('/api/users', {
+      headers: {
+        Authorization: `Bearer ${userInfo.token}`,
+      },
+    });
     dispatch({ type: USER_LIST_SUCCESS, payload: data });
   } catch (error) {
     const message =
@@ -216,13 +212,11 @@ export const listUsersRegistered = () => async (dispatch, getState) => {
     const {
       userSignin: { userInfo },
     } = getState();
-    const { data } = await Axios.get('/api/usersInfo', 
-    // {
-    //   headers: {
-    //     Authorization: `Bearer ${userInfo.token}`,
-    //   },
-    // }
-    );
+    const { data } = await Axios.get('/api/usersInfo', {
+      headers: {
+        Authorization: `Bearer ${userInfo.token}`,
+      },
+    });
     dispatch({ type: USER_LIST_SUCCESS, payload: data });
   } catch (error) {
     const message =
@@ -239,11 +233,9 @@ export const deleteUser = (userId) => async (dispatch, getState) => {
     userSignin: { userInfo },
   } = getState();
   try {
-    const { data } = await Axios.delete(`/api/users/${userId}`, 
-    // {
-    //   headers: { Authorization: `Bearer ${userInfo.token}` },
-    // }
-    );
+    const { data } = await Axios.delete(`/api/users/${userId}`, {
+      headers: { Authorization: `Bearer ${userInfo.token}` },
+    });
     dispatch({ type: USER_DELETE_SUCCESS, payload: data });
   } catch (error) {
     const message =
@@ -260,11 +252,9 @@ export const deleteUserInfo = (userInfoId) => async (dispatch, getState) => {
     userSignin: { userInfo },
   } = getState();
   try {
-    const { data } = await Axios.delete(`/api/usersInfo/${userInfoId}`,
-    //  {
-    //   headers: { Authorization: `Bearer ${userInfo.token}` },
-    // }
-    );
+    const { data } = await Axios.delete(`/api/usersInfo/${userInfoId}`, {
+      headers: { Authorization: `Bearer ${userInfo.token}` },
+    });
     dispatch({ type: USER_DELETE_SUCCESS, payload: data });
   } catch (error) {
     const message =

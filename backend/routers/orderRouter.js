@@ -8,8 +8,8 @@ const orderRouter = express.Router();
 
 orderRouter.get(
   '/Admin',
-  // isAuth,
-  // isAdmin,
+  isAuth,
+  isAdmin,
   expressAsyncHandler(async (req, res) => {
     const orders = await Order.find({}).populate(
       'user',
@@ -23,7 +23,7 @@ orderRouter.get(
 
 orderRouter.get(
   '/mine',
-  // isAuth,
+  isAuth,
   expressAsyncHandler(async (req, res) => {
     const orders = await Order.find({ user: req.user._id });
     res.send(orders);
@@ -32,7 +32,7 @@ orderRouter.get(
 
 orderRouter.post(
     '/',
-    // isAuth,
+    isAuth,
     expressAsyncHandler(async (req, res) => {
       if (req.body.orderItems.length === 0) {
         res.status(400).send({ message: 'Carrito vacio' });
@@ -59,7 +59,7 @@ orderRouter.post(
 
 orderRouter.get(
   '/:id',
-  // isAuth,
+  isAuth,
   expressAsyncHandler(async (req, res) => {
     const order = await Order.findById(req.params.id);
     if (order) {
@@ -74,7 +74,7 @@ orderRouter.get(
 
 orderRouter.put(
   '/:id/pay',
-  // isAuth,
+  isAuth,
   expressAsyncHandler(async (req, res) => {
     const order = await Order.findById(req.params.id)
     if (order) {
@@ -96,8 +96,8 @@ orderRouter.put(
 
 orderRouter.delete(
   '/:id',
-  // isAuth,
-  // isAdmin,
+  isAuth,
+  isAdmin,
   expressAsyncHandler(async (req, res) => {
     const order = await Order.findById(req.params.id);
     if (order) {
@@ -111,8 +111,8 @@ orderRouter.delete(
 
 orderRouter.put(
   '/:id/deliver',
-  // isAuth,
-  // isAdmin,
+  isAuth,
+  isAdmin,
   expressAsyncHandler(async (req, res) => {
     const order = await Order.findById(req.params.id);
     if (order) {
@@ -129,8 +129,8 @@ orderRouter.put(
 
 orderRouter.get(
   '/summary',
-  // isAuth,
-  // isAdmin,
+  isAuth,
+  isAdmin,
   expressAsyncHandler(async (req, res) => {
     const orders = await Order.aggregate([
       {
