@@ -1,0 +1,942 @@
+Microsoft Windows [Versión 10.0.19042.985]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\ujuaj>ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\ujuaj/.ssh/id_rsa):
+Created directory 'C:\Users\ujuaj/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in C:\Users\ujuaj/.ssh/id_rsa.
+Your public key has been saved in C:\Users\ujuaj/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:R3EcyKaF4YSdxduzReP0J1fG1mT3rZR5OIlr6aZFBAc ujuaj@DESKTOP-29UOB9R
+The key's randomart image is:
++---[RSA 3072]----+
+|       ooBE++. o=|
+|      .o+ *=..+*X|
+|        .+.oo+B==|
+|        ....o++++|
+|        S . =+.o.|
+|         . +.    |
+|            +    |
+|           +     |
+|          .      |
++----[SHA256]-----+
+
+C:\Users\ujuaj>ssh root@
+ssh: connect to host  port 22: Connection refused
+
+C:\Users\ujuaj>ssh root@165.232.131.139
+The authenticity of host '165.232.131.139 (165.232.131.139)' can't be established.
+ECDSA key fingerprint is SHA256:9rAYi2uS25QuYOHC4CprUzQwb+LZumTgh1lNuHtitO8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '165.232.131.139' (ECDSA) to the list of known hosts.
+root@165.232.131.139's password:
+Permission denied, please try again.
+root@165.232.131.139's password:
+Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-73-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Tue Jun  8 21:25:07 UTC 2021
+
+  System load:  0.0               Users logged in:       0
+  Usage of /:   5.8% of 24.06GB   IPv4 address for eth0: 165.232.131.139
+  Memory usage: 18%               IPv4 address for eth0: 10.48.0.5
+  Swap usage:   0%                IPv4 address for eth1: 10.124.0.2
+  Processes:    98
+
+16 updates can be applied immediately.
+5 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+root@casaforte:~# sudo apt update
+Get:1 http://mirrors.digitalocean.com/ubuntu focal InRelease [265 kB]
+Get:2 http://mirrors.digitalocean.com/ubuntu focal-updates InRelease [114 kB]
+Get:3 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:4 http://mirrors.digitalocean.com/ubuntu focal-backports InRelease [101 kB]
+Get:5 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 Packages [1026 kB]
+Get:6 http://mirrors.digitalocean.com/ubuntu focal-updates/main Translation-en [229 kB]
+Get:7 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 c-n-f Metadata [13.5 kB]
+Get:8 http://mirrors.digitalocean.com/ubuntu focal-updates/restricted amd64 Packages [266 kB]
+Get:9 http://mirrors.digitalocean.com/ubuntu focal-updates/restricted Translation-en [38.9 kB]
+Get:10 http://mirrors.digitalocean.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [456 B]
+Get:11 http://mirrors.digitalocean.com/ubuntu focal-updates/universe amd64 Packages [781 kB]
+Get:12 http://mirrors.digitalocean.com/ubuntu focal-updates/universe Translation-en [170 kB]
+Get:13 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [702 kB]
+Get:14 http://mirrors.digitalocean.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [17.6 kB]
+Get:15 http://mirrors.digitalocean.com/ubuntu focal-updates/multiverse amd64 Packages [23.6 kB]
+Get:16 http://mirrors.digitalocean.com/ubuntu focal-updates/multiverse Translation-en [6376 B]
+Get:17 http://mirrors.digitalocean.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [648 B]
+Get:18 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [141 kB]
+Get:19 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [7780 B]
+Get:20 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [247 kB]
+Get:21 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [36.1 kB]
+Get:22 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [456 B]
+Get:23 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [588 kB]
+Get:24 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [94.6 kB]
+Get:25 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [11.5 kB]
+Get:26 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [19.9 kB]
+Fetched 5015 kB in 1s (3804 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+47 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@casaforte:~# sudo apt upgrade
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Calculating upgrade... Done
+The following NEW packages will be installed:
+  linux-headers-5.4.0-74 linux-headers-5.4.0-74-generic linux-image-5.4.0-74-generic linux-modules-5.4.0-74-generic
+The following packages will be upgraded:
+  apport grub-common grub-efi-amd64-bin grub-efi-amd64-signed grub-pc grub-pc-bin grub2-common initramfs-tools
+  initramfs-tools-bin initramfs-tools-core isc-dhcp-client isc-dhcp-common liblz4-1 libpam-modules libpam-modules-bin
+  libpam-runtime libpam0g libpolkit-agent-1-0 libpolkit-gobject-1-0 libpython3.8 libpython3.8-minimal
+  libpython3.8-stdlib libssl1.1 libx11-6 libx11-data linux-headers-generic linux-headers-virtual linux-image-virtual
+  linux-virtual lz4 open-vm-tools openssl policykit-1 python-apt-common python3-apport python3-apt python3-distupgrade
+  python3-distutils python3-gdbm python3-lib2to3 python3-problem-report python3.8 python3.8-minimal snapd sosreport
+  ubuntu-release-upgrader-core update-notifier-common
+47 upgraded, 4 newly installed, 0 to remove and 0 not upgraded.
+Need to get 83.3 MB of archives.
+After this operation, 183 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libpam0g amd64 1.3.1-5ubuntu4.2 [55.4 kB]
+Get:2 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libpam-modules-bin amd64 1.3.1-5ubuntu4.2 [41.2 kB]
+Get:3 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libpam-modules amd64 1.3.1-5ubuntu4.2 [260 kB]
+Get:4 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libpython3.8 amd64 3.8.5-1~20.04.3 [1624 kB]
+Get:5 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 python3-lib2to3 all 3.8.10-0ubuntu1~20.04 [76.3 kB]
+Get:6 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 python3-distutils all 3.8.10-0ubuntu1~20.04 [141 kB]
+Get:7 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libssl1.1 amd64 1.1.1f-1ubuntu2.4 [1319 kB]
+Get:8 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 python3.8 amd64 3.8.5-1~20.04.3 [373 kB]
+Get:9 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libpython3.8-stdlib amd64 3.8.5-1~20.04.3 [1671 kB]
+Get:10 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 python3.8-minimal amd64 3.8.5-1~20.04.3 [1897 kB]Get:11 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libpython3.8-minimal amd64 3.8.5-1~20.04.3 [715 kB]
+Get:12 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 python-apt-common all 2.0.0ubuntu0.20.04.5 [17.1 kB]
+Get:13 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 python3-apt amd64 2.0.0ubuntu0.20.04.5 [154 kB]
+Get:14 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 update-notifier-common all 3.192.30.8 [132 kB]
+Get:15 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 lz4 amd64 1.9.2-2ubuntu0.20.04.1 [82.7 kB]
+Get:16 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 liblz4-1 amd64 1.9.2-2ubuntu0.20.04.1 [56.1 kB]
+Get:17 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libpam-runtime all 1.3.1-5ubuntu4.2 [37.3 kB]
+Get:18 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 isc-dhcp-client amd64 4.4.1-2.1ubuntu5.20.04.2 [246 kB]
+Get:19 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 isc-dhcp-common amd64 4.4.1-2.1ubuntu5.20.04.2 [44.9 kB]
+Get:20 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 openssl amd64 1.1.1f-1ubuntu2.4 [620 kB]
+Get:21 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 policykit-1 amd64 0.105-26ubuntu1.1 [84.1 kB]
+Get:22 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libpolkit-agent-1-0 amd64 0.105-26ubuntu1.1 [15.2 kB]
+Get:23 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libpolkit-gobject-1-0 amd64 0.105-26ubuntu1.1 [39.5 kB]
+Get:24 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libx11-data all 2:1.6.9-2ubuntu1.2 [113 kB]
+Get:25 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libx11-6 amd64 2:1.6.9-2ubuntu1.2 [575 kB]
+Get:26 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 ubuntu-release-upgrader-core all 1:20.04.33 [23.8 kB]
+Get:27 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 python3-distupgrade all 1:20.04.33 [104 kB]
+Get:28 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 python3-gdbm amd64 3.8.10-0ubuntu1~20.04 [15.2 kB]
+Get:29 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 grub-pc amd64 2.04-1ubuntu26.12 [125 kB]
+Get:30 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 grub2-common amd64 2.04-1ubuntu26.12 [591 kB]
+Get:31 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 grub-pc-bin amd64 2.04-1ubuntu26.12 [971 kB]
+Get:32 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 grub-common amd64 2.04-1ubuntu26.12 [1875 kB]
+Get:33 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 python3-problem-report all 2.20.11-0ubuntu27.18 [9808 B]
+Get:34 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 python3-apport all 2.20.11-0ubuntu27.18 [85.3 kB]Get:35 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 apport all 2.20.11-0ubuntu27.18 [129 kB]
+Get:36 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 grub-efi-amd64-signed amd64 1.167.2+2.04-1ubuntu44.2 [482 kB]
+Get:37 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 grub-efi-amd64-bin amd64 2.04-1ubuntu44.2 [729 kB]
+Get:38 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 initramfs-tools all 0.136ubuntu6.5 [9228 B]
+Get:39 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 initramfs-tools-core all 0.136ubuntu6.5 [47.7 kB]Get:40 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 initramfs-tools-bin amd64 0.136ubuntu6.5 [11.0 kB]
+Get:41 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 linux-headers-5.4.0-74 all 5.4.0-74.83 [11.0 MB]
+Get:42 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 linux-headers-5.4.0-74-generic amd64 5.4.0-74.83 [1422 kB]
+Get:43 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 linux-modules-5.4.0-74-generic amd64 5.4.0-74.83 [14.8 MB]
+Get:44 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 linux-image-5.4.0-74-generic amd64 5.4.0-74.83 [8979 kB]
+Get:45 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 linux-virtual amd64 5.4.0.74.77 [1876 B]
+Get:46 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 linux-image-virtual amd64 5.4.0.74.77 [2548 B]
+Get:47 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 linux-headers-virtual amd64 5.4.0.74.77 [1840 B]
+Get:48 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 linux-headers-generic amd64 5.4.0.74.77 [2436 B]
+Get:49 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 snapd amd64 2.49.2+20.04 [30.6 MB]
+Get:50 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 sosreport amd64 4.1-1ubuntu0.20.04.2 [245 kB]
+Get:51 http://mirrors.digitalocean.com/ubuntu focal-updates/universe amd64 open-vm-tools amd64 2:11.2.5-2ubuntu1~ubuntu20.04.1 [604 kB]
+Fetched 83.3 MB in 3s (27.5 MB/s)
+Extracting templates from packages: 100%
+Preconfiguring packages ...
+(Reading database ... 63520 files and directories currently installed.)
+Preparing to unpack .../libpam0g_1.3.1-5ubuntu4.2_amd64.deb ...
+Unpacking libpam0g:amd64 (1.3.1-5ubuntu4.2) over (1.3.1-5ubuntu4.1) ...
+Setting up libpam0g:amd64 (1.3.1-5ubuntu4.2) ...
+(Reading database ... 63520 files and directories currently installed.)
+Preparing to unpack .../libpam-modules-bin_1.3.1-5ubuntu4.2_amd64.deb ...
+Unpacking libpam-modules-bin (1.3.1-5ubuntu4.2) over (1.3.1-5ubuntu4.1) ...
+Setting up libpam-modules-bin (1.3.1-5ubuntu4.2) ...
+(Reading database ... 63522 files and directories currently installed.)
+Preparing to unpack .../libpam-modules_1.3.1-5ubuntu4.2_amd64.deb ...
+Unpacking libpam-modules:amd64 (1.3.1-5ubuntu4.2) over (1.3.1-5ubuntu4.1) ...
+Setting up libpam-modules:amd64 (1.3.1-5ubuntu4.2) ...
+(Reading database ... 63526 files and directories currently installed.)
+Preparing to unpack .../00-libpython3.8_3.8.5-1~20.04.3_amd64.deb ...
+Unpacking libpython3.8:amd64 (3.8.5-1~20.04.3) over (3.8.5-1~20.04.2) ...
+Preparing to unpack .../01-python3-lib2to3_3.8.10-0ubuntu1~20.04_all.deb ...
+Unpacking python3-lib2to3 (3.8.10-0ubuntu1~20.04) over (3.8.5-1~20.04.1) ...
+Preparing to unpack .../02-python3-distutils_3.8.10-0ubuntu1~20.04_all.deb ...
+Unpacking python3-distutils (3.8.10-0ubuntu1~20.04) over (3.8.5-1~20.04.1) ...
+Preparing to unpack .../03-libssl1.1_1.1.1f-1ubuntu2.4_amd64.deb ...
+Unpacking libssl1.1:amd64 (1.1.1f-1ubuntu2.4) over (1.1.1f-1ubuntu2.3) ...
+Preparing to unpack .../04-python3.8_3.8.5-1~20.04.3_amd64.deb ...
+Unpacking python3.8 (3.8.5-1~20.04.3) over (3.8.5-1~20.04.2) ...
+Preparing to unpack .../05-libpython3.8-stdlib_3.8.5-1~20.04.3_amd64.deb ...
+Unpacking libpython3.8-stdlib:amd64 (3.8.5-1~20.04.3) over (3.8.5-1~20.04.2) ...
+Preparing to unpack .../06-python3.8-minimal_3.8.5-1~20.04.3_amd64.deb ...
+Unpacking python3.8-minimal (3.8.5-1~20.04.3) over (3.8.5-1~20.04.2) ...
+Preparing to unpack .../07-libpython3.8-minimal_3.8.5-1~20.04.3_amd64.deb ...
+Unpacking libpython3.8-minimal:amd64 (3.8.5-1~20.04.3) over (3.8.5-1~20.04.2) ...
+Preparing to unpack .../08-python-apt-common_2.0.0ubuntu0.20.04.5_all.deb ...
+Unpacking python-apt-common (2.0.0ubuntu0.20.04.5) over (2.0.0ubuntu0.20.04.4) ...
+Preparing to unpack .../09-python3-apt_2.0.0ubuntu0.20.04.5_amd64.deb ...
+Unpacking python3-apt (2.0.0ubuntu0.20.04.5) over (2.0.0ubuntu0.20.04.4) ...
+Preparing to unpack .../10-update-notifier-common_3.192.30.8_all.deb ...
+Unpacking update-notifier-common (3.192.30.8) over (3.192.30.7) ...
+Preparing to unpack .../11-lz4_1.9.2-2ubuntu0.20.04.1_amd64.deb ...
+Unpacking lz4 (1.9.2-2ubuntu0.20.04.1) over (1.9.2-2) ...
+Preparing to unpack .../12-liblz4-1_1.9.2-2ubuntu0.20.04.1_amd64.deb ...
+Unpacking liblz4-1:amd64 (1.9.2-2ubuntu0.20.04.1) over (1.9.2-2) ...
+Setting up liblz4-1:amd64 (1.9.2-2ubuntu0.20.04.1) ...
+(Reading database ... 63526 files and directories currently installed.)
+Preparing to unpack .../libpam-runtime_1.3.1-5ubuntu4.2_all.deb ...
+Unpacking libpam-runtime (1.3.1-5ubuntu4.2) over (1.3.1-5ubuntu4.1) ...
+Setting up libpam-runtime (1.3.1-5ubuntu4.2) ...
+(Reading database ... 63526 files and directories currently installed.)
+Preparing to unpack .../00-isc-dhcp-client_4.4.1-2.1ubuntu5.20.04.2_amd64.deb ...
+Unpacking isc-dhcp-client (4.4.1-2.1ubuntu5.20.04.2) over (4.4.1-2.1ubuntu5.20.04.1) ...
+Preparing to unpack .../01-isc-dhcp-common_4.4.1-2.1ubuntu5.20.04.2_amd64.deb ...
+Unpacking isc-dhcp-common (4.4.1-2.1ubuntu5.20.04.2) over (4.4.1-2.1ubuntu5.20.04.1) ...
+Preparing to unpack .../02-openssl_1.1.1f-1ubuntu2.4_amd64.deb ...
+Unpacking openssl (1.1.1f-1ubuntu2.4) over (1.1.1f-1ubuntu2.3) ...
+Preparing to unpack .../03-policykit-1_0.105-26ubuntu1.1_amd64.deb ...
+Unpacking policykit-1 (0.105-26ubuntu1.1) over (0.105-26ubuntu1) ...
+Preparing to unpack .../04-libpolkit-agent-1-0_0.105-26ubuntu1.1_amd64.deb ...
+Unpacking libpolkit-agent-1-0:amd64 (0.105-26ubuntu1.1) over (0.105-26ubuntu1) ...
+Preparing to unpack .../05-libpolkit-gobject-1-0_0.105-26ubuntu1.1_amd64.deb ...
+Unpacking libpolkit-gobject-1-0:amd64 (0.105-26ubuntu1.1) over (0.105-26ubuntu1) ...
+Preparing to unpack .../06-libx11-data_2%3a1.6.9-2ubuntu1.2_all.deb ...
+Unpacking libx11-data (2:1.6.9-2ubuntu1.2) over (2:1.6.9-2ubuntu1.1) ...
+Preparing to unpack .../07-libx11-6_2%3a1.6.9-2ubuntu1.2_amd64.deb ...
+Unpacking libx11-6:amd64 (2:1.6.9-2ubuntu1.2) over (2:1.6.9-2ubuntu1.1) ...
+Preparing to unpack .../08-ubuntu-release-upgrader-core_1%3a20.04.33_all.deb ...
+Unpacking ubuntu-release-upgrader-core (1:20.04.33) over (1:20.04.32) ...
+Preparing to unpack .../09-python3-distupgrade_1%3a20.04.33_all.deb ...
+Unpacking python3-distupgrade (1:20.04.33) over (1:20.04.32) ...
+Preparing to unpack .../10-python3-gdbm_3.8.10-0ubuntu1~20.04_amd64.deb ...
+Unpacking python3-gdbm:amd64 (3.8.10-0ubuntu1~20.04) over (3.8.5-1~20.04.1) ...
+Preparing to unpack .../11-grub-pc_2.04-1ubuntu26.12_amd64.deb ...
+Unpacking grub-pc (2.04-1ubuntu26.12) over (2.04-1ubuntu26.11) ...
+Preparing to unpack .../12-grub2-common_2.04-1ubuntu26.12_amd64.deb ...
+Unpacking grub2-common (2.04-1ubuntu26.12) over (2.04-1ubuntu26.11) ...
+Preparing to unpack .../13-grub-pc-bin_2.04-1ubuntu26.12_amd64.deb ...
+Unpacking grub-pc-bin (2.04-1ubuntu26.12) over (2.04-1ubuntu26.11) ...
+Preparing to unpack .../14-grub-common_2.04-1ubuntu26.12_amd64.deb ...
+Unpacking grub-common (2.04-1ubuntu26.12) over (2.04-1ubuntu26.11) ...
+Preparing to unpack .../15-python3-problem-report_2.20.11-0ubuntu27.18_all.deb ...
+Unpacking python3-problem-report (2.20.11-0ubuntu27.18) over (2.20.11-0ubuntu27.17) ...
+Preparing to unpack .../16-python3-apport_2.20.11-0ubuntu27.18_all.deb ...
+Unpacking python3-apport (2.20.11-0ubuntu27.18) over (2.20.11-0ubuntu27.17) ...
+Preparing to unpack .../17-apport_2.20.11-0ubuntu27.18_all.deb ...
+Unpacking apport (2.20.11-0ubuntu27.18) over (2.20.11-0ubuntu27.17) ...
+Preparing to unpack .../18-grub-efi-amd64-signed_1.167.2+2.04-1ubuntu44.2_amd64.deb ...
+Unpacking grub-efi-amd64-signed (1.167.2+2.04-1ubuntu44.2) over (1.167+2.04-1ubuntu44) ...
+Preparing to unpack .../19-grub-efi-amd64-bin_2.04-1ubuntu44.2_amd64.deb ...
+Unpacking grub-efi-amd64-bin (2.04-1ubuntu44.2) over (2.04-1ubuntu44) ...
+Preparing to unpack .../20-initramfs-tools_0.136ubuntu6.5_all.deb ...
+Unpacking initramfs-tools (0.136ubuntu6.5) over (0.136ubuntu6.4) ...
+Preparing to unpack .../21-initramfs-tools-core_0.136ubuntu6.5_all.deb ...
+Unpacking initramfs-tools-core (0.136ubuntu6.5) over (0.136ubuntu6.4) ...
+Preparing to unpack .../22-initramfs-tools-bin_0.136ubuntu6.5_amd64.deb ...
+Unpacking initramfs-tools-bin (0.136ubuntu6.5) over (0.136ubuntu6.4) ...
+Selecting previously unselected package linux-headers-5.4.0-74.
+Preparing to unpack .../23-linux-headers-5.4.0-74_5.4.0-74.83_all.deb ...
+Unpacking linux-headers-5.4.0-74 (5.4.0-74.83) ...
+Selecting previously unselected package linux-headers-5.4.0-74-generic.
+Preparing to unpack .../24-linux-headers-5.4.0-74-generic_5.4.0-74.83_amd64.deb ...
+Unpacking linux-headers-5.4.0-74-generic (5.4.0-74.83) ...
+Selecting previously unselected package linux-modules-5.4.0-74-generic.
+Preparing to unpack .../25-linux-modules-5.4.0-74-generic_5.4.0-74.83_amd64.deb ...
+Unpacking linux-modules-5.4.0-74-generic (5.4.0-74.83) ...
+Selecting previously unselected package linux-image-5.4.0-74-generic.
+Preparing to unpack .../26-linux-image-5.4.0-74-generic_5.4.0-74.83_amd64.deb ...
+Unpacking linux-image-5.4.0-74-generic (5.4.0-74.83) ...
+Preparing to unpack .../27-linux-virtual_5.4.0.74.77_amd64.deb ...
+Unpacking linux-virtual (5.4.0.74.77) over (5.4.0.73.76) ...
+Preparing to unpack .../28-linux-image-virtual_5.4.0.74.77_amd64.deb ...
+Unpacking linux-image-virtual (5.4.0.74.77) over (5.4.0.73.76) ...
+Preparing to unpack .../29-linux-headers-virtual_5.4.0.74.77_amd64.deb ...
+Unpacking linux-headers-virtual (5.4.0.74.77) over (5.4.0.73.76) ...
+Preparing to unpack .../30-linux-headers-generic_5.4.0.74.77_amd64.deb ...
+Unpacking linux-headers-generic (5.4.0.74.77) over (5.4.0.73.76) ...
+Preparing to unpack .../31-snapd_2.49.2+20.04_amd64.deb ...
+Unpacking snapd (2.49.2+20.04) over (2.48.3+20.04) ...
+Preparing to unpack .../32-sosreport_4.1-1ubuntu0.20.04.2_amd64.deb ...
+Unpacking sosreport (4.1-1ubuntu0.20.04.2) over (4.1-1ubuntu0.20.04.1) ...
+Preparing to unpack .../33-open-vm-tools_2%3a11.2.5-2ubuntu1~ubuntu20.04.1_amd64.deb ...
+Unpacking open-vm-tools (2:11.2.5-2ubuntu1~ubuntu20.04.1) over (2:11.0.5-4) ...
+Setting up snapd (2.49.2+20.04) ...
+Installing new version of config file /etc/apparmor.d/usr.lib.snapd.snap-confine.real ...
+snapd.failure.service is a disabled or a static unit, not starting it.
+snapd.snap-repair.service is a disabled or a static unit, not starting it.
+Setting up python3-gdbm:amd64 (3.8.10-0ubuntu1~20.04) ...
+Setting up python3-problem-report (2.20.11-0ubuntu27.18) ...
+Setting up libssl1.1:amd64 (1.1.1f-1ubuntu2.4) ...
+Setting up isc-dhcp-client (4.4.1-2.1ubuntu5.20.04.2) ...
+Setting up grub-common (2.04-1ubuntu26.12) ...
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+Setting up linux-modules-5.4.0-74-generic (5.4.0-74.83) ...
+Setting up linux-headers-5.4.0-74 (5.4.0-74.83) ...
+Setting up libx11-data (2:1.6.9-2ubuntu1.2) ...
+Setting up linux-image-5.4.0-74-generic (5.4.0-74.83) ...
+I: /boot/vmlinuz is now a symlink to vmlinuz-5.4.0-74-generic
+I: /boot/initrd.img is now a symlink to initrd.img-5.4.0-74-generic
+Setting up lz4 (1.9.2-2ubuntu0.20.04.1) ...
+Setting up sosreport (4.1-1ubuntu0.20.04.2) ...
+Setting up linux-headers-5.4.0-74-generic (5.4.0-74.83) ...
+Setting up python-apt-common (2.0.0ubuntu0.20.04.5) ...
+Setting up open-vm-tools (2:11.2.5-2ubuntu1~ubuntu20.04.1) ...
+Installing new version of config file /etc/vmware-tools/tools.conf.example ...
+Installing new version of config file /etc/vmware-tools/vgauth.conf ...
+Setting up libx11-6:amd64 (2:1.6.9-2ubuntu1.2) ...
+Setting up isc-dhcp-common (4.4.1-2.1ubuntu5.20.04.2) ...
+Setting up linux-image-virtual (5.4.0.74.77) ...
+Setting up grub-efi-amd64-bin (2.04-1ubuntu44.2) ...
+Setting up openssl (1.1.1f-1ubuntu2.4) ...
+Setting up python3-lib2to3 (3.8.10-0ubuntu1~20.04) ...
+Setting up libpolkit-gobject-1-0:amd64 (0.105-26ubuntu1.1) ...
+Setting up initramfs-tools-bin (0.136ubuntu6.5) ...
+Setting up python3-distutils (3.8.10-0ubuntu1~20.04) ...
+Setting up libpython3.8-minimal:amd64 (3.8.5-1~20.04.3) ...
+Setting up grub2-common (2.04-1ubuntu26.12) ...
+Setting up python3-apt (2.0.0ubuntu0.20.04.5) ...
+Setting up update-notifier-common (3.192.30.8) ...
+Setting up linux-headers-generic (5.4.0.74.77) ...
+Setting up python3-distupgrade (1:20.04.33) ...
+Setting up grub-pc-bin (2.04-1ubuntu26.12) ...
+Setting up python3-apport (2.20.11-0ubuntu27.18) ...
+Setting up grub-pc (2.04-1ubuntu26.12) ...
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/50-cloudimg-settings.cfg'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-5.4.0-74-generic
+Found linux image: /boot/vmlinuz-5.4.0-73-generic
+Found initrd image: /boot/initrd.img-5.4.0-73-generic
+done
+Setting up ubuntu-release-upgrader-core (1:20.04.33) ...
+Setting up python3.8-minimal (3.8.5-1~20.04.3) ...
+Setting up libpolkit-agent-1-0:amd64 (0.105-26ubuntu1.1) ...
+Setting up libpython3.8-stdlib:amd64 (3.8.5-1~20.04.3) ...
+Setting up initramfs-tools-core (0.136ubuntu6.5) ...
+Setting up python3.8 (3.8.5-1~20.04.3) ...
+Setting up policykit-1 (0.105-26ubuntu1.1) ...
+Setting up initramfs-tools (0.136ubuntu6.5) ...
+update-initramfs: deferring update (trigger activated)
+Setting up linux-headers-virtual (5.4.0.74.77) ...
+Setting up grub-efi-amd64-signed (1.167.2+2.04-1ubuntu44.2) ...
+Trying to migrate /boot/efi into esp config
+Unknown device "/dev/disk/by-id/*": No such file or directory
+Installing grub to /boot/efi.
+Installing for x86_64-efi platform.
+grub-install: warning: EFI variables are not supported on this system..
+Installation finished. No error reported.
+Setting up apport (2.20.11-0ubuntu27.18) ...
+apport-autoreport.service is a disabled or a static unit, not starting it.
+Setting up linux-virtual (5.4.0.74.77) ...
+Setting up libpython3.8:amd64 (3.8.5-1~20.04.3) ...
+Processing triggers for install-info (6.7.0.dfsg.2-5) ...
+Processing triggers for mime-support (3.64ubuntu1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+Processing triggers for systemd (245.4-4ubuntu3.6) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for dbus (1.12.16-2ubuntu2.1) ...
+Processing triggers for linux-image-5.4.0-74-generic (5.4.0-74.83) ...
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-5.4.0-74-generic
+/etc/kernel/postinst.d/zz-update-grub:
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/50-cloudimg-settings.cfg'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-5.4.0-74-generic
+Found initrd image: /boot/initrd.img-5.4.0-74-generic
+Found linux image: /boot/vmlinuz-5.4.0-73-generic
+Found initrd image: /boot/initrd.img-5.4.0-73-generic
+done
+Processing triggers for initramfs-tools (0.136ubuntu6.5) ...
+update-initramfs: Generating /boot/initrd.img-5.4.0-74-generic
+root@casaforte:~# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 14926  100 14926    0     0  75005      0 --:--:-- --:--:-- --:--:-- 75383
+=> Downloading nvm from git to '/root/.nvm'
+=> Cloning into '/root/.nvm'...
+remote: Enumerating objects: 347, done.
+remote: Counting objects: 100% (347/347), done.
+remote: Compressing objects: 100% (294/294), done.
+remote: Total 347 (delta 38), reused 170 (delta 28), pack-reused 0
+Receiving objects: 100% (347/347), 203.80 KiB | 8.15 MiB/s, done.
+Resolving deltas: 100% (38/38), done.
+* (HEAD detached at FETCH_HEAD)
+  master
+=> Compressing and cleaning up git repository
+
+=> Appending nvm source string to /root/.bashrc
+=> Appending bash_completion source string to /root/.bashrc
+=> Close and reopen your terminal to start using nvm or run the following to use it now:
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+root@casaforte:~# source ~/.bashrc
+root@casaforte:~# nvm
+
+Node Version Manager (v0.38.0)
+
+Note: <version> refers to any version-like string nvm understands. This includes:
+  - full or partial version numbers, starting with an optional "v" (0.10, v0.1.2, v1)
+  - default (built-in) aliases: node, stable, unstable, iojs, system
+  - custom aliases you define with `nvm alias foo`
+
+ Any options that produce colorized output should respect the `--no-colors` option.
+
+Usage:
+  nvm --help                                  Show this message
+    --no-colors                               Suppress colored output
+  nvm --version                               Print out the installed version of nvm
+  nvm install [<version>]                     Download and install a <version>. Uses .nvmrc if available and version is omitted.
+   The following optional arguments, if provided, must appear directly after `nvm install`:
+    -s                                        Skip binary download, install from source only.
+    -b                                        Skip source download, install from binary only.
+    --reinstall-packages-from=<version>       When installing, reinstall packages installed in <node|iojs|node version number>
+    --lts                                     When installing, only select from LTS (long-term support) versions
+    --lts=<LTS name>                          When installing, only select from versions for a specific LTS line
+    --skip-default-packages                   When installing, skip the default-packages file if it exists
+    --latest-npm                              After installing, attempt to upgrade to the latest working npm on the given node version
+    --no-progress                             Disable the progress bar on any downloads
+    --alias=<name>                            After installing, set the alias specified to the version specified. (same as: nvm alias <name> <version>)
+    --default                                 After installing, set default alias to the version specified. (same as: nvm alias default <version>)
+  nvm uninstall <version>                     Uninstall a version
+  nvm uninstall --lts                         Uninstall using automatic LTS (long-term support) alias `lts/*`, if available.
+  nvm uninstall --lts=<LTS name>              Uninstall using automatic alias for provided LTS line, if available.
+  nvm use [<version>]                         Modify PATH to use <version>. Uses .nvmrc if available and version is omitted.
+   The following optional arguments, if provided, must appear directly after `nvm use`:
+    --silent                                  Silences stdout/stderr output
+    --lts                                     Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                          Uses automatic alias for provided LTS line, if available.
+  nvm exec [<version>] [<command>]            Run <command> on <version>. Uses .nvmrc if available and version is omitted.
+   The following optional arguments, if provided, must appear directly after `nvm exec`:
+    --silent                                  Silences stdout/stderr output
+    --lts                                     Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                          Uses automatic alias for provided LTS line, if available.
+  nvm run [<version>] [<args>]                Run `node` on <version> with <args> as arguments. Uses .nvmrc if available and version is omitted.
+   The following optional arguments, if provided, must appear directly after `nvm run`:
+    --silent                                  Silences stdout/stderr output
+    --lts                                     Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                          Uses automatic alias for provided LTS line, if available.
+  nvm current                                 Display currently activated version of Node
+  nvm ls [<version>]                          List installed versions, matching a given <version> if provided
+    --no-colors                               Suppress colored output
+    --no-alias                                Suppress `nvm alias` output
+  nvm ls-remote [<version>]                   List remote versions available for install, matching a given <version> if provided
+    --lts                                     When listing, only show LTS (long-term support) versions
+    --lts=<LTS name>                          When listing, only show versions for a specific LTS line
+    --no-colors                               Suppress colored output
+  nvm version <version>                       Resolve the given description to a single local version
+  nvm version-remote <version>                Resolve the given description to a single remote version
+    --lts                                     When listing, only select from LTS (long-term support) versions
+    --lts=<LTS name>                          When listing, only select from versions for a specific LTS line
+  nvm deactivate                              Undo effects of `nvm` on current shell
+    --silent                                  Silences stdout/stderr output
+  nvm alias [<pattern>]                       Show all aliases beginning with <pattern>
+    --no-colors                               Suppress colored output
+  nvm alias <name> <version>                  Set an alias named <name> pointing to <version>
+  nvm unalias <name>                          Deletes the alias named <name>
+  nvm install-latest-npm                      Attempt to upgrade to the latest working `npm` on the current node version
+  nvm reinstall-packages <version>            Reinstall global `npm` packages contained in <version> to current version
+  nvm unload                                  Unload `nvm` from shell
+  nvm which [current | <version>]             Display path to installed node version. Uses .nvmrc if available and version is omitted.
+    --silent                                  Silences stdout/stderr output when a version is omitted
+  nvm cache dir                               Display path to the cache directory for nvm
+  nvm cache clear                             Empty cache directory for nvm
+  nvm set-colors [<color codes>]              Set five text colors using format "yMeBg". Available when supported.
+                                               Initial colors are:
+                                                   g  b  y  r  e
+                                               Color codes:
+                                                 r/R = red / bold red
+                                                 g/G = green / bold green
+                                                 b/B = blue / bold blue
+                                                 c/C = cyan / bold cyan
+                                                 m/M = magenta / bold magenta
+                                                 y/Y = yellow / bold yellow
+                                                 k/K = black / bold black
+                                                 e/W = light grey / white
+
+Example:
+  nvm install 8.0.0                     Install a specific version number
+  nvm use 8.0                           Use the latest available 8.0.x release
+  nvm run 6.10.3 app.js                 Run app.js using node 6.10.3
+  nvm exec 4.8.3 node app.js            Run `node app.js` with the PATH pointing to node 4.8.3
+  nvm alias default 8.1.0               Set default node version on a shell
+  nvm alias default node                Always default to the latest available node version on a shell
+
+  nvm install node                      Install the latest available version
+  nvm use node                          Use the latest version
+  nvm install --lts                     Install the latest LTS version
+  nvm use --lts                         Use the latest LTS version
+
+  nvm set-colors cgYmW                  Set text colors to cyan, green, bold yellow, magenta, and white
+
+Note:
+  to remove, delete, or uninstall nvm - just remove the `$NVM_DIR` folder (usually `~/.nvm`)
+
+root@casaforte:~# nvm install node
+Downloading and installing node v16.3.0...
+Downloading https://nodejs.org/dist/v16.3.0/node-v16.3.0-linux-x64.tar.xz...
+############################################################################ 100.0%
+Computing checksum with sha256sum
+Checksums matched!
+Now using node v16.3.0 (npm v7.15.1)
+Creating default alias: default -> node (-> v16.3.0)
+root@casaforte:~# node --version
+v16.3.0
+root@casaforte:~# git --version
+git version 2.25.1
+root@casaforte:~# ls
+snap
+root@casaforte:~# mkdir projects
+root@casaforte:~# ls
+projects  snap
+root@casaforte:~# cd projects
+root@casaforte:~/projects# git clone https://github.com/ccpc93js/ProyectoCASAFORTEultimate
+Cloning into 'ProyectoCASAFORTEultimate'...
+remote: Enumerating objects: 1823, done.
+remote: Counting objects: 100% (49/49), done.
+remote: Compressing objects: 100% (42/42), done.
+remote: Total 1823 (delta 12), reused 27 (delta 7), pack-reused 1774
+Receiving objects: 100% (1823/1823), 204.13 MiB | 26.71 MiB/s, done.
+Resolving deltas: 100% (1080/1080), done.
+Updating files: 100% (1422/1422), done.
+root@casaforte:~/projects# ls
+ProyectoCASAFORTEultimate
+root@casaforte:~/projects# cd ProyectoCASAFORTEultimate
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# ls
+ Procfile   debug.log   index.html          package-lock.json   uploads
+ backend    fonts       js                  package.json
+ css        frontend   'link awesome.txt'   tmp
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# npm install
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'casaforte@1.0.0',
+npm WARN EBADENGINE   required: { node: '12.4.0', npm: '6.9.0' },
+npm WARN EBADENGINE   current: { node: 'v16.3.0', npm: '7.15.1' }
+npm WARN EBADENGINE }
+
+added 335 packages, and audited 336 packages in 13s
+
+found 0 vulnerabilities
+npm notice
+npm notice New minor version of npm available! 7.15.1 -> 7.16.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v7.16.0
+npm notice Run npm install -g npm@7.16.0 to update!
+npm notice
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# ls
+ Procfile   debug.log   index.html          node_modules        tmp
+ backend    fonts       js                  package-lock.json   uploads
+ css        frontend   'link awesome.txt'   package.json
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# web:node --experimental-modules backend/server.js
+web:node: command not found
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# node --experimental-modules ba
+ckend/server.js
+(node:27478) [MONGODB DRIVER] Warning: the options [userNewUrlParser] is not supported
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:27478) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Servidor funcionando en el puerto 8000
+(node:27478) [MONGODB DRIVER] Warning: Top-level use of w, wtimeout, j, and fsync is deprecated. Use writeConcern instead.
+^C
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# npm install -g pm2
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+
+added 180 packages, and audited 181 packages in 11s
+
+10 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm notice
+npm notice New minor version of npm available! 7.15.1 -> 7.16.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v7.16.0
+npm notice Run npm install -g npm@7.16.0 to update!
+npm notice
+root@casaforte:~/projects/ProyectoCASAFORTEultimate#
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# pm2 start node --experimental-
+modules backend/server.js
+
+                        -------------
+
+__/\\\\\\\\\\\\\____/\\\\____________/\\\\____/\\\\\\\\\_____
+ _\/\\\/////////\\\_\/\\\\\\________/\\\\\\__/\\\///////\\\___
+  _\/\\\_______\/\\\_\/\\\//\\\____/\\\//\\\_\///______\//\\\__
+   _\/\\\\\\\\\\\\\/__\/\\\\///\\\/\\\/_\/\\\___________/\\\/___
+    _\/\\\/////////____\/\\\__\///\\\/___\/\\\________/\\\//_____
+     _\/\\\_____________\/\\\____\///_____\/\\\_____/\\\//________
+      _\/\\\_____________\/\\\_____________\/\\\___/\\\/___________
+       _\/\\\_____________\/\\\_____________\/\\\__/\\\\\\\\\\\\\\\_
+        _\///______________\///______________\///__\///////////////__
+
+
+                          Runtime Edition
+
+        PM2 is a Production Process Manager for Node.js applications
+                     with a built-in Load Balancer.
+
+                Start and Daemonize any application:
+                $ pm2 start app.js
+
+                Load Balance 4 instances of api.js:
+                $ pm2 start api.js -i 4
+
+                Monitor in production:
+                $ pm2 monitor
+
+                Make pm2 auto-boot at server restart:
+                $ pm2 startup
+
+                To go further checkout:
+                http://pm2.io/
+
+
+                        -------------
+
+[PM2] Spawning PM2 daemon with pm2_home=/root/.pm2
+[PM2] PM2 Successfully daemonized
+
+  error: unknown option `--experimental-modules'
+
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# pm2 run server
+[PM2][ERROR] Command not found
+
+usage: pm2 [options] <command>
+
+pm2 -h, --help             all available commands and options
+pm2 examples               display pm2 usage examples
+pm2 <command> -h           help on a specific command
+
+Access pm2 files in ~/.pm2
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# pm2 start node backend/server.
+js
+[PM2] Starting /root/.nvm/versions/node/v16.3.0/bin/node in fork_mode (1 instance)
+[PM2] Done.
+[PM2] Starting /root/projects/ProyectoCASAFORTEultimate/backend/server.js in fork_mode (1 instance)
+[PM2] Done.
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ node               │ fork     │ 0    │ online    │ 66.7%    │ 31.6mb   │
+│ 1  │ server             │ fork     │ 0    │ online    │ 0%       │ 27.8mb   │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# pm2 start backend/server.js
+[PM2][ERROR] Script already launched, add -f option to force re-execution
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# pm2 start backend/server.js
+[PM2][ERROR] Script already launched, add -f option to force re-execution
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# pm2 start node backend/server.js
+[PM2] Applying action restartProcessId on app [node](ids: [ 0 ])
+[PM2] [node](0) ✓
+[PM2] Process successfully started
+[PM2][ERROR] Script already launched, add -f option to force re-execution
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# startup systemd
+
+Command 'startup' not found, did you mean:
+
+  command 'statup' from snap statup (0.79.91)
+
+See 'snap info <snapname>' for additional versions.
+
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# pm2 startup systemd
+[PM2] Init System found: systemd
+Platform systemd
+Template
+[Unit]
+Description=PM2 process manager
+Documentation=https://pm2.keymetrics.io/
+After=network.target
+
+[Service]
+Type=forking
+User=root
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+Environment=PATH=/root/.nvm/versions/node/v16.3.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+Environment=PM2_HOME=/root/.pm2
+PIDFile=/root/.pm2/pm2.pid
+Restart=on-failure
+
+ExecStart=/root/.nvm/versions/node/v16.3.0/lib/node_modules/pm2/bin/pm2 resurrect
+ExecReload=/root/.nvm/versions/node/v16.3.0/lib/node_modules/pm2/bin/pm2 reload all
+ExecStop=/root/.nvm/versions/node/v16.3.0/lib/node_modules/pm2/bin/pm2 kill
+
+[Install]
+WantedBy=multi-user.target
+
+Target path
+/etc/systemd/system/pm2-root.service
+Command list
+[ 'systemctl enable pm2-root' ]
+[PM2] Writing init configuration in /etc/systemd/system/pm2-root.service
+[PM2] Making script booting at startup...
+[PM2] [-] Executing: systemctl enable pm2-root...
+Created symlink /etc/systemd/system/multi-user.target.wants/pm2-root.service → /etc/systemd/system/pm2-root.service.
+[PM2] [v] Command successfully executed.
++---------------------------------------+
+[PM2] Freeze a process list on reboot via:
+$ pm2 save
+
+[PM2] Remove init script via:
+$ pm2 unstartup systemd
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# sudo systemctl status pm2-node
+Unit pm2-node.service could not be found.
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# sudo systemctl status pm2-root
+● pm2-root.service - PM2 process manager
+     Loaded: loaded (/etc/systemd/system/pm2-root.service; enabled; vendor preset:>
+     Active: inactive (dead)
+       Docs: https://pm2.keymetrics.io/
+...skipping...
+● pm2-root.service - PM2 process manager
+     Loaded: loaded (/etc/systemd/system/pm2-root.service; enabled; vendor preset:>
+     Active: inactive (dead)
+       Docs: https://pm2.keymetrics.io/
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# sudo systemctl start pm2-root
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# sudo systemctl status pm2-root
+● pm2-root.service - PM2 process manager
+     Loaded: loaded (/etc/systemd/system/pm2-root.service; enabled; vendor preset:>
+     Active: active (running) since Tue 2021-06-08 22:04:06 UTC; 9s ago
+       Docs: https://pm2.keymetrics.io/
+    Process: 27814 ExecStart=/root/.nvm/versions/node/v16.3.0/lib/node_modules/pm2>
+   Main PID: 27570 (PM2 v5.0.4: God)
+      Tasks: 0 (limit: 1136)
+     Memory: 204.0K
+     CGroup: /system.slice/pm2-root.service
+             ‣ 27570 PM2 v5.0.4: God Daemon (/root/.pm2)
+
+Jun 08 22:04:06 casaforte pm2[27814]: [PM2] Restoring processes located in /root/.>
+Jun 08 22:04:06 casaforte pm2[27814]: [PM2][ERROR] Failed to read dump file in /ro>
+Jun 08 22:04:06 casaforte pm2[27814]: [PM2][ERROR] No processes saved; DUMP file d>
+Jun 08 22:04:06 casaforte pm2[27814]: ┌─────┬───────────┬─────────────┬─────────┬─>
+Jun 08 22:04:06 casaforte pm2[27814]: │ id  │ name      │ namespace   │ version │ >
+Jun 08 22:04:06 casaforte pm2[27814]: ├─────┼───────────┼─────────────┼─────────┼─>
+Jun 08 22:04:06 casaforte pm2[27814]: │ 0   │ node      │ default     │ 0.38.0  │ >
+Jun 08 22:04:06 casaforte pm2[27814]: │ 1   │ server    │ default     │ 1.0.0   │ >
+Jun 08 22:04:06 casaforte pm2[27814]: └─────┴───────────┴─────────────┴─────────┴─>
+Jun 08 22:04:06 casaforte systemd[1]: Started PM2 process manager.
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# pm2 list
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ node               │ fork     │ 1    │ online    │ 0%       │ 31.6mb   │
+│ 1  │ server             │ fork     │ 0    │ online    │ 0%       │ 94.6mb   │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# sudo apt install nginx
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0
+  libjpeg-turbo8 libjpeg8 libnginx-mod-http-image-filter
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libtiff5
+  libwebp6 libxpm4 nginx-common nginx-core
+Suggested packages:
+  libgd-tools fcgiwrap nginx-doc ssl-cert
+The following NEW packages will be installed:
+  fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0
+  libjpeg-turbo8 libjpeg8 libnginx-mod-http-image-filter
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libtiff5
+  libwebp6 libxpm4 nginx nginx-common nginx-core
+0 upgraded, 17 newly installed, 0 to remove and 0 not upgraded.
+Need to get 2431 kB of archives.
+After this operation, 7891 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://mirrors.digitalocean.com/ubuntu focal/main amd64 fonts-dejavu-core all 2.37-1 [1041 kB]
+Get:2 http://mirrors.digitalocean.com/ubuntu focal/main amd64 fontconfig-config all 2.13.1-2ubuntu3 [28.8 kB]
+Get:3 http://mirrors.digitalocean.com/ubuntu focal/main amd64 libfontconfig1 amd64 2.13.1-2ubuntu3 [114 kB]
+Get:4 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libjpeg-turbo8 amd64 2.0.3-0ubuntu1.20.04.1 [117 kB]
+Get:5 http://mirrors.digitalocean.com/ubuntu focal/main amd64 libjpeg8 amd64 8c-2ubuntu8 [2194 B]
+Get:6 http://mirrors.digitalocean.com/ubuntu focal/main amd64 libjbig0 amd64 2.1-3.1build1 [26.7 kB]
+Get:7 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libwebp6 amd64 0.6.1-2ubuntu0.20.04.1 [185 kB]
+Get:8 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libtiff5 amd64 4.1.0+git191117-2ubuntu0.20.04.1 [162 kB]
+Get:9 http://mirrors.digitalocean.com/ubuntu focal/main amd64 libxpm4 amd64 1:3.5.12-1 [34.0 kB]
+Get:10 http://mirrors.digitalocean.com/ubuntu focal/main amd64 libgd3 amd64 2.2.5-5.2ubuntu2 [118 kB]
+Get:11 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 nginx-common all 1.18.0-0ubuntu1.2 [37.5 kB]
+Get:12 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libnginx-mod-http-image-filter amd64 1.18.0-0ubuntu1.2 [14.4 kB]
+Get:13 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libnginx-mod-http-xslt-filter amd64 1.18.0-0ubuntu1.2 [12.7 kB]
+Get:14 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libnginx-mod-mail amd64 1.18.0-0ubuntu1.2 [42.5 kB]
+Get:15 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 libnginx-mod-stream amd64 1.18.0-0ubuntu1.2 [67.3 kB]
+Get:16 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 nginx-core amd64 1.18.0-0ubuntu1.2 [425 kB]
+Get:17 http://mirrors.digitalocean.com/ubuntu focal-updates/main amd64 nginx all 1.18.0-0ubuntu1.2 [3620 B]
+Fetched 2431 kB in 1s (2878 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package fonts-dejavu-core.
+(Reading database ... 94590 files and directories currently installed.)
+Preparing to unpack .../00-fonts-dejavu-core_2.37-1_all.deb ...
+Unpacking fonts-dejavu-core (2.37-1) ...
+Selecting previously unselected package fontconfig-config.
+Preparing to unpack .../01-fontconfig-config_2.13.1-2ubuntu3_all.deb ...
+Unpacking fontconfig-config (2.13.1-2ubuntu3) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Preparing to unpack .../02-libfontconfig1_2.13.1-2ubuntu3_amd64.deb ...
+Unpacking libfontconfig1:amd64 (2.13.1-2ubuntu3) ...
+Selecting previously unselected package libjpeg-turbo8:amd64.
+Preparing to unpack .../03-libjpeg-turbo8_2.0.3-0ubuntu1.20.04.1_amd64.deb ...
+Unpacking libjpeg-turbo8:amd64 (2.0.3-0ubuntu1.20.04.1) ...
+Selecting previously unselected package libjpeg8:amd64.
+Preparing to unpack .../04-libjpeg8_8c-2ubuntu8_amd64.deb ...
+Unpacking libjpeg8:amd64 (8c-2ubuntu8) ...
+Selecting previously unselected package libjbig0:amd64.
+Preparing to unpack .../05-libjbig0_2.1-3.1build1_amd64.deb ...
+Unpacking libjbig0:amd64 (2.1-3.1build1) ...
+Selecting previously unselected package libwebp6:amd64.
+Preparing to unpack .../06-libwebp6_0.6.1-2ubuntu0.20.04.1_amd64.deb ...
+Unpacking libwebp6:amd64 (0.6.1-2ubuntu0.20.04.1) ...
+Selecting previously unselected package libtiff5:amd64.
+Preparing to unpack .../07-libtiff5_4.1.0+git191117-2ubuntu0.20.04.1_amd64.deb ...
+Unpacking libtiff5:amd64 (4.1.0+git191117-2ubuntu0.20.04.1) ...
+Selecting previously unselected package libxpm4:amd64.
+Preparing to unpack .../08-libxpm4_1%3a3.5.12-1_amd64.deb ...
+Unpacking libxpm4:amd64 (1:3.5.12-1) ...
+Selecting previously unselected package libgd3:amd64.
+Preparing to unpack .../09-libgd3_2.2.5-5.2ubuntu2_amd64.deb ...
+Unpacking libgd3:amd64 (2.2.5-5.2ubuntu2) ...
+Selecting previously unselected package nginx-common.
+Preparing to unpack .../10-nginx-common_1.18.0-0ubuntu1.2_all.deb ...
+Unpacking nginx-common (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package libnginx-mod-http-image-filter.
+Preparing to unpack .../11-libnginx-mod-http-image-filter_1.18.0-0ubuntu1.2_amd64.deb ...
+Unpacking libnginx-mod-http-image-filter (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package libnginx-mod-http-xslt-filter.
+Preparing to unpack .../12-libnginx-mod-http-xslt-filter_1.18.0-0ubuntu1.2_amd64.deb ...
+Unpacking libnginx-mod-http-xslt-filter (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package libnginx-mod-mail.
+Preparing to unpack .../13-libnginx-mod-mail_1.18.0-0ubuntu1.2_amd64.deb ...
+Unpacking libnginx-mod-mail (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package libnginx-mod-stream.
+Preparing to unpack .../14-libnginx-mod-stream_1.18.0-0ubuntu1.2_amd64.deb ...
+Unpacking libnginx-mod-stream (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package nginx-core.
+Preparing to unpack .../15-nginx-core_1.18.0-0ubuntu1.2_amd64.deb ...
+Unpacking nginx-core (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package nginx.
+Preparing to unpack .../16-nginx_1.18.0-0ubuntu1.2_all.deb ...
+Unpacking nginx (1.18.0-0ubuntu1.2) ...
+Setting up libxpm4:amd64 (1:3.5.12-1) ...
+Setting up nginx-common (1.18.0-0ubuntu1.2) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /lib/systemd/system/nginx.service.
+Setting up libjbig0:amd64 (2.1-3.1build1) ...
+Setting up libnginx-mod-http-xslt-filter (1.18.0-0ubuntu1.2) ...
+Setting up libwebp6:amd64 (0.6.1-2ubuntu0.20.04.1) ...
+Setting up fonts-dejavu-core (2.37-1) ...
+Setting up libjpeg-turbo8:amd64 (2.0.3-0ubuntu1.20.04.1) ...
+Setting up libjpeg8:amd64 (8c-2ubuntu8) ...
+Setting up libnginx-mod-mail (1.18.0-0ubuntu1.2) ...
+Setting up fontconfig-config (2.13.1-2ubuntu3) ...
+Setting up libnginx-mod-stream (1.18.0-0ubuntu1.2) ...
+Setting up libtiff5:amd64 (4.1.0+git191117-2ubuntu0.20.04.1) ...
+Setting up libfontconfig1:amd64 (2.13.1-2ubuntu3) ...
+Setting up libgd3:amd64 (2.2.5-5.2ubuntu2) ...
+Setting up libnginx-mod-http-image-filter (1.18.0-0ubuntu1.2) ...
+Setting up nginx-core (1.18.0-0ubuntu1.2) ...
+Setting up nginx (1.18.0-0ubuntu1.2) ...
+Processing triggers for ufw (0.36-6) ...
+Processing triggers for systemd (245.4-4ubuntu3.6) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+root@casaforte:~/projects/ProyectoCASAFORTEultimate# cd
+root@casaforte:~# cd /etc/nginx/sites-available/
+root@casaforte:/etc/nginx/sites-available# ls
+default
+root@casaforte:/etc/nginx/sites-available# nano default
+
+
+Use "fg" to return to nano.
+
+[1]+  Stopped                 nano default
+root@casaforte:/etc/nginx/sites-available# nano default
+root@casaforte:/etc/nginx/sites-available# nginx -t
+nginx: [emerg] unknown directive "proxy_http_versiopn" in /etc/nginx/sites-enabled/default:53
+nginx: configuration file /etc/nginx/nginx.conf test failed
+root@casaforte:/etc/nginx/sites-available# nano default
+root@casaforte:/etc/nginx/sites-available# nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+root@casaforte:/etc/nginx/sites-available# sudo systemctl restart nginx
+root@casaforte:/etc/nginx/sites-available# sudo systemctl status nginx
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: en>
+     Active: active (running) since Tue 2021-06-08 22:20:46 UTC; 50s ago
+       Docs: man:nginx(8)
+    Process: 28463 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process>
+    Process: 28475 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (cod>
+   Main PID: 28476 (nginx)
+      Tasks: 2 (limit: 1136)
+     Memory: 2.6M
+     CGroup: /system.slice/nginx.service
+             ├─28476 nginx: master process /usr/sbin/nginx -g daemon on; master_pr>
+             └─28477 nginx: worker process
+
+Jun 08 22:20:46 casaforte systemd[1]: nginx.service: Succeeded.
+Jun 08 22:20:46 casaforte systemd[1]: Stopped A high performance web server and a >
+Jun 08 22:20:46 casaforte systemd[1]: Starting A high performance web server and a>
+Jun 08 22:20:46 casaforte systemd[1]: Started A high performance web server and a >
