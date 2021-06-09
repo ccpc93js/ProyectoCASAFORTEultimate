@@ -276,9 +276,9 @@ const compraExitosahandler = () =>{
                           ></img>
                         </div>
                         <div className="min-20">
-                          <Link to={`/product/${item.producto}`}>
+                          {/* <Link to={`/producto/${item.producto}/${item.info.replace(/ /g,"-")}`}> */}
                             {item.info}
-                          </Link>
+                          {/* </Link> */}
                         </div>
 
                         <div>

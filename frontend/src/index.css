@@ -400,7 +400,7 @@ padding-bottom: 5rem;
 .zona-form form input[ type="text"],
 .zona-form form input[ type="text2"]
 {
-  max-width: 70%;
+  max-width: 80%;
 
 }
 
@@ -1344,7 +1344,10 @@ color: #464343;
   width: 80%;
 
 }
+.table {
 
+  overflow-x: auto;
+}
 }
 @media screen and (min-width:768px) and (max-width:1024px){
   main{
@@ -1363,7 +1366,10 @@ color: #464343;
 
 }
 
+.table {
 
+  overflow-x: auto;
+}
 }
 
 @media screen and (min-width:1024px) and (max-width:1367px){
@@ -1373,6 +1379,11 @@ color: #464343;
     #slid {
       height: 80px;
       
+    }
+
+    .table {
+
+      overflow-x: auto;
     }
 
 

@@ -10,7 +10,8 @@ import LockIcon from '@material-ui/icons/Lock';
 import ContactsIcon from '@material-ui/icons/Contacts';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import IconButton from '@material-ui/core/IconButton';
-import { mostrarContrasena } from '../MostrarContrasena';
+import { mostrarContrasena,mostrarConfirmContrasena } from '../MostrarContrasena';
+import axios from '../../../node_modules/axios/index';
 
 
 function LoginRegistro(props) {
@@ -31,6 +32,14 @@ function LoginRegistro(props) {
     props.history.push('/signin')
 }
 
+const enviarEmail = async(name,email,nit, password)=>{
+  await axios.post("/api/emails/loginRegister",{
+    name,
+    email,
+    nit,
+    password
+  });
+};
   const dispatch = useDispatch();
   const submitHandler = (e) => {
     e.preventDefault();
@@ -40,8 +49,13 @@ function LoginRegistro(props) {
         dispatch(register(name, nit, email, password));
         alert("Usuario registrado correctamete")
 
-      }  
-    };
+  
+      enviarEmail(name,email,nit, password);
+  
+      };
+
+     };
+
   // useEffect(() => {
   //   if (userInfo) {
   //    alert("Usuario registrado correctamete")
@@ -49,7 +63,7 @@ function LoginRegistro(props) {
   // }, [ userInfo]);
 
     return (
-        <div>
+        <div className="zona-form">
             <div className="contacto">
                 <img src="../enlaces/img/clientes.png" alt=""/>
             </div>
@@ -77,7 +91,7 @@ function LoginRegistro(props) {
                     <input 
                     type="text2" 
                     id="nit"
-                    placeholder="Nit sin digito de verificaci&oacute;n"
+                    placeholder="Nit o Cedula"
                     required
                     onChange={(e) => setNit(e.target.value)}
                     
@@ -123,7 +137,7 @@ function LoginRegistro(props) {
                     />
                     <IconButton 
                     id="boton"
-                    onClick={mostrarContrasena}>
+                    onClick={mostrarConfirmContrasena}>
                       <VisibilityIcon/>
                     </IconButton>
                 </div>

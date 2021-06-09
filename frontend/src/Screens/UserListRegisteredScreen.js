@@ -68,7 +68,7 @@ export default function UserListRegisteredScreen(props) {
 //     dispatch(createUser());
 //   };
   return (
-    <div className="userListContainer">
+    <div className="userListContainer" style={{overflowX: "scroll"}}>
       <div className="row">
 
       <h1 className="titulelist"> Info de U R</h1>
@@ -132,7 +132,6 @@ export default function UserListRegisteredScreen(props) {
                     return user
                 }else if  (user.tipoClient.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
                     return user
-
                   }            
             
                 }).map((user) => (
@@ -167,7 +166,7 @@ export default function UserListRegisteredScreen(props) {
                   </IconButton>
                 </td>
               </tr>
-            ))}
+            )).sort((a,b)=> a.createdAt < b.createdAt? 1:-1)}
           </tbody>
         </table>
       )}

@@ -37,7 +37,7 @@ export default function OrderListScreen(props) {
     }
   };
   return (
-    <div className="orderListContainer">
+    <div className="orderListContainer" style={{overflowX: "scroll"}}>
       <div className="row">
         <h1 className="titulelist">Pedidos</h1>
         <input 
@@ -81,7 +81,6 @@ export default function OrderListScreen(props) {
                 return order
               }else if  (order.createdAt.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
                 return order
-
               }
              }).map((order) => (
               <tr key={order._id}>
@@ -117,7 +116,7 @@ export default function OrderListScreen(props) {
                   </IconButton>
                 </td>
               </tr>
-            ))}
+            )).sort((a,b)=> a.createdAt < b.createdAt? 1:-1)}
           </tbody>
         </table>
       )}

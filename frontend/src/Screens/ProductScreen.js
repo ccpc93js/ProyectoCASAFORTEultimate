@@ -336,7 +336,7 @@ loadingP?(
               ""  
           )
         }
-    <a href={`/producto/${x._id}`}>
+    <a href={`/producto/${x._id}/${x.info.replace(/ /g,"-")}`}>
         <div className="continerPR__productos-relacionados__img">
             <img src={x.imagen} alt={x.info} />
         </div>

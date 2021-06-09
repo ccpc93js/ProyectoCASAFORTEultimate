@@ -73,7 +73,7 @@ fecthData();
   searchProductos.map((val, key)=>{
     return (
       
-      <a href={`/producto/${val._id}`} className="">
+      <a href={`/producto/${val._id}/${val.info.replace(/" "/g,"-")}`} className="">
       
       <div className="product-card-search " key={key}>
         {/* {
@@ -83,7 +83,7 @@ fecthData();
             <MessageBox variant="danger">{error}</MessageBox>):( */}
           <div className="product-image-search">
 
-              <a href={`/producto/${val._id}`} className="product-image__body-search ">
+              <a href={`/producto/${val._id}/${val.info.replace(/ /g,"-")}`} className="product-image__body-search ">
               <img src={val.imagen} alt="" className="product-image__img imgnormalP-search "/>  
               </a>
           </div>

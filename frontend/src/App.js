@@ -254,9 +254,9 @@ function App(props) {
           ></Route>
 
         <Route exact path="/cart/:id?" component={CartScreen}/>
-        <Route exact path="/producto/:id" component={ProductScreen}/>
+        <Route exact path="/producto/:id/:info" component={ProductScreen}/>
         <Route
-            path="/producto/:id/edit"
+            path="/producto/:id/:info/edit"
             component={ProductEditScreen}
             exact
         ></Route>

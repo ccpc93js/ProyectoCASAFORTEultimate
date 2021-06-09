@@ -16,7 +16,7 @@ export default function OrderHistoryScreen(props) {
     dispatch(listOrderMine());
   }, [dispatch]);
   return (
-    <div className="orderHContainer">
+    <div className="orderHContainer" style={{overflowX: "scroll"}}>
       <h1>Historial pedididos</h1>
       {loading ? (
         <div className="loading-div">

@@ -52,7 +52,7 @@ export default function CartScreen(props) {
                         Encontrará muchos productos interesantes en nuestra tienda.
                     </div>
 			        	<div className="return-to-shop">
-                            <Link to="/nuevos" ><button className="button return-to-shop"> Continuar comprando</button></Link>
+                            <Link to="/all" ><button className="button return-to-shop"> Continuar comprando</button></Link>
                         </div>
                 </div>
             //     <MessageBox>
@@ -92,7 +92,7 @@ export default function CartScreen(props) {
 
                                     
                                     <div className="cart-descripcion-link">
-                                        <Link to={"/producto/" + item.producto} >
+                                        <Link to={`/producto/${item.producto}/${item.info.replace(/ /g,"-")}`} >
                                        {item.info}
                                      </Link>
                     

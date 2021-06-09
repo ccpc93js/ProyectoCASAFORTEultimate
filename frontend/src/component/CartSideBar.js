@@ -99,7 +99,7 @@ export default function CartSideBar(props) {
 
                                     
                                     <div className="cartSide-descripcion-link">
-                                        <Link to={"/producto/" + item.producto} >
+                                        <Link to={`/producto/${item.producto}/${item.info.replace(/ /g,"-")}`} >
                                        {item.info}
                                      </Link>
                     

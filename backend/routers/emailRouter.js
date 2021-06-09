@@ -236,6 +236,224 @@ emailRouter.post("/registrarse", (req,res) =>{
 });
 
 
+emailRouter.post("/loginRegister", (req,res) =>{
+  nodemailer.createTestAccount((err, account)=>{
+      const htmlEmail = `
+
+
+      <div  class="CE-container" style="
+      margin: 0;
+      padding: 0;
+      text-decoration:none;
+      list-style:none;
+      box-sizing:border-box;
+      text-align:center;
+      color: #afadad;
+
+      ">
+        
+      <div class="CE__mensaje-container" style="
+      margin:auto;
+      margin-top:3rem;
+     /* display: flex;
+      flex-direction:column;
+      justify-content:center;*/
+      margin-bottom:30px;
+      ">
+        <div class="CE__title" style="
+        margin-bottom:30px;
+        text-align:center;
+
+        ">
+
+          <h2 >Ferreteria Casa forte</h2>
+        </div>
+          <div  class="CE__img" style="
+          margin-bottom:30px;
+          text-align:center;
+
+          ">
+            <img  class="CE__casaforte" src="https://res.cloudinary.com/casaforte/image/upload/v1622590008/Icon/LOGO_CASA_FORTE_yhb1dx.png" alt="casaforte"  style="
+            width:18rem;
+            margin-top:2rem;
+            text-align:center;
+
+            "/>
+          </div>
+          <br></br>
+          <p  style="
+          text-align:start;
+          font-size:20px;
+          ">
+              
+             saludos ${req.body.name} su cuenta de usuario a sido creada
+              <br></br>
+              Datos de usuarios:
+              <br></br>
+              Nombre de usuario: ${req.body.name}
+              <br></br>
+              Correo: ${req.body.email}
+              <br></br>
+              Nit o Cedula: ${req.body.nit}
+              <br></br>
+              Contraseña: ${req.body.password}
+              <br></br>
+              <br></br>
+              <br></br>
+              Recuerde que esta contraseña es generica, debe ser cambiada de inmediato para su privacidad!
+              <br></br>
+              La puedes cambiar en la opcion perfil de usuario.
+              <br></br>
+              
+              <div class="CE__visitaTienda" style="
+              margin-bottom: 30px;
+              text-align: center;
+      
+              ">
+      
+              <a   href="https://casaforte.herokuapp.com/signin" style="
+              border: solid 2px #2c2c3d ;
+              border-radius: 4px;
+              background: #2c2c3d;
+              color: #ffff;
+              font-size: 20px;
+              padding: 8px;
+              text-decoration: none;
+      
+              ">Iniciar sesion</a>
+              </div>
+
+              </p>
+        </div>
+        </div>
+
+
+
+          
+
+
+      `;
+
+
+  
+
+      let transporter = nodemailer.createTransport({
+          host: "smtp.gmail.com",
+          port:587,
+          auth:{
+              user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
+              pass:"erzbjbjocftugsgo"// la contraseña dedicho SMTP
+          }
+      });
+
+      let mailOptions = {
+          form:"ferreteriacasaforte@gmail.com", //quien manda el email
+          to: req.body.email,// el email de destino
+          replyTo: req.body.email,
+          subject: "Peticion de registro casa forte", // el asunto del email
+          text: req.body.name, // el mensaje
+          html: htmlEmail // la parte del HTML del email
+      };
+
+
+
+      transporter.sendMail(mailOptions,(err,info)=>{
+          if(err){
+              return console.log(err);
+          }
+          console.log("Mensaje enviado: %s", info.mensaje);
+          console.log("Url del mensaje: %s", nodemailer.getTestMessageUrl(info));
+      });
+
+      const htmlEmailCasaForte = `
+      <div  class="CE-container" style="
+      margin: 0;
+      padding: 0;
+      text-decoration:none;
+      list-style:none;
+      box-sizing:border-box;
+      text-align:center;
+      color: #afadad;
+
+      ">
+        
+      <div class="CE__mensaje-container" style="
+      margin:auto;
+      margin-top:3rem;
+     /* display: flex;
+      flex-direction:column;
+      justify-content:center;*/
+      margin-bottom:30px;
+      ">
+
+      <div  class="CE__img" style="
+      margin-bottom:30px;
+      text-align:center;
+
+      ">
+        <img  class="CE__casaforte" src="https://res.cloudinary.com/casaforte/image/upload/v1622590008/Icon/LOGO_CASA_FORTE_yhb1dx.png" alt="casaforte"  style="
+        width:18rem;
+        margin-top:2rem;
+        text-align:center;
+
+        "/>
+      </div>
+      <div class="CE__title" style="
+      margin-bottom:30px;
+      text-align:center;
+
+      ">
+
+      <h3>Email enviado desde registrarse Casaforte</h3>
+      </div>
+      <br></br>
+      <p  style="
+      text-align:center;
+      font-size:20px;
+      ">
+          
+         el usuario ${req.body.name} con correo  ${req.body.email} ha sido registrado correctamente!
+
+         
+
+          </p>
+
+      
+          </div>
+          </div>
+
+
+  `;
+
+      let transporterCasaForte = nodemailer.createTransport({
+          host: "smtp.gmail.com",
+          port:587,
+          auth:{
+              user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
+              pass:"erzbjbjocftugsgo"// la contraseña dedicho SMTP
+          }
+      });
+
+      let mailOptionsCasaForte = {
+          form:"ferreteriacasaforte@gmail.com", //quien manda el email
+          to: "ferreteriacasaforte@gmail.com",// el email de destino
+          replyTo: "ferreteriacasaforte@gmail.com",
+          subject: "usuario registrado revisar en informacion de usuarios registrados", // el asunto del email
+          text: "usuario registrado revisar en informacion de usuarios registrados", // el mensaje
+          html: htmlEmailCasaForte // la parte del HTML del email
+      };
+
+      transporterCasaForte.sendMail(mailOptionsCasaForte,(err,info)=>{
+          if(err){
+              return console.log(err);
+          }
+          console.log("Mensaje enviado: %s", info.mensaje);
+          console.log("Url del mensaje: %s", nodemailer.getTestMessageUrl(info));
+      });
+  });
+});
+
+
 emailRouter.post("/compraExitosa", (req,res) =>{
     nodemailer.createTestAccount((err, account)=>{
         const htmlEmail = `

@@ -88,7 +88,7 @@ export default function PlaceOrderScreen(props) {
                                         </div>
                                         
                                         <div className="min-20">
-                                            <Link to={"/producto/" + item.producto} >
+                                            <Link to={`/producto/${item.producto}/${item.info.replace(/ /g,"-")}`} >
                                             {item.info}
                                             </Link>
                         

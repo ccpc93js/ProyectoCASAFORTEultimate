@@ -75,7 +75,7 @@ export default function ProductListScreen(props) {
     dispatch(createProduct());
   };
   return (
-    <div className="productListContainer">
+    <div className="productListContainer" style={{overflowX: "scroll"}}>
       <div className="row">
         <h1 className="titulelist">Productos</h1>
         <input 
@@ -178,7 +178,7 @@ export default function ProductListScreen(props) {
                     <IconButton
                       aria-label="editar"
                       onClick={() =>
-                        props.history.push(`/producto/${producto._id}/edit`)
+                        props.history.push(`/producto/${producto._id}/${producto.info.replace(/ /g,"-")}/edit`)
                       }
                     >
                       <EditIcon />
@@ -192,7 +192,7 @@ export default function ProductListScreen(props) {
                     </IconButton>
                   </td>
                 </tr>
-              ))}
+              )).sort((a,b)=> a.createdAt < b.createdAt? 1:-1)}
             </tbody>
           </table>
           }

@@ -63,7 +63,7 @@ export default function Productos(props) {
                         if(props.enOferta){
                           return (x.enOferta === true)
                         }
-                    })
+                    }).sort((a,b)=> a.createdAt < b.createdAt? 1:-1)
                     setLoading(false);
                     setProductos(productFiltradoXProducto);
                     setTotalProductos(data)
@@ -240,7 +240,7 @@ export default function Productos(props) {
                   }
                 <a
 
-                href={`/producto/${x._id}`} className="product-image__body ">
+                href={`/producto/${x._id}/${x.info.replace(/ /g,"-")}`} className="product-image__body ">
                  <img className="product-image__img imgnormalP " alt={x.info} src={x.imagen}/>
               
                 </a>
@@ -259,7 +259,7 @@ export default function Productos(props) {
                  </div>
                 </div>
                 <div className="product-card__info">
-                <a href={`/producto/${x._id}`}><p>{x.info}</p></a>
+                <a href={`/producto/${x._id}/${x.info.replace(/ /g,"-")}`}><p>{x.info}</p></a>
                 </div>
                 <div className="product-card-body">
                 {/* <strong>CÓDIGO: </strong>{x.codigo}<br/>
