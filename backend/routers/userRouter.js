@@ -182,7 +182,7 @@ userRouter.post(
   userRouter.delete(
     '/:id',
     // isAuth,
-    isAdmin,
+    // isAdmin,
     expressAsyncHandler(async (req, res) => {
       const user = await User.findById(req.params.id);
       if (user) {
@@ -203,7 +203,7 @@ userRouter.post(
   userRouter.post(
     '/',
     // isAuth,
-    isAdmin,
+    // isAdmin,
     expressAsyncHandler(async (req, res) => {
       const user = new User({
         name: 'nombre',
@@ -220,7 +220,7 @@ userRouter.post(
   userRouter.put(
     '/:id',
     // isAuth,
-    isAdmin,
+    // isAdmin,
     expressAsyncHandler(async (req, res) => {
       const user = await User.findById(req.params.id);
       if (user) {

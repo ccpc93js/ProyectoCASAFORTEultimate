@@ -118,7 +118,7 @@ productRouter.get('/marcas/seed', expressAsyncHandler(async(req,res) =>{
 productRouter.post(
     '/',
     // isAuth,
-    isAdmin,
+    // isAdmin,
     expressAsyncHandler(async (req, res) => {
       const producto = new Producto({
         codigo: 'codigo' ,
@@ -139,7 +139,7 @@ productRouter.post(
   productRouter.put(
     '/:id',
     // isAuth,
-    isAdmin,
+    // isAdmin,
     expressAsyncHandler(async (req, res) => {
       const productId = req.params.id;
       const producto = await Producto.findById(productId);
@@ -167,7 +167,7 @@ productRouter.post(
   productRouter.delete(
     '/:id',
     // isAuth,
-    isAdmin,
+    // isAdmin,
     expressAsyncHandler(async (req, res) => {
       const producto = await Producto.findById(req.params.id);
       if (producto) {

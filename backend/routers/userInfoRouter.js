@@ -42,7 +42,7 @@ userInfoRouter.post(
   userInfoRouter.get(
     '/',
     // isAuth,
-    isAdmin,
+    // isAdmin,
     expressAsyncHandler(async (req, res) => {
       const usersInfo = await UserInfo.find({});
       res.send(usersInfo);
@@ -51,7 +51,7 @@ userInfoRouter.post(
   userInfoRouter.delete(
     '/:id',
     // isAuth,
-    isAdmin,
+    // isAdmin,
     expressAsyncHandler(async (req, res) => {
       const userInfo = await UserInfo.findById(req.params.id);
       if (userInfo) {
