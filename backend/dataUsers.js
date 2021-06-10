@@ -5,8 +5,8 @@ const data = {
         {
           name: "casaforte",
           email:"ferreteriacasaforte@gmail.com",
-          nit:"xxxxxxxxxx",
-          password: bcrypt.hashSync('xxxxxxxxx', 8),
+          nit:"934893929",
+          password: bcrypt.hashSync('casaforte2525', 8),
           isAdmin: true
 
         }

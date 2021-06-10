@@ -9,7 +9,7 @@ import UserInfo from '../models/userInfoModel.js';
 
 const userRouter = express.Router();
 userRouter.get('/seed', expressAsyncHandler(async (req,res)=>{
-    await User.remove({});
+    // await User.remove({});
     const createdUsers = await User.insertMany(data.users)
     res.send({createdUsers});
 }));
@@ -137,7 +137,7 @@ userRouter.post(
 
   userRouter.put(
     '/profile',
-    isAuth,
+    // isAuth,
     expressAsyncHandler(async (req, res) => {
       const user = await User.findById(req.user._id);
       if (user) {
@@ -162,7 +162,7 @@ userRouter.post(
 
   userRouter.get(
     '/',
-    isAuth,
+    // isAuth,
     isAdmin,
     expressAsyncHandler(async (req, res) => {
       const users = await User.find({});
@@ -181,7 +181,7 @@ userRouter.post(
 
   userRouter.delete(
     '/:id',
-    isAuth,
+    // isAuth,
     isAdmin,
     expressAsyncHandler(async (req, res) => {
       const user = await User.findById(req.params.id);
@@ -202,7 +202,7 @@ userRouter.post(
 
   userRouter.post(
     '/',
-    isAuth,
+    // isAuth,
     isAdmin,
     expressAsyncHandler(async (req, res) => {
       const user = new User({
@@ -219,7 +219,7 @@ userRouter.post(
   
   userRouter.put(
     '/:id',
-    isAuth,
+    // isAuth,
     isAdmin,
     expressAsyncHandler(async (req, res) => {
       const user = await User.findById(req.params.id);

@@ -372,10 +372,7 @@ const data = {
           // {"categoriassss":"abrasivosss"},
           {
             "codigo": "producto1",
-            "imagen":{
-                "img1":"/productos/lija_de_agua_abracol.jpg"
-      
-            },
+            "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/lija_de_agua_abracol_qnpmsu.jpg",
             "marca": "ABRACOL",
             "categoria":"abrasivos",
             "subcategoria":"lijas-y-telas-recubiertas",
@@ -387,10 +384,7 @@ const data = {
         },
         {
           "codigo": "producto2",
-          "imagen":{
-            "img1":"/productos/lija_de_agua_abracol.jpg"
-      
-          },
+          "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/lija_de_agua_abracol_qnpmsu.jpg",
           "marca": "ABRACOL",
           "categoria":"abrasivos",
           "subcategoria":"lijas-y-telas-recubiertas",
@@ -403,10 +397,7 @@ const data = {
       },
       {
         "codigo": "producto3",
-        "imagen":{
-          "img1":"/productos/lija_de_agua_abracol.jpg"
-      
-        },
+          "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/lija_de_agua_abracol_qnpmsu.jpg",
         "marca": "ABRACOL",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -419,10 +410,7 @@ const data = {
       },
       {
         "codigo": "producto4",
-        "imagen":{
-          "img1":"/productos/lija_de_agua_abracol.jpg"
-      
-        },
+          "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/lija_de_agua_abracol_qnpmsu.jpg",
         "marca": "ABRACOL",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -435,10 +423,7 @@ const data = {
       },
       {
         "codigo": "producto5",
-        "imagen":{
-          "img1":"/productos/lija_de_agua_abracol.jpg"
-      
-        },
+          "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/lija_de_agua_abracol_qnpmsu.jpg",
         "marca": "ABRACOL",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -451,10 +436,7 @@ const data = {
       },
       {
         "codigo": "producto6",
-        "imagen":{
-          "img1":"/productos/lija_de_agua_abracol.jpg"
-      
-        },
+          "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/lija_de_agua_abracol_qnpmsu.jpg",
         "marca": "ABRACOL",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -467,10 +449,7 @@ const data = {
       },
       {
         "codigo": "producto7",
-        "imagen":{
-            "img1":"/productos/lija_de_agua_abracol.jpg"
-      
-        },
+          "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/lija_de_agua_abracol_qnpmsu.jpg",
         "marca": "ABRACOL",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -482,10 +461,7 @@ const data = {
       },
       {
         "codigo": "producto8",
-        "imagen":{
-          "img1":"/productos/lija_de_agua_abracol.jpg"
-      
-        },
+          "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/lija_de_agua_abracol_qnpmsu.jpg",
         "marca": "ABRACOL",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -498,10 +474,7 @@ const data = {
       },
       {
         "codigo": "producto9",
-        "imagen":{
-          "img1":"/productos/lija_de_agua_abracol.jpg"
-      
-        },
+          "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/lija_de_agua_abracol_qnpmsu.jpg",
         "marca": "ABRACOL",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -512,10 +485,7 @@ const data = {
       },
       {
         "codigo": "producto10",
-        "imagen":{
-          "img1":"/productos/lija_de_agua_abracol.jpg"
-      
-        },
+          "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/lija_de_agua_abracol_qnpmsu.jpg",
         "marca": "ABRACOL",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -528,10 +498,7 @@ const data = {
       },
       {
         "codigo": "producto11",
-        "imagen":{
-          "img1":"/productos/lija_de_agua_abracol.jpg"
-      
-        },
+          "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/lija_de_agua_abracol_qnpmsu.jpg",
         "marca": "ABRACOL",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -544,10 +511,7 @@ const data = {
       },
       {
         "codigo": "producto12",
-        "imagen":{
-            "img1":"/productos/lija_de_agua_abracol.jpg"
-      
-        },
+          "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/lija_de_agua_abracol_qnpmsu.jpg",
         "marca": "ABRACOL",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -560,10 +524,7 @@ const data = {
       },
       {
         "codigo": "producto13",
-        "imagen":{
-          "img1":"/productos/lija_de_agua_abracol.jpg"
-      
-        },
+          "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/lija_de_agua_abracol_qnpmsu.jpg",
         "marca": "ABRACOL",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -576,10 +537,7 @@ const data = {
       },
       {
         "codigo": "producto14",
-        "imagen":{
-          "img1":"/productos/lija_de_agua_abracol.jpg"
-      
-        },
+          "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/lija_de_agua_abracol_qnpmsu.jpg",
         "marca": "ABRACOL",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -592,10 +550,7 @@ const data = {
       },
       {
         "codigo": "producto15",
-        "imagen":{
-          "img1":"/productos/lija_de_agua_abracol.jpg"
-      
-        },
+          "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/lija_de_agua_abracol_qnpmsu.jpg",
         "marca": "ABRACOL",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -607,10 +562,7 @@ const data = {
       },
       {
         "codigo": "producto16",
-        "imagen":{
-            "img1":"/productos/Lija_omega.jpg"
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/Lija_omega_zowxsq.jpg",
         "marca": "OMEGA",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -623,10 +575,7 @@ const data = {
       },
       {
         "codigo": "producto17",
-        "imagen":{
-            "img1":"/productos/Lija_omega.jpg"
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/Lija_omega_zowxsq.jpg",
         "marca": "OMEGA",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -639,11 +588,7 @@ const data = {
       },
       {
         "codigo": "producto18",
-        "imagen":{
-            "img1":"/productos/Lija_omega.jpg",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/Lija_omega_zowxsq.jpg",
         "marca": "OMEGA",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -656,11 +601,7 @@ const data = {
       },
       {
         "codigo": "producto19",
-        "imagen":{
-          "img1":"/productos/Lija_omega.jpg",
-          
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/Lija_omega_zowxsq.jpg",
         "marca": "OMEGA",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -673,11 +614,7 @@ const data = {
       },
       {
         "codigo": "producto20",
-        "imagen":{
-          "img1":"/productos/Lija_omega.jpg",
-          
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/Lija_omega_zowxsq.jpg",
         "marca": "OMEGA",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -690,10 +627,7 @@ const data = {
       },
       {
         "codigo": "producto21",
-        "imagen":{
-          "img1":"/productos/Lija_omega.jpg",
-          
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/Lija_omega_zowxsq.jpg",
         "marca": "OMEGA",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -706,11 +640,7 @@ const data = {
       },
       {
         "codigo": "producto22",
-        "imagen":{
-          "img1":"/productos/Lija_omega.jpg",
-          
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/Lija_omega_zowxsq.jpg",
         "marca": "OMEGA",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -723,11 +653,7 @@ const data = {
       },
       {
         "codigo": "producto23",
-        "imagen":{
-          "img1":"/productos/Lija_omega.jpg",
-          
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/Lija_omega_zowxsq.jpg",
         "marca": "OMEGA",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -740,11 +666,7 @@ const data = {
       },
       {
         "codigo": "producto24",
-        "imagen":{
-          "img1":"/productos/Lija_omega.jpg",
-          
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/Lija_omega_zowxsq.jpg",
         "marca": "OMEGA",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -757,11 +679,7 @@ const data = {
       },
       {
         "codigo": "producto25",
-        "imagen":{
-          "img1":"/productos/Lija_omega.jpg",
-          
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/Lija_omega_zowxsq.jpg",
         "marca": "OMEGA",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -774,11 +692,7 @@ const data = {
       },
       {
         "codigo": "producto26",
-        "imagen":{
-          "img1":"/productos/Lija_omega.jpg",
-          
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/Lija_omega_zowxsq.jpg",
         "marca": "OMEGA",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -791,11 +705,7 @@ const data = {
       },
       {
         "codigo": "producto27",
-        "imagen":{
-          "img1":"/productos/Lija_omega.jpg",
-          
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/Lija_omega_zowxsq.jpg",
         "marca": "OMEGA",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -808,11 +718,7 @@ const data = {
       },
       {
         "codigo": "producto28",
-        "imagen":{
-          "img1":"/productos/Lija_omega.jpg",
-          
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/Lija_omega_zowxsq.jpg",
         "marca": "OMEGA",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -825,11 +731,7 @@ const data = {
       },
       {
         "codigo": "producto29",
-        "imagen":{
-          "img1":"/productos/Lija_omega.jpg",
-          
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/Lija_omega_zowxsq.jpg",
         "marca": "OMEGA",
         "categoria":"abrasivos",
         "subcategoria":"lijas-y-telas-recubiertas",
@@ -844,11 +746,7 @@ const data = {
       
       {
         "codigo": "producto30",
-        "imagen":{
-          "img1":"/productos/Disco_pulir_abracol_7.jpg",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599076/productos/Disco_pulir_abracol_7_ezdqc6.jpg",
         "marca": "ABRACOL",
         "categoria":"accesorios-para-herramientas",
         "subcategoria":"discos-abrasivos",
@@ -860,11 +758,7 @@ const data = {
       },
       {
         "codigo": "producto31",
-        "imagen":{
-            "img1":"/productos/disco_corte_fino_abracol_4_1_2.jpg",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599071/productos/disco_corte_fino_abracol_4_1_2_dvvy6d.jpg",
         "marca": "ABRACOL",
         "categoria":"accesorios-para-herramientas",
         "subcategoria":"discos-abrasivos",
@@ -877,11 +771,7 @@ const data = {
       },
       {
         "codigo": "producto32",
-        "imagen":{
-            "img1":"/productos/disco_diamantado_4_1_2_continuo_abracol.jpg",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599071/productos/disco_diamantado_4_1_2_continuo_abracol_yuqe2m.jpg",
         "marca": "ABRACOL",
         "categoria":"accesorios-para-herramientas",
         "subcategoria":"discos-de-metal",
@@ -894,11 +784,7 @@ const data = {
       },
       {
         "codigo": "producto33",
-        "imagen":{
-            "img1":"/productos/disco_diamantado_4_1_2_turbo_abracol.jpg",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599072/productos/disco_diamantado_4_1_2_turbo_abracol_o5bgdy.jpg",
         "marca": "ABRACOL",
         "categoria":"accesorios-para-herramientas",
         "subcategoria":"discos-de-metal",
@@ -911,11 +797,7 @@ const data = {
       },
       {
         "codigo": "producto34",
-        "imagen":{
-            "img1":"/productos/disco_corte_4_½_x1_8_corte_metal_multimarca.jpg",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599068/productos/disco_corte_4_x1_8_corte_metal_multimarca_ptde0v.jpg",
         "marca": "MULTIMARCA",
         "categoria":"accesorios-para-herramientas",
         "subcategoria":"discos-abrasivos",
@@ -927,11 +809,7 @@ const data = {
       },
       {
         "codigo": "producto35",
-        "imagen":{
-            "img1":"/productos/Disco_Flap_Thomkin.jpg",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599076/productos/Disco_Flap_Thomkin_pne4sm.jpg",
         "marca": "MULTIMARCA",
         "categoria":"accesorios-para-herramientas",
         "subcategoria":"discos-abrasivos",
@@ -943,11 +821,7 @@ const data = {
       },
       {
         "codigo": "producto36",
-        "imagen":{
-            "img1":"/productos/Disco_Flap_Thomkin.jpg",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599076/productos/Disco_Flap_Thomkin_pne4sm.jpg",
         "marca": "MULTIMARCA",
         "categoria":"accesorios-para-herramientas",
         "subcategoria":"discos-abrasivos",
@@ -959,11 +833,7 @@ const data = {
       },
       {
         "codigo": "producto37",
-        "imagen":{
-            "img1":"/productos/Disco_Flap_Thomkin.jpg",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599076/productos/Disco_Flap_Thomkin_pne4sm.jpg",
         "marca": "MULTIMARCA",
         "categoria":"accesorios-para-herramientas",
         "subcategoria":"discos-abrasivos",
@@ -975,11 +845,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Disco_Flap_Thomkin.jpg",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599076/productos/Disco_Flap_Thomkin_pne4sm.jpg",
         "marca": "MULTIMARCA",
         "categoria":"accesorios-para-herramientas",
         "subcategoria":"discos-abrasivos",
@@ -992,11 +858,7 @@ const data = {
       
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/DISCO_DIAMANTADO_SECO_4_1.2P_UYUSTOOLS",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599075/productos/DISCO_DIAMANTADO_SECO_4_1.2P_UYUSTOOLS_peub1f.jpg",
         "marca": "UYUSTOOLS",
         "categoria":"accesorios-para-herramientas",
         "subcategoria":"discos-de-metal",
@@ -1008,11 +870,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/disco_continuo_4_1_2_UYUSTOOLS",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599067/productos/disco_continuo_4_1_2_UYUSTOOLS_ppn53w.jpg",
         "marca": "UYUSTOOLS",
         "categoria":"accesorios-para-herramientas",
         "subcategoria":"discos-de-metal",
@@ -1024,11 +882,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/DISCO_CORTE_CERAMICO_DIAMANTADO_TURBO_UYUSTOOLS",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599068/productos/DISCO_CORTE_CERAMICO_DIAMANTADO_TURBO_UYUSTOOLS_k8qnjv.jpg",
         "marca": "UYUSTOOLS",
         "categoria":"accesorios-para-herramientas",
         "subcategoria":"discos-de-metal",
@@ -1040,11 +894,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/DISCO_DW_4_1_2_X_1.1mmS_FINODW8062C_INOX",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599076/productos/DISCO_DW_4_1_2_X_1.1mmS_FINODW8062C_INOX_ind0oo.jpg",
         "marca": "DEWALT",
         "categoria":"accesorios-para-herramientas",
         "subcategoria":"discos-abrasivos",
@@ -1060,11 +910,7 @@ const data = {
       
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/AMARRE_P_TEJA_ZINC_UNIDAD",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599043/productos/AMARRE_P_TEJA_ZINC_UNIDAD_e6kyeu.jpg",
         "marca": "MULTIMARCA",
         "categoria":"amarres",
         "subcategoria":"amarres-para-tejas",
@@ -1083,11 +929,7 @@ const data = {
       
       {
         "codigo": "producto39",
-        "imagen":{
-            "img1":"/productos/Enchufe_Codelca_Polo_a_tierra",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599076/productos/Enchufe_Codelca_Polo_a_tierra_aycm9w.jpg",
         "marca": "CODELCA",
         "categoria":"electricos",
         "subcategoria":"enchufes-y-clavijas",
@@ -1100,11 +942,7 @@ const data = {
       },
       {
         "codigo": "producto40",
-        "imagen":{
-            "img1":"/productos/Toma_Aereo_Codelca_SKU_1785",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599135/productos/Toma_Aereo_Codelca_SKU_1785_cyjxqq.jpg",
         "marca": "CODELCA",
         "categoria":"electricos",
         "subcategoria":"enchufes-y-clavijas",
@@ -1117,11 +955,7 @@ const data = {
       },
       {
         "codigo": "producto41",
-        "imagen":{
-            "img1":"/productos/Clavija_Tipo_Domestico_15A",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599063/productos/Clavija_Tipo_Domestico_15A_lxnavc.jpg",
         "marca": "CODELCA",
         "categoria":"electricos",
         "subcategoria":"enchufes-y-clavijas",
@@ -1132,11 +966,7 @@ const data = {
       },
       {
         "codigo": "producto42",
-        "imagen":{
-            "img1":"/productos/Clavija_Tipo_Industrial_15A",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599063/productos/Clavija_Tipo_Industrial_15A_rmlyrt.jpg",
         "marca": "CODELCA",
         "categoria":"electricos",
         "subcategoria":"enchufes-y-clavijas",
@@ -1148,11 +978,7 @@ const data = {
       
       {
         "codigo": "producto42-2",
-        "imagen":{
-            "img1":"/productos/Toma_hospitalario_Codelca_SKU_1779",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599136/productos/Toma_hospitalario_Codelca_SKU_1779_vlulkd.jpg",
         "marca": "CODELCA",
         "categoria":"electricos",
         "subcategoria":"tomas-e-interruptores",
@@ -1163,11 +989,7 @@ const data = {
       },
       {
         "codigo": "producto42-3",
-        "imagen":{
-            "img1":"/productos/toma_doble_para_red_regulada_naranja",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599135/productos/toma_doble_para_red_regulada_naranja_no0v5y.jpg",
         "marca": "CODELCA",
         "categoria":"electricos",
         "subcategoria":"tomas-e-interruptores",
@@ -1178,11 +1000,7 @@ const data = {
       },
       {
         "codigo": "producto42-4",
-        "imagen":{
-            "img1":"/productos/TOMA_DOBLE_CON_POLO_A_TIERRA_TIPO_AMERICANO",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599135/productos/TOMA_DOBLE_CON_POLO_A_TIERRA_TIPO_AMERICANO_pjygzt.jpg",
         "marca": "CODELCA",
         "categoria":"electricos",
         "subcategoria":"tomas-e-interruptores",
@@ -1193,11 +1011,7 @@ const data = {
       },
       {
         "codigo": "producto42-5",
-        "imagen":{
-            "img1":"/productos/taco_monopolar_enchufable_dse_de_20a_ref_dse_1020_luminex",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599133/productos/taco_monopolar_enchufable_dse_de_20a_ref_dse_1020_luminex_duwkn1.jpg",
         "marca": "LUMINEX",
         "categoria":"electricos",
         "subcategoria":"breakers",
@@ -1209,11 +1023,7 @@ const data = {
       
       {
         "codigo": "producto42-6",
-        "imagen":{
-            "img1":"/productos/taco_monopolar_enchufable_dse_de_20a_ref_dse_1020_luminex",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599133/productos/taco_monopolar_enchufable_dse_de_20a_ref_dse_1020_luminex_duwkn1.jpg",
         "marca": "LUMINEX",
         "categoria":"electricos",
         "subcategoria":"breakers",
@@ -1225,11 +1035,7 @@ const data = {
       
       {
         "codigo": "producto43",
-        "imagen":{
-            "img1":"/productos/tablero_para_breakers_enchufable_6_circuitos_bifasico_220v",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599132/productos/tablero_para_breakers_enchufable_6_circuitos_bifasico_220v_yc6ghh.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"cajas-y-tableros",
@@ -1240,11 +1046,7 @@ const data = {
       },
       {
         "codigo": "producto44",
-        "imagen":{
-            "img1":"/productos/tablero_para_breakers_enchufable_6_circuitos_bifasico_220v",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599132/productos/tablero_para_breakers_enchufable_6_circuitos_bifasico_220v_yc6ghh.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"cajas-y-tableros",
@@ -1256,11 +1058,7 @@ const data = {
       
       {
         "codigo": "producto45",
-        "imagen":{
-            "img1":"/productos/tbc2p_tablero_2_circuitos_enchufable_sobreponer_ciles",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599135/productos/tbc2p_tablero_2_circuitos_enchufable_sobreponer_ciles_ogzqve.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"cajas-y-tableros",
@@ -1273,11 +1071,7 @@ const data = {
       
       {
         "codigo": "producto46",
-        "imagen":{
-            "img1":"/productos/interruptor_sencillo_de_sobreponer_blanco_astral",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599091/productos/interruptor_sencillo_de_sobreponer_blanco_astral_rwqrru.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"tomas-e-interruptores",
@@ -1289,11 +1083,7 @@ const data = {
       
       {
         "codigo": "producto47",
-        "imagen":{
-            "img1":"/productos/interruptor_doble_conmutable_sin_polo_blanco_astral",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599088/productos/interruptor_doble_conmutable_sin_polo_blanco_astral_vua7ph.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"tomas-e-interruptores",
@@ -1305,11 +1095,7 @@ const data = {
       
       {
         "codigo": "producto48",
-        "imagen":{
-            "img1":"/productos/toma_doble_integral_con_polo_blanco_ultra",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599135/productos/toma_doble_integral_con_polo_blanco_ultra_jfzr4i.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"tomas-e-interruptores",
@@ -1322,11 +1108,7 @@ const data = {
       },
       {
         "codigo": "producto49",
-        "imagen":{
-            "img1":"/productos/interruptor_sencillo_ultra_blanco_foto_luminiscente",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599091/productos/interruptor_sencillo_ultra_blanco_foto_luminiscente_qokcd7.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"tomas-e-interruptores",
@@ -1339,11 +1121,7 @@ const data = {
       },
       {
         "codigo": "producto50",
-        "imagen":{
-          "img1":"/productos/interruptor_doble_ultra_blanco_foto_luminiscente",
-          
-      
-      },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599090/productos/interruptor_doble_ultra_blanco_foto_luminiscente_cm5eup.jpgpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"tomas-e-interruptores",
@@ -1356,11 +1134,7 @@ const data = {
       },
       {
         "codigo": "producto51",
-        "imagen":{
-            "img1":"/productos/breaker_enchufable_1_polo_16_amperios",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599044/productos/breaker_enchufable_1_polo_16_amperios_atqxlb.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"breakers",
@@ -1372,11 +1146,7 @@ const data = {
       },
       {
         "codigo": "producto52",
-        "imagen":{
-          "img1":"/productos/breaker_para_riel_1polo_20_amperios",
-          
-      
-      },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599045/productos/breaker_para_riel_1polo_20_amperios_h0xbk8.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"breakers",
@@ -1388,11 +1158,7 @@ const data = {
       },
       {
         "codigo": "producto53",
-        "imagen":{
-          "img1":"/productos/breaker_para_riel_1_polo_32_amperios",
-          
-      
-      },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599045/productos/breaker_para_riel_1_polo_32_amperios_lpxwjq.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"breakers",
@@ -1403,11 +1169,7 @@ const data = {
       },
       {
         "codigo": "producto54",
-        "imagen":{
-            "img1":"/productos/breaker_para_riel_1_polo_40_amperios",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599045/productos/breaker_para_riel_1_polo_40_amperios_shyuuu.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"breakers",
@@ -1418,11 +1180,7 @@ const data = {
       },
       {
         "codigo": "producto55",
-        "imagen":{
-          "img1":"/productos/breaker_para_riel_1_polo_50_amperios",
-          
-      
-      },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599045/productos/breaker_para_riel_1_polo_50_amperios_fz9nsf.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"breakers",
@@ -1434,11 +1192,7 @@ const data = {
       
       {
         "codigo": "producto56",
-        "imagen":{
-          "img1":"/productos/bc2321_breaker_enchufable_2x32a_120_240v_10ka_ciles1",
-          
-      
-      },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599042/productos/bc2321_breaker_enchufable_2x32a_120_240v_10ka_ciles1_psdau6.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"breakers",
@@ -1449,11 +1203,7 @@ const data = {
       },
       {
         "codigo": "producto57",
-        "imagen":{
-            "img1":"/productos/bc2321_breaker_enchufable_2x32a_120_240v_10ka_ciles1",
-            "img2":"/productos/bc2501_breaker_enchufable_2x50a_120_240v_10ka_ciles_(1)"
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599042/productos/bc2321_breaker_enchufable_2x32a_120_240v_10ka_ciles1_psdau6.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"breakers",
@@ -1466,11 +1216,7 @@ const data = {
       },
       {
         "codigo": "producto58",
-        "imagen":{
-            "img1":"/productos/bc2321_breaker_enchufable_2x32a_120_240v_10ka_ciles1",
-            "img2":"/productos/bc2501_breaker_enchufable_2x50a_120_240v_10ka_ciles_(1)"
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599042/productos/bc2321_breaker_enchufable_2x32a_120_240v_10ka_ciles1_psdau6.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"breakers",
@@ -1482,11 +1228,7 @@ const data = {
       },
       {
         "codigo": "producto59",
-        "imagen":{
-            "img1":"/productos/bc2401_breaker_enchufable_2x40a_120_240v_10ka_ciles",
-            "img2":"/productos/bc2501_breaker_enchufable_2x50a_120_240v_10ka_ciles_(1)"
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599043/productos/bc2401_breaker_enchufable_2x40a_120_240v_10ka_ciles_nhmxzq.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"breakers",
@@ -1499,11 +1241,7 @@ const data = {
       },
       {
         "codigo": "producto60",
-        "imagen":{
-            "img1":"/productos/bc2501_breaker_enchufable_2x50a_120_240v_10ka_ciles",
-            "img2":"/productos/bc2501_breaker_enchufable_2x50a_120_240v_10ka_ciles_(1)"
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599043/productos/bc2501_breaker_enchufable_2x50a_120_240v_10ka_ciles_vmtha7.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"breakers",
@@ -1515,11 +1253,7 @@ const data = {
       },
       {
         "codigo": "producto61",
-        "imagen":{
-            "img1":"/productos/cinta_aislante_negra_15_metros",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599063/productos/cinta_aislante_negra_15_metros_c4gtb8.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"cintas",
@@ -1532,11 +1266,7 @@ const data = {
       },
       {
         "codigo": "producto62",
-        "imagen":{
-            "img1":"/productos/cinta_aislante_x_5m_negra_ciles_electrox",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599063/productos/cinta_aislante_x_5m_negra_ciles_electrox_ctqcya.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"cintas",
@@ -1548,11 +1278,7 @@ const data = {
       },
       {
         "codigo": "producto63",
-        "imagen":{
-            "img1":"/productos/cinta_aislante_azul_x_15_metros",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599061/productos/cinta_aislante_azul_x_15_metros_tporgw.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"cintas",
@@ -1564,11 +1290,7 @@ const data = {
       
       {
         "codigo": "producto64",
-        "imagen":{
-            "img1":"/productos/cinta_aislante_x_5m_azul_ciles",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599063/productos/cinta_aislante_x_5m_azul_ciles_ljrwcz.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"cintas",
@@ -1581,11 +1303,7 @@ const data = {
       
       {
         "codigo": "producto65",
-        "imagen":{
-            "img1":"/productos/cinta_aislante_x_5m_blanca_ciles",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599063/productos/cinta_aislante_x_5m_blanca_ciles_jgz5ge.jpg",
         "marca": "CILES",
         "categoria":"electricos",
         "subcategoria":"cintas",
@@ -1597,11 +1315,7 @@ const data = {
       },
       {
         "codigo": "producto66",
-        "imagen":{
-            "img1":"/productos/interruptor_conmutable_sencillo_blanco",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599089/productos/interruptor_conmutable_sencillo_blanco_yobp3c.png",
         "marca": "OSBLACK",
         "categoria":"electricos",
         "subcategoria":"tomas-e-interruptores",
@@ -1612,11 +1326,7 @@ const data = {
       },
       {
         "codigo": "producto67",
-        "imagen":{
-            "img1":"/productos/interruptor_conmutable_doble_blanco",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599089/productos/interruptor_conmutable_doble_blanco_eqk07n.png",
         "marca": "OSBLACK",
         "categoria":"electricos",
         "subcategoria":"tomas-e-interruptores",
@@ -1628,11 +1338,7 @@ const data = {
       },
       {
         "codigo": "producto68",
-        "imagen":{
-            "img1":"/productos/interruptor_conmutable_triple_blanco",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599089/productos/interruptor_conmutable_triple_blanco_yhdvzx.png",
         "marca": "OSBLACK",
         "categoria":"electricos",
         "subcategoria":"tomas-e-interruptores",
@@ -1643,11 +1349,7 @@ const data = {
       },
       {
         "codigo": "producto69",
-        "imagen":{
-            "img1":"/productos/tomacorriente_doble_osblack",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599136/productos/tomacorriente_doble_osblack_mpjwzn.jpg",
         "marca": "OSBLACK",
         "categoria":"electricos",
         "subcategoria":"tomas-e-interruptores",
@@ -1659,11 +1361,7 @@ const data = {
       },
       {
         "codigo": "producto70",
-        "imagen":{
-            "img1":"/productos/toma_interrutor_blanco",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599137/productos/toma_interrutor_blanco_dju4ly.png",
         "marca": "OSBLACK",
         "categoria":"electricos",
         "subcategoria":"tomas-e-interruptores",
@@ -1675,11 +1373,7 @@ const data = {
       
       {
         "codigo": "producto71",
-        "imagen":{
-            "img1":"/productos/caja_plastica_2x4_blanca",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599055/productos/caja_plastica_2x4_blanca_sbnqxm.jpg",
         "marca": "MULTIMARCA",
         "categoria":"electricos",
         "subcategoria":"cajas-y-tableros",
@@ -1692,11 +1386,7 @@ const data = {
       
       {
         "codigo": "producto71",
-        "imagen":{
-            "img1":"/productos/caja_octagonal_pvc_retie",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599055/productos/caja_octagonal_pvc_retie_pn9gdy.jpg",
         "marca": "MULTIMARCA",
         "categoria":"electricos",
         "subcategoria":"cajas-y-tableros",
@@ -1708,11 +1398,7 @@ const data = {
       },
       {
         "codigo": "producto71",
-        "imagen":{
-            "img1":"/productos/CAJA_PVC_4X4",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599055/productos/CAJA_PVC_4X4_urysx4.jpg",
         "marca": "MULTIMARCA",
         "categoria":"electricos",
         "subcategoria":"cajas-y-tableros",
@@ -1724,11 +1410,7 @@ const data = {
       },
       {
         "codigo": "producto71",
-        "imagen":{
-            "img1":"/productos/plafon_baquelita_ave",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599105/productos/plafon_baquelita_ave_e76zqu.jpg",
         "marca": "MULTIMARCA",
         "categoria":"electricos",
         "subcategoria":"plafones-y-rosetas",
@@ -1740,11 +1422,7 @@ const data = {
       },
       {
         "codigo": "producto71",
-        "imagen":{
-            "img1":"/productos/plafon_de_loza",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599106/productos/plafon_de_loza_kxtmzn.jpg",
         "marca": "MULTIMARCA",
         "categoria":"electricos",
         "subcategoria":"plafones-y-rosetas",
@@ -1759,11 +1437,7 @@ const data = {
       
       {
         "codigo": "producto72",
-        "imagen":{
-            "img1":"/productos/SINTESOLDA_STANDARD_31_grs",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599123/productos/SINTESOLDA_STANDARD_31_grs_nmbgs7.jpg",
         "marca": "SINTESOLDA",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"pegantes-para-construcción",
@@ -1775,11 +1449,7 @@ const data = {
       },
       {
         "codigo": "producto73",
-        "imagen":{
-            "img1":"/productos/SINTESOLDA_RAPIDO_14_grs",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599123/productos/SINTESOLDA_RAPIDO_14_grs_sfwu6j.jpgg",
         "marca": "SINTESOLDA",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"pegantes-para-construcción",
@@ -1792,11 +1462,7 @@ const data = {
       
       {
         "codigo": "producto74",
-        "imagen":{
-            "img1":"/productos/SILICONA_SINTECO_50ml_TRANSPARENT_C_BLISTER30",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599122/productos/SILICONA_SINTECO_50ml_TRANSPARENT_C_BLISTER30_tequmd.jpgg",
         "marca": "SINTESOLDA",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"siliconas-y-selladores",
@@ -1808,11 +1474,7 @@ const data = {
       
       {
         "codigo": "producto75",
-        "imagen":{
-            "img1":"/productos/SILICONA_GRIS_SINTESOLDA",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599117/productos/SILICONA_GRIS_SINTESOLDA_wa1x0x.jpg",
         "marca": "SINTESOLDA",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"siliconas-y-selladores",
@@ -1824,11 +1486,7 @@ const data = {
       },
       {
         "codigo": "producto76",
-        "imagen":{
-            "img1":"/productos/silicona_negra_50_ml_sinteco_itw",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599118/productos/silicona_negra_50_ml_sinteco_itw_hfimpg.jpg",
         "marca": "SINTESOLDA",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"siliconas-y-selladores",
@@ -1840,11 +1498,7 @@ const data = {
       },
       {
         "codigo": "producto77",
-        "imagen":{
-            "img1":"/productos/SILICONA_ROJA_SINTESOLDA",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599121/productos/SILICONA_ROJA_SINTESOLDA_gclz2a.jpg",
         "marca": "SINTESOLDA",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"siliconas-y-selladores",
@@ -1856,11 +1510,7 @@ const data = {
       },
       {
         "codigo": "producto78",
-        "imagen":{
-            "img1":"/productos/SILICONA_SINTECO_28gr_TRANSPARENT_C_BLISTER",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599121/productos/SILICONA_SINTECO_28gr_TRANSPARENT_C_BLISTER_szugyb.jpg",
         "marca": "SINTESOLDA",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"siliconas-y-selladores",
@@ -1872,11 +1522,7 @@ const data = {
       },
       {
         "codigo": "producto79",
-        "imagen":{
-            "img1":"/productos/SILICONA_GRIS_SINTESOLDA",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599117/productos/SILICONA_GRIS_SINTESOLDA_wa1x0x.jpg",
         "marca": "SINTESOLDA",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"siliconas-y-selladores",
@@ -1889,11 +1535,7 @@ const data = {
       },
       {
         "codigo": "producto80",
-        "imagen":{
-            "img1":"/productos/silicona_negra_50_ml_sinteco_itw",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599118/productos/silicona_negra_50_ml_sinteco_itw_hfimpg.jpg",
         "marca": "SINTESOLDA",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"siliconas-y-selladores",
@@ -1906,11 +1548,7 @@ const data = {
       },
       {
         "codigo": "producto81",
-        "imagen":{
-            "img1":"/productos/silicona_roja_50_ml_Sinteco_itw",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599120/productos/silicona_roja_50_ml_Sinteco_itw_n7wtr5.jpg",
         "marca": "SINTESOLDA",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"siliconas-y-selladores",
@@ -1922,11 +1560,7 @@ const data = {
       },
       {
         "codigo": "producto82",
-        "imagen":{
-            "img1":"/productos/silicona_sanitaria_transparente_cartucho_280_ml_sinteco_itw",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599121/productos/silicona_sanitaria_transparente_cartucho_280_ml_sinteco_itw_nn4jq2.jpg",
         "marca": "SINTESOLDA",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"siliconas-y-selladores",
@@ -1939,11 +1573,7 @@ const data = {
       
       {
         "codigo": "producto83",
-        "imagen":{
-            "img1":"/productos/silicona_sanitaria_blanca_cartucho_280_ml_sinteco_itw",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599121/productos/silicona_sanitaria_blanca_cartucho_280_ml_sinteco_itw_ehfzf8.jpg",
         "marca": "SINTESOLDA",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"siliconas-y-selladores",
@@ -1955,11 +1585,7 @@ const data = {
       },
       {
         "codigo": "producto84",
-        "imagen":{
-            "img1":"/productos/MASILLA_SINTESOLDA_LIDER_EPOXI_50grs",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599100/productos/MASILLA_SINTESOLDA_LIDER_EPOXI_50grs_qsqjar.jpg",
         "marca": "SINTESOLDA",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"pegantes-para-construcción",
@@ -1971,11 +1597,7 @@ const data = {
       },
       {
         "codigo": "producto85",
-        "imagen":{
-            "img1":"/productos/MASILLA_SINTESOLDA_LIDER_EPOXI_30grs",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599099/productos/MASILLA_SINTESOLDA_LIDER_EPOXI_30grs_k4tgax.jpg",
         "marca": "SINTESOLDA",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"pegantes-para-construcción",
@@ -1987,11 +1609,7 @@ const data = {
       },
       {
         "codigo": "producto86",
-        "imagen":{
-            "img1":"/productos/MASILLA_SINTESOLDA_LIDER_EPOXI_100grs",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599100/productos/MASILLA_SINTESOLDA_LIDER_EPOXI_100grs_fivfap.jpg",
         "marca": "SINTESOLDA",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"pegantes-para-construcción",
@@ -2003,11 +1621,7 @@ const data = {
       },
       {
         "codigo": "producto87",
-        "imagen":{
-            "img1":"/productos/PEGADIT_SUPERADHESIVO_INSTANTANE_4grs_744_UC",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599103/productos/PEGADIT_SUPERADHESIVO_INSTANTANE_4grs_744_UC_zintlx.jpg",
         "marca": "PEGADIT",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"pegantes-para-construcción",
@@ -2019,11 +1633,7 @@ const data = {
       },
       {
         "codigo": "producto88",
-        "imagen":{
-            "img1":"/productos/PEGADIT_TURBOMAX_165grs",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599104/productos/PEGADIT_TURBOMAX_165grs_pe4val.jpg",
         "marca": "PEGADIT",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"siliconas-y-selladores",
@@ -2036,11 +1646,7 @@ const data = {
       },
       {
         "codigo": "producto89",
-        "imagen":{
-            "img1":"/productos/SILICONA_PEGADIT_VIDRIO_ALUM_50mlTRANSP",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599118/productos/SILICONA_PEGADIT_VIDRIO_ALUM_50mlTRANSP_gjn8jg.jpg",
         "marca": "PEGADIT",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"siliconas-y-selladores",
@@ -2052,11 +1658,7 @@ const data = {
       },
       {
         "codigo": "producto90",
-        "imagen":{
-            "img1":"/productos/SILICONA_PEGADIT_BAÑOS_COCINA_BLANCA50ml",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599118/productos/SILICONA_PEGADIT_BANOS_COCINA_BLANCA50ml_z8srue.jpg",
         "marca": "PEGADIT",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"siliconas-y-selladores",
@@ -2069,11 +1671,7 @@ const data = {
       },
       {
         "codigo": "producto91",
-        "imagen":{
-            "img1":"/productos/SILICONA_PEGADIT_VIDRIO_ALUM_280ml_TRANSP",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599118/productos/SILICONA_PEGADIT_VIDRIO_ALUM_280ml_TRANSP_scxaia.jpg",
         "marca": "PEGADIT",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"siliconas-y-selladores",
@@ -2086,11 +1684,7 @@ const data = {
       
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/PISTOLA_P_SILICONA_CALAFATEO_MULTIMARCAAZUL_SENC.jpg",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599105/productos/PISTOLA_P_SILICONA_CALAFATEO_MULTIMARCAAZUL_SENC_impi5w.jpg",
         "marca": "MULTIMARCA",
         "categoria":"pegantes-y-adhesivos",
         "subcategoria":"siliconas-y-selladores",
@@ -2103,11 +1697,7 @@ const data = {
       
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/PISTOLA_P_SILICONA_CALAFATEO_MULTIMARCA_TUBO_GRIS.jpg",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599104/productos/PISTOLA_P_SILICONA_CALAFATEO_MULTIMARCA_TUBO_GRIS_bcgrlu.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"siliconas-y-selladores",
@@ -2122,11 +1712,7 @@ const data = {
       
       {
         "codigo": "producto92",
-        "imagen":{
-            "img1":"/productos/Rodillo_Goya_Felpa_Junior_3",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599113/productos/Rodillo_Goya_Felpa_Junior_3_atdoau.jpg",
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
@@ -2138,11 +1724,7 @@ const data = {
       },
       {
         "codigo": "producto93",
-        "imagen":{
-            "img1":"/productos/Rodillo_Goya_Felpa_Junior_4",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599114/productos/Rodillo_Goya_Felpa_Junior_4_kmj8dd.jpg",
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
@@ -2154,11 +1736,7 @@ const data = {
       },
       {
         "codigo": "producto94",
-        "imagen":{
-            "img1":"/productos/Rodillo_Goya_Felpa_Junior_6",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599114/productos/Rodillo_Goya_Felpa_Junior_6_gapfaa.jpg",
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
@@ -2170,11 +1748,7 @@ const data = {
       },
       {
         "codigo": "producto95",
-        "imagen":{
-            "img1":"/productos/Rodillo_Goya_Acrilica_Profesional_9",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599113/productos/Rodillo_Goya_Acrilica_Profesional_9_lfq2no.jpg",
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
@@ -2187,11 +1761,7 @@ const data = {
       
       {
         "codigo": "producto96",
-        "imagen":{
-            "img1":"/productos/Rodillo_Goya_Felpa_Acrilico_C_Repuesto_9",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599114/productos/Rodillo_Goya_Felpa_Acrilico_C_Repuesto_9_ub6j08.jpg",
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
@@ -2204,11 +1774,7 @@ const data = {
       
       {
         "codigo": "producto97",
-        "imagen":{
-            "img1":"/productos/Rodillo_Goya_Epoxico_9",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599113/productos/Rodillo_Goya_Epoxico_9_whial9.jpg",
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
@@ -2220,11 +1786,7 @@ const data = {
       },
       {
         "codigo": "producto98",
-        "imagen":{
-            "img1":"/productos/BROCHA_PROFESI_MONA_C_AZUL_GOYA_1_2",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599045/productos/BROCHA_PROFESI_MONA_C_AZUL_GOYA_1_2_j0lgw6.jpg",
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
@@ -2236,11 +1798,7 @@ const data = {
       },
       {
         "codigo": "producto99",
-        "imagen":{
-            "img1":"/productos/brocha_profesional_mona_1_mango_azul_ref_1270_goya",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599053/productos/brocha_profesional_mona_1_mango_azul_ref_1270_goya_slphn0.jpg",
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
@@ -2252,11 +1810,7 @@ const data = {
       },
       {
         "codigo": "producto100",
-        "imagen":{
-            "img1":"/productos/BROCHA_ROFESI_MONA_C_AZUL_GOYA_1_1_2",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599053/productos/BROCHA_ROFESI_MONA_C_AZUL_GOYA_1_1_2_vjcirf.jpg",
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
@@ -2268,11 +1822,7 @@ const data = {
       },
       {
         "codigo": "producto101",
-        "imagen":{
-            "img1":"/productos/Brocha_2_goya",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599045/productos/Brocha_2_goya_zhwvmv.png",
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
