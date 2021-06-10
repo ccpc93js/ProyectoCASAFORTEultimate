@@ -117,7 +117,7 @@ productRouter.get('/marcas/seed', expressAsyncHandler(async(req,res) =>{
 
 productRouter.post(
     '/',
-    isAuth,
+    // isAuth,
     isAdmin,
     expressAsyncHandler(async (req, res) => {
       const producto = new Producto({
@@ -138,7 +138,7 @@ productRouter.post(
   );
   productRouter.put(
     '/:id',
-    isAuth,
+    // isAuth,
     isAdmin,
     expressAsyncHandler(async (req, res) => {
       const productId = req.params.id;
@@ -166,7 +166,7 @@ productRouter.post(
   
   productRouter.delete(
     '/:id',
-    isAuth,
+    // isAuth,
     isAdmin,
     expressAsyncHandler(async (req, res) => {
       const producto = await Producto.findById(req.params.id);

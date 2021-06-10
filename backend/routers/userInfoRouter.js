@@ -41,7 +41,7 @@ userInfoRouter.post(
 
   userInfoRouter.get(
     '/',
-    isAuth,
+    // isAuth,
     isAdmin,
     expressAsyncHandler(async (req, res) => {
       const usersInfo = await UserInfo.find({});
@@ -50,7 +50,7 @@ userInfoRouter.post(
   );
   userInfoRouter.delete(
     '/:id',
-    isAuth,
+    // isAuth,
     isAdmin,
     expressAsyncHandler(async (req, res) => {
       const userInfo = await UserInfo.findById(req.params.id);
