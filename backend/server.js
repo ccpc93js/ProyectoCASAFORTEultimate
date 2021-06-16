@@ -21,7 +21,6 @@ import uploadRouter from './routers/uploadRouter.js';
 import emailRouter from './routers/emailRouter.js';
 import userInfoRouter from './routers/userInfoRouter.js';
 
-
 dotenv.config();
 
 
@@ -140,6 +139,9 @@ app.use('/api/emails', emailRouter);
 
 app.use('/api/uploads', uploadRouter);
 
+app.use('/.well-known/pki-validation/AN2D4C5H7F01823KRIDHJ.txt',(req,res)=>{
+    res.send("FE3F5FEB31D9B29A9D1CD6DAD58913816EF93EFCD2F62AD5888A99D4F5083542 comodoca.com 60c3d80579f26")
+})
 const __dirname = path.resolve();
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 app.use(express.static(path.join(__dirname, 'frontend','build')));

@@ -21,8 +21,10 @@ export default function ProductEditScreen(props) {
   const [enStock, setEnStock] = useState('');
   const [unidad, setUnidad] = useState('');
   const [enOferta, setEnOferta] = useState('');
-  const [precioDeOferta, setPrecioDeOferta] = useState('');
   const [descuento, setDescuento] = useState('');
+  const [precioDeOferta, setPrecioDeOferta] = useState('');
+
+  console.log(descuento)
 
   const productDetails = useSelector((state) => state.productDetails);
   const { loading, error, producto } = productDetails;
@@ -73,8 +75,8 @@ export default function ProductEditScreen(props) {
         enStock,
         unidad,
         enOferta,
+        descuento,
         precioDeOferta,
-        descuento
       })
 
     );
@@ -316,8 +318,8 @@ export default function ProductEditScreen(props) {
                     id="precioDeOferta"
                     type="number"
                     placeholder="precio De Oferta"
-                    value={precio - (precio * (descuento/100))}
-                    onChange={(e) => setPrecioDeOferta(e.target.value)}
+                    value={precioDeOferta && precio - (precio * (descuento/100))}
+                    onChange={(e) => setPrecioDeOferta(precio - (precio * (descuento/100)) || e.target.value)}
                   ></input>
                 </div>
                 :("")

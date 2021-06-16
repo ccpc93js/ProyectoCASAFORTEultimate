@@ -50,8 +50,8 @@ userInfoRouter.post(
   );
   userInfoRouter.delete(
     '/:id',
-    // isAuth,
-    // isAdmin,
+    isAuth,
+    isAdmin,
     expressAsyncHandler(async (req, res) => {
       const userInfo = await UserInfo.findById(req.params.id);
       if (userInfo) {

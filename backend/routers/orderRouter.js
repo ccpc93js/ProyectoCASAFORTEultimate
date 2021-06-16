@@ -33,7 +33,7 @@ orderRouter.get(
 
 orderRouter.post(
     '/',
-    // isAuth,
+    isAuth,
     expressAsyncHandler(async (req, res) => {
       if (req.body.orderItems.length === 0) {
         res.status(400).send({ message: 'Carrito vacio' });
@@ -60,7 +60,7 @@ orderRouter.post(
 
 orderRouter.get(
   '/:id',
-  // isAuth,
+  isAuth,
   expressAsyncHandler(async (req, res) => {
     const order = await Order.findById(req.params.id);
     if (order) {
@@ -75,7 +75,7 @@ orderRouter.get(
 
 orderRouter.put(
   '/:id/pay',
-  // isAuth,
+  isAuth,
   expressAsyncHandler(async (req, res) => {
     const order = await Order.findById(req.params.id)
     if (order) {
@@ -97,8 +97,8 @@ orderRouter.put(
 
 orderRouter.delete(
   '/:id',
-  // isAuth,
-  // isAdmin,
+  isAuth,
+  isAdmin,
   expressAsyncHandler(async (req, res) => {
     const order = await Order.findById(req.params.id);
     if (order) {
@@ -112,8 +112,8 @@ orderRouter.delete(
 
 orderRouter.put(
   '/:id/deliver',
-  // isAuth,
-  // isAdmin,
+  isAuth,
+  isAdmin,
   expressAsyncHandler(async (req, res) => {
     const order = await Order.findById(req.params.id);
     if (order) {

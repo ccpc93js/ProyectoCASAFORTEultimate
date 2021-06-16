@@ -14,8 +14,8 @@ const productoSchema = new mongoose.Schema(
     enStock:Number,
     unidad:String,
     enOferta: {type:Boolean,default: false},
-    precioDeOferta:Number,
-    descuento:Number
+    descuento:Number,
+    precioDeOferta:Number
 
   },
   {

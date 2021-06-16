@@ -1,0 +1,15 @@
+Configuración Servidor FTP
+
+- sudo apt-get install vsftpd //Instalación de FTP.
+
+//Configurar servidor ftp 
+
+- /etc/vsftpd.conf //Archivo de configuración del Servidor FTP.
+///Configurar este archivo teniendo en cuenta lo siguiente (#=quita ; =agrega):
+# anonymous_enable=YES //Quitar el usuario anónimo.
+local_enable=YES //Deja que los usuarios locales se puedan conectar.
+write_enable=YES //Dejar que puedan hacer modificaciones
+local_umask=022 //Garantiza que los usuvario naveguen únicamente por su carpeta principal.
+# chroot_local_user=YES //Quitar usuario root para que FileZilla permita acceso.
+
+- sudo /etc/init.d/vsftpd restart //Reinicia FTP con los nuevos parámetros.

@@ -1790,7 +1790,7 @@ const data = {
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
-        "info": "Brocha Profesional Mona C/Azul GOYA 1/2”",
+        "info": "Brocha Profesional Mona C|Azul GOYA 1|2”",
         "precio": 5000,
         "enStock": 10,
         "unidad":"Paquete x 12"
@@ -1802,7 +1802,7 @@ const data = {
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
-        "info": "Brocha Profesional Mona C/Azul GOYA 1”",
+        "info": "Brocha Profesional Mona C|Azul GOYA 1”",
         "precio": 5000,
         "enStock": 10,
         "unidad":"Paquete x 12"
@@ -1814,7 +1814,7 @@ const data = {
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
-        "info": "Brocha Profesional Mona C/Azul GOYA 1 1/2”",
+        "info": "Brocha Profesional Mona C|Azul GOYA 1 1|2”",
         "precio": 5000,
         "enStock": 10,
         "unidad":"Paquete x 12"
@@ -1826,7 +1826,7 @@ const data = {
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
-        "info": "RBrocha Profesional Mona C/Azul GOYA 2”",
+        "info": "Brocha Profesional Mona C|Azul GOYA 2”",
         "precio": 5000,
         "enStock": 10,
         "unidad":"Paquete x 12"
@@ -1834,15 +1834,11 @@ const data = {
       },
       {
         "codigo": "producto102",
-        "imagen":{
-            "img1":"/productos/BROCHA_PROFESI_MONA_C_AZUL_GOYA_2_1_2",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599045/productos/BROCHA_PROFESI_MONA_C_AZUL_GOYA_2_1_2_dag3n3.jpg",
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
-        "info": "Brocha Profesional Mona C/Azul GOYA 2 1/2”",
+        "info": "Brocha Profesional Mona C|Azul GOYA 2 1|2”",
         "precio": 5000,
         "enStock": 10,
         "unidad":"Paquete x 12"
@@ -1850,15 +1846,11 @@ const data = {
       },
       {
         "codigo": "producto103",
-        "imagen":{
-            "img1":"/productos/BROCHA_PROFESI_MONA_C_AZUL_GOYA_3",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599052/productos/BROCHA_PROFESI_MONA_C_AZUL_GOYA_3_sabscb.jpg",
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
-        "info": "Brocha Profesional Mona C/Azul GOYA 3”",
+        "info": "Brocha Profesional Mona C|Azul GOYA 3”",
         "precio": 5000,
         "enStock": 10,
         "unidad":"Paquete x 12"
@@ -1867,15 +1859,11 @@ const data = {
       
       {
         "codigo": "producto105",
-        "imagen":{
-            "img1":"/productos/BROCHA_PROFESI_MONA_C_AZUL_GOYA_4",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599052/productos/BROCHA_PROFESI_MONA_C_AZUL_GOYA_4_imrki9.jpg",
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
-        "info": "Brocha Profesional Mona C/Azul GOYA 4”",
+        "info": "Brocha Profesional Mona C|Azul GOYA 4”",
         "precio": 5000,
         "enStock": 10,
         "unidad":"Paquete x 12"
@@ -1883,15 +1871,11 @@ const data = {
       },
       {
         "codigo": "producto106",
-        "imagen":{
-            "img1":"/productos/BROCHA_PROFESI_MONA_C_AZUL_GOYA_5",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599052/productos/BROCHA_PROFESI_MONA_C_AZUL_GOYA_5_qtlznr.jpg",
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
-        "info": "Brocha Profesional Mona C/Azul GOYA 5”",
+        "info": "Brocha Profesional Mona C|Azul GOYA 5”",
         "precio": 5000,
         "enStock": 10,
         "unidad":"Paquete x 12"
@@ -1899,15 +1883,11 @@ const data = {
       },
       {
         "codigo": "producto107",
-        "imagen":{
-            "img1":"/productos/brocha_6_goya",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599045/productos/brocha_6_goya_hzp2jq.jpg",
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
-        "info": "Brocha Profesional Mona C/Azul GOYA 6”",
+        "info": "Brocha Profesional Mona C|Azul GOYA 6”",
         "precio": 5000,
         "enStock": 10,
         "unidad":"Paquete x 12"
@@ -1915,11 +1895,7 @@ const data = {
       },
       {
         "codigo": "producto108",
-        "imagen":{
-            "img1":"/productos/Bandeja_Plastica_Goya",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599042/productos/Bandeja_Plastica_Goya_t56bc2.jpg",
         "marca": "GOYA",
         "categoria":"pinturas",
         "subcategoria":"herramientas-para-pintar",
@@ -1938,11 +1914,7 @@ const data = {
       
       {
         "codigo": "320010142",
-        "imagen":{
-            "img1":"/productos/Acople_Manguera_Sanit",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599041/productos/Acople_Manguera_Sanit_xpc5qu.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -1954,11 +1926,7 @@ const data = {
       },
       {
         "codigo": "320010143",
-        "imagen":{
-            "img1":"/productos/Acople_Manguera_Sanit",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599041/productos/Acople_Manguera_Sanit_xpc5qu.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -1971,11 +1939,7 @@ const data = {
       },
       {
         "codigo": "320010101",
-        "imagen":{
-            "img1":"/productos/agua_stop_plastico_rioplast",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599042/productos/agua_stop_plastico_rioplast_kuiojq.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -1988,11 +1952,7 @@ const data = {
       },
       {
         "codigo": "320010139",
-        "imagen":{
-            "img1":"/productos/agua_stop_vulcanizado_rioplas16",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599042/productos/agua_stop_vulcanizado_rioplas16_vrcir7.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2005,11 +1965,7 @@ const data = {
       },
       {
         "codigo": "320010310",
-        "imagen":{
-            "img1":"/productos/canastilla_4_lavaplatos_inoxidable_plastico_1",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599055/productos/canastilla_4_lavaplatos_inoxidable_plastico_1_h7vhmp.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-cocinas",
@@ -2021,11 +1977,7 @@ const data = {
       },
       {
         "codigo": "320010739",
-        "imagen":{
-            "img1":"/productos/Conjunto_Griferia_Sanitario_Con_Valvula_Hidrostatica",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599067/productos/Conjunto_Griferia_Sanitario_Con_Valvula_Hidrostatica_ftdeas.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2038,11 +1990,7 @@ const data = {
       
       {
         "codigo": "320010708",
-        "imagen":{
-            "img1":"/productos/Conjunto_Griferia_Sanitaria_Valvula_Entrada_Grecco_17_Cm",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599067/productos/Conjunto_Griferia_Sanitario_Con_Valvula_Hidrostatica_ftdeas.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2055,11 +2003,7 @@ const data = {
       
       {
         "codigo": "320012311",
-        "imagen":{
-            "img1":"/productos/Desague_Lavamanos_Tapa_Cromo",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599067/productos/Desague_Lavamanos_Tapa_Cromo_t2m2ia.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2071,11 +2015,7 @@ const data = {
       },
       {
         "codigo": "320010434",
-        "imagen":{
-            "img1":"#",
-            
-      
-        },
+        "imagen":"#",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"duchas",
@@ -2087,11 +2027,7 @@ const data = {
       },
       {
         "codigo": "320010402",
-        "imagen":{
-            "img1":"/productos/Ducha_acrilica_cromada_rioplast",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599076/productos/Ducha_acrilica_cromada_rioplast_m7qscl.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"duchas",
@@ -2104,11 +2040,7 @@ const data = {
       
       {
         "codigo": "320010604",
-        "imagen":{
-            "img1":"/productos/Filtro_Canastilla_Lavaplatos_Sello_4_Blanco",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599081/productos/Filtro_Canastilla_Lavaplatos_Sello_4_Blanco_wai7mq.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-cocinas",
@@ -2120,11 +2052,7 @@ const data = {
       },
       {
         "codigo": "320010605",
-        "imagen":{
-            "img1":"/productos/Filtro_Canastilla_Lavaplatos_Sello_4_Cromo",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599081/productos/Filtro_Canastilla_Lavaplatos_Sello_4_Cromo_god9z0.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-cocinas",
@@ -2136,11 +2064,7 @@ const data = {
       },
       {
         "codigo": "350010701",
-        "imagen":{
-            "img1":"/productos/grapas_lavamanos_x_2_unidades",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599086/productos/grapas_lavamanos_x_2_unidades_exro6q.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2153,11 +2077,7 @@ const data = {
       
       {
         "codigo": "350010802",
-        "imagen":{
-            "img1":"/productos/Herraje_Sanitario_Plastico_Dos_Piezas",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599086/productos/Herraje_Sanitario_Plastico_Dos_Piezas_afsrbz.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2169,11 +2089,7 @@ const data = {
       },
       {
         "codigo": "320011221",
-        "imagen":{
-            "img1":"/productos/Llave_Jardin_Manguera_Blanca",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599095/productos/Llave_Jardin_Manguera_Blanca_wvrkgh.png",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"jardin-y-exteriores",
@@ -2186,11 +2102,7 @@ const data = {
       },
       {
         "codigo": "320011205",
-        "imagen":{
-            "img1":"/productos/Llave_Jardin_Manguera_Gris",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599095/productos/Llave_Jardin_Manguera_Gris_pv10hu.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"jardin-y-exteriores",
@@ -2202,11 +2114,7 @@ const data = {
       },
       {
         "codigo": "320011209",
-        "imagen":{
-            "img1":"/productos/Llave_Lavamanos_Blanca",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599095/productos/Llave_Lavamanos_Blanca_al8cgk.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"griferia-lavamanos",
@@ -2219,11 +2127,7 @@ const data = {
       },
       {
         "codigo": "320011211",
-        "imagen":{
-            "img1":"/productos/Llave_Lavamanos_Cromo",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599096/productos/Llave_Lavamanos_Cromo_jjlcdp.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"griferia-lavamanos",
@@ -2237,11 +2141,7 @@ const data = {
       
       {
         "codigo": "320011317",
-        "imagen":{
-            "img1":"/productos/Manija_Tanque_Push_Superior_38_mm",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599096/productos/Manija_Tanque_Push_Superior_38_mm_dajzpf.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2253,11 +2153,7 @@ const data = {
       },
       {
         "codigo": "320011312",
-        "imagen":{
-            "img1":"/productos/Manija_Tanque_Sanitario_Blanca",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599098/productos/Manija_Tanque_Sanitario_Blanca_lwcgak.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2270,11 +2166,7 @@ const data = {
       },
       {
         "codigo": "320011314",
-        "imagen":{
-            "img1":"/productos/manija_tanque_sanit",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599096/productos/manija_tanque_sanit_mgc14c.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2287,11 +2179,7 @@ const data = {
       },
       {
         "codigo": "320011313",
-        "imagen":{
-            "img1":"/productos/Manija_Tanque_Sanitario_Transparente",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599099/productos/Manija_Tanque_Sanitario_Transparente_onaju2.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2304,11 +2192,7 @@ const data = {
       },
       {
         "codigo": "350011701",
-        "imagen":{
-            "img1":"/productos/Porta_Rollo_Plastico",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599106/productos/Porta_Rollo_Plastico_qwiict.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2321,11 +2205,7 @@ const data = {
       },
       {
         "codigo": "320011907",
-        "imagen":{
-            "img1":"/productos/racor_manguera_plastico",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599107/productos/racor_manguera_plastico_h5b9g7.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"jardin-y-exteriores",
@@ -2338,11 +2218,7 @@ const data = {
       },
       {
         "codigo": "320012042",
-        "imagen":{
-            "img1":"/productos/#",
-            
-      
-        },
+        "imagen":"#",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2354,11 +2230,7 @@ const data = {
       },
       {
         "codigo": "320012037",
-        "imagen":{
-            "img1":"Rejilla_piso_cuadrada_PVC_ranurada",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599111/productos/Rejilla_piso_cuadrada_PVC_ranurada_vu7nu8.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2370,11 +2242,7 @@ const data = {
       },
       {
         "codigo": "320012009",
-        "imagen":{
-            "img1":"/productos/Rejilla_Plástica_Anticucaracha_3x1_2",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599112/productos/Rejilla_Plastica_Anticucaracha_3x1_2_koos7i.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2387,11 +2255,7 @@ const data = {
       
       {
         "codigo": "320012014",
-        "imagen":{
-            "img1":"/productos/REJILLA_PLÁSTICA_RANURADA_3X2",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599113/productos/REJILLA_PLASTICA_RANURADA_3X2_h6z55n.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2402,11 +2266,7 @@ const data = {
       },
       {
         "codigo": "320012012",
-        "imagen":{
-            "img1":"/productos/Rejilla_Perforada_3X2",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599108/productos/Rejilla_Perforada_3X2_yi1bba.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2417,11 +2277,7 @@ const data = {
       },
       {
         "codigo": "320012030",
-        "imagen":{
-            "img1":"/productos/rejilla_4_x_3_sosco_corriente",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599108/productos/rejilla_4_x_3_sosco_corriente_k5xwsm.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2432,11 +2288,7 @@ const data = {
       },
       {
         "codigo": "320012051",
-        "imagen":{
-            "img1":"/productos/rejilla_perforada_4x3",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599111/productos/rejilla_perforada_4x3_ay5vhd.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2447,11 +2299,7 @@ const data = {
       },
       {
         "codigo": "320012046",
-        "imagen":{
-            "img1":"/productos/rejilla_4_x_3_sosco_corriente",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599108/productos/rejilla_4_x_3_sosco_corriente_k5xwsm.jpg",
         "marca": "GLOBY",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2462,11 +2310,7 @@ const data = {
       },
       {
         "codigo": "Producto400",
-        "imagen":{
-            "img1":"/productos/SIFON_FLEXIBLE_GLOBY",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599117/productos/SIFON_FLEXIBLE_GLOBY_usn75i.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-cocinas",
@@ -2477,11 +2321,7 @@ const data = {
       },
       {
         "codigo": "3320012026",
-        "imagen":{
-            "img1":"/productos/Sifón_Lavamanos_tapa_Desagüe_Cromo_ó_Blanca_Rioplast",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599118/productos/Sifon_Lavamanos_tapa_Desague_Cromo_Blanca_Rioplast_hlnybl.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2492,11 +2332,7 @@ const data = {
       },
       {
         "codigo": "320012002",
-        "imagen":{
-            "img1":"/productos/sifon_en_p_blanco_rioplast",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599117/productos/sifon_en_p_blanco_rioplast_puktsi.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-cocinas",
@@ -2507,11 +2343,7 @@ const data = {
       },
       {
         "codigo": "320012020",
-        "imagen":{
-            "img1":"/productos/sifon_en_p_gris_rioplast",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599117/productos/sifon_en_p_gris_rioplast_gvmxwr.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-cocinas",
@@ -2522,11 +2354,7 @@ const data = {
       },
       {
         "codigo": "320012138",
-        "imagen":{
-            "img1":"/productos/tapa_asiento_basicox3_blanco",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599135/productos/tapa_asiento_basicox3_blanco_imxjlr.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2537,11 +2365,7 @@ const data = {
       },
       {
         "codigo": "320012102",
-        "imagen":{
-            "img1":"/productos/tapa_registro_15_x_15_Rioplast",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599135/productos/tapa_registro_15_x_15_Rioplast_nwzf6a.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"jardin-y-exteriores",
@@ -2552,11 +2376,7 @@ const data = {
       },
       {
         "codigo": "320012110",
-        "imagen":{
-            "img1":"/productos/tornillo_sanitario_plastico_blanco",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599140/productos/tornillo_sanitario_plastico_blanco_alaenf.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2567,11 +2387,7 @@ const data = {
       },
       {
         "codigo": "350032101",
-        "imagen":{
-            "img1":"/productos/tranca_puerta_rioplast",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599141/productos/tranca_puerta_rioplast_ko174o.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"Soluciones para el hogar",
@@ -2582,11 +2398,7 @@ const data = {
       },
       {
         "codigo": "320010120",
-        "imagen":{
-            "img1":"/productos/Válvula_de_Entrada_16_17_cm_Rioplast",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599141/productos/Valvula_de_Entrada_16_17_cm_Rioplast_bmoxsm.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2597,11 +2409,7 @@ const data = {
       },
       {
         "codigo": "320012331",
-        "imagen":{
-            "img1":"#",
-            
-      
-        },
+        "imagen":"#",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2612,11 +2420,7 @@ const data = {
       },
       {
         "codigo": "320010118",
-        "imagen":{
-            "img1":"/productos/Válvula_de_Salida_con_Agua_Stop_Plástico_y_Cono_Grueso_Rioplast",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599143/productos/Valvula_de_Salida_con_Agua_Stop_Plastico_y_Cono_Grueso_Rioplast_y9t14v.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2627,11 +2431,7 @@ const data = {
       },
       {
         "codigo": "320012321",
-        "imagen":{
-            "img1":"/productos/valvula_pozuelo_pvc_sin_sosco_rioplast",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599143/productos/valvula_pozuelo_pvc_sin_sosco_rioplast_vuegrg.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2642,11 +2442,7 @@ const data = {
       },
       {
         "codigo": "320012341",
-        "imagen":{
-            "img1":"/productos/valvula_regulacion_sin_acople_rioplast",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599144/productos/valvula_regulacion_sin_acople_rioplast_sfqijd.jpg",
         "marca": "RIOPLAST",
         "categoria":"griferia-y-plomeria",
         "subcategoria":"soluciones-para-baños",
@@ -2660,11 +2456,7 @@ const data = {
       
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Palustre_mango_plastico",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599101/productos/Palustre_mango_plastico_rnihfd.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2676,11 +2468,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Palustre_mango_plastico",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599101/productos/Palustre_mango_plastico_rnihfd.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2692,11 +2480,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Palustre_mango_plastico",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599101/productos/Palustre_mango_plastico_rnihfd.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2708,11 +2492,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Palustre_mango_plastico",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599101/productos/Palustre_mango_plastico_rnihfd.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2724,11 +2504,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Palustre_mango_plastico",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599101/productos/Palustre_mango_plastico_rnihfd.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2740,11 +2516,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/palustre_9_pulgadas_mango_madera",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599101/productos/Palustre_mango_plastico_rnihfd.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2756,11 +2528,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/palustre_9_pulgadas_mango_madera",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599101/productos/Palustre_mango_plastico_rnihfd.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2772,11 +2540,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/palustre_9_pulgadas_mango_madera",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599101/productos/Palustre_mango_plastico_rnihfd.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2788,11 +2552,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/palustre_9_pulgadas_mango_madera",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599101/productos/Palustre_mango_plastico_rnihfd.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2804,11 +2564,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/palustre_9_pulgadas_mango_madera",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599101/productos/Palustre_mango_plastico_rnihfd.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2820,11 +2576,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Llana_Lisa_mango_plastico",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599095/productos/Llana_Lisa_mango_plastico_zialen.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2836,11 +2588,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Llana_Lisa_mango_madera",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599095/productos/Llana_Lisa_mango_madera_zuakwx.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2852,11 +2600,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Llana_Dentada_mango_madera",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599093/productos/Llana_Dentada_mango_madera_gzzzbn.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2868,11 +2612,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Llana_Dentada_mango_plastico",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599095/productos/Llana_Dentada_mango_plastico_qy6ftj.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2884,11 +2624,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Espatula_metalica_mango_plastico_2",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599080/productos/Espatula_metalica_mango_plastico_2_av007n.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2900,11 +2636,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Espatula_metalica_mango_plastico_3",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599080/productos/Espatula_metalica_mango_plastico_3_lvx00c.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2916,11 +2648,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Espatula_metalica_mango_plastico_4",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599080/productos/Espatula_metalica_mango_plastico_4_j6bcwb.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2932,11 +2660,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Espatula_metalica_mango_plastico_5",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599082/productos/Espatula_metalica_mango_plastico_5_ag7j7v.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2948,11 +2672,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Espatula_metalica_mango_madera_2",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599076/productos/Espatula_metalica_mango_madera_2_imfiof.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2964,11 +2684,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Espatula_metalica_mango_madera_3",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599076/productos/Espatula_metalica_mango_madera_3_nlbcky.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2980,11 +2696,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Espatula_metalica_mango_madera_4",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599076/productos/Espatula_metalica_mango_madera_4_or1jb0.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -2996,11 +2708,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Espatula_metalica_mango_madera_5",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599077/productos/Espatula_metalica_mango_madera_5_qlpyqa.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -3012,11 +2720,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Martillo_pequeño",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599099/productos/Martillo_peque%C3%B1o_vfl8qh.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -3028,11 +2732,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"..productos/Martillo_fibra_vidrio_16oz",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599099/productos/Martillo_fibra_vidrio_16oz_jfmyjo.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -3044,11 +2744,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/martillo_mango_madera",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599099/productos/martillo_mango_madera_sd1q1z.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -3061,11 +2757,7 @@ const data = {
       
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Lima_Triangular",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/Lima_Triangular_l2cbjm.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"limas-y-escofinas",
@@ -3077,11 +2769,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/cepillo_alambre_espatula",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599056/productos/cepillo_alambre_espatula_lboagw.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"herramientas-de-acabado",
@@ -3093,11 +2781,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/ALICATE_CRESCENT",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599042/productos/ALICATE_CRESCENT_nwjybx.jpg",
         "marca": "CRESCENT",
         "categoria":"herramientas-manuales",
         "subcategoria":"pinzas-y-alicates",
@@ -3109,11 +2793,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Hoja_segueta_nicholson",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599086/productos/Hoja_segueta_nicholson_flkfcn.jpg",
         "marca": "NICHOLSON",
         "categoria":"herramientas-manuales",
         "subcategoria":"herramientas-manuales-de-corte",
@@ -3125,11 +2805,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Hoja_segueta_nicholson",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599086/productos/Hoja_segueta_nicholson_flkfcn.jpg",
         "marca": "SECURITY",
         "categoria":"herramientas-manuales",
         "subcategoria":"herramientas-manuales-de-corte",
@@ -3141,11 +2817,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/cincel_puntero_punta_con_mango_protector",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599060/productos/cincel_puntero_punta_con_mango_protector_quiq7c.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -3157,11 +2829,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/cincel_punta_pala",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599060/productos/cincel_punta_pala_t2wdhz.jpg",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"albañileria-y-construcción",
@@ -3174,11 +2842,7 @@ const data = {
       
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/FLEXOMETRO_LUFKIN_L510CME_x3mts_NARANJA",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599081/productos/FLEXOMETRO_LUFKIN_L510CME_x3mts_NARANJA_mbdxyc.jpg",
         "marca": "LUFKIN-CRESCENT",
         "categoria":"herramientas-manuales",
         "subcategoria":"herramientas-de-medición",
@@ -3190,11 +2854,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/FLEXOMETRO_REFORZADO_5M",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599082/productos/FLEXOMETRO_REFORZADO_5M_gmku8x.jpg",
         "marca": "UNIFLEX",
         "categoria":"herramientas-manuales",
         "subcategoria":"herramientas-de-medición",
@@ -3206,11 +2866,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/FLEXOMETRO_LUFKIN_L525CME_x8mts_NARANJA",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599081/productos/FLEXOMETRO_LUFKIN_L525CME_x8mts_NARANJA_hkifyg.jpg",
         "marca": "LUFKIN CRESCENT",
         "categoria":"herramientas-manuales",
         "subcategoria":"herramientas-de-medición",
@@ -3222,11 +2878,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/JGO_DESTORNILLADOR_GOLPE_UYUSTOOLS_6pzsMIXTA",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599092/productos/JGO_DESTORNILLADOR_GOLPE_UYUSTOOLS_6pzsMIXTA_yldua0.jpg",
         "marca": "UYUSTOOLS",
         "categoria":"herramientas-manuales",
         "subcategoria":"destornilladores",
@@ -3239,11 +2891,7 @@ const data = {
       
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/MARCO_DE_SIERRA_NICHOLSON_PINTADO",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599099/productos/MARCO_DE_SIERRA_NICHOLSON_PINTADO_qhcjll.jpg",
         "marca": "NICHOLSON-CRESCENT",
         "categoria":"herramientas-manuales",
         "subcategoria":"herramientas-manuales-de-corte",
@@ -3255,11 +2903,7 @@ const data = {
       },
       {
         "codigo": "producto38",
-        "imagen":{
-            "img1":"/productos/Hombre_Solo",
-            
-      
-        },
+        "imagen":"https://res.cloudinary.com/casaforte/image/upload/v1622599087/productos/Hombre_Solo_dnnmri.png",
         "marca": "MULTIMARCA",
         "categoria":"herramientas-manuales",
         "subcategoria":"pinzas-y-alicates",

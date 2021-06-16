@@ -117,13 +117,13 @@ productRouter.get('/marcas/seed', expressAsyncHandler(async(req,res) =>{
 
 productRouter.post(
     '/',
-    // isAuth,
-    // isAdmin,
+    isAuth,
+    isAdmin,
     expressAsyncHandler(async (req, res) => {
       const producto = new Producto({
         codigo: 'codigo' ,
         info: 'ejemplo descripcion ',
-        imagen: {img1:'/img/img1.jpg'},
+        imagen:'/img/img1.jpg',
         precio: 0,
         categoria: 'ejemplo categoria',
         subcategoria: 'ejemplo subcategoria',
@@ -138,8 +138,8 @@ productRouter.post(
   );
   productRouter.put(
     '/:id',
-    // isAuth,
-    // isAdmin,
+    isAuth,
+    isAdmin,
     expressAsyncHandler(async (req, res) => {
       const productId = req.params.id;
       const producto = await Producto.findById(productId);
@@ -153,9 +153,9 @@ productRouter.post(
         producto.subcategoria = req.body.subcategoria;
         producto.enStock = req.body.enStock;
         producto.unidad = req.body.unidad;
-        producto.enOferta = req.body.enOferta
-        producto.precioDeOferta = req.body.precioDeOferta
-        producto.descuento = req.body.descuento
+        producto.enOferta = req.body.enOferta;
+        producto.descuento = req.body.descuento;
+        producto.precioDeOferta = req.body.precioDeOferta;
         const updatedProduct = await producto.save();
         res.send({ message: 'Producto actualizado', producto: updatedProduct });
       } else {
@@ -166,8 +166,8 @@ productRouter.post(
   
   productRouter.delete(
     '/:id',
-    // isAuth,
-    // isAdmin,
+    isAuth,
+    isAdmin,
     expressAsyncHandler(async (req, res) => {
       const producto = await Producto.findById(req.params.id);
       if (producto) {
