@@ -8,8 +8,19 @@ import LoadingBox from '../component/LoadingBox';
 import MessageBox from '../component/MessageBox';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import IconButton from '@material-ui/core/IconButton';
+import PostAddIcon from '@material-ui/icons/PostAdd';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import PhoneIcon from '@material-ui/icons/Phone';
+import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import EmailIcon from '@material-ui/icons/Email';
+import PersonIcon from '@material-ui/icons/Person';
+
 import { mostrarContrasena } from '../component/MostrarContrasena';
 // import { USER_UPDATE_PROFILE_RESET } from '../constants/userConstants';
+
+import dataDyC from '../component/enlaces/dataDyC'
+
 
 export default function ProfileScreen() {
   const [name, setName] = useState('');
@@ -17,6 +28,14 @@ export default function ProfileScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [tDocument, setTD] = useState('');
+  const [nDocument, setND] = useState('');
+  const [department, setDepartment] = useState('');
+  const [city, setCity] = useState('');
+  const [adress, setAdress] = useState('');
+  const [tel, setTel] = useState('');
+  const [cel, setCel] = useState('');
+  const [tipoClient, setTipoClient] = useState('');
 
 
   const userSignin = useSelector((state) => state.userSignin);
@@ -38,6 +57,15 @@ export default function ProfileScreen() {
       setName(user.name);
       setNit(user.nit);
       setEmail(user.email);
+      setTD(user.tDocument);
+      setND(user.nDocument);
+      setDepartment(user.department);
+      setCity(user.city);
+      setAdress(user.adress);
+      setTel(user.tel);
+      setCel(user.cel);
+      setTipoClient(user.tipoClient);
+
     
     }
   }, [dispatch, userInfo._id, user]);
@@ -59,7 +87,21 @@ export default function ProfileScreen() {
     }
   };
 
+  const data = dataDyC.DyC
+  const [departamentos, setDepartamentos] = useState(data);
+  const [ciudades, setCiudades] = useState([]);
 
+  const ciudadesSelect = (e) =>{
+    let departamento = e.target.value;
+    setCiudades(data.filter((x)=>{
+
+        if(departamento ){
+        return (x.ciudades )
+        }
+    })
+    )
+
+}
   return (
     <div className="profile-container zona-form">
       <form className="formulario" onSubmit={submitHandler}>
@@ -86,7 +128,7 @@ export default function ProfileScreen() {
               )}
          
             <div className="input-contenedor">
-              <label htmlFor="name">Name</label>
+            <i className=""><PersonIcon/></i>
               <input
                 id="name"
                 type="text"
@@ -96,17 +138,17 @@ export default function ProfileScreen() {
               ></input>
             </div>
             <div className="input-contenedor">
-              <label htmlFor="email">Nit</label>
+            <i className=""><PostAddIcon/></i>
               <input
                 id="nit"
                 type="nit"
-                placeholder="Nit"
+                placeholder="Nit o Cedula"
                 value={nit}
                 onChange={(e) => setNit(e.target.value)}
               ></input>
             </div>
             <div className="input-contenedor">
-              <label htmlFor="email">Email</label>
+            <i className=""><EmailIcon/></i>
               <input
                 id="email"
                 type="email"
@@ -115,6 +157,128 @@ export default function ProfileScreen() {
                 onChange={(e) => setEmail(e.target.value)}
               ></input>
             </div>
+
+            <div className="input-contenedor">
+                    <i className=""><PostAddIcon/></i>
+                    {/* <input type="text2" placeholder="Tipo de Documento"/> */}
+                    <select 
+                    value={tDocument}
+                    type="text2"
+                    onChange={(e) => setTD(e.target.value)}
+                    
+                    >
+                        <option  selected disables >Selecciona el tipo de documento</option>
+                        <option value="Nit sin dijito de verificacion">Nit sin dijito de verificacion</option>
+                        <option value="Cedula de ciudadania" >Cedula de ciudadania</option>
+                        <option value="Cedula de ciudadania" >Cedula de extranjeria</option>
+                    </select>
+                </div>
+
+                <div className="input-contenedor">
+                <i className=""><PostAddIcon/></i>
+                    <input
+                    value={nDocument}
+                     type="number"
+                     placeholder="Nº Documento"
+                     onChange={(e) => setND(e.target.value)}
+                      
+                      />
+                </div>
+
+                <div className="input-contenedor">
+                    <i className=""><LocationOnIcon/></i>
+                    <select 
+                    value={department}
+                    type="text2" 
+                    placeholder="Departamento"
+                    onChange={(e) => setDepartment(e.target.value), ciudadesSelect}
+
+                    >
+                        <option  selected disables >Seleccionar departamento</option>
+                        {departamentos.map(x=>
+                        <option value={x.departamento}>{x.departamento}</option>
+
+                        )}
+                    </select>
+                </div>
+
+                <div className="input-contenedor">
+                <i className=""><LocationOnIcon/></i>
+                    {/* <select
+                     value={email}
+                     type="text2" 
+                     placeholder="Ciudad"
+                     onChange={(e) => setCity(e.target.value)}
+                     
+                     >
+                        <option  selected disables >Seleccionar ciudad</option>
+                        {ciudades.map(x=>
+                        <option value={x[1]}>{x[1]}</option>
+
+                        )}
+                     </select> */}
+
+                    <input
+                     value={city}
+                     type="text2" 
+                     placeholder="Ciudad"
+                     onChange={(e) => setCity(e.target.value)}
+                     
+                     
+
+                     />
+                </div>
+
+                <div className="input-contenedor">
+                <i className=""><LocationOnIcon/></i>
+                    <input 
+                    value={adress}
+                    type="text2" 
+                    placeholder="Direcci&oacute;n"
+                    onChange={(e) => setAdress(e.target.value)}
+                    
+                    />
+                </div>
+
+                <div className="input-contenedor">
+                    <i className=""><PhoneIcon/></i>
+                    <input 
+                    value={tel}
+                    type="number" 
+                    placeholder="Telefono"
+                    onChange={(e) => setTel(e.target.value)}
+                    
+                    />
+                </div>
+
+                <div className="input-contenedor">
+                    <i className=""><PhoneIphoneIcon/></i>
+                    <input 
+                    value={cel}
+                    type="number" 
+                    placeholder="Celular"
+                    onChange={(e) => setCel(e.target.value)}
+                    
+                    />
+                </div>
+
+               <div className="input-contenedor">
+                    <i className=""><AccountCircleIcon/></i>
+                    {/* <input type="text2" placeholder="Selecciona el tipo de cliente"/> */}
+                    <select 
+                    value={tipoClient}
+                    type="text2"
+                    onChange={(e) => setTipoClient(e.target.value)}
+                    
+                    >
+                        <option selected disables>Selecciona el tipo de cliente</option>
+                        <option value="Empresa" key="">Empresa</option>
+                        <option value="Persona" key="">Persona</option>
+                    </select>
+                   
+                </div>
+
+
             <div className="input-contenedor">
               <label htmlFor="password">Password</label>
               <input

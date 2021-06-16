@@ -56,6 +56,14 @@ userRouter.post(
         name: req.body.name,
         nit: req.body.nit,
         email: req.body.email,
+        tDocument: req.body.tDocument,
+        nDocument: req.body.nDocument,
+        department: req.body.department,
+        city: req.body.city,
+        adress: req.body.adress,
+        tel: req.body.tel,
+        cel: req.body.cel,
+        tipoClient: req.body.tipoClient,
         password: bcrypt.hashSync(req.body.password, 8),
       });
       const createdUser = await user.save();
@@ -64,6 +72,14 @@ userRouter.post(
         name: createdUser.name,
         nit: createdUser.nit,
         email: createdUser.email,
+        tDocument: createdUser.tDocument,
+        nDocument: createdUser.nDocument,
+        department: createdUser.department,
+        city: createdUser.city,
+        adress: createdUser.adress,
+        tel: createdUser.tel,
+        cel: createdUser.cel,
+        tipoClient: createdUser.tipoClient,
         isAdmin: createdUser.isAdmin,
         token: generateToken(createdUser),
       });
@@ -144,6 +160,15 @@ userRouter.post(
         user.name = req.body.name || user.name;
         user.nit = req.body.nit || user.nit;
         user.email = req.body.email || user.email;
+        user.tDocument = req.body.tDocument || user.tDocument;
+        user.nDocument = req.body.nDocument || user.nDocument;
+        user.department = req.body.department || user.department;
+        user.city = req.body.city || user.city;
+        user.adress = req.body.adress || user.adress;
+        user.tel = req.body.tel || user.tel;
+        user.cel = req.body.cel || user.cel;
+        user.tipoClient = req.body.tipoClient || user.tipoClient;
+
 
         if (req.body.password) {
           user.password = bcrypt.hashSync(req.body.password, 8);
@@ -154,6 +179,14 @@ userRouter.post(
           name: updatedUser.name,
           nit: updatedUser.nit,
           email: updatedUser.email,
+          tDocument: updatedUser.tDocument,
+          nDocument: updatedUser.nDocument,
+          department: updatedUser.department,
+          city: updatedUser.city,
+          adress: updatedUser.adress,
+          tel: updatedUser.tel,
+          cel: updatedUser.cel,
+          tipoClient: updatedUser.tipoClient,
           token: generateToken(updatedUser),
         });
       }

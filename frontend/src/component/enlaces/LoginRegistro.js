@@ -10,9 +10,15 @@ import LockIcon from '@material-ui/icons/Lock';
 import ContactsIcon from '@material-ui/icons/Contacts';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import IconButton from '@material-ui/core/IconButton';
+import PostAddIcon from '@material-ui/icons/PostAdd';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import PhoneIcon from '@material-ui/icons/Phone';
+import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { mostrarContrasena,mostrarConfirmContrasena } from '../MostrarContrasena';
 import axios from '../../../node_modules/axios/index';
 
+import dataDyC from './dataDyC'
 
 function LoginRegistro(props) {
   const [name, setName] = useState('');
@@ -20,6 +26,14 @@ function LoginRegistro(props) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [tDocument, setTD] = useState('');
+  const [nDocument, setND] = useState('');
+  const [department, setDepartment] = useState('');
+  const [city, setCity] = useState('');
+  const [adress, setAdress] = useState('');
+  const [tel, setTel] = useState('');
+  const [cel, setCel] = useState('');
+  const [tipoClient, setTipoClient] = useState('');
 
 
   // const redirect = props.location.search
@@ -46,7 +60,7 @@ const enviarEmail = async(name,email,nit, password)=>{
     if (password !== confirmPassword) {
         alert('contraseña y confirmar contraseña no coinciden');
       } else {
-        dispatch(register(name, nit, email, password));
+        dispatch(register(name, nit, email, password,tDocument,nDocument,department,city,adress,tel,cel,tipoClient));
         alert("Usuario registrado correctamete")
 
   
@@ -61,7 +75,21 @@ const enviarEmail = async(name,email,nit, password)=>{
   //    alert("Usuario registrado correctamete")
   //   }
   // }, [ userInfo]);
+  const data = dataDyC.DyC
+  const [departamentos, setDepartamentos] = useState(data);
+  const [ciudades, setCiudades] = useState([]);
 
+  const ciudadesSelect = (e) =>{
+    let departamento = e.target.value;
+    setCiudades(data.filter((x)=>{
+
+        if(departamento ){
+        return (x.ciudades )
+        }
+    })
+    )
+
+}
     return (
         <div className="zona-form">
             <div className="contacto">
@@ -109,6 +137,127 @@ const enviarEmail = async(name,email,nit, password)=>{
                     
                     />
                 </div>
+
+                <div className="input-contenedor">
+                    <i className=""><PostAddIcon/></i>
+                    {/* <input type="text2" placeholder="Tipo de Documento"/> */}
+                    <select 
+                    required
+                    type="text2"
+                    onChange={(e) => setTD(e.target.value)}
+                    
+                    >
+                        <option  selected disables >Selecciona el tipo de documento</option>
+                        <option value="Pasaporte">Nit sin dijito de verificacion</option>
+                        <option value="Cedula de ciudadania" >Cedula de ciudadania</option>
+                        <option value="Cedula de ciudadania" >Cedula de extranjeria</option>
+                    </select>
+                </div>
+
+                <div className="input-contenedor">
+                <i className=""><PostAddIcon/></i>
+                    <input
+                    required
+                     type="number"
+                     placeholder="Nº Documento"
+                     onChange={(e) => setND(e.target.value)}
+                      
+                      />
+                </div>
+
+                <div className="input-contenedor">
+                    <i className=""><LocationOnIcon/></i>
+                    <select 
+                    required
+                    type="text2" 
+                    placeholder="Departamento"
+                    onChange={(e) => setDepartment(e.target.value), ciudadesSelect}
+
+                    >
+                        <option  selected disables >Seleccionar departamento</option>
+                        {departamentos.map(x=>
+                        <option value={x.departamento}>{x.departamento}</option>
+
+                        )}
+                    </select>
+                </div>
+
+                <div className="input-contenedor">
+                <i className=""><LocationOnIcon/></i>
+                    {/* <select
+                     required
+                     type="text2" 
+                     placeholder="Ciudad"
+                     onChange={(e) => setCity(e.target.value)}
+                     
+                     >
+                        <option  selected disables >Seleccionar ciudad</option>
+                        {ciudades.map(x=>
+                        <option value={x[1]}>{x[1]}</option>
+
+                        )}
+                     </select> */}
+
+                    <input
+                     required
+                     type="text2" 
+                     placeholder="Ciudad"
+                     onChange={(e) => setCity(e.target.value)}
+                     
+                     
+
+                     />
+                </div>
+
+                <div className="input-contenedor">
+                <i className=""><LocationOnIcon/></i>
+                    <input 
+                    required
+                    type="text2" 
+                    placeholder="Direcci&oacute;n"
+                    onChange={(e) => setAdress(e.target.value)}
+                    
+                    />
+                </div>
+
+                <div className="input-contenedor">
+                    <i className=""><PhoneIcon/></i>
+                    <input 
+                    required
+                    type="number" 
+                    placeholder="Telefono"
+                    onChange={(e) => setTel(e.target.value)}
+                    
+                    />
+                </div>
+
+                <div className="input-contenedor">
+                    <i className=""><PhoneIphoneIcon/></i>
+                    <input 
+                    required
+                    type="number" 
+                    placeholder="Celular"
+                    onChange={(e) => setCel(e.target.value)}
+                    
+                    />
+                </div>
+
+                <div className="input-contenedor">
+                    <i className=""><AccountCircleIcon/></i>
+                    {/* <input type="text2" placeholder="Selecciona el tipo de cliente"/> */}
+                    <select 
+                    required
+                    type="text2"
+                    onChange={(e) => setTipoClient(e.target.value)}
+                    
+                    >
+                        <option selected disables>Selecciona el tipo de cliente</option>
+                        <option value="Empresa" key="">Empresa</option>
+                        <option value="Persona" key="">Persona</option>
+                    </select>
+                   
+                </div>
+
 
                 <div className="input-contenedor">
                     <i className=""><LockIcon/></i>

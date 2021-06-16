@@ -245,7 +245,7 @@ const compraExitosahandler = () =>{
                     
                     >
                         <option  selected disables >Selecciona el tipo de documento</option>
-                        <option value="Pasaporte">Nit sin dijito de verificacion</option>
+                        <option value="Nit sin dijito de verificacion">Nit sin dijito de verificacion</option>
                         <option value="Cedula de ciudadania" >Cedula de ciudadania</option>
                         <option value="Cedula de ciudadania" >Cedula de extranjeria</option>
                     </select>
