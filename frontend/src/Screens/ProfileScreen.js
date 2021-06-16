@@ -15,6 +15,8 @@ import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import EmailIcon from '@material-ui/icons/Email';
 import PersonIcon from '@material-ui/icons/Person';
+import ContactsIcon from '@material-ui/icons/Contacts';
+
 
 import { mostrarContrasena } from '../component/MostrarContrasena';
 // import { USER_UPDATE_PROFILE_RESET } from '../constants/userConstants';
@@ -29,7 +31,6 @@ export default function ProfileScreen() {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [tDocument, setTD] = useState('');
-  const [nDocument, setND] = useState('');
   const [department, setDepartment] = useState('');
   const [city, setCity] = useState('');
   const [adress, setAdress] = useState('');
@@ -58,7 +59,6 @@ export default function ProfileScreen() {
       setNit(user.nit);
       setEmail(user.email);
       setTD(user.tDocument);
-      setND(user.nDocument);
       setDepartment(user.department);
       setCity(user.city);
       setAdress(user.adress);
@@ -138,7 +138,22 @@ export default function ProfileScreen() {
               ></input>
             </div>
             <div className="input-contenedor">
-            <i className=""><PostAddIcon/></i>
+                    <i className=""><PostAddIcon/></i>
+                    {/* <input type="text2" placeholder="Tipo de Documento"/> */}
+                    <select 
+                    value={tDocument}
+                    type="text2"
+                    onChange={(e) => setTD(e.target.value)}
+                    
+                    >
+                        <option  selected disables >Selecciona el tipo de documento</option>
+                        <option value="Nit sin dijito de verificacion">Nit sin dijito de verificacion</option>
+                        <option value="Cedula de ciudadania" >Cedula de ciudadania</option>
+                        <option value="Cedula de ciudadania" >Cedula de extranjeria</option>
+                    </select>
+                </div>
+            <div className="input-contenedor">
+            <i className=""><ContactsIcon/></i>
               <input
                 id="nit"
                 type="nit"
@@ -158,32 +173,8 @@ export default function ProfileScreen() {
               ></input>
             </div>
 
-            <div className="input-contenedor">
-                    <i className=""><PostAddIcon/></i>
-                    {/* <input type="text2" placeholder="Tipo de Documento"/> */}
-                    <select 
-                    value={tDocument}
-                    type="text2"
-                    onChange={(e) => setTD(e.target.value)}
-                    
-                    >
-                        <option  selected disables >Selecciona el tipo de documento</option>
-                        <option value="Nit sin dijito de verificacion">Nit sin dijito de verificacion</option>
-                        <option value="Cedula de ciudadania" >Cedula de ciudadania</option>
-                        <option value="Cedula de ciudadania" >Cedula de extranjeria</option>
-                    </select>
-                </div>
 
-                <div className="input-contenedor">
-                <i className=""><PostAddIcon/></i>
-                    <input
-                    value={nDocument}
-                     type="number"
-                     placeholder="Nº Documento"
-                     onChange={(e) => setND(e.target.value)}
-                      
-                      />
-                </div>
+
 
                 <div className="input-contenedor">
                     <i className=""><LocationOnIcon/></i>

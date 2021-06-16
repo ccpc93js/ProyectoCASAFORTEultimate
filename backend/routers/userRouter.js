@@ -57,7 +57,6 @@ userRouter.post(
         nit: req.body.nit,
         email: req.body.email,
         tDocument: req.body.tDocument,
-        nDocument: req.body.nDocument,
         department: req.body.department,
         city: req.body.city,
         adress: req.body.adress,
@@ -73,7 +72,6 @@ userRouter.post(
         nit: createdUser.nit,
         email: createdUser.email,
         tDocument: createdUser.tDocument,
-        nDocument: createdUser.nDocument,
         department: createdUser.department,
         city: createdUser.city,
         adress: createdUser.adress,
@@ -161,7 +159,6 @@ userRouter.post(
         user.nit = req.body.nit || user.nit;
         user.email = req.body.email || user.email;
         user.tDocument = req.body.tDocument || user.tDocument;
-        user.nDocument = req.body.nDocument || user.nDocument;
         user.department = req.body.department || user.department;
         user.city = req.body.city || user.city;
         user.adress = req.body.adress || user.adress;
@@ -180,7 +177,6 @@ userRouter.post(
           nit: updatedUser.nit,
           email: updatedUser.email,
           tDocument: updatedUser.tDocument,
-          nDocument: updatedUser.nDocument,
           department: updatedUser.department,
           city: updatedUser.city,
           adress: updatedUser.adress,

@@ -27,7 +27,6 @@ function LoginRegistro(props) {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [tDocument, setTD] = useState('');
-  const [nDocument, setND] = useState('');
   const [department, setDepartment] = useState('');
   const [city, setCity] = useState('');
   const [adress, setAdress] = useState('');
@@ -60,7 +59,7 @@ const enviarEmail = async(name,email,nit, password)=>{
     if (password !== confirmPassword) {
         alert('contraseña y confirmar contraseña no coinciden');
       } else {
-        dispatch(register(name, nit, email, password,tDocument,nDocument,department,city,adress,tel,cel,tipoClient));
+        dispatch(register(name, nit, email, password,tDocument,department,city,adress,tel,cel,tipoClient));
         alert("Usuario registrado correctamete")
 
   
@@ -113,7 +112,21 @@ const enviarEmail = async(name,email,nit, password)=>{
                     
                     />
                 </div>
-
+                <div className="input-contenedor">
+                    <i className=""><PostAddIcon/></i>
+                    {/* <input type="text2" placeholder="Tipo de Documento"/> */}
+                    <select 
+                    required
+                    type="text2"
+                    onChange={(e) => setTD(e.target.value)}
+                    
+                    >
+                        <option  selected disables >Selecciona el tipo de documento</option>
+                        <option value="Nit sin dijito de verificacion">Nit sin dijito de verificacion</option>
+                        <option value="Cedula de ciudadania" >Cedula de ciudadania</option>
+                        <option value="Cedula de ciudadania" >Cedula de extranjeria</option>
+                    </select>
+                </div>
                 <div className="input-contenedor">
                     <i className=""><ContactsIcon/></i>
                     <input 
@@ -138,32 +151,8 @@ const enviarEmail = async(name,email,nit, password)=>{
                     />
                 </div>
 
-                <div className="input-contenedor">
-                    <i className=""><PostAddIcon/></i>
-                    {/* <input type="text2" placeholder="Tipo de Documento"/> */}
-                    <select 
-                    required
-                    type="text2"
-                    onChange={(e) => setTD(e.target.value)}
-                    
-                    >
-                        <option  selected disables >Selecciona el tipo de documento</option>
-                        <option value="Pasaporte">Nit sin dijito de verificacion</option>
-                        <option value="Cedula de ciudadania" >Cedula de ciudadania</option>
-                        <option value="Cedula de ciudadania" >Cedula de extranjeria</option>
-                    </select>
-                </div>
 
-                <div className="input-contenedor">
-                <i className=""><PostAddIcon/></i>
-                    <input
-                    required
-                     type="number"
-                     placeholder="Nº Documento"
-                     onChange={(e) => setND(e.target.value)}
-                      
-                      />
-                </div>
+
 
                 <div className="input-contenedor">
                     <i className=""><LocationOnIcon/></i>
