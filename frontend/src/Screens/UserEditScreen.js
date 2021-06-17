@@ -9,11 +9,34 @@ import loadingPage from '../component/LoadingPage';
 import MessageBox from '../component/MessageBox';
 import { USER_UPDATE_RESET } from '../constants/userConstants';
 
+
+import EmailIcon from '@material-ui/icons/Email';
+import PersonIcon from '@material-ui/icons/Person';
+import LockIcon from '@material-ui/icons/Lock';
+import ContactsIcon from '@material-ui/icons/Contacts';
+import VisibilityIcon from '@material-ui/icons/Visibility';
+import IconButton from '@material-ui/core/IconButton';
+import PostAddIcon from '@material-ui/icons/PostAdd';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import PhoneIcon from '@material-ui/icons/Phone';
+import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+
+import dataDyC from '../component/enlaces/dataDyC'
+
+
 export default function UserEditScreen(props) {
   const userId = props.match.params.id;
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [nit, setNit] = useState(false);
+  const [tDocument, setTD] = useState('');
+  const [department, setDepartment] = useState('');
+  const [city, setCity] = useState('');
+  const [adress, setAdress] = useState('');
+  const [tel, setTel] = useState('');
+  const [cel, setCel] = useState('');
+  const [tipoClient, setTipoClient] = useState('');
   const [isAdmin, setIsAdmin] = useState(false);
 
   const userDetails = useSelector((state) => state.userDetails);
@@ -38,6 +61,14 @@ export default function UserEditScreen(props) {
       setName(user.name);
       setEmail(user.email);
       setNit(user.nit);
+      setTD(user.tDocument);
+      setDepartment(user.department);
+      setCity(user.city);
+      setAdress(user.adress);
+      setTel(user.tel);
+      setCel(user.cel);
+      setTipoClient(user.tipoClient);
+
       setIsAdmin(user.isAdmin);
     }
   }, [dispatch, props.history, successUpdate, user, userId]);
@@ -47,6 +78,22 @@ export default function UserEditScreen(props) {
     // dispatch update user
     dispatch(updateUser({ _id: userId, name, email, nit, isAdmin }));
   };
+
+  const data = dataDyC.DyC
+  const [departamentos, setDepartamentos] = useState(data);
+  const [ciudades, setCiudades] = useState([]);
+
+  const ciudadesSelect = (e) =>{
+    let departamento = e.target.value;
+    setCiudades(data.filter((x)=>{
+
+        if(departamento ){
+        return (x.ciudades )
+        }
+    })
+    )
+
+};
   return (
     <div className="userListContainer zona-form">
       <form className="formulario" onSubmit={submitHandler}>
@@ -66,7 +113,7 @@ export default function UserEditScreen(props) {
         ) : (
           <>
             <div className="input-contenedor ">
-              <label htmlFor="name">Nombre:</label>
+            <i className=""><PersonIcon/></i>
               <input
                 id="name"
                 type="text"
@@ -76,17 +123,22 @@ export default function UserEditScreen(props) {
               ></input>
             </div>
             <div className="input-contenedor">
-              <label htmlFor="email">Email:</label>
-              <input
-                id="email"
-                type="email"
-                placeholder="Enter email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              ></input>
-            </div>
+                    <i className=""><PostAddIcon/></i>
+                    {/* <input type="text2" placeholder="Tipo de Documento"/> */}
+                    <select 
+                    value={tDocument}
+                    type="text2"
+                    onChange={(e) => setTD(e.target.value)}
+                    
+                    >
+                        {/* <option  selected disables >Selecciona el tipo de documento</option> */}
+                        <option value="Nit sin dijito de verificacion">Nit sin dijito de verificacion</option>
+                        <option value="Cedula de ciudadania" >Cedula de ciudadania</option>
+                        <option value="Cedula de ciudadania" >Cedula de extranjeria</option>
+                    </select>
+                </div>
             <div className="input-contenedor">
-              <label htmlFor="nit">Nit:</label>
+            <i className=""><ContactsIcon/></i>
               <input
                 id="nit"
                 type="text"
@@ -95,6 +147,124 @@ export default function UserEditScreen(props) {
                 onChange={(e) => setNit(e.target.value)}
               ></input>
             </div>
+
+            <div className="input-contenedor">
+                    <i className=""><EmailIcon/></i>
+                    <input 
+                    type="email" 
+                    id="email"
+                    placeholder="Email"
+                    value={email}
+
+                    onChange={(e) => setEmail(e.target.value)}
+                    
+                    />
+                </div>
+
+
+
+
+                <div className="input-contenedor">
+                    <i className=""><LocationOnIcon/></i>
+                    <select 
+                    // value={department}
+
+                    type="text2" 
+                    placeholder="Departamento"
+                    onChange={(e) => setDepartment(e.target.value), ciudadesSelect}
+
+                    >
+                        <option  value={department}>{department}</option>
+                        {departamentos.map(x=>
+                        <option value={x.departamento}>{x.departamento}</option>
+
+                        )}
+                    </select>
+                </div>
+
+                <div className="input-contenedor">
+                <i className=""><LocationOnIcon/></i>
+                    {/* <select
+                     value={email}
+
+                     type="text2" 
+                     placeholder="Ciudad"
+                     onChange={(e) => setCity(e.target.value)}
+                     
+                     >
+                        <option  selected disables >Seleccionar ciudad</option>
+                        {ciudades.map(x=>
+                        <option value={x[1]}>{x[1]}</option>
+
+                        )}
+                     </select> */}
+
+                    <input
+                     value={city}
+
+                     type="text2" 
+                     placeholder="Ciudad"
+                     onChange={(e) => setCity(e.target.value)}
+                     
+                     
+
+                     />
+                </div>
+
+                <div className="input-contenedor">
+                <i className=""><LocationOnIcon/></i>
+                    <input 
+                    value={adress}
+
+                    type="text2" 
+                    placeholder="Direcci&oacute;n"
+                    onChange={(e) => setAdress(e.target.value)}
+                    
+                    />
+                </div>
+
+                <div className="input-contenedor">
+                    <i className=""><PhoneIcon/></i>
+                    <input 
+                    value={tel}
+
+                    type="number" 
+                    placeholder="Telefono"
+                    onChange={(e) => setTel(e.target.value)}
+                    
+                    />
+                </div>
+
+                <div className="input-contenedor">
+                    <i className=""><PhoneIphoneIcon/></i>
+                    <input 
+                    value={cel}
+
+                    type="number" 
+                    placeholder="Celular"
+                    onChange={(e) => setCel(e.target.value)}
+                    
+                    />
+                </div>
+
+                <div className="input-contenedor">
+                    <i className=""><AccountCircleIcon/></i>
+                    {/* <input type="text2" placeholder="Selecciona el tipo de cliente"/> */}
+                    <select 
+                    value={tipoClient}
+
+                    type="text2"
+                    onChange={(e) => setTipoClient(e.target.value)}
+                    
+                    >
+                        {/* <option selected disables>Selecciona el tipo de cliente</option> */}
+                        <option value="Empresa" key="">Empresa</option>
+                        <option value="Persona" key="">Persona</option>
+                    </select>
+                   
+                </div>
+
+
             <div >
               <label htmlFor="isAdmin">Es Admin</label>
               <input

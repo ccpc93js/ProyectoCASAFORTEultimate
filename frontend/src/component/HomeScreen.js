@@ -225,7 +225,13 @@ export const HomeScreen = () => {
       </div>
     
 <div className="descaga-app">
-<h4>Descarga la App</h4>
+
+<div className="noLimit">
+  <h4>No te limites</h4>
+  <h2>Y descubre la mejor opción en <br /> surtido de ferretería en tus manos</h2>
+</div>
+
+{/* <h4>Descarga la App</h4>
 <br/>
 <br/>
 
@@ -237,7 +243,7 @@ export const HomeScreen = () => {
 </ul>
 <ul>
    <li><a href="#"><img class="ul-img" src="https://res.cloudinary.com/casaforte/image/upload/v1622647548/Icon/logo-apple-store-e1587126330625_ysijwv.png" alt="appstore"/></a></li>
-</ul>
+</ul> */}
 </div>
     
 </div>

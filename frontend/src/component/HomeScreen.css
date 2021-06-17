@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 .HomeScreen-container{
     /* text-align: center; */
 }
@@ -345,7 +347,9 @@ opacity: 0;
 }
 .descaga-app {
     width: 50%;
+    display: flex;
     text-align: center;
+    align-items: center;
     padding-top: 7%;
 
 }
@@ -355,18 +359,26 @@ opacity: 0;
     margin-bottom: 3rem;
 }
 
+.noLimit{
+    margin: auto;
+}
+
 .celular h4{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Fredoka One', cursive !important;
+
     /* margin-top: -320px; */
-    font-size: 30px;
+    font-size: 50px;
     color: #000000e8;
     /* margin-left: 950px; */
 }
 
 .celular h2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Fredoka One', cursive !important;
+
     /* margin-top: 1rem; */
-    font-size: 18px;
+    font-size: 28px;
     color: #818a97;
     /* margin-left: 950px; */
 }
@@ -770,6 +782,14 @@ fin pausa */
         overflow-x:auto;
     }
 
+
+    .celular h4{
+        font-size: 30px;
+    }
+
+    .celular h2{
+        font-size: 18px;
+    }
 }
 
   

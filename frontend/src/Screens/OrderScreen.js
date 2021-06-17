@@ -282,7 +282,8 @@ const compraExitosahandler = () =>{
                         </div>
 
                         <div>
-                        {item.qty} x {formatCurrency(item.precio)} = {formatCurrency(item.qty * item.precio)}
+                        {item.qty} x {item.enOferta === true?formatCurrency(userInfo.tipoClient === "Empresa"? item.precioDeOferta + (item.precioDeOferta * 0.20):userInfo.tipoClient === "Persona"? item.precioDeOferta + (item.precioDeOferta * 0.30): item.precioDeOferta):formatCurrency(userInfo.tipoClient === "Empresa"? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"? item.precio + (item.precio * 0.30): item.precio)} = {item.enOferta === true?formatCurrency(item.qty * userInfo.tipoClient === "Empresa"? item.precioDeOferta + (item.precioDeOferta * 0.20):userInfo.tipoClient === "Persona"? item.precioDeOferta + (item.precioDeOferta * 0.30): item.precioDeOferta):formatCurrency(item.qty * userInfo.tipoClient === "Empresa"? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"? item.precio + (item.precio * 0.30): item.precio)}
+                        
                         </div>
                       </div>
                     </li>

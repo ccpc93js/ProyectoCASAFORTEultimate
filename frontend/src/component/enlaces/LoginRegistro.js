@@ -45,6 +45,23 @@ function LoginRegistro(props) {
     props.history.push('/signin')
 }
 
+const registrarUsuarioPuntosYA = async(name, nit, email, tel, adress) =>{
+    try {
+
+   const {data} = await axios.get(`http://puntosya.azurewebsites.net/puntosya/registro_usuario_api.php?local=326&clave=pjt3anu1&nombre=${name}&cedula=${nit}&correo=${email}&telefono=${tel}&direccion=${adress}`)
+    console.log(data);
+    alert(data);
+
+    }catch (error){
+
+        const message =
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message;
+        console.log(message)
+    }
+}
+
 const enviarEmail = async(name,email,nit, password)=>{
   await axios.post("/api/emails/loginRegister",{
     name,
@@ -64,6 +81,7 @@ const enviarEmail = async(name,email,nit, password)=>{
 
   
       enviarEmail(name,email,nit, password);
+      registrarUsuarioPuntosYA(name, nit, email, tel, adress);
   
       };
 

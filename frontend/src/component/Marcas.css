@@ -1,7 +1,9 @@
 
 .container-marcas{
     /* background-color: #f5f7fc; */
-    background-image:  url(https://res.cloudinary.com/casaforte/image/upload/v1622648392/fondos/ferreteria3_fhxx2x.jpg) ;
+    background-color: #fafafa;
+    
+    /* background-image:  url(https://res.cloudinary.com/casaforte/image/upload/v1622648392/fondos/ferreteria3_fhxx2x.jpg) ; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

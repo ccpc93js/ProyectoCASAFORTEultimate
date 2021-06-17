@@ -17,6 +17,8 @@ import Fade from 'react-reveal/Fade';
 export default function CartScreen(props) {
     // const producto = data.productos.find((x)=>x._id === props.match.params.id)
 
+    const userSignin = useSelector((state) => state.userSignin);
+    const { userInfo} = userSignin;
     const productId = props.match.params.id;
     const qty = props.location.search? Number(props.location.search.split('=')[1])
     :1;
@@ -106,17 +108,17 @@ export default function CartScreen(props) {
                                         
                                             <p>
                                             <b> Precio:  </b>
-                                              {formatCurrency(item.precio )}
+                                              {formatCurrency(userInfo.tipoClient === "Empresa"? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"? item.precio + (item.precio * 0.30): item.precio )}
                                             </p>
                                         ):(
                                           <div className="producto-en-oferta_precio">
                                             <b> Precio:  </b>
 
-                                           <p className="p1"> {formatCurrency(item.precio )}</p>
+                                           <p className="p1"> {formatCurrency(userInfo.tipoClient === "Empresa"? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"? item.precio + (item.precio * 0.30): item.precio )}</p>
                                             {/* <br></br> */}
                                             <b> oferta:  </b>
                                         
-                                            <p className="p2"> {formatCurrency(item.precioDeOferta)}</p>
+                                            <p className="p2"> {formatCurrency(userInfo.tipoClient === "Empresa"? item.precioDeOferta + (item.precioDeOferta * 0.20):userInfo.tipoClient === "Persona"? item.precioDeOferta + (item.precioDeOferta * 0.30): item.precioDeOferta )}</p>
                                         
                                           </div>
 
@@ -163,7 +165,7 @@ export default function CartScreen(props) {
                     <ul>
                         <li className="subtotal">
                             <h2 >
-                              <b> Subtotal:  {cartItems.reduce((a,c) => a + c.qty, 0)} articulos: {formatCurrency(cartItems.reduce((a,c)=> a + (c.precio - (c.precio * (c.descuento/100)||0)) * c.qty, 0))} </b> 
+                              <b> Subtotal:  {cartItems.reduce((a,c) => a + c.qty, 0)} articulos: {formatCurrency(cartItems.reduce((a,c)=> a + (userInfo.tipoClient === "Empresa"? c.precio + (c.precio * 0.20):userInfo.tipoClient === "Persona"? c.precio + (c.precio * 0.30): c.precio  - (userInfo.tipoClient === "Empresa"? c.precio + (c.precio * 0.20):userInfo.tipoClient === "Persona"? c.precio + (c.precio * 0.30): c.precio  * (c.descuento/100)||0)) * c.qty, 0))} </b> 
                             </h2>
                         </li>
                         <li>

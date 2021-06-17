@@ -22,6 +22,7 @@ import { handleCartSideClose, handleCartSideOpen } from './DrawerRight'
 export default function Productos(props) {
     const userSignin = useSelector((state) => state.userSignin);
     const { userInfo } = userSignin;
+    console.log(userInfo.tipoClient)
     const [productos, setProductos] = useState([]);
     const [totalProductos, setTotalProductos] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -270,12 +271,12 @@ export default function Productos(props) {
                   userInfo?
                 
                 (x.enOferta ===false)?(
-                  <p>{formatCurrency(x.precio )}</p>
+                  <p>{formatCurrency(userInfo.tipoClient === "Empresa"? x.precio + (x.precio * 0.20):userInfo.tipoClient === "Persona"? x.precio + (x.precio * 0.30): x.precio)}</p>
                 ):(
                   <div className="producto-en-oferta_precio">
-                   <p className="p1"> {formatCurrency(x.precio )}</p>
+                   <p className="p1"> {formatCurrency(userInfo.tipoClient === "Empresa"? x.precio + (x.precio * 0.20):userInfo.tipoClient === "Persona"? x.precio + (x.precio * 0.30): x.precio)}</p>
                     {/* <br></br> */}
-                    <p className="p2"> {formatCurrency(x.precioDeOferta)}</p>
+                    <p className="p2"> {formatCurrency(userInfo.tipoClient === "Empresa"? x.precio + (x.precio * 0.20):userInfo.tipoClient === "Persona"? x.precioDeOferta + (x.precioDeOferta * 0.30): x.precioDeOferta)}</p>
 
                   </div>
                   

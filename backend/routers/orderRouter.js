@@ -8,8 +8,8 @@ const orderRouter = express.Router();
 
 orderRouter.get(
   '/Admin',
-  // isAuth,
-  // isAdmin,
+  isAuth,
+  isAdmin,
   expressAsyncHandler(async (req, res) => {
     const orders = await Order.find({})
     .populate(
@@ -24,7 +24,7 @@ orderRouter.get(
 
 orderRouter.get(
   '/mine',
-  // isAuth,
+  isAuth,
   expressAsyncHandler(async (req, res) => {
     const orders = await Order.find({ user: req.user._id });
     res.send(orders);
@@ -130,8 +130,8 @@ orderRouter.put(
 
 orderRouter.get(
   '/summary',
-  // isAuth,
-  // isAdmin,
+  isAuth,
+  isAdmin,
   expressAsyncHandler(async (req, res) => {
     const orders = await Order.aggregate([
       {
