@@ -1,0 +1,13 @@
+cd projects
+
+rm -rf ProyectoCASAFORTEultimate
+
+git clone https://github.com/ccpc93js/ProyectoCASAFORTEultimate
+
+cd  ProyectoCASAFORTEultimate
+
+npm install
+
+sudo systemctl restart pm2-root
+
+pm2 start node backend/server.js
