@@ -93,7 +93,7 @@ useEffect(()=>{
     });
   }
 
-  if(successPay  && userInfo && !userInfo.isAdmin){
+  if(successPay && order.paymentMethod === "Contra entrega" && userInfo && !userInfo.isAdmin){
 
     enviarEmail(userInfo.name, userInfo.email,order);
   }
@@ -219,7 +219,7 @@ const compraExitosahandler = () =>{
                 ) : (
                   <MessageBox variant="danger">No Pagado</MessageBox>
                 )):""}
-                    {order.isPaid && userInfo && !userInfo.isAdmin ? (
+                    {(order.isPaid || order.paymentMethod === "Contra entrega") && userInfo && !userInfo.isAdmin ? (
 
 
                         <div className="Modal-compraExitosa-container ">
