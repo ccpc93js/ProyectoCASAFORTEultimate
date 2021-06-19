@@ -22,7 +22,6 @@ import { handleCartSideClose, handleCartSideOpen } from './DrawerRight'
 export default function Productos(props) {
     const userSignin = useSelector((state) => state.userSignin);
     const { userInfo } = userSignin;
-    console.log(userInfo.tipoClient)
     const [productos, setProductos] = useState([]);
     const [totalProductos, setTotalProductos] = useState([]);
     const [loading, setLoading] = useState(false);

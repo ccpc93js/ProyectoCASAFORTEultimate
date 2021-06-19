@@ -328,6 +328,8 @@ const compraExitosahandler = () =>{
                 </div>
               </li>
               <li>
+                {
+                  order.paymentMethod === "PayPal"?
                 <div className="row">
                   <div>
                     <strong>Total en dolares</strong>
@@ -337,6 +339,9 @@ const compraExitosahandler = () =>{
                   </div>
                    {!order.isPaid ? <div>para pagar con paypal se debe cambiar el total a dolares</div>:""}
                 </div>
+                :""
+                }
+
               </li>
               {!order.isPaid && (
                 <li>
@@ -349,11 +354,29 @@ const compraExitosahandler = () =>{
                       <MessageBox variant="danger">{errorPay}</MessageBox>
                     )}
                     {loadingPay && <LoadingBox></LoadingBox>}
+                    {
+                      order.paymentMethod === "PayPal"?
+
                   <PayPalButton className="payPalBotton"
                     // onClick={handleCopExitosaModalOpen}
                     amount={order.totalinDolars.toFixed(2)}
                     onSuccess={successPaymentHandler}
                   ></PayPalButton>
+                  :("")
+                    }
+                    {
+
+                     userInfo.isAdmin && order.paymentMethod === "Contra entrega"?
+                      <button
+                      type="button"
+                      className="button block"
+                      onClick={()=>{successPaymentHandler({id:"CONTRAENTREGA9",status:"COMPLETED"})}}
+                      
+                      >
+                      Pedido contra entrega pagado
+                    </button>
+                    : ""
+                    }
                   </div>
                   
                   )}

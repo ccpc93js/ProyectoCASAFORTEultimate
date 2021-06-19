@@ -8,7 +8,19 @@ import LoadingBox from '../component/LoadingBox';
 import MessageBox from '../component/MessageBox';
 import { ORDER_CREATE_RESET } from '../constants/orderConstants';
 import formatCurrency, { cambiarAdolares } from '../actions/productActions';
+import ClearIcon from '@material-ui/icons/Clear';
 
+
+window.addEventListener("click", (e) =>{
+  const MCE_C = document.querySelector(".Modal-compraExitosa-container");
+  const MCE = document.querySelector(".Modal-compraExitosa")
+
+
+  if(e.target == MCE_C ){
+    MCE_C.classList.toggle("ModalCExitosa-Container-Close")
+    MCE.classList.toggle("ModalCExitosa-Close")  
+  }
+})
 export default function PlaceOrderScreen(props) {
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo} = userSignin;
@@ -20,9 +32,9 @@ export default function PlaceOrderScreen(props) {
     const orderCreate = useSelector((state) => state.orderCreate);
     const {loading, success, error, order} = orderCreate;
 
-    const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
-        return Intl.NumberFormat(formatoLenguaje, {style: 'currency', currency: moneda}).format(valor);
-    }
+    // const convertirAmoneda = (valor, moneda, formatoLenguaje = undefined) =>{
+    //     return Intl.NumberFormat(formatoLenguaje, {style: 'currency', currency: moneda}).format(valor);
+    // }
 
 
     const toPrice = (num) =>  Number(num.toFixed(2));
@@ -33,12 +45,68 @@ export default function PlaceOrderScreen(props) {
     cart.totalPrice = cart.itemsPrice + cart.shippingPrice;
     cart.totalinDolars = cambiarAdolares(cart.totalPrice)
     
+
+    const handlecompraContraEntregaOpen = () =>{
+      const MCE_C = document.querySelector(".Modal-compraExitosa-container")
+      const MCE = document.querySelector(".Modal-compraExitosa")
     
+      MCE_C.classList.toggle("ModalCExitosa-Container-Close")
+      MCE.classList.toggle("ModalCExitosa-Close")
+    
+    }
+    
+    const handlecompraContraEntregaClose = () =>{
+      const MCE_C = document.querySelector(".Modal-compraExitosa-container")
+      const MCE = document.querySelector(".Modal-compraExitosa")
+    
+      MCE_C.classList.toggle("ModalCExitosa-Container-Close")
+      MCE.classList.toggle("ModalCExitosa-Close")
+    
+    }
+    
+    window.addEventListener("click", (e) =>{
+      const MCE_C = document.querySelector(".Modal-compraExitosa-container");
+      const MCE = document.querySelector(".Modal-compraExitosa")
+    
+    
+      if(e.target == MCE_C ){
+        MCE_C.classList.toggle("ModalCExitosa-Container-Close")
+        MCE.classList.toggle("ModalCExitosa-Close")  
+      }
+    })
+    const compraContraEntrega = () =>{
+      return (
+        <div className="Modal-compraExitosa-container ">
+  <div className="Modal-compraExitosa ">
+  <button
+   className="ClearIcon Modal-compraExitosa__ClearIcon"
+   onClick={handlecompraContraEntregaClose}
+   color="inherit"
+   >
+     <i   className="ClearIcon">
+    <ClearIcon/>
+                      
+     </i>
+  </button>
+  <div className="Modal-compraExitosa__img">
+  <img  className="casaforte" src='https://res.cloudinary.com/casaforte/image/upload/v1622590008/Icon/LOGO_CASA_FORTE_yhb1dx.png' alt="casaforte"/>
+  </div>
+  <p className="Modal-compraExitosa__frase">
+  Compra contra entrega exitosa, gracias por su compra! <br/> el proveedor se comunicara con usted para la entrega.
+   </p> 
+  </div>
+                      
+  </div>)
+    }
 
     const dispatch = useDispatch()
 
     const placeOrderHandler = () =>{
       dispatch(createOrder({...cart, orderItems: cart.cartItems}));
+      if  (cart.paymentMethod === "Contra entrega"){
+        compraContraEntrega()
+      }
+    
     };
     useEffect(()=>{
       if(success){

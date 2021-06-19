@@ -1,3 +1,5 @@
+ssh root@165.232.131.139
+
 cd projects
 
 rm -rf ProyectoCASAFORTEultimate
@@ -11,3 +13,9 @@ npm install
 sudo systemctl restart pm2-root
 
 pm2 start node backend/server.js
+
+
+sudo systemctl restart nginx
+
+sudo systemctl status nginx
+

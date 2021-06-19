@@ -311,7 +311,7 @@ emailRouter.post("/loginRegister", (req,res) =>{
       
               ">
       
-              <a   href="https://casaforte.herokuapp.com/signin" style="
+              <a   href="https://casa-forte.co/signin" style="
               border: solid 2px #2c2c3d ;
               border-radius: 4px;
               background: #2c2c3d;
@@ -670,7 +670,7 @@ emailRouter.post("/compraExitosa", (req,res) =>{
 
             ">
 
-            <a   href="https://casaforte.herokuapp.com/order/${req.body.order}" style="
+            <a   href="https://casa-forte.co/order/${req.body.order}" style="
             border: solid 2px #2c2c3d ;
             border-radius: 4px;
             background: #2c2c3d;
@@ -688,7 +688,7 @@ emailRouter.post("/compraExitosa", (req,res) =>{
 
         ">
 
-        <a   href="https://casaforte.herokuapp.com" style="
+        <a   href="https://casa-forte.co" style="
         border: solid 2px #2c2c3d ;
         border-radius: 4px;
         background: #2c2c3d;

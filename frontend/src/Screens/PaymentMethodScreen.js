@@ -55,6 +55,19 @@ export default function PaymentMethodScreen(props) {
           </div> */}
         </div>
         <div>
+          <div>
+            <input
+              type="radio"
+              id="contraEntrega"
+              value="Contra entrega"
+              name="paymentMethod"
+              required
+              onChange={(e) => setPaymentMethod(e.target.value)}
+            ></input>
+            <label htmlFor="contraEntrega" style={{fontWeight:800}}>{"    Contra entrega    "}</label>
+          </div>
+        </div>
+        <div>
           <label />
           <button className="button" type="submit">
             Continuar

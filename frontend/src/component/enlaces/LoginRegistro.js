@@ -26,7 +26,7 @@ function LoginRegistro(props) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const [tDocument, setTD] = useState('');
+  const [tDocument, setTD] = useState(''); 
   const [department, setDepartment] = useState('');
   const [city, setCity] = useState('');
   const [adress, setAdress] = useState('');
