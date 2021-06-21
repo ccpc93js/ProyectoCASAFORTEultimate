@@ -148,7 +148,7 @@ export const HomeScreen = () => {
 </div>
 
 <div className="button-ver-productos">
-    <a href="/all"><button className="button">VER TODOS LOS PRODUCTOS</button></a> 
+    <a href="/all"><button className="button-see">VER TODOS LOS PRODUCTOS</button></a> 
 </div>
 
 <div className="qontiner">
@@ -303,7 +303,7 @@ export const HomeScreen = () => {
    <CardGiftcardIcon style={{ fontSize: fontSizeIcons }} />
 
     <p className="subtitulo">
-        <b>Puntos por Compras</b> 
+        <b>incentivos por Compras</b> 
         </p>
     
         <p className="parrafo">

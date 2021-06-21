@@ -12,6 +12,10 @@ const useStyles = makeStyles({
         color: '#808080',
         fontSize: '60px',
         fontWeight: 500,
+    },
+
+    link:{
+        color:'#808080'
     }
 
     
@@ -71,8 +75,11 @@ const Listas =()=> {
                     <Link  underline="none">
                     <ListItem button>
                         <ListItemText className={classes.listas}>
+                    <Link href="/all" underline="none" className={classes.link}>
                              Productos 
+                    </Link>
                         </ListItemText>
+
                         <IconButton  className="mobile-item ArrowDropDownIcon" onClick={handleCategoryOpen}>
                         <ArrowDropDownIcon className=""/>
 

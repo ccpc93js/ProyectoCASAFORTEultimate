@@ -192,14 +192,14 @@ footer{
 
 
   .botone{
-    border:2px solid #ffffff;
+    border:1px solid #ffffff;
     color: #ffffff;
     font-size: 17px;
     background: transparent;
     padding: 0.5em;
     cursor: pointer;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 4px;
     transition: all 900ms ease;
     margin-top: 2rem;
 }

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
 .HomeScreen-container{
     /* text-align: center; */
@@ -40,10 +41,10 @@
     font-size: 14px;
     text-align: center;
     outline: none;
-    border: 1px solid rgb(200, 235, 0);
-    background-color: #fff;
+    border: 1px solid #2d2a2a;
+    background-color: #ffffff;
     border-radius: 2px;
-    color: rgb(200, 235, 0);
+    color: #2d2a2a;
     cursor: pointer;
     transition: all .25s;
     z-index: 1;
@@ -62,8 +63,10 @@
     bottom: 0;
     border: transparent;
     border-radius: 2px;
-    background-image: linear-gradient(to right, 
-    rgb(243, 239, 23), rgb(235, 172, 0));
+    background: #fd6565;
+    color: #ffffff;
+    /* background-image: linear-gradient(to right, 
+    rgb(243, 239, 23), rgb(235, 172, 0)); */
     transition: all .25s;
     z-index: -1;
   }
@@ -172,6 +175,7 @@
 .contenedore figure .capar a:hover{
     background-color:#fd6565;
     color: #ffffff;
+    border:#fd6565 ;
     
 }
 
@@ -365,8 +369,8 @@ opacity: 0;
 
 .celular h4{
     /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: 'Fredoka One', cursive !important;
-
+    /* font-family: 'Fredoka One', cursive !important; */
+    font-family: 'Alfa Slab One', cursive;
     /* margin-top: -320px; */
     font-size: 50px;
     color: #000000e8;
@@ -375,8 +379,8 @@ opacity: 0;
 
 .celular h2{
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: 'Fredoka One', cursive !important;
-
+    /* font-family: 'Fredoka One', cursive !important; */
+    font-family: 'Alfa Slab One', cursive;
     /* margin-top: 1rem; */
     font-size: 28px;
     color: #818a97;

@@ -147,6 +147,9 @@ const useStyles = makeStyles((theme)=>({
                     <Link to="/listaUsuarios">Usuarios</Link>
                   </li>
                   <li>
+                      <Link to='/loginRegistro'>Registrar Usuario</Link>
+                  </li>
+                  <li>
                       <Link to='listaUsuariosRegistrados'>Info Usuarios Registrados</Link>
                   </li>
                   {/* <li>

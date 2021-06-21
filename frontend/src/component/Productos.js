@@ -244,6 +244,8 @@ export default function Productos(props) {
                  <img className="product-image__img imgnormalP " alt={x.info} src={x.imagen}/>
               
                 </a>
+                {userInfo?
+
                  <div 
                  aria-label="agregar a carrito"
                  className="addCart" 
@@ -257,6 +259,7 @@ export default function Productos(props) {
                     }>
                         <i><ShoppingCartIcon/></i>
                  </div>
+                 : ""}
                 </div>
                 <div className="product-card__info">
                 <a href={`/producto/${x._id}/${x.info.replace(/ /g,"-")}`}><p>{x.info}</p></a>
