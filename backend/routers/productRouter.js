@@ -18,12 +18,12 @@ productRouter.get('/', expressAsyncHandler(async(req,res) =>{
 })
 );
 
-productRouter.get('/seed', expressAsyncHandler(async(req,res) =>{
-    await Producto.remove({})
-    const productos = await Producto.insertMany(data.productos)
-    res.send(productos);
-})
-);
+// productRouter.get('/seed', expressAsyncHandler(async(req,res) =>{
+//     await Producto.remove({})
+//     const productos = await Producto.insertMany(data.productos)
+//     res.send(productos);
+// })
+// );
 
 productRouter.get(
     '/:id',

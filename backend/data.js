@@ -378,7 +378,7 @@ const data = {
             "subcategoria":"lijas-y-telas-recubiertas",
             "info": "Lija de Agua Profesional Grano 600 9” x 11” Abracol",
             "precio": 950,
-            "enStock": 10,
+            "enStock": 50,
             "unidad":"Paquete x 50"
       
         },
@@ -390,7 +390,7 @@ const data = {
           "subcategoria":"lijas-y-telas-recubiertas",
           "info": "Lija de Agua Profesional Grano 500 9” x 11” Abracol",
           "precio": 950,
-          "enStock": 10,
+          "enStock": 50,
           "unidad":"Paquete x 50"
       
       
@@ -403,7 +403,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Profesional Grano 400 9” x 11” Abracol",
         "precio": 950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -416,7 +416,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Profesional Grano 360 9” x 11” Abracol",
         "precio": 950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -429,7 +429,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Profesional Grano 320 9” x 11” Abracol",
         "precio": 950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -442,7 +442,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Profesional Grano 280 9” x 11” Abracol",
         "precio": 950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -455,7 +455,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Profesional Grano 280 9” x 11” Abracol",
         "precio": 950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       },
@@ -467,7 +467,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Profesional Grano 240 9” x 11” Abracol",
         "precio": 950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -480,7 +480,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Profesional Grano 220 9” x 11” Abracol",
         "precio": 950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       },
       {
@@ -491,7 +491,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Profesional Grano 180 9” x 11” Abracol",
         "precio": 1150,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -504,7 +504,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Profesional Grano 150 9” x 11” Abracol",
         "precio": 1150,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -517,7 +517,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Profesional Grano 120 9” x 11” Abracol",
         "precio": 1150,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -530,7 +530,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Profesional Grano 100 9” x 11” Abracol",
         "precio": 1150,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -543,7 +543,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Profesional Grano 80 9” x 11” Abracol",
         "precio": 1150,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -556,7 +556,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Profesional Grano 60 9” x 11” Abracol",
         "precio": 1150,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       },
@@ -568,7 +568,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Grano 600 9” x 11” Omega",
         "precio": 850,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -581,7 +581,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Grano 500 9” x 11” Omega",
         "precio": 850,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -594,7 +594,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Grano 400 9” x 11” Omega",
         "precio": 850,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -607,7 +607,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Grano 360 9” x 11” Omega",
         "precio": 850,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -620,7 +620,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Grano 320 9” x 11” Omega",
         "precio": 850,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -633,7 +633,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Grano 280 9” x 11” Omega",
         "precio": 850,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -646,7 +646,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Grano 240 9” x 11” Omega",
         "precio": 850,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -659,7 +659,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Grano 220 9” x 11” Omega",
         "precio": 850,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -672,7 +672,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Grano 180 9” x 11” Omega",
         "precio": 950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -685,7 +685,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Grano 150 9” x 11” Omega",
         "precio": 950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -698,7 +698,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Grano 120 9” x 11” Omega",
         "precio": 950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -711,7 +711,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Grano 100 9” x 11” Omega",
         "precio": 950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -724,7 +724,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Grano 80 9” x 11” Omega",
         "precio": 950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       
       
@@ -737,7 +737,7 @@ const data = {
         "subcategoria":"lijas-y-telas-recubiertas",
         "info": "Lija de Agua Grano 60 9” x 11” Omega",
         "precio": 950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 50"
       },
       
@@ -752,7 +752,7 @@ const data = {
         "subcategoria":"discos-abrasivos",
         "info": "Disco Abracol Pulir Metal 7 x 1/4 x 7/8”",
         "precio": 3600,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -764,7 +764,7 @@ const data = {
         "subcategoria":"discos-abrasivos",
         "info": "Disco Corte Metal Abracol S/Fino 4 1/2” ",
         "precio": 3100,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -777,7 +777,7 @@ const data = {
         "subcategoria":"discos-de-metal",
         "info": "Disco Diamantado Continúo Abracol 4 1/2”",
         "precio": 16100,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -790,7 +790,7 @@ const data = {
         "subcategoria":"discos-de-metal",
         "info": "Disco Diamantado Turbo Abracol 4 1/2”",
         "precio": 16100,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -803,7 +803,7 @@ const data = {
         "subcategoria":"discos-abrasivos",
         "info": "Disco Corte Metal Multimarca S/Fino 4 1/2” ",
         "precio": 1300,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -815,7 +815,7 @@ const data = {
         "subcategoria":"discos-abrasivos",
         "info": "Disco Flap Tomking Grano 60",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -827,7 +827,7 @@ const data = {
         "subcategoria":"discos-abrasivos",
         "info": "Disco Flap Tomking Grano 80",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -839,7 +839,7 @@ const data = {
         "subcategoria":"discos-abrasivos",
         "info": "Disco Flap Tomking Grano 100",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -851,7 +851,7 @@ const data = {
         "subcategoria":"discos-abrasivos",
         "info": "Disco Flap Tomking Grano 120",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -864,7 +864,7 @@ const data = {
         "subcategoria":"discos-de-metal",
         "info": "Disco de Corte Diamantado Segmentado 4 x 1/2",
         "precio": 4400,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -876,7 +876,7 @@ const data = {
         "subcategoria":"discos-de-metal",
         "info": "Disco Diamantado Continuo 4 x 1/2",
         "precio": 4400,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -888,7 +888,7 @@ const data = {
         "subcategoria":"discos-de-metal",
         "info": "Disco Diamantado Turbo 4 x 1/2",
         "precio": 4400,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -900,7 +900,7 @@ const data = {
         "subcategoria":"discos-abrasivos",
         "info": "Disco de Corte Metal 4 x 1/2",
         "precio": 3800,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -916,7 +916,7 @@ const data = {
         "subcategoria":"amarres-para-tejas",
         "info": "Amarre Para Tejas",
         "precio": 3800,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -935,7 +935,7 @@ const data = {
         "subcategoria":"enchufes-y-clavijas",
         "info": "Clavija Con Terminal Polo a Tierra Domestico 15A",
         "precio": 2500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -948,7 +948,7 @@ const data = {
         "subcategoria":"enchufes-y-clavijas",
         "info": "Toma Aereo Domestico 10A",
         "precio": 2500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -961,7 +961,7 @@ const data = {
         "subcategoria":"enchufes-y-clavijas",
         "info": "Clavija Tipo Domestico 15A",
         "precio": 2500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -972,7 +972,7 @@ const data = {
         "subcategoria":"enchufes-y-clavijas",
         "info": "Clavija Tipo Industrial 15A",
         "precio": 2500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       
@@ -984,7 +984,7 @@ const data = {
         "subcategoria":"tomas-e-interruptores",
         "info": "Tomacorriente Doble Tipo Hospitalario",
         "precio": 2500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Caja x 10"
       },
       {
@@ -995,7 +995,7 @@ const data = {
         "subcategoria":"tomas-e-interruptores",
         "info": "Tomacorriente de incrustar Doble Polo a Tierra Aislado",
         "precio": 2500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Caja x 10"
       },
       {
@@ -1006,7 +1006,7 @@ const data = {
         "subcategoria":"tomas-e-interruptores",
         "info": "Tomacorriente de Incrustar Doble Polo a Tierra Tipo Americana",
         "precio": 2500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Caja x 10"
       },
       {
@@ -1017,7 +1017,7 @@ const data = {
         "subcategoria":"breakers",
         "info": "Breaker Enchufable Un Polo - 20 Amp Luminex",
         "precio": 2500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       
@@ -1029,7 +1029,7 @@ const data = {
         "subcategoria":"breakers",
         "info": "Breaker Enchufable Un Polo - 40 Amp Luminex ",
         "precio": 2500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       
@@ -1041,7 +1041,7 @@ const data = {
         "subcategoria":"cajas-y-tableros",
         "info": "Tablero Plastico para Breaker Enchufable 8 circuitos sobreponer",
         "precio": 1000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -1052,7 +1052,7 @@ const data = {
         "subcategoria":"cajas-y-tableros",
         "info": "Tablero Plastico para Breaker Enchufable 4 circuitos sobreponer",
         "precio": 1000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       
@@ -1064,7 +1064,7 @@ const data = {
         "subcategoria":"cajas-y-tableros",
         "info": "Tablero Plastico para Breaker Enchufable 2 circuitos sobreponer",
         "precio": 1000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1077,7 +1077,7 @@ const data = {
         "subcategoria":"tomas-e-interruptores",
         "info": "Interruptor Sencillo De Incrustar Linea Astral",
         "precio": 1000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Caja x 10"
       },
       
@@ -1089,7 +1089,7 @@ const data = {
         "subcategoria":"tomas-e-interruptores",
         "info": "Interruptor Doble De Incrustar Linea Astral",
         "precio": 1000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Caja x 10"
       },
       
@@ -1101,7 +1101,7 @@ const data = {
         "subcategoria":"tomas-e-interruptores",
         "info": "Tomacorriente Doble De Incrustar Linea Ultra Marco",
         "precio": 1000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Caja x 10"
       
       
@@ -1114,7 +1114,7 @@ const data = {
         "subcategoria":"tomas-e-interruptores",
         "info": "Interruptor Sencillo De Incrustar Linea Ultra Sin Marco",
         "precio": 1000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Caja x 10"
       
       
@@ -1127,7 +1127,7 @@ const data = {
         "subcategoria":"tomas-e-interruptores",
         "info": "Interruptor Doble De Incrustar Linea Ultra Sin Marco",
         "precio": 1000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Caja x 10"
       
       
@@ -1140,7 +1140,7 @@ const data = {
         "subcategoria":"breakers",
         "info": "Breaker Enchufable Un Polo - 16 Amp - 6ka",
         "precio": 15000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1152,7 +1152,7 @@ const data = {
         "subcategoria":"breakers",
         "info": "Breaker Enchufable Un Polo - 20 Amp - 6ka",
         "precio": 15000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1164,7 +1164,7 @@ const data = {
         "subcategoria":"breakers",
         "info": "Breaker Enchufable Un Polo - 32 Amp - 6ka",
         "precio": 15000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -1175,7 +1175,7 @@ const data = {
         "subcategoria":"breakers",
         "info": "Breaker Enchufable Un Polo - 40 Amp - 6ka",
         "precio": 1500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -1186,7 +1186,7 @@ const data = {
         "subcategoria":"breakers",
         "info": "Breaker Enchufable Un Polo - 50 Amp - 6ka",
         "precio": 15000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       
@@ -1198,7 +1198,7 @@ const data = {
         "subcategoria":"breakers",
         "info": "Breaker Enchufable Dos Polos - 16 Amp",
         "precio": 1500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -1209,7 +1209,7 @@ const data = {
         "subcategoria":"breakers",
         "info": "Breaker Enchufable Dos Polos - 20 Amp",
         "precio": 15000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -1222,7 +1222,7 @@ const data = {
         "subcategoria":"breakers",
         "info": "Breaker Enchufable Dos Polos - 32 Amp",
         "precio": 15000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1234,7 +1234,7 @@ const data = {
         "subcategoria":"breakers",
         "info": "Breaker Enchufable Dos Polos - 40 Amp ",
         "precio": 15000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -1247,7 +1247,7 @@ const data = {
         "subcategoria":"breakers",
         "info": "Breaker Enchufable Dos Polos - 50 Amp",
         "precio": 1500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1259,7 +1259,7 @@ const data = {
         "subcategoria":"cintas",
         "info": "Cinta Aislante Profesional Ciles 15mts Negra",
         "precio": 3000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Unidad x 10"
       
       
@@ -1272,7 +1272,7 @@ const data = {
         "subcategoria":"cintas",
         "info": "Cinta Aislante Profesional Ciles 5mts Negra",
         "precio": 1500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Unidad x 10"
       
       },
@@ -1284,7 +1284,7 @@ const data = {
         "subcategoria":"cintas",
         "info": "Cinta Aislante Profesional Ciles 15mts Azul",
         "precio": 1500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Unidad x 10"
       },
       
@@ -1296,7 +1296,7 @@ const data = {
         "subcategoria":"cintas",
         "info": "Cinta Aislante Profesional Ciles 5mts Azul",
         "precio": 1500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Unidad x 10"
       
       },
@@ -1309,7 +1309,7 @@ const data = {
         "subcategoria":"cintas",
         "info": "Cinta Aislante Profesional Ciles 5mts Blanca",
         "precio": 1500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Unidad x 10"
       
       },
@@ -1321,7 +1321,7 @@ const data = {
         "subcategoria":"tomas-e-interruptores",
         "info": "Interruptor Sencillo De Incrustar Linea Eco",
         "precio": 2500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"caja x 10"
       },
       {
@@ -1332,7 +1332,7 @@ const data = {
         "subcategoria":"tomas-e-interruptores",
         "info": "Interruptor Doble De Incrustar Linea Eco",
         "precio": 3500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Caja x 10"
       
       },
@@ -1344,7 +1344,7 @@ const data = {
         "subcategoria":"tomas-e-interruptores",
         "info": "Interruptor Triple De Incrustar Linea Eco",
         "precio": 4000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Caja x 10"
       },
       {
@@ -1355,7 +1355,7 @@ const data = {
         "subcategoria":"tomas-e-interruptores",
         "info": "Tomacorriente Doble De Incrustar Linea Eco",
         "precio": 3500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Caja x 10"
       
       },
@@ -1367,7 +1367,7 @@ const data = {
         "subcategoria":"tomas-e-interruptores",
         "info": "Tomacorriente + Interruptor De Incrustar Linea Eco",
         "precio": 3500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Caja x 10"
       },
       
@@ -1379,7 +1379,7 @@ const data = {
         "subcategoria":"cajas-y-tableros",
         "info": "Caja Plastica Conduit 2x4 Linea Eco",
         "precio": 330,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1392,7 +1392,7 @@ const data = {
         "subcategoria":"cajas-y-tableros",
         "info": "Caja Plastica Conduit Octagonal Linea Eco",
         "precio": 490,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1404,7 +1404,7 @@ const data = {
         "subcategoria":"cajas-y-tableros",
         "info": "Caja Plastica Conduit 4x4 Linea Eco",
         "precio": 500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1416,7 +1416,7 @@ const data = {
         "subcategoria":"plafones-y-rosetas",
         "info": "Plafón Plastico E27 de 4 1/2”",
         "precio": 900,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1428,7 +1428,7 @@ const data = {
         "subcategoria":"plafones-y-rosetas",
         "info": "Plafón de Ceramico E27 de 4 1/2”",
         "precio": 2200,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1443,7 +1443,7 @@ const data = {
         "subcategoria":"pegantes-para-construcción",
         "info": "Pegante Epoxico Para Soldar Sintesolda 24 H",
         "precio": 6500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1455,7 +1455,7 @@ const data = {
         "subcategoria":"pegantes-para-construcción",
         "info": "Pegante Epoxico Para Soldar Sintesolda 10 M",
         "precio": 6900,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1468,7 +1468,7 @@ const data = {
         "subcategoria":"siliconas-y-selladores",
         "info": "Silicona Multiusos Transparente 50 ml Sintesolda",
         "precio": 5500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       
@@ -1480,7 +1480,7 @@ const data = {
         "subcategoria":"siliconas-y-selladores",
         "info": "Silicona utomotriz Gris 50 ml Sintesolda",
         "precio": 7500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1492,7 +1492,7 @@ const data = {
         "subcategoria":"siliconas-y-selladores",
         "info": "Silicona utomotriz Negra 50 ml Sintesolda",
         "precio": 7500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1504,7 +1504,7 @@ const data = {
         "subcategoria":"siliconas-y-selladores",
         "info": "Silicona utomotriz Roja 50 ml Sintesolda",
         "precio": 50000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1516,7 +1516,7 @@ const data = {
         "subcategoria":"siliconas-y-selladores",
         "info": "Silicona Antihongos Baño y Cocina Transparente 50ml",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1528,7 +1528,7 @@ const data = {
         "subcategoria":"siliconas-y-selladores",
         "info": "Silicona utomotriz Gris 70 ml Sintesolda",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -1541,7 +1541,7 @@ const data = {
         "subcategoria":"siliconas-y-selladores",
         "info": "Silicona utomotriz Negra 70 ml Sintesolda",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -1554,7 +1554,7 @@ const data = {
         "subcategoria":"siliconas-y-selladores",
         "info": "Silicona utomotriz Roja 70 ml Sintesolda",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1566,7 +1566,7 @@ const data = {
         "subcategoria":"siliconas-y-selladores",
         "info": "Silicona Antihongos Baño y Cocina Transparente 280ml Sintesolda",
         "precio": 50000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1579,7 +1579,7 @@ const data = {
         "subcategoria":"siliconas-y-selladores",
         "info": "Silicona Antihongos Baño y Cocina Blanca 280ml Sintesolda",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1591,7 +1591,7 @@ const data = {
         "subcategoria":"pegantes-para-construcción",
         "info": "Pegante Epoxico En Masilla Profesional 50g",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1603,7 +1603,7 @@ const data = {
         "subcategoria":"pegantes-para-construcción",
         "info": "Pegante Epoxico En Masilla Profesional XS 30g",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1615,7 +1615,7 @@ const data = {
         "subcategoria":"pegantes-para-construcción",
         "info": "Pegante Epoxico En Masilla Profesional 100g",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1627,7 +1627,7 @@ const data = {
         "subcategoria":"pegantes-para-construcción",
         "info": "Pegante Instantaneo Liquido 4g Pegadit",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1639,7 +1639,7 @@ const data = {
         "subcategoria":"siliconas-y-selladores",
         "info": "Sellador Multiusos 165g Pegadit",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -1652,7 +1652,7 @@ const data = {
         "subcategoria":"siliconas-y-selladores",
         "info": "Silicona Antihongos Vidrio y Aluminio Transparente 50ml Pegadit",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1664,7 +1664,7 @@ const data = {
         "subcategoria":"siliconas-y-selladores",
         "info": "Silicona Antihongos Baño y Cocina Transparente 50ml Pegadit",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -1677,7 +1677,7 @@ const data = {
         "subcategoria":"siliconas-y-selladores",
         "info": "Silicona Antihongos Vidrio y Aluminio Transparente 280ml Pegadit",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1690,7 +1690,7 @@ const data = {
         "subcategoria":"siliconas-y-selladores",
         "info": "Pistola de Calafateo Linea Eco Azul",
         "precio": 3800,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1703,7 +1703,7 @@ const data = {
         "subcategoria":"siliconas-y-selladores",
         "info": "Pistola de Calafateo Profesional",
         "precio": 14500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1718,7 +1718,7 @@ const data = {
         "subcategoria":"herramientas-para-pintar",
         "info": "Rodillo Goya Felpa Junior 3”",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Caja x 6"
       
       },
@@ -1730,7 +1730,7 @@ const data = {
         "subcategoria":"herramientas-para-pintar",
         "info": "Rodillo Goya Felpa Junior 4",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Caja x 6"
       
       },
@@ -1742,7 +1742,7 @@ const data = {
         "subcategoria":"herramientas-para-pintar",
         "info": "Rodillo Goya Felpa Junior 6”",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 6"
       
       },
@@ -1754,7 +1754,7 @@ const data = {
         "subcategoria":"herramientas-para-pintar",
         "info": "Rodillo Goya Felpa Acrilica Profesional 9”",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 6"
       
       },
@@ -1767,7 +1767,7 @@ const data = {
         "subcategoria":"herramientas-para-pintar",
         "info": "Rodillo Goya Felpa Acrilica Profesional 9” Con Repuesto",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 6"
       
       },
@@ -1780,7 +1780,7 @@ const data = {
         "subcategoria":"herramientas-para-pintar",
         "info": "Rodillo Epoxico Goya 9”",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 6"
       
       },
@@ -1792,7 +1792,7 @@ const data = {
         "subcategoria":"herramientas-para-pintar",
         "info": "Brocha Profesional Mona C|Azul GOYA 1|2”",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 12"
       
       },
@@ -1804,7 +1804,7 @@ const data = {
         "subcategoria":"herramientas-para-pintar",
         "info": "Brocha Profesional Mona C|Azul GOYA 1”",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 12"
       
       },
@@ -1816,7 +1816,7 @@ const data = {
         "subcategoria":"herramientas-para-pintar",
         "info": "Brocha Profesional Mona C|Azul GOYA 1 1|2”",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 12"
       
       },
@@ -1828,7 +1828,7 @@ const data = {
         "subcategoria":"herramientas-para-pintar",
         "info": "Brocha Profesional Mona C|Azul GOYA 2”",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 12"
       
       },
@@ -1840,7 +1840,7 @@ const data = {
         "subcategoria":"herramientas-para-pintar",
         "info": "Brocha Profesional Mona C|Azul GOYA 2 1|2”",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 12"
       
       },
@@ -1852,7 +1852,7 @@ const data = {
         "subcategoria":"herramientas-para-pintar",
         "info": "Brocha Profesional Mona C|Azul GOYA 3”",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 12"
       
       },
@@ -1865,7 +1865,7 @@ const data = {
         "subcategoria":"herramientas-para-pintar",
         "info": "Brocha Profesional Mona C|Azul GOYA 4”",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 12"
       
       },
@@ -1877,7 +1877,7 @@ const data = {
         "subcategoria":"herramientas-para-pintar",
         "info": "Brocha Profesional Mona C|Azul GOYA 5”",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 12"
       
       },
@@ -1889,7 +1889,7 @@ const data = {
         "subcategoria":"herramientas-para-pintar",
         "info": "Brocha Profesional Mona C|Azul GOYA 6”",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Paquete x 12"
       
       },
@@ -1901,7 +1901,7 @@ const data = {
         "subcategoria":"herramientas-para-pintar",
         "info": "Bandeja Plastica",
         "precio": 5000,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1920,7 +1920,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Acople Plastico Lavamanos 40 Cm",
         "precio": 1440,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1932,7 +1932,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Acople Plastico Sanitario 40 Cm",
         "precio": 1440,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -1945,7 +1945,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Agua Stop PlasticoO Economizador Blanco",
         "precio": 1380,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -1958,7 +1958,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Agua Stop Vulcanizado Con Soporte",
         "precio": 3800,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -1971,7 +1971,7 @@ const data = {
         "subcategoria":"soluciones-para-cocinas",
         "info": "Canastilla Filtro Lavaplatos 4",
         "precio": 5061,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1983,7 +1983,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Conjunto Griferia Sanitario Con Valvula Hidrostatica",
         "precio": 25231,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -1996,7 +1996,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Conjunto Griferia Sanitaria Valvula Entrada Grecco 17 Cm",
         "precio": 10191,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2009,7 +2009,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Desague Lavamanos Tapa Cromo",
         "precio": 2878,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2021,7 +2021,7 @@ const data = {
         "subcategoria":"duchas",
         "info": "Ducha Acrilica Blanca",
         "precio": 2954,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2033,7 +2033,7 @@ const data = {
         "subcategoria":"duchas",
         "info": "Ducha Acrilica Cromada",
         "precio": 7219,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2046,7 +2046,7 @@ const data = {
         "subcategoria":"soluciones-para-cocinas",
         "info": "Filtro Canastilla Lavaplatos Sello 4 Blanco",
         "precio": 930,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2058,7 +2058,7 @@ const data = {
         "subcategoria":"soluciones-para-cocinas",
         "info": "Filtro Canastilla Lavaplatos Sello 4 Cromo",
         "precio": 3588,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2070,7 +2070,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Grapa Lavamanos Blanca",
         "precio": 1511,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2083,7 +2083,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Herraje Sanitario Plastico Dos Piezas",
         "precio": 1342,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"Unidad x 2"
       
       },
@@ -2095,7 +2095,7 @@ const data = {
         "subcategoria":"jardin-y-exteriores",
         "info": "Llave Jardin Manguera Blanca",
         "precio": 1999,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -2108,7 +2108,7 @@ const data = {
         "subcategoria":"jardin-y-exteriores",
         "info": "Llave Jardin Manguera Gris",
         "precio": 1925,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2120,7 +2120,7 @@ const data = {
         "subcategoria":"griferia-lavamanos",
         "info": "Llave Lavamanos Blanca",
         "precio": 5547,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -2133,7 +2133,7 @@ const data = {
         "subcategoria":"griferia-lavamanos",
         "info": "Llave Lavamanos Cromo",
         "precio": 7675,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -2147,7 +2147,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Manija Tanque Push Superior 38 mm",
         "precio": 6498,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2159,7 +2159,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Manija Tanque Sanitario Blanca",
         "precio": 1805,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -2172,7 +2172,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Manija Tanque Sanitario Cromada",
         "precio": 2710,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -2185,7 +2185,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Manija Tanque Sanitario Transparente",
         "precio": 1804,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -2198,7 +2198,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Porta Rollo Plastico",
         "precio": 952,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -2211,7 +2211,7 @@ const data = {
         "subcategoria":"jardin-y-exteriores",
         "info": "Racor Plastico Manguera",
         "precio": 450,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       
@@ -2224,7 +2224,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Rejilla Cuadrada Perforada 3X2",
         "precio": 1739,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2236,7 +2236,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Rejilla Cuadrada Ranurada 3X2",
         "precio": 1739,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2248,7 +2248,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Rejilla Sosco 3X 1 1/2",
         "precio": 1525,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2261,7 +2261,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Rejilla Sosco 3X2 Ranurado",
         "precio": 1614,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -2272,7 +2272,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Rejilla Sosco 3X2 Perforado",
         "precio": 1614,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -2283,7 +2283,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Rejilla Sosco 4X3 Ranurada",
         "precio": 2613,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -2294,7 +2294,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Rejilla Sosco 5X4 Perforado",
         "precio": 4235,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -2305,7 +2305,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Rejilla Sosco 5X4 Ranurado",
         "precio": 5040,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -2316,7 +2316,7 @@ const data = {
         "subcategoria":"soluciones-para-cocinas",
         "info": "Sifon Acordeon Mixto Blanco",
         "precio": 5314,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -2327,7 +2327,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Sifon Lavamanos Tapa Desague Cromo",
         "precio": 5169,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -2338,7 +2338,7 @@ const data = {
         "subcategoria":"soluciones-para-cocinas",
         "info": "Sifon Lavaplatos En P  1 1/2 O 1 1/4 Blanco",
         "precio": 3567,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -2349,7 +2349,7 @@ const data = {
         "subcategoria":"soluciones-para-cocinas",
         "info": "Sifon Lavaplatos En P  1 1/2 O 1 1/4 Gris",
         "precio": 3058,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -2360,7 +2360,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Tapa Asiento Cubierta Total Blanca",
         "precio": 15035,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -2371,7 +2371,7 @@ const data = {
         "subcategoria":"jardin-y-exteriores",
         "info": "Tapa Registro 15X15",
         "precio": 4647,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -2382,7 +2382,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Tornillo Cisterna",
         "precio": 337,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -2393,7 +2393,7 @@ const data = {
         "subcategoria":"Soluciones para el hogar",
         "info": "Tranca Puerta",
         "precio": 1005,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -2404,7 +2404,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Valvula De Entrada Grecco 17 Cm",
         "precio": 3344,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -2415,7 +2415,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Valvula De Entrada Hidrostatica",
         "precio": 11050,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -2426,7 +2426,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Valvula De Salida Con Aguastop Plastico",
         "precio": 5513,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -2437,7 +2437,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Valvula Pozuelo Sin Sosco",
         "precio": 1048,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       {
@@ -2448,7 +2448,7 @@ const data = {
         "subcategoria":"soluciones-para-baños",
         "info": "Valvula Regulacion Sin Acople",
         "precio": 2970,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       },
       
@@ -2462,7 +2462,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Palustre Mango Plastico de 6",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2474,7 +2474,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Palustre Mango Plastico de 7",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2486,7 +2486,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Palustre Mango Plastico de 8",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2498,7 +2498,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Palustre Mango Plastico de 9",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2510,7 +2510,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Palustre Mango Plastico de 10",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2522,7 +2522,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Palustre Mango Madera de 6",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2534,7 +2534,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Palustre Mango Madera de 7",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2546,7 +2546,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Palustre Mango Madera de 8",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2558,7 +2558,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Palustre Mango Madera de 9",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2570,7 +2570,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Palustre Mango Madera de 10",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2582,7 +2582,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Llana Lisa Mango Plastico",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2594,7 +2594,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Llana Lisa Mango Madera",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2606,7 +2606,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Llana Dentada Mango Madera",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2618,7 +2618,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Llana Dentada Mango Plastico",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2630,7 +2630,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Espatula Metalica Mango Plastico de 2",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2642,7 +2642,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Espatula Metalica Mango Plastico de 3",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2654,7 +2654,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Espatula Metalica Mango Plastico de 4",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2666,7 +2666,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Espatula Metalica Mango Plastico de 5",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2678,7 +2678,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Espatula Metalica Mango Madera de 2",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2690,7 +2690,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Espatula Metalica Mango Madera de 3",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2702,7 +2702,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Espatula Metalica Mango Madera de 4",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2714,7 +2714,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Espatula Metalica Mango Madera de 5",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2726,7 +2726,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Martillo Pequeño 8 Oz.",
         "precio": 4950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2738,7 +2738,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Martillo Mango Metal 16 Oz",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2750,7 +2750,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Martillo Mango Madera 16 Oz",
         "precio": 1950,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2763,7 +2763,7 @@ const data = {
         "subcategoria":"limas-y-escofinas",
         "info": "Lima Triangular Linea Eco",
         "precio": 2500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2775,7 +2775,7 @@ const data = {
         "subcategoria":"herramientas-de-acabado",
         "info": "Cepillo de Acero Con Espatula Metalica",
         "precio": 2700,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2787,7 +2787,7 @@ const data = {
         "subcategoria":"pinzas-y-alicates",
         "info": "Pinza Crescent",
         "precio": 14500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2799,7 +2799,7 @@ const data = {
         "subcategoria":"herramientas-manuales-de-corte",
         "info": "Hoja de Segueta Nicholson",
         "precio": 3200,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2811,7 +2811,7 @@ const data = {
         "subcategoria":"herramientas-manuales-de-corte",
         "info": "Hoja de Segueta Security",
         "precio": 3800,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2823,7 +2823,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Cincel de Punta Mango de Caucho",
         "precio": 3800,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2835,7 +2835,7 @@ const data = {
         "subcategoria":"albañileria-y-construcción",
         "info": "Cincel de Pala Mango de Caucho",
         "precio": 3800,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2848,7 +2848,7 @@ const data = {
         "subcategoria":"herramientas-de-medición",
         "info": "FLEXOMETRO -LUFKIN-L510CME x3mts NARANJA",
         "precio": 3800,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2860,7 +2860,7 @@ const data = {
         "subcategoria":"herramientas-de-medición",
         "info": "FLEXOMETRO REFORZADO 5M",
         "precio": 3800,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2872,7 +2872,7 @@ const data = {
         "subcategoria":"herramientas-de-medición",
         "info": "FLEXOMETRO LUFKIN L525CME x8mts NARANJA",
         "precio": 3800,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2884,7 +2884,7 @@ const data = {
         "subcategoria":"destornilladores",
         "info": "Juego Destornillador de Golpe x 6",
         "precio": 11500,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2897,7 +2897,7 @@ const data = {
         "subcategoria":"herramientas-manuales-de-corte",
         "info": "Marco de Segueta Metal",
         "precio": 7800,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       },
@@ -2909,7 +2909,7 @@ const data = {
         "subcategoria":"pinzas-y-alicates",
         "info": "Alicate Hombresolo 7",
         "precio": 8700,
-        "enStock": 10,
+        "enStock": 50,
         "unidad":"x1"
       
       }

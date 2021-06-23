@@ -51,7 +51,7 @@ export const Footer = () => {
                 <li>Sede Principal</li>
                 <li>Cll 13 # 74-67 Mz G L 17 Etapa 1</li>
                 <li>Lineas de Atención al Cliente <br/> +57 (5) 66 17 326  <br></br> +57 304 648 6898</li>
-                <li>ferreteriacasaforte@gmail.com</li>
+                <li>ventas@casa-forte.co</li>
 
 
             </ul>
