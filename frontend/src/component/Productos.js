@@ -219,7 +219,13 @@ export default function Productos(props) {
                         <MessageBox variant="danger">{error}</MessageBox>
                         ):(
                             
-                        
+                        productos.length === 0 ? 
+
+                        (
+                          <div style={{textAlign: "center", margin: "20px", alignItems: "center"}}>
+                            <h1 style={{fontSize: "20px"}}> No hay productos en esta seccion por el momento!</h1>
+                          </div>
+                        ): 
                         
 
                           productos.map(x =>(

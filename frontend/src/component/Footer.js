@@ -1,7 +1,9 @@
 import React from 'react'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import YouTubeIcon from '@material-ui/icons/YouTube';
+// import YouTubeIcon from '@material-ui/icons/YouTube';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+
 
 
 
@@ -75,7 +77,9 @@ export const Footer = () => {
             <div className="socials">
                 <a href="#"><i className=""><FacebookIcon/></i></a>
                 <a href="https://www.instagram.com/casaforte.co/" target="_BLANK"><i className=""><InstagramIcon/></i></a>
-                <a href="#"><i className=""><YouTubeIcon/></i></a>
+                <a href="https://api.whatsapp.com/send?phone=++573046486898&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n."><i className=""><WhatsAppIcon/></i></a>
+
+                {/* <a href="#"><i className=""><YouTubeIcon/></i></a> */}
 
         </div>
         </div>

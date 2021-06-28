@@ -76,9 +76,9 @@
     font-size: 16px;
     margin:auto;
     text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateX(-50%);
+    /* opacity: 0; */
+    /* visibility: hidden; */
+    /* transform: translateX(-50%); */
     transition: all 1000ms ease;
     /* color: #808080; */
     color: rgb(29, 230, 63);
@@ -134,7 +134,7 @@
 
 
 
-.product-card:hover .product-card-body{
+/* .product-card:hover .product-card-body{
  
   opacity: 1;
   visibility: visible;
@@ -142,9 +142,9 @@
   transition: all 1000ms ease;
   /* position: absolute;
   bottom: 0;
-  left: 10; */
+  left: 10; 
 
-}
+} */
 
 /* .product-card:hover .product-card-body{
   display: inline-block;

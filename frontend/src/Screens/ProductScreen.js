@@ -6,10 +6,10 @@ import axios from 'axios'
 import {useDispatch, useSelector} from 'react-redux';
 // import LoadingPageLogo from '../component/LoadingPageLogo';
 import LoadingBox from '../component/LoadingBox';
-import loadingPage from '../component/LoadingPage';
+// import loadingPage from '../component/LoadingPage';
 import MessageBox from '../component/MessageBox';
 import formatCurrency, {  detailsProduct } from '../actions/productActions';
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+// import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
