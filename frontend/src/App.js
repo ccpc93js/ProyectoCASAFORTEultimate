@@ -59,7 +59,7 @@ import Dewalt from './component/enlaces/Marcas/Dewalt'
 import Pegadit from './component/enlaces/Marcas/Pegadit'
 import Codelca from './component/enlaces/Marcas/Codelca'
 import Uyustools from './component/enlaces/Marcas/Uyustools'
-import Segurity from './component/enlaces/Marcas/Segurity'
+import Security from './component/enlaces/Marcas/Security'
 import Argos from './component/enlaces/Marcas/Argos'
 import FMT from './component/enlaces/Marcas/FMT'
 
@@ -392,7 +392,7 @@ function App(props) {
          <Route exact path="/PEGADIT" component={Pegadit}/>
          <Route exact path="/CODELCA" component={Codelca}/>
          <Route exact path="/UYUSTOOLS" component={Uyustools}/>
-         <Route exact path="/SEGURITY" component={Segurity}/>
+         <Route exact path="/SECURITY" component={Security}/>
          <Route exact path="/ARGOS" component={Argos}/>
          <Route exact path="/LUMINEX" component={Luminex}/>
          <Route exact path="/CRESCENT" component={Crescent}/>

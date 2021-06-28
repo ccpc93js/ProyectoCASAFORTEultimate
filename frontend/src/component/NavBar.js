@@ -236,7 +236,7 @@ export const NavBar = (props) => {
                 <ul>
                     <li><a href="/INDUMA">Induma</a></li>
                     <li><a href="/UYUSTOOLS">Uyustools</a></li>
-                    <li><a href="/SEGURITY">Security</a></li>
+                    <li><a href="/SECURITY">Security</a></li>
                     <li><a href="/EGRET">egret</a></li>
                     <li><a href="/ARGOS">argos</a></li>
                 </ul>

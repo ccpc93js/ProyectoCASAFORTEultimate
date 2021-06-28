@@ -10,7 +10,7 @@ function Segurity () {
 
     return (
         <div>
-        <Productos marcas="SEGURITY"/>
+        <Productos marcas="SECURITY"/>
 
 
         </div>

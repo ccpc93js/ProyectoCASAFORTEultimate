@@ -308,7 +308,7 @@ const data = {
             "categoria":["cerrajeria"],
             "subcategoria":["cerraduras"],
             "img":"https://i.pinimg.com/originals/f4/08/ed/f408edc7cd2df8c0e39811e93224fd5e.jpg",
-            "nombre":"SEGURITY"
+            "nombre":"SECURITY"
           },
           {
             "categoria":["abrasivos","amarres","electricos","accesorios-para-herramientas","griferia-y-plomeria","herramientas-manuales","herramientas-manuales"],

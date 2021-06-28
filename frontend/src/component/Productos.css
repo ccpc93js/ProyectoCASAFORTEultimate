@@ -505,14 +505,14 @@ height: 5rem;
   margin-left: 2rem;
   }
 
-  .product-card-body{
+  /* .product-card-body{
  
     opacity: 1;
     visibility: visible;
     margin-left: 3rem;
 
   
-  }
+  } */
 
   .producto-en-oferta_precio {
     font-size: 12px;

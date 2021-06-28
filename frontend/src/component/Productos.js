@@ -161,7 +161,7 @@ export default function Productos(props) {
                     <li className="breadcrumb-item">
                     {
                         
-                        <a href={`/${props.categorias ? props.categorias : props.subcategorias ? props.subcategorias :props.marcas ? props.marcas:props.all}`}>{props.categorias ? props.categorias.replace(/-/g," ") : props.subcategorias ? props.subcategorias.replace(/-/g," ") : props.marcas ? props.marcas.replace(/-/g," "):"todos"}</a>
+                        <a href={`/${props.categorias ? props.categorias : props.subcategorias ? props.subcategorias :props.marcas ? props.marcas:props.all? props.all:"ofertas"}`}>{props.categorias ? props.categorias.replace(/-/g," ") : props.subcategorias ? props.subcategorias.replace(/-/g," ") : props.marcas ? props.marcas.replace(/-/g," "):props.all?"todos":"ofertas"}</a>
                     }
                     <svg className="breadcrumb-arrow">
                     <ArrowBackIosIcon/>
