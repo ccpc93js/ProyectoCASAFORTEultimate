@@ -288,14 +288,14 @@ color: #ffffff;
 .hi-prev{
     left: 5px;
 z-index: 40;
-opacity: 0;
+/* opacity: 0; */
 }
 
 
 .hi-next{
     right: 20px;
 z-index: 40;
-opacity: 0;
+/* opacity: 0; */
 
 
 }

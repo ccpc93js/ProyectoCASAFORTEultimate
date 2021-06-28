@@ -215,7 +215,7 @@ const Prev = () =>{
         </div>
         {
             (!userInfo) ? ("Para comprar debes registrarte") :
-            producto.enStock > 0 && (
+            producto.enStock > 0 ? (
                 <div>
                   
                      {
@@ -271,7 +271,7 @@ const Prev = () =>{
                                         </li>
                                         
                                         </div>
-                                    )
+                                    ): (<h2 style={{color: "red", fontSize:"20px"}}>Producto agotado!</h2>)
                                 }
         
         </div>

@@ -400,13 +400,13 @@ padding-bottom: 5rem;
 .zona-form form input[ type="text"],
 .zona-form form input[ type="text2"]
 {
-  max-width: 80%;
+  width: 80%;
 
 }
 
 .zona-form form input[ type="password"],
 .zona-form form input[ type="confirmPassword"]{
-  max-width: 50%;
+  max-width: 80%;
   overflow: hidden;
 }
 
