@@ -29,7 +29,7 @@ function Registrarse(props) {
     const [tipoClient, setTipoClient] = useState('');
 
     const userRegisterInfo = useSelector((state) => state.userRegisterInfo);
-    const { userRegInfo,loading, error } = userRegisterInfo;
+    const {loading, error } = userRegisterInfo;
     const handleCopExitosaModalOpen = () =>{
         const MCE_C = document.querySelector(".Modal-compraExitosa-container")
         const MCE = document.querySelector(".Modal-compraExitosa")
@@ -98,7 +98,7 @@ window.addEventListener("click", (e) =>{
   
   setTimeout (()=>{
 
-      if(e.target == MCE_C || btnClose ){
+      if(e.target === MCE_C || btnClose ){
         MCE_C.classList.toggle("ModalCExitosa-Container-Close")
         MCE.classList.toggle("ModalCExitosa-Close")  
         props.history.push('/');

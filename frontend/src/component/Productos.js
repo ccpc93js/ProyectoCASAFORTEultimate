@@ -139,9 +139,9 @@ export default function Productos(props) {
   //      Carrito.style.opacity = "0";
   //  }
 
-   const CartSideaccionOpen =()=>{
-    setCartSideOpen(!cartSideOpen)
-  }
+  //  const CartSideaccionOpen =()=>{
+  //   setCartSideOpen(!cartSideOpen)
+  // }
     
     return (
         <div className="productos-container">

@@ -16,7 +16,6 @@ import {
 import formatCurrency from '../actions/productActions';
 import ClearIcon from '@material-ui/icons/Clear';
 import { IconButton } from '@material-ui/core';
-import axios from '../../node_modules/axios/index';
 
 window.addEventListener("click", (e) =>{
   const MCE_C = document.querySelector(".Modal-compraExitosa-container");
@@ -85,13 +84,36 @@ useEffect(()=>{
     }
   }
   const enviarEmail = async(name,  email, order)=>{
-    await axios.post("/api/emails/compraExitosa",{
+    await Axios.post("/api/emails/compraExitosa",{
         name,
         email, 
         order: order._id,
   
     });
   }
+
+
+  const cargarPuntosUsuariosPuntosYA = async(userInfo, order) =>{
+    try {
+
+   const {data} = await Axios.get(`http://puntosya.azurewebsites.net/puntosya/registro_usuario_api.php?local=326&clave=pjt3anu1&cedula=${userInfo.nit}&monto=${order.totalPrice}`)
+    console.log(data);
+    // alert(data);
+
+    }catch (error){
+
+        const message =
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message;
+        console.log(message)
+    }
+  }
+
+if(successPay  && order.isPaid && userInfo && !userInfo.isAdmin ){
+  cargarPuntosUsuariosPuntosYA(userInfo, order);
+
+}
 
   if(successPay && order.paymentMethod === "Contra entrega" && userInfo && !userInfo.isAdmin){
 

@@ -1,5 +1,7 @@
 import express from 'express';
+import expressAsyncHandler from 'express-async-handler';
 import nodemailer from "nodemailer";
+import User from '../models/userModel.js';
 
 // import expressAsyncHandler from 'express-async-handler';
 // import {generateToken, isAdmin, isAuth} from '../utils.js'
@@ -48,6 +50,56 @@ emailRouter.post("/contactenos", (req,res) =>{
         });
     });
 });
+
+
+emailRouter.post("/forgotPassword",  expressAsyncHandler(async(req,res) =>{
+
+    console.log(req.body.email)
+    const user = await User.findOne({email: req.body.email});
+    console.log(user)
+    if(user){
+
+    
+  // <p>Recupera tu contraseña, por favor da click en el siguiente link: https://casa-forte.co/reset/${req.body.id}</p>
+
+  nodemailer.createTestAccount((err, account)=>{
+      const htmlEmail = `
+          <h3>Casa Forte</h3>
+
+          <h3>Recuperar contraseña</h3>
+          </br>
+          <p>Recupera tu contraseña, por favor da click en el siguiente link: https://www.casa-forte.co/reset/${user._id}</p>
+
+      `;
+      let transporter = nodemailer.createTransport({
+
+          host: "smtp.gmail.com",
+          port:587,
+          auth:{
+              user:"cristianpalocseres@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
+              pass:"yyrubxgyxdrgjulj"// la contraseña dedicho SMTP
+          }
+      });
+
+      let mailOptions = {
+          form:"cristianpalocseres@gmail.com", //quien manda el email
+          to: req.body.email,// el email de destino
+          replyTo: req.body.email,
+          subject: "Recuperacion de contraseña", // el asunto del email
+          text: req.body.mensaje, // el mensaje
+          html: htmlEmail // la parte del HTML del email
+      };
+
+      transporter.sendMail(mailOptions,(err,info)=>{
+          if(err){
+              return console.log(err);
+          }
+          console.log("Mensaje enviado: %s", info.mensaje);
+          console.log("Url del mensaje: %s", nodemailer.getTestMessageUrl(info));
+      });
+  });
+}
+}));
 
 emailRouter.post("/registrarse", (req,res) =>{
     nodemailer.createTestAccount((err, account)=>{

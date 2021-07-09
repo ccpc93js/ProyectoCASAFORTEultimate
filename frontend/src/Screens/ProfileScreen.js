@@ -26,17 +26,17 @@ import dataDyC from '../component/enlaces/dataDyC'
 
 export default function ProfileScreen() {
   const [name, setName] = useState('');
-  const [nit, setNit] = useState('');
+  // const [nit, setNit] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const [tDocument, setTD] = useState('');
+  // const [tDocument, setTD] = useState('');
   const [department, setDepartment] = useState('');
   const [city, setCity] = useState('');
   const [adress, setAdress] = useState('');
   const [tel, setTel] = useState('');
   const [cel, setCel] = useState('');
-  const [tipoClient, setTipoClient] = useState('');
+  // const [tipoClient, setTipoClient] = useState('');
 
 
   const userSignin = useSelector((state) => state.userSignin);
@@ -56,15 +56,15 @@ export default function ProfileScreen() {
       dispatch(detailsUser(userInfo._id));
     } else {
       setName(user.name);
-      setNit(user.nit);
+      // setNit(user.nit);
       setEmail(user.email);
-      setTD(user.tDocument);
+      // setTD(user.tDocument);
       setDepartment(user.department);
       setCity(user.city);
       setAdress(user.adress);
       setTel(user.tel);
       setCel(user.cel);
-      setTipoClient(user.tipoClient);
+      // setTipoClient(user.tipoClient);
 
     
     }
@@ -79,15 +79,15 @@ export default function ProfileScreen() {
         updateUserProfile({
           userId: user._id,
           name,
-          nit,
+          // nit,
           email,
-          tDocument,
+          // tDocument,
           department,
           city,
           adress,
           tel,
           cel,
-          tipoClient,
+          // tipoClient,
           password,
 
         })
@@ -145,22 +145,20 @@ export default function ProfileScreen() {
                 onChange={(e) => setName(e.target.value)}
               ></input>
             </div>
-            <div className="input-contenedor">
+            {/* <div className="input-contenedor">
                     <i className=""><PostAddIcon/></i>
-                    {/* <input type="text2" placeholder="Tipo de Documento"/> */}
                     <select 
                     value={tDocument}
                     type="text2"
                     onChange={(e) => setTD(e.target.value)}
                     
                     >
-                        {/* <option  selected disables >Selecciona el tipo de documento</option> */}
                         <option value="Nit sin dijito de verificacion">Nit sin dijito de verificacion</option>
                         <option value="Cedula de ciudadania" >Cedula de ciudadania</option>
                         <option value="Cedula de ciudadania" >Cedula de extranjeria</option>
                     </select>
-                </div>
-            <div className="input-contenedor">
+                </div> */}
+            {/* <div className="input-contenedor">
             <i className=""><ContactsIcon/></i>
               <input
                 id="nit"
@@ -169,7 +167,7 @@ export default function ProfileScreen() {
                 value={nit}
                 onChange={(e) => setNit(e.target.value)}
               ></input>
-            </div>
+            </div> */}
             <div className="input-contenedor">
             <i className=""><EmailIcon/></i>
               <input
@@ -261,21 +259,19 @@ export default function ProfileScreen() {
                     />
                 </div>
 
-               <div className="input-contenedor">
+               {/* <div className="input-contenedor">
                     <i className=""><AccountCircleIcon/></i>
-                    {/* <input type="text2" placeholder="Selecciona el tipo de cliente"/> */}
                     <select 
                     value={tipoClient}
                     type="text2"
                     onChange={(e) => setTipoClient(e.target.value)}
                     
                     >
-                        {/* <option selected disables>Selecciona el tipo de cliente</option> */}
                         <option value="Empresa" key="">Empresa</option>
                         <option value="Persona" key="">Persona</option>
                     </select>
                    
-                </div>
+                </div> */}
 
 
             <div className="input-contenedor">

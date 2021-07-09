@@ -42,7 +42,7 @@ export const handleCartSideClose = () =>{
 window.addEventListener("click", (e) =>{
   const CarritoModal = document.querySelector(".Carrito-Modal-container");
 
-  if(e.target == CarritoModal ){
+  if(e.target === CarritoModal ){
     handleCartSideClose()
   }
 })

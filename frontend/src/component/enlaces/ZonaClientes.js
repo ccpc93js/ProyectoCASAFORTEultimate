@@ -37,18 +37,7 @@ function ZonaClientes(props) {
     }
   }, [props.history, redirect, userInfo]);
 
-  // const mostrarContrasena = () =>{
-  //   var input = document.getElementById("password");
-  //   if(input.type == "password"){
-  //       input.type = "text"
-  //       setTimeout(() =>{
-  //       input.type = "password"
- 
-  //       }, 3000)
-  //   }else{
-  //     input.type = "password";
-  //   }
-  //   }
+
 
 
     return (
@@ -111,9 +100,8 @@ function ZonaClientes(props) {
                 <br></br>
                 <br></br>
                 <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de Privacidad.</p>
+                <p><a className="link" href="/forgotPassword"> ¿Olvidaste tu contraseña? </a></p>
                 <p>¿No tienes una cuenta?<a className="link" href="/registrarse"> Solicita tu cuenta </a></p>
-               
-            
                 </div>
             </form> 
              

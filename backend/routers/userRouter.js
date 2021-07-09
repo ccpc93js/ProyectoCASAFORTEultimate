@@ -5,6 +5,8 @@ import data from '../dataUsers.js';
 import User from '../models/userModel.js';
 import {generateToken, isAdmin, isAuth} from '../utils.js'
 import UserInfo from '../models/userInfoModel.js';
+import axios from 'axios';
+// import { sendReserLink } from '../sendEmail.js';
 
 
 const userRouter = express.Router();
@@ -15,7 +17,9 @@ userRouter.get('/seed', expressAsyncHandler(async (req,res)=>{
 }));
 
 userRouter.post('/signin', expressAsyncHandler(async(req, res)=>{
-    const user = await User.findOne({nit: req.body.nit});
+  console.log(req.body.email)
+
+    const user = await User.findOne({email: req.body.email});
     if(user){
         if(bcrypt.compareSync(req.body.password, user.password)){
             res.send({
@@ -31,24 +35,43 @@ userRouter.post('/signin', expressAsyncHandler(async(req, res)=>{
         }
     }
     res.status(401).send({message: 'email o contraseña invalidad'})
+}));
+
+
+userRouter.put(
+  '/reset', 
+  expressAsyncHandler(async(req, res)=>{
+    
+  const user = await User.findById(req.body.id);
+
+  if(user){
+    if (req.body.password) {
+      user.password = bcrypt.hashSync(req.body.password, 8);
+    }
+
+    const updatedUser = await user.save();
+    res.send({
+        
+      _id: updatedUser._id,
+      name: updatedUser.name,
+      nit: updatedUser.nit,
+      email: updatedUser.email,
+      tipoClient: updatedUser.tipoClient,
+      isAdmin: updatedUser.isAdmin,
+      token: generateToken(updatedUser),
+    });
+    // res.send({password: updatedUser.password });
+  } else {
+    res.status(404).send({ message: 'contraseña no actualizada' });
+  }
+  //   res.status(200).json()
+  // }else{
+  //   res.status(404).json();
+  // }
 }))
 
-// userRouter.post('/signinAdmin', expressAsyncHandler(async(req, res)=>{
-//   const user = await User.findOne({nit: req.body.email});
-//   if(user){
-//       if(bcrypt.compareSync(req.body.password, user.password)){
-//           res.send({
-//               _id: user._id,
-//               name: user.name,
-//               email: user.email,
-//               isAdmin: user.isAdmin,
-//               token: generateToken(user)
-//           });
-//           return
-//       }
-//   }
-//   res.status(401).send({message: 'Invalid email or password'})
-// }))
+
+
 
 userRouter.post(
     '/register',
@@ -85,58 +108,6 @@ userRouter.post(
     })
   );
 
-  // userRouter.post(
-  //   '/registerInfo',
-  //   expressAsyncHandler(async (req, res) => {
-  //     const userInfo = new UserInfo({
-  //       name: req.body.name,
-  //       tDocument: req.body.tDocument,
-  //       nDocument: req.body.nDocument,
-  //       department: req.body.department,
-  //       city: req.body.city,
-  //       adress: req.body.adress,
-  //       email: req.body.email,
-  //       tel: req.body.tel,
-  //       cel: req.body.cel,
-  //       tipoClient: req.body.tipoClient
-  //     });
-  //     const createdUserInfo = await userInfo.save();
-  //     res.send({
-  //       _id: createdUserInfo._id,
-  //       name: createdUserInfo.name,
-  //       tDocument: createdUserInfo.tDocument,
-  //       nDocument: createdUserInfo.nDocument,
-  //       department: createdUserInfo.department,
-  //       city: createdUserInfo.city,
-  //       adress: createdUserInfo.adress,
-  //       email: createdUserInfo.email,
-  //       tel: createdUserInfo.tel,
-  //       cel: createdUserInfo.cel,
-  //       tipoClient: createdUserInfo.tipoClient,
-  //       token: generateToken(createdUserInfo),
-  //     });
-  //   })
-  // );
-
-  // userRouter.post(
-  //   '/registerAdmin',
-  //   expressAsyncHandler(async (req, res) => {
-  //     const user = new User({
-  //       name: req.body.name,
-  //       email: req.body.email,
-  //       password: bcrypt.hashSync(req.body.password, 8),
-  //     });
-  //     const createdUser = await user.save();
-  //     res.send({
-  //       _id: createdUser._id,
-  //       name: createdUser.name,
-  //       email: createdUser.email,
-  //       isAdmin: createdUser.isAdmin,
-  //       token: generateToken(createdUser),
-  //     });
-  //   })
-  // );
-
 
   userRouter.get(
     '/:id',
@@ -155,6 +126,7 @@ userRouter.post(
     isAuth,
     expressAsyncHandler(async (req, res) => {
       const user = await User.findById(req.user._id);
+      console.log(user)
       if (user) {
         user.name = req.body.name || user.name;
         user.nit = req.body.nit || user.nit;

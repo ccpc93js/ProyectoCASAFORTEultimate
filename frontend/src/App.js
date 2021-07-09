@@ -131,6 +131,8 @@ import DrawerRight, { handleCartSideClose } from './component/DrawerRight';
 import SearchScreen from './Screens/SearchScreen';
 import EnOferta from './component/enlaces/EnOferta/EnOferta';
 import compraExitosa from './component/correos/compraExitosa';
+import RecuperarContraseña from './component/enlaces/RecuperarContraseña';
+import ContrasenaOlvidada from './component/enlaces/ContrasenaOlvidada';
 
 
 
@@ -273,6 +275,9 @@ function App(props) {
         <AdminRoute
            path="/loginRegistro" component={LoginRegistro}>
         </AdminRoute>
+
+        <Route path="/reset/:id" component={RecuperarContraseña}></Route>
+        <Route path="/forgotPassword" component={ContrasenaOlvidada}></Route>
         
          <Route path="/shipping" component={ShippingAddressScreen}></Route>
          <Route path="/payment" component={PaymentMethodScreen}></Route>

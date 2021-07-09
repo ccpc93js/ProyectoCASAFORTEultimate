@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './NavBar.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { signout } from '../actions/userActions';
@@ -11,6 +11,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import SearchIcon from '@material-ui/icons/Search';
 import { handleCartSideClose, handleCartSideOpen } from './DrawerRight';
+import axios from '../../node_modules/axios/index';
 
 
 
@@ -22,6 +23,8 @@ export const NavBar = (props) => {
     const {cartItems} = cart;
     const userSignin = useSelector((state) =>state.userSignin);
     const {userInfo} = userSignin;
+
+    const [puntosYa, setPuntosYa] = useState("");
     const dispatch = useDispatch();
     const signoutHandler = () =>{
         dispatch(signout());
@@ -61,7 +64,7 @@ export const NavBar = (props) => {
         const ModalC = document.querySelector(".SearchBar-ModalC")
         const Modal = document.querySelector(".Modal");
       
-        if(e.target == ModalC ){
+        if(e.target === ModalC ){
  
             Modal.ariaHidden = "false"
             ModalC.ariaHidden = "false"
@@ -73,7 +76,25 @@ export const NavBar = (props) => {
 
       })
 
+      const cargarPuntosUsuariosPuntosYA = async(userInfo) =>{
+        try {
+    
+       const {data} = await axios.get(`http://puntosya.azurewebsites.net/puntosya/registro_usuario_api.php?local=326&clave=pjt3anu1&cedula=${userInfo.nit}`)
+        console.log(data);
+        // alert(data);
+        setPuntosYa(data)
+    
+        }catch (error){
+    
+            const message =
+            error.response && error.response.data.message
+              ? error.response.data.message
+              : error.message;
+            console.log(message)
+        }
+      }
 
+      cargarPuntosUsuariosPuntosYA(userInfo)
 
     return (
         <div>
@@ -144,6 +165,14 @@ export const NavBar = (props) => {
                         <li>
                             <Link to="/orderhistory">Historial de pedidos</Link>
                         </li>
+                        {
+                            puntosYa.length === 0? "" :
+                        <li>
+                            {/* <Link to="#">{puntosYa.length === 0? "" : `PuntosYa: ${puntosYa}`}</Link> */}
+
+                            <Link to="#">{`PuntosYa: ${puntosYa}`}</Link>
+                        </li>
+                        }
                         <li>
                             <Link to="#signout" onClick={signoutHandler} aria-label="cerrar sesion">Cerrar sesion</Link>
                         </li>
