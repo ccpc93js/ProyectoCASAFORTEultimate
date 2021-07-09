@@ -77,6 +77,7 @@ export const NavBar = (props) => {
       })
 
       const cargarPuntosUsuariosPuntosYA = async(userInfo) =>{
+        if(userInfo){
         try {
     
        const {data} = await axios.get(`http://puntosya.azurewebsites.net/puntosya/registro_usuario_api.php?local=326&clave=pjt3anu1&cedula=${userInfo.nit}`)
@@ -92,6 +93,8 @@ export const NavBar = (props) => {
               : error.message;
             console.log(message)
         }
+        }
+
       }
 
       cargarPuntosUsuariosPuntosYA(userInfo)

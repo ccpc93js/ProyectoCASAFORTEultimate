@@ -105,7 +105,7 @@ console.log(password)
                 </div>
                 <div className="input-button">
 
-                <button type="submit" className="button ">Actualizar contraseña</button>
+                <button type="submit" className="button block">Actualizar contraseña</button>
                 <br></br>
                 <br></br>
                 {/* <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de Privacidad.</p> */}

@@ -16,15 +16,18 @@ function ContrasenaOlvidada() {
   
           email
   
-        }).then(res =>{
-          setEmailSend(true )
+        }).then(() =>{
+          setEmailSend(true)
         });
+
         
       } catch (error) {
         console.log(error)
       }
     }
     forgotPassword(email);
+    setEmailSend(true)
+
 
 
 
@@ -39,7 +42,7 @@ function ContrasenaOlvidada() {
       {
          (emailSend)?
         <div style={{}}>
-          <span style={{margin: "auto"}}>revisa tu email hemos enviado instrucciones para la recuperacion de tu contraseña</span>
+          <p style={{margin: "5px", paddingTop:"20px"}}>revisa tu email, hemos enviado instrucciones para la recuperacion de tu contraseña</p>
         </div>
 
          :
