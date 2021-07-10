@@ -28,7 +28,7 @@ emailRouter.post("/contactenos", (req,res) =>{
             port:587,
             auth:{
                 user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
-                pass:"erzbjbjocftugsgo"// la contraseña dedicho SMTP
+                pass:"gngjbgwunntaapjv"// la contraseña dedicho SMTP
             }
         });
 
@@ -76,8 +76,8 @@ emailRouter.post("/forgotPassword",  expressAsyncHandler(async(req,res) =>{
           host: "smtp.gmail.com",
           port:587,
           auth:{
-              user:"cristianpalocseres@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
-              pass:"yyrubxgyxdrgjulj"// la contraseña dedicho SMTP
+              user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
+              pass:"gngjbgwunntaapjv"// la contraseña dedicho SMTP
           }
       });
 
@@ -174,7 +174,7 @@ emailRouter.post("/registrarse", (req,res) =>{
             port:587,
             auth:{
                 user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
-                pass:"erzbjbjocftugsgo"// la contraseña dedicho SMTP
+                pass:"gngjbgwunntaapjv"// la contraseña dedicho SMTP
             }
         });
 
@@ -264,7 +264,7 @@ emailRouter.post("/registrarse", (req,res) =>{
             port:587,
             auth:{
                 user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
-                pass:"erzbjbjocftugsgo"// la contraseña dedicho SMTP
+                pass:"gngjbgwunntaapjv"// la contraseña dedicho SMTP
             }
         });
 
@@ -394,7 +394,7 @@ emailRouter.post("/loginRegister", (req,res) =>{
           port:587,
           auth:{
               user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
-              pass:"erzbjbjocftugsgo"// la contraseña dedicho SMTP
+              pass:"gngjbgwunntaapjv"// la contraseña dedicho SMTP
           }
       });
 
@@ -482,7 +482,7 @@ emailRouter.post("/loginRegister", (req,res) =>{
           port:587,
           auth:{
               user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
-              pass:"erzbjbjocftugsgo"// la contraseña dedicho SMTP
+              pass:"gngjbgwunntaapjv"// la contraseña dedicho SMTP
           }
       });
 
@@ -1034,7 +1034,7 @@ emailRouter.post("/compraExitosa", (req,res) =>{
             port:587,
             auth:{
                 user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
-                pass:"erzbjbjocftugsgo"// la contraseña dedicho SMTP
+                pass:"gngjbgwunntaapjv"// la contraseña dedicho SMTP
             }
         });
 
@@ -1134,7 +1134,7 @@ emailRouter.post("/compraExitosa", (req,res) =>{
             port:587,
             auth:{
                 user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
-                pass:"erzbjbjocftugsgo"// la contraseña dedicho SMTP
+                pass:"gngjbgwunntaapjv"// la contraseña dedicho SMTP
             }
         });
 
