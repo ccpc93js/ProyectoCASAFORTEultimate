@@ -169,20 +169,16 @@ export const HomeScreen = () => {
 
 
          <ul className="sliderMarcas" id="sliderMarcas">
-            <li className="slider-section"><a href="/abracol"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647555/Icon/Logo_Abracol_sycors.png" alt="abracol"/></a></li>
-            <li className="slider-section"><a href="/ciles"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647557/Icon/Logo_Ciles_b00dsy.jpg" alt="ciles"/></a></li>
-            <li className="slider-section"><a href="/grival"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647547/Icon/Logo_Grival_kzpccn.jpg" alt="grival"/></a></li>
-            <li className="slider-section"><a href="/goya"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647546/Icon/logo_goya_baszig.jpg" alt="goya"/></a></li>
-            <li className="slider-section"><a href="/dewalt"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647546/Icon/logo_dewalt_tyfryk.jpg" alt="dewalt"/></a></li>
-            <li className="slider-section"><a href="/sintesolda"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647548/Icon/logo_sintesolda_gk9ozf.jpg" alt="sintesolda"/></a></li>
-            <li className="slider-section"><a href="/argos"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647556/Icon/logo_argos_wslcue.jpg" alt="argos"/></a></li>
-            <li className="slider-section"><a href="#"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647545/Icon/logo_corona_qxyl4k.png" alt="corona"/></a></li>
-            <li className="slider-section"><a href="#"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647557/Icon/logo_celta_xqdppz.png" alt="celta"/></a></li>
-            <li className="slider-section"><a href="/rioplast"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647548/Icon/logo_rioplast_ozfcdp.jpg" alt="rioplast"/></a></li>
-            <li className="slider-section"><a href="#"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647547/Icon/logo_legrand_c2vux6.jpg" alt="legrand"/></a></li>
-            <li className="slider-section"><a href="#"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647548/Icon/logo_pegaucho_zormad.jpg" alt="pegaucho"/></a></li>
-            <li className="slider-section"><a href="#"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647548/Icon/logo_stanley_fzaxig.png" alt="stanley"/></a></li>
-            <li className="slider-section"><a href="/lufkin-crescent"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647546/Icon/logo_crescent_q2auc5.png" alt="crescent"/></a></li>
+            <li className="slider-section"><a href="/ABRACOL"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647555/Icon/Logo_Abracol_sycors.png" alt="abracol"/></a></li>
+            <li className="slider-section"><a href="/CILES"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647557/Icon/Logo_Ciles_b00dsy.jpg" alt="ciles"/></a></li>
+            <li className="slider-section"><a href="/GRIVAL"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647547/Icon/Logo_Grival_kzpccn.jpg" alt="grival"/></a></li>
+            <li className="slider-section"><a href="/GOYA"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647546/Icon/logo_goya_baszig.jpg" alt="goya"/></a></li>
+            <li className="slider-section"><a href="/DEWALT"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647546/Icon/logo_dewalt_tyfryk.jpg" alt="dewalt"/></a></li>
+            <li className="slider-section"><a href="/SINTESOLDA"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647548/Icon/logo_sintesolda_gk9ozf.jpg" alt="sintesolda"/></a></li>
+            <li className="slider-section"><a href="/ARGOS"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647556/Icon/logo_argos_wslcue.jpg" alt="argos"/></a></li>
+            <li className="slider-section"><a href="/RIOPLAST"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647548/Icon/logo_rioplast_ozfcdp.jpg" alt="rioplast"/></a></li>
+            <li className="slider-section"><a href="/MERCURY"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1625093447/mercury_dkevqn.png" alt="mercury"/></a></li>
+            <li className="slider-section"><a href="/LUFKIN-CRESCENT"><img class="marca" src="https://res.cloudinary.com/casaforte/image/upload/v1622647546/Icon/logo_crescent_q2auc5.png" alt="crescent"/></a></li>
         </ul>
 
 

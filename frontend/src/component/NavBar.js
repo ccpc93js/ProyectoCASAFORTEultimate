@@ -262,7 +262,7 @@ export const NavBar = (props) => {
                     <li><a href="/GOYA">Goya</a></li>
                     <li><a href="/OSBLACK">Osblack</a></li>
                     <li><a href="/DEWALT">Dewalt</a></li>
-                    <li><a href="/PEGADIT">Pegadit</a></li>
+                    <li><a href="/MERCURY">Mercury</a></li>
                 </ul>
 
                 <ul>
@@ -277,7 +277,6 @@ export const NavBar = (props) => {
                     <li><a href="/CODELCA">Codelca</a></li>
                     <li><a href="/LUMINEX">Luminex</a></li>
                     <li><a href="/LUFKIN-CRESCENT">Lufkin-crescent</a></li>
-                    <li><a href="/FMT">FMT</a></li>
 
                 </ul>
                 </div>

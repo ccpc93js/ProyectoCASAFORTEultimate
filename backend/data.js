@@ -286,12 +286,12 @@ const data = {
             "img":"https://cdn.laferreteria.online/thumb/phpThumb.php?src=/marcas/Dewalt.png&w=350&h=200&zc=1&bg=ffffff&q=80",
             "nombre":"DEWALT"
           },
-          {
-            "categoria":["pegantes-y-adhesivos"],
-            "subcategoria":["siliconas-y-selladores"],
-            "img":"https://cdn.laferreteria.online/thumb/phpThumb.php?src=/marcas/PEGADIT.png&w=350&h=200&zc=1&bg=ffffff&q=80",
-            "nombre":"PEGADIT"
-          },
+          // {
+          //   "categoria":["pegantes-y-adhesivos"],
+          //   "subcategoria":["siliconas-y-selladores"],
+          //   "img":"https://cdn.laferreteria.online/thumb/phpThumb.php?src=/marcas/PEGADIT.png&w=350&h=200&zc=1&bg=ffffff&q=80",
+          //   "nombre":"PEGADIT"
+          // },
           {
             "categoria":["cerrajeria"],
             "subcategoria":["candados"],

@@ -56,12 +56,11 @@ import Sintesolda from './component/enlaces/Marcas/Sintesolda'
 import Goya from './component/enlaces/Marcas/Goya'
 import Osblack from './component/enlaces/Marcas/Osblack'
 import Dewalt from './component/enlaces/Marcas/Dewalt'
-import Pegadit from './component/enlaces/Marcas/Pegadit'
 import Codelca from './component/enlaces/Marcas/Codelca'
 import Uyustools from './component/enlaces/Marcas/Uyustools'
 import Security from './component/enlaces/Marcas/Security'
 import Argos from './component/enlaces/Marcas/Argos'
-import FMT from './component/enlaces/Marcas/FMT'
+import Mercury from './component/enlaces/Marcas/Mercury'
 
 import CartScreen from './Screens/CartScreen';
 import ProductScreen from './Screens/ProductScreen';
@@ -231,6 +230,11 @@ function App(props) {
     )
   }else{
 
+  window.addEventListener('load', () =>{
+    <LoadingPageLogo className="loading-logo"></LoadingPageLogo>
+
+  })
+
   return (
     
     <BrowserRouter>
@@ -394,18 +398,17 @@ function App(props) {
          <Route exact path="/GOYA" component={Goya}/>
          <Route exact path="/OSBLACK" component={Osblack}/>
          <Route exact path="/DEWALT" component={Dewalt}/>
-         <Route exact path="/PEGADIT" component={Pegadit}/>
          <Route exact path="/CODELCA" component={Codelca}/>
          <Route exact path="/UYUSTOOLS" component={Uyustools}/>
          <Route exact path="/SECURITY" component={Security}/>
          <Route exact path="/ARGOS" component={Argos}/>
          <Route exact path="/LUMINEX" component={Luminex}/>
          <Route exact path="/CRESCENT" component={Crescent}/>
-         <Route exact path="/FMT" component={FMT}/>
          <Route exact path="/MULTIMARCA" component={Multimarca}/>
          <Route exact path="/EGRET" component={Egret}/>
          <Route exact path="/INDUMA" component={Induma}/>
          <Route exact path="/LUFKIN-CRESCENT" component={LufkinCrescent}/>
+         <Route exact path="/MERCURY" component={Mercury}/>
 
           {/* ProductosTodos */}
          <Route exact path="/all" component={ProductosTodos}/>

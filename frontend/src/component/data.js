@@ -243,7 +243,7 @@ const data = {
           {
             "_id":"",
             "categoria":["electricos"],
-            "subcategoria":["cajas-y-electricos"],
+            "subcategoria":["cajas-y-electricos", "extensiones-electricas"],
             "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647557/Icon/Logo_Ciles_b00dsy.jpg",
             "nombre":"CILES"
           },
@@ -283,7 +283,7 @@ const data = {
           {
             "_id":"1",
             "categoria":["cerrajeria"],
-            "subcategoria":["cerraduras"],
+            "subcategoria":["cerraduras","extenciones-electricas"],
             "img":"https://www.osblack.co/wp-content/uploads/2019/09/noticia3.jpg",
             "nombre":"OSBLACK"
           },
@@ -362,10 +362,10 @@ const data = {
           },
           {
             "_id":"12",
-          "categoria":["herramientas-manuales"],
-          "subcategoria":["chazos-en-nylon"],
-          "img":"https://res.cloudinary.com/casaforte/image/upload/v1622647555/Icon/fmt_u8fbxn.png",
-          "nombre":"FMT"
+            "categoria":["cerrajeria"],
+            "subcategoria":["cerraduras","extenciones-electricas"],
+          "img":"https://res.cloudinary.com/casaforte/image/upload/v1625093447/mercury_dkevqn.png",
+          "nombre":"MERCURY"
           },
           {
             "_id":"13",
