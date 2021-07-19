@@ -7,7 +7,7 @@ import { NavBar } from './component/NavBar';
 import { Nosotros } from './component/enlaces/Nosotros';
 import { BrowserRouter, Route,  } from "react-router-dom";
 import  DrawerMenu  from './component/DrawerMenu';
-import  DrawerFilter  from './component/DrawerFilter';
+// import  DrawerFilter  from './component/DrawerFilter';
 import LoadingPageLogo from './component/LoadingPageLogo'
 import Whatsapp from './component/Whatsapp'
 import { makeStyles } from "@material-ui/core/styles";

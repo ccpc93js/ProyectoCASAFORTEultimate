@@ -3,9 +3,9 @@ import bcrypt from 'bcryptjs'
 const data = {
     users: [
         {
-          name: "casaforte",
+          name: "gerencia@casa-forte.co",
           email:"ferreteriacasaforte@gmail.com",
-          nit:"934893929",
+          nit:"900816981",
           password: bcrypt.hashSync('casaforte2525', 8),
           isAdmin: true
 

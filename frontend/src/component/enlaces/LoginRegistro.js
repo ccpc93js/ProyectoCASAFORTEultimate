@@ -259,6 +259,7 @@ const enviarEmail = async(name,email,nit, password)=>{
                     
                     >
                         <option selected disables>Selecciona el tipo de cliente</option>
+                        <option value="Ferreteria" key="">Ferreteria</option>
                         <option value="Empresa" key="">Empresa</option>
                         <option value="Persona" key="">Persona</option>
                     </select>

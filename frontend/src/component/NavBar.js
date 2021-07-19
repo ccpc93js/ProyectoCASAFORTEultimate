@@ -138,7 +138,7 @@ export const NavBar = (props) => {
 
                 </i>
             {
-            (props.history == "/cart")?(""):
+            (props.history === "/cart")?(""):
             <Link  aria-label="carrito"
                 onClick={()=>{
                     handleCartSideOpen()
