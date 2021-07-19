@@ -29,7 +29,7 @@ export default function UserEditScreen(props) {
   const userId = props.match.params.id;
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [nit, setNit] = useState(false);
+  const [nit, setNit] = useState('');
   const [tDocument, setTD] = useState('');
   const [department, setDepartment] = useState('');
   const [city, setCity] = useState('');
@@ -171,7 +171,7 @@ export default function UserEditScreen(props) {
 
                     type="text2" 
                     placeholder="Departamento"
-                    onChange={(e) => setDepartment(e.target.value), ciudadesSelect}
+                    onChange={(e) => setDepartment(e.target.value)}
 
                     >
                         <option  value={department}>{department}</option>
@@ -258,9 +258,9 @@ export default function UserEditScreen(props) {
                     
                     >
                         {/* <option selected disables>Selecciona el tipo de cliente</option> */}
-                        <option value="Ferreteria" key="">Ferreteria</option>
-                        <option value="Empresa" key="">Empresa</option>
-                        <option value="Persona" key="">Persona</option>
+                        <option value="Ferreteria" >Ferreteria</option>
+                        <option value="Empresa" >Empresa</option>
+                        <option value="Persona" >Persona</option>
                     </select>
                    
                 </div>

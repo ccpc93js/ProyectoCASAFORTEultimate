@@ -360,9 +360,9 @@ const compraExitosahandler = () =>{
                     
                     >
                         <option selected disables>Selecciona el tipo de cliente</option>
-                        <option value="Ferreteria" key="">Ferreteria</option>
-                        <option value="Empresa" key="">Empresa</option>
-                        <option value="Persona" key="">Persona</option>
+                        <option value="Ferreteria" >Ferreteria</option>
+                        <option value="Empresa" >Empresa</option>
+                        <option value="Persona" >Persona</option>
                     </select>
                    
                 </div>

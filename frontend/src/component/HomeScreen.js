@@ -217,7 +217,7 @@ export const HomeScreen = () => {
 
 <div className="celular">
       <div class="celular-img-content">
-          <img class="celular-img" src="https://res.cloudinary.com/casaforte/image/upload/v1622647549/Icon/celular_3_wddccv.jpg" alt="phone"/>
+          <img class="celular-img" src="https://res.cloudinary.com/casaforte/image/upload/v1626709688/Icon/cel-casa-forte_adobespark_lpexfr.png" alt="phone"/>
       </div>
     
 <div className="descaga-app">
