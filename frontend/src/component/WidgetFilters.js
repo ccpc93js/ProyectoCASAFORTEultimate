@@ -191,7 +191,7 @@ Categorias
     <svg class="filter-categories__arrow">
         <StarsIcon/>
     </svg>
-    <a data-id="3" href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
+    <a  href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
     </li>
         )
     
@@ -216,12 +216,12 @@ Subcategorias
 <div class="filter-categories">
 <ul class="filter-categories__list">
 {
-    subcategorias.map(x=>
+    [...Array(subcategorias).keys()].map(x=>
      <li class="filter-categories__item filter-categories__item--parent">
     <svg class="filter-categories__arrow">
         <StarsIcon/>
     </svg>
-    <a data-id="3" href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
+    <a key={x+1} href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
     </li>
         )
     
@@ -251,12 +251,12 @@ Categorias
 <div class="filter-categories">
 <ul class="filter-categories__list">
 {
-    categorias.map(x=>
+    [...Array(categorias).keys()].map(x=>
      <li class="filter-categories__item filter-categories__item--parent">
     <svg class="filter-categories__arrow">
         <StarsIcon/>
     </svg>
-    <a data-id="3" href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
+    <a key={x+1} href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
     </li>
         )
     
@@ -281,12 +281,12 @@ Subcategorias
 <div class="filter-categories">
 <ul class="filter-categories__list">
 {
-    subcategorias.map(x=>
+    [...Array(subcategorias).keys()].map(x=>
      <li class="filter-categories__item filter-categories__item--parent">
     <svg class="filter-categories__arrow">
         <StarsIcon/>
     </svg>
-    <a data-id="3" href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
+    <a key={x+1} href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
     </li>
         )
     
@@ -310,11 +310,11 @@ Marcas
 <div class="filter__container">
 <div class="filter-list">
 {
-    marcas.map(x=>
+    [...Array(marcas).keys()].map(x=>
 <div class="filter-list__list">
 <label class="filter-list__item ">
 <span class="filter-list__title">
-<a href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
+<a key={x + 1} href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
 </span>
 </label>
 

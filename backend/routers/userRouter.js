@@ -228,6 +228,15 @@ userRouter.post(
       if (user) {
         user.name = req.body.name || user.name;
         user.email = req.body.email || user.email;
+        user.nit = req.body.nit || user.nit;
+        user.tDocument = req.body.tDocument || user.tDocument;
+        user.department = req.body.department || user.department;
+        user.city = req.body.city || user.city;
+        user.adress = req.body.adress || user.adress;
+        user.tel = req.body.tel || user.tel;
+        user.cel = req.body.cel || user.cel;
+        user.tipoClient = req.body.tipoClient || user.tipoClient;
+
         user.isAdmin = Boolean(req.body.isAdmin);
         // user.isAdmin = req.body.isAdmin || user.isAdmin;
         const updatedUser = await user.save();

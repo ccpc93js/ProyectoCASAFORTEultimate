@@ -105,8 +105,8 @@ export const NavBar = (props) => {
             <div>
 
         <div className="menu1">
-            <button className="menu-button" aria-label="menu">
-            <IconButton
+            <button
+                 className="menu-button"
                 onClick={()=>{
                     props.handleDrawerOpen()
                     handleCartSideClose()
@@ -116,9 +116,8 @@ export const NavBar = (props) => {
                 size="small"
                 >
                 <MenuIcon/>
-            </IconButton>
-
             </button>
+
 
             <a className="casaforte-a" href="/" aria-label="inicio"><img className="casaforte" src='https://res.cloudinary.com/casaforte/image/upload/v1622590008/Icon/LOGO_CASA_FORTE_yhb1dx.png' alt="casaforte"/></a>
             <div className="carrito " >
@@ -139,23 +138,23 @@ export const NavBar = (props) => {
                 </i>
             {
             (props.history === "/cart")?(""):
-            <Link  aria-label="carrito"
-                onClick={()=>{
-                    handleCartSideOpen()
-                    handleSearhModalClose()
 
-                }
-                    
-            }
-            >
-                <i className="cart-icon">
+                <i className="cart-icon"
+                    onClick={()=>{
+                            handleCartSideOpen()
+                            handleSearhModalClose()
+        
+                        }
+                            
+                    }
+                >
                  <ShoppingCartIcon/>
                 {cartItems.length > 0 && (
                     <span className="badge ">{cartItems.length}</span>
                     )}
                 </i>
 
-            </Link>
+    
             }
             {
                 userInfo ? (

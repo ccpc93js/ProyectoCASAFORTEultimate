@@ -340,7 +340,7 @@ z-index: 40;
 }
 
 .celular-img{
-    width: 40%;
+    width: 70%;
     padding-top: 7%;
 
 }
@@ -372,7 +372,7 @@ z-index: 40;
     /* font-family: 'Fredoka One', cursive !important; */
     font-family: 'Alfa Slab One', cursive;
     /* margin-top: -320px; */
-    font-size: 50px;
+    font-size: 35px;
     color: #000000e8;
     /* margin-left: 950px; */
 }
@@ -382,7 +382,7 @@ z-index: 40;
     /* font-family: 'Fredoka One', cursive !important; */
     font-family: 'Alfa Slab One', cursive;
     /* margin-top: 1rem; */
-    font-size: 28px;
+    font-size: 24px;
     color: #818a97;
     /* margin-left: 950px; */
 }

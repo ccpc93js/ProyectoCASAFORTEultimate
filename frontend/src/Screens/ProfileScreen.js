@@ -185,15 +185,15 @@ export default function ProfileScreen() {
                 <div className="input-contenedor">
                     <i className=""><LocationOnIcon/></i>
                     <select 
-                    // value={department}
+                    value={department}
                     type="text2" 
                     placeholder="Departamento"
-                    onChange={(e) => setDepartment(e.target.value), ciudadesSelect}
+                    onChange={(e) => setDepartment(e.target.value)}
 
                     >
-                        <option  value={department}>{department}</option>
-                        {departamentos.map(x=>
-                        <option value={x.departamento}>{x.departamento}</option>
+                        {/* <option  value={department}>{department}</option> */}
+                        {[...Array(departamentos).keys()].map(x=>
+                        <option key ={x + 1} value={x.departamento}>{x.departamento}</option>
 
                         )}
                     </select>

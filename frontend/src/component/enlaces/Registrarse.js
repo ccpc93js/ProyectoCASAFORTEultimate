@@ -271,7 +271,7 @@ const compraExitosahandler = () =>{
                     onChange={(e) => setDepartment(e.target.value), ciudadesSelect}
 
                     >
-                        <option  selected disables >Seleccionar departamento</option>
+                        <option  disabled >Seleccionar departamento</option>
                         {departamentos.map(x=>
                         <option value={x.departamento}>{x.departamento}</option>
 
@@ -359,7 +359,7 @@ const compraExitosahandler = () =>{
                     onChange={(e) => setTipoClient(e.target.value)}
                     
                     >
-                        <option selected disables>Selecciona el tipo de cliente</option>
+                        <option disabled>Selecciona el tipo de cliente</option>
                         <option value="Ferreteria" >Ferreteria</option>
                         <option value="Empresa" >Empresa</option>
                         <option value="Persona" >Persona</option>

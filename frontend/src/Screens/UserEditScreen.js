@@ -76,7 +76,8 @@ export default function UserEditScreen(props) {
   const submitHandler = (e) => {
     e.preventDefault();
     // dispatch update user
-    dispatch(updateUser({ _id: userId, name, email, nit, isAdmin }));
+    dispatch(updateUser({ _id: userId, name, email, nit,department,tDocument,city,adress,tel,cel,tipoClient,isAdmin }));
+    console.log(userId, name, email, nit,department,tDocument,city,adress,tel,cel,tipoClient,isAdmin)
   };
 
   const data = dataDyC.DyC
@@ -124,17 +125,15 @@ export default function UserEditScreen(props) {
             </div>
             <div className="input-contenedor">
                     <i className=""><PostAddIcon/></i>
-                    {/* <input type="text2" placeholder="Tipo de Documento"/> */}
                     <select 
                     value={tDocument}
                     type="text2"
                     onChange={(e) => setTD(e.target.value)}
                     
                     >
-                        {/* <option  selected disables >Selecciona el tipo de documento</option> */}
-                        <option value="Nit sin dijito de verificacion">Nit sin dijito de verificacion</option>
-                        <option value="Cedula de ciudadania" >Cedula de ciudadania</option>
-                        <option value="Cedula de ciudadania" >Cedula de extranjeria</option>
+                        <option key={1} value="Nit sin dijito de verificacion">Nit sin dijito de verificacion</option>
+                        <option key={2} value="Cedula de ciudadania" >Cedula de ciudadania</option>
+                        <option key={3} value="Cedula de extranjeria" >Cedula de extranjeria</option>
                     </select>
                 </div>
             <div className="input-contenedor">
@@ -167,16 +166,15 @@ export default function UserEditScreen(props) {
                 <div className="input-contenedor">
                     <i className=""><LocationOnIcon/></i>
                     <select 
-                    // value={department}
+                    value={department}
 
                     type="text2" 
                     placeholder="Departamento"
                     onChange={(e) => setDepartment(e.target.value)}
 
                     >
-                        <option  value={department}>{department}</option>
-                        {departamentos.map(x=>
-                        <option value={x.departamento}>{x.departamento}</option>
+                        {[...Array(departamentos).keys()].map(x=>
+                        <option key={x + 1} value={x.departamento}>{x.departamento}</option>
 
                         )}
                     </select>
@@ -249,7 +247,6 @@ export default function UserEditScreen(props) {
 
                 <div className="input-contenedor">
                     <i className=""><AccountCircleIcon/></i>
-                    {/* <input type="text2" placeholder="Selecciona el tipo de cliente"/> */}
                     <select 
                     value={tipoClient}
 
@@ -257,10 +254,9 @@ export default function UserEditScreen(props) {
                     onChange={(e) => setTipoClient(e.target.value)}
                     
                     >
-                        {/* <option selected disables>Selecciona el tipo de cliente</option> */}
-                        <option value="Ferreteria" >Ferreteria</option>
-                        <option value="Empresa" >Empresa</option>
-                        <option value="Persona" >Persona</option>
+                        <option key={1} value="Ferreteria" >Ferreteria</option>
+                        <option key={2} value="Empresa" >Empresa</option>
+                        <option key={3} value="Persona" >Persona</option>
                     </select>
                    
                 </div>

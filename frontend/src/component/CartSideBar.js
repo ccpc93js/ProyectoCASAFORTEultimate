@@ -114,10 +114,10 @@ export default function CartSideBar(props) {
 
                                         (item.enOferta === false)?(
                                         
-                                            <p>
+                                            <span>
                                             <b> Precio:  </b>
                                               {formatCurrency(userInfo.tipoClient === "Empresa"? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"? item.precio + (item.precio * 0.30): item.precio )}
-                                            </p>
+                                            </span>
                                         ):(
                                           <div className="producto-en-oferta_precio">
                                             <b> Precio:  </b>
