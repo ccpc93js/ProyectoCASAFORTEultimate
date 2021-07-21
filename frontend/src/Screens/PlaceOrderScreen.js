@@ -26,7 +26,21 @@ export default function PlaceOrderScreen(props) {
 
 
     const toPrice = (num) =>  Number(num.toFixed(2));
-    cart.itemsPrice = toPrice(cart.cartItems.reduce((a, c) => a + c.qty * (userInfo.tipoClient === "Empresa"? c.precio + (c.precio * 0.20):userInfo.tipoClient === "Persona"? c.precio + (c.precio * 0.30): c.precio - (userInfo.tipoClient === "Empresa"? c.precio + (c.precio * 0.20):userInfo.tipoClient === "Persona"? c.precio + (c.precio * 0.30): c.precio * (c.descuento/100)||0)), 0));
+    cart.itemsPrice = toPrice(cart.cartItems.reduce((a, c) => a + c.qty 
+    * (
+        userInfo?
+          userInfo.tipoClient === "Empresa"?
+          c.precio + (c.precio * 0.20):userInfo.tipoClient === "Persona"
+          ? c.precio + (c.precio * 0.30): c.precio - (userInfo.tipoClient === "Empresa"
+          ? c.precio + (c.precio * 0.20):userInfo.tipoClient === "Persona"
+          ? c.precio + (c.precio * 0.30): c.precio * (c.descuento/100)||0)
+          
+          :
+           (c.precio+ (c.precio * 0.30)) - ((c.precio+ (c.precio * 0.30)) * (c.descuento/100)||0)
+          
+          ), 0)
+
+      );
     // cart.itemsPrice = toPrice(cart.cartItems.reduce((a, c) => a + c.qty * c.precio, 0));
     cart.shippingPrice = toPrice(0) /*cart.itemsPrice > 100000? toPrice(0) : toPrice(10000)*/;
     // cart.taxPrice = toPrice(0.19 * cart.itemsPrice);
@@ -97,7 +111,37 @@ export default function PlaceOrderScreen(props) {
                                         </div>
                                        
                                         <div className="cart-price">
-                                            {item.qty} x {item.enOferta === true?formatCurrency(userInfo.tipoClient === "Empresa"? item.precioDeOferta + (item.precioDeOferta * 0.20):userInfo.tipoClient === "Persona"? item.precioDeOferta + (item.precioDeOferta * 0.30): item.precioDeOferta):formatCurrency(userInfo.tipoClient === "Empresa"? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"? item.precio + (item.precio * 0.30): item.precio)} = {item.enOferta === true?formatCurrency(item.qty * userInfo.tipoClient === "Empresa"? item.precioDeOferta + (item.precioDeOferta * 0.20):userInfo.tipoClient === "Persona"? item.precioDeOferta + (item.precioDeOferta * 0.30): item.precioDeOferta):formatCurrency(item.qty * userInfo.tipoClient === "Empresa"? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"? item.precio + (item.precio * 0.30): item.precio)}
+                                            {item.qty} x {
+                                            userInfo?
+                                              item.enOferta === true?
+                                                formatCurrency(userInfo.tipoClient === "Empresa"
+                                                ? item.precioDeOferta + (item.precioDeOferta * 0.20):userInfo.tipoClient === "Persona"
+                                                ? item.precioDeOferta + (item.precioDeOferta * 0.30): item.precioDeOferta)
+                                                :formatCurrency(userInfo.tipoClient === "Empresa"
+                                                ? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"
+                                                ? item.precio + (item.precio * 0.30): item.precio)
+                                            :
+                                                item.enOferta === true?
+                                                formatCurrency(item.precioDeOferta + (item.precioDeOferta * 0.30))
+                                                :formatCurrency( item.precio + (item.precio * 0.30))
+                                            }
+                                                 = 
+                                            { 
+
+                                            userInfo?
+                                              item.enOferta === true?
+                                              formatCurrency(item.qty * userInfo.tipoClient === "Empresa"
+                                              ? item.precioDeOferta + (item.precioDeOferta * 0.20):userInfo.tipoClient === "Persona"
+                                              ? item.precioDeOferta + (item.precioDeOferta * 0.30): item.precioDeOferta)
+                                              :formatCurrency(item.qty * userInfo.tipoClient === "Empresa"
+                                              ? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"
+                                              ? item.precio + (item.precio * 0.30): item.precio)
+                                            :
+                                              item.enOferta === true?
+                                              formatCurrency(item.precioDeOferta + (item.precioDeOferta * 0.30))
+                                              :formatCurrency( item.precio + (item.precio * 0.30))
+
+                                            }
                                         </div>
                                      
 

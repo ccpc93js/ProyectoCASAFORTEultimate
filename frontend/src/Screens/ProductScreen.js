@@ -214,25 +214,44 @@ const Prev = () =>{
         <strong>UNIDAD: </strong>{producto.unidad}<br/>
         </div>
         {
-            (!userInfo) ? ("Para comprar debes registrarte") :
+            // (!userInfo) ? ("Para comprar debes registrarte") :
             producto.enStock > 0 ? (
                 <div>
                   
                      {
+
+                         userInfo?
                          (producto.enOferta === true) ? 
                         (
                             <div className="precio">
-                                <strong >PRECIO: </strong>{formatCurrency(producto.precio)}<br/>
-                                <strong >OFERTA: </strong>{formatCurrency(producto.precioDeOferta)}<br/>
+                                <strong >PRECIO: </strong>{formatCurrency(userInfo.tipoClient === "Empresa"? producto.precio + (producto.precio * 0.20):userInfo.tipoClient === "Persona"? producto.precio + (producto.precio * 0.30):producto.precio)}<br/>
+                                <strong >OFERTA: </strong>{formatCurrency(userInfo.tipoClient === "Empresa"? producto.precio + (producto.precio * 0.20):userInfo.tipoClient === "Persona"? producto.precioDeOferta + (producto.precioDeOferta * 0.30): producto.precioDeOferta)}<br/>
                             </div>
 
                         )
                          :
                          (
                             <div className="precio">                       
-                                <strong >PRECIO: </strong>{formatCurrency(producto.precio)}<br/>
+                                <strong >PRECIO: </strong>{formatCurrency(userInfo.tipoClient === "Empresa"? producto.precio + (producto.precio * 0.20):userInfo.tipoClient === "Persona"? producto.precio + (producto.precio * 0.30):producto.precio)}<br/>
                             </div>
                          )
+
+                         :
+
+                         (producto.enOferta === true) ? 
+                         (
+                             <div className="precio">
+                                 <strong >PRECIO: </strong>{formatCurrency(producto.precio + (producto.precio * 0.30))}<br/>
+                                 <strong >OFERTA: </strong>{formatCurrency(producto.precioDeOferta + (producto.precioDeOferta * 0.30))}<br/>
+                             </div>
+ 
+                         )
+                          :
+                          (
+                             <div className="precio">                       
+                                 <strong >PRECIO: </strong>{formatCurrency(producto.precio + (producto.precio * 0.30))}<br/>
+                             </div>
+                          )
 
                      }
                                         <li>
@@ -362,7 +381,24 @@ loadingP?(
                 )
             }
     </p>
-            : ("")
+            : (
+                <p className="continerPR__details__description__precio">                
+                {
+                                              
+                           (x.enOferta ===false )?(
+                             <p>{formatCurrency(x.precio + (x.precio * 0.30) )}</p>
+                           ):(
+                             <div className="producto-en-oferta_precio">
+                              <p className="p1"> {formatCurrency(x.precio + (x.precio * 0.30))}</p>
+                               {/* <br></br> */}
+                               <p className="p2"> {formatCurrency(x.precioDeOferta + (x.precioDeOferta * 0.30))}</p>
+           
+                             </div>
+                             
+                           )
+                       }
+               </p>
+            )
      }
 
     </div>

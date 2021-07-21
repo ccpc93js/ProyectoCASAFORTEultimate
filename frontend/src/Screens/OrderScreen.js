@@ -304,8 +304,37 @@ const compraExitosahandler = () =>{
                         </div>
 
                         <div>
-                        {item.qty} x {item.enOferta === true?formatCurrency(userInfo.tipoClient === "Empresa"? item.precioDeOferta + (item.precioDeOferta * 0.20):userInfo.tipoClient === "Persona"? item.precioDeOferta + (item.precioDeOferta * 0.30): item.precioDeOferta):formatCurrency(userInfo.tipoClient === "Empresa"? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"? item.precio + (item.precio * 0.30): item.precio)} = {item.enOferta === true?formatCurrency(item.qty * userInfo.tipoClient === "Empresa"? item.precioDeOferta + (item.precioDeOferta * 0.20):userInfo.tipoClient === "Persona"? item.precioDeOferta + (item.precioDeOferta * 0.30): item.precioDeOferta):formatCurrency(item.qty * userInfo.tipoClient === "Empresa"? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"? item.precio + (item.precio * 0.30): item.precio)}
-                        
+                          {item.qty} x {
+                          userInfo?
+                            item.enOferta === true?
+                              formatCurrency(userInfo.tipoClient === "Empresa"
+                              ? item.precioDeOferta + (item.precioDeOferta * 0.20):userInfo.tipoClient === "Persona"
+                              ? item.precioDeOferta + (item.precioDeOferta * 0.30): item.precioDeOferta)
+                              :formatCurrency(userInfo.tipoClient === "Empresa"
+                              ? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"
+                              ? item.precio + (item.precio * 0.30): item.precio)
+                          :
+                              item.enOferta === true?
+                              formatCurrency(item.precioDeOferta + (item.precioDeOferta * 0.30))
+                              :formatCurrency( item.precio + (item.precio * 0.30))
+                          }
+                              = 
+                          { 
+
+                          userInfo?
+                            item.enOferta === true?
+                            formatCurrency(item.qty * userInfo.tipoClient === "Empresa"
+                            ? item.precioDeOferta + (item.precioDeOferta * 0.20):userInfo.tipoClient === "Persona"
+                            ? item.precioDeOferta + (item.precioDeOferta * 0.30): item.precioDeOferta)
+                            :formatCurrency(item.qty * userInfo.tipoClient === "Empresa"
+                            ? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"
+                            ? item.precio + (item.precio * 0.30): item.precio)
+                          :
+                            item.enOferta === true?
+                            formatCurrency(item.precioDeOferta + (item.precioDeOferta * 0.30))
+                            :formatCurrency( item.precio + (item.precio * 0.30))
+
+                          }                       
                         </div>
                       </div>
                     </li>

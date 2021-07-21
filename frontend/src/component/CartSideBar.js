@@ -111,6 +111,8 @@ export default function CartSideBar(props) {
                                     <p>
 
                                     {
+                                        
+                                        userInfo?
 
                                         (item.enOferta === false)?(
                                         
@@ -131,6 +133,20 @@ export default function CartSideBar(props) {
                                           </div>
 
                                         )
+
+                                        : (
+                                            (item.enOferta ===false)?(
+                                              <p>{formatCurrency(item.precio + (item.precio * 0.30))}</p>
+                                            ):(
+                                              <div className="producto-en-oferta_precio">
+                                               <p className="p1"> {formatCurrency( item.precio + (item.precio * 0.30))}</p>
+                                                {/* <br></br> */}
+                                                <p className="p2"> {formatCurrency(item.precioDeOferta + (item.precioDeOferta * 0.30))}</p>
+                            
+                                              </div>
+                                              
+                                              )
+                                          )
                                     }  
                                     </p>
                                     </div>
@@ -172,7 +188,25 @@ export default function CartSideBar(props) {
                     <ul>
                         <li className="subtotal">
                             <h2 >
-                              <b> Subtotal:  {cartItems.reduce((a,c) => a + c.qty, 0)} articulos: {formatCurrency(cartItems.reduce((a,c)=> a + (userInfo.tipoClient === "Empresa"? c.precio + (c.precio * 0.20):userInfo.tipoClient === "Persona"? c.precio + (c.precio * 0.30): c.precio  - (userInfo.tipoClient === "Empresa"? c.precio + (c.precio * 0.20):userInfo.tipoClient === "Persona"? c.precio + (c.precio * 0.30): c.precio  * (c.descuento/100)||0)) * c.qty, 0))} </b> 
+                            <b> 
+                                Subtotal: {
+                                   cartItems.reduce((a,c) => a + c.qty, 0)} articulos: {
+
+                                    userInfo?
+                                
+                                        formatCurrency(cartItems.reduce((a,c)=> a + (userInfo.tipoClient === "Empresa"
+                                        ? c.precio + (c.precio * 0.20):userInfo.tipoClient === "Persona"
+                                        ? c.precio + (c.precio * 0.30): c.precio  - (userInfo.tipoClient === "Empresa"
+                                        ? c.precio + (c.precio * 0.20):userInfo.tipoClient === "Persona"
+                                        ? c.precio + (c.precio * 0.30): c.precio  * (c.descuento/100)||0)) * c.qty, 0))
+                                        
+                                    :
+
+                                        formatCurrency(cartItems.reduce((a,c)=> a + (c.precio + (c.precio * 0.30) - (c.precio + (c.precio * 0.30) *(c.descuento/100)||0))* c.qty, 0))
+
+                                
+                                }
+                            </b> 
                             </h2>
                         </li>
                         <li>
