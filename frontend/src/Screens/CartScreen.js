@@ -8,6 +8,7 @@ import { IconButton } from '@material-ui/core';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import formatCurrency, { convertirAmoneda } from '../actions/productActions';
 import Fade from 'react-reveal/Fade';
+import { $porcentajeEmpresa, $porcentajePersona } from '../component/Productos';
 
 
 // import data from '../data.json'
@@ -108,17 +109,17 @@ export default function CartScreen(props) {
                                         
                                             <p>
                                             <b> Precio:  </b>
-                                              {formatCurrency(userInfo.tipoClient === "Empresa"? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"? item.precio + (item.precio * 0.30): item.precio )}
+                                              {formatCurrency(userInfo.tipoClient === "Empresa"? item.precio + (item.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? item.precio + (item.precio * $porcentajePersona): item.precio )}
                                             </p>
                                         ):(
                                           <div className="producto-en-oferta_precio">
                                             <b> Precio:  </b>
 
-                                           <p className="p1"> {formatCurrency(userInfo.tipoClient === "Empresa"? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"? item.precio + (item.precio * 0.30): item.precio )}</p>
+                                           <p className="p1"> {formatCurrency(userInfo.tipoClient === "Empresa"? item.precio + (item.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? item.precio + (item.precio * $porcentajePersona): item.precio )}</p>
                                             {/* <br></br> */}
                                             <b> oferta:  </b>
                                         
-                                            <p className="p2"> {formatCurrency(userInfo.tipoClient === "Empresa"? item.precioDeOferta + (item.precioDeOferta * 0.20):userInfo.tipoClient === "Persona"? item.precioDeOferta + (item.precioDeOferta * 0.30): item.precioDeOferta )}</p>
+                                            <p className="p2"> {formatCurrency(userInfo.tipoClient === "Empresa"? item.precioDeOferta + (item.precioDeOferta * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? item.precioDeOferta + (item.precioDeOferta * $porcentajePersona): item.precioDeOferta )}</p>
                                         
                                           </div>
 
@@ -126,12 +127,12 @@ export default function CartScreen(props) {
 
                                         : (
                                             (item.enOferta ===false)?(
-                                              <p>{formatCurrency(item.precio + (item.precio * 0.30))}</p>
+                                              <p>{formatCurrency(item.precio + (item.precio * $porcentajePersona))}</p>
                                             ):(
                                               <div className="producto-en-oferta_precio">
-                                               <p className="p1"> {formatCurrency( item.precio + (item.precio * 0.30))}</p>
+                                               <p className="p1"> {formatCurrency( item.precio + (item.precio * $porcentajePersona))}</p>
                                                 {/* <br></br> */}
-                                                <p className="p2"> {formatCurrency(item.precioDeOferta + (item.precioDeOferta * 0.30))}</p>
+                                                <p className="p2"> {formatCurrency(item.precioDeOferta + (item.precioDeOferta * $porcentajePersona))}</p>
                             
                                               </div>
                                               
@@ -186,14 +187,14 @@ export default function CartScreen(props) {
                                                         userInfo?
                                                     
                                                             formatCurrency(cartItems.reduce((a,c)=> a + (userInfo.tipoClient === "Empresa"
-                                                            ? c.precio + (c.precio * 0.20):userInfo.tipoClient === "Persona"
-                                                            ? c.precio + (c.precio * 0.30): c.precio  - (userInfo.tipoClient === "Empresa"
-                                                            ? c.precio + (c.precio * 0.20):userInfo.tipoClient === "Persona"
-                                                            ? c.precio + (c.precio * 0.30): c.precio  * (c.descuento/100)||0)) * c.qty, 0))
+                                                            ? c.precio + (c.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"
+                                                            ? c.precio + (c.precio * $porcentajePersona): c.precio  - (userInfo.tipoClient === "Empresa"
+                                                            ? c.precio + (c.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"
+                                                            ? c.precio + (c.precio * $porcentajePersona): c.precio  * (c.descuento/100)||0)) * c.qty, 0))
                                                             
                                                         :
 
-                                                        formatCurrency(cartItems.reduce((a,c)=> a + (c.precio + (c.precio * 0.30) - (c.precio + (c.precio * 0.30) *(c.descuento/100)||0))* c.qty, 0))
+                                                        formatCurrency(cartItems.reduce((a,c)=> a + (c.precio + (c.precio * $porcentajePersona) - (c.precio + (c.precio * $porcentajePersona) *(c.descuento/100)||0))* c.qty, 0))
 
                                                             
                                                             

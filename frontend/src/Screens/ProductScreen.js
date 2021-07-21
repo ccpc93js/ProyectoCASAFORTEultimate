@@ -17,6 +17,7 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import Fade from 'react-reveal/Fade';
+import { $porcentajeEmpresa, $porcentajePersona } from '../component/Productos';
 
 // import YouTubeIcon from '@material-ui/icons/YouTube';
 
@@ -224,15 +225,15 @@ const Prev = () =>{
                          (producto.enOferta === true) ? 
                         (
                             <div className="precio">
-                                <strong >PRECIO: </strong>{formatCurrency(userInfo.tipoClient === "Empresa"? producto.precio + (producto.precio * 0.20):userInfo.tipoClient === "Persona"? producto.precio + (producto.precio * 0.30):producto.precio)}<br/>
-                                <strong >OFERTA: </strong>{formatCurrency(userInfo.tipoClient === "Empresa"? producto.precio + (producto.precio * 0.20):userInfo.tipoClient === "Persona"? producto.precioDeOferta + (producto.precioDeOferta * 0.30): producto.precioDeOferta)}<br/>
+                                <strong >PRECIO: </strong>{formatCurrency(userInfo.tipoClient === "Empresa"? producto.precio + (producto.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? producto.precio + (producto.precio * $porcentajePersona):producto.precio)}<br/>
+                                <strong >OFERTA: </strong>{formatCurrency(userInfo.tipoClient === "Empresa"? producto.precio + (producto.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? producto.precioDeOferta + (producto.precioDeOferta * $porcentajePersona): producto.precioDeOferta)}<br/>
                             </div>
 
                         )
                          :
                          (
                             <div className="precio">                       
-                                <strong >PRECIO: </strong>{formatCurrency(userInfo.tipoClient === "Empresa"? producto.precio + (producto.precio * 0.20):userInfo.tipoClient === "Persona"? producto.precio + (producto.precio * 0.30):producto.precio)}<br/>
+                                <strong >PRECIO: </strong>{formatCurrency(userInfo.tipoClient === "Empresa"? producto.precio + (producto.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? producto.precio + (producto.precio * $porcentajePersona):producto.precio)}<br/>
                             </div>
                          )
 
@@ -241,15 +242,15 @@ const Prev = () =>{
                          (producto.enOferta === true) ? 
                          (
                              <div className="precio">
-                                 <strong >PRECIO: </strong>{formatCurrency(producto.precio + (producto.precio * 0.30))}<br/>
-                                 <strong >OFERTA: </strong>{formatCurrency(producto.precioDeOferta + (producto.precioDeOferta * 0.30))}<br/>
+                                 <strong >PRECIO: </strong>{formatCurrency(producto.precio + (producto.precio * $porcentajePersona))}<br/>
+                                 <strong >OFERTA: </strong>{formatCurrency(producto.precioDeOferta + (producto.precioDeOferta * $porcentajePersona))}<br/>
                              </div>
  
                          )
                           :
                           (
                              <div className="precio">                       
-                                 <strong >PRECIO: </strong>{formatCurrency(producto.precio + (producto.precio * 0.30))}<br/>
+                                 <strong >PRECIO: </strong>{formatCurrency(producto.precio + (producto.precio * $porcentajePersona))}<br/>
                              </div>
                           )
 
@@ -362,44 +363,33 @@ loadingP?(
     <div className="continerPR__details">
      <p className="continerPR__details__description__info">{x.info}</p>
      {
-
-         userInfo ? 
-     <p className="continerPR__details__description__precio">                
-     {
-         
+                  userInfo?
                 
-                (x.enOferta ===false )?(
-                  <p>{formatCurrency(x.precio )}</p>
+                (x.enOferta ===false)?(
+                  <p>{formatCurrency(userInfo.tipoClient === "Empresa"? x.precio + (x.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? x.precio + (x.precio * $porcentajePersona): x.precio)}</p>
                 ):(
                   <div className="producto-en-oferta_precio">
-                   <p className="p1"> {formatCurrency(x.precio )}</p>
+                   <p className="p1"> {formatCurrency(userInfo.tipoClient === "Empresa"? x.precio + (x.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? x.precio + (x.precio * $porcentajePersona): x.precio)}</p>
                     {/* <br></br> */}
-                    <p className="p2"> {formatCurrency(x.precioDeOferta)}</p>
+                    <p className="p2"> {formatCurrency(userInfo.tipoClient === "Empresa"? x.precio + (x.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? x.precioDeOferta + (x.precioDeOferta * $porcentajePersona): x.precioDeOferta)}</p>
 
                   </div>
                   
-                )
-            }
-    </p>
-            : (
-                <p className="continerPR__details__description__precio">                
-                {
-                                              
-                           (x.enOferta ===false )?(
-                             <p>{formatCurrency(x.precio + (x.precio * 0.30) )}</p>
-                           ):(
-                             <div className="producto-en-oferta_precio">
-                              <p className="p1"> {formatCurrency(x.precio + (x.precio * 0.30))}</p>
-                               {/* <br></br> */}
-                               <p className="p2"> {formatCurrency(x.precioDeOferta + (x.precioDeOferta * 0.30))}</p>
-           
-                             </div>
-                             
-                           )
-                       }
-               </p>
-            )
-     }
+                  )
+                  : (
+                    (x.enOferta ===false)?(
+                      <p>{formatCurrency(x.precio + (x.precio * $porcentajePersona))}</p>
+                    ):(
+                      <div className="producto-en-oferta_precio">
+                       <p className="p1"> {formatCurrency( x.precio + (x.precio * $porcentajePersona))}</p>
+                        {/* <br></br> */}
+                        <p className="p2"> {formatCurrency(x.precioDeOferta + (x.precioDeOferta * $porcentajePersona))}</p>
+    
+                      </div>
+                      
+                      )
+                  )
+                }
 
     </div>
 

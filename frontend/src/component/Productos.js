@@ -17,7 +17,8 @@ import { addToCart } from '../actions/cartActions'
 import { handleCartSideClose, handleCartSideOpen } from './DrawerRight'
 
 
-
+export const $porcentajeEmpresa = 0.30
+export const $porcentajePersona = 0.40
 
 export default function Productos(props) {
     const userSignin = useSelector((state) => state.userSignin);
@@ -142,6 +143,8 @@ export default function Productos(props) {
   //  const CartSideaccionOpen =()=>{
   //   setCartSideOpen(!cartSideOpen)
   // }
+
+
     
     return (
         <div className="productos-container">
@@ -279,24 +282,24 @@ export default function Productos(props) {
                   userInfo?
                 
                 (x.enOferta ===false)?(
-                  <p>{formatCurrency(userInfo.tipoClient === "Empresa"? x.precio + (x.precio * 0.20):userInfo.tipoClient === "Persona"? x.precio + (x.precio * 0.30): x.precio)}</p>
+                  <p>{formatCurrency(userInfo.tipoClient === "Empresa"? x.precio + (x.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? x.precio + (x.precio * $porcentajePersona): x.precio)}</p>
                 ):(
                   <div className="producto-en-oferta_precio">
-                   <p className="p1"> {formatCurrency(userInfo.tipoClient === "Empresa"? x.precio + (x.precio * 0.20):userInfo.tipoClient === "Persona"? x.precio + (x.precio * 0.30): x.precio)}</p>
+                   <p className="p1"> {formatCurrency(userInfo.tipoClient === "Empresa"? x.precio + (x.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? x.precio + (x.precio * $porcentajePersona): x.precio)}</p>
                     {/* <br></br> */}
-                    <p className="p2"> {formatCurrency(userInfo.tipoClient === "Empresa"? x.precio + (x.precio * 0.20):userInfo.tipoClient === "Persona"? x.precioDeOferta + (x.precioDeOferta * 0.30): x.precioDeOferta)}</p>
+                    <p className="p2"> {formatCurrency(userInfo.tipoClient === "Empresa"? x.precio + (x.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? x.precioDeOferta + (x.precioDeOferta * $porcentajePersona): x.precioDeOferta)}</p>
 
                   </div>
                   
                   )
                   : (
                     (x.enOferta ===false)?(
-                      <p>{formatCurrency(x.precio + (x.precio * 0.30))}</p>
+                      <p>{formatCurrency(x.precio + (x.precio * $porcentajePersona))}</p>
                     ):(
                       <div className="producto-en-oferta_precio">
-                       <p className="p1"> {formatCurrency( x.precio + (x.precio * 0.30))}</p>
+                       <p className="p1"> {formatCurrency( x.precio + (x.precio * $porcentajePersona))}</p>
                         {/* <br></br> */}
-                        <p className="p2"> {formatCurrency(x.precioDeOferta + (x.precioDeOferta * 0.30))}</p>
+                        <p className="p2"> {formatCurrency(x.precioDeOferta + (x.precioDeOferta * $porcentajePersona))}</p>
     
                       </div>
                       

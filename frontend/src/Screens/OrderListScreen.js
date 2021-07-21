@@ -79,13 +79,15 @@ export default function OrderListScreen(props) {
                 return order
               }else if  (order.user.name.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
                 return order
+              }else if  (order.shippingAddress.fullName.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
+                return order
               }else if  (order.createdAt.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
                 return order
               }
              }).map((order) => (
               <tr key={order._id}>
                 <td className="table-hidden">{order._id}</td>
-                <td>{order.user.name}</td>
+                <td>{order.user.name || order.shippingAddress.fullName}</td>
                 <td className="table-hidden">{order.createdAt.substring(0, 10)}</td>
                 <td className="table-hidden">{order.totalPrice.toFixed(2)}</td>
                 <td className="table-hidden">{order.isPaid ? order.paidAt.substring(0, 10) : 'No'}</td>

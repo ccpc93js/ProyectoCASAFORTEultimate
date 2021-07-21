@@ -16,13 +16,14 @@ import {
 import formatCurrency from '../actions/productActions';
 import ClearIcon from '@material-ui/icons/Clear';
 import { IconButton } from '@material-ui/core';
+import { $porcentajeEmpresa, $porcentajePersona } from '../component/Productos';
 
 window.addEventListener("click", (e) =>{
   const MCE_C = document.querySelector(".Modal-compraExitosa-container");
   const MCE = document.querySelector(".Modal-compraExitosa")
 
 
-  if(e.target == MCE_C ){
+  if(e.target === MCE_C ){
     MCE_C.classList.toggle("ModalCExitosa-Container-Close")
     MCE.classList.toggle("ModalCExitosa-Close")  
   }
@@ -308,15 +309,15 @@ const compraExitosahandler = () =>{
                           userInfo?
                             item.enOferta === true?
                               formatCurrency(userInfo.tipoClient === "Empresa"
-                              ? item.precioDeOferta + (item.precioDeOferta * 0.20):userInfo.tipoClient === "Persona"
-                              ? item.precioDeOferta + (item.precioDeOferta * 0.30): item.precioDeOferta)
+                              ? item.precioDeOferta + (item.precioDeOferta * $porcentajeEmpresa):userInfo.tipoClient === "Persona"
+                              ? item.precioDeOferta + (item.precioDeOferta * $porcentajePersona): item.precioDeOferta)
                               :formatCurrency(userInfo.tipoClient === "Empresa"
-                              ? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"
-                              ? item.precio + (item.precio * 0.30): item.precio)
+                              ? item.precio + (item.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"
+                              ? item.precio + (item.precio * $porcentajePersona): item.precio)
                           :
                               item.enOferta === true?
-                              formatCurrency(item.precioDeOferta + (item.precioDeOferta * 0.30))
-                              :formatCurrency( item.precio + (item.precio * 0.30))
+                              formatCurrency(item.precioDeOferta + (item.precioDeOferta * $porcentajePersona))
+                              :formatCurrency( item.precio + (item.precio * $porcentajePersona))
                           }
                               = 
                           { 
@@ -324,15 +325,15 @@ const compraExitosahandler = () =>{
                           userInfo?
                             item.enOferta === true?
                             formatCurrency(item.qty * userInfo.tipoClient === "Empresa"
-                            ? item.precioDeOferta + (item.precioDeOferta * 0.20):userInfo.tipoClient === "Persona"
-                            ? item.precioDeOferta + (item.precioDeOferta * 0.30): item.precioDeOferta)
+                            ? item.precioDeOferta + (item.precioDeOferta * $porcentajeEmpresa):userInfo.tipoClient === "Persona"
+                            ? item.precioDeOferta + (item.precioDeOferta * $porcentajePersona): item.precioDeOferta)
                             :formatCurrency(item.qty * userInfo.tipoClient === "Empresa"
-                            ? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"
-                            ? item.precio + (item.precio * 0.30): item.precio)
+                            ? item.precio + (item.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"
+                            ? item.precio + (item.precio * $porcentajePersona): item.precio)
                           :
                             item.enOferta === true?
-                            formatCurrency(item.precioDeOferta + (item.precioDeOferta * 0.30))
-                            :formatCurrency( item.precio + (item.precio * 0.30))
+                            formatCurrency(item.precioDeOferta + (item.precioDeOferta * $porcentajePersona))
+                            :formatCurrency( item.precio + (item.precio * $porcentajePersona))
 
                           }                       
                         </div>

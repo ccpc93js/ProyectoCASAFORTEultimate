@@ -8,6 +8,7 @@ import LoadingBox from '../component/LoadingBox';
 import MessageBox from '../component/MessageBox';
 import { ORDER_CREATE_RESET } from '../constants/orderConstants';
 import formatCurrency, { cambiarAdolares } from '../actions/productActions';
+import { $porcentajeEmpresa, $porcentajePersona } from '../component/Productos';
 
 export default function PlaceOrderScreen(props) {
   const userSignin = useSelector((state) => state.userSignin);
@@ -30,13 +31,13 @@ export default function PlaceOrderScreen(props) {
     * (
         userInfo?
           userInfo.tipoClient === "Empresa"?
-          c.precio + (c.precio * 0.20):userInfo.tipoClient === "Persona"
-          ? c.precio + (c.precio * 0.30): c.precio - (userInfo.tipoClient === "Empresa"
-          ? c.precio + (c.precio * 0.20):userInfo.tipoClient === "Persona"
-          ? c.precio + (c.precio * 0.30): c.precio * (c.descuento/100)||0)
+          c.precio + (c.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"
+          ? c.precio + (c.precio * $porcentajePersona): c.precio - (userInfo.tipoClient === "Empresa"
+          ? c.precio + (c.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"
+          ? c.precio + (c.precio * $porcentajePersona): c.precio * (c.descuento/100)||0)
           
           :
-           (c.precio+ (c.precio * 0.30)) - ((c.precio+ (c.precio * 0.30)) * (c.descuento/100)||0)
+           (c.precio+ (c.precio * $porcentajePersona)) - ((c.precio+ (c.precio * $porcentajePersona)) * (c.descuento/100)||0)
           
           ), 0)
 
@@ -115,15 +116,15 @@ export default function PlaceOrderScreen(props) {
                                             userInfo?
                                               item.enOferta === true?
                                                 formatCurrency(userInfo.tipoClient === "Empresa"
-                                                ? item.precioDeOferta + (item.precioDeOferta * 0.20):userInfo.tipoClient === "Persona"
-                                                ? item.precioDeOferta + (item.precioDeOferta * 0.30): item.precioDeOferta)
+                                                ? item.precioDeOferta + (item.precioDeOferta * $porcentajeEmpresa):userInfo.tipoClient === "Persona"
+                                                ? item.precioDeOferta + (item.precioDeOferta * $porcentajePersona): item.precioDeOferta)
                                                 :formatCurrency(userInfo.tipoClient === "Empresa"
-                                                ? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"
-                                                ? item.precio + (item.precio * 0.30): item.precio)
+                                                ? item.precio + (item.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"
+                                                ? item.precio + (item.precio * $porcentajePersona): item.precio)
                                             :
                                                 item.enOferta === true?
-                                                formatCurrency(item.precioDeOferta + (item.precioDeOferta * 0.30))
-                                                :formatCurrency( item.precio + (item.precio * 0.30))
+                                                formatCurrency(item.precioDeOferta + (item.precioDeOferta * $porcentajePersona))
+                                                :formatCurrency( item.precio + (item.precio * $porcentajePersona))
                                             }
                                                  = 
                                             { 
@@ -131,15 +132,15 @@ export default function PlaceOrderScreen(props) {
                                             userInfo?
                                               item.enOferta === true?
                                               formatCurrency(item.qty * userInfo.tipoClient === "Empresa"
-                                              ? item.precioDeOferta + (item.precioDeOferta * 0.20):userInfo.tipoClient === "Persona"
-                                              ? item.precioDeOferta + (item.precioDeOferta * 0.30): item.precioDeOferta)
+                                              ? item.precioDeOferta + (item.precioDeOferta * $porcentajeEmpresa):userInfo.tipoClient === "Persona"
+                                              ? item.precioDeOferta + (item.precioDeOferta * $porcentajePersona): item.precioDeOferta)
                                               :formatCurrency(item.qty * userInfo.tipoClient === "Empresa"
-                                              ? item.precio + (item.precio * 0.20):userInfo.tipoClient === "Persona"
-                                              ? item.precio + (item.precio * 0.30): item.precio)
+                                              ? item.precio + (item.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"
+                                              ? item.precio + (item.precio * $porcentajePersona): item.precio)
                                             :
                                               item.enOferta === true?
-                                              formatCurrency(item.precioDeOferta + (item.precioDeOferta * 0.30))
-                                              :formatCurrency( item.precio + (item.precio * 0.30))
+                                              formatCurrency(item.precioDeOferta + (item.precioDeOferta * $porcentajePersona))
+                                              :formatCurrency( item.precio + (item.precio * $porcentajePersona))
 
                                             }
                                         </div>
