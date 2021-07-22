@@ -9,6 +9,54 @@ import User from '../models/userModel.js';
 
 const emailRouter = express.Router();
 
+// emailRouter.post("/contactenos", (req,res) =>{
+//   nodemailer.createTestAccount(async(err, account)=>{
+//       const htmlEmail = `
+//           <h3>Email enviado desde contactanos Casaforte</h3>
+//           <ul>
+//               <li>Nombre:${req.body.nombre}</li>
+//               <li>Email:${req.body.email}</li>
+//               <li>Telefono:${req.body.telefono}</li>
+//               <li>Asunto:${req.body.asunto}</li>
+//           </ul>
+//           <h3>messageId</h3>
+//           <p>${req.body.messageId}</p>
+
+//       `;
+//       let transporter = nodemailer.createTransport({
+//           host: "mail.privateemail.com",
+//           port:587,
+//           secure:false,
+//           auth:{
+//               user:"gerencia@casa-forte.co", // el email del servicio que va a utilizar(en este caso Gmail)
+//               pass:"Casaforte2525"// la contraseña dedicho SMTP
+//           },
+//           tls:{
+//             rejectUnauthorized:false
+//           }
+//       });
+
+//       let mailOptions = {
+//           form:"gerencia@casa-forte.co", //quien manda el email
+//           to: "cristianpalocseres@gmail.com",// el email de destino
+//           replyTo: "cristianpalocseres@gmail.com",
+//           subject: req.body.asunto, // el asunto del email
+//           text: req.body.messageId, // el messageId
+//           html: htmlEmail // la parte del HTML del email
+//       };
+
+//       await transporter.sendMail(mailOptions,(err,info)=>{
+//           if(err){
+//               return console.log(err);
+//           }
+//           console.log("messageId enviado: %s", info.messageId);
+//           console.log("Url del messageId: %s", nodemailer.getTestMessageUrl(info));
+
+//       });
+//   });
+// });
+
+
 emailRouter.post("/contactenos", (req,res) =>{
     nodemailer.createTestAccount((err, account)=>{
         const htmlEmail = `
@@ -19,17 +67,21 @@ emailRouter.post("/contactenos", (req,res) =>{
                 <li>Telefono:${req.body.telefono}</li>
                 <li>Asunto:${req.body.asunto}</li>
             </ul>
-            <h3>Mensaje</h3>
-            <p>${req.body.mensaje}</p>
+            <h3>messageId</h3>
+            <p>${req.body.messageId}</p>
 
         `;
         let transporter = nodemailer.createTransport({
             host: "smtp.gmail.com",
             port:587,
+            secure:false,
             auth:{
                 user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
-                pass:"gngjbgwunntaapjv"// la contraseña dedicho SMTP
-            }
+                pass:"casaforte2525"// la contraseña dedicho SMTP
+            },
+          tls:{
+            rejectUnauthorized:false
+          }
         });
 
         let mailOptions = {
@@ -37,7 +89,7 @@ emailRouter.post("/contactenos", (req,res) =>{
             to: "ferreteriacasaforte@gmail.com",// el email de destino
             replyTo: "ferreteriacasaforte@gmail.com",
             subject: req.body.asunto, // el asunto del email
-            text: req.body.mensaje, // el mensaje
+            text: req.body.messageId, // el messageId
             html: htmlEmail // la parte del HTML del email
         };
 
@@ -45,8 +97,8 @@ emailRouter.post("/contactenos", (req,res) =>{
             if(err){
                 return console.log(err);
             }
-            console.log("Mensaje enviado: %s", info.mensaje);
-            console.log("Url del mensaje: %s", nodemailer.getTestMessageUrl(info));
+            console.log("messageId enviado: %s", info.messageId);
+            console.log("Url del messageId: %s", nodemailer.getTestMessageUrl(info));
         });
     });
 });
@@ -73,20 +125,24 @@ emailRouter.post("/forgotPassword",  expressAsyncHandler(async(req,res) =>{
       `;
       let transporter = nodemailer.createTransport({
 
-          host: "smtp.gmail.com",
-          port:587,
-          auth:{
-              user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
-              pass:"gngjbgwunntaapjv"// la contraseña dedicho SMTP
+            host: "smtp.gmail.com",
+            port:587,
+            secure:false,
+            auth:{
+                user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
+                pass:"casaforte2525"// la contraseña dedicho SMTP
+            },
+          tls:{
+            rejectUnauthorized:false
           }
       });
 
       let mailOptions = {
-          form:"cristianpalocseres@gmail.com", //quien manda el email
+          form:"ferreteriacasaforte@gmail.com", //quien manda el email
           to: req.body.email,// el email de destino
           replyTo: req.body.email,
           subject: "Recuperacion de contraseña", // el asunto del email
-          text: req.body.mensaje, // el mensaje
+          text: req.body.messageId, // el messageId
           html: htmlEmail // la parte del HTML del email
       };
 
@@ -94,8 +150,8 @@ emailRouter.post("/forgotPassword",  expressAsyncHandler(async(req,res) =>{
           if(err){
               return console.log(err);
           }
-          console.log("Mensaje enviado: %s", info.mensaje);
-          console.log("Url del mensaje: %s", nodemailer.getTestMessageUrl(info));
+          console.log("messageId enviado: %s", info.messageId);
+          console.log("Url del messageId: %s", nodemailer.getTestMessageUrl(info));
       });
   });
 }
@@ -117,7 +173,7 @@ emailRouter.post("/registrarse", (req,res) =>{
 
         ">
           
-        <div class="CE__mensaje-container" style="
+        <div class="CE__messageId-container" style="
         margin:auto;
         margin-top:3rem;
        /* display: flex;
@@ -172,10 +228,14 @@ emailRouter.post("/registrarse", (req,res) =>{
         let transporter = nodemailer.createTransport({
             host: "smtp.gmail.com",
             port:587,
+            secure:false,
             auth:{
                 user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
-                pass:"gngjbgwunntaapjv"// la contraseña dedicho SMTP
-            }
+                pass:"casaforte2525"// la contraseña dedicho SMTP
+            },
+          tls:{
+            rejectUnauthorized:false
+          }
         });
 
         let mailOptions = {
@@ -183,7 +243,7 @@ emailRouter.post("/registrarse", (req,res) =>{
             to: req.body.email,// el email de destino
             replyTo: req.body.email,
             subject: "Peticion de registro casa forte", // el asunto del email
-            text: req.body.name, // el mensaje
+            text: req.body.name, // el messageId
             html: htmlEmail // la parte del HTML del email
         };
 
@@ -193,8 +253,8 @@ emailRouter.post("/registrarse", (req,res) =>{
             if(err){
                 return console.log(err);
             }
-            console.log("Mensaje enviado: %s", info.mensaje);
-            console.log("Url del mensaje: %s", nodemailer.getTestMessageUrl(info));
+            console.log("messageId enviado: %s", info.messageId);
+            console.log("Url del messageId: %s", nodemailer.getTestMessageUrl(info));
         });
 
         const htmlEmailCasaForte = `
@@ -209,7 +269,7 @@ emailRouter.post("/registrarse", (req,res) =>{
 
         ">
           
-        <div class="CE__mensaje-container" style="
+        <div class="CE__messageId-container" style="
         margin:auto;
         margin-top:3rem;
        /* display: flex;
@@ -262,10 +322,14 @@ emailRouter.post("/registrarse", (req,res) =>{
         let transporterCasaForte = nodemailer.createTransport({
             host: "smtp.gmail.com",
             port:587,
+            secure:false,
             auth:{
                 user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
-                pass:"gngjbgwunntaapjv"// la contraseña dedicho SMTP
-            }
+                pass:"casaforte2525"// la contraseña dedicho SMTP
+            },
+          tls:{
+            rejectUnauthorized:false
+          }
         });
 
         let mailOptionsCasaForte = {
@@ -273,7 +337,7 @@ emailRouter.post("/registrarse", (req,res) =>{
             to: "ferreteriacasaforte@gmail.com",// el email de destino
             replyTo: "ferreteriacasaforte@gmail.com",
             subject: "usuario registrado revisar en informacion de usuarios registrados", // el asunto del email
-            text: "usuario registrado revisar en informacion de usuarios registrados", // el mensaje
+            text: "usuario registrado revisar en informacion de usuarios registrados", // el messageId
             html: htmlEmailCasaForte // la parte del HTML del email
         };
 
@@ -281,8 +345,8 @@ emailRouter.post("/registrarse", (req,res) =>{
             if(err){
                 return console.log(err);
             }
-            console.log("Mensaje enviado: %s", info.mensaje);
-            console.log("Url del mensaje: %s", nodemailer.getTestMessageUrl(info));
+            console.log("messageId enviado: %s", info.messageId);
+            console.log("Url del messageId: %s", nodemailer.getTestMessageUrl(info));
         });
     });
 });
@@ -304,7 +368,7 @@ emailRouter.post("/loginRegister", (req,res) =>{
 
       ">
         
-      <div class="CE__mensaje-container" style="
+      <div class="CE__messageId-container" style="
       margin:auto;
       margin-top:3rem;
      /* display: flex;
@@ -390,11 +454,15 @@ emailRouter.post("/loginRegister", (req,res) =>{
   
 
       let transporter = nodemailer.createTransport({
-          host: "smtp.gmail.com",
-          port:587,
-          auth:{
-              user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
-              pass:"gngjbgwunntaapjv"// la contraseña dedicho SMTP
+            host: "smtp.gmail.com",
+            port:587,
+            secure:false,
+            auth:{
+                user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
+                pass:"casaforte2525"// la contraseña dedicho SMTP
+            },
+          tls:{
+            rejectUnauthorized:false
           }
       });
 
@@ -403,7 +471,7 @@ emailRouter.post("/loginRegister", (req,res) =>{
           to: req.body.email,// el email de destino
           replyTo: req.body.email,
           subject: "Peticion de registro casa forte", // el asunto del email
-          text: req.body.name, // el mensaje
+          text: req.body.name, // el messageId
           html: htmlEmail // la parte del HTML del email
       };
 
@@ -413,8 +481,8 @@ emailRouter.post("/loginRegister", (req,res) =>{
           if(err){
               return console.log(err);
           }
-          console.log("Mensaje enviado: %s", info.mensaje);
-          console.log("Url del mensaje: %s", nodemailer.getTestMessageUrl(info));
+          console.log("messageId enviado: %s", info.messageId);
+          console.log("Url del messageId: %s", nodemailer.getTestMessageUrl(info));
       });
 
       const htmlEmailCasaForte = `
@@ -429,7 +497,7 @@ emailRouter.post("/loginRegister", (req,res) =>{
 
       ">
         
-      <div class="CE__mensaje-container" style="
+      <div class="CE__messageId-container" style="
       margin:auto;
       margin-top:3rem;
      /* display: flex;
@@ -478,11 +546,15 @@ emailRouter.post("/loginRegister", (req,res) =>{
   `;
 
       let transporterCasaForte = nodemailer.createTransport({
-          host: "smtp.gmail.com",
-          port:587,
-          auth:{
-              user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
-              pass:"gngjbgwunntaapjv"// la contraseña dedicho SMTP
+            host: "smtp.gmail.com",
+            port:587,
+            secure:false,
+            auth:{
+                user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
+                pass:"casaforte2525"// la contraseña dedicho SMTP
+            },
+          tls:{
+            rejectUnauthorized:false
           }
       });
 
@@ -491,7 +563,7 @@ emailRouter.post("/loginRegister", (req,res) =>{
           to: "ferreteriacasaforte@gmail.com",// el email de destino
           replyTo: "ferreteriacasaforte@gmail.com",
           subject: "usuario registrado revisar en informacion de usuarios registrados", // el asunto del email
-          text: "usuario registrado revisar en informacion de usuarios registrados", // el mensaje
+          text: "usuario registrado revisar en informacion de usuarios registrados", // el messageId
           html: htmlEmailCasaForte // la parte del HTML del email
       };
 
@@ -499,8 +571,8 @@ emailRouter.post("/loginRegister", (req,res) =>{
           if(err){
               return console.log(err);
           }
-          console.log("Mensaje enviado: %s", info.mensaje);
-          console.log("Url del mensaje: %s", nodemailer.getTestMessageUrl(info));
+          console.log("messageId enviado: %s", info.messageId);
+          console.log("Url del messageId: %s", nodemailer.getTestMessageUrl(info));
       });
   });
 });
@@ -520,7 +592,7 @@ emailRouter.post("/compraExitosa", (req,res) =>{
         box-sizing: border-box;
     }
     
-    .CE__mensaje-container{
+    .CE__messageId-container{
         margin: auto;
         margin-top: 3rem;
         display: flex;
@@ -528,7 +600,7 @@ emailRouter.post("/compraExitosa", (req,res) =>{
         justify-content: center;
     }
     
-    .CE__mensaje-container div{
+    .CE__messageId-container div{
         margin-bottom: 30px;
     
     }
@@ -653,7 +725,7 @@ emailRouter.post("/compraExitosa", (req,res) =>{
 
         ">
           
-        <div class="CE__mensaje-container" style="
+        <div class="CE__messageId-container" style="
         margin:auto;
         margin-top:3rem;
        /* display: flex;
@@ -1032,10 +1104,14 @@ emailRouter.post("/compraExitosa", (req,res) =>{
         let transporter = nodemailer.createTransport({
             host: "smtp.gmail.com",
             port:587,
+            secure:false,
             auth:{
                 user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
-                pass:"gngjbgwunntaapjv"// la contraseña dedicho SMTP
-            }
+                pass:"casaforte2525"// la contraseña dedicho SMTP
+            },
+          tls:{
+            rejectUnauthorized:false
+          }
         });
 
         let mailOptions = {
@@ -1043,7 +1119,7 @@ emailRouter.post("/compraExitosa", (req,res) =>{
             to: req.body.email,// el email de destino
             replyTo: req.body.email,
             subject: "Compra exitosa", // el asunto del email
-            text: req.body.name, // el mensaje
+            text: req.body.name, // el messageId
             html: htmlEmail // la parte del HTML del email
         };
 
@@ -1053,8 +1129,8 @@ emailRouter.post("/compraExitosa", (req,res) =>{
             if(err){
                 return console.log(err);
             }
-            console.log("Mensaje enviado: %s", info.mensaje);
-            console.log("Url del mensaje: %s", nodemailer.getTestMessageUrl(info));
+            console.log("messageId enviado: %s", info.messageId);
+            console.log("Url del messageId: %s", nodemailer.getTestMessageUrl(info));
         });
 
 
@@ -1071,7 +1147,7 @@ emailRouter.post("/compraExitosa", (req,res) =>{
 
         ">
           
-        <div class="CE__mensaje-container" style="
+        <div class="CE__messageId-container" style="
         margin:auto;
         margin-top:3rem;
        /* display: flex;
@@ -1132,10 +1208,14 @@ emailRouter.post("/compraExitosa", (req,res) =>{
         let transporterCasaForte = nodemailer.createTransport({
             host: "smtp.gmail.com",
             port:587,
+            secure:false,
             auth:{
                 user:"ferreteriacasaforte@gmail.com", // el email del servicio que va a utilizar(en este caso Gmail)
-                pass:"gngjbgwunntaapjv"// la contraseña dedicho SMTP
-            }
+                pass:"casaforte2525"// la contraseña dedicho SMTP
+            },
+          tls:{
+            rejectUnauthorized:false
+          }
         });
 
         let mailOptionsCasaForte = {
@@ -1143,7 +1223,7 @@ emailRouter.post("/compraExitosa", (req,res) =>{
             to: "ferreteriacasaforte@gmail.com",// el email de destino
             replyTo: "ferreteriacasaforte@gmail.com",
             subject: "compra exitosa verificar", // el asunto del email
-            text: "compra exitosa verificar", // el mensaje
+            text: "compra exitosa verificar", // el messageId
             html: htmlEmailCasaForte // la parte del HTML del email
         };
 
@@ -1151,8 +1231,8 @@ emailRouter.post("/compraExitosa", (req,res) =>{
             if(err){
                 return console.log(err);
             }
-            console.log("Mensaje enviado: %s", info.mensaje);
-            console.log("Url del mensaje: %s", nodemailer.getTestMessageUrl(info));
+            console.log("messageId enviado: %s", info.messageId);
+            console.log("Url del messageId: %s", nodemailer.getTestMessageUrl(info));
         });
 
        

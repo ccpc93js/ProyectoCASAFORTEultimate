@@ -254,6 +254,7 @@ const compraExitosahandler = () =>{
                 <div className="input-contenedor">
                 <i className=""><PostAddIcon/></i>
                     <input
+                    name="name"
                     required
                      type="number"
                      placeholder="Nº Documento"
@@ -265,6 +266,7 @@ const compraExitosahandler = () =>{
                 <div className="input-contenedor">
                     <i className=""><LocationOnIcon/></i>
                     <select 
+                    name="department"
                     required
                     type="text2" 
                     placeholder="Departamento"
@@ -296,6 +298,7 @@ const compraExitosahandler = () =>{
                      </select> */}
 
                     <input
+                     name="city"
                      required
                      type="text2" 
                      placeholder="Ciudad"
@@ -309,6 +312,7 @@ const compraExitosahandler = () =>{
                 <div className="input-contenedor">
                 <i className=""><LocationOnIcon/></i>
                     <input 
+                    name="adress"
                     required
                     type="text2" 
                     placeholder="Direcci&oacute;n"
@@ -320,6 +324,7 @@ const compraExitosahandler = () =>{
                 <div className="input-contenedor">
                     <i className=""><EmailIcon/></i>
                     <input 
+                    name="email"
                     required
                     type="email" 
                     placeholder="Correo Electronico"
@@ -331,6 +336,7 @@ const compraExitosahandler = () =>{
                 <div className="input-contenedor">
                     <i className=""><PhoneIcon/></i>
                     <input 
+                    name="tel"
                     required
                     type="number" 
                     placeholder="Telefono"
@@ -342,6 +348,7 @@ const compraExitosahandler = () =>{
                 <div className="input-contenedor">
                     <i className=""><PhoneIphoneIcon/></i>
                     <input 
+                    name="cel"
                     required
                     type="number" 
                     placeholder="Celular"
@@ -354,6 +361,7 @@ const compraExitosahandler = () =>{
                     <i className=""><AccountCircleIcon/></i>
                     {/* <input type="text2" placeholder="Selecciona el tipo de cliente"/> */}
                     <select 
+                    name="tipoClient"
                     required
                     type="text2"
                     onChange={(e) => setTipoClient(e.target.value)}

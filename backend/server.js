@@ -26,9 +26,9 @@ dotenv.config();
 
 const app = express();
 // app.use(fileupload({useTempFiles: true}));
+app.use(express.urlencoded({extended: true }));
 app.use(express.json());
 app.use(cors());
-app.use(express.urlencoded({extended: true }));
 
     //process.env.MONGODB_URL ||  'mongodb://localhost/casaforte'
 mongoose.connect(process.env.MONGODB_URL || "mongodb+srv://casaforteDataBase:casaforte2525@cluster0.m96b5.mongodb.net/casa-forte?retryWrites=true&w=majority"
