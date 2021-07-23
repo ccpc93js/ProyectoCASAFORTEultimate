@@ -97,7 +97,7 @@ export const NavBar = (props) => {
 
       }
 
-      cargarPuntosUsuariosPuntosYA(userInfo)
+    //   cargarPuntosUsuariosPuntosYA(userInfo)
 
     return (
         <div>
@@ -167,14 +167,14 @@ export const NavBar = (props) => {
                         <li>
                             <Link to="/orderhistory">Historial de pedidos</Link>
                         </li>
-                        {
+                        {/* {
                             puntosYa.length === 0? "" :
-                        <li>
+                        <li> */}
                             {/* <Link to="#">{puntosYa.length === 0? "" : `PuntosYa: ${puntosYa}`}</Link> */}
 
-                            <Link to="#">{`PuntosYa: ${puntosYa}`}</Link>
+                            {/* <Link to="#">{`PuntosYa: ${puntosYa}`}</Link>
                         </li>
-                        }
+                        } */}
                         <li>
                             <Link to="#signout" onClick={signoutHandler} aria-label="cerrar sesion">Cerrar sesion</Link>
                         </li>

@@ -47,6 +47,7 @@ function SearchBar(props) {
             // setLoading(false);
             setProductos(data);
     }catch(err){
+        console.log(err)
         // setError(err.message);
         // setLoading(false);
     }
