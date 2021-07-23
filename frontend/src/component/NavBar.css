@@ -491,6 +491,10 @@ color: #73a3d3;
   margin-right: 1rem;
   }
 
+  .dropdown{
+    margin-right: 6rem;
+  }
+
 
 
   .dropdown-content {
@@ -560,6 +564,10 @@ margin: 0 -3rem;
       margin-right: 8rem;
 
 
+    }
+
+    .dropdown{
+      margin-right: 6rem;
     }
 
 

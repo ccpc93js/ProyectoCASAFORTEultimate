@@ -15,10 +15,10 @@ import PersonIcon from '@material-ui/icons/Person';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
-
+const width = '360'
 const useStyles = makeStyles((theme)=>({
   list: {
-    width: 250,
+    width: width,
   },
   fullList: {
     width: 'auto',
@@ -27,11 +27,11 @@ const useStyles = makeStyles((theme)=>({
     display: 'none',
   },
   drawer: {
-    width: 240,
+    width: width,
     flexShrink: 0,
   },
   drawerPaper: {
-    width: 240,
+    width: width,
   },
   drawerHeader: {
     display: 'flex',
