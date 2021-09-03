@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: row;  
     justify-content: center;
+    align-items: center;
 
     /* width: 100%; */
 
@@ -15,8 +16,9 @@
 
 .view-options__div {
     margin: 0rem 1rem;
-    /* margin-top: 2rem; */
-    /* height: 1rem; */
+    display: flex;
+    align-items: center;
+
 }
 
 .button-filtro-div{
@@ -36,15 +38,19 @@
     list-style: none;
 }
 
+.menu-button-filter{
+   margin: 4px;
+   padding: auto;
+   align-items: center;
+}
+
 
 /*=?=====RESPONSIVE=========*/
 @media screen and (max-width:480px){
 
     .view-options{
-        flex-direction: row;
-        /* flex-wrap: wrap; */
-        float: left;
-    
+        flex-direction: column;
+        align-items: center;
     }
 
     
@@ -58,10 +64,14 @@
     display: none;
     }
 
-    .view-options__div select{
-        margin-left: 2rem;
+    .view-options__div{
+        margin: 0 2rem;
+        text-align: center;
+        flex-direction: column;
     }
-
+    .menu-button-filter{
+        margin: 0 1rem;
+    }
 
 }
 @media screen and (min-width:480px) and (max-width:768px){
@@ -85,23 +95,34 @@
 .view-options-legend{
 display: none;
 }
-
+.menu-button-filter{
+    margin: 0 1rem;
+}
 }
 
 @media screen and (min-width:768px) and (max-width:1024px){
 
-.view-options__div select{
-    margin-left: 2rem;
-}
+    .view-options__div {
+        margin: 0;
+
+    
+    }
+    .menu-button-filter{
+        margin: 0 1rem;
+    }
 }
 
 @media screen and (min-width:1024px) and (max-width:1366px){
-
+    .menu-button-filter{
+        display: none;
+    }
 
 }
 
 @media screen and (min-width:1367px){
-
+    .menu-button-filter{
+        display: none;
+    }
   
 }
 

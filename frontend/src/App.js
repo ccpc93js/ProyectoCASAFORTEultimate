@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
 
-import { Footer } from './component/Footer';
-import { HomeScreen } from './component/HomeScreen';
-import { NavBar } from './component/NavBar';
-// import NavBar2  from './component/NavBar2';
-import { Nosotros } from './component/enlaces/Nosotros';
 import { BrowserRouter, Route,  } from "react-router-dom";
+
+import { NavBar } from './component/NavBar';
+import { HomeScreen } from './Screens/HomeScreen';
+import { Footer } from './component/Footer';
+import { Nosotros } from './component/enlaces/Nosotros';
 import  DrawerMenu  from './component/DrawerMenu';
-// import  DrawerFilter  from './component/DrawerFilter';
 import LoadingPageLogo from './component/LoadingPageLogo'
 import Whatsapp from './component/Whatsapp'
 import { makeStyles } from "@material-ui/core/styles";
@@ -20,12 +19,6 @@ import Toolbar from "@material-ui/core/Toolbar";
 
 
 
-
-
-
-// import data from '../data.js'
-
-
 import PrivateRoute from './component/PrivateRoute'
 import AdminRoute from './component/AdminRoute';
 
@@ -34,8 +27,7 @@ import Productos from './component/Productos';
 import ProductosTodos from './component/enlaces/Productos/ProductosTodos';
 import Marcas from './component/Marcas'
 
-
-
+// Category
 import Abrasivos from './component/enlaces/Categorias/Abrasivos'
 import AccesoriosDeHerramientas from './component/enlaces/Categorias/AccesoriosDeHerramientas'
 import Amarres from './component/enlaces/Categorias/Amarres'
@@ -45,8 +37,9 @@ import Electricos from './component/enlaces/Categorias/Electricos'
 import Griferiayplomeria from './component/enlaces/Categorias/Griferiayplomeria'
 import Pegantesyadhesivos from './component/enlaces/Categorias/Pegantesyadhesivos'
 import Pinturas from './component/enlaces/Categorias/Pinturas'
+import Fijaciones from './component/enlaces/Categorias/Fijaciones';
 
-
+// Brands
 import Abracol from './component/enlaces/Marcas/Abracol'
 import Ciles from './component/enlaces/Marcas/Ciles'
 import Grival from './component/enlaces/Marcas/Grival'
@@ -64,7 +57,6 @@ import Mercury from './component/enlaces/Marcas/Mercury'
 
 import CartScreen from './Screens/CartScreen';
 import ProductScreen from './Screens/ProductScreen';
-import Fijaciones from './component/enlaces/Categorias/Fijaciones';
 import Contactenos from './component/enlaces/Contactenos';
 import ZonaClientes from './component/enlaces/ZonaClientes';
 import Registrarse from './component/enlaces/Registrarse';
