@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './UserListScreen.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { createUser, deleteUser, listUsers } from '../actions/userActions';
-import LoadingBox from '../component/LoadingBox';
-import loadingPage from '../component/LoadingPage';
-import MessageBox from '../component/MessageBox';
+import LoadingBox from '../components/LoadingBox';
+import loadingPage from '../components/LoadingPage';
+import MessageBox from '../components/MessageBox';
 import { USER_CREATE_RESET, USER_DELETE_RESET, USER_DETAILS_RESET } from '../constants/userConstants';
 import { IconButton } from '@material-ui/core';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';

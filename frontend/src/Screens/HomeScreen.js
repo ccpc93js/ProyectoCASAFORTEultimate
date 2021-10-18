@@ -1,8 +1,6 @@
 import React from 'react'
 import './HomeScreen.css'
 import StorefrontIcon from '@material-ui/icons/Storefront';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import  SliderBanner  from '../components/home/SliderBanner';
 import  Category  from '../components/home/Category';
 import SliderBrands from '../components/home/SliderBrands';
@@ -12,6 +10,7 @@ import  Services  from '../components/home/Services';
 
 
 export const HomeScreen = () => {
+    const fontSizeIcons = 50
 
     return (
         <div className="HomeScreen-container">

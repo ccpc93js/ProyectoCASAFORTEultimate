@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './OrderListScreen.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteOrder, listOrders } from '../actions/orderActions';
-import LoadingBox from '../component/LoadingBox';
-import loadingPage from '../component/LoadingPage';
-import MessageBox from '../component/MessageBox';
+import LoadingBox from '../components/LoadingBox';
+import loadingPage from '../components/LoadingPage';
+import MessageBox from '../components/MessageBox';
 import { ORDER_DELETE_RESET } from '../constants/orderConstants';
 import { IconButton } from '@material-ui/core';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';

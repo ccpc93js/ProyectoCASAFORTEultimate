@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './PaymentMethodScreen.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { savePaymentMethod } from '../actions/cartActions';
-import CheckoutSteps from '../component/CheckoutSteps';
+import CheckoutSteps from '../components/CheckoutSteps';
 
 export default function PaymentMethodScreen(props) {
   const cart = useSelector((state) => state.cart);

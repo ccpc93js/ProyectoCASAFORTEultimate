@@ -4,9 +4,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import Axios from 'axios';
 import {Image} from 'cloudinary-react';
 import formatCurrency, { detailsProduct, updateProduct } from '../actions/productActions';
-import LoadingBox from '../component/LoadingBox';
-import loadingPage from '../component/LoadingPage';
-import MessageBox from '../component/MessageBox';
+import LoadingBox from '../components/LoadingBox';
+import loadingPage from '../components/LoadingPage';
+import MessageBox from '../components/MessageBox';
 import { PRODUCT_UPDATE_RESET } from '../constants/productConstants';
 
 export default function ProductEditScreen(props) {
@@ -303,6 +303,7 @@ export default function ProductEditScreen(props) {
                   <input
                     id="descuento"
                     type="number"
+                    required
                     placeholder="descuento"
                     value={descuento}
                     onChange={(e) => setDescuento(e.target.value)}
@@ -317,6 +318,7 @@ export default function ProductEditScreen(props) {
                   <input
                     id="precioDeOferta"
                     type="number"
+                    required
                     placeholder="precio De Oferta"
                     value={precioDeOferta && precio - (precio * (descuento/100))}
                     onChange={(e) => setPrecioDeOferta(precio - (precio * (descuento/100)) || e.target.value)}

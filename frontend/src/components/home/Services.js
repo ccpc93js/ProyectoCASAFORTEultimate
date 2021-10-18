@@ -5,7 +5,7 @@ import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import ThumbsUpDownIcon from '@material-ui/icons/ThumbsUpDown';
 import TelegramIcon from '@material-ui/icons/Telegram';
 
-export const Services = () => {
+const Services = () => {
 
     const fontSizeIcons = 50
 
@@ -57,3 +57,6 @@ export const Services = () => {
         </Fragment>
     )
 }
+
+
+export default Services

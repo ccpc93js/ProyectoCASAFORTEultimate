@@ -1,7 +1,7 @@
 import React from 'react'
 import { Fragment } from 'react'
 
-export const Category = () => {
+const Category = () => {
     return (
         <Fragment>
             <div className="contenedore">
@@ -42,3 +42,5 @@ export const Category = () => {
         </Fragment>
     )
 }
+
+export default  Category

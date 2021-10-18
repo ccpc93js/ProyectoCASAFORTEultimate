@@ -6,9 +6,9 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { deliverOrder, detailsOrder, payOrder } from '../actions/orderActions';
-import LoadingBox from '../component/LoadingBox';
-import loadingPage from '../component/LoadingPage';
-import MessageBox from '../component/MessageBox';
+import LoadingBox from '../components/LoadingBox';
+import loadingPage from '../components/LoadingPage';
+import MessageBox from '../components/MessageBox';
 import {
   ORDER_DELIVER_RESET,
   ORDER_PAY_RESET,
@@ -16,7 +16,7 @@ import {
 import formatCurrency from '../actions/productActions';
 import ClearIcon from '@material-ui/icons/Clear';
 import { IconButton } from '@material-ui/core';
-import { $porcentajeEmpresa, $porcentajePersona } from '../component/Productos';
+import { $porcentajeEmpresa, $porcentajePersona } from '../components/Productos';
 
 window.addEventListener("click", (e) =>{
   const MCE_C = document.querySelector(".Modal-compraExitosa-container");

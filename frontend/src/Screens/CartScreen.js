@@ -8,7 +8,7 @@ import { IconButton } from '@material-ui/core';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import formatCurrency, { convertirAmoneda } from '../actions/productActions';
 import Fade from 'react-reveal/Fade';
-import { $porcentajeEmpresa, $porcentajePersona } from '../component/Productos';
+import { $porcentajeEmpresa, $porcentajePersona } from '../components/Productos';
 
 
 // import data from '../data.json'

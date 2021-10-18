@@ -1,7 +1,9 @@
 import React from 'react'
 import { Fragment } from 'react'
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
-export default function SliderBrands() {
+ const SliderBrands = () => {
 
     const Next = () => {
         const sliderMarcas = document.getElementById("sliderMarcas");
@@ -79,3 +81,5 @@ export default function SliderBrands() {
         </Fragment>
     )
 }
+
+export default SliderBrands

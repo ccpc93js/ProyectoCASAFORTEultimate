@@ -3,9 +3,9 @@ import React, { useEffect, useState } from 'react';
 import './ProfileScreen.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { detailsUser, updateUserProfile} from '../actions/userActions';
-import loadingPage from '../component/LoadingPage';
-import LoadingBox from '../component/LoadingBox';
-import MessageBox from '../component/MessageBox';
+import loadingPage from '../components/LoadingPage';
+import LoadingBox from '../components/LoadingBox';
+import MessageBox from '../components/MessageBox';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import IconButton from '@material-ui/core/IconButton';
 import PostAddIcon from '@material-ui/icons/PostAdd';
@@ -18,10 +18,10 @@ import PersonIcon from '@material-ui/icons/Person';
 import ContactsIcon from '@material-ui/icons/Contacts';
 
 
-import { mostrarContrasena } from '../component/MostrarContrasena';
+import { mostrarContrasena } from '../components/MostrarContrasena';
 // import { USER_UPDATE_PROFILE_RESET } from '../constants/userConstants';
 
-import dataDyC from '../component/enlaces/dataDyC'
+import dataDyC from '../components/enlaces/dataDyC'
 
 
 export default function ProfileScreen() {

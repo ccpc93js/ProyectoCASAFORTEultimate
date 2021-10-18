@@ -99,7 +99,7 @@ export default function Productos(props) {
   }, [/*dispatch*/])
 
   const displayProducts = productos.slice(pagesVisited, pagesVisited + productsPerPage).map(x => (
-    <Fade bottom cascade={true}>
+    <Fade left cascade={true}>
       <div key={x._id} className="product-card ">
         <div className="product-image">
           {

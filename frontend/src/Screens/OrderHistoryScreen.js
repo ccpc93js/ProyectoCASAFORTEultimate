@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { listOrderMine } from '../actions/orderActions';
-import LoadingBox from '../component/LoadingBox';
-import MessageBox from '../component/MessageBox';
+import LoadingBox from '../components/LoadingBox';
+import MessageBox from '../components/MessageBox';
 import './OrderHistoryScreen.css'
 import DetailsIcon from '@material-ui/icons/Details';
 import { IconButton } from '@material-ui/core';

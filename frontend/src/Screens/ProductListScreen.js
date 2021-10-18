@@ -11,9 +11,9 @@ import formatCurrency, {
   deleteProduct,
   listProducts,
 } from '../actions/productActions';
-import loadingPage from '../component/LoadingPage';
-import LoadingBox from '../component/LoadingBox';
-import MessageBox from '../component/MessageBox';
+import loadingPage from '../components/LoadingPage';
+import LoadingBox from '../components/LoadingBox';
+import MessageBox from '../components/MessageBox';
 import {
   PRODUCT_CREATE_RESET,
   PRODUCT_DELETE_RESET,

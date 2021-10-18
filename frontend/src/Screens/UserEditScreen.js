@@ -4,9 +4,9 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { detailsUser, updateUser } from '../actions/userActions';
-import LoadingBox from '../component/LoadingBox';
-import loadingPage from '../component/LoadingPage';
-import MessageBox from '../component/MessageBox';
+import LoadingBox from '../components/LoadingBox';
+import loadingPage from '../components/LoadingPage';
+import MessageBox from '../components/MessageBox';
 import { USER_UPDATE_RESET } from '../constants/userConstants';
 
 
@@ -22,7 +22,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
-import dataDyC from '../component/enlaces/dataDyC'
+import dataDyC from '../components/enlaces/dataDyC'
 
 
 export default function UserEditScreen(props) {

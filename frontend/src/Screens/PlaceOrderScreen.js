@@ -3,12 +3,12 @@ import './PlaceOrderScreen.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
 import { createOrder } from '../actions/orderActions';
-import CheckoutSteps from '../component/CheckoutSteps'
-import LoadingBox from '../component/LoadingBox';
-import MessageBox from '../component/MessageBox';
+import CheckoutSteps from '../components/CheckoutSteps'
+import LoadingBox from '../components/LoadingBox';
+import MessageBox from '../components/MessageBox';
 import { ORDER_CREATE_RESET } from '../constants/orderConstants';
 import formatCurrency, { cambiarAdolares } from '../actions/productActions';
-import { $porcentajeEmpresa, $porcentajePersona } from '../component/Productos';
+import { $porcentajeEmpresa, $porcentajePersona } from '../components/Productos';
 
 export default function PlaceOrderScreen(props) {
   const userSignin = useSelector((state) => state.userSignin);

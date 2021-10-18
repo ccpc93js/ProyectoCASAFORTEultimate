@@ -5,9 +5,9 @@ import axios from 'axios'
 // import {Link} from 'react-router-dom';
 import {useDispatch, useSelector} from 'react-redux';
 // import LoadingPageLogo from '../component/LoadingPageLogo';
-import LoadingBox from '../component/LoadingBox';
+import LoadingBox from '../components/LoadingBox';
 // import loadingPage from '../component/LoadingPage';
-import MessageBox from '../component/MessageBox';
+import MessageBox from '../components/MessageBox';
 import formatCurrency, {  detailsProduct } from '../actions/productActions';
 // import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
@@ -17,7 +17,7 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import Fade from 'react-reveal/Fade';
-import { $porcentajeEmpresa, $porcentajePersona } from '../component/Productos';
+import { $porcentajeEmpresa, $porcentajePersona } from '../components/Productos';
 
 // import YouTubeIcon from '@material-ui/icons/YouTube';
 

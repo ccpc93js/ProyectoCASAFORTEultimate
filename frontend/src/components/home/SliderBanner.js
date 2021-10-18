@@ -1,7 +1,7 @@
 import React from 'react'
 import { Fragment } from 'react'
 
-export const SliderBanner = () => {
+const SliderBanner = () => {
 
     var counter = 1;
     setInterval(function () {
@@ -10,7 +10,7 @@ export const SliderBanner = () => {
         if (counter > 3) {
             counter = 1;
         }
-    }, 8000);
+    }, 10000);
     
     return (
         <Fragment>
@@ -45,3 +45,5 @@ export const SliderBanner = () => {
         </Fragment>
     )
 }
+
+export default SliderBanner

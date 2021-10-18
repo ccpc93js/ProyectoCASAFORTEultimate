@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 
 import { BrowserRouter, Route,  } from "react-router-dom";
 
-import { NavBar } from './component/NavBar';
+import { NavBar } from './components/NavBar';
 import { HomeScreen } from './Screens/HomeScreen';
-import { Footer } from './component/Footer';
-import { Nosotros } from './component/enlaces/Nosotros';
-import  DrawerMenu  from './component/DrawerMenu';
-import LoadingPageLogo from './component/LoadingPageLogo'
-import Whatsapp from './component/Whatsapp'
+import { Footer } from './components/Footer';
+import { Nosotros } from './components/enlaces/Nosotros';
+import  DrawerMenu  from './components/DrawerMenu';
+import LoadingPageLogo from './components/LoadingPageLogo'
+import Whatsapp from './components/Whatsapp'
 import { makeStyles } from "@material-ui/core/styles";
 import PropTypes from "prop-types";
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
@@ -19,88 +19,88 @@ import Toolbar from "@material-ui/core/Toolbar";
 
 
 
-import PrivateRoute from './component/PrivateRoute'
-import AdminRoute from './component/AdminRoute';
+import PrivateRoute from './components/PrivateRoute'
+import AdminRoute from './components/AdminRoute';
 
 
-import Productos from './component/Productos';
-import ProductosTodos from './component/enlaces/Productos/ProductosTodos';
-import Marcas from './component/Marcas'
+import Productos from './components/Productos';
+import ProductosTodos from './components/enlaces/Productos/ProductosTodos';
+import Marcas from './components/Marcas'
 
 // Category
-import Abrasivos from './component/enlaces/Categorias/Abrasivos'
-import AccesoriosDeHerramientas from './component/enlaces/Categorias/AccesoriosDeHerramientas'
-import Amarres from './component/enlaces/Categorias/Amarres'
-import Cerrajeria from './component/enlaces/Categorias/Cerrajeria'
-import Construccion from './component/enlaces/Categorias/Construccion'
-import Electricos from './component/enlaces/Categorias/Electricos'
-import Griferiayplomeria from './component/enlaces/Categorias/Griferiayplomeria'
-import Pegantesyadhesivos from './component/enlaces/Categorias/Pegantesyadhesivos'
-import Pinturas from './component/enlaces/Categorias/Pinturas'
-import Fijaciones from './component/enlaces/Categorias/Fijaciones';
+import Abrasivos from './components/enlaces/Categorias/Abrasivos'
+import AccesoriosDeHerramientas from './components/enlaces/Categorias/AccesoriosDeHerramientas'
+import Amarres from './components/enlaces/Categorias/Amarres'
+import Cerrajeria from './components/enlaces/Categorias/Cerrajeria'
+import Construccion from './components/enlaces/Categorias/Construccion'
+import Electricos from './components/enlaces/Categorias/Electricos'
+import Griferiayplomeria from './components/enlaces/Categorias/Griferiayplomeria'
+import Pegantesyadhesivos from './components/enlaces/Categorias/Pegantesyadhesivos'
+import Pinturas from './components/enlaces/Categorias/Pinturas'
+import Fijaciones from './components/enlaces/Categorias/Fijaciones';
 
 // Brands
-import Abracol from './component/enlaces/Marcas/Abracol'
-import Ciles from './component/enlaces/Marcas/Ciles'
-import Grival from './component/enlaces/Marcas/Grival'
-import Nicholson from './component/enlaces/Marcas/Nicholson'
-import Rioplast from './component/enlaces/Marcas/Rioplast'
-import Sintesolda from './component/enlaces/Marcas/Sintesolda'
-import Goya from './component/enlaces/Marcas/Goya'
-import Osblack from './component/enlaces/Marcas/Osblack'
-import Dewalt from './component/enlaces/Marcas/Dewalt'
-import Codelca from './component/enlaces/Marcas/Codelca'
-import Uyustools from './component/enlaces/Marcas/Uyustools'
-import Security from './component/enlaces/Marcas/Security'
-import Argos from './component/enlaces/Marcas/Argos'
-import Mercury from './component/enlaces/Marcas/Mercury'
+import Abracol from './components/enlaces/Marcas/Abracol'
+import Ciles from './components/enlaces/Marcas/Ciles'
+import Grival from './components/enlaces/Marcas/Grival'
+import Nicholson from './components/enlaces/Marcas/Nicholson'
+import Rioplast from './components/enlaces/Marcas/Rioplast'
+import Sintesolda from './components/enlaces/Marcas/Sintesolda'
+import Goya from './components/enlaces/Marcas/Goya'
+import Osblack from './components/enlaces/Marcas/Osblack'
+import Dewalt from './components/enlaces/Marcas/Dewalt'
+import Codelca from './components/enlaces/Marcas/Codelca'
+import Uyustools from './components/enlaces/Marcas/Uyustools'
+import Security from './components/enlaces/Marcas/Security'
+import Argos from './components/enlaces/Marcas/Argos'
+import Mercury from './components/enlaces/Marcas/Mercury'
 
 import CartScreen from './Screens/CartScreen';
 import ProductScreen from './Screens/ProductScreen';
-import Contactenos from './component/enlaces/Contactenos';
-import ZonaClientes from './component/enlaces/ZonaClientes';
-import Registrarse from './component/enlaces/Registrarse';
-import LoginRegistro from './component/enlaces/LoginRegistro';
+import Contactenos from './components/enlaces/Contactenos';
+import ZonaClientes from './components/enlaces/ZonaClientes';
+import Registrarse from './components/enlaces/Registrarse';
+import LoginRegistro from './components/enlaces/LoginRegistro';
 import PaymentMethodScreen from './Screens/PaymentMethodScreen';
 import ShippingAddressScreen from './Screens/ShippingAddressScreen';
 import PlaceOrderScreen from './Screens/PlaceOrderScreen';
 import OrderScreen from './Screens/OrderScreen';
 import OrderHistoryScreen from './Screens/OrderHistoryScreen';
 import ProfileScreen from './Screens/ProfileScreen';
-import LijasYtelasRecubiertas from './component/enlaces/subCategorias/LijasYtelasRecubiertas';
-import DiscosAbrasivos from './component/enlaces/subCategorias/DiscosAbrasivos';
-import DiscosDeMetal from './component/enlaces/subCategorias/DiscosDeMetal';
-import AmarresPlasticos from './component/enlaces/subCategorias/AmarresPlasticos';
-import AmarresParaTejas from './component/enlaces/subCategorias/AmarresParaTejas';
-import Candados from './component/enlaces/subCategorias/Candados';
-import Cerraduras from './component/enlaces/subCategorias/Cerraduras';
-import Cerrojos from './component/enlaces/subCategorias/Cerrojos';
-import Cementos from './component/enlaces/subCategorias/Cementos';
-import EnchufesYclavijas from './component/enlaces/subCategorias/EnchufesYclavijas';
-import TomasEinterruptores from './component/enlaces/subCategorias/TomasEinterruptores';
-import Breakers from './component/enlaces/subCategorias/Breakers';
-import CajasYelectricos from './component/enlaces/subCategorias/CajasYelectricos';
-import Cintas from './component/enlaces/subCategorias/Cintas';
-import PlafonesYrosetas from './component/enlaces/subCategorias/PlafonesYrosetas';
-import PegantesParaConstruccion from './component/enlaces/subCategorias/PegantesPraraConstruccion';
-import SiliconasYselladores from './component/enlaces/subCategorias/SIliconasYselladores';
-import HerramientasParaPintar from './component/enlaces/subCategorias/HerramientasParaPintar';
-import Tornillos from './component/enlaces/subCategorias/Tornillos';
-import ChazosEnNylon from './component/enlaces/subCategorias/ChazosEnNylon';
-import ChazosMetalicos from './component/enlaces/subCategorias/ChazosMetalicos';
-import SolucionesParaBaños from './component/enlaces/subCategorias/SolucionesParaBaños';
-import SolucionesParaCocinas from './component/enlaces/subCategorias/SolucionesParaCocinas';
-import Duchas from './component/enlaces/subCategorias/Duchas';
-import JardinYexteriores from './component/enlaces/subCategorias/JardinYexteriores';
-import GriferiaLavamanos from './component/enlaces/subCategorias/GriferiaLavamanos';
-import SolucionesParaElHogar from './component/enlaces/subCategorias/SolucionesParaElHogar';
-import AlbanileriaYconstruccion from './component/enlaces/subCategorias/AlbanileriaYconstruccion';
-import LimasYescofinas from './component/enlaces/subCategorias/LimasYescofinas';
-import HerramientasDeAcabado from './component/enlaces/subCategorias/HerramientasDeAcabado';
-import PinzasYalicates from './component/enlaces/subCategorias/PinzasYalicates';
-import HerramientasManualesDeCorte from './component/enlaces/subCategorias/HerramientasManualesDeCorte';
-import HerramientasDeMedicion from './component/enlaces/subCategorias/HerramientasDeMedicion';
-import Destornilladores from './component/enlaces/subCategorias/Destornilladores';
+import LijasYtelasRecubiertas from './components/enlaces/subCategorias/LijasYtelasRecubiertas';
+import DiscosAbrasivos from './components/enlaces/subCategorias/DiscosAbrasivos';
+import DiscosDeMetal from './components/enlaces/subCategorias/DiscosDeMetal';
+import AmarresPlasticos from './components/enlaces/subCategorias/AmarresPlasticos';
+import AmarresParaTejas from './components/enlaces/subCategorias/AmarresParaTejas';
+import Candados from './components/enlaces/subCategorias/Candados';
+import Cerraduras from './components/enlaces/subCategorias/Cerraduras';
+import Cerrojos from './components/enlaces/subCategorias/Cerrojos';
+import Cementos from './components/enlaces/subCategorias/Cementos';
+import EnchufesYclavijas from './components/enlaces/subCategorias/EnchufesYclavijas';
+import TomasEinterruptores from './components/enlaces/subCategorias/TomasEinterruptores';
+import Breakers from './components/enlaces/subCategorias/Breakers';
+import CajasYelectricos from './components/enlaces/subCategorias/CajasYelectricos';
+import Cintas from './components/enlaces/subCategorias/Cintas';
+import PlafonesYrosetas from './components/enlaces/subCategorias/PlafonesYrosetas';
+import PegantesParaConstruccion from './components/enlaces/subCategorias/PegantesPraraConstruccion';
+import SiliconasYselladores from './components/enlaces/subCategorias/SIliconasYselladores';
+import HerramientasParaPintar from './components/enlaces/subCategorias/HerramientasParaPintar';
+import Tornillos from './components/enlaces/subCategorias/Tornillos';
+import ChazosEnNylon from './components/enlaces/subCategorias/ChazosEnNylon';
+import ChazosMetalicos from './components/enlaces/subCategorias/ChazosMetalicos';
+import SolucionesParaBaños from './components/enlaces/subCategorias/SolucionesParaBaños';
+import SolucionesParaCocinas from './components/enlaces/subCategorias/SolucionesParaCocinas';
+import Duchas from './components/enlaces/subCategorias/Duchas';
+import JardinYexteriores from './components/enlaces/subCategorias/JardinYexteriores';
+import GriferiaLavamanos from './components/enlaces/subCategorias/GriferiaLavamanos';
+import SolucionesParaElHogar from './components/enlaces/subCategorias/SolucionesParaElHogar';
+import AlbanileriaYconstruccion from './components/enlaces/subCategorias/AlbanileriaYconstruccion';
+import LimasYescofinas from './components/enlaces/subCategorias/LimasYescofinas';
+import HerramientasDeAcabado from './components/enlaces/subCategorias/HerramientasDeAcabado';
+import PinzasYalicates from './components/enlaces/subCategorias/PinzasYalicates';
+import HerramientasManualesDeCorte from './components/enlaces/subCategorias/HerramientasManualesDeCorte';
+import HerramientasDeMedicion from './components/enlaces/subCategorias/HerramientasDeMedicion';
+import Destornilladores from './components/enlaces/subCategorias/Destornilladores';
 
 
 import ProductEditScreen from './Screens/ProductEditScreen';
@@ -108,22 +108,22 @@ import ProductListScreen from './Screens/ProductListScreen';
 import OrderListScreen from './Screens/OrderListScreen';
 import UserListScreen from './Screens/UserListScreen';
 import UserEditScreen from './Screens/UserEditScreen';
-import Luminex from './component/enlaces/Marcas/Luminex';
-import Crescent from './component/enlaces/Marcas/Crescent';
-import Multimarca from './component/enlaces/Marcas/Multimarca';
-import Egret from './component/enlaces/Marcas/Egret';
-import Induma from './component/enlaces/Marcas/Induma';
-import HerramientasManuales from './component/enlaces/Categorias/HerramientasManuales';
+import Luminex from './components/enlaces/Marcas/Luminex';
+import Crescent from './components/enlaces/Marcas/Crescent';
+import Multimarca from './components/enlaces/Marcas/Multimarca';
+import Egret from './components/enlaces/Marcas/Egret';
+import Induma from './components/enlaces/Marcas/Induma';
+import HerramientasManuales from './components/enlaces/Categorias/HerramientasManuales';
 import UserListRegisteredScreen from './Screens/UserListRegisteredScreen';
-import MensajeRegistrado from './component/enlaces/MensajeRegistrado';
-import LufkinCrescent from './component/enlaces/Marcas/LufkinCrescent';
+import MensajeRegistrado from './components/enlaces/MensajeRegistrado';
+import LufkinCrescent from './components/enlaces/Marcas/LufkinCrescent';
 import DashboardScreen from './Screens/DashboardScreen';
-import DrawerRight, { handleCartSideClose } from './component/DrawerRight';
+import DrawerRight, { handleCartSideClose } from './components/DrawerRight';
 import SearchScreen from './Screens/SearchScreen';
-import EnOferta from './component/enlaces/EnOferta/EnOferta';
-import compraExitosa from './component/correos/compraExitosa';
-import RecuperarContraseña from './component/enlaces/RecuperarContraseña';
-import ContrasenaOlvidada from './component/enlaces/ContrasenaOlvidada';
+import EnOferta from './components/enlaces/EnOferta/EnOferta';
+import compraExitosa from './components/correos/compraExitosa';
+import RecuperarContraseña from './components/enlaces/RecuperarContraseña';
+import ContrasenaOlvidada from './components/enlaces/ContrasenaOlvidada';
 
 
 
