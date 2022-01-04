@@ -200,7 +200,11 @@ ul li ul li a{
 }
 
 
-
+.buttonClose{
+  border: none;
+  background: none;
+  float: right;
+}
 
 .slider{
   position: relative;

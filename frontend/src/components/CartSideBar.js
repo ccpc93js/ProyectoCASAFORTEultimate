@@ -9,6 +9,7 @@ import formatCurrency from '../actions/productActions';
 import { handleCartSideClose, handleCartSideOpen } from './DrawerRight'
 import Fade from 'react-reveal/Fade';
 import { $porcentajeEmpresa, $porcentajePersona } from './Productos';
+import Descuento from './Descuento';
 
 // import data from '../data.json'
 
@@ -85,10 +86,8 @@ export default function CartSideBar(props) {
                                     {
                                          (item.enOferta === true)?
                                         ( 
-                                           <div  className="producto-en-oferta">
-                                             <p className="porcentaje">{item.descuento}%</p>
-                                             <p className="DCTO">DCTO</p>
-                                           </div>
+                                            < Descuento producto={item}/>
+
                                          )
                                          :
                                          (

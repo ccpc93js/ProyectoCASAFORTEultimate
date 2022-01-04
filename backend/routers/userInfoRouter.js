@@ -21,21 +21,27 @@ userInfoRouter.post(
         cel: req.body.cel,
         tipoClient: req.body.tipoClient
       });
+      console.log(req.body)
       const createdUserInfo = await userInfo.save();
-      res.send({
-        _id: createdUserInfo._id,
-        name: createdUserInfo.name,
-        tDocument: createdUserInfo.tDocument,
-        nDocument: createdUserInfo.nDocument,
-        department: createdUserInfo.department,
-        city: createdUserInfo.city,
-        adress: createdUserInfo.adress,
-        email: createdUserInfo.email,
-        tel: createdUserInfo.tel,
-        cel: createdUserInfo.cel,
-        tipoClient: createdUserInfo.tipoClient,
-        token: generateToken(createdUserInfo),
-      });
+      try {
+        res.send({
+          _id: createdUserInfo._id,
+          name: createdUserInfo.name,
+          tDocument: createdUserInfo.tDocument,
+          nDocument: createdUserInfo.nDocument,
+          department: createdUserInfo.department,
+          city: createdUserInfo.city,
+          adress: createdUserInfo.adress,
+          email: createdUserInfo.email,
+          tel: createdUserInfo.tel,
+          cel: createdUserInfo.cel,
+          tipoClient: createdUserInfo.tipoClient,
+          token: generateToken(createdUserInfo),
+        });
+      } catch (error) {
+        console.log(error)
+      }
+
     })
   );
 

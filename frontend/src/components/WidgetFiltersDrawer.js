@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
 import './WidgetFiltersDrawer.css'
-import axios from 'axios'
 import data from './data.js'
-import LoadingBox from './LoadingBox'
 
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
 function WidgetFiltersDrawer(props) {
@@ -116,8 +113,8 @@ function WidgetFiltersDrawer(props) {
            
             <div className=" block-Drawer block-sidebar__body-Drawer">
                 <div className="block-sidebar__item-Drawer">
-                <div class="widget-filters-Drawer widget widget-filters-Drawer--offcanvas--mobile-Drawer" data-collapse="" data-collapse-opened-class="filter--opened">
-<h4 class="widget-filters-Drawer__title widget__title-Drawer">
+                <div className="widget-filters-Drawer widget widget-filters-Drawer--offcanvas--mobile-Drawer"  >
+<h4 className="widget-filters-Drawer__title widget__title-Drawer">
 {
     nombreWidgetFilters()
     
@@ -127,26 +124,24 @@ function WidgetFiltersDrawer(props) {
 
     
     (props.categorias || props.subcategorias )?(
-<div class="widget-filters-Drawer__list-Drawer ">
-<div class="widget-filters-Drawer__item-Drawer">
-<div class="filter-Drawer filter--opened-Drawer" data-collapse-item="">
+<div className="widget-filters-Drawer__list-Drawer ">
+<div className="widget-filters-Drawer__item-Drawer">
+<div className="filter-Drawer filter--opened-Drawer" data-collapse-item="">
 
 
-<button type="button" class="filter__title-Drawer" data-collapse-trigger="">
+<button type="button" className="filter__title-Drawer" data-collapse-trigger="">
 Subcategorias
-<svg class="filter__arrow-Drawer" width="12px" height="7px">
+<svg className="filter__arrow-Drawer" width="12px" height="7px">
     <ExpandLessIcon/>
 </svg>
 </button>
-<div class="filter__body-Drawer" data-collapse-content="">
-<div class="filter__container-Drawer">
-<div class="filter-categories-Drawer">
-<ul class="filter-categories__list-Drawer">
+<div className="filter__body-Drawer" data-collapse-content="">
+<div className="filter__container-Drawer">
+<div className="filter-categories-Drawer">
+<ul className="filter-categories__list-Drawer">
 {
     productFiltradoXProducto.map(x=>
-     <li class="filter-categories__item-Drawer filter-categories__item--parent-Drawer">
-       
-  
+     <li key={x.nombre} className="filter-categories__item-Drawer filter-categories__item--parent-Drawer">
     <a data-id="3" href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
     </li>
         )
@@ -159,20 +154,20 @@ Subcategorias
 </div>
 </div>
 
-<div class="widget-filters-Drawer__item-Drawer">
-<div class="filter filter--opened-Drawer" data-collapse-item="">
-<button type="button" class="filter__title-Drawer" data-collapse-trigger="">
+<div className="widget-filters-Drawer__item-Drawer">
+<div className="filter filter--opened-Drawer" data-collapse-item="">
+<button type="button" className="filter__title-Drawer" data-collapse-trigger="">
 Marcas
 
 </button>
-<div class="filter__body-Drawer" data-collapse-content="">
-<div class="filter__container-Drawer">
-<div class="filter-list-Drawer">
+<div className="filter__body-Drawer" data-collapse-content="">
+<div className="filter__container-Drawer">
+<div className="filter-list-Drawer">
 {
     productFiltradoXMarca.map(x=>
-<div class="filter-list__list-Drawer">
-<label class="filter-list__item-Drawer ">
-<span class="filter-list__title-Drawer">
+<div key={x.nombre}  className="filter-list__list-Drawer">
+<label className="filter-list__item-Drawer ">
+<span className="filter-list__title-Drawer">
 <a href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
 </span>
 </label>
@@ -187,22 +182,22 @@ Marcas
 </div>
 </div>
     ):(props.marcas)?(
-        <div class="widget-filters-Drawer__list-Drawer">
-<div class="widget-filters-Drawer__item-Drawer">
-<div class="filter filter--opened-Drawer" data-collapse-item="">
+        <div className="widget-filters-Drawer__list-Drawer">
+<div className="widget-filters-Drawer__item-Drawer">
+<div className="filter filter--opened-Drawer" data-collapse-item="">
 
 
-<button type="button" class="filter__title-Drawer" data-collapse-trigger="">
+<button type="button" className="filter__title-Drawer" data-collapse-trigger="">
 Categorias
 
 </button>
-<div class="filter__body-Drawer" data-collapse-content="">
-<div class="filter__container-Drawer">
-<div class="filter-categories-Drawer">
-<ul class="filter-categories__list-Drawer">
+<div className="filter__body-Drawer" data-collapse-content="">
+<div className="filter__container-Drawer">
+<div className="filter-categories-Drawer">
+<ul className="filter-categories__list-Drawer">
 {
     categorias.map(x=>
-     <li class="filter-categories__item filter-categories__item--parent-Drawer">
+     <li key={x.nombre} className="filter-categories__item filter-categories__item--parent-Drawer">
     
        
   
@@ -218,21 +213,21 @@ Categorias
 </div>
 </div>
 
-<div class="widget-filters-Drawer__item-Drawer">
-<div class="filter filter--opened-Drawer" data-collapse-item="">
-<button type="button" class="filter__title-Drawer" data-collapse-trigger="">
+<div className="widget-filters-Drawer__item-Drawer">
+<div className="filter filter--opened-Drawer" data-collapse-item="">
+<button type="button" className="filter__title-Drawer" data-collapse-trigger="">
 Subcategorias
-<svg class="filter__arrow-Drawer" width="12px" height="7px">
+<svg className="filter__arrow-Drawer" width="12px" height="7px">
 <use href="/images/sprite.svg#arrow-rounded-down-12x7"></use>
 </svg>
 </button>
-<div class="filter__body-Drawer" data-collapse-content="">
-<div class="filter__container-Drawer">
-<div class="filter-categories-Drawer">
-<ul class="filter-categories__list-Drawer">
+<div className="filter__body-Drawer" data-collapse-content="">
+<div className="filter__container-Drawer">
+<div className="filter-categories-Drawer">
+<ul className="filter-categories__list-Drawer">
 {
     subcategorias.map(x=>
-     <li class="filter-categories__item-Drawer filter-categories__item--parent-Drawer">
+     <li key={x.nombre} className="filter-categories__item-Drawer filter-categories__item--parent-Drawer">
     
        
   
@@ -250,24 +245,24 @@ Subcategorias
 </div>
 
     ):(
-<div class="widget-filters-Drawer__list-Drawer">
-<div class="widget-filters-Drawer__item-Drawer">
-<div class="filter filter--opened-Drawer" data-collapse-item="">
+<div className="widget-filters-Drawer__list-Drawer">
+<div className="widget-filters-Drawer__item-Drawer">
+<div className="filter filter--opened-Drawer" data-collapse-item="">
 
 
-<button type="button" class="filter__title-Drawer" data-collapse-trigger="">
+<button type="button" className="filter__title-Drawer" data-collapse-trigger="">
 Categorias
-<svg class="filter__arrow-Drawer" width="12px" height="7px">
+<svg className="filter__arrow-Drawer" width="12px" height="7px">
 <use href="/images/sprite.svg#arrow-rounded-down-12x7"></use>
 </svg>
 </button>
-<div class="filter__body-Drawer" data-collapse-content="">
-<div class="filter__container-Drawer">
-<div class="filter-categories-Drawer">
-<ul class="filter-categories__list-Drawer">
+<div className="filter__body-Drawer" data-collapse-content="">
+<div className="filter__container-Drawer">
+<div className="filter-categories-Drawer">
+<ul className="filter-categories__list-Drawer">
 {
     categorias.map(x=>
-     <li class="filter-categories__item-Drawer filter-categories__item--parent-Drawer">
+     <li key={x.nombre} className="filter-categories__item-Drawer filter-categories__item--parent-Drawer">
     
        
   
@@ -283,21 +278,21 @@ Categorias
 </div>
 </div>
 
-<div class="widget-filters-Drawer__item-Drawer">
-<div class="filter filter--opened-Drawer" data-collapse-item="">
-<button type="button" class="filter__title-Drawer" data-collapse-trigger="">
+<div className="widget-filters-Drawer__item-Drawer">
+<div className="filter filter--opened-Drawer" data-collapse-item="">
+<button type="button" className="filter__title-Drawer" data-collapse-trigger="">
 Subcategorias
-<svg class="filter__arrow-Drawer" width="12px" height="7px">
+<svg className="filter__arrow-Drawer" width="12px" height="7px">
 <use href="/images/sprite.svg#arrow-rounded-down-12x7"></use>
 </svg>
 </button>
-<div class="filter__body-Drawer" data-collapse-content="">
-<div class="filter__container-Drawer">
-<div class="filter-categories-Drawer">
-<ul class="filter-categories__list-Drawer">
+<div className="filter__body-Drawer" data-collapse-content="">
+<div className="filter__container-Drawer">
+<div className="filter-categories-Drawer">
+<ul className="filter-categories__list-Drawer">
 {
     subcategorias.map(x=>
-     <li class="filter-categories__item-Drawer filter-categories__item--parent-Drawer">
+     <li key={x.nombre} className="filter-categories__item-Drawer filter-categories__item--parent-Drawer">
     
        
   
@@ -313,22 +308,22 @@ Subcategorias
 </div>
 </div>
 
-<div class="widget-filters-Drawer__item-Drawer">
-<div class="filter filter--opened-Drawer" data-collapse-item="">
-<button type="button" class="filter__title-Drawer" data-collapse-trigger="">
+<div className="widget-filters-Drawer__item-Drawer">
+<div className="filter filter--opened-Drawer" data-collapse-item="">
+<button type="button" className="filter__title-Drawer" data-collapse-trigger="">
 Marcas
-<svg class="filter__arrow-Drawer" width="12px" height="7px">
+<svg className="filter__arrow-Drawer" width="12px" height="7px">
 <use href="/images/sprite.svg#arrow-rounded-down-12x7"></use>
 </svg>
 </button>
-<div class="filter__body-Drawer" data-collapse-content="">
-<div class="filter__container-Drawer">
-<div class="filter-list">
+<div className="filter__body-Drawer" data-collapse-content="">
+<div className="filter__container-Drawer">
+<div className="filter-list">
 {
     marcas.map(x=>
-<div class="filter-list__list-Drawer">
-<label class="filter-list__item-Drawer ">
-<span class="filter-list__title-Drawer">
+<div key={x.nombre}  className="filter-list__list-Drawer">
+<label className="filter-list__item-Drawer ">
+<span className="filter-list__title-Drawer">
 <a href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
 </span>
 </label>
@@ -365,6 +360,6 @@ Marcas
 export default WidgetFiltersDrawer
 
 
-    // <div class="filter-categories__counter">72</div>
+    // <div className="filter-categories__counter">72</div>
 
-// <span class="filter-list__counter">168</span>
+// <span className="filter-list__counter">168</span>

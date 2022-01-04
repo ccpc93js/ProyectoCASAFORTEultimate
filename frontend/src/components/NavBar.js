@@ -159,7 +159,7 @@ export const NavBar = (props) => {
             {
                 userInfo ? (
                     <div className="dropdown carrito-none">
-                    <Link className="userName" to="#">{userInfo.name} <i className=""><ArrowDropDownIcon/></i>{" "}</Link>
+                    <span className="userName" to="#">{userInfo.name} <i className=""><ArrowDropDownIcon/></i>{" "}</span>
                     <ul className="dropdown-content" onClick={handleSearhModalClose}>
                         <li>
                             <Link to="/profile" >Perfil de usuario</Link>
@@ -187,9 +187,9 @@ export const NavBar = (props) => {
                 }
             {userInfo && userInfo.isAdmin && (
                 <div className="dropdown carrito-none">
-                <Link to="#admin" className="userName" aria-label="admin">
+                <span to="#admin" className="userName" aria-label="admin">
                   Admin <i className=""><ArrowDropDownIcon/></i>
-                </Link>
+                </span>
                 <ul className="dropdown-content" onClick={handleSearhModalClose}>
                   {/* <li>
                     <Link to="/dashboard">Dashboard</Link>
@@ -225,22 +225,22 @@ export const NavBar = (props) => {
             <li><a href="/all" className="cool-link">Productos</a>
                 <div className="shadow-box-ul">
                 <ul>
-                    <li><a href="/abrasivos">Abrasivos</a></li>
-                    <li><a href="/accesorios-para-herramientas">Accesorios para Herramientas</a></li>
-                    <li><a href="/amarres">Amarres</a></li>
-                    <li><a href="/cerrajeria">Cerrajeria</a></li>
-                    <li><a href="/construccion">Construcci&oacute;n</a></li>
+                    <li><a href="/categorias/abrasivos">Abrasivos</a></li>
+                    <li><a href="/categorias/accesorios-para-herramientas">Accesorios para Herramientas</a></li>
+                    <li><a href="/categorias/amarres">Amarres</a></li>
+                    <li><a href="/categorias/cerrajeria">Cerrajeria</a></li>
+                    <li><a href="/categorias/construccion">Construcci&oacute;n</a></li>
                 </ul>
 
                 <ul>
-                    <li><a href="/electricos">Electricos</a></li>
-                    <li><a href="/fijaciones">Fijaciones</a></li>
-                    <li><a href="/griferia-y-plomeria">Griferia y Plomeria</a></li>
-                    <li><a href="/pegantes-y-adhesivos">Pegantes & Adhesivos</a></li>
-                    <li><a href="/pinturas">Pinturas</a></li>
+                    <li><a href="/categorias/electricos">Electricos</a></li>
+                    <li><a href="/categorias/fijaciones">Fijaciones</a></li>
+                    <li><a href="/categorias/griferia-y-plomeria">Griferia y Plomeria</a></li>
+                    <li><a href="/categorias/pegantes-y-adhesivos">Pegantes & Adhesivos</a></li>
+                    <li><a href="/categorias/pinturas">Pinturas</a></li>
                 </ul>
                 <ul>
-                <li><a href="/herramientas-manuales">Herramientas manuales</a></li>
+                <li><a href="/categorias/herramientas-manuales">Herramientas manuales</a></li>
 
                 </ul>
                 </div>
@@ -249,33 +249,33 @@ export const NavBar = (props) => {
             <li><a href="/marcas" className="cool-link">Marcas</a>
                 <div className="shadow-box-ul">
                 <ul>
-                    <li><a href="/ABRACOL">Abracol</a></li>
-                    <li><a href="/CILES">Ciles</a></li>
-                    <li><a href="/GRIVAL">Grival</a></li>
-                    <li><a href="/NICHOLSON">Nicholson</a></li>
-                    <li><a href="/RIOPLAST">Rioplast</a></li>
+                    <li><a href="/marcas/ABRACOL">Abracol</a></li>
+                    <li><a href="/marcas/CILES">Ciles</a></li>
+                    <li><a href="/marcas/GRIVAL">Grival</a></li>
+                    <li><a href="/marcas/NICHOLSON">Nicholson</a></li>
+                    <li><a href="/marcas/RIOPLAST">Rioplast</a></li>
                 </ul>
 
                 <ul>
-                    <li><a href="/SINTESOLDA">Sintesolda</a></li>
-                    <li><a href="/GOYA">Goya</a></li>
-                    <li><a href="/OSBLACK">Osblack</a></li>
-                    <li><a href="/DEWALT">Dewalt</a></li>
-                    <li><a href="/MERCURY">Mercury</a></li>
+                    <li><a href="/marcas/SINTESOLDA">Sintesolda</a></li>
+                    <li><a href="/marcas/GOYA">Goya</a></li>
+                    <li><a href="/marcas/OSBLACK">Osblack</a></li>
+                    <li><a href="/marcas/DEWALT">Dewalt</a></li>
+                    <li><a href="/marcas/MERCURY">Mercury</a></li>
                 </ul>
 
                 <ul>
-                    <li><a href="/INDUMA">Induma</a></li>
-                    <li><a href="/UYUSTOOLS">Uyustools</a></li>
-                    <li><a href="/SECURITY">Security</a></li>
-                    <li><a href="/EGRET">egret</a></li>
-                    <li><a href="/ARGOS">argos</a></li>
+                    <li><a href="/marcas/INDUMA">Induma</a></li>
+                    <li><a href="/marcas/UYUSTOOLS">Uyustools</a></li>
+                    <li><a href="/marcas/SECURITY">Security</a></li>
+                    <li><a href="/marcas/EGRET">egret</a></li>
+                    <li><a href="/marcas/ARGOS">argos</a></li>
                 </ul>
                 <ul>
-                    <li><a href="/MULTIMARCA">Multimarca</a></li>
-                    <li><a href="/CODELCA">Codelca</a></li>
-                    <li><a href="/LUMINEX">Luminex</a></li>
-                    <li><a href="/LUFKIN-CRESCENT">Lufkin-crescent</a></li>
+                    <li><a href="/marcas/MULTIMARCA">Multimarca</a></li>
+                    <li><a href="/marcas/CODELCA">Codelca</a></li>
+                    <li><a href="/marcas/LUMINEX">Luminex</a></li>
+                    <li><a href="/marcas/LUFKIN-CRESCENT">Lufkin-crescent</a></li>
 
                 </ul>
                 </div>

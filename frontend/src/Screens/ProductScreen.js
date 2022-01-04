@@ -16,8 +16,10 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import Fade from 'react-reveal/Fade';
 import { $porcentajeEmpresa, $porcentajePersona } from '../components/Productos';
+import ProductosRelacionados from '../components/ProductosRelacionados';
+import Spinner from '../components/Spinner/index';
+import Fade from 'react-reveal/Fade';
 
 // import YouTubeIcon from '@material-ui/icons/YouTube';
 
@@ -309,8 +311,14 @@ const Prev = () =>{
      <h2 className="continerPR__title"><div className="continerPR__title__divider"></div> Productos relacionados <div className="continerPR__title__divider"></div></h2>
 <div className="continerPR__carousel">
 
-<div className="continerPR__centralPR" id="sliderPR">   
-<div 
+{
+
+    loadingP ? (
+         <Spinner />
+        ) : (
+        
+<div className="continerPR__centralPR" id="sliderPR">  
+        <div 
         className="hi-prev-PR" 
         id="arrow-prev"
         onClick={Prev}
@@ -321,96 +329,26 @@ const Prev = () =>{
             
         </div>
 
-{
+            {
+                productFiltradoXcategoria.map((x)=>(
+        <Fade bottom cascade={true}>
 
-loadingP?(
-<LoadingBox/>
-):errorP ?(
-    <MessageBox variant="danger">{errorP}</MessageBox>
-):(
+                    <ul className="continerPR__productos-relacionados slider-section-PR" >
+                    
+                        {               
 
+                            
+                            <ProductosRelacionados producto={x} userInfo={userInfo}/>    
+                        }
+                    </ul>
+        </Fade>
+                    
+                    )
+                )
 
+            }
 
-    
-    productFiltradoXcategoria.map((x)=>(
-
-
-//  <ul className="marca">
-//      <li><a href="/abracol"><img class="marca" src="./img/Icons/Logo_Abracol.png" alt="abracol"/></a></li>
-//  </ul>
-
-<Fade bottom cascade={true}>
-
- <ul className="continerPR__productos-relacionados slider-section-PR" >
-    <li className="">
-        {
-          (x.enOferta === true)?
-         ( 
-            <div  className="producto-en-oferta">
-              <p className="porcentaje">{x.descuento}%</p>
-              <p className="DCTO">DCTO</p>
-            </div>
-          )
-          :
-          (
-              ""  
-          )
-        }
-    <a href={`/producto/${x._id}/${x.info.replace(/ /g,"-")}`}>
-        <div className="continerPR__productos-relacionados__img">
-            <img src={x.imagen} alt={x.info} />
-        </div>
-    <div className="continerPR__details">
-     <p className="continerPR__details__description__info">{x.info}</p>
-     {
-                  userInfo?
-                
-                (x.enOferta ===false)?(
-                  <p>{formatCurrency(userInfo.tipoClient === "Empresa"? x.precio + (x.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? x.precio + (x.precio * $porcentajePersona): x.precio)}</p>
-                ):(
-                  <div className="producto-en-oferta_precio">
-                   <p className="p1"> {formatCurrency(userInfo.tipoClient === "Empresa"? x.precio + (x.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? x.precio + (x.precio * $porcentajePersona): x.precio)}</p>
-                    {/* <br></br> */}
-                    <p className="p2"> {formatCurrency(userInfo.tipoClient === "Empresa"? x.precio + (x.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? x.precioDeOferta + (x.precioDeOferta * $porcentajePersona): x.precioDeOferta)}</p>
-
-                  </div>
-                  
-                  )
-                  : (
-                    (x.enOferta ===false)?(
-                      <p>{formatCurrency(x.precio + (x.precio * $porcentajePersona))}</p>
-                    ):(
-                      <div className="producto-en-oferta_precio">
-                       <p className="p1"> {formatCurrency( x.precio + (x.precio * $porcentajePersona))}</p>
-                        {/* <br></br> */}
-                        <p className="p2"> {formatCurrency(x.precioDeOferta + (x.precioDeOferta * $porcentajePersona))}</p>
-    
-                      </div>
-                      
-                      )
-                  )
-                }
-
-    </div>
-
-    </a>
-
-</li>
- </ul>
-
- </Fade>
-
-
-
-))
-
-
-
-)
-
-}
-
-<div 
+        <div 
           className="hi-next-PR"          
           id="arrow-next"
           onClick={Next}
@@ -421,8 +359,12 @@ loadingP?(
             <ChevronRightIcon/>
             </i>
         </div>
+        
+
 
 </div>
+        )
+}
 </div> 
 
 

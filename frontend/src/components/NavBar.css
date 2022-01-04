@@ -517,7 +517,7 @@ margin: 0 -3rem;
 }
 
 
-@media screen and (min-width:364px) and (max-width:700px){
+@media screen and (min-width:364px) and (max-width:800px){
 
 
     .casaforte{
@@ -593,7 +593,7 @@ margin: 0 -3rem;
 
 
   }
-  @media screen and (min-width:700px) and (max-width:768px){
+  @media screen and (min-width:800px) and (max-width:900px){
 
 
     .casaforte{
@@ -645,7 +645,7 @@ margin: 0 -3rem;
    
 
   }
-  @media screen and (min-width:768px) and (max-width:1024px){
+  @media screen and (min-width: 900px) and (max-width:1024px){
 
     .casaforte{
       width: 10rem;

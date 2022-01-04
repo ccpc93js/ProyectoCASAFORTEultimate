@@ -1,5 +1,7 @@
 ssh root@165.232.131.139
 
+contraseña: CasaForte2525cf
+
 cd projects
 
 rm -rf ProyectoCASAFORTEultimate

@@ -4,10 +4,8 @@ import Axios from 'axios';
 import { PayPalButton } from 'react-paypal-button-v2';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { deliverOrder, detailsOrder, payOrder } from '../actions/orderActions';
 import LoadingBox from '../components/LoadingBox';
-import loadingPage from '../components/LoadingPage';
 import MessageBox from '../components/MessageBox';
 import {
   ORDER_DELIVER_RESET,
@@ -15,7 +13,6 @@ import {
 } from '../constants/orderConstants';
 import formatCurrency from '../actions/productActions';
 import ClearIcon from '@material-ui/icons/Clear';
-import { IconButton } from '@material-ui/core';
 import { $porcentajeEmpresa, $porcentajePersona } from '../components/Productos';
 
 window.addEventListener("click", (e) =>{
@@ -121,7 +118,7 @@ if(successPay  && order.isPaid && userInfo && !userInfo.isAdmin ){
     enviarEmail(userInfo.name, userInfo.email,order);
   }
   
-}, [dispatch, orderId, sdkReady, order, successPay, successDeliver]);
+}, [dispatch, orderId, sdkReady, order, successPay, successDeliver, userInfo]);
 
 const successPaymentHandler = (paymentResult) =>{
   dispatch(payOrder(order, paymentResult))
@@ -132,15 +129,6 @@ const deliverHandler = () => {
 
 };
 
-
-const handleCopExitosaModalOpen = () =>{
-  const MCE_C = document.querySelector(".Modal-compraExitosa-container")
-  const MCE = document.querySelector(".Modal-compraExitosa")
-
-  MCE_C.classList.toggle("ModalCExitosa-Container-Close")
-  MCE.classList.toggle("ModalCExitosa-Close")
-
-}
 
 const handleCopExitosaModalClose = () =>{
   const MCE_C = document.querySelector(".Modal-compraExitosa-container")
@@ -156,46 +144,11 @@ window.addEventListener("click", (e) =>{
   const MCE = document.querySelector(".Modal-compraExitosa")
 
 
-  if(e.target == MCE_C ){
+  if(e.target === MCE_C ){
     MCE_C.classList.toggle("ModalCExitosa-Container-Close")
     MCE.classList.toggle("ModalCExitosa-Close")  
   }
 })
-
-
-
-const compraExitosahandler = () =>{
-  return(
-
-    // order.isPaid && userInfo && !userInfo.isAdmin ? (
-      <div className="Modal-compraExitosa-container ">
-      <div className="Modal-compraExitosa ">
-      <button
-       className="ClearIcon Modal-compraExitosa__ClearIcon"
-       onClick={handleCopExitosaModalClose}
-       color="inherit"
-       >
-         <i   className="ClearIcon">
-        <ClearIcon/>
-
-         </i>
-      </button>
-    <div className="Modal-compraExitosa__img">
-      <img style="width:7rem;" className="casaforte" src='https://res.cloudinary.com/casaforte/image/upload/v1622590008/Icon/LOGO_CASA_FORTE_yhb1dx.png' alt="casaforte"/>
-    </div>
-     <p className="Modal-compraExitosa__frase">
-     Compra exitosa, gracias por su compra! <br/> el proveedor se comunicara con usted para la entrega.
-       </p> 
-      </div>
-
-    </div>
-
-// ) : (
-  //   ""
-  // )
-  )
-}
-
 
 
   return loading ? (

@@ -5,7 +5,7 @@ export const userRegisterReducer = (state = {}, action) => {
     case USER_REGISTER_REQUEST:
       return { loading: true };
     case USER_REGISTER_SUCCESS:
-      return { loading: false, userInfo: action.payload };
+      return { loading: false, success: true, userInfo: action.payload };
     case USER_REGISTER_FAIL:
       return { loading: false, error: action.payload };
     default:
@@ -17,7 +17,7 @@ export const userRegisterInfoReducer = (state = {}, action) => {
     case USER_REGISTER_REQUEST:
       return { loading: true };
     case USER_REGISTER_SUCCESS:
-      return { loading: false, userRegInfo: action.payload };
+      return { loading: false, success: true, userRegInfo: action.payload };
     case USER_REGISTER_FAIL:
       return { loading: false, error: action.payload };
     default:
@@ -46,7 +46,7 @@ export const userSigninReducer = (state = {}, action) => {
       case USER_SIGNIN_REQUEST:
         return { loading: true };
       case USER_SIGNIN_SUCCESS:
-        return { loading: false, userInfo: action.payload };
+        return { loading: false, success: true, userInfo: action.payload };
       case USER_SIGNIN_FAIL:
         return { loading: false, error: action.payload };
       case USER_SIGNOUT:

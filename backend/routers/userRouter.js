@@ -89,6 +89,8 @@ userRouter.post(
         tipoClient: req.body.tipoClient,
         password: bcrypt.hashSync(req.body.password, 8),
       });
+
+      console.log(req.body)
       const createdUser = await user.save();
       res.send({
         _id: createdUser._id,

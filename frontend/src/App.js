@@ -5,7 +5,6 @@ import { BrowserRouter, Route,  } from "react-router-dom";
 import { NavBar } from './components/NavBar';
 import { HomeScreen } from './Screens/HomeScreen';
 import { Footer } from './components/Footer';
-import { Nosotros } from './components/enlaces/Nosotros';
 import  DrawerMenu  from './components/DrawerMenu';
 import LoadingPageLogo from './components/LoadingPageLogo'
 import Whatsapp from './components/Whatsapp'
@@ -25,82 +24,30 @@ import AdminRoute from './components/AdminRoute';
 
 import Productos from './components/Productos';
 import ProductosTodos from './components/enlaces/Productos/ProductosTodos';
-import Marcas from './components/Marcas'
+import MarcasAll from './components/MarcasAll'
 
 // Category
-import Abrasivos from './components/enlaces/Categorias/Abrasivos'
-import AccesoriosDeHerramientas from './components/enlaces/Categorias/AccesoriosDeHerramientas'
-import Amarres from './components/enlaces/Categorias/Amarres'
-import Cerrajeria from './components/enlaces/Categorias/Cerrajeria'
-import Construccion from './components/enlaces/Categorias/Construccion'
-import Electricos from './components/enlaces/Categorias/Electricos'
-import Griferiayplomeria from './components/enlaces/Categorias/Griferiayplomeria'
-import Pegantesyadhesivos from './components/enlaces/Categorias/Pegantesyadhesivos'
-import Pinturas from './components/enlaces/Categorias/Pinturas'
-import Fijaciones from './components/enlaces/Categorias/Fijaciones';
+import Categorias from './components/enlaces/Categorias';
+
 
 // Brands
-import Abracol from './components/enlaces/Marcas/Abracol'
-import Ciles from './components/enlaces/Marcas/Ciles'
-import Grival from './components/enlaces/Marcas/Grival'
-import Nicholson from './components/enlaces/Marcas/Nicholson'
-import Rioplast from './components/enlaces/Marcas/Rioplast'
-import Sintesolda from './components/enlaces/Marcas/Sintesolda'
-import Goya from './components/enlaces/Marcas/Goya'
-import Osblack from './components/enlaces/Marcas/Osblack'
-import Dewalt from './components/enlaces/Marcas/Dewalt'
-import Codelca from './components/enlaces/Marcas/Codelca'
-import Uyustools from './components/enlaces/Marcas/Uyustools'
-import Security from './components/enlaces/Marcas/Security'
-import Argos from './components/enlaces/Marcas/Argos'
-import Mercury from './components/enlaces/Marcas/Mercury'
+import Marcas from './components/enlaces/Marcas'
 
+//screen
 import CartScreen from './Screens/CartScreen';
 import ProductScreen from './Screens/ProductScreen';
-import Contactenos from './components/enlaces/Contactenos';
-import ZonaClientes from './components/enlaces/ZonaClientes';
-import Registrarse from './components/enlaces/Registrarse';
-import LoginRegistro from './components/enlaces/LoginRegistro';
+import Contactenos from './Screens/Contactenos';
+import  Nosotros  from './Screens/Nosotros';
+import ZonaClientes from './Screens/ZonaClientes';
+import Registrarse from './Screens/Registrarse';
+import LoginRegistro from './Screens/LoginRegistro';
 import PaymentMethodScreen from './Screens/PaymentMethodScreen';
 import ShippingAddressScreen from './Screens/ShippingAddressScreen';
 import PlaceOrderScreen from './Screens/PlaceOrderScreen';
 import OrderScreen from './Screens/OrderScreen';
 import OrderHistoryScreen from './Screens/OrderHistoryScreen';
 import ProfileScreen from './Screens/ProfileScreen';
-import LijasYtelasRecubiertas from './components/enlaces/subCategorias/LijasYtelasRecubiertas';
-import DiscosAbrasivos from './components/enlaces/subCategorias/DiscosAbrasivos';
-import DiscosDeMetal from './components/enlaces/subCategorias/DiscosDeMetal';
-import AmarresPlasticos from './components/enlaces/subCategorias/AmarresPlasticos';
-import AmarresParaTejas from './components/enlaces/subCategorias/AmarresParaTejas';
-import Candados from './components/enlaces/subCategorias/Candados';
-import Cerraduras from './components/enlaces/subCategorias/Cerraduras';
-import Cerrojos from './components/enlaces/subCategorias/Cerrojos';
-import Cementos from './components/enlaces/subCategorias/Cementos';
-import EnchufesYclavijas from './components/enlaces/subCategorias/EnchufesYclavijas';
-import TomasEinterruptores from './components/enlaces/subCategorias/TomasEinterruptores';
-import Breakers from './components/enlaces/subCategorias/Breakers';
-import CajasYelectricos from './components/enlaces/subCategorias/CajasYelectricos';
-import Cintas from './components/enlaces/subCategorias/Cintas';
-import PlafonesYrosetas from './components/enlaces/subCategorias/PlafonesYrosetas';
-import PegantesParaConstruccion from './components/enlaces/subCategorias/PegantesPraraConstruccion';
-import SiliconasYselladores from './components/enlaces/subCategorias/SIliconasYselladores';
-import HerramientasParaPintar from './components/enlaces/subCategorias/HerramientasParaPintar';
-import Tornillos from './components/enlaces/subCategorias/Tornillos';
-import ChazosEnNylon from './components/enlaces/subCategorias/ChazosEnNylon';
-import ChazosMetalicos from './components/enlaces/subCategorias/ChazosMetalicos';
-import SolucionesParaBaños from './components/enlaces/subCategorias/SolucionesParaBaños';
-import SolucionesParaCocinas from './components/enlaces/subCategorias/SolucionesParaCocinas';
-import Duchas from './components/enlaces/subCategorias/Duchas';
-import JardinYexteriores from './components/enlaces/subCategorias/JardinYexteriores';
-import GriferiaLavamanos from './components/enlaces/subCategorias/GriferiaLavamanos';
-import SolucionesParaElHogar from './components/enlaces/subCategorias/SolucionesParaElHogar';
-import AlbanileriaYconstruccion from './components/enlaces/subCategorias/AlbanileriaYconstruccion';
-import LimasYescofinas from './components/enlaces/subCategorias/LimasYescofinas';
-import HerramientasDeAcabado from './components/enlaces/subCategorias/HerramientasDeAcabado';
-import PinzasYalicates from './components/enlaces/subCategorias/PinzasYalicates';
-import HerramientasManualesDeCorte from './components/enlaces/subCategorias/HerramientasManualesDeCorte';
-import HerramientasDeMedicion from './components/enlaces/subCategorias/HerramientasDeMedicion';
-import Destornilladores from './components/enlaces/subCategorias/Destornilladores';
+
 
 
 import ProductEditScreen from './Screens/ProductEditScreen';
@@ -108,33 +55,21 @@ import ProductListScreen from './Screens/ProductListScreen';
 import OrderListScreen from './Screens/OrderListScreen';
 import UserListScreen from './Screens/UserListScreen';
 import UserEditScreen from './Screens/UserEditScreen';
-import Luminex from './components/enlaces/Marcas/Luminex';
-import Crescent from './components/enlaces/Marcas/Crescent';
-import Multimarca from './components/enlaces/Marcas/Multimarca';
-import Egret from './components/enlaces/Marcas/Egret';
-import Induma from './components/enlaces/Marcas/Induma';
-import HerramientasManuales from './components/enlaces/Categorias/HerramientasManuales';
 import UserListRegisteredScreen from './Screens/UserListRegisteredScreen';
-import MensajeRegistrado from './components/enlaces/MensajeRegistrado';
-import LufkinCrescent from './components/enlaces/Marcas/LufkinCrescent';
 import DashboardScreen from './Screens/DashboardScreen';
-import DrawerRight, { handleCartSideClose } from './components/DrawerRight';
 import SearchScreen from './Screens/SearchScreen';
-import EnOferta from './components/enlaces/EnOferta/EnOferta';
-import compraExitosa from './components/correos/compraExitosa';
-import RecuperarContraseña from './components/enlaces/RecuperarContraseña';
+import RecuperarContraseña from './Screens/RecuperarContraseña';
+
+
+
 import ContrasenaOlvidada from './components/enlaces/ContrasenaOlvidada';
+import compraExitosa from './components/correos/compraExitosa';
+
+import MensajeRegistrado from './components/enlaces/MensajeRegistrado';
+import DrawerRight, { handleCartSideClose } from './components/DrawerRight';
+import EnOferta from './components/enlaces/EnOferta/index.js';
 
 
-
-export const useCategoria = () =>{
-  const [categorias,setCategorias]= React.useState("")
-
-const abrasivos = () =>{
-   setCategorias("abrasivos")
-}
-  return {categorias, abrasivos}
-}
 
 function App(props) {
 
@@ -263,6 +198,9 @@ function App(props) {
          <Route exact path="/" component={HomeScreen}/>
          <Route exact path="/nosotros" component={Nosotros}/>
          <Route exact path="/productos" component={Productos}/>
+         <Route exact path="/categorias/:categoria/:subcategoria?" component={Categorias}/>
+         <Route exact path="/marcas/:marca" component={Marcas}/>
+
          <Route exact path="/contactenos" component={Contactenos}/>
 
          <Route exact path="/signin" component={ZonaClientes}/>
@@ -322,92 +260,13 @@ function App(props) {
           ></AdminRoute>
 
 
-
-
-
-
-          {/* categorias */}
-         <Route exact path="/abrasivos" component={Abrasivos}/>
-         <Route exact path="/accesorios-para-herramientas" component={AccesoriosDeHerramientas}/>
-         <Route exact path="/amarres" component={Amarres}/>
-         <Route exact path="/cerrajeria" component={Cerrajeria}/>
-         <Route exact path="/construccion" component={Construccion}/>
-         <Route exact path="/electricos" component={Electricos}/>
-         <Route exact path="/fijaciones" component={Fijaciones}/>
-         <Route exact path="/griferia-y-plomeria" component={Griferiayplomeria}/>
-         <Route exact path="/pegantes-y-adhesivos" component={Pegantesyadhesivos}/>
-         <Route exact path="/pinturas" component={Pinturas}/>
-         <Route exact path="/herramientas-manuales" component={HerramientasManuales}/>
-
-
-          {/* subcategorias */}
-         <Route exact path="/Lijas-y-telas-recubiertas" component={LijasYtelasRecubiertas}/>
-         <Route exact path="/discos-abrasivos" component={DiscosAbrasivos}/>
-         <Route exact path="/discos-de-metal" component={DiscosDeMetal}/>
-         <Route exact path="/amarres-plasticos" component={AmarresPlasticos}/>
-         <Route exact path="/amarres-para-tejas" component={AmarresParaTejas}/>
-         <Route exact path="/candados" component={Candados}/>
-         <Route exact path="/cerraduras" component={Cerraduras}/>
-         <Route exact path="/cerrojos" component={Cerrojos}/>
-         <Route exact path="/cementos" component={Cementos}/>
-         <Route exact path="/enchufes-y-clavijas" component={EnchufesYclavijas}/>
-         <Route exact path="/tomas-e-interruptores" component={TomasEinterruptores}/>
-         <Route exact path="/breakers" component={Breakers}/>
-         <Route exact path="/cajas-y-electricos" component={CajasYelectricos}/>
-         <Route exact path="/cintas" component={Cintas}/>
-         <Route exact path="/plafones-y-rosetas" component={PlafonesYrosetas}/>
-         <Route exact path="/pegantes-para-construccion" component={PegantesParaConstruccion}/>
-         <Route exact path="/siliconas-y-selladores" component={SiliconasYselladores}/>
-         <Route exact path="/herramientas-para-pintar" component={HerramientasParaPintar}/>
-         <Route exact path="/tornillos" component={Tornillos}/>
-         <Route exact path="/chazos-en-nylon" component={ChazosEnNylon}/>
-         <Route exact path="/chazos-metalicos" component={ChazosMetalicos}/>
-         <Route exact path="/soluciones-para-baños" component={SolucionesParaBaños}/>
-         <Route exact path="/soluciones-para-cocinas" component={SolucionesParaCocinas}/>
-         <Route exact path="/duchas" component={Duchas}/>
-         <Route exact path="/jardin-y-exteriores" component={JardinYexteriores}/>
-         <Route exact path="/griferia-lavamanos" component={GriferiaLavamanos}/>
-         <Route exact path="/soluciones-para-el-hogar" component={SolucionesParaElHogar}/>
-         <Route exact path="/albanileria-y-construccion" component={AlbanileriaYconstruccion}/>
-         <Route exact path="/limas-y-escofinas" component={LimasYescofinas}/>
-         <Route exact path="/herramientas-de-acabado" component={HerramientasDeAcabado}/>
-         <Route exact path="/pinzas-y-alicates" component={PinzasYalicates}/>
-         <Route exact path="/herramientas-manuales-de-corte" component={HerramientasManualesDeCorte}/>
-         <Route exact path="/herramientas-de-medicion" component={HerramientasDeMedicion}/>
-         <Route exact path="/destornilladores" component={Destornilladores}/>
-
-
-         {/* marcas */}
-         <Route exact path="/marcas" component={Marcas}/>
-
-
-         <Route exact path="/ABRACOL" component={Abracol}/>
-         <Route exact path="/CILES" component={Ciles}/>
-         <Route exact path="/GRIVAL" component={Grival}/>
-         <Route exact path="/NICHOLSON" component={Nicholson}/>
-         <Route exact path="/RIOPLAST" component={Rioplast}/>
-         <Route exact path="/SINTESOLDA" component={Sintesolda}/>
-         <Route exact path="/GOYA" component={Goya}/>
-         <Route exact path="/OSBLACK" component={Osblack}/>
-         <Route exact path="/DEWALT" component={Dewalt}/>
-         <Route exact path="/CODELCA" component={Codelca}/>
-         <Route exact path="/UYUSTOOLS" component={Uyustools}/>
-         <Route exact path="/SECURITY" component={Security}/>
-         <Route exact path="/ARGOS" component={Argos}/>
-         <Route exact path="/LUMINEX" component={Luminex}/>
-         <Route exact path="/CRESCENT" component={Crescent}/>
-         <Route exact path="/MULTIMARCA" component={Multimarca}/>
-         <Route exact path="/EGRET" component={Egret}/>
-         <Route exact path="/INDUMA" component={Induma}/>
-         <Route exact path="/LUFKIN-CRESCENT" component={LufkinCrescent}/>
-         <Route exact path="/MERCURY" component={Mercury}/>
-
           {/* ProductosTodos */}
          <Route exact path="/all" component={ProductosTodos}/>
 
          {/* en oferta */}
          <Route exact path="/ofertas" component={EnOferta}/>
-
+          {/* Marcas */}
+         <Route exact path="/marcas" component={MarcasAll}/>
          
 
          <Route exact path="/compraExitosa" component={compraExitosa}/>

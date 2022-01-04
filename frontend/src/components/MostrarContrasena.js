@@ -1,6 +1,6 @@
 export   const mostrarContrasena = () =>{
     var input = document.getElementById("password");
-    if(input.type == "password"){
+    if(input.type === "password"){
         input.type = "text"
         setTimeout(() =>{
         input.type = "password"
@@ -14,7 +14,7 @@ export   const mostrarContrasena = () =>{
 
     export   const mostrarConfirmContrasena = () =>{
       var input = document.getElementById("confirmPassword");
-      if(input.type == "password"){
+      if(input.type === "password"){
           input.type = "text"
           setTimeout(() =>{
           input.type = "password"
