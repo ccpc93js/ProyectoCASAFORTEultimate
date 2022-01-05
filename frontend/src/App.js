@@ -68,6 +68,7 @@ import compraExitosa from './components/correos/compraExitosa';
 import MensajeRegistrado from './components/enlaces/MensajeRegistrado';
 import DrawerRight, { handleCartSideClose } from './components/DrawerRight';
 import EnOferta from './components/enlaces/EnOferta/index.js';
+import Subcategorias from './components/enlaces/Subcategorias/index';
 
 
 
@@ -198,7 +199,9 @@ function App(props) {
          <Route exact path="/" component={HomeScreen}/>
          <Route exact path="/nosotros" component={Nosotros}/>
          <Route exact path="/productos" component={Productos}/>
-         <Route exact path="/categorias/:categoria/:subcategoria?" component={Categorias}/>
+         <Route exact path="/categorias/:categoria/" component={Categorias}/>
+         <Route exact path="/subcategorias/:subcategoria" component={Subcategorias}/>
+
          <Route exact path="/marcas/:marca" component={Marcas}/>
 
          <Route exact path="/contactenos" component={Contactenos}/>

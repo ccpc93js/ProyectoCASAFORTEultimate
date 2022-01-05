@@ -1,13 +1,10 @@
 // import data from "./data.js"; 
 import { useEffect, useState } from 'react'
 import './ModalSearch.css'
-import LoadingBox from './LoadingBox'
-import MessageBox from './MessageBox'
-import axios from '../../node_modules/axios/index';
-import formatCurrency, { listProducts } from '../actions/productActions';
 import Fade from 'react-reveal/Fade';
 import { useDispatch, useSelector } from 'react-redux';
 import SearchProduct from './SearchProduct';
+import { listProducts } from '../actions/productActions';
 
 // import axios from 'axios'
 
@@ -40,6 +37,7 @@ function SearchBar() {
 
     if (!loading) {
 
+      // eslint-disable-next-line array-callback-return
       const searchProductos = productos.filter((val) => {
         if (searchTerm === "") {
           return ""
@@ -57,7 +55,6 @@ function SearchBar() {
           return val
         }
 
-        return val
       }
 
       )

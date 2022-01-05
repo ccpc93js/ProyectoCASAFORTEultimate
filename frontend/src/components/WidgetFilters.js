@@ -130,7 +130,7 @@ function WidgetFilters(props) {
                                                                             <svg className="filter-categories__arrow" >
                                                                                 <StarsIcon />
                                                                             </svg>
-                                                                            <a data-id="3" href={`/categorias/${x.categoria}/${x.nombre}`}>{x.nombre.replace(/-/g, " ")}</a>
+                                                                            <a data-id="3" href={`/subcategorias/${x.nombre}`}>{x.nombre.replace(/-/g, " ")}</a>
                                                                         </li>
                                                                     )
 
@@ -223,7 +223,7 @@ function WidgetFilters(props) {
                                                                             <svg className="filter-categories__arrow">
                                                                                 <StarsIcon />
                                                                             </svg>
-                                                                            <a href={`/categorias/${x.categoria}/${x.nombre}`}>{x.nombre.replace(/-/g, " ")}</a>
+                                                                            <a href={`/subcategorias/${x.nombre}`}>{x.nombre.replace(/-/g, " ")}</a>
                                                                         </li>
                                                                     )
 
@@ -288,7 +288,7 @@ function WidgetFilters(props) {
                                                                             <svg className="filter-categories__arrow">
                                                                                 <StarsIcon />
                                                                             </svg>
-                                                                            <a href={`/categorias/${x.categoria}/${x.nombre}`}>{x.nombre.replace(/-/g, " ")}</a>
+                                                                            <a href={`/subcategorias/${x.nombre}`}>{x.nombre.replace(/-/g, " ")}</a>
                                                                         </li>
                                                                     )
 

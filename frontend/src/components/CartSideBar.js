@@ -10,6 +10,8 @@ import { handleCartSideClose, handleCartSideOpen } from './DrawerRight'
 import Fade from 'react-reveal/Fade';
 import { $porcentajeEmpresa, $porcentajePersona } from './Productos';
 import Descuento from './Descuento';
+import CartItemSideBar from './CartItemSideBar';
+import PrecioClient from './PrecioClient';
 
 // import data from '../data.json'
 
@@ -21,18 +23,18 @@ export default function CartSideBar(props) {
     // const productId = props.match.params.id;
     // const qty = props.location.search? Number(props.location.search.split('=')[1]):1;
     const userSignin = useSelector((state) => state.userSignin);
-    const { userInfo} = userSignin;
+    const { userInfo } = userSignin;
 
-    const cart = useSelector(state =>state.cart);
-    const {cartItems} = cart;
+    const cart = useSelector(state => state.cart);
+    const { cartItems } = cart;
     const dispatch = useDispatch();
     const removeFromCartHandler = (id) => {
         dispatch(removeFromCart(id));
     };
 
-    const checkoutHandler = () =>{
+    const checkoutHandler = () => {
         props.history.push('/signin?redirec=shipping')
-    }  
+    }
 
 
     // useEffect(() =>{
@@ -43,207 +45,112 @@ export default function CartSideBar(props) {
     return (
         <div className="cartSideContainer">
             {/* <h1>Carrito</h1> */}
-            {cartItems.length === 0?
+            {cartItems.length === 0 ?
 
-               ( 
-               <div className="cartSide-empty">
-                   <div className="image-cart-empty ">
-                    <img className="imgnormalcart" src="/img/Icons/carrito.png" alt="shopping-cart-icon" />
-                   </div>
-                    <p className="cartSide-empty-p">No hay productos en el carrito.</p>
-			    	<div className="empty-cart-text">
-                        Antes de proceder al pago, debe agregar algunos productos a su carrito de compras.
-                     <br></br> 
-                        Encontrará muchos productos interesantes en nuestra tienda.
-                    </div>
-			        	<div className="cartSide-return-to-shop">
-                            {/* <Link to="#" > */}
-                            <button 
-                             onClick={handleCartSideClose}
-                             className="button return-to-shop"
-                             > 
-                             Continuar comprando
-                             </button>
-                             {/* </Link> */}
+                (
+                    <div className="cartSide-empty">
+                        <div className="image-cart-empty ">
+                            <img className="imgnormalcart" src="/img/Icons/carrito.png" alt="shopping-cart-icon" />
                         </div>
-                </div>
-            //     <MessageBox>
-            //     </MessageBox>
-               )
+                        <p className="cartSide-empty-p">No hay productos en el carrito.</p>
+                        <div className="empty-cart-text">
+                            Antes de proceder al pago, debe agregar algunos productos a su carrito de compras.
+                            <br></br>
+                            Encontrará muchos productos interesantes en nuestra tienda.
+                        </div>
+                        <div className="cartSide-return-to-shop">
+                            {/* <Link to="#" > */}
+                            <button
+                                onClick={handleCartSideClose}
+                                className="button return-to-shop"
+                            >
+                                Continuar comprando
+                            </button>
+                            {/* </Link> */}
+                        </div>
+                    </div>
+                    //     <MessageBox>
+                    //     </MessageBox>
+                )
                 :
                 (
                     <div>
-                    <div className="rowCart-container top">
+                        <div className="rowCart-container top">
 
-                    <div className="col-2Cart">
+                            <div className="col-2Cart">
 
-                        <Fade right cascade>
-                    <ul>
+                                <Fade right cascade>
+                                    <ul>
 
-                        {
-                            cartItems.map(item =>
-                                <li key={item.producto} className="rowCart ">
-                                    {
-                                         (item.enOferta === true)?
-                                        ( 
-                                            < Descuento producto={item}/>
+                                        {
+                                            cartItems.map(item =>
+                                                <CartItemSideBar
+                                                    key={item.producto}
+                                                    item={item}
+                                                    userInfo={userInfo}
+                                                    removeFromCartHandler={removeFromCartHandler}
+                                                />
+                                            )
 
-                                         )
-                                         :
-                                         (
-                                             ""  
-                                         )
-                                    }                                        
-                                    <div className="cartSide-img">
-                                    <img src={item.imagen} alt="producto" className="small-cart"/>
-                                    </div>
+                                        }
+                                    </ul>
+                                </Fade>
 
-                                    <div className="cartSide-info">
+                            </div>
+                        </div>
 
-                                    
-                                    <div className="cartSide-descripcion-link">
-                                        <Link to={`/producto/${item.producto}/${item.info.replace(/ /g,"-")}`} >
-                                       {item.info}
-                                     </Link>
-                    
-                                    </div>
-                                    <div className="cartSide-price">
-                                    <p>
+                        <div className="col-1Cart ">
+                            <div className="cardCart card-bodyCart ">
+                                <ul>
+                                    <li className="subtotal">
+                                        <h2 >
+                                            <b>
+                                                Subtotal: {
+                                                    cartItems.reduce((a, c) => a + c.qty, 0)} articulos: {
 
-                                    {
-                                        
-                                        userInfo?
+                                                    userInfo ?
 
-                                        (item.enOferta === false)?(
-                                        
-                                            <span>
-                                            <b> Precio:  </b>
-                                              {formatCurrency(userInfo.tipoClient === "Empresa"? item.precio + (item.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? item.precio + (item.precio * $porcentajePersona): item.precio )}
-                                            </span>
-                                        ):(
-                                          <div className="producto-en-oferta_precio">
-                                            <b> Precio:  </b>
+                                                        formatCurrency(cartItems.reduce((a, c) => a + (PrecioClient(c.precio, userInfo.tipoClient) - (PrecioClient(c.precio, userInfo.tipoClient) * (c.descuento / 100) || 0)) * c.qty, 0))
+                                                        :
 
-                                           <p className="p1"> {formatCurrency(userInfo.tipoClient === "Empresa"? item.precio + (item.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? item.precio + (item.precio * $porcentajePersona): item.precio )}</p>
-                                            {/* <br></br> */}
-                                            <b> oferta:  </b>
-                                        
-                                            <p className="p2"> {formatCurrency(userInfo.tipoClient === "Empresa"? item.precioDeOferta + (item.precioDeOferta * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? item.precioDeOferta + (item.precioDeOferta * $porcentajePersona): item.precioDeOferta )}</p>
-                                        
-                                          </div>
+                                                        formatCurrency(cartItems.reduce((a, c) => a + (c.precio + (c.precio * $porcentajePersona) - (c.precio + (c.precio * $porcentajePersona) * (c.descuento / 100) || 0)) * c.qty, 0))
+                                                }
+                                            </b>
+                                        </h2>
+                                    </li>
+                                    <li>
+                                        <Link to="/cart">
+                                            <div className="cartSide-button-center">
+                                                <button
+                                                    type="button"
+                                                    className=" button "
+                                                    disabled={cartItems.length === 0}
+                                                    onClick={handleCartSideClose}
+                                                >
+                                                    VER CARRITO
+                                                </button>
 
-                                        )
+                                            </div>
+                                        </Link>
 
-                                        : (
-                                            (item.enOferta ===false)?(
-                                              <p>{formatCurrency(item.precio + (item.precio * $porcentajePersona))}</p>
-                                            ):(
-                                              <div className="producto-en-oferta_precio">
-                                               <p className="p1"> {formatCurrency( item.precio + (item.precio * $porcentajePersona))}</p>
-                                                {/* <br></br> */}
-                                                <p className="p2"> {formatCurrency(item.precioDeOferta + (item.precioDeOferta * $porcentajePersona))}</p>
-                            
-                                              </div>
-                                              
-                                              )
-                                          )
-                                    }  
-                                    </p>
-                                    </div>
-
-                                    <div className="cartSide-actions">
-
-                                    <div className="cartSide-cantidad">
-                                    <p><b> Cantidad:  </b>
-                                    <select value={item.qty} onChange={(e) => dispatch(addToCart(item.producto, Number(e.target.value)))}>
-                                        {[...Array(item.enStock).keys()].map(x =>
-                                            <option key={x + 1} value={x + 1}>{x + 1}</option>
-                                            )}
-                                        </select>
-                                        </p>  
-                                    </div>
-                                    
-                                    <div className="cartSide-button-remove" aria-label="remover">
-                                    <IconButton  className="" onClick={() => removeFromCartHandler(item.producto)} >
-                                    <DeleteForeverIcon className="cartSide-button-remove"/>
-
-                                    </IconButton>
-
-                                    </div>
-                                    </div>
-                                    </div>
-
-        
-                                </li>)
-                  
-                        }
-                    </ul>
-                        </Fade>
-
-            </div>
-            </div>
-        
-            <div className="col-1Cart ">
-                <div className="cardCart card-bodyCart ">
-                    <ul>
-                        <li className="subtotal">
-                            <h2 >
-                            <b> 
-                                Subtotal: {
-                                   cartItems.reduce((a,c) => a + c.qty, 0)} articulos: {
-
-                                    userInfo?
-                                
-                                        formatCurrency(cartItems.reduce((a,c)=> a + (userInfo.tipoClient === "Empresa"
-                                        ? c.precio + (c.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"
-                                        ? c.precio + (c.precio * $porcentajePersona): c.precio  - (userInfo.tipoClient === "Empresa"
-                                        ? c.precio + (c.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"
-                                        ? c.precio + (c.precio * $porcentajePersona): c.precio  * (c.descuento/100)||0)) * c.qty, 0))
-                                        
-                                    :
-
-                                        formatCurrency(cartItems.reduce((a,c)=> a + (c.precio + (c.precio * $porcentajePersona) - (c.precio + (c.precio * $porcentajePersona) *(c.descuento/100)||0))* c.qty, 0))
-
-                                
-                                }
-                            </b> 
-                            </h2>
-                        </li>
-                        <li>
-                        <a href="/cart" >
-                        <div className="cartSide-button-center">
-                        <Link to="/cart">
-                       <button 
-                        type="button"
-                        className=" button "  
-                        disabled ={cartItems.length === 0}
-                        onClick={handleCartSideClose}
-                        >
-                               VER CARRITO
-                        </button>
-                        
-                        </Link>
-                       </div>
-
-                        </a>
-                       {/* <div className="cartSide-button-center">
+                                        {/* <div className="cartSide-button-center">
                        <button type="button" onClick={checkoutHandler} className=" button "  disabled ={cartItems.length === 0}>
                                 IR A PAGAR
                             </button>
                        </div> */}
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-            </div>
+                    </div>
                 )
             }
-        
-        
+
+
         </div>
-        
-          )
+
+    )
 }
 
 

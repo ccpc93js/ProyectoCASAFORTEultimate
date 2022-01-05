@@ -331,7 +331,7 @@ const Prev = () =>{
 
             {
                 productFiltradoXcategoria.map((x)=>(
-        <Fade bottom cascade={true}>
+        <Fade key={x._id} bottom cascade={true}>
 
                     <ul className="continerPR__productos-relacionados slider-section-PR" >
                     

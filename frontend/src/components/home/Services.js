@@ -39,7 +39,7 @@ const Services = () => {
                 {
                     servicesData.map((service) => (
 
-                        <div className="frase">
+                        <div key={service.titulo} className="frase">
 
                             {service.icon}
 

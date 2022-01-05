@@ -66,8 +66,8 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
                     </div>
                 </div>
                 <div
-                    className="hi-next" i
-                    d="arrow-next"
+                    className="hi-next" 
+                    id="arrow-next"
                     onClick={Next}
 
                 >

@@ -1,6 +1,6 @@
 import { $porcentajeEmpresa, $porcentajePersona } from './Productos'
 
-export default function PrecioClient({ precio, tipoClient }) {
+export default function PrecioClient( precio, tipoClient ) {
     switch (tipoClient) {
         case "Empresa":
             return precio + (precio * $porcentajeEmpresa)
