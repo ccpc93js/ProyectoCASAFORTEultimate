@@ -10,7 +10,7 @@ const Category = () => {
 
                     <div className="capar">
                         <h3>Abrasivos</h3>
-                        <a href="/abrasivos">VER PRODUCTOS</a>
+                        <a href="/categorias/abrasivos">VER PRODUCTOS</a>
 
                     </div>
 
@@ -20,7 +20,7 @@ const Category = () => {
                     <img src="https://res.cloudinary.com/casaforte/image/upload/v1622647557/Icon/ht_medium_fh3bhp.png" alt="elec" />
                     <div className="capar">
                         <h3>El&eacute;ctricos</h3>
-                        <a href="/electricos">VER PRODUCTOS</a>
+                        <a href="/categorias/electricos">VER PRODUCTOS</a>
 
                     </div>
                 </figure>
@@ -29,7 +29,7 @@ const Category = () => {
                     <img src="https://res.cloudinary.com/casaforte/image/upload/v1622647552/Icon/negro_nuevo_blanco1_ojoxne.jpg" alt="grife" />
                     <div className="capar">
                         <h3>Grifer&iacute;a</h3>
-                        <a href="/griferia-y-plomeria">VER PRODUCTOS</a>
+                        <a href="/categorias/griferia-y-plomeria">VER PRODUCTOS</a>
 
                     </div>
                 </figure>

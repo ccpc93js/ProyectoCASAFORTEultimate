@@ -61,6 +61,9 @@ const useStyles = makeStyles((theme)=>({
 
 
  const DrawerFilter = (props) => {
+   const {productos, categorias, subcategorias, marcas, nuevos} = props
+   console.log(props.categorias)
+
   const classes = useStyles();
   const theme = useTheme();
  
@@ -87,7 +90,13 @@ const useStyles = makeStyles((theme)=>({
         </div>
        
         <h2 className="titulo-filter">Filtros</h2>
-        <ListasFilter/>
+        <ListasFilter 
+                productos={productos}
+                categorias={categorias}
+                subcategorias={subcategorias}
+                marcas={marcas}
+                nuevos={nuevos}
+        />
          
        
        

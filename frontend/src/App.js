@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { BrowserRouter, Route,  } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import { NavBar } from './components/NavBar';
 import { HomeScreen } from './Screens/HomeScreen';
@@ -69,6 +69,7 @@ import MensajeRegistrado from './components/enlaces/MensajeRegistrado';
 import DrawerRight, { handleCartSideClose } from './components/DrawerRight';
 import EnOferta from './components/enlaces/EnOferta/index.js';
 import Subcategorias from './components/enlaces/Subcategorias/index';
+import ErrorScreen from './Screens/ErrorScreen';
 
 
 
@@ -172,7 +173,6 @@ function App(props) {
       <Whatsapp/>
   
         <header  >
-          {/* <NavBar2></NavBar2> */}
           <NavBar  handleDrawerOpen={handleDrawerOpen}/>
           <DrawerMenu handleDrawerClose={handleDrawerClose} open={open}  onClose={accionOpen}></DrawerMenu>
           <DrawerRight  handleCartSideClose={handleCartSideClose}  />
@@ -181,6 +181,7 @@ function App(props) {
         <Toolbar id="back-to-top-anchor" />
 
         <main >
+        <Switch>
           <Route
             path="/search/:productSearched?"
             component={SearchScreen}
@@ -262,7 +263,6 @@ function App(props) {
             component={DashboardScreen}
           ></AdminRoute>
 
-
           {/* ProductosTodos */}
          <Route exact path="/all" component={ProductosTodos}/>
 
@@ -271,15 +271,11 @@ function App(props) {
           {/* Marcas */}
          <Route exact path="/marcas" component={MarcasAll}/>
          
-
          <Route exact path="/compraExitosa" component={compraExitosa}/>
          
+         <Route path="/:rest*" component={ErrorScreen}></Route>
 
-
-
-
-
-     
+         </Switch>
 
         </main>
         <footer className="footer">

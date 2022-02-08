@@ -7,6 +7,7 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import StarsIcon from '@material-ui/icons/Stars';
 
 function WidgetFilters(props) {
+    console.log(props.categorias)
     // const [dataCategorias, setDataCategorias]=useState([]);
     // const [dataSubcategorias, setDataSubcategorias]=useState([]);
     // const [dataMarcas, setDataMarcas]=useState([]);

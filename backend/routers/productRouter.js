@@ -50,9 +50,8 @@ productRouter.get(
   '/:id',
   expressAsyncHandler(async (req, res) => {
     const producto = await Producto.findById(req.params.id);
-    if (Producto) {
+    if (producto) {
       res.send(producto);
-
     } else {
       res.status(404).send({ message: 'Producto no encontrado' });
     }
@@ -138,12 +137,12 @@ productRouter.get('/marcas/seed', expressAsyncHandler(async (req, res) => {
 
 productRouter.post(
   '/',
-  isAuth,
-  isAdmin,
+  // isAuth,
+  // isAdmin,
   expressAsyncHandler(async (req, res) => {
     const producto = new Producto({
       codigo: 'codigo',
-      info: 'ejemplo descripcion ',
+      info: 'ejemplo descripcion',
       imagen: '/img/img1.jpg',
       precio: 0,
       categoria: 'ejemplo categoria',
@@ -187,8 +186,8 @@ productRouter.put(
 
 productRouter.delete(
   '/:id',
-  isAuth,
-  isAdmin,
+  // isAuth,
+  // isAdmin,
   expressAsyncHandler(async (req, res) => {
     const producto = await Producto.findById(req.params.id);
     if (producto) {

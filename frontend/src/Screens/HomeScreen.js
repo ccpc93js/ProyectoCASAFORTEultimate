@@ -1,4 +1,6 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
+
 import './HomeScreen.css'
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import  SliderBanner  from '../components/home/SliderBanner';
@@ -13,6 +15,15 @@ export const HomeScreen = () => {
     const fontSizeIcons = 50
 
     return (
+        <>
+        {
+            <Helmet>
+                <title> Casa Forte | P&aacute;gina principal </title>
+                <meta name="description" content='Pagina Principal'/>
+                <meta name="rating" content="General"/>
+            </Helmet>
+        }
+
         <div className="HomeScreen-container">
 
             {/* Slider public */}
@@ -61,6 +72,8 @@ export const HomeScreen = () => {
             {/* Services */}
             <Services/>
         </div>
+        </>
+
     )
 }
 

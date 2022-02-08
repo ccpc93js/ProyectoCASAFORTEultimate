@@ -1,74 +1,129 @@
-import React from 'react'
-import formatCurrency from '../actions/productActions';
-import LoadingBox from './LoadingBox';
-import { $porcentajeEmpresa, $porcentajePersona } from './Productos';
+import React, { useEffect } from 'react';
 
-export default function ProductosRelacionados({ producto, userInfo, loadingP }) {
+import {useDispatch, useSelector} from 'react-redux';
+
+import { listProducts } from '../actions/productActions';
+
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import Spinner from '../components/Spinner/index';
+import Fade from 'react-reveal/Fade';
+
+import ProductoRelacionado from './ProductoRelacionado';
+
+
+export default function ProductosRelacionados({producto,userInfo}) {
+
+    const productList = useSelector((state) => state.productList)
+    const { loading:loadingP, error:errorP, productos } = productList;
+    
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(listProducts([]));
+      }, [dispatch])
+
+
+      const productFiltradoXcategoria = () =>{
+   
+        if(!loadingP) {
+             if(errorP){
+                 console.log("error al cargar los productos")
+             }
+              const productosFilter =  productos.filter(x=>{
+                if(producto)
+                return (x.categoria === producto.categoria)
+                
+                return productos
+             })
+             
+             return productosFilter
+         }
+        }
+
+    const Next = () =>{
+        const sliderMarcas = document.getElementById("sliderPR");
+        let sliderSectionFirst = document.querySelectorAll(".slider-section-PR")[0];
+        sliderMarcas.style.marginLeft = "-620.56px";
+        sliderMarcas.style.transition = "all 0.5s ease"
+        setTimeout(()=>{
+            sliderMarcas.style.transition = "none";
+            sliderMarcas.insertAdjacentElement("beforeend", sliderSectionFirst)
+            sliderMarcas.style.marginLeft = "-259.78px";
+        },500);
+    
+    
+    }
+    
+    const Prev = () =>{
+        const sliderMarcas = document.getElementById("sliderPR");
+        let sliderSection = document.querySelectorAll(".slider-section-PR");
+        let sliderSectionLast = sliderSection[sliderSection.length - 1];
+        sliderMarcas.style.marginLeft = "0";
+        sliderMarcas.style.transition = "all 0.5s ease"
+        setTimeout(()=>{
+            sliderMarcas.style.transition = "none";
+            sliderMarcas.insertAdjacentElement("afterbegin", sliderSectionLast)
+            sliderMarcas.style.marginLeft = "-259.78px";
+        },500);
+    
+    
+    }
     return (
+        <div className="continerPR">
 
-            <li className="">
-
-                {
-                    loadingP ? (
-                        <LoadingBox />
-                    ) : (
-                        <>
-                            {
-                                (producto.enOferta === true) ?
-                                    (
-                                        <div className="producto-en-oferta">
-                                            <p className="porcentaje">{producto.descuento}%</p>
-                                            <p className="DCTO">DCTO</p>
-                                        </div>
-                                    )
-                                    :
-                                    (
-                                        ""
-                                    )
-                            }
-                            <a href={`/producto/${producto._id}/${producto.info.replace(/ /g, "-")}`}>
-                                <div className="continerPR__productos-relacionados__img">
-                                    <img src={producto.imagen} alt={producto.info} />
-                                </div>
-                                <div className="continerPR__details">
-                                    <p className="continerPR__details__description__info">{producto.info}</p>
-                                    {
-                                        userInfo ?
-
-                                            (producto.enOferta === false) ? (
-                                                <p>{formatCurrency(userInfo.tipoClient === "Empresa" ? producto.precio + (producto.precio * $porcentajeEmpresa) : userInfo.tipoClient === "Persona" ? producto.precio + (producto.precio * $porcentajePersona) : producto.precio)}</p>
-                                            ) : (
-                                                <div className="producto-en-oferta_precio">
-                                                    <p className="p1"> {formatCurrency(userInfo.tipoClient === "Empresa" ? producto.precio + (producto.precio * $porcentajeEmpresa) : userInfo.tipoClient === "Persona" ? producto.precio + (producto.precio * $porcentajePersona) : producto.precio)}</p>
-                                                    {/* <br></br> */}
-                                                    <p className="p2"> {formatCurrency(userInfo.tipoClient === "Empresa" ? producto.precio + (producto.precio * $porcentajeEmpresa) : userInfo.tipoClient === "Persona" ? producto.precioDeOferta + (producto.precioDeOferta * $porcentajePersona) : producto.precioDeOferta)}</p>
-
-                                                </div>
-
-                                            )
-                                            : (
-                                                (producto.enOferta === false) ? (
-                                                    <p>{formatCurrency(producto.precio + (producto.precio * $porcentajePersona))}</p>
-                                                ) : (
-                                                    <div className="producto-en-oferta_precio">
-                                                        <p className="p1"> {formatCurrency(producto.precio + (producto.precio * $porcentajePersona))}</p>
-                                                        {/* <br></br> */}
-                                                        <p className="p2"> {formatCurrency(producto.precioDeOferta + (producto.precioDeOferta * $porcentajePersona))}</p>
-
-                                                    </div>
-
-                                                )
-                                            )
-                                    }
-
-                                </div>
-
-                            </a>
-                        </>
-                    )}
-
-            </li>
-
-
+        <h2 className="continerPR__title"><div className="continerPR__title__divider"></div> Productos relacionados <div className="continerPR__title__divider"></div></h2>
+   <div className="continerPR__carousel">
+   
+   {
+   
+       loadingP ? (
+            <Spinner />
+           ) : (
+           
+   <div className="continerPR__centralPR" id="sliderPR">  
+           <div 
+           className="hi-prev-PR" 
+           id="arrow-prev"
+           onClick={Prev}
+           >
+               <i>
+                <ChevronLeftIcon/>
+               </i> 
+               
+           </div>
+               {
+                   productFiltradoXcategoria().map((x)=>(
+           <Fade key={x._id} bottom cascade={true}>
+                       <ul className="continerPR__productos-relacionados slider-section-PR" >               
+                           {                                       
+                               <ProductoRelacionado producto={x} userInfo={userInfo}/>    
+                           }
+                       </ul>
+           </Fade>      
+                       )
+                   )
+               }
+           <div 
+             className="hi-next-PR"          
+             id="arrow-next"
+             onClick={Next}
+             
+             >
+               <i>
+   
+               <ChevronRightIcon/>
+               </i>
+           </div>
+           
+   
+   
+   </div>
+           )
+   }
+   </div> 
+   
+   
+   </div>
     )
 }

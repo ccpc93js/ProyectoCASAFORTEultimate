@@ -1,5 +1,7 @@
 import React, { useEffect, useState, Fragment } from 'react'
 import Filtrador from './Filtrador'
+import { Helmet } from 'react-helmet'
+
 import './Productos.css'
 import WidgetFilters from './WidgetFilters'
 import data from './data.js'
@@ -22,18 +24,29 @@ export const $porcentajeEmpresa = 0.30
 export const $porcentajePersona = 0.40
 
 export default function Productos(props) {
-  const {categoria,subcategoria, marca} = props
-  console.log(categoria,subcategoria, marca)
+  const { categoria, subcategoria, marca } = props
+  console.log(categoria, subcategoria, marca)
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
-  const [productosF, setProductosF] = useState([]);
-
-  const dispatch = useDispatch()
-
 
   const productList = useSelector((state) => state.productList)
   const { loading, error, productos } = productList;
-  console.log(productos)
+
+
+
+  const [productosF, setProductosF] = useState([]);
+
+  const title = categoria || subcategoria || marca ? categoria || subcategoria || marca : ''
+
+
+  if (loading) {
+  <Helmet>
+    <title>Cargando...</title>
+  </Helmet>
+   }
+  
+  const dispatch = useDispatch()
+
 
 
   const [openFilter, setOpenFilter] = React.useState(false);
@@ -134,8 +147,27 @@ export default function Productos(props) {
 
 
   return (
+    <>
+
+    {
+      !loading ? 
+      <Helmet>
+          <title>{title.replace(/-/g, " ")} </title>
+          <meta name="description" content={title}/>
+          <meta name="rating" content="General"/>
+      </Helmet>
+      :''
+  }
     <div className="productos-container">
-      <DrawerFilter handleDrawerClose={handleDrawerCloseFilter} open={openFilter} onClose={accionOpenFilter}></DrawerFilter>
+      <DrawerFilter
+        handleDrawerClose={handleDrawerCloseFilter}
+        open={openFilter} onClose={accionOpenFilter}
+        productos={productos}
+        categorias={categoria}
+        subcategorias={subcategoria}
+        marcas={marca}
+        nuevos={props.all}
+      />
 
       <div className="page-header">
         <div className="page-header__container container">
@@ -151,7 +183,7 @@ export default function Productos(props) {
                 <li className="breadcrumb-item">
                   {
 
-                    <a href={`${categoria? "/categorias": subcategoria? "/subcategorias":marca? "/marcas":""}/${categoria ? categoria : subcategoria ? subcategoria : marca ? marca : props.all ? props.all : "ofertas"}`}>{categoria ? categoria.replace(/-/g, " ") : subcategoria ? subcategoria.replace(/-/g, " ") : marca ? marca.replace(/-/g, " ") : props.all ? "todos" : "ofertas"}</a>
+                    <a href={`${categoria ? "/categorias" : subcategoria ? "/subcategorias" : marca ? "/marcas" : ""}/${categoria ? categoria : subcategoria ? subcategoria : marca ? marca : props.all ? props.all : "ofertas"}`}>{categoria ? categoria.replace(/-/g, " ") : subcategoria ? subcategoria.replace(/-/g, " ") : marca ? marca.replace(/-/g, " ") : props.all ? "todos" : "ofertas"}</a>
                   }
                   <svg className="breadcrumb-arrow">
                     <ArrowBackIosIcon />
@@ -165,7 +197,7 @@ export default function Productos(props) {
       <div className="shop-layout">
 
         <div className="shop-layout__sidebar">
-          {(props.marcas) ? (
+          {(marca) ? (
             <div className="sidebar_brand shadow-box-productos">
               {/* eslint-disable-next-line jsx-a11y/alt-text */}
               <img src={marcas.img} />
@@ -175,10 +207,10 @@ export default function Productos(props) {
 
             <WidgetFilters
               productos={productos}
-              categorias={props.categorias}
-              subcategorias={props.subcategorias}
-              marcas={props.marcas}
-              nuevos={props.nuevos}
+              categorias={categoria}
+              subcategorias={subcategoria}
+              marcas={marca}
+              nuevos={props.all}
 
             />
 
@@ -210,8 +242,8 @@ export default function Productos(props) {
                       {
                         productosF.slice(pagesVisited, pagesVisited + productsPerPage).map(producto => (
                           <Producto
-                          key={producto._id}
-                          producto={producto}
+                            key={producto._id}
+                            producto={producto}
                             handleAddCart={handleAddCart}
                             handleCartSideOpen={handleCartSideOpen}
                             userInfo={userInfo}
@@ -248,6 +280,7 @@ export default function Productos(props) {
       </div>
     </div>
 
+    </>
 
   )
 }

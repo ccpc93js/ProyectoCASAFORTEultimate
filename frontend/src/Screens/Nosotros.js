@@ -1,7 +1,21 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 export default function Nosotros(){
+
+  const title = "Nosotros"
+  
     return (
+      
+      <>
+
+      {
+          <Helmet>
+              <title>{title}</title>
+              <meta name="description" content={title} />
+              <meta name="rating" content="General" />
+          </Helmet>
+      }
         <div>
               <div className="nosotros">
             <img src="../enlaces/img/contacto.png" alt=""/>
@@ -19,5 +33,7 @@ export default function Nosotros(){
                 <br/>    
 
         </div>
+      </>
+
     )
 }

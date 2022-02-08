@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import axios from 'axios';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import { Helmet } from 'react-helmet'
 
 class Contactenos extends Component {
     nombre = React.createRef();
@@ -62,7 +63,19 @@ class Contactenos extends Component {
     
 
     render() {
+    const title = "Error 404"
+
     return (
+
+        <>
+
+        {
+            <Helmet>
+                <title>{title}</title>
+                <meta name="description" content={title} />
+                <meta name="rating" content="General" />
+            </Helmet>
+        }
         <div>
             <div className="contacto">
                 <img src="../enlaces/img/clientes.png" alt=""/>
@@ -171,6 +184,8 @@ class Contactenos extends Component {
 
             </div>
         </div>
+        </>
+
     )
 }
 }

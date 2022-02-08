@@ -9,6 +9,7 @@ import Fade from 'react-reveal/Fade';
 import { $porcentajeEmpresa, $porcentajePersona } from '../components/Productos';
 import PrecioClient from '../components/PrecioClient';
 import CartItem from './CartItem';
+import { Helmet } from 'react-helmet'
 
 
 // import data from '../data.json'
@@ -17,6 +18,8 @@ import CartItem from './CartItem';
 
 export default function CartScreen(props) {
     // const producto = data.productos.find((x)=>x._id === props.match.params.id)
+    const title = "Cart"
+
 
     const userSignin = useSelector((state) => state.userSignin);
     const { userInfo } = userSignin;
@@ -39,6 +42,16 @@ export default function CartScreen(props) {
         }
     }, [dispatch, productId, qty]);
     return (
+
+        <>
+
+        {
+            <Helmet>
+                <title>{`${title} total: ${cartItems.length}`}</title>
+                <meta name="description" content={title} />
+                <meta name="rating" content="General" />
+            </Helmet>
+        }
         <div className="cartContainer">
             {/* <h1>Carrito</h1> */}
             {cartItems.length === 0 ?
@@ -122,6 +135,8 @@ export default function CartScreen(props) {
 
 
         </div>
+        </>
+
 
     )
 }

@@ -76,37 +76,44 @@ userRouter.put(
 userRouter.post(
     '/register',
     expressAsyncHandler(async (req, res) => {
-      const user = new User({
-        name: req.body.name,
-        nit: req.body.nit,
-        email: req.body.email,
-        tDocument: req.body.tDocument,
-        department: req.body.department,
-        city: req.body.city,
-        adress: req.body.adress,
-        tel: req.body.tel,
-        cel: req.body.cel,
-        tipoClient: req.body.tipoClient,
-        password: bcrypt.hashSync(req.body.password, 8),
-      });
+      try {
+        const user = new User({
+          name: req.body.name,
+          nit: req.body.nit,
+          email: req.body.email,
+          tDocument: req.body.tDocument,
+          department: req.body.department,
+          city: req.body.city,
+          adress: req.body.adress,
+          tel: req.body.tel,
+          cel: req.body.cel,
+          tipoClient: req.body.tipoClient,
+          password: bcrypt.hashSync(req.body.password, 8),
+        });
+  
+        console.log(req.body)
+        const createdUser = await user.save();
+        res.send({
+          _id: createdUser._id,
+          name: createdUser.name,
+          nit: createdUser.nit,
+          email: createdUser.email,
+          tDocument: createdUser.tDocument,
+          department: createdUser.department,
+          city: createdUser.city,
+          adress: createdUser.adress,
+          tel: createdUser.tel,
+          cel: createdUser.cel,
+          tipoClient: createdUser.tipoClient,
+          isAdmin: createdUser.isAdmin,
+          token: generateToken(createdUser),
+        });
 
-      console.log(req.body)
-      const createdUser = await user.save();
-      res.send({
-        _id: createdUser._id,
-        name: createdUser.name,
-        nit: createdUser.nit,
-        email: createdUser.email,
-        tDocument: createdUser.tDocument,
-        department: createdUser.department,
-        city: createdUser.city,
-        adress: createdUser.adress,
-        tel: createdUser.tel,
-        cel: createdUser.cel,
-        tipoClient: createdUser.tipoClient,
-        isAdmin: createdUser.isAdmin,
-        token: generateToken(createdUser),
-      });
+        // res.status(500).send({msg:"El ususario ya existe"})
+
+      } catch (error) {
+          res.status(400).send({msg:error})
+      }
     })
   );
 
@@ -166,8 +173,8 @@ userRouter.post(
 
   userRouter.get(
     '/',
-    isAuth,
-    isAdmin,
+    // isAuth,
+    // isAdmin,
     expressAsyncHandler(async (req, res) => {
       const users = await User.find({});
       res.send(users);
@@ -206,8 +213,8 @@ userRouter.post(
 
   userRouter.post(
     '/',
-    isAuth,
-    isAdmin,
+    // isAuth,
+    // isAdmin,
     expressAsyncHandler(async (req, res) => {
       const user = new User({
         name: 'nombre',
@@ -249,29 +256,5 @@ userRouter.post(
     })
   );
   
-  // userRouter.put(
-  //   '/profileAdmin',
-  //   isAuth,
-  //   expressAsyncHandler(async (req, res) => {
-  //     const user = await User.findById(req.user._id);
-  //     if (user) {
-  //       user.name = req.body.name || user.name;
-  //       user.email = req.body.email || user.email;
-
-  //       if (req.body.password) {
-  //         user.password = bcrypt.hashSync(req.body.password, 8);
-  //       }
-  //       const updatedUser = await user.save();
-  //       res.send({
-  //         _id: updatedUser._id,
-  //         name: updatedUser.name,
-  //         // nit: updatedUser.nit,
-  //         email: updatedUser.email,
-  //         isAdmin: updatedUser.isAdmin,
-  //         token: generateToken(updatedUser),
-  //       });
-  //     }
-  //   })
-  // );
-
+  
 export default userRouter;

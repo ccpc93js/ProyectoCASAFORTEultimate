@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet'
+
 import './ProductScreen.css'
-// import data from '../component/data.js'
-import axios from 'axios'
-// import {Link} from 'react-router-dom';
 import {useDispatch, useSelector} from 'react-redux';
-// import LoadingPageLogo from '../component/LoadingPageLogo';
 import LoadingBox from '../components/LoadingBox';
-// import loadingPage from '../component/LoadingPage';
 import MessageBox from '../components/MessageBox';
 import formatCurrency, {  detailsProduct } from '../actions/productActions';
 // import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
@@ -14,22 +11,16 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+
 import { $porcentajeEmpresa, $porcentajePersona } from '../components/Productos';
 import ProductosRelacionados from '../components/ProductosRelacionados';
-import Spinner from '../components/Spinner/index';
-import Fade from 'react-reveal/Fade';
+import PrecioClient from '../components/PrecioClient';
+
 
 // import YouTubeIcon from '@material-ui/icons/YouTube';
 
 
-
-
-
-
 function ProductScreen(props) {
-    // const producto = data.productos.find((x)=>x._id === props.match.params.id)
 
     const dispatch = useDispatch();
     const productId = props.match.params.id;
@@ -38,42 +29,14 @@ function ProductScreen(props) {
     const {loading, error, producto} = productDetails;
     const userSignin = useSelector((state) => state.userSignin);
     const { userInfo } = userSignin;
-    const [productos, setProductos] = useState([]);
-    const [loadingP, setLoadingP] = useState(false);
-    const [errorP, setErrorP] = useState(false);
-    
 
 
  
     useEffect(()=>{
         dispatch(detailsProduct(productId));
-        const fecthData = async () =>{
-            try{
-                
-                setLoadingP(true);
-        
-                    const {data} = await axios.get('/api/productos');
-                    console.log(data)
-
-                    // const productFiltradoXProducto = data.filter(x=>{
-                    //     if(producto)
-                    //     return (x === producto)
-
-
-                    // })
-                    setLoadingP(false);
-                    setProductos(data);
-
-                 
-            }catch(error){
-                setErrorP(error.message);
-                setLoadingP(false);
-            }
-        };
-        fecthData();
-
-
     },[dispatch, productId]);
+
+
     // if(!producto){
     //     return ( 
     //     <MessageBox variant="danger">Producto no encontrado</MessageBox>
@@ -82,64 +45,28 @@ function ProductScreen(props) {
    const addToCartHandler =() =>{
        props.history.push(`/cart/${producto._id || productId}?qty=${qty}`)
    }
+       const title = producto ? producto.info : ''
 
 
+   if (loading) {
+   <Helmet>
+     <title>Cargando...</title>
+   </Helmet>
+    }
 
-   const productFiltradoXcategoria = productos.filter(x=>{
-    if(producto)
-    return (x.categoria === producto.categoria)
-
-
-})
-
-
-// const sliderMarcas = () =>{
-//     setTimeout(()=>{
-
-//         const sliderMarcas = document.getElementById("sliderPR");
-//         let sliderSection = document.querySelectorAll(".slider-section-PR");
-//         let sliderSectionLast = sliderSection[sliderSection.length - 1];
-//         sliderMarcas.insertAdjacentElement("afterbegin", sliderSectionLast);
-//         console.log(sliderSection)
-//         console.log(sliderSectionLast)
-//     },3000)
-
-
-// }
-
-
-const Next = () =>{
-    const sliderMarcas = document.getElementById("sliderPR");
-    let sliderSectionFirst = document.querySelectorAll(".slider-section-PR")[0];
-    sliderMarcas.style.marginLeft = "-620.56px";
-    sliderMarcas.style.transition = "all 0.5s ease"
-    setTimeout(()=>{
-        sliderMarcas.style.transition = "none";
-        sliderMarcas.insertAdjacentElement("beforeend", sliderSectionFirst)
-        sliderMarcas.style.marginLeft = "-259.78px";
-    },500);
-
-
-}
-
-const Prev = () =>{
-    const sliderMarcas = document.getElementById("sliderPR");
-    let sliderSection = document.querySelectorAll(".slider-section-PR");
-    let sliderSectionLast = sliderSection[sliderSection.length - 1];
-    sliderMarcas.style.marginLeft = "0";
-    sliderMarcas.style.transition = "all 0.5s ease"
-    setTimeout(()=>{
-        sliderMarcas.style.transition = "none";
-        sliderMarcas.insertAdjacentElement("afterbegin", sliderSectionLast)
-        sliderMarcas.style.marginLeft = "-259.78px";
-    },500);
-
-
-}
-  
-// sliderMarcas()
 
     return (
+        <>
+        {
+            !loading ? 
+            <Helmet>
+                <title>{title} </title>
+                <meta name="description" content={title}/>
+                <meta name="rating" content="General"/>
+            </Helmet>
+            :''
+        }
+            
             <div className="container-productScreen">
 
                 {
@@ -151,8 +78,8 @@ const Prev = () =>{
         <MessageBox variant="danger">{error}</MessageBox>
     ):(
         
-        <div className="productScreen-row  ">
-                             <div className="page-header">
+        <div className="productScreen-row">
+                <div className="page-header">
                     <div className="page-header__container container">
                     <div className="page-header__breadcrumb">
                     <nav aria-label="breadcrumb">
@@ -165,7 +92,7 @@ const Prev = () =>{
                     </li>
 
                     <li className="breadcrumb-item">
-                    <a href={`/${producto.categoria}`}>{producto.categoria.replace(/-/g," ")}</a>
+                    <a href={`/categorias/${producto.categoria}`}>{producto.categoria.replace(/-/g," ")}</a>
                     <svg className="breadcrumb-arrow" >
                     <ArrowForwardIosIcon/>
                     </svg>
@@ -219,23 +146,22 @@ const Prev = () =>{
         {
             // (!userInfo) ? ("Para comprar debes registrarte") :
             producto.enStock > 0 ? (
-                <div>
-                  
+                <div>         
                      {
 
                          userInfo?
                          (producto.enOferta === true) ? 
                         (
                             <div className="precio">
-                                <strong >PRECIO: </strong>{formatCurrency(userInfo.tipoClient === "Empresa"? producto.precio + (producto.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? producto.precio + (producto.precio * $porcentajePersona):producto.precio)}<br/>
-                                <strong >OFERTA: </strong>{formatCurrency(userInfo.tipoClient === "Empresa"? producto.precio + (producto.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? producto.precioDeOferta + (producto.precioDeOferta * $porcentajePersona): producto.precioDeOferta)}<br/>
+                                <strong >PRECIO: </strong>{formatCurrency(PrecioClient(producto.precio, userInfo.tipoClient))}<br/>
+                                <strong >OFERTA: </strong>{formatCurrency(PrecioClient(producto.precioDeOferta, userInfo.tipoClient))}<br/>
                             </div>
 
                         )
                          :
                          (
                             <div className="precio">                       
-                                <strong >PRECIO: </strong>{formatCurrency(userInfo.tipoClient === "Empresa"? producto.precio + (producto.precio * $porcentajeEmpresa):userInfo.tipoClient === "Persona"? producto.precio + (producto.precio * $porcentajePersona):producto.precio)}<br/>
+                                <strong >PRECIO: </strong>{formatCurrency(PrecioClient(producto.precio, userInfo.tipoClient))}<br/>
                             </div>
                          )
 
@@ -244,8 +170,8 @@ const Prev = () =>{
                          (producto.enOferta === true) ? 
                          (
                              <div className="precio">
-                                 <strong >PRECIO: </strong>{formatCurrency(producto.precio + (producto.precio * $porcentajePersona))}<br/>
-                                 <strong >OFERTA: </strong>{formatCurrency(producto.precioDeOferta + (producto.precioDeOferta * $porcentajePersona))}<br/>
+                                 <strong >PRECIO: </strong>{formatCurrency(PrecioClient(producto.precio, userInfo.tipoClient))}<br/>
+                                 <strong >OFERTA: </strong>{formatCurrency(PrecioClient(producto.precioDeOferta, userInfo.tipoClient))}<br/>
                              </div>
  
                          )
@@ -285,8 +211,9 @@ const Prev = () =>{
                                         </li>
                                         <li>
                                         <div className="social-PS">
+                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a href="#"><i className=""><FacebookIcon/></i></a>
-                                            <a href="https://www.instagram.com/casaforte.co/" target="_BLANK"><i className=""><InstagramIcon/></i></a>
+                                            <a href="https://www.instagram.com/casaforte.co/" target="_BLANK" rel="noreferrer"><i className=""><InstagramIcon/></i></a>
                                             <a href="https://api.whatsapp.com/send?phone=++573046486898&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n."><i className=""><WhatsAppIcon/></i></a>
 
                                         </div>
@@ -295,145 +222,27 @@ const Prev = () =>{
                                         </div>
                                     ): (<h2 style={{color: "red", fontSize:"20px"}}>Producto agotado!</h2>)
                                 }
-        
-        </div>
-        
-        
+        </div>     
         </div>
         <div className="clearfiproducto"></div>
         </div>
         </div>
 
-           
+        <ProductosRelacionados 
+            producto={producto}
+            userInfo={userInfo}
+        />
 
- <div className="continerPR">
-
-     <h2 className="continerPR__title"><div className="continerPR__title__divider"></div> Productos relacionados <div className="continerPR__title__divider"></div></h2>
-<div className="continerPR__carousel">
-
-{
-
-    loadingP ? (
-         <Spinner />
-        ) : (
-        
-<div className="continerPR__centralPR" id="sliderPR">  
-        <div 
-        className="hi-prev-PR" 
-        id="arrow-prev"
-        onClick={Prev}
-        >
-            <i>
-             <ChevronLeftIcon/>
-            </i> 
-            
-        </div>
-
-            {
-                productFiltradoXcategoria.map((x)=>(
-        <Fade key={x._id} bottom cascade={true}>
-
-                    <ul className="continerPR__productos-relacionados slider-section-PR" >
-                    
-                        {               
-
-                            
-                            <ProductosRelacionados producto={x} userInfo={userInfo}/>    
-                        }
-                    </ul>
-        </Fade>
-                    
-                    )
-                )
-
-            }
-
-        <div 
-          className="hi-next-PR"          
-          id="arrow-next"
-          onClick={Next}
-          
-          >
-            <i>
-
-            <ChevronRightIcon/>
-            </i>
-        </div>
-        
-
-
-</div>
-        )
-}
-</div> 
-
-
-</div>
-
-
-
-        
-        
-
-      
        </div>
    
     )
 }
-
-
- 
-
-        
-          
             </div>
         
+    </>
     )
+
 }
 
 export default ProductScreen
 
-
-
-// <div className="carrusel-container">
-// <h2>Productos relacionados</h2>
-// <div className="slick-list" id="slick-list">
-// <button className="slick-arrow slick-prev" id="button-prev">
-// <ArrowBackIosIcon/>
-// </button>
-// <div className="slick-track" id="track">
-// {
-
-// datafiltrada.map((x)=>(
-
-
-// <div className="slick">
-// <div className="">
-//     <a href={`/producto/${x.codigo}`}>
-//     <picture>
-//        <img src={x.imagen} alt={x.info} className=""/>
-//    </picture>
-//     <div className="details">
-// <p className="description">{x.info}</p>
-
-      
-//     </div>
-//     </a>
-// </div>
-
-//     </div>
-// ))
-
-
-// }
-        
-
-// </div>
-// <button className="slick-arrow slick-next" id="button-next">
-// <ArrowForwardIosIcon/>
-// </button>
-
-// </div>
-
-
-// </div> 

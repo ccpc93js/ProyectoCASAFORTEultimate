@@ -1,5 +1,4 @@
 import Axios from 'axios';
-// import data from '../component/data.js'
 
 import {
   PRODUCT_LIST_REQUEST,

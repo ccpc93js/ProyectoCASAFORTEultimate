@@ -35,23 +35,7 @@ const Listas =()=> {
 
     const classes = useStyles()
 
-    
-   
-  const [openCategorias,setopenCategorias]= React.useState("categoriasDrawerUp")
-//   const handleCategoryOpen = () => {
-//         // setopenCategorias("categoriasDrawerDrop");
-//         var input = document.getElementById("icon-drop");
-//         if(input.checked === true ){
-//         setopenCategorias("categoriasDrawerDrop");
 
-//         }else{
-//         setopenCategorias("categoriasDrawerUp");
-//     }
-//   };
-
-
-
-     
 
         return (
             <div className="Listas">
@@ -101,22 +85,22 @@ const Listas =()=> {
                     </Link>
                      <div className="categoriasDrawerDrop categoriasDrawerUp">
                         <ul>
-                             <li><a href="/abrasivos">Abrasivos</a></li>
-                             <li><a href="/accesorios-para-herramientas">Accesorios para Herramientas</a></li>
-                             <li><a href="/amarres">Amarres</a></li>
-                             <li><a href="/cerrajeria">Cerrajeria</a></li>
-                             <li><a href="/construccion">Construcci&oacute;n</a></li>
+                             <li><a href="/categorias/abrasivos">Abrasivos</a></li>
+                             <li><a href="/categorias/accesorios-para-herramientas">Accesorios para Herramientas</a></li>
+                             <li><a href="/categorias/amarres">Amarres</a></li>
+                             <li><a href="/categorias/cerrajeria">Cerrajeria</a></li>
+                             <li><a href="/categorias/construccion">Construcci&oacute;n</a></li>
                         </ul>
 
                         <ul>
-                            <li><a href="/electricos">Electricos</a></li>
-                            <li><a href="/fijaciones">Fijaciones</a></li>
-                            <li><a href="/griferia-y-plomeria">Griferia y Plomeria</a></li>
-                            <li><a href="/pegantes-y-adhesivos">Pegantes & Adhesivos</a></li>
-                            <li><a href="/pinturas">Pinturas</a></li>
+                            <li><a href="/categorias/electricos">Electricos</a></li>
+                            <li><a href="/categorias/fijaciones">Fijaciones</a></li>
+                            <li><a href="/categorias/griferia-y-plomeria">Griferia y Plomeria</a></li>
+                            <li><a href="/categorias/pegantes-y-adhesivos">Pegantes & Adhesivos</a></li>
+                            <li><a href="/categorias/pinturas">Pinturas</a></li>
                         </ul>
                         <ul>
-                            <li><a href="/herramientas-manuales">Herramientas manuales</a></li>
+                            <li><a href="/categorias/herramientas-manuales">Herramientas manuales</a></li>
 
                         </ul>
                 </div>

@@ -142,7 +142,7 @@ Subcategorias
 {
     productFiltradoXProducto.map(x=>
      <li key={x.nombre} className="filter-categories__item-Drawer filter-categories__item--parent-Drawer">
-    <a data-id="3" href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
+    <a href={`/subcategorias/${x.nombre}`}>{x.nombre.replace(/-/g, " ")}</a>
     </li>
         )
     
@@ -168,7 +168,7 @@ Marcas
 <div key={x.nombre}  className="filter-list__list-Drawer">
 <label className="filter-list__item-Drawer ">
 <span className="filter-list__title-Drawer">
-<a href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
+<a href={`/marcas/${x.nombre}`}>{x.nombre.replace(/-/g, " ")}</a>
 </span>
 </label>
 
@@ -201,7 +201,7 @@ Categorias
     
        
   
-    <a data-id="3" href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
+    <a href={`/categorias/${x.nombre}`}>{x.nombre.replace(/-/g, " ")}</a>
     </li>
         )
     
@@ -231,7 +231,7 @@ Subcategorias
     
        
   
-    <a data-id="3" href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
+    <a href={`/subcategorias/${x.nombre}`}>{x.nombre.replace(/-/g, " ")}</a>
     </li>
         )
     
@@ -266,7 +266,7 @@ Categorias
     
        
   
-    <a data-id="3" href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
+    <a href={`/categorias/${x.nombre}`}>{x.nombre.replace(/-/g, " ")}</a>
     </li>
         )
     
@@ -296,7 +296,7 @@ Subcategorias
     
        
   
-    <a data-id="3" href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
+    <a href={`/subcategorias/${x.nombre}`}>{x.nombre.replace(/-/g, " ")}</a>
     </li>
         )
     
@@ -324,7 +324,7 @@ Marcas
 <div key={x.nombre}  className="filter-list__list-Drawer">
 <label className="filter-list__item-Drawer ">
 <span className="filter-list__title-Drawer">
-<a href={x.nombre}>{x.nombre.replace(/-/g," ")}</a>
+<a href={`/marcas/${x.nombre}`}>{x.nombre.replace(/-/g, " ")}</a>
 </span>
 </label>
 
