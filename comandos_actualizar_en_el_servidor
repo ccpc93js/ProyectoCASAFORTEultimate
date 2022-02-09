@@ -14,7 +14,7 @@ npm install
 
 sudo systemctl restart pm2-root
 
-pm2 start node backend/server.js
+pm2 start node backend/server
 
 
 sudo systemctl restart nginx
