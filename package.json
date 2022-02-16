@@ -6,8 +6,9 @@
   "main": "server.js",
   "scripts": {
     "frontend-install": "npm install --prefix frontend",
-    "start": "cross-env NODE_ENV=production  node --experimental-modules backend/server",
-    "server": "cross-env NODE_ENV=production nodemon --watch backend --exec node --experimental-modules backend/server",
+    "frontend-build": "npm build --prefix frontend",
+    "start": "node --experimental-modules backend/server",
+    "server": "nodemon --watch backend --exec node --experimental-modules backend/server",
     "dev": "cross-env NODE_ENV=development npm run start",
     "test": "cross-env NODE_ENV=test set NODE_OPTIONS=--experimental-vm-modules && jest --verbose --detectOpenHandles  backend",
     "test:watch": "npm run test -- --watch"
