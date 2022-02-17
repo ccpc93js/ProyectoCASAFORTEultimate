@@ -10,6 +10,7 @@ import { $porcentajeEmpresa, $porcentajePersona } from '../components/Productos'
 import PrecioClient from '../components/PrecioClient';
 import CartItem from './CartItem';
 import { Helmet } from 'react-helmet'
+import Spinner from '../components/Spinner/index';
 
 
 // import data from '../data.json'
@@ -54,6 +55,9 @@ export default function CartScreen(props) {
         }
         <div className="cartContainer">
             {/* <h1>Carrito</h1> */}
+
+            {!cartItems ? <Spinner/> :
+            <>
             {cartItems.length === 0 ?
 
                 (
@@ -132,7 +136,8 @@ export default function CartScreen(props) {
                     </div>
                 )
             }
-
+            </>
+}
 
         </div>
         </>

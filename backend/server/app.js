@@ -33,9 +33,7 @@ app.use(cors());
     //process.env.MONGODB_URL ||  'mongodb://localhost/casaforte'
 mongoose.connect(connectionStreing || "mongodb+srv://casaforteDataBase:casaforte2525@cluster0.m96b5.mongodb.net/casa-forte-pruebas?retryWrites=true&w=majority"
     , {
-    userNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex:true,
 });
 
 app.use(bodyParser.json());
