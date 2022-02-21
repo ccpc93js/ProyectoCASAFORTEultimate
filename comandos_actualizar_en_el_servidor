@@ -16,7 +16,7 @@ pm2 stop 0
 
 sudo systemctl restart pm2-root
 
-pm2 start node backend/server/index.js
+pm2 start node  backend/server/index.js
 
 systemctl status pm2-root
 
