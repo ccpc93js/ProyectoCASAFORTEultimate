@@ -47,8 +47,8 @@ userInfoRouter.post(
 
   userInfoRouter.get(
     '/',
-    // isAuth,
-    // isAdmin,
+    isAuth,
+    isAdmin,
     expressAsyncHandler(async (req, res) => {
       const usersInfo = await UserInfo.find({});
       res.send(usersInfo);

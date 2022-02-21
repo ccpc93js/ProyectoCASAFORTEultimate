@@ -173,8 +173,8 @@ userRouter.post(
 
   userRouter.get(
     '/',
-    // isAuth,
-    // isAdmin,
+    isAuth,
+    isAdmin,
     expressAsyncHandler(async (req, res) => {
       const users = await User.find({});
       res.send(users);
@@ -213,8 +213,8 @@ userRouter.post(
 
   userRouter.post(
     '/',
-    // isAuth,
-    // isAdmin,
+    isAuth,
+    isAdmin,
     expressAsyncHandler(async (req, res) => {
       const user = new User({
         name: 'nombre',
