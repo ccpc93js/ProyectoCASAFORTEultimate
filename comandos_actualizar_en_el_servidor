@@ -12,11 +12,11 @@ cd  ProyectoCASAFORTEultimate
 
 npm install
 
-pm2 stop 0 
+sudo pm2 stop 0 
 
 sudo systemctl restart pm2-root
 
-pm2 start node  backend/server/index.js
+sudo pm2 start node  backend/server/index.js
 
 systemctl status pm2-root
 
@@ -28,3 +28,5 @@ sudo systemctl status nginx
 vim /etc/nginx/sites-enabled/casa-forte.co
 
 sudo tail -f /var/log/nginx/error.log
+
+39009

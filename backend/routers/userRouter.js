@@ -4,9 +4,7 @@ import expressAsyncHandler from 'express-async-handler';
 import data from '../dataUsers.js';
 import User from '../models/userModel.js';
 import {generateToken, isAdmin, isAuth} from '../utils.js'
-import UserInfo from '../models/userInfoModel.js';
-import axios from 'axios';
-// import { sendReserLink } from '../sendEmail.js';
+
 
 
 const userRouter = express.Router();
